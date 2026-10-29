@@ -1,0 +1,51 @@
+{
+ "dataset": "it1583_f70",
+ "target": "it1583",
+ "piece": "Vincenzo Amidani (Milan) to Francesco Sforza, f. 70",
+ "date": "4 May 1446",
+ "year": 1446,
+ "date_basis": "pencil '1446 4 Mai' on the slip; Mazzatinti 1883",
+ "shelfmark": "BnF italien 1583 f. 70 (seen on DECODE R7899 image 1)",
+ "system": "Same sign family as f. 68, a different hand; almost all cipher.",
+ "language": "Italian (Lombard) context; cipher unread",
+ "outcome": "not read",
+ "sign_inventory_note": "Sign codes of transcription_f70.txt: as f. 68 EXCEPT that E here is a b with double bar (not the barred epsilon of f. 68); W ab-ligature, K hatched sign, Y slashed v, O reversed c, e plain epsilon, P barred p, 3 4 6 s b. Sign ids are therefore not comparable with it1583_f68. '|' = written dot separators.",
+ "counts": {
+  "lines": 10,
+  "sign_tokens": 390,
+  "distinct_signs": 31,
+  "letter_sign_tokens": 390,
+  "distinct_letter_signs": 31,
+  "code_sign_tokens": 0,
+  "distinct_code_signs": 0,
+  "null_tokens": 0,
+  "distinct_nulls": 0,
+  "dividers": 6,
+  "plaintext_letters": 0
+ },
+ "plaintext": null,
+ "plaintext_source": null,
+ "source_files": [
+  "targets/it1583/transcription_f70.txt",
+  "targets/it1583/NOTES.md",
+  "targets/it1583/profile.json"
+ ],
+ "caveats": [
+  "Short (about 390 signs).",
+  "Draft transcription from a binarized scan.",
+  "Kept separate from f. 68: different hand and a partly different sign set."
+ ],
+ "line_ids": ["f70.p1", "f70.p2a", "f70.p2b", "f70.p3", "f70.p4", "f70.p5", "f70.p6a", "f70.p6b", "f70.p7", "f70.p8"],
+ "lines": [
+  ["D", "F", "E", "Q", "g", "J", "B", "E", "F", "p", "B", "Q", "+", "d", "E", "F", ">", "Q", "E", "3", "+", "S", "J", "Q", "B", "4", "H", "V", "8", "W", "B", "c", ">", "E", "K", "4", "z", "S", "n", "+", "F", "d", "J", "E", "F", "z", "r", "F", "p", ">", "E", "Y", "+", "J"],
+  ["r", "F", "p", "S", "d", "Y", "S", "c", "V", "8", "+", "B", "Q", "+", "Y", "c", "F", "Q", "+", "S", "J", "p", "Y", "d", "E", "Q", "z", "H"],
+  ["H", "p", "S", "p", "O", "Q", "+", "B", "r", "c", "H", "F", "Q", "E", "B", "d", "J", "E", "F", "+", "8", "J", "Q", "e"],
+  ["+", "z", "S", "Q", "J", "E", "|", "F", "J", "Q", "H", "S", "p", "n", "d", "Y", "S", "p", "F", "Q", "H", "c", "8", "E", "F", "z", "r", "Q", "c", "V", "8", "n", "z", "W", "4", "S", "d", "r", "F", "p", ">", "c", "Y", "z", "+", "8", "Q", "S", "c", "J", "p", "X", "Q", "F", "p", "J", "X", "Q", "F", "p"],
+  ["b", "Q", "J", "H", "z", "8", "E", "F", "z", ">", "p", "Y", "E", "d", "|", "S", "J", "c", "E", "J", ">", "V", "H", "Q", "F", "p", "J", "X", "Q", "E", "c", "e", "H", "W", "S", "+", "K", "+", "S", "E", "J", "W", "p", "8", "s", "z"],
+  ["E", "J", "d", "W", "H", "E", "J", "O", "Q", "E", "c", "E", "+", "F", "z", "P", "X", "Y", "c", "E", "H", "+", "|", "z", "E", "p", "E", "J", "W", "p", "H", "E", "+", "F", "z", "p", "4", "Q", "Y", "r", "+", ">", "H", "c", "H", "O", "p"],
+  ["Y", "Q", "E", "Q", "+", "r", "p", "F", "E", "X", "Q", "H", "E", "+", "8", "E", "F", "+", "J", "Y", "Q", "z", "S", "p"],
+  ["F", "c", "r", "c", "E", "p", "E", "|", "E", "z", "E", "E", "|", "E", "z", "3", "+", "S", "H", "Q", "E", "z", "E"],
+  ["E", "+", ">", "p", "Y", "E", "H", "n", "+", "F", "p", ">", "Q", "c", "S", "p", "O", "Q", "E", "c", "Y", "p", "+", "S", "J", "b", "E", "X", "H", "+", "3", "z", "8", "8", "p", ">", "p", "E", "z", "E", "J", ">", "+", "8", "S", "c", "e", "S", "H", "S", "+", "E", "z"],
+  [">", "p", "S", "Q", "X", "8", "|", "Y", "Q", "S", "Q", "p", "8", "F", "E", "c", ">", "+", "g", "6", "H", "+", "F", "8", "p", "d", "H", "J", "8", "8", "J", "E", "+", "6", "6", ">", "F"]
+ ]
+}

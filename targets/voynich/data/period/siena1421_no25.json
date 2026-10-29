@@ -1,0 +1,55 @@
+{
+ "dataset": "siena1421_no25",
+ "target": "siena25",
+ "piece": "Sienese envoys to the Signoria of Siena (a lord's route by Laiatico, Radicondoli, Casole), no. 25",
+ "date": "undated",
+ "year": null,
+ "date_basis": "none: no date, name or hand estimate recorded; the fascicle's dated pieces run 1421-1547",
+ "shelfmark": "ASSi, Concistoro 2308, fasc. 2 \"Lettere in cifra\", no. 25 (DECODE R4813)",
+ "system": "Italian (Sienese spelling); simple monoalphabetic substitution, one sign per letter, 21 signs built on a running horizontal stroke, a point after each cipher word, one code sign (TH); key recovered ciphertext-only here.",
+ "language": "Italian",
+ "outcome": "read (96.2% of signs in words read as sense)",
+ "sign_inventory_note": "Sign names of transcripts/no25_reading.txt, 'PER LINE' section (rev. 2: Y = m and X = r split, G withdrawn). '|' = the scribe's word points. N:TH = the single code/abbreviation sign standing alone between points. The struck group on L06 (X3 R PI 9 S, 'quelo') is left out.",
+ "counts": {
+  "lines": 11,
+  "sign_tokens": 496,
+  "distinct_signs": 21,
+  "letter_sign_tokens": 495,
+  "distinct_letter_signs": 20,
+  "code_sign_tokens": 1,
+  "distinct_code_signs": 1,
+  "null_tokens": 0,
+  "distinct_nulls": 0,
+  "dividers": 54,
+  "plaintext_letters": 495,
+  "doubtful_signs_kept": 7,
+  "struck_groups_dropped": 1
+ },
+ "plaintext": "noi auiamo chonprso che questo signiore no chaualchara per lo modo che chostoro di qui uoreuero e diliuera senza altra presa fare di qui partirsi e d esare chosta e crediamo sara sauato prosimo e farano la uia di laiaticho e poi di la si partirano e l altro di sarano a radichondoli e per quelo paese e ancho a chasole e per paese poi chosta e pero richordiamo a la signioria uostra che ne deti luoghi faciate prouedere di pane uiada uitua gia chome ui pare chouenirsi se altro s hadra o altre questo diliuerase che per ora pensiamo o chon grediamo per fante propio significharemo a la magnificieza uostra",
+ "plaintext_source": "per-line Italian of no25_reading.txt (rev. 2)",
+ "source_files": [
+  "targets/siena25/transcripts/no25_reading.txt",
+  "targets/siena25/transcripts/no25.txt",
+  "targets/siena25/keys/no25_key.txt",
+  "targets/siena25/NOTES.md"
+ ],
+ "caveats": [
+  "UNDATED: nothing fixes it to the 15th century (the fascicle runs 1421-1547); use as a period sample only with that caveat.",
+  "Short (about 500 signs).",
+  "Two words (18 signs) read but not understood: s'hadra, o chon grediamo."
+ ],
+ "line_ids": ["L01", "L02", "L03", "L04", "L05", "L06", "L07", "L08", "L09", "L10", "L11"],
+ "lines": [
+  ["J", "S", "I", "F", "PHI", "I", "F", "Y", "S", "|", "+", "H", "S", "J", "Q", "X", "HL", "S", "|", "+", "H", "PI", "X3", "R", "PI", "HL", "B", "S", "|", "HL", "I", "PH2", "J", "I", "S", "X", "PI", "|", "J", "S", "+", "H", "F", "R", "F", "9", "+", "H", "F", "X", "F", "Q", "PI"],
+  ["X", "9", "S", "Y", "S", "3", "S", "|", "+", "H", "PI", "+", "H", "S", "HL", "B", "S", "X", "S", "|", "3", "I", "X3", "R", "I", "|", "R", "S", "X", "PI", "PHI", "PI", "X", "S", "|", "PI", "3", "I", "9", "I", "PHI", "PI", "X", "F", "|", "HL", "PI", "J", "XB", "F", "|", "F", "9", "B", "X", "F"],
+  ["Q", "X", "PI", "HL", "F", "|", "U", "F", "X", "PI", "|", "3", "I", "X3", "R", "I", "|", "Q", "F", "X", "B", "I", "X", "HL", "I", "|", "PI", "3", "PI", "HL", "F", "X", "PI", "|", "+", "H", "S", "HL", "B", "F", "|", "PI", "+", "X", "PI", "3", "I", "F", "Y", "S"],
+  ["HL", "F", "X", "F", "|", "HL", "F", "PHI", "F", "B", "S", "|", "Q", "X", "S", "HL", "I", "Y", "S", "|", "PI", "U", "F", "X", "F", "J", "S", "|", "9", "F", "R", "I", "F", "|", "3", "I", "9", "F", "I", "F", "B", "I", "+", "H", "S", "|", "PI", "Q", "S", "I"],
+  ["3", "I", "9", "F", "HL", "I", "Q", "F", "X", "B", "I", "X", "F", "J", "S", "|", "PI", "9", "F", "9", "B", "X", "S", "3", "I", "|", "HL", "F", "X", "F", "J", "S", "|", "F", "X", "F", "3", "I", "+", "H", "S", "J", "3", "S", "9", "I", "|", "PI", "Q", "PI", "X", "X3", "R", "PI"],
+  ["9", "S", "|", "Q", "F", "PI", "HL", "PI", "|", "PI", "F", "J", "+", "H", "S", "|", "F", "+", "H", "F", "HL", "S", "9", "PI", "|", "PI", "Q", "PI", "X", "|", "Q", "F", "PI", "HL", "PI", "|", "Q", "S", "I", "+", "H", "S", "HL", "B", "F"],
+  ["PI", "Q", "PI", "X", "S", "|", "X", "I", "+", "H", "S", "X", "3", "I", "F", "Y", "S", "|", "F", "9", "F", "HL", "I", "PH2", "J", "I", "S", "X", "I", "F", "|", "R", "S", "HL", "B", "X", "F", "|", "+", "H", "PI", "J", "PI", "3", "PI", "B", "I", "|", "9", "R", "S", "PH2", "H", "I"],
+  ["U", "F", "+", "I", "F", "B", "PI", "|", "Q", "X", "S", "R", "PI", "3", "PI", "X", "PI", "|", "3", "I", "Q", "F", "J", "PI", "PHI", "I", "F", "3", "F", "|", "R", "I", "B", "R", "F", "|", "PH2", "I", "F", "|", "+", "H", "S", "Y", "PI", "|", "R", "I", "Q", "F", "X", "PI"],
+  ["+", "H", "S", "R", "PI", "J", "I", "X", "HL", "I", "|", "HL", "PI", "F", "9", "B", "X", "S", "|", "HL", "H", "F", "3", "X", "F", "|", "S", "F", "9", "B", "X", "PI", "|", "X3", "R", "PI", "HL", "B", "S", "|", "N:TH", "|", "3", "I", "9", "I", "PHI", "PI", "X", "F", "HL", "PI"],
+  ["+", "H", "PI", "Q", "PI", "X", "S", "X", "F", "|", "Q", "PI", "J", "HL", "I", "F", "Y", "S", "|", "S", "+", "H", "S", "J", "PH2", "X", "PI", "3", "I", "F", "Y", "S", "|", "Q", "PI", "X", "U", "F", "J", "B", "PI", "Q", "X", "S", "Q", "I", "S"],
+  ["HL", "I", "PH2", "J", "I", "U", "I", "+", "H", "F", "X", "PI", "Y", "S", "|", "F", "9", "F", "Y", "F", "PH2", "J", "I", "U", "I", "+", "I", "PI", "XB", "F", "|", "R", "S", "HL", "B", "X", "F"]
+ ]
+}

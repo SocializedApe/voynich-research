@@ -1,0 +1,13 @@
+{{titulus2
+|Scriptor= Gaius Plinius Secundus
+|OperaeTitulus= Naturalis Historia
+|OperaeWikiPagina= Naturalis Historia
+|Annus= 77 - 78 p.C.n.
+|SubTitulus= Liber XXIX
+}}
+
+i  
+1  Naturae remediorum atque multitudo instantium ac praeteritorum plura de ipsa medendi arte cogunt dicere, quamquam non ignaros, nulli ante haec Latino sermone condita ancepsque, lubricum esse rerum omnium novarum exordium, utique tam sterilis gratiae tantaeque difficultatis in promendo. 
+ 
+2  sed quaestionem occurrere verisimile est omnium, qui haec noscant, cogitationi, quonam modo exoleverint in medicinae usu quae iam parata atque pertinentia erant, mirumque
+{{finis}}

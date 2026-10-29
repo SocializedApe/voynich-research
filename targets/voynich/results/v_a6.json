@@ -1,0 +1,2144 @@
+{
+ "counts": {
+  "nA": 10768,
+  "nB": 22905,
+  "nP": 34212
+ },
+ "A_hygiene": {
+  "n_nonalpha_tokens": 96,
+  "examples": [
+   "@192;chy",
+   "@130;tol",
+   "qo'ky",
+   "e'a'iin",
+   "@163;schoraiin",
+   "q'o",
+   "@135;otchoshor",
+   "@135;odaiin",
+   "@152;ar",
+   "@137;chol",
+   "@138;chor",
+   "tcho@154;",
+   "che'eky",
+   "shy@140;",
+   "@241;"
+  ],
+  "n_types_affected": 91,
+  "note": "parse_ivtff leaves IVTFF high-ASCII codes '@nnn;' and apostrophes (uncertain-space marker) inside words; ~0.3% of P tokens"
+ },
+ "B_rates": {
+  "ZL_P": {
+   "ends -edy": [
+    0.2,
+    17.34
+   ],
+   "contains ed": [
+    0.29,
+    20.84
+   ],
+   "ends -eedy": [
+    0.07,
+    5.11
+   ],
+   "starts l-": [
+    0.81,
+    5.75
+   ],
+   "ends -ain": [
+    2.12,
+    5.95
+   ],
+   "ends -dy": [
+    6.19,
+    23.72
+   ],
+   "starts qo-": [
+    9.99,
+    17.72
+   ],
+   "contains ee": [
+    7.36,
+    14.9
+   ],
+   "contains cho": [
+    16.12,
+    2.7
+   ],
+   "ends -or": [
+    10.42,
+    3.84
+   ],
+   "ends -ol": [
+    14.52,
+    7.08
+   ],
+   "starts d-": [
+    14.74,
+    6.61
+   ],
+   "gallows in bench": [
+    9.12,
+    4.02
+   ],
+   "contains eo": [
+    11.22,
+    6.92
+   ]
+  },
+  "ZL_all_loci": {
+   "ends -edy": [
+    0.19,
+    17.08
+   ],
+   "contains ed": [
+    0.29,
+    20.69
+   ],
+   "ends -eedy": [
+    0.06,
+    5.02
+   ],
+   "starts l-": [
+    0.81,
+    5.63
+   ],
+   "ends -ain": [
+    2.14,
+    5.79
+   ],
+   "ends -dy": [
+    6.29,
+    23.55
+   ],
+   "starts qo-": [
+    9.75,
+    17.19
+   ],
+   "contains ee": [
+    7.3,
+    14.67
+   ],
+   "contains cho": [
+    15.93,
+    2.63
+   ],
+   "ends -or": [
+    10.32,
+    3.92
+   ],
+   "ends -ol": [
+    14.36,
+    7.0
+   ],
+   "starts d-": [
+    14.63,
+    6.68
+   ],
+   "gallows in bench": [
+    8.98,
+    3.92
+   ],
+   "contains eo": [
+    11.18,
+    6.77
+   ]
+  },
+  "IT2a_P": {
+   "ends -edy": [
+    0.2,
+    17.57
+   ],
+   "contains ed": [
+    0.33,
+    21.09
+   ],
+   "ends -eedy": [
+    0.08,
+    5.18
+   ],
+   "starts l-": [
+    0.63,
+    5.61
+   ],
+   "ends -ain": [
+    2.09,
+    6.22
+   ],
+   "ends -dy": [
+    6.28,
+    24.07
+   ],
+   "starts qo-": [
+    10.25,
+    17.94
+   ],
+   "contains ee": [
+    7.5,
+    15.07
+   ],
+   "contains cho": [
+    16.51,
+    2.79
+   ],
+   "ends -or": [
+    10.96,
+    4.06
+   ],
+   "ends -ol": [
+    15.0,
+    7.53
+   ],
+   "starts d-": [
+    15.11,
+    6.73
+   ],
+   "gallows in bench": [
+    9.92,
+    4.28
+   ],
+   "contains eo": [
+    11.65,
+    7.1
+   ]
+  },
+  "IT2a_P_tokens": [
+   10534,
+   22584
+  ]
+ },
+ "B_after_bench": {
+  "ch": {
+   "A": [
+    3844,
+    {
+     "o": 46.1,
+     "e": 24.5,
+     "y": 15.0,
+     "a": 6.8,
+     "c": 2.3,
+     "k": 1.6
+    }
+   ],
+   "B": [
+    6135,
+    {
+     "e": 60.1,
+     "d": 11.5,
+     "o": 10.1,
+     "y": 5.5,
+     "c": 5.3,
+     "a": 3.1
+    }
+   ]
+  },
+  "sh": {
+   "A": [
+    1353,
+    {
+     "o": 47.2,
+     "e": 31.3,
+     "y": 11.2,
+     "a": 4.7,
+     "c": 1.9,
+     "$": 1.3
+    }
+   ],
+   "B": [
+    2830,
+    {
+     "e": 70.8,
+     "o": 9.9,
+     "d": 5.7,
+     "c": 4.3,
+     "y": 3.9,
+     "a": 2.6
+    }
+   ]
+  }
+ },
+ "C_folio": {
+  "ends -edy": {
+   "A_max": 2.42,
+   "A_p90": 0.0,
+   "A_median": 0.0,
+   "B_min": 3.23,
+   "B_p10": 7.52,
+   "B_median": 14.33,
+   "loo_accuracy": 0.9949,
+   "n": 197,
+   "A_top3": [
+    [
+     "f89r1",
+     2.42
+    ],
+    [
+     "f88v",
+     2.31
+    ],
+    [
+     "f89r2",
+     1.42
+    ]
+   ],
+   "B_bottom3": [
+    [
+     "f55r",
+     3.23
+    ],
+    [
+     "f86v5",
+     3.6
+    ],
+    [
+     "f95v2",
+     3.64
+    ]
+   ],
+   "hist_2pct_bins": {
+    "0-2": 112,
+    "2-4": 5,
+    "4-6": 2,
+    "6-8": 7,
+    "8-10": 8,
+    "10-12": 10,
+    "12-14": 8,
+    "14-16": 12,
+    "16-18": 4,
+    "18-20": 4,
+    "20-22": 2,
+    "22-24": 6,
+    "24-26": 3,
+    "26-28": 1,
+    "28-30": 4,
+    "30-32": 2,
+    "32-34": 4,
+    "36-38": 1,
+    "38-40": 1,
+    "40-42": 1
+   }
+  },
+  "contains ed": {
+   "A_max": 3.7,
+   "A_p90": 0.99,
+   "A_median": 0.0,
+   "B_min": 3.86,
+   "B_p10": 8.91,
+   "B_median": 17.95,
+   "loo_accuracy": 0.9949,
+   "n": 197,
+   "A_top3": [
+    [
+     "f27v",
+     3.7
+    ],
+    [
+     "f89r1",
+     2.42
+    ],
+    [
+     "f89r2",
+     2.37
+    ]
+   ],
+   "B_bottom3": [
+    [
+     "f86v5",
+     3.86
+    ],
+    [
+     "f55r",
+     4.03
+    ],
+    [
+     "f33v",
+     5.43
+    ]
+   ],
+   "hist_2pct_bins": {
+    "0-2": 110,
+    "2-4": 5,
+    "4-6": 2,
+    "6-8": 3,
+    "8-10": 7,
+    "10-12": 6,
+    "12-14": 8,
+    "14-16": 8,
+    "16-18": 7,
+    "18-20": 6,
+    "20-22": 4,
+    "22-24": 3,
+    "24-26": 7,
+    "26-28": 3,
+    "28-30": 5,
+    "30-32": 2,
+    "32-34": 1,
+    "34-36": 5,
+    "36-38": 1,
+    "38-40": 2,
+    "42-44": 1,
+    "48-50": 1
+   }
+  },
+  "contains cho": {
+   "A_max": 40.59,
+   "A_p90": 28.07,
+   "A_median": 17.54,
+   "B_min": 0.0,
+   "B_p10": 0.0,
+   "B_median": 2.55,
+   "loo_accuracy": 0.9543,
+   "n": 197,
+   "A_top3": [
+    [
+     "f56r",
+     40.59
+    ],
+    [
+     "f49v",
+     40.15
+    ],
+    [
+     "f2v",
+     40.0
+    ]
+   ],
+   "B_bottom3": [
+    [
+     "f26v",
+     0.0
+    ],
+    [
+     "f31r",
+     0.0
+    ],
+    [
+     "f40r",
+     0.0
+    ]
+   ],
+   "hist_2pct_bins": {
+    "0-2": 35,
+    "2-4": 31,
+    "4-6": 16,
+    "6-8": 9,
+    "8-10": 18,
+    "10-12": 7,
+    "12-14": 11,
+    "14-16": 8,
+    "16-18": 9,
+    "18-20": 7,
+    "20-22": 17,
+    "22-24": 7,
+    "24-26": 9,
+    "26-28": 1,
+    "28-30": 2,
+    "30-32": 5,
+    "32-34": 1,
+    "34-36": 1,
+    "40-42": 3
+   }
+  },
+  "ends -dy": {
+   "A_max": 21.54,
+   "A_p90": 13.33,
+   "A_median": 5.36,
+   "B_min": 11.09,
+   "B_p10": 14.07,
+   "B_median": 23.53,
+   "loo_accuracy": 0.9289,
+   "n": 197,
+   "A_top3": [
+    [
+     "f88v",
+     21.54
+    ],
+    [
+     "f93v",
+     20.29
+    ],
+    [
+     "f11v",
+     18.18
+    ]
+   ],
+   "B_bottom3": [
+    [
+     "f107r",
+     11.09
+    ],
+    [
+     "f80r",
+     11.29
+    ],
+    [
+     "f111v",
+     12.74
+    ]
+   ],
+   "hist_2pct_bins": {
+    "0-2": 17,
+    "2-4": 25,
+    "4-6": 25,
+    "6-8": 15,
+    "8-10": 14,
+    "10-12": 6,
+    "12-14": 14,
+    "14-16": 8,
+    "16-18": 5,
+    "18-20": 5,
+    "20-22": 10,
+    "22-24": 15,
+    "24-26": 6,
+    "26-28": 5,
+    "28-30": 3,
+    "30-32": 6,
+    "32-34": 6,
+    "34-36": 2,
+    "36-38": 4,
+    "38-40": 3,
+    "40-42": 2,
+    "46-48": 1
+   }
+  }
+ },
+ "corpus_check": {
+  "da_24747": {
+   "n": 53382,
+   "english_fw_per_1000_first_nA": 9.6,
+   "first_words": "produced by louise hope steen christensen and the online distributed proofreading team"
+  },
+  "da_36942": {
+   "n": 70157,
+   "english_fw_per_1000_first_nA": 7.6,
+   "first_words": "johannes v jensen kongens fald gyldendalske boghandel nordisk forlag kjøbenhavn kristiania london"
+  },
+  "no_30027": {
+   "n": 60299,
+   "english_fw_per_1000_first_nA": 12.1,
+   "first_words": "transcriber s note spelling in this first edition of sult old spelling"
+  },
+  "sv_59341": {
+   "n": 65126,
+   "english_fw_per_1000_first_nA": 3.8,
+   "first_words": "produced by gun britt carlsson eva eriksson jens sadowski and the online"
+  },
+  "de_50285": {
+   "n": 74066,
+   "english_fw_per_1000_first_nA": 18.6,
+   "first_words": "dr mabuse der spieler ullstein bücher eine sammlung zeitgenössischer romane dr mabuse"
+  },
+  "de_56156": {
+   "n": 39545,
+   "english_fw_per_1000_first_nA": 19.8,
+   "first_words": "anmerkungen zur transkription der vorliegende text wurde anhand der erschienenen buchausgabe so"
+  },
+  "nl_76280": {
+   "n": 66108,
+   "english_fw_per_1000_first_nA": 36.0,
+   "first_words": "wonderreizen jules verne mathias sandorf een verijdelde samenzwering dokter antekirrt amsterdam uitgevers"
+  },
+  "fr_19919": {
+   "n": 97523,
+   "english_fw_per_1000_first_nA": 0.1,
+   "first_words": "produced by chuck greif and www ebooksgratuits com paul féval les habits"
+  },
+  "la_227": {
+   "n": 63914,
+   "english_fw_per_1000_first_nA": 11.4,
+   "first_words": "publi vergili maronis aeneidos liber i arma virumque cano troiae qui primus"
+  },
+  "la_33849": {
+   "n": 84007,
+   "english_fw_per_1000_first_nA": 22.4,
+   "first_words": "s aurelii augustini confessiones post editionem parisiensem novissimam ad fidem codicum oxoniensium"
+  },
+  "it": {
+   "n": 1224054,
+   "english_fw_per_1000_first_nA": 13.7,
+   "first_words": "cumque predictus fcrdiuandu s rex nuper in romanorum regem electus et in"
+  }
+ },
+ "D_shift": {
+  "Voynich A vs B(random nA)": {
+   "by_abs": [
+    [
+     "-dy",
+     6.19,
+     23.63
+    ],
+    [
+     "-edy",
+     0.2,
+     17.23
+    ],
+    [
+     "-y",
+     31.35,
+     44.88
+    ]
+   ],
+   "by_ratio": [
+    [
+     "-edy",
+     0.2,
+     17.23,
+     88.3
+    ],
+    [
+     "ct-",
+     3.62,
+     0.2,
+     17.7
+    ],
+    [
+     "cth-",
+     3.62,
+     0.2,
+     17.7
+    ]
+   ]
+  },
+  "Voynich A half vs A half": {
+   "by_abs": [
+    [
+     "sh-",
+     9.73,
+     7.9
+    ],
+    [
+     "s-",
+     13.95,
+     12.11
+    ],
+    [
+     "-o",
+     4.85,
+     6.56
+    ]
+   ],
+   "by_ratio": [
+    [
+     "ok-",
+     4.27,
+     5.79,
+     1.4
+    ],
+    [
+     "-o",
+     4.85,
+     6.56,
+     1.4
+    ],
+    [
+     "sho-",
+     5.01,
+     3.8,
+     1.3
+    ]
+   ]
+  },
+  "Danish vs Norwegian": {
+   "by_abs": [
+    [
+     "-e",
+     12.44,
+     20.71
+    ],
+    [
+     "-g",
+     10.09,
+     15.76
+    ],
+    [
+     "-t",
+     8.58,
+     13.82
+    ]
+   ],
+   "by_ratio": [
+    [
+     "-aa",
+     3.45,
+     0.04,
+     69.1
+    ],
+    [
+     "-å",
+     0,
+     3.45,
+     68.9
+    ],
+    [
+     "-jeg",
+     0.65,
+     5.03,
+     7.7
+    ]
+   ]
+  },
+  "Danish vs Swedish": {
+   "by_abs": [
+    [
+     "-t",
+     8.58,
+     15.95
+    ],
+    [
+     "-er",
+     8.4,
+     2.52
+    ],
+    [
+     "-g",
+     10.09,
+     4.93
+    ]
+   ],
+   "by_ratio": [
+    [
+     "oc-",
+     0,
+     3.84,
+     76.9
+    ],
+    [
+     "-och",
+     0,
+     3.63,
+     72.6
+    ],
+    [
+     "och-",
+     0,
+     3.63,
+     72.6
+    ]
+   ]
+  },
+  "Danish vs Danish": {
+   "by_abs": [
+    [
+     "-e",
+     12.44,
+     21.46
+    ],
+    [
+     "-de",
+     3.51,
+     8.35
+    ],
+    [
+     "-r",
+     13.87,
+     9.27
+    ]
+   ],
+   "by_ratio": [
+    [
+     "-ede",
+     0.4,
+     3.19,
+     8.0
+    ],
+    [
+     "-han",
+     0.82,
+     3.46,
+     4.2
+    ],
+    [
+     "-an",
+     1.4,
+     3.79,
+     2.7
+    ]
+   ]
+  },
+  "English vs English": {
+   "by_abs": [
+    [
+     "h-",
+     7.83,
+     4.92
+    ],
+    [
+     "th-",
+     8.81,
+     11.52
+    ],
+    [
+     "s-",
+     6.43,
+     9.01
+    ]
+   ],
+   "by_ratio": [
+    [
+     "he-",
+     3.1,
+     1.44,
+     2.2
+    ],
+    [
+     "-a",
+     2.19,
+     3.77,
+     1.7
+    ],
+    [
+     "h-",
+     7.83,
+     4.92,
+     1.6
+    ]
+   ]
+  },
+  "German vs German": {
+   "by_abs": [
+    [
+     "-er",
+     11.91,
+     7.23
+    ],
+    [
+     "-r",
+     15.8,
+     11.75
+    ],
+    [
+     "-ch",
+     5.11,
+     8.32
+    ]
+   ],
+   "by_ratio": [
+    [
+     "ic-",
+     0.71,
+     3.44,
+     4.9
+    ],
+    [
+     "ich-",
+     0.71,
+     3.44,
+     4.9
+    ],
+    [
+     "er-",
+     4.89,
+     1.73,
+     2.8
+    ]
+   ]
+  },
+  "German vs Dutch": {
+   "by_abs": [
+    [
+     "-n",
+     21.84,
+     30.2
+    ],
+    [
+     "-en",
+     13.52,
+     21.32
+    ],
+    [
+     "-r",
+     15.8,
+     8.06
+    ]
+   ],
+   "by_ratio": [
+    [
+     "va-",
+     0.05,
+     3.72,
+     74.5
+    ],
+    [
+     "-van",
+     0,
+     3.47,
+     69.5
+    ],
+    [
+     "van-",
+     0,
+     3.45,
+     68.9
+    ]
+   ]
+  },
+  "Vergil vs Augustine": {
+   "by_abs": [
+    [
+     "-e",
+     17.81,
+     11.28
+    ],
+    [
+     "e-",
+     6.95,
+     13.02
+    ],
+    [
+     "-ue",
+     6.22,
+     1.42
+    ]
+   ],
+   "by_ratio": [
+    [
+     "-ue",
+     6.22,
+     1.42,
+     4.4
+    ],
+    [
+     "-que",
+     6.17,
+     1.42,
+     4.3
+    ],
+    [
+     "-d",
+     1.14,
+     3.36,
+     2.9
+    ]
+   ]
+  },
+  "Latin vs Italian": {
+   "by_abs": [
+    [
+     "-s",
+     17.69,
+     1.5
+    ],
+    [
+     "-m",
+     16.43,
+     0.79
+    ],
+    [
+     "-a",
+     8.08,
+     20.18
+    ]
+   ],
+   "by_ratio": [
+    [
+     "v-",
+     4.03,
+     0,
+     80.6
+    ],
+    [
+     "-he",
+     0,
+     3.45,
+     69.1
+    ],
+    [
+     "che-",
+     0,
+     3.45,
+     69.1
+    ]
+   ]
+  },
+  "French vs Italian": {
+   "by_abs": [
+    [
+     "-o",
+     0.19,
+     17.52
+    ],
+    [
+     "-s",
+     16.08,
+     1.5
+    ],
+    [
+     "-a",
+     6.05,
+     20.18
+    ]
+   ],
+   "by_ratio": [
+    [
+     "-o",
+     0.19,
+     17.52,
+     94.3
+    ],
+    [
+     "-to",
+     0,
+     4.43,
+     88.6
+    ],
+    [
+     "-di",
+     0,
+     4.04,
+     80.8
+    ]
+   ]
+  }
+ },
+ "E_share": {
+  "Voynich A vs B(random nA)": {
+   "jaccard": 0.1468,
+   "typesX_in_Y": 0.237,
+   "tokX_in_Y": 0.6685,
+   "top100_X_in_Y": 0.95,
+   "top100_missing": [
+    "cthor",
+    "ckhey",
+    "dchy",
+    "kchor",
+    "ctho"
+   ],
+   "jsd": 0.4937
+  },
+  "Voynich A half vs A half": {
+   "jaccard": 0.2067,
+   "typesX_in_Y": 0.3291,
+   "tokX_in_Y": 0.7071,
+   "top100_X_in_Y": 1.0,
+   "top100_missing": [],
+   "jsd": null
+  },
+  "Danish vs Norwegian": {
+   "jaccard": 0.1163,
+   "typesX_in_Y": 0.176,
+   "tokX_in_Y": 0.5063,
+   "top100_X_in_Y": 0.67,
+   "top100_missing": [
+    "saa",
+    "paa",
+    "æ",
+    "klip",
+    "din",
+    "gaar",
+    "naar",
+    "ka",
+    "te",
+    "klap",
+    "lystig",
+    "jens"
+   ],
+   "jsd": 0.5198
+  },
+  "Danish vs Swedish": {
+   "jaccard": 0.0381,
+   "typesX_in_Y": 0.0669,
+   "tokX_in_Y": 0.3592,
+   "top100_X_in_Y": 0.48,
+   "top100_missing": [
+    "saa",
+    "der",
+    "æ",
+    "ved",
+    "jeg",
+    "fra",
+    "sang",
+    "da",
+    "hvor",
+    "klip",
+    "gaar",
+    "mens"
+   ],
+   "jsd": 0.7342
+  },
+  "Danish vs Danish": {
+   "jaccard": 0.1368,
+   "typesX_in_Y": 0.2118,
+   "tokX_in_Y": 0.5688,
+   "top100_X_in_Y": 0.79,
+   "top100_missing": [
+    "æ",
+    "klip",
+    "a",
+    "din",
+    "ka",
+    "te",
+    "klap",
+    "lystig",
+    "ej",
+    "dit",
+    "far",
+    "mi"
+   ],
+   "jsd": 0.4589
+  },
+  "English vs English": {
+   "jaccard": 0.1721,
+   "typesX_in_Y": 0.3455,
+   "tokX_in_Y": 0.7524,
+   "top100_X_in_Y": 0.91,
+   "top100_missing": [
+    "miss",
+    "bennet",
+    "bingley",
+    "mrs",
+    "darcy",
+    "heading",
+    "austen",
+    "illustration",
+    "jane"
+   ],
+   "jsd": 0.3436
+  },
+  "German vs German": {
+   "jaccard": 0.1608,
+   "typesX_in_Y": 0.2874,
+   "tokX_in_Y": 0.7081,
+   "top100_X_in_Y": 0.87,
+   "top100_missing": [
+    "wenk",
+    "hull",
+    "herr",
+    "spiel",
+    "selber",
+    "karten",
+    "balling",
+    "carozza",
+    "karstens",
+    "staatsanwalt",
+    "mark",
+    "basch"
+   ],
+   "jsd": 0.3749
+  },
+  "German vs Dutch": {
+   "jaccard": 0.0178,
+   "typesX_in_Y": 0.035,
+   "tokX_in_Y": 0.1968,
+   "top100_X_in_Y": 0.19,
+   "top100_missing": [
+    "und",
+    "sich",
+    "zu",
+    "das",
+    "sie",
+    "mit",
+    "es",
+    "hatte",
+    "nicht",
+    "ein",
+    "eine",
+    "ihm"
+   ],
+   "jsd": 0.8846
+  },
+  "Vergil vs Augustine": {
+   "jaccard": 0.0838,
+   "typesX_in_Y": 0.1382,
+   "tokX_in_Y": 0.339,
+   "top100_X_in_Y": 0.71,
+   "top100_missing": [
+    "quae",
+    "iam",
+    "haec",
+    "circum",
+    "arma",
+    "aeneas",
+    "moenia",
+    "danaum",
+    "urbem",
+    "sanguine",
+    "troiae",
+    "troia"
+   ],
+   "jsd": 0.6553
+  },
+  "Latin vs Italian": {
+   "jaccard": 0.0351,
+   "typesX_in_Y": 0.0588,
+   "tokX_in_Y": 0.3232,
+   "top100_X_in_Y": 0.43,
+   "top100_missing": [
+    "mihi",
+    "quam",
+    "quo",
+    "quæ",
+    "quia",
+    "domine",
+    "meus",
+    "autem",
+    "mea",
+    "aut",
+    "nisi",
+    "vel"
+   ],
+   "jsd": 0.8129
+  },
+  "French vs Italian": {
+   "jaccard": 0.0147,
+   "typesX_in_Y": 0.0308,
+   "tokX_in_Y": 0.3044,
+   "top100_X_in_Y": 0.28,
+   "top100_missing": [
+    "à",
+    "les",
+    "en",
+    "pas",
+    "du",
+    "dans",
+    "une",
+    "qu",
+    "pour",
+    "je",
+    "on",
+    "vous"
+   ],
+   "jsd": 0.8377
+  }
+ },
+ "E_top100_at_3315": {
+  "Voynich A vs B(random nA)": 0.77,
+  "Voynich A half vs A half": 0.99,
+  "Danish vs Norwegian": 0.59,
+  "Danish vs Swedish": 0.42,
+  "Danish vs Danish": 0.61,
+  "English vs English": 0.79,
+  "German vs German": 0.81,
+  "German vs Dutch": 0.11,
+  "Vergil vs Augustine": 0.53,
+  "Latin vs Italian": 0.31,
+  "French vs Italian": 0.26
+ },
+ "F_bound": {
+  "claimed": "chi2/n bounded by #sections-1",
+  "correct": "chi2/n <= (1-p_min)/p_min where p_min = smallest section share",
+  "whole_ms": 48.0,
+  "n_sections_minus_1": 5
+ },
+ "F_whole": {
+  "n_words": 257,
+  "mean": 0.6537,
+  "median": 0.4871,
+  "frac_gt_0_5": 0.4864,
+  "top10": [
+   [
+    "shedy",
+    421,
+    0.876,
+    "B"
+   ],
+   [
+    "qokain",
+    278,
+    1.224,
+    "B"
+   ],
+   [
+    "qokedy",
+    269,
+    1.065,
+    "B"
+   ],
+   [
+    "qol",
+    138,
+    2.074,
+    "B"
+   ],
+   [
+    "qokeedy",
+    303,
+    0.865,
+    "B"
+   ],
+   [
+    "daiin",
+    764,
+    0.332,
+    "P"
+   ],
+   [
+    "ol",
+    523,
+    0.433,
+    "B"
+   ],
+   [
+    "okeol",
+    56,
+    3.52,
+    "P"
+   ],
+   [
+    "chedy",
+    488,
+    0.386,
+    "B"
+   ],
+   [
+    "chor",
+    193,
+    0.954,
+    "H"
+   ]
+  ]
+ },
+ "F_within_B": {
+  "voynich": {
+   "n_words": 184,
+   "mean": 0.3367,
+   "median": 0.2547,
+   "frac_gt_0_5": 0.2011,
+   "top10": [
+    [
+     "qol",
+     132,
+     1.218,
+     "B"
+    ],
+    [
+     "ol",
+     408,
+     0.371,
+     "B"
+    ],
+    [
+     "qokain",
+     273,
+     0.534,
+     "B"
+    ],
+    [
+     "shedy",
+     411,
+     0.342,
+     "B"
+    ],
+    [
+     "qokedy",
+     264,
+     0.511,
+     "B"
+    ],
+    [
+     "qokal",
+     164,
+     0.57,
+     "B"
+    ],
+    [
+     "qokeedy",
+     302,
+     0.276,
+     "B"
+    ],
+    [
+     "ar",
+     255,
+     0.248,
+     "T"
+    ],
+    [
+     "sol",
+     43,
+     1.451,
+     "B"
+    ],
+    [
+     "chdy",
+     117,
+     0.53,
+     "H"
+    ]
+   ]
+  },
+  "shuffled_mean_of_5": 0.0771,
+  "italian_spread": {
+   "n_words": 129,
+   "mean": 0.4123,
+   "median": 0.2103,
+   "frac_gt_0_5": 0.2713,
+   "top10": [
+    [
+     "e",
+     367,
+     0.75,
+     "S"
+    ],
+    [
+     "et",
+     574,
+     0.209,
+     "H"
+    ],
+    [
+     "maestc",
+     32,
+     3.35,
+     "H"
+    ],
+    [
+     "s",
+     255,
+     0.376,
+     "S"
+    ],
+    [
+     "m",
+     105,
+     0.88,
+     "S"
+    ],
+    [
+     "sua",
+     155,
+     0.585,
+     "H"
+    ],
+    [
+     "h",
+     42,
+     1.832,
+     "H"
+    ],
+    [
+     "mauritio",
+     27,
+     2.624,
+     "B"
+    ],
+    [
+     "maesta",
+     48,
+     1.244,
+     "B"
+    ],
+    [
+     "d",
+     76,
+     0.678,
+     "S"
+    ]
+   ]
+  },
+  "latin_augustine_spread": {
+   "n_words": 152,
+   "mean": 0.3004,
+   "median": 0.1987,
+   "frac_gt_0_5": 0.2105,
+   "top10": [
+    [
+     "est",
+     326,
+     0.353,
+     "S"
+    ],
+    [
+     "tempus",
+     77,
+     0.868,
+     "S"
+    ],
+    [
+     "coelum",
+     93,
+     0.673,
+     "S"
+    ],
+    [
+     "sunt",
+     108,
+     0.543,
+     "S"
+    ],
+    [
+     "tempora",
+     51,
+     0.989,
+     "S"
+    ],
+    [
+     "si",
+     133,
+     0.312,
+     "S"
+    ],
+    [
+     "præsens",
+     49,
+     0.833,
+     "S"
+    ],
+    [
+     "me",
+     135,
+     0.302,
+     "T"
+    ],
+    [
+     "longum",
+     38,
+     1.068,
+     "S"
+    ],
+    [
+     "non",
+     445,
+     0.087,
+     "S"
+    ]
+   ]
+  },
+  "italian_spread_offset": {
+   "n_words": 129,
+   "mean": 0.3673,
+   "median": 0.1867,
+   "frac_gt_0_5": 0.1705,
+   "top10": [
+    [
+     "que",
+     33,
+     7.926,
+     "T"
+    ],
+    [
+     "i",
+     62,
+     1.552,
+     "T"
+    ],
+    [
+     "sua",
+     335,
+     0.224,
+     "B"
+    ],
+    [
+     "che",
+     805,
+     0.077,
+     "B"
+    ],
+    [
+     "di",
+     581,
+     0.102,
+     "B"
+    ],
+    [
+     "maesta",
+     114,
+     0.498,
+     "B"
+    ],
+    [
+     "ch",
+     24,
+     1.801,
+     "B"
+    ],
+    [
+     "perch",
+     27,
+     1.576,
+     "B"
+    ],
+    [
+     "hoc",
+     36,
+     1.134,
+     "H"
+    ],
+    [
+     "h",
+     36,
+     1.101,
+     "B"
+    ]
+   ]
+  },
+  "sizes": {
+   "H": 3315,
+   "T": 2080,
+   "B": 6191,
+   "S": 10851
+  }
+ },
+ "F_within_hand2": {
+  "voynich": {
+   "n_words": 105,
+   "mean": 0.2912,
+   "median": 0.2091,
+   "frac_gt_0_5": 0.1619,
+   "top10": [
+    [
+     "qokain",
+     171,
+     0.522,
+     "B"
+    ],
+    [
+     "ar",
+     107,
+     0.794,
+     "H"
+    ],
+    [
+     "aiin",
+     146,
+     0.535,
+     "C"
+    ],
+    [
+     "qokeedy",
+     161,
+     0.423,
+     "B"
+    ],
+    [
+     "qol",
+     105,
+     0.602,
+     "B"
+    ],
+    [
+     "ol",
+     285,
+     0.17,
+     "B"
+    ],
+    [
+     "qokedy",
+     195,
+     0.204,
+     "B"
+    ],
+    [
+     "ykaiin",
+     25,
+     1.527,
+     "C"
+    ],
+    [
+     "shedy",
+     289,
+     0.125,
+     "B"
+    ],
+    [
+     "qokal",
+     119,
+     0.301,
+     "B"
+    ]
+   ]
+  },
+  "shuffled_mean_of_5": 0.0854,
+  "italian_spread": {
+   "n_words": 68,
+   "mean": 0.1948,
+   "median": 0.1057,
+   "frac_gt_0_5": 0.0882,
+   "top10": [
+    [
+     "e",
+     49,
+     1.757,
+     "C"
+    ],
+    [
+     "s",
+     51,
+     0.639,
+     "C"
+    ],
+    [
+     "signor",
+     25,
+     1.173,
+     "C"
+    ],
+    [
+     "h",
+     30,
+     0.941,
+     "H"
+    ],
+    [
+     "il",
+     147,
+     0.139,
+     "T"
+    ],
+    [
+     "et",
+     419,
+     0.049,
+     "B"
+    ],
+    [
+     "da",
+     91,
+     0.197,
+     "T"
+    ],
+    [
+     "u",
+     45,
+     0.364,
+     "H"
+    ],
+    [
+     "detto",
+     26,
+     0.552,
+     "T"
+    ],
+    [
+     "la",
+     172,
+     0.083,
+     "H"
+    ]
+   ]
+  },
+  "latin_augustine_spread": {
+   "n_words": 57,
+   "mean": 0.1878,
+   "median": 0.1389,
+   "frac_gt_0_5": 0.0702,
+   "top10": [
+    [
+     "est",
+     54,
+     0.695,
+     "C"
+    ],
+    [
+     "ps",
+     28,
+     0.832,
+     "T"
+    ],
+    [
+     "nec",
+     56,
+     0.331,
+     "C"
+    ],
+    [
+     "domine",
+     23,
+     0.759,
+     "C"
+    ],
+    [
+     "mihi",
+     71,
+     0.242,
+     "B"
+    ],
+    [
+     "et",
+     533,
+     0.025,
+     "C"
+    ],
+    [
+     "meæ",
+     20,
+     0.575,
+     "T"
+    ],
+    [
+     "erat",
+     38,
+     0.299,
+     "C"
+    ],
+    [
+     "sed",
+     89,
+     0.126,
+     "T"
+    ],
+    [
+     "non",
+     174,
+     0.063,
+     "B"
+    ]
+   ]
+  },
+  "italian_spread_offset": {
+   "n_words": 59,
+   "mean": 0.2375,
+   "median": 0.1388,
+   "frac_gt_0_5": 0.1695,
+   "top10": [
+    [
+     "sua",
+     106,
+     0.528,
+     "T"
+    ],
+    [
+     "maesta",
+     27,
+     1.541,
+     "T"
+    ],
+    [
+     "que",
+     30,
+     0.722,
+     "B"
+    ],
+    [
+     "perch",
+     20,
+     1.063,
+     "T"
+    ],
+    [
+     "cesare",
+     31,
+     0.639,
+     "B"
+    ],
+    [
+     "io",
+     37,
+     0.524,
+     "T"
+    ],
+    [
+     "e",
+     29,
+     0.641,
+     "H"
+    ],
+    [
+     "concilio",
+     43,
+     0.4,
+     "H"
+    ],
+    [
+     "mi",
+     37,
+     0.461,
+     "T"
+    ],
+    [
+     "o",
+     26,
+     0.575,
+     "C"
+    ]
+   ]
+  },
+  "sizes": {
+   "H": 2254,
+   "B": 6191,
+   "T": 1787,
+   "C": 431
+  }
+ },
+ "F_within_hand1": {
+  "voynich": {
+   "n_words": 77,
+   "mean": 0.2388,
+   "median": 0.1359,
+   "frac_gt_0_5": 0.0779,
+   "top10": [
+    [
+     "okeol",
+     37,
+     1.858,
+     "P"
+    ],
+    [
+     "qokeol",
+     31,
+     1.63,
+     "P"
+    ],
+    [
+     "okeey",
+     30,
+     1.585,
+     "P"
+    ],
+    [
+     "cheol",
+     62,
+     0.735,
+     "P"
+    ],
+    [
+     "cheody",
+     25,
+     1.319,
+     "P"
+    ],
+    [
+     "qokeey",
+     34,
+     0.822,
+     "P"
+    ],
+    [
+     "ol",
+     98,
+     0.258,
+     "P"
+    ],
+    [
+     "aiin",
+     71,
+     0.335,
+     "P"
+    ],
+    [
+     "cthy",
+     85,
+     0.247,
+     "H"
+    ],
+    [
+     "qokol",
+     45,
+     0.363,
+     "P"
+    ]
+   ]
+  },
+  "shuffled_mean_of_5": 0.0277,
+  "italian_spread": {
+   "n_words": 77,
+   "mean": 0.1076,
+   "median": 0.0462,
+   "frac_gt_0_5": 0.026,
+   "top10": [
+    [
+     "e",
+     24,
+     0.854,
+     "P"
+    ],
+    [
+     "si",
+     80,
+     0.204,
+     "P"
+    ],
+    [
+     "detto",
+     20,
+     0.749,
+     "P"
+    ],
+    [
+     "maestc",
+     48,
+     0.305,
+     "H"
+    ],
+    [
+     "io",
+     51,
+     0.263,
+     "P"
+    ],
+    [
+     "da",
+     51,
+     0.263,
+     "P"
+    ],
+    [
+     "il",
+     138,
+     0.092,
+     "P"
+    ],
+    [
+     "et",
+     392,
+     0.03,
+     "H"
+    ],
+    [
+     "h",
+     46,
+     0.251,
+     "H"
+    ],
+    [
+     "signor",
+     24,
+     0.396,
+     "P"
+    ]
+   ]
+  },
+  "latin_augustine_spread": {
+   "n_words": 61,
+   "mean": 0.0528,
+   "median": 0.0187,
+   "frac_gt_0_5": 0.0,
+   "top10": [
+    [
+     "jam",
+     43,
+     0.299,
+     "P"
+    ],
+    [
+     "ps",
+     35,
+     0.354,
+     "P"
+    ],
+    [
+     "deus",
+     58,
+     0.122,
+     "H"
+    ],
+    [
+     "erat",
+     21,
+     0.328,
+     "P"
+    ],
+    [
+     "qui",
+     43,
+     0.15,
+     "H"
+    ],
+    [
+     "tibi",
+     39,
+     0.127,
+     "P"
+    ],
+    [
+     "te",
+     99,
+     0.048,
+     "H"
+    ],
+    [
+     "ita",
+     21,
+     0.194,
+     "H"
+    ],
+    [
+     "est",
+     68,
+     0.057,
+     "H"
+    ],
+    [
+     "sed",
+     66,
+     0.055,
+     "P"
+    ]
+   ]
+  },
+  "italian_spread_offset": {
+   "n_words": 64,
+   "mean": 0.1885,
+   "median": 0.0692,
+   "frac_gt_0_5": 0.0625,
+   "top10": [
+    [
+     "e",
+     115,
+     1.576,
+     "P"
+    ],
+    [
+     "m",
+     33,
+     3.023,
+     "P"
+    ],
+    [
+     "s",
+     71,
+     0.957,
+     "P"
+    ],
+    [
+     "et",
+     344,
+     0.172,
+     "H"
+    ],
+    [
+     "a",
+     159,
+     0.099,
+     "H"
+    ],
+    [
+     "sua",
+     59,
+     0.263,
+     "H"
+    ],
+    [
+     "di",
+     353,
+     0.039,
+     "P"
+    ],
+    [
+     "non",
+     160,
+     0.082,
+     "H"
+    ],
+    [
+     "maestc",
+     40,
+     0.305,
+     "H"
+    ],
+    [
+     "con",
+     106,
+     0.115,
+     "P"
+    ]
+   ]
+  },
+  "sizes": {
+   "H": 7514,
+   "P": 2293
+  }
+ },
+ "G_entropy": {
+  "n": 4574,
+  "H_lang": 0.9698,
+  "H_lang_hand": 0.0923,
+  "H_lang_section": 0.3984,
+  "H_lang_quire": 0.2291,
+  "mixed_cells": {
+   "hand3_S": {
+    "A": 80,
+    "B": 1039
+   }
+  },
+  "note": "lang and hand are page-header variables ($L, $H) in IVTFF, so per-folio constancy is by construction, not a finding"
+ }
+}

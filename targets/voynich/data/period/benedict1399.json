@@ -1,0 +1,52 @@
+{
+ "dataset": "benedict1399",
+ "target": "benedict1399",
+ "piece": "Benedict XIII to Francesc Climent, Avignon 22 June 1400 (Puig 1920 app. XXXV), last page",
+ "date": "22 June 1400",
+ "year": 1400,
+ "date_basis": "dated in the letter",
+ "shelfmark": "Arxiu Capitular de Barcelona, Cisma d'Occident, Çapera doc. 1068; the only image is the photogravure in S. Puig y Puig, Pedro de Luna (1920), p. 475",
+ "system": "Simple substitution, one invented sign per letter (c and i share one sign, u/v one), no word division, cipher runs inside clear Latin; one name sign (dotted V = King of Aragon) and groups of null separator signs. Puig broke it in 1920; key rebuilt here from the plate.",
+ "language": "Latin",
+ "outcome": "read (Puig 1920; plate checked sign by sign, 91.4% of letters confirmed)",
+ "sign_inventory_note": "RECONSTRUCTED, not transcribed: every cipher word on the plate whose status in plate475_check.tsv is y (every sign seen and fits the key) or p (partly seen) was re-enciphered from Puig's printed word with the key of key.md; sign ids are the glyph names used in key.md and docs/reveal/benedict1399.json (checked against the sign-by-sign line 24 there). N:V̇ = the dotted-V King-of-Aragon sign (Puig 'K'); 0:SEP = one group of lambda/ʒ/ɑ-like separator signs (count of signs inside each group not recorded). Runs R1-R5 are the cipher runs between clear Latin; R2 is split where line 4's overwritten stretch is not legible.",
+ "counts": {
+  "lines": 7,
+  "sign_tokens": 788,
+  "distinct_signs": 21,
+  "letter_sign_tokens": 780,
+  "distinct_letter_signs": 19,
+  "code_sign_tokens": 4,
+  "distinct_code_signs": 1,
+  "null_tokens": 4,
+  "distinct_nulls": 1,
+  "dividers": 0,
+  "plaintext_letters": 780,
+  "words_dropped_illegible": 7,
+  "words_partly_seen": 18
+ },
+ "plaintext": "cum duce burgundie et ideo est sic negocium tenendum in suspenso iensi quod revertitur in siciliam alii vero asserunt quod factus cancellarius debet in catalonia remanere et presertim scribe quo modo se habet in negociis nostris de facto bonorum petri de bosco ideo scripsimus quod tu diceres sibi mentem nostram ne alius sibi hoc atribueret et sibi pocius deberet regraciari quam nobis ideo dices sibi quod placet nobis et sumus contenti quod recipiat ad voluntatem suam sed quod atentis tribulacione statu et expensis nostris velit in suportandis oneribus aliquem habere respectum sicut ambaxiatis et similibus quia prout nosti necessitatem nostram nisi alius respectus habeatur in futurum dubitamus ex toto deficere deficientibus provisionibus factas alias ut potes cogitare nec poterimus in futurum suficere ad necessaria quasi territus modis istorum adversariorum nostrorum qui nos hic detinent absque con gedio",
+ "plaintext_source": "Puig y Puig 1920 italics as checked word by word in plate475_check.tsv (three corrections there: tenendum, absque congedio, necessaria)",
+ "source_files": [
+  "targets/benedict1399/src/plate475_check.tsv",
+  "targets/benedict1399/key.md",
+  "docs/reveal/benedict1399.json",
+  "targets/benedict1399/NOTES.md"
+ ],
+ "caveats": [
+  "Ciphertext is reconstructed from plaintext + key, so it has no scribal slips, and the c/i and u/v mergers are the key's; the one unexplained extra stroke in 'istorum' (line 24) is not included.",
+  "18 words were only partly visible on the 1920 halftone (status p) and 7 words of line 4 (overwritten) are left out.",
+  "Separator groups are single 0:SEP tokens; their internal signs are not transcribed.",
+  "Only the last page of one letter is imaged anywhere; the other ten letters' ciphertext is not."
+ ],
+ "line_ids": ["R1", "R2a", "R2b", "R2c", "R3", "R4", "R5"],
+ "lines": [
+  ["N:V̇", "o", "cb", "ɛ", "‡", "cb", "o", "δ", "Ƭ", "cb", "ı", "ɕ", "cb", "n", "‡", "o", "δ"],
+  ["δ", "c′", "o", "‡", "δ", "ꝏ", "δ", "T", "c′", "T", "o", "o", "n", "δ", "ɕ", "ꝏ", "o", "o", "cb", "ɛ", "c′", "δ", "n", "δ", "n", "‡", "cb", "ɛ", "o", "n", "T", "cb", "T", "⊥", "δ", "n", "T", "ꝏ"],
+  ["0:SEP"],
+  ["o", "δ", "n", "T", "o"],
+  ["⊧", "cb", "ꝏ", "‡", "ı", "δ", "cb", "δ", "ı", "c′", "o", "c′", "cb", "ı", "o", "n", "T", "o", "o", "o", "ϑ", "o", "ɣ", "ɛ", "ɣ", "ϑ", "o", "o", "cb", "δ", "ı", "ꝏ", "ɣ", "T", "T", "δ", "ı", "cb", "n", "c′", "⊧", "cb", "ꝏ", "‡", "N:V̇", "Ϭ", "ɣ", "o", "c′", "cb", "T", "o", "ɣ", "n", "o", "δ", "ϑ", "ϑ", "ɣ", "ı", "o", "cb", "T", "‡", "δ", "Ƭ", "δ", "c′", "o", "n", "o", "ɣ", "c′", "ɣ", "ϑ", "ꝏ", "n", "o", "ɣ", "ı", "δ", "ɛ", "ɣ", "n", "δ", "ı", "δ"],
+  ["δ", "c′", "⊥", "ı", "δ", "T", "δ", "ı", "c′", "o", "ɛ", "T", "o", "ı", "o", "Ƭ", "δ", "⊧", "cb", "ꝏ", "ɛ", "ꝏ", "‡", "ꝏ", "T", "δ", "ʓ", "ɣ", "Ƭ", "δ", "c′", "o", "n", "n", "δ", "ɕ", "ꝏ", "o", "o", "o", "T", "n", "ꝏ", "T", "c′", "ı", "o", "T", "0:SEP", "‡", "δ", "Ϭ", "ɣ", "o", "c′", "ꝏ", "Ƭ", "ꝏ", "n", "ꝏ", "ı", "cb", "ɛ", "⊥", "δ", "c′", "ı", "o", "‡", "δ", "Ƭ", "ꝏ", "T", "o", "ꝏ", "o", "‡", "δ", "ꝏ", "T", "o", "ı", "o", "⊥", "T", "o", "ɛ", "cb", "T", "N:V̇", "⊧", "cb", "ꝏ", "‡", "c′", "cb", "‡", "o", "o", "δ", "ı", "δ", "T", "T", "o", "Ƭ", "o", "ɛ", "δ", "n", "c′", "δ", "ɛ", "n", "ꝏ", "T", "c′", "ı", "ɣ", "ɛ", "n", "δ", "ɣ", "ϑ", "o", "cb", "T", "T", "o", "Ƭ", "o", "ʓ", "ꝏ", "o", "ɣ", "c′", "ı", "o", "Ƭ", "cb", "δ", "ı", "δ", "c′", "δ", "c′", "T", "o", "Ƭ", "o", "⊥", "ꝏ", "o", "o", "cb", "T", "‡", "δ", "Ƭ", "δ", "ı", "δ", "c′", "N:V̇", "ı", "δ", "ɕ", "ı", "ɣ", "o", "o", "ɣ", "ı", "o", "⊧", "cb", "ɣ", "ɛ", "n", "ꝏ", "Ƭ", "o", "T", "o", "‡", "δ", "ꝏ", "‡", "o", "o", "δ", "T", "T", "o", "Ƭ", "o", "⊧", "cb", "ꝏ", "‡", "⊥", "ϑ", "ɣ", "o", "δ", "c′", "n", "ꝏ", "Ƭ", "o", "T", "δ", "c′", "T", "cb", "ɛ", "cb", "T", "o", "ꝏ", "n", "c′", "δ", "n", "c′", "o", "⊧", "cb", "ꝏ", "‡", "ı", "δ", "o", "o", "⊥", "o", "ɣ", "c′", "ɣ", "‡", "cb", "ꝏ", "ϑ", "cb", "n", "c′", "ɣ", "c′", "δ", "ɛ", "T", "cb", "ɣ", "ɛ", "T", "δ", "‡", "⊧", "cb", "ꝏ", "‡", "ɣ", "c′", "δ", "n", "c′", "o", "T", "c′", "ı", "o", "Ƭ", "cb", "ϑ", "ɣ", "o", "o", "ꝏ", "n", "δ", "T", "c′", "ɣ", "c′", "cb", "δ", "c′", "δ", "ɑ", "⊥", "δ", "n", "T", "o", "T", "n", "ꝏ", "T", "c′", "ı", "o", "T", "cb", "δ", "ϑ", "o", "c′", "o", "n", "T", "cb", "⊥", "ꝏ", "ı", "c′", "ɣ", "n", "‡", "o", "T", "ꝏ", "n", "δ", "ı", "o", "Ƭ", "cb", "T", "ɣ", "ϑ", "o", "⊧", "cb", "δ", "ɛ", "ʓ", "ɣ", "Ƭ", "δ", "ı", "δ", "ı", "δ", "T", "⊥", "δ", "o", "c′", "cb", "ɛ", "T", "o", "o", "cb", "c′", "ɣ", "ɛ", "Ƭ", "ɣ", "ɑ", "o", "ɣ", "c′", "o", "T", "δ", "c′", "T", "o", "ɛ", "o", "ϑ", "o", "Ƭ", "cb", "T", "⊧", "cb", "o", "ɣ", "⊥", "ı", "ꝏ", "cb", "c′", "n", "ꝏ", "T", "c′", "o", "n", "δ", "o", "δ", "T", "T", "o", "c′", "ɣ", "c′", "δ", "ɛ", "n", "ꝏ", "T", "c′", "ı", "ɣ", "ɛ", "n", "o", "T", "o", "ɣ", "ϑ", "o", "cb", "T", "ı", "δ", "T", "⊥", "δ", "o", "c′", "cb", "T", "ʓ", "ɣ", "Ƭ", "δ", "ɣ", "c′", "cb", "ı", "o", "n", "Ϭ", "cb", "c′", "cb", "ı", "cb", "ɛ", "‡", "cb", "Ƭ", "o", "c′", "ɣ", "ɛ", "cb", "T", "δ", "ɑ", "c′", "ꝏ", "c′", "ꝏ", "‡", "δ", "Ϭ", "o", "o", "δ", "ı", "δ", "‡", "δ", "Ϭ", "o", "o", "o", "δ", "n", "c′", "o", "Ƭ", "cb", "T", "⊥", "ı", "ꝏ", "cb", "o", "T", "o", "ꝏ", "n", "o", "Ƭ", "cb", "T", "Ϭ", "ɣ", "o", "c′", "ɣ", "T", "ɣ", "ϑ", "o", "ɣ", "T", "cb", "c′", "⊥", "ꝏ", "c′", "δ", "T", "o", "ꝏ", "ɕ", "o", "c′", "ɣ", "ı", "δ", "n", "δ", "o", "⊥", "ꝏ", "c′", "δ", "ı", "o", "ɛ", "cb", "T", "o", "n", "Ϭ", "cb", "c′", "cb", "ı", "cb", "ɛ", "T", "cb", "Ϭ", "o", "o", "δ", "ı", "δ", "ɣ", "‡", "n", "δ", "o", "δ", "T", "T", "ɣ", "ı", "o", "ɣ", "0:SEP"],
+  ["0:SEP", "⊧", "cb", "ɣ", "T", "o", "c′", "δ", "ı", "ı", "o", "c′", "cb", "T", "ɛ", "ꝏ", "‡", "o", "T", "o", "T", "c′", "ꝏ", "ı", "cb", "ɛ", "ɣ", "‡", "cb", "δ", "ı", "T", "ɣ", "ı", "o", "ꝏ", "ı", "cb", "ɛ", "n", "ꝏ", "T", "c′", "ı", "ꝏ", "ı", "cb", "ɛ", "⊧", "cb", "o", "n", "ꝏ", "T", "ʓ", "o", "o", "‡", "δ", "c′", "o", "n", "δ", "n", "c′", "ɣ", "Ƭ", "T", "⊧", "cb", "δ", "o", "ꝏ", "n", "ɕ", "δ", "‡", "o", "ꝏ"]
+ ]
+}

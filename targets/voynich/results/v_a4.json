@@ -1,0 +1,990 @@
+{
+ "data": {
+  "pages": 207,
+  "lines": 4130,
+  "tokens_kept": 34116,
+  "tokens_raw_P": 34310,
+  "dropped": {
+   "has ?": 98,
+   "has @": 73,
+   "other non a-z": 23
+  },
+  "dropped_examples": {
+   "has ?": [
+    "d?n",
+    "?o",
+    "o?chol",
+    "k?dchy",
+    "?eo?",
+    "qot?y",
+    "?ain",
+    "?"
+   ],
+   "has @": [
+    "@192;chy",
+    "@130;tol",
+    "@163;schoraiin",
+    "@135;otchoshor",
+    "@135;odaiin",
+    "@152;ar",
+    "@137;chol",
+    "@138;chor"
+   ],
+   "other non a-z": [
+    "qo'ky",
+    "e'a'iin",
+    "q'o",
+    "che'eky",
+    "qo'k",
+    "qo'd",
+    "y'",
+    "dy'"
+   ]
+  }
+ },
+ "levenshtein_check": {
+  "pairs_checked": 25404,
+  "disagreements": []
+ },
+ "voynich_recheck": {
+  "bruteforce_all": {
+   "n": 34116,
+   "coverage": 0.643100011724704,
+   "median": 14.0,
+   "within10": 0.2693457615195216,
+   "within30": 0.46248094735607925,
+   "prev2lines": 0.40541095087349044,
+   "same_line": 0.13747215382811584
+  },
+  "bruteforce_len>=5": {
+   "n": 21746,
+   "coverage": 0.5660811183665961,
+   "median": 15.0,
+   "within10": 0.2245010576657776,
+   "within30": 0.38972684631656396,
+   "prev2lines": 0.34291363928998436,
+   "same_line": 0.10903154603145405
+  },
+  "a4_function_all": {
+   "coverage": 0.643100011724704,
+   "median_distance_given_hit": 14.0,
+   "mean_distance_given_hit": 30.69972652689152,
+   "frac_all_within_10": 0.2693457615195216,
+   "frac_all_within_30": 0.46248094735607925,
+   "frac_all_within_prev2lines": 0.40541095087349044,
+   "frac_all_same_line": 0.13747215382811584,
+   "frac_hits_within_10": 0.418824065633546
+  },
+  "a4_function_len>=5": {
+   "coverage": 0.5660811183665961,
+   "frac_all_within_10": 0.2245010576657776,
+   "frac_all_within_30": 0.38972684631656396,
+   "median_distance_given_hit": 15.0
+  },
+  "h1_h2_nospace_exact_conditional": [
+   3.865,
+   2.311
+  ],
+  "h1_h2_withspace": [
+   3.8738,
+   2.117
+  ],
+  "zipf_slope_f1000_f100": [
+   -1.0403,
+   4,
+   55
+  ],
+  "a4_general": {
+   "tokens": 34116,
+   "types": 7236,
+   "TTR": 0.21209989447766445,
+   "h1_letters": 3.865,
+   "h2_letters": 2.3111,
+   "h1_with_space": 3.8738,
+   "h2_with_space": 2.117,
+   "zipf_slope_r1_1000": -1.0403,
+   "hapax_frac_types": 0.6972,
+   "hapax_frac_tokens": 0.1479,
+   "wordlen_mean": 5.0702,
+   "wordlen_var": 3.7336,
+   "adjacent_repeat_rate": 0.00815
+  }
+ },
+ "corpus_files": {
+  "corp_da_24747.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK SAMLEDE V\u00c6RKER, ANDET BIND ***\r"
+  },
+  "corp_da_36942.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK KONGENS FALD ***\r"
+  },
+  "corp_da_41072.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LEONORA CHRISTINA ULFELDT'S \"JAMMERS-MI"
+  },
+  "corp_da_44967.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LIVSERINDRINGER ***\r"
+  },
+  "corp_da_66058.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MED LUFTSKIB TIL MARS: FANTASTISK FREMT"
+  },
+  "corp_de_35312.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK AUS DEM LEBEN EINES TAUGENICHTS: NOVELL"
+  },
+  "corp_de_50285.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK DR. MABUSE, DER SPIELER ***\r"
+  },
+  "corp_de_56156.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK VENUS IM PELZ ***\r"
+  },
+  "corp_de_66452.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK DIE LIEBE: NOVELLE ***\r"
+  },
+  "corp_en_1342.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK PRIDE AND PREJUDICE ***\r"
+  },
+  "corp_en_2554.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK CRIME AND PUNISHMENT ***\r"
+  },
+  "corp_en_2701.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MOBY DICK; OR, THE WHALE ***\r"
+  },
+  "corp_fi_75789.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MARKIISITTAREN RIKOS ***\r"
+  },
+  "corp_fi_78071.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK KAKSI MORSIANTA ***\r"
+  },
+  "corp_fr_18143.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK ROM\u00c9O ET JULIETTE ***\r"
+  },
+  "corp_fr_19919.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MAMAN L\u00c9O ***\r"
+  },
+  "corp_fr_62215.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LE FANT\u00d4ME DE L'OP\u00c9RA ***\r"
+  },
+  "corp_fr_78027.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LES ENCHANTEMENTS DE LA FOR\u00caT ***\r"
+  },
+  "corp_is_15178.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK ALASKA ***\r"
+  },
+  "corp_is_16696.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LEI\u00d0ARV\u00cdSIR \u00cd \u00c1STAM\u00c1LUM ***\r"
+  },
+  "corp_is_16846.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MJALLHV\u00cdT: \u00c6FINT\u00ddRI HANDA B\u00d6RNUM ***\r"
+  },
+  "corp_is_17025.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK S\u00c6FARINN (FER\u00d0IN KRING UM HN\u00d6TTIN NE\u00d0AN"
+  },
+  "corp_is_19960.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK H\u00daSAB\u00c6TUR \u00c1 SVEITAB\u00c6JUM: UPPDR\u00c6TTIR OG "
+  },
+  "corp_la_227.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK AENEIDOS ***\r"
+  },
+  "corp_la_33849.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK CONFESSIONES ***\r"
+  },
+  "corp_la_50280.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LATIN PHRASE-BOOK ***\r"
+  },
+  "corp_nl_76186.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LORD LISTER NO. 0032: DE BLAUWE DOOD **"
+  },
+  "corp_nl_76280.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MATHIAS SANDORF [1] ***\r"
+  },
+  "corp_nl_76761.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LORD LISTER NO. 0033: DE ALARMKREET ***"
+  },
+  "corp_nl_76765.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK LORD LISTER NO. 0333: DE LIEFDE VAN EEN"
+  },
+  "corp_no_30027.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK SULT ***\r"
+  },
+  "corp_no_43724.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MARKENS GR\u00d8DE, F\u00d8RSTE DEL ***\r"
+  },
+  "corp_no_59635.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK NORSK LITERATURHISTORIE FOR GYMNASIET, "
+  },
+  "corp_no_77368.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK SKUM ***\r"
+  },
+  "corp_sv_48961.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK EN PIGA BLAND PIGOR ***\r"
+  },
+  "corp_sv_59341.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK \u00c4DELT VILDT: EN FAMILJEHISTORIA ***\r"
+  },
+  "corp_sv_62635.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK MOLOKS LEENDE: ROMAN ***\r"
+  },
+  "corp_sv_62806.txt": {
+   "encoding": "utf-8",
+   "title": "*** START OF THE PROJECT GUTENBERG EBOOK K\u00c5TORNAS FOLK ***\r"
+  }
+ },
+ "corpus_info": {
+  "la": {
+   "files_used": [
+    [
+     "corp_la_227.txt",
+     "utf-8",
+     63791
+    ]
+   ],
+   "a4_vs_fixed_positions_differ": 0,
+   "a4_types": 11383,
+   "fixed_types": 11383,
+   "fixed_words_with_nonascii_letter": 0,
+   "frac_1char_tokens_fixed": 0.0038,
+   "a4_first_words": "publi vergili maronis aeneidos liber i arma virumque cano troiae qui primus ab oris italiam fato profugus laviniaque venit litora multum ille et terris iactatus",
+   "fixed_first_words": "publi vergili maronis aeneidos liber i arma virumque cano troiae qui primus ab oris italiam fato profugus laviniaque venit litora multum ille et terris iactatus"
+  },
+  "it": {
+   "files_used": [
+    [
+     "corpus_it.txt",
+     "utf-8",
+     null
+    ]
+   ],
+   "a4_vs_fixed_positions_differ": 0,
+   "a4_types": 6762,
+   "fixed_types": 6762,
+   "fixed_words_with_nonascii_letter": 0,
+   "frac_1char_tokens_fixed": 0.0491,
+   "a4_first_words": "cumque predictus fcrdiuandu s rex nuper in romanorum regem electus et in aquisgrana coronatus fuerit fraternitasque tua eundem ferdinandum regem ad quecunquc loca ad que",
+   "fixed_first_words": "cumque predictus fcrdiuandu s rex nuper in romanorum regem electus et in aquisgrana coronatus fuerit fraternitasque tua eundem ferdinandum regem ad quecunquc loca ad que"
+  },
+  "de": {
+   "files_used": [
+    [
+     "corp_de_35312.txt",
+     "utf-8",
+     31388
+    ],
+    [
+     "corp_de_50285.txt",
+     "utf-8",
+     73899
+    ]
+   ],
+   "a4_vs_fixed_positions_differ": 0,
+   "a4_types": 5551,
+   "fixed_types": 5551,
+   "fixed_words_with_nonascii_letter": 3041,
+   "frac_1char_tokens_fixed": 0.0007,
+   "a4_first_words": "produced by jana srna and the online distributed proofreading team at https www pgdp net anmerkungen zur transkription schreibweise und interpunktion des originaltextes wurden \u00fcbernommen",
+   "fixed_first_words": "produced by jana srna and the online distributed proofreading team at https www pgdp net anmerkungen zur transkription schreibweise und interpunktion des originaltextes wurden \u00fcbernommen"
+  },
+  "en": {
+   "files_used": [
+    [
+     "corp_en_1342.txt",
+     "utf-8",
+     128559
+    ]
+   ],
+   "a4_vs_fixed_positions_differ": 0,
+   "a4_types": 3976,
+   "fixed_types": 3976,
+   "fixed_words_with_nonascii_letter": 8,
+   "frac_1char_tokens_fixed": 0.0406,
+   "a4_first_words": "illustration george allen publisher charing cross road london ruskin house illustration reading jane s letters chap pride and prejudice by jane austen with a preface",
+   "fixed_first_words": "illustration george allen publisher charing cross road london ruskin house illustration reading jane s letters chap pride and prejudice by jane austen with a preface"
+  },
+  "da": {
+   "files_used": [
+    [
+     "corp_da_24747.txt",
+     "utf-8",
+     53237
+    ]
+   ],
+   "a4_vs_fixed_positions_differ": 0,
+   "a4_types": 7851,
+   "fixed_types": 7851,
+   "fixed_words_with_nonascii_letter": 3948,
+   "frac_1char_tokens_fixed": 0.0402,
+   "a4_first_words": "produced by louise hope steen christensen and the online distributed proofreading team at http www pgdp net jeppe aakj\u00e6r samlede v\u00e6rker andet bind digte gyldendalske",
+   "fixed_first_words": "produced by louise hope steen christensen and the online distributed proofreading team at http www pgdp net jeppe aakj\u00e6r samlede v\u00e6rker andet bind digte gyldendalske"
+  },
+  "da_prose": {
+   "files_used": [
+    [
+     "corp_da_36942.txt",
+     "utf-8",
+     70025
+    ]
+   ],
+   "first_words": "johannes v jensen kongens fald gyldendalske boghandel nordisk forlag kj\u00f8benhavn kristiania london berlin mdccccxxii copyright by johannes v jensen fjerde oplag trykt ialt i eksemplarer"
+  },
+  "la_alt": {
+   "files_used": [
+    [
+     "corp_la_33849.txt",
+     "utf-8",
+     135590
+    ]
+   ],
+   "first_words": "s aurelii augustini confessiones post editionem parisiensem novissimam ad fidem codicum oxoniensium recognit\u00e6 et post editionem m dubois ex ipso augustino illustrat\u00e6 oxonii j h"
+  },
+  "en_body": {
+   "preface_words_skipped": 4939
+  }
+ },
+ "comparison": {
+  "voynich_raw": {
+   "cover": 0.643,
+   "median": 14.0,
+   "within10": 0.269,
+   "within30": 0.462,
+   "prev2": 0.405,
+   "within10_wpshuf": 0.238,
+   "within10_gshuf": 0.167,
+   "long5_within10": 0.225,
+   "long5_cover": 0.566,
+   "page_anyLD1": 0.782,
+   "page_exact": 0.445,
+   "page_LD1other": 0.77,
+   "net_types_nb": 0.819,
+   "net_giant": 0.802,
+   "types": 7236,
+   "h1": 3.865,
+   "h2": 2.3111,
+   "zipf": -1.0403,
+   "hapax_types": 0.6972,
+   "hapax_tokens": 0.1479,
+   "wlen_mean": 5.0702,
+   "wlen_var": 3.7336,
+   "adj_rep": 0.00815,
+   "top5": "daiin ol chedy aiin shedy"
+  },
+  "la_a4decode": {
+   "cover": 0.196,
+   "median": 41.0,
+   "within10": 0.035,
+   "within30": 0.082,
+   "prev2": 0.066,
+   "within10_wpshuf": 0.034,
+   "within10_gshuf": 0.03,
+   "long5_within10": 0.006,
+   "long5_cover": 0.082,
+   "page_anyLD1": 0.297,
+   "page_exact": 0.183,
+   "page_LD1other": 0.206,
+   "net_types_nb": 0.615,
+   "net_giant": 0.308,
+   "types": 11383,
+   "h1": 4.0249,
+   "h2": 3.5091,
+   "zipf": -0.6978,
+   "hapax_types": 0.5991,
+   "hapax_tokens": 0.1999,
+   "wlen_mean": 5.7628,
+   "wlen_var": 4.8816,
+   "adj_rep": 0.00032,
+   "top5": "et in nec per ad"
+  },
+  "it_a4decode": {
+   "cover": 0.477,
+   "median": 17.0,
+   "within10": 0.168,
+   "within30": 0.324,
+   "prev2": 0.278,
+   "within10_wpshuf": 0.173,
+   "within10_gshuf": 0.165,
+   "long5_within10": 0.017,
+   "long5_cover": 0.175,
+   "page_anyLD1": 0.607,
+   "page_exact": 0.433,
+   "page_LD1other": 0.487,
+   "net_types_nb": 0.633,
+   "net_giant": 0.329,
+   "types": 6762,
+   "h1": 3.9414,
+   "h2": 3.4513,
+   "zipf": -1.025,
+   "hapax_types": 0.6652,
+   "hapax_tokens": 0.1318,
+   "wlen_mean": 4.5409,
+   "wlen_var": 6.5817,
+   "adj_rep": 0.00076,
+   "top5": "et di che a non"
+  },
+  "de_a4decode": {
+   "cover": 0.455,
+   "median": 21.0,
+   "within10": 0.128,
+   "within30": 0.277,
+   "prev2": 0.232,
+   "within10_wpshuf": 0.131,
+   "within10_gshuf": 0.128,
+   "long5_within10": 0.017,
+   "long5_cover": 0.17,
+   "page_anyLD1": 0.589,
+   "page_exact": 0.47,
+   "page_LD1other": 0.445,
+   "net_types_nb": 0.497,
+   "net_giant": 0.274,
+   "types": 5551,
+   "h1": 4.162,
+   "h2": 3.3917,
+   "zipf": -1.0397,
+   "hapax_types": 0.5972,
+   "hapax_tokens": 0.0972,
+   "wlen_mean": 4.8678,
+   "wlen_var": 6.3305,
+   "adj_rep": 0.00114,
+   "top5": "und die ich der in"
+  },
+  "de_fixeddecode": {
+   "cover": 0.455,
+   "median": 21.0,
+   "within10": 0.128,
+   "within30": 0.277,
+   "prev2": 0.232,
+   "within10_wpshuf": 0.131,
+   "within10_gshuf": 0.128,
+   "long5_within10": 0.017,
+   "long5_cover": 0.17,
+   "page_anyLD1": 0.589,
+   "page_exact": 0.47,
+   "page_LD1other": 0.445,
+   "net_types_nb": 0.497,
+   "net_giant": 0.274,
+   "types": 5551,
+   "h1": 4.162,
+   "h2": 3.3917,
+   "zipf": -1.0397,
+   "hapax_types": 0.5972,
+   "hapax_tokens": 0.0972,
+   "wlen_mean": 4.8678,
+   "wlen_var": 6.3305,
+   "adj_rep": 0.00114,
+   "top5": "und die ich der in"
+  },
+  "en_a4decode": {
+   "cover": 0.5,
+   "median": 17.0,
+   "within10": 0.176,
+   "within30": 0.34,
+   "prev2": 0.293,
+   "within10_wpshuf": 0.177,
+   "within10_gshuf": 0.164,
+   "long5_within10": 0.019,
+   "long5_cover": 0.148,
+   "page_anyLD1": 0.633,
+   "page_exact": 0.534,
+   "page_LD1other": 0.463,
+   "net_types_nb": 0.413,
+   "net_giant": 0.188,
+   "types": 3976,
+   "h1": 4.1843,
+   "h2": 3.6015,
+   "zipf": -1.0776,
+   "hapax_types": 0.5008,
+   "hapax_tokens": 0.0584,
+   "wlen_mean": 4.3893,
+   "wlen_var": 5.9836,
+   "adj_rep": 0.0005,
+   "top5": "the to and of a"
+  },
+  "da_a4decode": {
+   "cover": 0.502,
+   "median": 15.0,
+   "within10": 0.196,
+   "within30": 0.356,
+   "prev2": 0.309,
+   "within10_wpshuf": 0.172,
+   "within10_gshuf": 0.138,
+   "long5_within10": 0.035,
+   "long5_cover": 0.153,
+   "page_anyLD1": 0.639,
+   "page_exact": 0.46,
+   "page_LD1other": 0.53,
+   "net_types_nb": 0.668,
+   "net_giant": 0.55,
+   "types": 7851,
+   "h1": 4.238,
+   "h2": 3.6694,
+   "zipf": -0.9327,
+   "hapax_types": 0.6045,
+   "hapax_tokens": 0.1391,
+   "wlen_mean": 4.1476,
+   "wlen_var": 4.6542,
+   "adj_rep": 0.00378,
+   "top5": "og i en den det"
+  },
+  "da_fixeddecode": {
+   "cover": 0.502,
+   "median": 15.0,
+   "within10": 0.196,
+   "within30": 0.356,
+   "prev2": 0.309,
+   "within10_wpshuf": 0.172,
+   "within10_gshuf": 0.138,
+   "long5_within10": 0.035,
+   "long5_cover": 0.153,
+   "page_anyLD1": 0.639,
+   "page_exact": 0.46,
+   "page_LD1other": 0.53,
+   "net_types_nb": 0.668,
+   "net_giant": 0.55,
+   "types": 7851,
+   "h1": 4.238,
+   "h2": 3.6694,
+   "zipf": -0.9327,
+   "hapax_types": 0.6045,
+   "hapax_tokens": 0.1391,
+   "wlen_mean": 4.1476,
+   "wlen_var": 4.6542,
+   "adj_rep": 0.00378,
+   "top5": "og i en den det"
+  },
+  "da_prose_fixed": {
+   "cover": 0.474,
+   "median": 19,
+   "within10": 0.145,
+   "within30": 0.309,
+   "prev2": 0.259,
+   "within10_wpshuf": 0.153,
+   "within10_gshuf": 0.144,
+   "long5_within10": 0.017,
+   "long5_cover": 0.156,
+   "page_anyLD1": 0.606,
+   "page_exact": 0.483,
+   "page_LD1other": 0.438,
+   "net_types_nb": 0.552,
+   "net_giant": 0.37,
+   "types": 6273,
+   "h1": 4.1304,
+   "h2": 3.5255,
+   "zipf": -1.0316,
+   "hapax_types": 0.6284,
+   "hapax_tokens": 0.1155,
+   "wlen_mean": 4.3866,
+   "wlen_var": 5.1749,
+   "adj_rep": 0.00185,
+   "top5": "og han i var en"
+  },
+  "la_alt_fixed": {
+   "cover": 0.372,
+   "median": 19,
+   "within10": 0.126,
+   "within30": 0.235,
+   "prev2": 0.203,
+   "within10_wpshuf": 0.106,
+   "within10_gshuf": 0.094,
+   "long5_within10": 0.032,
+   "long5_cover": 0.136,
+   "page_anyLD1": 0.5,
+   "page_exact": 0.384,
+   "page_LD1other": 0.342,
+   "net_types_nb": 0.503,
+   "net_giant": 0.163,
+   "types": 9486,
+   "h1": 4.0351,
+   "h2": 3.5005,
+   "zipf": -0.9562,
+   "hapax_types": 0.6744,
+   "hapax_tokens": 0.1875,
+   "wlen_mean": 5.4236,
+   "wlen_var": 7.9056,
+   "adj_rep": 0.00038,
+   "top5": "et in non te sed"
+  },
+  "en_body_fixed": {
+   "cover": 0.501,
+   "median": 17,
+   "within10": 0.172,
+   "within30": 0.339,
+   "prev2": 0.291,
+   "within10_wpshuf": 0.175,
+   "within10_gshuf": 0.168,
+   "long5_within10": 0.016,
+   "long5_cover": 0.147,
+   "page_anyLD1": 0.635,
+   "page_exact": 0.535,
+   "page_LD1other": 0.466,
+   "net_types_nb": 0.413,
+   "net_giant": 0.187,
+   "types": 3574,
+   "h1": 4.188,
+   "h2": 3.5947,
+   "zipf": -1.0761,
+   "hapax_types": 0.4675,
+   "hapax_tokens": 0.049,
+   "wlen_mean": 4.3609,
+   "wlen_var": 5.9017,
+   "adj_rep": 0.00044,
+   "top5": "the to and of a"
+  },
+  "voynich_mergeA_icount_kept": {
+   "cover": 0.692,
+   "median": 12.0,
+   "within10": 0.325,
+   "within30": 0.527,
+   "prev2": 0.467,
+   "within10_wpshuf": 0.29,
+   "within10_gshuf": 0.215,
+   "long5_within10": 0.196,
+   "long5_cover": 0.508,
+   "page_anyLD1": 0.819,
+   "page_exact": 0.446,
+   "page_LD1other": 0.813,
+   "net_types_nb": 0.843,
+   "net_giant": 0.835,
+   "types": 7207,
+   "h1": 3.9492,
+   "h2": 2.683,
+   "zipf": -1.0422,
+   "hapax_types": 0.697,
+   "hapax_tokens": 0.1472,
+   "wlen_mean": 4.1213,
+   "wlen_var": 2.5013,
+   "adj_rep": 0.0083,
+   "top5": "daN ol Cedy aN Sedy",
+   "n_types_after_merge": 7207
+  },
+  "voynich_mergeB_a4": {
+   "cover": 0.698,
+   "median": 11,
+   "within10": 0.336,
+   "within30": 0.537,
+   "prev2": 0.478,
+   "within10_wpshuf": 0.302,
+   "within10_gshuf": 0.227,
+   "long5_within10": 0.201,
+   "long5_cover": 0.515,
+   "page_anyLD1": 0.823,
+   "page_exact": 0.456,
+   "page_LD1other": 0.817,
+   "net_types_nb": 0.842,
+   "net_giant": 0.835,
+   "types": 7053,
+   "h1": 3.9115,
+   "h2": 2.6462,
+   "zipf": -1.0515,
+   "hapax_types": 0.6949,
+   "hapax_tokens": 0.1437,
+   "wlen_mean": 4.1213,
+   "wlen_var": 2.5013,
+   "adj_rep": 0.00909,
+   "top5": "daN aN qokaN ol Cedy",
+   "n_types_after_merge": 7053
+  },
+  "markov3_voynich": {
+   "cover": 0.579,
+   "median": 19.0,
+   "within10": 0.194,
+   "within30": 0.383,
+   "prev2": 0.324,
+   "within10_wpshuf": 0.194,
+   "within10_gshuf": 0.194,
+   "long5_within10": 0.119,
+   "long5_cover": 0.427,
+   "page_anyLD1": 0.715,
+   "page_exact": 0.375,
+   "page_LD1other": 0.705,
+   "net_types_nb": 0.732,
+   "net_giant": 0.699,
+   "types": 8134,
+   "h1": 3.8658,
+   "h2": 2.373,
+   "zipf": -1.0757,
+   "hapax_types": 0.7526,
+   "hapax_tokens": 0.1794,
+   "wlen_mean": 5.0478,
+   "wlen_var": 5.5024,
+   "adj_rep": 0.00484,
+   "top5": "ol chedy daiin chey chy",
+   "frac_tokens_that_are_real_source_types": 0.813
+  },
+  "markov3_da_prose": {
+   "cover": 0.449,
+   "median": 20,
+   "within10": 0.143,
+   "within30": 0.287,
+   "prev2": 0.243,
+   "within10_wpshuf": 0.143,
+   "within10_gshuf": 0.142,
+   "long5_within10": 0.007,
+   "long5_cover": 0.078,
+   "page_anyLD1": 0.567,
+   "page_exact": 0.293,
+   "page_LD1other": 0.544,
+   "net_types_nb": 0.625,
+   "net_giant": 0.585,
+   "types": 12614,
+   "h1": 4.1331,
+   "h2": 3.5385,
+   "zipf": -0.9815,
+   "hapax_types": 0.8108,
+   "hapax_tokens": 0.2998,
+   "wlen_mean": 4.3837,
+   "wlen_var": 6.2408,
+   "adj_rep": 0.0049,
+   "top5": "og i de en han",
+   "frac_tokens_that_are_real_source_types": 0.441
+  },
+  "markov3_de_fixed": {
+   "cover": 0.424,
+   "median": 21.0,
+   "within10": 0.126,
+   "within30": 0.264,
+   "prev2": 0.221,
+   "within10_wpshuf": 0.128,
+   "within10_gshuf": 0.126,
+   "long5_within10": 0.005,
+   "long5_cover": 0.067,
+   "page_anyLD1": 0.541,
+   "page_exact": 0.26,
+   "page_LD1other": 0.527,
+   "net_types_nb": 0.565,
+   "net_giant": 0.522,
+   "types": 13454,
+   "h1": 4.1604,
+   "h2": 3.4012,
+   "zipf": -1.0016,
+   "hapax_types": 0.8264,
+   "hapax_tokens": 0.3259,
+   "wlen_mean": 4.8575,
+   "wlen_var": 7.7065,
+   "adj_rep": 0.0029,
+   "top5": "und die ich den der",
+   "frac_tokens_that_are_real_source_types": 0.34
+  },
+  "markov3_it": {
+   "cover": 0.465,
+   "median": 14.0,
+   "within10": 0.195,
+   "within30": 0.347,
+   "prev2": 0.304,
+   "within10_wpshuf": 0.197,
+   "within10_gshuf": 0.197,
+   "long5_within10": 0.004,
+   "long5_cover": 0.04,
+   "page_anyLD1": 0.561,
+   "page_exact": 0.305,
+   "page_LD1other": 0.546,
+   "net_types_nb": 0.526,
+   "net_giant": 0.487,
+   "types": 13503,
+   "h1": 3.9392,
+   "h2": 3.4477,
+   "zipf": -1.0446,
+   "hapax_types": 0.852,
+   "hapax_tokens": 0.3372,
+   "wlen_mean": 4.5225,
+   "wlen_var": 9.8138,
+   "adj_rep": 0.00495,
+   "top5": "di et che a la",
+   "frac_tokens_that_are_real_source_types": 0.5
+  },
+  "markov3_en": {
+   "cover": 0.466,
+   "median": 17,
+   "within10": 0.167,
+   "within30": 0.318,
+   "prev2": 0.272,
+   "within10_wpshuf": 0.165,
+   "within10_gshuf": 0.164,
+   "long5_within10": 0.003,
+   "long5_cover": 0.042,
+   "page_anyLD1": 0.576,
+   "page_exact": 0.315,
+   "page_LD1other": 0.557,
+   "net_types_nb": 0.545,
+   "net_giant": 0.491,
+   "types": 12233,
+   "h1": 4.1887,
+   "h2": 3.6077,
+   "zipf": -1.0322,
+   "hapax_types": 0.8252,
+   "hapax_tokens": 0.2959,
+   "wlen_mean": 4.3667,
+   "wlen_var": 7.8681,
+   "adj_rep": 0.00443,
+   "top5": "to of the a i",
+   "frac_tokens_that_are_real_source_types": 0.391
+  },
+  "markov4_voynich": {
+   "cover": 0.584,
+   "median": 20.0,
+   "within10": 0.18,
+   "within30": 0.375,
+   "prev2": 0.312,
+   "within10_wpshuf": 0.185,
+   "within10_gshuf": 0.184,
+   "long5_within10": 0.134,
+   "long5_cover": 0.473,
+   "page_anyLD1": 0.729,
+   "page_exact": 0.371,
+   "page_LD1other": 0.717,
+   "net_types_nb": 0.768,
+   "net_giant": 0.737,
+   "types": 7424,
+   "h1": 3.8664,
+   "h2": 2.3625,
+   "zipf": -1.0818,
+   "hapax_types": 0.7155,
+   "hapax_tokens": 0.1557,
+   "wlen_mean": 5.0702,
+   "wlen_var": 4.4073,
+   "adj_rep": 0.00407,
+   "top5": "daiin chedy ol aiin chey",
+   "frac_tokens_that_are_real_source_types": 0.852
+  }
+ },
+ "autocopist_fidelity": {
+  "frac_tokens_in_ZL_types": 0.372,
+  "frac_tokens_in_ZL_types_freq>=2": 0.299,
+  "frac_types_in_ZL_types": 0.091,
+  "top20_autocopist_s19": [
+   [
+    "daiin",
+    280
+   ],
+   [
+    "dain",
+    242
+   ],
+   [
+    "cho",
+    232
+   ],
+   [
+    "chy",
+    216
+   ],
+   [
+    "shy",
+    210
+   ],
+   [
+    "sho",
+    196
+   ],
+   [
+    "ky",
+    143
+   ],
+   [
+    "eeo",
+    141
+   ],
+   [
+    "eey",
+    137
+   ],
+   [
+    "chol",
+    126
+   ],
+   [
+    "ko",
+    120
+   ],
+   [
+    "shol",
+    109
+   ],
+   [
+    "ey",
+    107
+   ],
+   [
+    "to",
+    105
+   ],
+   [
+    "ka",
+    103
+   ],
+   [
+    "ty",
+    99
+   ],
+   [
+    "shar",
+    95
+   ],
+   [
+    "aiin",
+    94
+   ],
+   [
+    "kar",
+    94
+   ],
+   [
+    "ochy",
+    93
+   ]
+  ],
+  "voynich_profile": {
+   "i_type": 0.191,
+   "dy_or_y_final": 0.407,
+   "gallows_initial": 0.082,
+   "qo_initial": 0.151,
+   "ch_sh_initial": 0.248,
+   "contains_e": 0.379,
+   "contains_ee": 0.125
+  },
+  "autocopist_profile": {
+   "i_type": 0.2,
+   "dy_or_y_final": 0.232,
+   "gallows_initial": 0.268,
+   "qo_initial": 0.02,
+   "ch_sh_initial": 0.178,
+   "contains_e": 0.263,
+   "contains_ee": 0.16
+  },
+  "note": "for reference: fraction of ZL P tokens whose type also occurs in ZL is 1 by definition; a Voynichese generator should reach a high share of real types"
+ },
+ "_meta": {
+  "runtime_s": 51.0
+ }
+}

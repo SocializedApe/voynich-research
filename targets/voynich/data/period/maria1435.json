@@ -1,0 +1,41 @@
+{
+ "dataset": "maria1435",
+ "target": "maria1435",
+ "piece": "Queen María of Castile to Alfonso V, register copy",
+ "date": "5 Aug 1435",
+ "year": 1435,
+ "date_basis": "dated in the register",
+ "shelfmark": "ACA, Cancillería, reg. 3225 f. 59r (DECODE R10171)",
+ "system": "Unknown. Three short cipher runs of digit-like, letter-like and figure signs inside a Catalan letter; dotted figures (sq, bp, O) may be nomenclator signs (hypothesis from the 1429 key).",
+ "language": "Catalan context (cipher unread)",
+ "outcome": "not read",
+ "sign_inventory_note": "Sign names of cipher.txt: ff, 6, 8 (plain), 8R (8 with top-right stroke), 8L (8 with left tail, only after 6), tri, sq (square hook, dotted), bp (b with bracket, dotted), O (circle with dot, dotted), t, z, a d n v M, 2 3 9, E, E2. No sign is marked N: or 0: because no key exists; the dots flanking sq, bp and O are not tokens.",
+ "counts": {
+  "lines": 3,
+  "sign_tokens": 42,
+  "distinct_signs": 21,
+  "letter_sign_tokens": 42,
+  "distinct_letter_signs": 21,
+  "code_sign_tokens": 0,
+  "distinct_code_signs": 0,
+  "null_tokens": 0,
+  "distinct_nulls": 0,
+  "dividers": 0,
+  "plaintext_letters": 0
+ },
+ "plaintext": null,
+ "plaintext_source": null,
+ "source_files": [
+  "targets/maria1435/cipher.txt",
+  "targets/maria1435/NOTES.md"
+ ],
+ "caveats": [
+  "About 40 signs in all: far too short for statistics."
+ ],
+ "line_ids": ["run1", "run2", "run3"],
+ "lines": [
+  ["ff", "6", "8L", "tri", "8", "sq", "bp", "8R", "6", "t", "8R"],
+  ["z", "a", "ff", "8R", "9", "d", "3", "8R", "v", "8R", "6", "8L", "2", "O"],
+  ["E", "n", "8R", "a", "8", "3", "2", "8R", "d", "ff", "8", "6", "8L", "E2", "8R", "M", "z"]
+ ]
+}

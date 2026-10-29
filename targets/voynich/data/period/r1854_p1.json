@@ -1,0 +1,53 @@
+{
+ "dataset": "r1854_p1",
+ "target": "r1854",
+ "piece": "Pandolfo Malatesta, archbishop of Patras, to Gianfrancesco Gonzaga (R1854 image 1)",
+ "date": "22 Apr 1428",
+ "year": 1428,
+ "date_basis": "archivist's date on the letter; signed",
+ "shelfmark": "Archivio di Stato di Mantova (Archivio Gonzaga); DECODE R1854 image 1 (I8411)",
+ "system": "Unknown. Three cipher runs of letter-like invented signs inside clear Latin, with separator marks (// : ... . |) between groups; none of the Gonzaga register's Malatesta keys fits; not monoalphabetic or homophonic in Latin/Italian under every test run.",
+ "language": "Latin context (cipher language unknown)",
+ "outcome": "not read",
+ "sign_inventory_note": "Sign names of p1v2.txt (second pass): ss, n (eta), A, H, H#, I, cc, Z, Z3, bz, K, Xb, x, y, 9, q, oo, v, vb, 8, 4, +, t+, *, O, P, F, g. All separator marks (// / | : ... .) are '|'. '&' (a grey blot, smudged or corrected sign) is treated as illegible.",
+ "counts": {
+  "lines": 11,
+  "sign_tokens": 261,
+  "distinct_signs": 28,
+  "letter_sign_tokens": 261,
+  "distinct_letter_signs": 28,
+  "code_sign_tokens": 0,
+  "distinct_code_signs": 0,
+  "null_tokens": 0,
+  "distinct_nulls": 0,
+  "dividers": 56,
+  "plaintext_letters": 0,
+  "illegible_signs": 1
+ },
+ "plaintext": null,
+ "plaintext_source": null,
+ "source_files": [
+  "targets/r1854/p1v2.txt",
+  "targets/r1854/NOTES.md",
+  "targets/r1854/profile.json"
+ ],
+ "caveats": [
+  "Short (262 signs).",
+  "The separators may themselves be cipher signs (tested in NOTES without result); here they are all mapped to '|', which merges five mark types.",
+  "Scan resolution about 15 px per sign; fine marks at the limit of the image."
+ ],
+ "line_ids": ["L04", "L05", "L06", "L07", "L08a", "L08b", "L09", "L10", "L11", "L12", "L13"],
+ "lines": [
+  ["cc", "ss", "Z"],
+  ["K", "bz", "Z", "+", "n", "A", "I", "|", "x", "|", "Z", "|", "H", "ss", "|", "t+", "vb", "+", "y", "H", "bz", "Z", "|", "oo", "9", "Z", "F", "A", "cc", "|", "Z", "|", "H#", "n", "8", "*", "|", "cc", "|", "8", "bz", "K", "cc", "O", "n", "H", "9", "+", "y", "A", "cc", "|", "ss", "|", "g", "cc", "ss", "8", "vb", "8", "bz"],
+  ["x", "n", "H", "y", "I"],
+  ["q", "x", "Z", "*", "|", "ss", "cc"],
+  ["Z", "H", "bz", "ss", "|", "A", "y", "|", "n", "I", "ss", "|", "8", "I", "v", "cc", "t+", "Z", "O", "n", "A", "cc", "|", "v", "O", "H"],
+  ["H#", "|", "A", "oo", "bz", "n", "|", "ss", "Xb", "H", "n", "y", "O", "|", "I", "H", "|", "ss", "Z", "|", "*", "H#", "bz", "cc", "n", "ss", "P", "n", "H", "I", "|", "8", "bz", "Z"],
+  ["ss", "I", "|", "ss", "n", "A", "y", "H", "n", "oo", "n", "P", "|", "oo", "bz"],
+  ["cc", "ss", "n", "v", "|", "K", "I", "n", "ss", "H", "n", "+", "A", "Xb", "|", "ss", "9", "+", "A", "bz", "P", "|", "oo"],
+  ["ss", "oo", "ss", "|", "I", "|", "n", "ss", "H", "|", "oo", "bz", "|", "H", "cc", "H#", "ss", "|", "x", "ss", "A", "n", "bz", "A", "P", "v", "H", "ss", "|", "I", "K", "ss", "O", "|", "I", "Xb", "|", "*", "H#", "v", "A", "|", "9", "ss", "|", "cc", "bz", "8", "4", "8", "|", "cc", "oo", "|", "ss", "Z", "n"],
+  ["H", "n", "A", "bz", "Z", "v", "Z", "|", "ss", "|", "Z", "v", "H", "Xb", "H", "n", "A", "v", "Z", "I", "H", "9", "|", "cc", "v", "ss", "|", "A", "|", "K", "9", "oo", "|", "8", "bz", "Z", "Z3", "Z", "9", "|", "I", "n", "I", "ss", "A", "cc", "|", "I", "|", "n", "I", "|", "I", "n", "H", "|", "ss", "cc", "ss", "bz", "A"],
+  ["cc", "ss", "|", "y", "I", "|", "ss", "Z", "K", "|", "v", "oo", "|", "oo", "|", "Xb", "A", "n", "H", "ss", "cc", "|", "K", "bz", "I"]
+ ]
+}

@@ -1,0 +1,7 @@
+data/corpora/
+data/external/
+data/RF1b-er.*
+data/GC2a-n.*
+data/CD2a-n.*
+data/IT2a-n.*
+data/ZL3b-n.txt

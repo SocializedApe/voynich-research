@@ -1,0 +1,1265 @@
+{
+ "reload": {
+  "N_a3": 34059,
+  "N_mine_raw": 34059,
+  "N_mine_merged": 34059,
+  "match": true,
+  "types_merged": 6897,
+  "a3_types": 6897,
+  "a3_pair_violation_weight": 40319,
+  "recomputed_cost_of_a3_order": 40319,
+  "pair_total_mine": 252550,
+  "a3_total": 252550,
+  "P_words_total_incl_dropped": 34310,
+  "dropped": {
+   "?": 98,
+   "nonEVA:'": 23,
+   "nonEVA:x": 21,
+   "nonEVA:b": 15,
+   "nonEVA:j": 9,
+   "nonEVA:u": 7,
+   "nonEVA:157;@": 6,
+   "nonEVA:138;@": 4,
+   "nonEVA:145;@": 4,
+   "nonEVA:z": 4,
+   "nonEVA:026;@": 4,
+   "nonEVA:135;@": 3
+  },
+  "merged_symbol_freq": {
+   "o": 22267,
+   "y": 16072,
+   "a": 12824,
+   "d": 11855,
+   "ch": 10075,
+   "l": 9471,
+   "e": 9131,
+   "k": 9102,
+   "r": 6526,
+   "iin": 5679,
+   "q": 5332,
+   "t": 5068,
+   "ee": 4280,
+   "sh": 4246,
+   "s": 2248,
+   "p": 1278,
+   "i": 1095,
+   "m": 932,
+   "cth": 850,
+   "ckh": 833,
+   "f": 342,
+   "cph": 189,
+   "g": 120,
+   "n": 118,
+   "cfh": 62,
+   "c": 3,
+   "h": 3
+  },
+  "straggler_words_c_h": [
+   "kcCy",
+   "CefalChs",
+   "Phofy",
+   "SckEy",
+   "yhal",
+   "cky"
+  ]
+ },
+ "order_search": {
+  "a3_frac": 0.15965,
+  "mine_frac": 0.15965,
+  "mine_order": [
+   "q",
+   "p",
+   "f",
+   "sh",
+   "c",
+   "ch",
+   "cfh",
+   "cph",
+   "cth",
+   "o",
+   "t",
+   "k",
+   "ckh",
+   "e",
+   "ee",
+   "d",
+   "h",
+   "s",
+   "a",
+   "i",
+   "l",
+   "r",
+   "y",
+   "g",
+   "n",
+   "iin",
+   "m"
+  ],
+  "a3_order": [
+   "q",
+   "p",
+   "f",
+   "sh",
+   "c",
+   "ch",
+   "cfh",
+   "cph",
+   "cth",
+   "o",
+   "t",
+   "k",
+   "ckh",
+   "e",
+   "ee",
+   "d",
+   "h",
+   "s",
+   "a",
+   "i",
+   "l",
+   "r",
+   "y",
+   "g",
+   "n",
+   "iin",
+   "m"
+  ]
+ },
+ "gc_v101": {
+  "n_tokens_P": 36385,
+  "n_types": 8351,
+  "alphabet": 70,
+  "mean_len": 3.87,
+  "top_chars": "o9ac1e8hy4km2C7snKpHgA3jz5(dfiMu%*ZNJI+6"
+ },
+ "corpus_diag": {
+  "la": [
+   {
+    "file": "corp_la_227.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK AENEIDOS ***",
+    "body_tokens": 63791,
+    "footer_leak_tokens_if_exhausted": 123,
+    "exhausted_within_N": false,
+    "first_words": "publi vergili maronis aeneidos liber i arma virumque cano troiae qui primus"
+   },
+   {
+    "file": "corp_la_33849.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK CONFESSIONES ***",
+    "body_tokens": 135590,
+    "footer_leak_tokens_if_exhausted": 177,
+    "exhausted_within_N": false,
+    "first_words": "s aurelii augustini confessiones post editionem parisiensem novissimam ad fidem codicum oxoniensium"
+   },
+   {
+    "file": "corp_la_50280.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK LATIN PHRASE-BOOK ***",
+    "body_tokens": 60100,
+    "footer_leak_tokens_if_exhausted": 140,
+    "exhausted_within_N": false,
+    "first_words": "latin phrase book by c meissner translated from the sixth german edition"
+   }
+  ],
+  "de": [
+   {
+    "file": "corp_de_35312.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK AUS DEM LEBEN EINES TAUGENICHTS: NOVELLE ***",
+    "body_tokens": 31388,
+    "footer_leak_tokens_if_exhausted": 162,
+    "exhausted_within_N": true,
+    "first_words": "produced by jana srna and the online distributed proofreading team at https"
+   },
+   {
+    "file": "corp_de_50285.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK DR. MABUSE, DER SPIELER ***",
+    "body_tokens": 73899,
+    "footer_leak_tokens_if_exhausted": 167,
+    "exhausted_within_N": false,
+    "first_words": "dr mabuse der spieler ullstein bücher eine sammlung zeitgenössischer romane dr mabuse"
+   },
+   {
+    "file": "corp_de_56156.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK VENUS IM PELZ ***",
+    "body_tokens": 39387,
+    "footer_leak_tokens_if_exhausted": 158,
+    "exhausted_within_N": false,
+    "first_words": "anmerkungen zur transkription der vorliegende text wurde anhand der erschienenen buchausgabe so"
+   },
+   {
+    "file": "corp_de_66452.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK DIE LIEBE: NOVELLE ***",
+    "body_tokens": 14970,
+    "footer_leak_tokens_if_exhausted": 158,
+    "exhausted_within_N": false,
+    "first_words": "illustration d v die liebe novelle von hans kaltneker donau verlag ges"
+   }
+  ],
+  "en": [
+   {
+    "file": "corp_en_1342.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK PRIDE AND PREJUDICE ***",
+    "body_tokens": 128559,
+    "footer_leak_tokens_if_exhausted": 156,
+    "exhausted_within_N": false,
+    "first_words": "illustration george allen publisher charing cross road london ruskin house illustration reading"
+   },
+   {
+    "file": "corp_en_2554.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK CRIME AND PUNISHMENT ***",
+    "body_tokens": 208782,
+    "footer_leak_tokens_if_exhausted": 144,
+    "exhausted_within_N": false,
+    "first_words": "crime and punishment by fyodor dostoevsky translated by constance garnett translator s"
+   },
+   {
+    "file": "corp_en_2701.txt",
+    "title_line": "*** START OF THE PROJECT GUTENBERG EBOOK MOBY DICK; OR, THE WHALE ***",
+    "body_tokens": 219032,
+    "footer_leak_tokens_if_exhausted": 142,
+    "exhausted_within_N": false,
+    "first_words": "moby dick or the whale by herman melville contents etymology extracts supplied"
+   }
+  ],
+  "it": {
+   "latin_marker_tokens": 2127,
+   "italian_marker_tokens": 5670,
+   "windows_1000_latin_dominated": 0,
+   "windows_total": 35,
+   "first_20": "cumque predictus fcrdiuandu s rex nuper in romanorum regem electus et in aquisgrana coronatus fuerit fraternitasque tua eundem ferdinandum regem",
+   "composition_by_window": [
+    [
+     0,
+     63,
+     138
+    ],
+    [
+     1000,
+     65,
+     163
+    ],
+    [
+     2000,
+     53,
+     188
+    ],
+    [
+     3000,
+     62,
+     150
+    ],
+    [
+     4000,
+     64,
+     145
+    ],
+    [
+     5000,
+     67,
+     161
+    ],
+    [
+     6000,
+     71,
+     162
+    ],
+    [
+     7000,
+     62,
+     178
+    ],
+    [
+     8000,
+     52,
+     153
+    ],
+    [
+     9000,
+     59,
+     157
+    ],
+    [
+     10000,
+     63,
+     147
+    ],
+    [
+     11000,
+     46,
+     164
+    ],
+    [
+     12000,
+     69,
+     184
+    ],
+    [
+     13000,
+     69,
+     159
+    ],
+    [
+     14000,
+     69,
+     150
+    ],
+    [
+     15000,
+     62,
+     173
+    ],
+    [
+     16000,
+     49,
+     153
+    ],
+    [
+     17000,
+     60,
+     176
+    ],
+    [
+     18000,
+     77,
+     158
+    ],
+    [
+     19000,
+     54,
+     149
+    ],
+    [
+     20000,
+     67,
+     155
+    ],
+    [
+     21000,
+     66,
+     143
+    ],
+    [
+     22000,
+     62,
+     165
+    ],
+    [
+     23000,
+     52,
+     211
+    ],
+    [
+     24000,
+     58,
+     180
+    ],
+    [
+     25000,
+     64,
+     174
+    ],
+    [
+     26000,
+     64,
+     173
+    ],
+    [
+     27000,
+     66,
+     147
+    ],
+    [
+     28000,
+     59,
+     187
+    ],
+    [
+     29000,
+     52,
+     187
+    ],
+    [
+     30000,
+     78,
+     167
+    ],
+    [
+     31000,
+     65,
+     195
+    ],
+    [
+     32000,
+     70,
+     195
+    ],
+    [
+     33000,
+     65,
+     171
+    ],
+    [
+     34000,
+     3,
+     12
+    ]
+   ]
+  }
+ },
+ "it_only": {
+  "n": 34059,
+  "windows_kept": 682,
+  "windows_seen": 16218,
+  "first_20": "nostra il ucscouado di pola hauendo ueduta la fidel seruitu d aurelio mio maggio schreibt am februar aus uenedig nunz",
+  "latin_marker_tokens": 0,
+  "italian_marker_tokens": 6113
+ },
+ "reseg_meanlen": {
+  "la_reseg_esm": 4.0,
+  "la_reseg_vowels": 2.23,
+  "la_reseg_st": 6.35
+ },
+ "rugg_fits": {
+  "rugg_la": {
+   "columns": [
+    20,
+    38,
+    413
+   ],
+   "la_ngram_cov_tok": 0.409,
+   "la_ngram_cov_typ": 0.181
+  },
+  "rugg_en": {
+   "columns": [
+    21,
+    36,
+    216
+   ],
+   "en_ngram_cov_tok": 0.628,
+   "en_ngram_cov_typ": 0.156
+  }
+ },
+ "main": {
+  "voy_merged": {
+   "n_tokens": 34059,
+   "n_types": 6897,
+   "mean_len": 4.11,
+   "pair_violation_frac": 0.1596,
+   "adjacent_only_violation_frac": 0.1684,
+   "length_matched_to_voynich_pair_violation": null,
+   "by_length": {
+    "2": {
+     "n_tokens": 3514,
+     "global_order": 0.0316,
+     "refit": 0.0219
+    },
+    "3": {
+     "n_tokens": 7851,
+     "global_order": 0.0755,
+     "refit": 0.0588
+    },
+    "4": {
+     "n_tokens": 8597,
+     "global_order": 0.1305,
+     "refit": 0.1252
+    },
+    "5": {
+     "n_tokens": 7396,
+     "global_order": 0.1373,
+     "refit": 0.1351
+    },
+    "6": {
+     "n_tokens": 3669,
+     "global_order": 0.1594,
+     "refit": 0.1484
+    },
+    "7": {
+     "n_tokens": 1218,
+     "global_order": 0.2151,
+     "refit": 0.1927
+    },
+    "8": {
+     "n_tokens": 361,
+     "global_order": 0.273,
+     "refit": 0.2653
+    }
+   },
+   "order": "q p f sh c ch cfh cph cth o t k ckh e ee d h s a i l r y g n iin m"
+  },
+  "voy_raw": {
+   "n_tokens": 34059,
+   "n_types": 7182,
+   "mean_len": 5.07,
+   "pair_violation_frac": 0.1574,
+   "adjacent_only_violation_frac": 0.162,
+   "length_matched_to_voynich_pair_violation": null,
+   "by_length": {
+    "2": {
+     "n_tokens": 2143,
+     "global_order": 0.0636,
+     "refit": 0.0327
+    },
+    "3": {
+     "n_tokens": 3065,
+     "global_order": 0.1061,
+     "refit": 0.0892
+    },
+    "4": {
+     "n_tokens": 6064,
+     "global_order": 0.091,
+     "refit": 0.0901
+    },
+    "5": {
+     "n_tokens": 8442,
+     "global_order": 0.1085,
+     "refit": 0.1083
+    },
+    "6": {
+     "n_tokens": 6610,
+     "global_order": 0.1428,
+     "refit": 0.1364
+    },
+    "7": {
+     "n_tokens": 3883,
+     "global_order": 0.1609,
+     "refit": 0.1457
+    },
+    "8": {
+     "n_tokens": 1568,
+     "global_order": 0.1907,
+     "refit": 0.1788
+    }
+   },
+   "order": "q p f c s h o t k e d a l y i r g n m"
+  },
+  "la": {
+   "n_tokens": 34059,
+   "n_types": 11368,
+   "mean_len": 5.76,
+   "pair_violation_frac": 0.3601,
+   "adjacent_only_violation_frac": 0.3977,
+   "length_matched_to_voynich_pair_violation": 0.3627,
+   "by_length": {
+    "2": {
+     "n_tokens": 2665,
+     "global_order": 0.6858,
+     "refit": 0.0792
+    },
+    "3": {
+     "n_tokens": 2915,
+     "global_order": 0.4593,
+     "refit": 0.1779
+    },
+    "4": {
+     "n_tokens": 3988,
+     "global_order": 0.4174,
+     "refit": 0.2976
+    },
+    "5": {
+     "n_tokens": 6107,
+     "global_order": 0.3521,
+     "refit": 0.3382
+    },
+    "6": {
+     "n_tokens": 5898,
+     "global_order": 0.3592,
+     "refit": 0.3498
+    },
+    "7": {
+     "n_tokens": 5014,
+     "global_order": 0.3627,
+     "refit": 0.3568
+    },
+    "8": {
+     "n_tokens": 3561,
+     "global_order": 0.3598,
+     "refit": 0.3545
+    }
+   },
+   "order": "z k p h f v y c d l g o x r a i n b t q u e m s"
+  },
+  "it": {
+   "n_tokens": 34059,
+   "n_types": 6758,
+   "mean_len": 4.54,
+   "pair_violation_frac": 0.3506,
+   "adjacent_only_violation_frac": 0.3808,
+   "length_matched_to_voynich_pair_violation": 0.3175,
+   "by_length": {
+    "2": {
+     "n_tokens": 7666,
+     "global_order": 0.1017,
+     "refit": 0.0496
+    },
+    "3": {
+     "n_tokens": 5738,
+     "global_order": 0.2494,
+     "refit": 0.1126
+    },
+    "4": {
+     "n_tokens": 3376,
+     "global_order": 0.3219,
+     "refit": 0.2516
+    },
+    "5": {
+     "n_tokens": 4353,
+     "global_order": 0.3384,
+     "refit": 0.309
+    },
+    "6": {
+     "n_tokens": 3935,
+     "global_order": 0.3292,
+     "refit": 0.2941
+    },
+    "7": {
+     "n_tokens": 2879,
+     "global_order": 0.3555,
+     "refit": 0.3413
+    },
+    "8": {
+     "n_tokens": 1718,
+     "global_order": 0.3772,
+     "refit": 0.3595
+    }
+   },
+   "order": "x p q b f c h u m d s g l r i a n e t o z"
+  },
+  "de": {
+   "n_tokens": 34059,
+   "n_types": 5568,
+   "mean_len": 4.87,
+   "pair_violation_frac": 0.3179,
+   "adjacent_only_violation_frac": 0.3125,
+   "length_matched_to_voynich_pair_violation": 0.2781,
+   "by_length": {
+    "2": {
+     "n_tokens": 2799,
+     "global_order": 0.3026,
+     "refit": 0.0036
+    },
+    "3": {
+     "n_tokens": 10944,
+     "global_order": 0.1476,
+     "refit": 0.13
+    },
+    "4": {
+     "n_tokens": 5033,
+     "global_order": 0.2546,
+     "refit": 0.2029
+    },
+    "5": {
+     "n_tokens": 4514,
+     "global_order": 0.294,
+     "refit": 0.2742
+    },
+    "6": {
+     "n_tokens": 4018,
+     "global_order": 0.2946,
+     "refit": 0.2807
+    },
+    "7": {
+     "n_tokens": 2005,
+     "global_order": 0.3118,
+     "refit": 0.3024
+    },
+    "8": {
+     "n_tokens": 1430,
+     "global_order": 0.3304,
+     "refit": 0.307
+    }
+   },
+   "order": "x v w p j a ü b z q ä u d s k o m y ö f l è i g c é h ß t e r n ç"
+  },
+  "en": {
+   "n_tokens": 34059,
+   "n_types": 3973,
+   "mean_len": 4.39,
+   "pair_violation_frac": 0.3393,
+   "adjacent_only_violation_frac": 0.3558,
+   "length_matched_to_voynich_pair_violation": 0.3082,
+   "by_length": {
+    "2": {
+     "n_tokens": 6507,
+     "global_order": 0.2746,
+     "refit": 0.0214
+    },
+    "3": {
+     "n_tokens": 7737,
+     "global_order": 0.2211,
+     "refit": 0.1172
+    },
+    "4": {
+     "n_tokens": 5899,
+     "global_order": 0.3226,
+     "refit": 0.2462
+    },
+    "5": {
+     "n_tokens": 3274,
+     "global_order": 0.3057,
+     "refit": 0.2778
+    },
+    "6": {
+     "n_tokens": 2601,
+     "global_order": 0.322,
+     "refit": 0.2963
+    },
+    "7": {
+     "n_tokens": 2498,
+     "global_order": 0.3205,
+     "refit": 0.3108
+    },
+    "8": {
+     "n_tokens": 1396,
+     "global_order": 0.3371,
+     "refit": 0.3286
+    }
+   },
+   "order": "é x j w z c h m p q a b o f v u ê à â r i l s k n g t e d y"
+  },
+  "voy_merged_shuf": {
+   "n_tokens": 34059,
+   "n_types": 16560,
+   "mean_len": 4.11,
+   "pair_violation_frac": 0.4935,
+   "adjacent_only_violation_frac": 0.4946,
+   "length_matched_to_voynich_pair_violation": 0.4903,
+   "by_length": {
+    "2": {
+     "n_tokens": 3514,
+     "global_order": 0.5009,
+     "refit": 0.4621
+    },
+    "3": {
+     "n_tokens": 7851,
+     "global_order": 0.4976,
+     "refit": 0.4834
+    },
+    "4": {
+     "n_tokens": 8597,
+     "global_order": 0.4956,
+     "refit": 0.4854
+    },
+    "5": {
+     "n_tokens": 7396,
+     "global_order": 0.4924,
+     "refit": 0.4885
+    },
+    "6": {
+     "n_tokens": 3669,
+     "global_order": 0.4884,
+     "refit": 0.485
+    },
+    "7": {
+     "n_tokens": 1218,
+     "global_order": 0.4963,
+     "refit": 0.4774
+    },
+    "8": {
+     "n_tokens": 361,
+     "global_order": 0.5005,
+     "refit": 0.46
+    }
+   },
+   "order": "ch cph r e ee l n cth y iin i f q k g t m o cfh p d a sh c ckh s h"
+  },
+  "la_shuf": {
+   "n_tokens": 34059,
+   "n_types": 26707,
+   "mean_len": 5.76,
+   "pair_violation_frac": 0.4953,
+   "adjacent_only_violation_frac": 0.4964,
+   "length_matched_to_voynich_pair_violation": 0.489,
+   "by_length": {
+    "2": {
+     "n_tokens": 2665,
+     "global_order": 0.4902,
+     "refit": 0.4764
+    },
+    "3": {
+     "n_tokens": 2915,
+     "global_order": 0.5016,
+     "refit": 0.4721
+    },
+    "4": {
+     "n_tokens": 3988,
+     "global_order": 0.4955,
+     "refit": 0.4834
+    },
+    "5": {
+     "n_tokens": 6107,
+     "global_order": 0.498,
+     "refit": 0.487
+    },
+    "6": {
+     "n_tokens": 5898,
+     "global_order": 0.4945,
+     "refit": 0.489
+    },
+    "7": {
+     "n_tokens": 5014,
+     "global_order": 0.4956,
+     "refit": 0.4876
+    },
+    "8": {
+     "n_tokens": 3561,
+     "global_order": 0.4957,
+     "refit": 0.4866
+    }
+   },
+   "order": "v c i d g p y a x k r m b l u f t q s e n o h z"
+  },
+  "gc_v101": {
+   "n_tokens": 34059,
+   "n_types": 7935,
+   "mean_len": 3.86,
+   "pair_violation_frac": 0.1395,
+   "adjacent_only_violation_frac": 0.1593,
+   "length_matched_to_voynich_pair_violation": null,
+   "by_length": {
+    "2": {
+     "n_tokens": 4734,
+     "global_order": 0.0304,
+     "refit": 0.0232
+    },
+    "3": {
+     "n_tokens": 8190,
+     "global_order": 0.076,
+     "refit": 0.0573
+    },
+    "4": {
+     "n_tokens": 8233,
+     "global_order": 0.1328,
+     "refit": 0.1269
+    },
+    "5": {
+     "n_tokens": 6802,
+     "global_order": 0.1387,
+     "refit": 0.1352
+    },
+    "6": {
+     "n_tokens": 3312,
+     "global_order": 0.156,
+     "refit": 0.1437
+    },
+    "7": {
+     "n_tokens": 1020,
+     "global_order": 0.1798,
+     "refit": 0.1596
+    }
+   },
+   "order": "w 4 v E g % j + f ! 2 3 1 G U J K # o l k h b F 5 R H W c A T t u d C 8 s 7 $ X a I i \\ V r e B 6 S | x ( L y P Z & z Q 9 Y M q D m n * p N"
+  },
+  "gc_v101_shuf": {
+   "n_tokens": 34059,
+   "n_types": 17208,
+   "mean_len": 3.86,
+   "pair_violation_frac": 0.4903,
+   "adjacent_only_violation_frac": 0.4934,
+   "length_matched_to_voynich_pair_violation": 0.481,
+   "by_length": {
+    "2": {
+     "n_tokens": 4734,
+     "global_order": 0.4982,
+     "refit": 0.4646
+    },
+    "3": {
+     "n_tokens": 8190,
+     "global_order": 0.4955,
+     "refit": 0.4797
+    },
+    "4": {
+     "n_tokens": 8233,
+     "global_order": 0.4908,
+     "refit": 0.4799
+    },
+    "5": {
+     "n_tokens": 6802,
+     "global_order": 0.4872,
+     "refit": 0.4835
+    },
+    "6": {
+     "n_tokens": 3312,
+     "global_order": 0.4901,
+     "refit": 0.4804
+    },
+    "7": {
+     "n_tokens": 1020,
+     "global_order": 0.4892,
+     "refit": 0.4753
+    }
+   },
+   "order": "i \\ X A B L E H G s 2 f 7 u x m t 6 T c Q y $ U W & k n I q 4 d 1 D 9 e 8 3 b w N + # o S M j K % * g a | F V Y z ( R J C ! P 5 v p l r h Z"
+  },
+  "it_only": {
+   "n_tokens": 34059,
+   "n_types": 8359,
+   "mean_len": 4.58,
+   "pair_violation_frac": 0.358,
+   "adjacent_only_violation_frac": 0.4017,
+   "length_matched_to_voynich_pair_violation": 0.3139,
+   "by_length": {
+    "2": {
+     "n_tokens": 6514,
+     "global_order": 0.187,
+     "refit": 0.1134
+    },
+    "3": {
+     "n_tokens": 6751,
+     "global_order": 0.2712,
+     "refit": 0.1412
+    },
+    "4": {
+     "n_tokens": 3152,
+     "global_order": 0.3272,
+     "refit": 0.2816
+    },
+    "5": {
+     "n_tokens": 4369,
+     "global_order": 0.332,
+     "refit": 0.304
+    },
+    "6": {
+     "n_tokens": 3519,
+     "global_order": 0.3183,
+     "refit": 0.2917
+    },
+    "7": {
+     "n_tokens": 2692,
+     "global_order": 0.3571,
+     "refit": 0.3494
+    },
+    "8": {
+     "n_tokens": 1984,
+     "global_order": 0.3797,
+     "refit": 0.3683
+    }
+   },
+   "order": "x p f q c h b u m d s g l r a i n e t o z"
+  },
+  "la_reseg_esm": {
+   "n_tokens": 34059,
+   "n_types": 9577,
+   "mean_len": 4.0,
+   "pair_violation_frac": 0.31,
+   "adjacent_only_violation_frac": 0.2977,
+   "length_matched_to_voynich_pair_violation": 0.2321,
+   "by_length": {
+    "2": {
+     "n_tokens": 6427,
+     "global_order": 0.0,
+     "refit": 0.0
+    },
+    "3": {
+     "n_tokens": 5226,
+     "global_order": 0.0885,
+     "refit": 0.0829
+    },
+    "4": {
+     "n_tokens": 4320,
+     "global_order": 0.1947,
+     "refit": 0.1809
+    },
+    "5": {
+     "n_tokens": 2966,
+     "global_order": 0.2399,
+     "refit": 0.2345
+    },
+    "6": {
+     "n_tokens": 2403,
+     "global_order": 0.2648,
+     "refit": 0.2596
+    },
+    "7": {
+     "n_tokens": 1786,
+     "global_order": 0.2992,
+     "refit": 0.2969
+    },
+    "8": {
+     "n_tokens": 1125,
+     "global_order": 0.3122,
+     "refit": 0.3093
+    }
+   },
+   "order": "n f x c p l k t h y o r a d v g i b q u z m s e"
+  },
+  "la_reseg_vowels": {
+   "n_tokens": 34059,
+   "n_types": 1249,
+   "mean_len": 2.23,
+   "pair_violation_frac": 0.0526,
+   "adjacent_only_violation_frac": 0.0666,
+   "length_matched_to_voynich_pair_violation": 0.1075,
+   "by_length": {
+    "2": {
+     "n_tokens": 16793,
+     "global_order": 0.0,
+     "refit": 0.0
+    },
+    "3": {
+     "n_tokens": 9991,
+     "global_order": 0.0745,
+     "refit": 0.0654
+    },
+    "4": {
+     "n_tokens": 1373,
+     "global_order": 0.0641,
+     "refit": 0.05
+    }
+   },
+   "order": "m b n x s c t p y r d f l v q h g z k o u a i e"
+  },
+  "la_reseg_st": {
+   "n_tokens": 30898,
+   "n_types": 14109,
+   "mean_len": 6.35,
+   "pair_violation_frac": 0.3628,
+   "adjacent_only_violation_frac": 0.3605,
+   "length_matched_to_voynich_pair_violation": 0.2284,
+   "by_length": {
+    "2": {
+     "n_tokens": 4194,
+     "global_order": 0.0,
+     "refit": 0.0
+    },
+    "3": {
+     "n_tokens": 3048,
+     "global_order": 0.1005,
+     "refit": 0.0757
+    },
+    "4": {
+     "n_tokens": 3021,
+     "global_order": 0.1863,
+     "refit": 0.1671
+    },
+    "5": {
+     "n_tokens": 2960,
+     "global_order": 0.2363,
+     "refit": 0.2219
+    },
+    "6": {
+     "n_tokens": 2658,
+     "global_order": 0.2698,
+     "refit": 0.263
+    },
+    "7": {
+     "n_tokens": 2080,
+     "global_order": 0.2888,
+     "refit": 0.2873
+    },
+    "8": {
+     "n_tokens": 1675,
+     "global_order": 0.3061,
+     "refit": 0.3038
+    }
+   },
+   "order": "z q h y f c u p r l a m g d v o e i n x b k s t"
+  },
+  "rugg_la": {
+   "n_tokens": 34059,
+   "n_types": 15067,
+   "mean_len": 4.0,
+   "pair_violation_frac": 0.3312,
+   "adjacent_only_violation_frac": 0.376,
+   "length_matched_to_voynich_pair_violation": 0.3322,
+   "by_length": {
+    "2": {
+     "n_tokens": 3756,
+     "global_order": 0.3194,
+     "refit": 0.1603
+    },
+    "3": {
+     "n_tokens": 7634,
+     "global_order": 0.3312,
+     "refit": 0.2913
+    },
+    "4": {
+     "n_tokens": 9222,
+     "global_order": 0.3326,
+     "refit": 0.3239
+    },
+    "5": {
+     "n_tokens": 7033,
+     "global_order": 0.3296,
+     "refit": 0.3211
+    },
+    "6": {
+     "n_tokens": 3756,
+     "global_order": 0.3303,
+     "refit": 0.3243
+    },
+    "7": {
+     "n_tokens": 1190,
+     "global_order": 0.3285,
+     "refit": 0.3094
+    }
+   },
+   "order": "f v h p d q i n a l u b o e c r t m s"
+  },
+  "rugg_en": {
+   "n_tokens": 34059,
+   "n_types": 5979,
+   "mean_len": 2.98,
+   "pair_violation_frac": 0.2384,
+   "adjacent_only_violation_frac": 0.2655,
+   "length_matched_to_voynich_pair_violation": 0.2387,
+   "by_length": {
+    "2": {
+     "n_tokens": 10921,
+     "global_order": 0.1574,
+     "refit": 0.1133
+    },
+    "3": {
+     "n_tokens": 10827,
+     "global_order": 0.222,
+     "refit": 0.2058
+    },
+    "4": {
+     "n_tokens": 6050,
+     "global_order": 0.25,
+     "refit": 0.2432
+    },
+    "5": {
+     "n_tokens": 2601,
+     "global_order": 0.2469,
+     "refit": 0.2325
+    },
+    "6": {
+     "n_tokens": 890,
+     "global_order": 0.2696,
+     "refit": 0.2227
+    },
+    "7": {
+     "n_tokens": 260,
+     "global_order": 0.2812,
+     "refit": 0.2137
+    }
+   },
+   "order": "c p b w a m t h i v o u n f s e l d r y g"
+  }
+ },
+ "coverage": {
+  "voy_merged/as_is": {
+   "types": 6897,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.843,
+   "ngram_cov_typ": 0.447,
+   "zone_cov_tok": 0.691,
+   "zone_cov_typ": 0.276
+  },
+  "gc_v101/as_is": {
+   "types": 7935,
+   "mean_len": 3.86,
+   "ngram_cov_tok": 0.776,
+   "ngram_cov_typ": 0.382,
+   "zone_cov_tok": null,
+   "zone_cov_typ": null
+  },
+  "la/as_is": {
+   "types": 11368,
+   "mean_len": 5.76,
+   "ngram_cov_tok": 0.409,
+   "ngram_cov_typ": 0.181,
+   "zone_cov_tok": 0.191,
+   "zone_cov_typ": 0.061
+  },
+  "la/length_matched": {
+   "types": 4679,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.694,
+   "ngram_cov_typ": 0.315,
+   "zone_cov_tok": 0.382,
+   "zone_cov_typ": 0.105
+  },
+  "it/as_is": {
+   "types": 6758,
+   "mean_len": 4.54,
+   "ngram_cov_tok": 0.63,
+   "ngram_cov_typ": 0.213,
+   "zone_cov_tok": 0.503,
+   "zone_cov_typ": 0.097
+  },
+  "it/length_matched": {
+   "types": 3566,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.705,
+   "ngram_cov_typ": 0.344,
+   "zone_cov_tok": 0.514,
+   "zone_cov_typ": 0.169
+  },
+  "it_only/as_is": {
+   "types": 8359,
+   "mean_len": 4.58,
+   "ngram_cov_tok": 0.602,
+   "ngram_cov_typ": 0.202,
+   "zone_cov_tok": 0.5,
+   "zone_cov_typ": 0.104
+  },
+  "it_only/length_matched": {
+   "types": 4340,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.658,
+   "ngram_cov_typ": 0.317,
+   "zone_cov_tok": 0.496,
+   "zone_cov_typ": 0.168
+  },
+  "de/as_is": {
+   "types": 5568,
+   "mean_len": 4.87,
+   "ngram_cov_tok": 0.591,
+   "ngram_cov_typ": 0.125,
+   "zone_cov_tok": 0.426,
+   "zone_cov_typ": 0.059
+  },
+  "de/length_matched": {
+   "types": 2828,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.722,
+   "ngram_cov_typ": 0.266,
+   "zone_cov_tok": 0.487,
+   "zone_cov_typ": 0.098
+  },
+  "en/as_is": {
+   "types": 3973,
+   "mean_len": 4.39,
+   "ngram_cov_tok": 0.628,
+   "ngram_cov_typ": 0.156,
+   "zone_cov_tok": 0.452,
+   "zone_cov_typ": 0.023
+  },
+  "en/length_matched": {
+   "types": 2317,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.674,
+   "ngram_cov_typ": 0.237,
+   "zone_cov_tok": 0.495,
+   "zone_cov_typ": 0.096
+  },
+  "la_reseg_esm/as_is": {
+   "types": 9577,
+   "mean_len": 4.0,
+   "ngram_cov_tok": 0.675,
+   "ngram_cov_typ": 0.146,
+   "zone_cov_tok": 0.597,
+   "zone_cov_typ": 0.095
+  },
+  "la_reseg_esm/length_matched": {
+   "types": 5343,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.666,
+   "ngram_cov_typ": 0.29,
+   "zone_cov_tok": 0.466,
+   "zone_cov_typ": 0.144
+  },
+  "voy_merged_shuf/as_is": {
+   "types": 16560,
+   "mean_len": 4.11,
+   "ngram_cov_tok": 0.69,
+   "ngram_cov_typ": 0.445,
+   "zone_cov_tok": 0.258,
+   "zone_cov_typ": 0.065
+  }
+ },
+ "one_edit_check": {
+  "a3_function_all_types": 0.8424,
+  "brute_force_sample1500": 0.8407
+ },
+ "seconds": 83
+}

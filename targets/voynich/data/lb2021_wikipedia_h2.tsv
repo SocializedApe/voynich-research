@@ -1,0 +1,313 @@
+# Lindemann & Bowern (2021), arXiv:2010.14697 v3, Appendix B: Wikipedia corpus, h2 with the space as a character
+language	wikicode	family	script	char_count	charset_size	word_count	word_types	h2
+Abkhazian	ab	Caucasian	Cyrillic	474421	44	58100	19109	3.571
+Acehnese	ace	Malayo-Polynesian	Latin	566068	33	90025	11400	3.208
+Adyghe	ady	Caucasian	Cyrillic	86867	36	10791	5212	3.403
+Afrikaans	af	Germanic	Latin	1228386	31	198349	22349	3.375
+Akan	ak	Niger-Congo	Latin	409746	31	82731	9578	3.321
+Albanian	sq	Albanian	Latin	1162617	30	193060	29512	3.387
+Alemannic	als	Germanic	Latin	1197089	38	197012	39254	3.542
+Amharic	am	Afro-Asiatic	Ethiopic	940578	293	193388	49646	4.503
+Anglo Saxon	ang	Germanic	Latin	679186	41	109182	26219	3.605
+Arabic	ar	Afro-Asiatic	Arabic	1164523	44	195629	38372	3.702
+Aragonese	an	Romance	Latin	1170029	34	210697	23412	3.293
+Aramaic	arc	Afro-Asiatic	Syriac	52659	40	9236	3853	3.483
+Armenian	hy	Armenian	Armenian	1521970	40	194344	36578	3.376
+Aromanian	roa rup	Romance	Latin	89929	42	15126	5248	3.440
+Assamese	as	Indic	Bengali	1203527	63	189182	32598	3.760
+Asturian	ast	Romance	Latin	1235937	36	206485	24907	3.308
+Atikamekw	atj	Algonquian	Latin	245152	28	34454	7904	2.953
+Avar	av	Caucasian	Cyrillic	705663	37	88140	25138	3.355
+Awadhi	awa	Indic	Devanagari	438119	69	84403	14615	3.746
+Aymara	ay	Aymara	Latin	202890	39	23822	11645	3.185
+Azerbaijani	az	Turkic	Latin	1492347	34	199917	35295	3.644
+Balinese	ban	Malayo-Polynesian	Latin	1317387	27	199768	25568	3.180
+Bambara	bm	Mande	Latin	122358	38	25163	4806	3.191
+Banjar	bjn	Austronesian	Latin	1371576	28	199761	27426	3.175
+Banyumasan	map bms	Malayo-Polynesian	Latin	1383372	28	198810	23499	3.257
+Bashkir	ba	Turkic	Cyrillic	1412766	42	194138	37466	3.691
+Basque	eu	Vasconic	Latin	1540698	27	199658	37568	3.250
+Bavarian	bar	Germanic	Latin	1178419	34	197795	41284	3.550
+Belarusian	be	Slavic	Cyrillic	1383017	33	192440	39472	3.566
+Belarusian (Taraˇskievica)	be x old	Slavic	Cyrillic	1379366	35	189806	39306	3.567
+Bengali	bn	Indic	Bengali	1301543	62	191876	28481	3.665
+Bihari	bh	Indic	Devanagari	940050	68	189977	18150	3.618
+Bishnupriya Manipuri	bpy	Indic	Bengali	517177	63	79490	16408	3.545
+Bislama	bi	Creole	Latin	16041	29	3145	798	3.126
+Bosnian	bs	Slavic	Latin	1305485	33	195997	37659	3.468
+Breton	br	Celtic	Latin	1095236	35	206119	20998	3.322
+Buginese (Buginese)	bug	Malayo-Polynesian	Buginese	11978	29	2158	1153	3.365
+Buginese (Latin)	bug	Malayo-Polynesian	Latin	49167	28	7126	2956	3.278
+Bulgarian	bg	Slavic	Cyrillic	1251467	31	194249	29953	3.476
+Burmese	my	Tibeto-Burman	Myanmar	1002038	62	75527	44643	3.324
+Buryat	bxr	Mongolic	Cyrillic	1418044	35	192042	38617	3.503
+Cantonese	zh yue	Tibeto-Burman	Chinese	322674	3608	31888	28439	5.409
+Catalan	ca	Romance	Latin	1189313	41	209944	23100	3.370
+Cebuano	ceb	Malayo-Polynesian	Latin	1198584	32	200597	23993	3.186
+Central Bicolano	bcl	Malayo-Polynesian	Latin	1197161	35	197619	23546	3.212
+Chamorro	ch	Malayo-Polynesian	Latin	37146	34	6547	1903	3.291
+Chechen	ce	Caucasian	Cyrillic	1344890	35	195158	43064	3.672
+Cherokee	chr	Iroquoian	Cherokee	57838	84	11835	3777	3.829
+Cheyenne	chy	Algonquian	Latin	2812	39	318	225	3.194
+Chichewa	ny	Niger-Congo	Latin	689446	28	99634	17337	3.246
+Chinese	zh	Tibeto-Burman	Chinese	1234309	6222	124650	109341	6.142
+Chuvash	cv	Turkic	Cyrillic	1184848	38	188153	35546	3.620
+Classical Chinese	zh classical	Tibeto-Burman	Chinese	80593	3292	12778	11912	5.176
+Cornish	kw	Celtic	Latin	749995	30	139379	18315	3.385
+Corsican	co	Romance	Latin	1134720	33	207593	28600	3.232
+Cree	cr	Algonquian	Latin	3127	29	352	229	2.992
+Crimean Tatar	crh	Turkic	Latin	397729	35	54339	16048	3.589
+Croatian	hr	Slavic	Latin	1293468	32	194591	39602	3.464
+Czech	cs	Slavic	Latin	1330126	41	196446	40391	3.745
+Danish	da	Germanic	Latin	1258211	30	196664	28753	3.476
+Dinka	din	Nilotic	Latin	331605	35	64389	12093	3.469
+Divehi	dv	Indic	Thaana	1732631	51	186755	41357	3.138
+Doteli	dty	Indic	Devanagari	1170968	71	187576	38443	3.824
+Dutch	nl	Germanic	Latin	1263624	30	197198	24939	3.332
+Dutch Low Saxon	nds nl	Germanic	Latin	1191824	35	199215	31151	3.393
+Dzongkha	dz	Tibeto-Burman	Tibetan	93231	63	24147	1735	3.076
+Egyptian Arabic	arz	Afro-Asiatic	Arabic	1078766	47	195437	36930	3.663
+Emilian-Romagnol	eml	Romance	Latin	784411	53	162961	23869	3.525
+English	en	Germanic	Latin	1216023	27	199564	19843	3.403
+Erzya	myv	Uralic	Cyrillic	1353230	34	180837	44893	3.518
+Esperanto	eo	Constructed	Latin	1219760	34	197285	30975	3.305
+Estonian	et	Uralic	Latin	1487423	34	192800	48756	3.536
+Ewe	ee	Niger-Congo	Latin	94902	43	18632	4058	3.188
+Extremaduran	ext	Romance	Latin	1175298	35	200577	31832	3.354
+Faroese	fo	Germanic	Latin	1181388	34	191824	29506	3.523
+Fiji Hindi	hif	Indic	Latin	706696	34	128450	15253	3.411
+Fijian	fj	Malayo-Polynesian	Latin	226281	27	42360	4345	2.888
+Finnish	ﬁ	Uralic	Latin	1728271	28	196573	55335	3.475
+Franco-Proven¸cal	frp	Romance	Latin	314875	41	58163	12054	3.461
+French	fr	Romance	Latin	1371315	39	233025	23791	3.354
+Friulian	fur	Romance	Latin	1052533	38	198007	21733	3.284
+Fula	ﬀ	Niger-Congo	Latin	238729	37	40601	10899	3.364
+Gagauz	gag	Turkic	Latin	484481	38	67724	19070	3.570
+Galician	gl	Romance	Latin	1225239	34	197864	23310	3.314
+Gan	gan	Tibeto-Burman	Chinese	48003	2938	6514	5837	4.597
+Georgian	ka	Kartvelian	Georgian	1590023	43	190379	42981	3.566
+German	de	Germanic	Latin	1411555	31	197197	32028	3.394
+Gilaki	glk	Iranian	Arabic	916037	49	180675	31070	3.854
+Goan Konkani	gom	Indic	Devanagari	1317991	76	197428	48971	3.659
+Gorontalo	gor	Malayo-Polynesian	Latin	359794	32	53579	10964	3.258
+Gothic	got	Germanic	Gothic	63136	28	9352	3598	3.321
+Greek	el	Hellenic	Greek	1270133	34	192045	26770	3.519
+Greenlandic	kl	Inuit	Latin	213944	29	18203	9980	3.055
+Guarani	gn	Tupian	Latin	1388881	48	198012	32287	3.435
+Guianan Creole	gcr	Creole	Latin	610232	31	115926	12096	3.224
+Gujarati	gu	Indic	Gujarati	1173177	69	195421	36078	3.732
+Haitian	ht	Creole	Latin	995666	35	188176	20106	3.385
+Hakka	hak	Tibeto-Burman	Latin	369395	44	84588	3607	2.857
+Hausa	ha	Afro-Asiatic	Latin	1116212	31	200918	20315	3.105
+Hawaiian	haw	Malayo-Polynesian	Latin	561237	31	112870	5728	2.765
+Hebrew	he	Afro-Asiatic	Hebrew	1123178	28	194947	38482	3.664
+Hill Mari	mrj	Uralic	Cyrillic	630450	37	91189	22380	3.701
+Hindi	hi	Indic	Devanagari	1035585	71	195809	20001	3.623
+Hungarian	hu	Uralic	Latin	1437916	35	198457	47571	3.742
+Icelandic	is	Germanic	Latin	1237880	36	194966	33368	3.596
+Ido	io	Constructed	Latin	1178602	33	197718	20822	3.329
+Igbo	ig	Niger-Congo	Latin	984726	44	188440	20250	3.380
+Ilokano	ilo	Malayo-Polynesian	Latin	1172160	28	198139	20266	3.163
+Inari Sami	smn	Uralic	Latin	260928	36	34021	10928	3.769
+Indonesian	id	Malayo-Polynesian	Latin	1446218	26	201308	17949	3.222
+Ingush	inh	Caucasian	Cyrillic	191553	37	27865	10432	3.649
+Interlingua	ia	Constructed	Latin	1195958	28	195759	19769	3.244
+Interlingue	ie	Constructed	Latin	1076710	38	187169	18211	3.380
+Inuktitut (Canadian Syllabics)	iu	Inuit	Canadian Syllabics	13614	117	1923	1193	3.732
+Inuktitut (Latin)	iu	Inuit	Latin	17119	25	1415	1097	3.129
+Inupiak	ik	Inuit	Latin	6536	39	692	500	3.350
+Irish	ga	Celtic	Latin	1130156	31	199466	20054	3.338
+Italian	it	Romance	Latin	1268739	33	204004	26338	3.272
+Jamaican Patois	jam	Creole	Latin	535308	27	95784	13421	3.387
+Japanese	ja	Japonic	Japanese	1015563	2887	74348	60520	5.027
+Javanese	jv	Malayo-Polynesian	Latin	1351976	29	199101	27774	3.238
+Kabardian Circassian	kbd	Caucasian	Cyrillic	693947	35	91720	30563	3.367
+Kabiye	kbp	Niger-Congo	Latin	1104123	40	206498	22038	3.302
+Kabyle	kab	Afro-Asiatic	Latin	1130890	39	210877	30148	3.458
+Kalmyk	xal	Mongolic	Cyrillic	149170	41	23437	9615	3.863
+Kannada	kn	Dravidian	Kannada	1633412	66	198531	57666	3.773
+Kapampangan	pam	Malayo-Polynesian	Latin	1207315	31	193277	23199	3.063
+Karachay-Balkar	krc	Turkic	Cyrillic	1138595	34	145979	31559	3.476
+Karakalpak	kaa	Turkic	Latin	958773	37	121182	32916	3.509
+Kashmiri (Arabic)	ks	Indic	Arabic	34438	79	6201	2922	3.872
+Kashmiri (Devanagari)	ks	Indic	Devanagari	22493	69	3641	2093	3.864
+Kashubian	csb	Slavic	Latin	792280	40	120564	37608	3.750
+Kazakh	kk	Turkic	Cyrillic	1478373	40	195972	38033	3.496
+Khmer	km	Austroasiatic	Khmer	654815	79	28173	21384	4.138
+Kikuyu	ki	Niger-Congo	Latin	62285	32	10016	3532	3.152
+Kinyarwanda	rw	Niger-Congo	Latin	840081	29	126721	20888	3.136
+Kirghiz	ky	Turkic	Cyrillic	1477252	37	194186	37921	3.605
+Kirundi	rn	Niger-Congo	Latin	218081	28	32282	8974	3.074
+Komi	kv	Uralic	Cyrillic	952576	36	139004	30271	3.706
+Komi-Permyak	koi	Uralic	Cyrillic	547852	36	82138	18841	3.743
+Kongo	kg	Niger-Congo	Latin	126751	38	21763	4324	3.141
+Korean	ko	Koreanic	Hangul	817046	1379	203285	65252	4.685
+Kotava	avk	Constructed	Latin	1160948	30	190260	33067	3.454
+Kurdish	ku	Iranian	Latin	1097852	35	201217	29586	3.386
+Ladin	lld	Romance	Latin	597615	46	114922	18314	3.394
+Ladino	lad	Romance	Latin	1115534	32	193345	26514	3.305
+Lak	lbe	Caucasian	Cyrillic	170141	36	22564	5981	3.454
+Lao	lo	Tai	Lao	343956	55	21063	13620	4.030
+Latgalian	ltg	Baltic	Latin	299177	36	41482	13350	3.606
+Latin	la	Romance	Latin	1430965	28	193514	42260	3.412
+Latvian	lv	Baltic	Latin	1408947	36	193369	36694	3.634
+Lezgian	lez	Caucasian	Cyrillic	1426123	33	194005	32609	3.411
+Ligurian	lij	Romance	Latin	1108522	51	214470	37687	3.475
+Limburgish	li	Germanic	Latin	1193438	34	201569	27862	3.436
+Lingala	ln	Niger-Congo	Latin	383704	46	64511	11314	3.222
+Lingua Franca Nova	lfn	Constructed	Latin	1022406	28	196299	15063	3.111
+Lithuanian	lt	Baltic	Latin	1477695	36	194671	43340	3.573
+Livvi-Karelian	olo	Uralic	Latin	987848	31	126766	33422	3.571
+Lojban	jbo	Constructed	Latin	288970	28	59390	6453	3.140
+Lombard	lmo	Romance	Latin	1036268	41	208682	29793	3.444
+Low Saxon	nds	Germanic	Latin	1177767	30	199049	27399	3.390
+Lower Sorbian	dsb	Slavic	Latin	863845	39	131759	30568	3.626
+Luganda	lg	Niger-Congo	Latin	1427630	27	204897	31783	3.158
+Luxembourgisch	lb	Germanic	Latin	1254155	33	200807	28191	3.423
+Macedonian	mk	Slavic	Cyrillic	1302905	31	199719	30368	3.407
+Madurese	mad	Malayo-Polynesian	Latin	312666	34	46468	8560	3.394
+Maithili	mai	Indic	Devanagari	1105898	73	186573	34716	3.831
+Malagasy	mg	Malayo-Polynesian	Latin	1245462	34	186592	21030	2.944
+Malay	ms	Malayo-Polynesian	Latin	1406260	27	198741	18313	3.186
+Malayalam	ml	Dravidian	Malayalam	797436	77	78073	35542	3.702
+Maltese	mt	Afro-Asiatic	Latin	1418795	32	241726	24892	3.515
+Manx	gv	Celtic	Latin	1166926	33	208179	18495	3.373
+Maori	mi	Malayo-Polynesian	Latin	417506	33	88263	6548	2.875
+Marathi	mr	Indic	Devanagari	1297866	78	188409	42414	3.689
+Mazandarani	mzn	Iranian	Arabic	993445	46	193871	24773	3.660
+Meadow Mari	mhr	Uralic	Cyrillic	1371590	38	199570	34921	3.549
+Min Dong	cdo	Tibeto-Burman	Latin	430592	48	101336	2796	2.841
+Min Nan	zh min nan	Tibeto-Burman	Latin	1267107	49	309129	8318	3.066
+Minangkabau	min	Malayo-Polynesian	Latin	1083848	27	158742	19545	3.181
+Mingrelian	xmf	Kartvelian	Georgian	1452488	40	187555	49075	3.580
+Mirandese	mwl	Romance	Latin	1210157	33	203845	22829	3.309
+Moksha	mdf	Moksha	Cyrillic	254066	34	34186	12397	3.474
+Mon	mnw	Austroasiatic	Myanmar	510675	74	42496	24496	3.570
+Mongolian	mn	Mongolic	Cyrillic	1321073	35	193476	29282	3.559
+Moroccan Arabic	ary	Afro-Asiatic	Arabic	792354	46	143786	29576	3.725
+N’Ko	nqo	Mande	N’Ko	1122166	48	196488	22518	2.970
+Nahuatl	nah	Uto-Aztecan	Latin	508194	36	62805	15605	3.227
+Nauruan	na	Malayo-Polynesian	Latin	59243	51	9774	2819	3.405
+Navajo	nv	Athabaskan	Latin	202428	37	28125	7125	3.366
+Neapolitan	nap	Romance	Latin	1031893	40	185831	32261	3.291
+Nepali	ne	Indic	Devanagari	1170229	68	179096	36637	3.770
+Newar	new	Tibeto-Burman	Devanagari	770077	76	122917	27822	3.750
+Nias	nia	Malayo-Polynesian	Latin	293580	29	52144	7274	3.077
+Norfolk	pih	Creole	Latin	114354	34	21202	5008	3.497
+Norman	nrm	Romance	Latin	877907	41	165642	20754	3.364
+North Frisian	frr	Germanic	Latin	1073028	36	191321	26674	3.499
+Northern Sami	se	Uralic	Latin	793557	41	100856	26797	3.607
+Northern Sotho	nso	Niger-Congo	Latin	137660	30	25626	4583	2.950
+Norwegian (Bokma˚al)	no	Germanic	Latin	1247199	32	196357	29556	3.475
+Norwegian (Nynorsk)	nn	Germanic	Latin	1185458	32	193537	27119	3.496
+Novial	nov	Constructed	Latin	220177	33	38318	8423	3.325
+Occitan	oc	Romance	Latin	1238392	38	208924	20667	3.358
+Old Church Slavonic	cu	Slavic	Cyrillic	68106	50	10108	3258	3.398
+Oriya	or	Indic	Odia	1249524	66	184928	32844	3.742
+Oromo	om	Afro-Asiatic	Latin	1625327	29	233367	40522	3.193
+Ossetian	os	Iranian	Cyrillic	1198686	33	194122	34753	3.651
+Palatinate German	pﬂ	Germanic	Latin	1250014	38	197124	42618	3.440
+Pali (Devanagari)	pi	Indic	Devanagari	7512	62	1157	686	3.694
+Pali (Latin)	pi	Indic	Latin	56922	32	5971	1953	2.905
+Pangasinan	pag	Malayo-Polynesian	Latin	176803	27	31387	6904	3.166
+Papiamentu	pap	Creole	Latin	1049584	38	195235	20194	3.344
+Pashto	ps	Iranian	Arabic	892610	52	196694	25578	3.651
+Pennsylvania German	pdc	Germanic	Latin	226954	31	37682	8436	3.381
+Persian	fa	Iranian	Arabic	1024245	42	197880	19807	3.651
+Picard	pcd	Romance	Latin	543922	39	102478	17963	3.397
+Piedmontese	pms	Romance	Latin	1062707	35	218355	19308	3.318
+Polish	pl	Slavic	Latin	1410675	35	195119	44911	3.638
+Pontic	pnt	Hellenic	Greek	127501	38	20894	6214	3.534
+Portuguese	pt	Romance	Latin	1235214	39	198672	22429	3.316
+Punjabi	pa	Indic	Gurmukhi	970590	64	195713	22171	3.577
+Quechua	qu	Quechua	Latin	335139	35	40329	14685	3.197
+Ripuarian	ksh	Germanic	Latin	1110517	35	198243	34554	3.556
+Romani	rmy	Indic	Latin	91925	38	15487	4116	3.294
+Romanian	ro	Romance	Latin	1348034	31	210279	28217	3.416
+Romansh	rm	Romance	Latin	1203902	34	208626	18734	3.306
+Russian	ru	Slavic	Cyrillic	1500801	34	200538	40697	3.619
+Rusyn	rue	Slavic	Cyrillic	1244127	38	187752	48078	3.740
+Saaraiki	skr	Indic	Arabic	927476	57	197187	23313	3.679
+Sakha	sah	Turkic	Cyrillic	1488350	39	191813	44495	3.617
+Sakizaya	szy	Austronesian	Latin	1067950	27	194641	13539	2.948
+Samoan	sm	Malayo-Polynesian	Latin	399484	32	83345	6083	2.992
+Samogitian	bat smg	Baltic	Latin	719074	36	105660	34440	3.599
+Sango	sg	Niger-Congo	Latin	17054	38	3746	640	2.862
+Sanskrit	sa	Indic	Devanagari	1507088	76	177498	60631	3.728
+Santali	sat	Austroasiatic	Ol Chiki	1013781	37	187788	19498	3.391
+Sardinian	sc	Romance	Latin	1157097	33	204144	32653	3.230
+Saterland Frisian	stq	Germanic	Latin	1146938	30	186897	25801	3.384
+Scots	sco	Germanic	Latin	1122338	27	199515	22474	3.417
+Scottish Gaelic	gd	Celtic	Latin	1137203	33	206651	18580	3.145
+Serbian	sr	Slavic	Cyrillic	1241960	31	190415	38120	3.458
+Serbo-Croatian	sh	Slavic	Latin	1271863	31	192522	40828	3.472
+Sesotho	st	Niger-Congo	Latin	303739	28	55756	7713	3.004
+Shan	shn	Tai	Myanmar	494159	105	31048	22064	3.154
+Shona	sn	Niger-Congo	Latin	626613	27	76706	22057	3.169
+Sicilian	scn	Romance	Latin	1198370	38	204500	29579	3.214
+Silesian	szl	Slavic	Latin	891117	46	132556	42331	3.767
+Simple English	simple	Germanic	Latin	1128909	27	198481	14313	3.362
+Sindhi	sd	Indic	Arabic	875905	62	184506	20142	3.694
+Sinhalese	si	Indic	Sinhala	1182228	76	188511	34716	3.799
+Slovak	sk	Slavic	Latin	1343586	42	195932	42027	3.737
+Slovenian	sl	Slavic	Latin	1039854	31	161193	29227	3.516
+Somali	so	Afro-Asiatic	Latin	1245451	28	194843	30491	3.268
+Sorani	ckb	Iranian	Arabic	1220535	39	194694	38589	3.452
+South Azerbaijani	azb	Turkic	Arabic	1325401	49	194657	50268	3.717
+Spanish	es	Romance	Latin	1251204	33	202983	23801	3.291
+Sranan	srn	Creole	Latin	61506	35	12032	2520	3.185
+Sundanese	su	Malayo-Polynesian	Latin	703485	28	103181	14482	3.368
+Swahili	sw	Niger-Congo	Latin	1233964	26	195587	21695	3.084
+Swati	ss	Niger-Congo	Latin	201303	29	23888	10554	3.195
+Swedish	sv	Germanic	Latin	1301628	31	198498	32104	3.539
+Tagalog	tl	Malayo-Polynesian	Latin	1213045	27	196218	19488	3.059
+Tahitian	ty	Malayo-Polynesian	Latin	16927	43	3858	694	2.846
+Tajik	tg	Iranian	Cyrillic	1248236	40	190743	34147	3.614
+Tamil	ta	Dravidian	Tamil	1783419	49	192511	58671	3.327
+Tarantino	roa tara	Romance	Latin	1148683	35	205377	21844	3.109
+Tatar (Cyrillic)	tt	Turkic	Cyrillic	940273	38	128935	27004	3.670
+Tatar (Latin)	tt	Turkic	Latin	429020	41	60991	18904	3.749
+Telugu	te	Dravidian	Telugu	1551065	67	193017	56921	3.783
+Tetum	tet	Malayo-Polynesian	Latin	660727	37	108003	14469	3.446
+Thai	th	Tai	Thai	953229	68	38480	27031	4.247
+Tibetan	bo	Tibeto-Burman	Tibetan	1655843	83	428495	6127	3.143
+Tigrinya	ti	Afro-Asiatic	Ethiopic	96980	230	21081	7467	4.401
+Tok Pisin	tpi	Creole	Latin	87118	27	16046	2136	3.135
+Tongan	to	Malayo-Polynesian	Latin	167431	34	36884	3972	2.945
+Tsonga	ts	Niger-Congo	Latin	522298	28	88346	11540	2.970
+Tswana	tn	Niger-Congo	Latin	1068169	28	203475	16097	2.816
+Tulu	tcy	Dravidian	Kannada	1243356	68	168376	51885	3.695
+Tumbuka	tum	Niger-Congo	Latin	62879	29	9480	2803	2.979
+Turkish	tr	Turkic	Latin	1503312	34	202601	39777	3.549
+Turkmen	tk	Turkic	Latin	1510318	37	202877	43688	3.603
+Tuvan	tyv	Turkic	Cyrillic	1451621	40	208827	34787	3.494
+Twi	tw	Niger-Congo	Latin	173715	30	35061	5612	3.289
+Udmurt	udm	Uralic	Cyrillic	539349	40	75154	19440	3.669
+Ukrainian	uk	Slavic	Cyrillic	1401545	34	193133	40936	3.653
+Upper Sorbian	hsb	Slavic	Latin	1272611	38	190832	32500	3.559
+Urdu	ur	Indic	Arabic	912459	52	195713	15390	3.575
+Uyghur	ug	Turkic	Arabic	1257845	39	164208	31147	3.479
+Uzbek	uz	Turkic	Latin	1548096	29	197038	37078	3.436
+Venda	ve	Niger-Congo	Latin	99874	30	17566	3452	2.792
+Venetian	vec	Romance	Latin	1046029	37	200507	30156	3.265
+Vepsian	vep	Uralic	Latin	1366394	30	179658	23467	3.501
+Vietnamese	vi	Austroasiatic	Latin	901129	92	200641	6639	3.168
+Volap¨uk	vo	Constructed	Latin	1001117	30	163340	14480	3.237
+V˜oro	ﬁu vro	Uralic	Latin	829521	34	122791	31833	3.635
+Walloon	wa	Romance	Latin	1006614	37	197108	20966	3.379
+Waray-Waray	war	Malayo-Polynesian	Latin	1170812	32	200277	19247	3.133
+Welsh	cy	Celtic	Latin	1125686	32	204242	19707	3.465
+West Flemish	vls	Germanic	Latin	1123656	32	200520	30198	3.434
+West Frisian	fy	Germanic	Latin	1127112	33	194755	21690	3.374
+Western Armenian	hyw	Armenian	Armenian	1406809	41	196090	42235	3.479
+Western Punjabi	pnb	Indic	Arabic	922341	50	196296	18042	3.595
+Wolof	wo	Niger-Congo	Latin	983997	34	203888	11051	3.292
+Wu	wuu	Tibeto-Burman	Chinese	54268	3187	6303	5755	4.388
+Xhosa	xh	Niger-Congo	Latin	1064361	29	130727	41754	3.267
+Yiddish	yi	Germanic	Hebrew	1133439	30	199605	18652	3.311
+Yoruba	yo	Niger-Congo	Latin	683230	43	153063	18010	3.591
+Zamboanga Chavacano	cbk zam	Creole	Latin	1147970	33	195097	24341	3.310
+Zazaki	diq	Iranian	Latin	1093565	38	198835	35611	3.528
+Zeelandic	zea	Germanic	Latin	1135510	36	204440	29827	3.388
+Zhuang	za	Tai	Latin	28961	29	4509	1599	3.069
+Zulu	zu	Niger-Congo	Latin	866234	28	102758	33905	3.262

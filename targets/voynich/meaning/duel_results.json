@@ -1,0 +1,805 @@
+{
+ "R": {
+  "voynich": {
+   "ratio": {
+    "between_ratio": 2.960975440502372,
+    "ci": [
+     2.1750120881483292,
+     3.5941640688614744
+    ],
+    "same_ratio": 1.996320775599359,
+    "same_ci": [
+     1.8697785510946672,
+     2.148080770892749
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "inside": true,
+   "rules": 0.889658299807534,
+   "habits": 0.31710423045298614,
+   "b3_all": null,
+   "b3_held": null
+  },
+  "cipher_scribe": {
+   "ratio": {
+    "between_ratio": 1.6191597930199768,
+    "ci": [
+     1.5150500076944382,
+     1.761986263553217
+    ],
+    "same_ratio": 1.5168317015791308,
+    "same_ci": [
+     1.38099269583464,
+     1.6222567916496462
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "inside": false,
+   "rules": 0.9584639990346899,
+   "habits": 0.03895948701472998,
+   "b3_all": 26,
+   "b3_held": 21
+  },
+  "cipher_habit_0.5_0.3": {
+   "ratio": {
+    "between_ratio": 1.6486294046340233,
+    "ci": [
+     1.5499779709278476,
+     1.7289666175077236
+    ],
+    "same_ratio": 1.5417073814485682,
+    "same_ci": [
+     1.447981036529357,
+     1.6227535962391166
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "inside": false,
+   "rules": 0.9547720217991922,
+   "habits": 0.053291733514561936,
+   "b3_all": 25,
+   "b3_held": 21
+  },
+  "cipher_habit_0.5_0.6": {
+   "ratio": {
+    "between_ratio": 1.6037692375105492,
+    "ci": [
+     1.495453458449364,
+     1.7336622947374567
+    ],
+    "same_ratio": 1.507432470722422,
+    "same_ci": [
+     1.3582753102228116,
+     1.613395362879088
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "cipher_habit_0.5_1.0": {
+   "ratio": {
+    "between_ratio": 1.6278196816595418,
+    "ci": [
+     1.5043702438984117,
+     1.770750913153331
+    ],
+    "same_ratio": 1.536366225066802,
+    "same_ci": [
+     1.373149427498907,
+     1.640451768597141
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "cipher_habit_1.0_0.3": {
+   "ratio": {
+    "between_ratio": 1.596881434948343,
+    "ci": [
+     1.5057660518729739,
+     1.7215854817438225
+    ],
+    "same_ratio": 1.4909847712688067,
+    "same_ci": [
+     1.3835925248761063,
+     1.5820745522316946
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "cipher_habit_1.0_0.6": {
+   "ratio": {
+    "between_ratio": 1.621938272186311,
+    "ci": [
+     1.5107180156468203,
+     1.7431281844661926
+    ],
+    "same_ratio": 1.5165385682592427,
+    "same_ci": [
+     1.3901861129591597,
+     1.622328965727649
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "cipher_habit_1.0_1.0": {
+   "ratio": {
+    "between_ratio": 1.6244309753095838,
+    "ci": [
+     1.5085155511260615,
+     1.7385225450650696
+    ],
+    "same_ratio": 1.5353319224711852,
+    "same_ci": [
+     1.4394463956326549,
+     1.6317910628817645
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "cipher_habit_2.0_0.3": {
+   "ratio": {
+    "between_ratio": 1.6037625835479514,
+    "ci": [
+     1.491802265692789,
+     1.6995676440038041
+    ],
+    "same_ratio": 1.5066643538470537,
+    "same_ci": [
+     1.3915276556858622,
+     1.6378131092555737
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "cipher_habit_2.0_0.6": {
+   "ratio": {
+    "between_ratio": 1.6053734544617855,
+    "ci": [
+     1.4804814964160902,
+     1.7243865039345643
+    ],
+    "same_ratio": 1.5340406625831111,
+    "same_ci": [
+     1.4030073975281707,
+     1.6399331081814623
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "cipher_habit_2.0_1.0": {
+   "ratio": {
+    "between_ratio": 1.6254612958970691,
+    "ci": [
+     1.5058521171361843,
+     1.7649013225086403
+    ],
+    "same_ratio": 1.5210269592038685,
+    "same_ci": [
+     1.4029918473435137,
+     1.6334040353436035
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "improv_1.0_0.4": {
+   "ratio": {
+    "between_ratio": 2.8565924168610857,
+    "ci": [
+     2.610294738743757,
+     3.119426525783214
+    ],
+    "same_ratio": 1.3596528227525535,
+    "same_ci": [
+     1.2822415427979792,
+     1.4368438842072653
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "improv_1.0_0.7": {
+   "ratio": {
+    "between_ratio": 2.6412154192801878,
+    "ci": [
+     2.384988838355087,
+     2.837383511169719
+    ],
+    "same_ratio": 1.6871949703688902,
+    "same_ci": [
+     1.5727558411642273,
+     1.7770657565162788
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "improv_1.0_1.0": {
+   "ratio": {
+    "between_ratio": 2.6138619317485285,
+    "ci": [
+     2.383875700174792,
+     2.815570281371589
+    ],
+    "same_ratio": 2.161026432860467,
+    "same_ci": [
+     1.8576174983215317,
+     2.444601859380003
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "inside": false,
+   "rules": 0.8525460627906969,
+   "habits": 0.18139760333658797,
+   "b3_all": 15,
+   "b3_held": 14
+  },
+  "improv_1.5_0.4": {
+   "ratio": {
+    "between_ratio": 4.017947125578524,
+    "ci": [
+     2.2508825404483606,
+     5.1482205867455
+    ],
+    "same_ratio": 1.3451947614776754,
+    "same_ci": [
+     1.2474875078845098,
+     1.426172049390336
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "improv_1.5_0.7": {
+   "ratio": {
+    "between_ratio": 4.450604831540252,
+    "ci": [
+     3.8824720655805915,
+     5.3227819549768425
+    ],
+    "same_ratio": 1.7545616746540122,
+    "same_ci": [
+     1.5331184838631748,
+     1.9441345601505446
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  },
+  "improv_1.5_1.0": {
+   "ratio": {
+    "between_ratio": 3.975080702063698,
+    "ci": [
+     3.381249851865917,
+     4.441493482582945
+    ],
+    "same_ratio": 2.290121886334625,
+    "same_ci": [
+     1.9196780239182585,
+     2.6243116339023684
+    ],
+    "docs": 163,
+    "scribes": 3
+   }
+  }
+ },
+ "best": [
+  "cipher_habit_0.5_0.3",
+  "improv_1.0_1.0"
+ ],
+ "verdict": "cipher with habits",
+ "b3": {
+  "voynich_ZL": {
+   "a_h0_raw": 4.700439718141092,
+   "a_h1_raw": 3.8700565465683194,
+   "a_h2_raw": 2.1109100230272686,
+   "a_h3_raw": 1.841015125940367,
+   "a_h2_mrg": 2.3448197301551543,
+   "a_h3_mrg": 2.1140185629008164,
+   "b_len_mean": 4.990182006086008,
+   "b_len_sd": 1.7880665893586707,
+   "b_len1": 0.031808003674570824,
+   "b_len9": 0.024286616524085664,
+   "c_zipf": -1.0412151505697502,
+   "c_ttr": 0.20155595108227595,
+   "c_hapax_types": 0.6803874092009685,
+   "c_hapax_tokens": 0.13713613136590688,
+   "c_heaps": 0.7319334322114486,
+   "d_adj_exact": 0.008411563747021502,
+   "d_adj_ld1": 0.04214394396118623,
+   "e_cover": 0.6511167250387553,
+   "e_w10": 0.2755066888671987,
+   "e_prev2": 0.41393466153757824,
+   "e_w10_shuf": 0.24177527702819085,
+   "e_ratio": 1.1395155545001188,
+   "f_irrev": 0.095,
+   "f_lock": 0.6430498937819372,
+   "g_len_first": 5.429030662710188,
+   "g_len_mid": 4.957106875681365,
+   "g_len_last": 4.735410484668645,
+   "g_gal_init": 0.22304648862512363,
+   "g_gal_mid": 0.06345626104281794,
+   "h_peak_log2s": 9.0,
+   "h_peak_R": 0.3095147708361097,
+   "i_tok_acc": 0.024316136533661346,
+   "i_char_bits": 1.8732234999746686,
+   "j_one_page": 0.6829511465603191,
+   "j_jacc_excess": 0.03695132624025206,
+   "k_jsd_halves": 0.0624324497255502,
+   "k_jsd_oddeven": 0.0029216710082654576
+  },
+  "autocopist_s19": {
+   "a_h0_raw": 4.321928094887363,
+   "a_h1_raw": 3.872844355555667,
+   "a_h2_raw": 2.6836502142258154,
+   "a_h3_raw": 2.361469065849838,
+   "a_h2_mrg": 3.0138291236459342,
+   "a_h3_mrg": 2.6764960732208536,
+   "b_len_mean": 5.463055919685392,
+   "b_len_sd": 2.1108955623860757,
+   "b_len1": 0.00041564088627425906,
+   "b_len9": 0.09067365795952297,
+   "c_zipf": -0.7721597197345794,
+   "c_ttr": 0.3970649358953864,
+   "c_hapax_types": 0.7062565423947178,
+   "c_hapax_tokens": 0.28042970873165585,
+   "c_heaps": 0.9137653957523346,
+   "d_adj_exact": 0.0018224836935669523,
+   "d_adj_ld1": 0.07884639979537025,
+   "e_cover": 0.7603990152508233,
+   "e_w10": 0.332608626147009,
+   "e_prev2": 0.47283946670077054,
+   "e_w10_shuf": 0.2730121175304537,
+   "e_ratio": 1.2182925401100833,
+   "f_irrev": 0.11,
+   "f_lock": 0.44339290852703267,
+   "g_len_first": 5.9770838579702845,
+   "g_len_mid": 5.425188654696852,
+   "g_len_last": 5.09921934021657,
+   "g_gal_init": 0.30672374716696044,
+   "g_gal_mid": 0.24828692861479748,
+   "h_peak_log2s": 9.0,
+   "h_peak_R": 0.5140230035092728,
+   "i_tok_acc": 0.0064510524449634,
+   "i_char_bits": 2.484082137727147,
+   "j_one_page": 0.8003865045494807,
+   "j_jacc_excess": 0.0035990874561874584,
+   "k_jsd_halves": 0.02409350291999452,
+   "k_jsd_oddeven": 0.013804670124569221
+  },
+  "autocopist_s7": {
+   "a_h0_raw": 4.321928094887363,
+   "a_h1_raw": 3.8152616717857377,
+   "a_h2_raw": 2.4970025609095208,
+   "a_h3_raw": 2.281003674496511,
+   "a_h2_mrg": 2.691050103676575,
+   "a_h3_mrg": 2.462920460111876,
+   "b_len_mean": 4.615925188136344,
+   "b_len_sd": 2.0223017416737354,
+   "b_len1": 0.006031429836210713,
+   "b_len9": 0.05071381142098273,
+   "c_zipf": -0.9648338149124279,
+   "c_ttr": 0.2787184594953519,
+   "c_hapax_types": 0.696942624578122,
+   "c_hapax_tokens": 0.19425077467906154,
+   "c_heaps": 0.8183024322233758,
+   "d_adj_exact": 0.0025177766095786183,
+   "d_adj_ld1": 0.08507871510389287,
+   "e_cover": 0.7851372288623285,
+   "e_w10": 0.3793160690571049,
+   "e_prev2": 0.5490814519698982,
+   "e_w10_shuf": 0.3334993359893758,
+   "e_ratio": 1.1373817819810852,
+   "f_irrev": 0.185,
+   "f_lock": 0.54255201416556,
+   "g_len_first": 5.231743666169896,
+   "g_len_mid": 4.551313761336345,
+   "g_len_last": 4.394932935916542,
+   "g_gal_init": 0.3830104321907601,
+   "g_gal_mid": 0.4170699358353945,
+   "h_peak_log2s": 9.0,
+   "h_peak_R": 0.4484730116943325,
+   "i_tok_acc": 0.015879821333180104,
+   "i_char_bits": 2.358491419121146,
+   "j_one_page": 0.7687115346436371,
+   "j_jacc_excess": 0.003319105020970138,
+   "k_jsd_halves": 0.01883510346652265,
+   "k_jsd_oddeven": 0.008843354098496035
+  },
+  "cipher_scribe": {
+   "a_h0_raw": 4.392317422778761,
+   "a_h1_raw": 3.8984599553397365,
+   "a_h2_raw": 2.3133949689348454,
+   "a_h3_raw": 2.0217934065252967,
+   "a_h2_mrg": 2.5596720497223084,
+   "a_h3_mrg": 2.2878468998089625,
+   "b_len_mean": 5.245478555434346,
+   "b_len_sd": 1.7751863196085638,
+   "b_len1": 0.009617040822185221,
+   "b_len9": 0.03777918125968881,
+   "c_zipf": -0.8979735972943762,
+   "c_ttr": 0.24263650456450594,
+   "c_hapax_types": 0.5482725982016091,
+   "c_hapax_tokens": 0.13303094677613825,
+   "c_heaps": 0.8091456622853307,
+   "d_adj_exact": 0.009014440329572531,
+   "d_adj_ld1": 0.03749318175293544,
+   "e_cover": 0.6057874490440375,
+   "e_w10": 0.27476029166905896,
+   "e_prev2": 0.3730550611471551,
+   "e_w10_shuf": 0.17141298731124763,
+   "e_ratio": 1.6029140847429242,
+   "f_irrev": 0.21,
+   "f_lock": 0.5608600792329334,
+   "g_len_first": 5.246785361028684,
+   "g_len_mid": 5.244577271531146,
+   "g_len_last": 5.246290801186944,
+   "g_gal_init": 0.24851632047477745,
+   "g_gal_mid": 0.05601293184466749,
+   "h_peak_log2s": 9.0,
+   "h_peak_R": 0.3975948198425785,
+   "i_tok_acc": 0.013113699677193138,
+   "i_char_bits": 2.066372896142309,
+   "j_one_page": 0.5795078088026503,
+   "j_jacc_excess": 0.008734697381119379,
+   "k_jsd_halves": 0.006941834280747534,
+   "k_jsd_oddeven": 0.004524113807033429
+  },
+  "cipher_habit_0.5_0.3": {
+   "a_h0_raw": 4.321928094887363,
+   "a_h1_raw": 3.8944322964802476,
+   "a_h2_raw": 2.317775045654809,
+   "a_h3_raw": 2.02111546298842,
+   "a_h2_mrg": 2.560310293286792,
+   "a_h3_mrg": 2.2866397974666075,
+   "b_len_mean": 5.246942642246081,
+   "b_len_sd": 1.783703568655942,
+   "b_len1": 0.009617040822185221,
+   "b_len9": 0.0386404087960039,
+   "c_zipf": -0.8765380832533182,
+   "c_ttr": 0.24048343572371822,
+   "c_hapax_types": 0.5529425808762086,
+   "c_hapax_tokens": 0.13297353160705058,
+   "c_heaps": 0.8012958677544094,
+   "d_adj_exact": 0.009674733729509373,
+   "d_adj_ld1": 0.038297017196336804,
+   "e_cover": 0.6017683872079004,
+   "e_w10": 0.27404260205546305,
+   "e_prev2": 0.3732273066544181,
+   "e_w10_shuf": 0.1719297238330367,
+   "e_ratio": 1.5939221906829186,
+   "f_irrev": 0.2,
+   "f_lock": 0.5641901590400183,
+   "g_len_first": 5.260880316518299,
+   "g_len_mid": 5.238788015488139,
+   "g_len_last": 5.288081107814046,
+   "g_gal_init": 0.2490108803165183,
+   "g_gal_mid": 0.055336265553926546,
+   "h_peak_log2s": 9.0,
+   "h_peak_R": 0.4079617464521945,
+   "i_tok_acc": 0.013633565579905166,
+   "i_char_bits": 2.0638862928758366,
+   "j_one_page": 0.5796824638892205,
+   "j_jacc_excess": 0.00995624173306358,
+   "k_jsd_halves": 0.008792055982932643,
+   "k_jsd_oddeven": 0.004115365812188277
+  },
+  "improv_1.0_1.0": {
+   "a_h0_raw": 4.643856189774724,
+   "a_h1_raw": 3.9250941602034533,
+   "a_h2_raw": 2.433554911733737,
+   "a_h3_raw": 2.1530476467203545,
+   "a_h2_mrg": 2.727646066039061,
+   "a_h3_mrg": 2.484070451874654,
+   "b_len_mean": 5.461732789803066,
+   "b_len_sd": 2.749161426993352,
+   "b_len1": 0.021616811161508872,
+   "b_len9": 0.12238043291037493,
+   "c_zipf": -0.9478686546063477,
+   "c_ttr": 0.34055807544353217,
+   "c_hapax_types": 0.7639720138244963,
+   "c_hapax_tokens": 0.26017683872079006,
+   "c_heaps": 0.8561073938443576,
+   "d_adj_exact": 0.015875750007177104,
+   "d_adj_ld1": 0.058479028507449834,
+   "e_cover": 0.6219498191422174,
+   "e_w10": 0.33989780099902395,
+   "e_prev2": 0.4342022162255268,
+   "e_w10_shuf": 0.2415169087672963,
+   "e_ratio": 1.407345774396767,
+   "f_irrev": 0.08,
+   "f_lock": 0.5621232129528622,
+   "g_len_first": 5.515331355093966,
+   "g_len_mid": 5.447201233036352,
+   "g_len_last": 5.506676557863502,
+   "g_gal_init": 0.2791790306627102,
+   "g_gal_mid": 0.09743994586669674,
+   "h_peak_log2s": 9.0,
+   "h_peak_R": 0.4722185937474972,
+   "i_tok_acc": 0.013880015744358633,
+   "i_char_bits": 2.2113140711204844,
+   "j_one_page": 0.7991233246227767,
+   "j_jacc_excess": 0.01346042580799129,
+   "k_jsd_halves": 0.023496101761985,
+   "k_jsd_oddeven": 0.007272515641416445
+  }
+ },
+ "marks": {
+  "voynich_ZL": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": true,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": true,
+   "k_jsd_oddeven": true
+  },
+  "autocopist_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": false,
+   "c_ttr": false,
+   "c_hapax_types": true,
+   "c_hapax_tokens": false,
+   "c_heaps": false,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": false
+  },
+  "autocopist_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": false,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": false
+  },
+  "cipher_scribe": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": false,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": false,
+   "e_ratio": false,
+   "f_irrev": false,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cipher_habit_0.5_0.3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": false,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": false,
+   "e_ratio": false,
+   "f_irrev": false,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "improv_1.0_1.0": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": false,
+   "c_hapax_types": false,
+   "c_hapax_tokens": false,
+   "c_heaps": false,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": false,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  }
+ },
+ "held": [
+  "a_h0_raw",
+  "a_h1_raw",
+  "a_h3_raw",
+  "a_h2_mrg",
+  "a_h3_mrg",
+  "b_len_mean",
+  "b_len1",
+  "b_len9",
+  "c_zipf",
+  "c_ttr",
+  "c_hapax_tokens",
+  "c_heaps",
+  "d_adj_ld1",
+  "e_cover",
+  "e_prev2",
+  "e_w10_shuf",
+  "e_ratio",
+  "f_irrev",
+  "f_lock",
+  "g_len_first",
+  "g_len_mid",
+  "g_len_last",
+  "g_gal_mid",
+  "h_peak_log2s",
+  "h_peak_R",
+  "i_tok_acc",
+  "i_char_bits",
+  "j_jacc_excess",
+  "k_jsd_halves",
+  "k_jsd_oddeven"
+ ]
+}

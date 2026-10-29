@@ -1,0 +1,188 @@
+[
+ {
+  "fragment": 11,
+  "pharma": "f88r",
+  "herbal": "f90r2",
+  "strength": "similar"
+ },
+ {
+  "fragment": 22,
+  "pharma": "f88v",
+  "herbal": "f94v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 25,
+  "pharma": "f89r1",
+  "herbal": "f57r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 28,
+  "pharma": "f89r1",
+  "herbal": "f30r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 31,
+  "pharma": "f89r1",
+  "herbal": "f33r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 35,
+  "pharma": "f89r2",
+  "herbal": "f35v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 50,
+  "pharma": "f89v2",
+  "herbal": "f10v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 54,
+  "pharma": "f89v2",
+  "herbal": "f48v",
+  "strength": "same"
+ },
+ {
+  "fragment": 56,
+  "pharma": "f89v2",
+  "herbal": "f24r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 61,
+  "pharma": "f89v2",
+  "herbal": "f48r",
+  "strength": "same"
+ },
+ {
+  "fragment": 80,
+  "pharma": "f99r",
+  "herbal": "f51r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 94,
+  "pharma": "f99r",
+  "herbal": "f96v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 95,
+  "pharma": "f99v",
+  "herbal": "f44r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 110,
+  "pharma": "f99v",
+  "herbal": "f34v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 116,
+  "pharma": "f100r",
+  "herbal": "f96v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 133,
+  "pharma": "f100v",
+  "herbal": "f13v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 136,
+  "pharma": "f100v",
+  "herbal": "f90v2",
+  "strength": "similar"
+ },
+ {
+  "fragment": 150,
+  "pharma": "f101r",
+  "herbal": "f30v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 150,
+  "pharma": "f101r",
+  "herbal": "f55v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 155,
+  "pharma": "f101r",
+  "herbal": "f49r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 168,
+  "pharma": "f101r",
+  "herbal": "f4v",
+  "strength": "similar"
+ },
+ {
+  "fragment": 188,
+  "pharma": "f101v",
+  "herbal": "f37r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 203,
+  "pharma": "f102r1",
+  "herbal": "f37v",
+  "strength": "same"
+ },
+ {
+  "fragment": 204,
+  "pharma": "f102r1",
+  "herbal": "f1v",
+  "strength": "same"
+ },
+ {
+  "fragment": 205,
+  "pharma": "f102r2",
+  "herbal": "f47v",
+  "strength": "same"
+ },
+ {
+  "fragment": 206,
+  "pharma": "f102r2",
+  "herbal": "f32v",
+  "strength": "same"
+ },
+ {
+  "fragment": 209,
+  "pharma": "f102r2",
+  "herbal": "f53r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 212,
+  "pharma": "f102r2",
+  "herbal": "f18v",
+  "strength": "same"
+ },
+ {
+  "fragment": 213,
+  "pharma": "f102r2",
+  "herbal": "f23r",
+  "strength": "same"
+ },
+ {
+  "fragment": 225,
+  "pharma": "f102v2",
+  "herbal": "f36r",
+  "strength": "similar"
+ },
+ {
+  "fragment": 240,
+  "pharma": "f102v1",
+  "herbal": "f19r",
+  "strength": "same"
+ }
+]

@@ -1,0 +1,1938 @@
+{
+ "voynich_ZL": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 22021,
+   "long_tokens_LD<=1": {
+    "coverage": 0.5764043413105672,
+    "frac_all_within_10": 0.22896326234049316,
+    "frac_all_within_30": 0.39675764043413103,
+    "median_distance_given_hit": 15
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.6511167250387553,
+    "median_distance_given_hit": 14,
+    "mean_distance_given_hit": 30.429963405493584,
+    "frac_all_within_10": 0.2755066888671987,
+    "frac_all_within_30": 0.4695699603835333,
+    "frac_all_within_prev2lines": 0.41393466153757824,
+    "frac_all_same_line": 0.14135614629385085,
+    "frac_hits_within_10": 0.4231294916449892
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.31693173336395475,
+    "median_distance_given_hit": 31.0,
+    "mean_distance_given_hit": 57.72038043478261,
+    "frac_all_within_10": 0.07495550324395706,
+    "frac_all_within_30": 0.15734627088476777,
+    "frac_all_within_prev2lines": 0.13254291783889305,
+    "frac_all_same_line": 0.03686053855428604,
+    "frac_hits_within_10": 0.2365036231884058
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.7924154561635184,
+   "frac_tokens_with_exact_repeat_on_page": 0.4496468967101108,
+   "frac_tokens_with_LD1_other_type_on_page": 0.7789803065970029
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 22021,
+   "long_tokens_LD<=1": {
+    "coverage": 0.5744516597793016,
+    "frac_all_within_10": 0.19708460106262204,
+    "frac_all_within_30": 0.37550519958221695,
+    "median_distance_given_hit": 18.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.649222024458862,
+    "median_distance_given_hit": 16,
+    "mean_distance_given_hit": 32.56374087994694,
+    "frac_all_within_10": 0.24177527702819085,
+    "frac_all_within_30": 0.4508239076764081,
+    "frac_all_within_prev2lines": 0.39217431245335016,
+    "frac_all_same_line": 0.11933742894872826,
+    "frac_hits_within_10": 0.3724076940084015
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.31693173336395475,
+    "median_distance_given_hit": 36.0,
+    "mean_distance_given_hit": 62.34311594202899,
+    "frac_all_within_10": 0.06315668599644025,
+    "frac_all_within_30": 0.1439111213182523,
+    "frac_all_within_prev2lines": 0.11770109662972958,
+    "frac_all_same_line": 0.027817649422977552,
+    "frac_hits_within_10": 0.19927536231884058
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.7924154561635184,
+   "frac_tokens_with_exact_repeat_on_page": 0.4496468967101108,
+   "frac_tokens_with_LD1_other_type_on_page": 0.7789803065970029
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 22021,
+   "long_tokens_LD<=1": {
+    "coverage": 0.4873983924435766,
+    "frac_all_within_10": 0.12551655238181736,
+    "frac_all_within_30": 0.27092320966350303,
+    "median_distance_given_hit": 26
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.584802204742493,
+    "median_distance_given_hit": 22,
+    "mean_distance_given_hit": 39.667615728241124,
+    "frac_all_within_10": 0.1697479474077051,
+    "frac_all_within_30": 0.35511282080725726,
+    "frac_all_within_prev2lines": 0.2990756157776885,
+    "frac_all_same_line": 0.0799506229545846,
+    "frac_hits_within_10": 0.29026557360954297
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.23376586094046048,
+    "median_distance_given_hit": 49,
+    "mean_distance_given_hit": 77.49539481763478,
+    "frac_all_within_10": 0.03289889188723661,
+    "frac_all_within_30": 0.08247689039444221,
+    "frac_all_within_prev2lines": 0.06559683068266636,
+    "frac_all_same_line": 0.01469828328644428,
+    "frac_hits_within_10": 0.140734373081174
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.7418613997818223,
+   "frac_tokens_with_exact_repeat_on_page": 0.35927542056611356,
+   "frac_tokens_with_LD1_other_type_on_page": 0.7281391743698685
+  },
+  "type_network": {
+   "types": 7021,
+   "frac_types_with_LD1_neighbour": 0.8682523857000427,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.9731584084515129,
+   "giant_component_frac_types": 0.8560034183164791
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 7021,
+   "TTR": 0.20155595108227595,
+   "h1_letters": 3.8655,
+   "h2_letters": 2.3207,
+   "h1_with_space": 3.8709,
+   "h2_with_space": 2.1091,
+   "zipf_slope_r1_1000": -1.0412,
+   "hapax_frac_types": 0.6804,
+   "hapax_frac_tokens": 0.1371,
+   "wordlen_mean": 4.9902,
+   "wordlen_var": 3.1972,
+   "adjacent_repeat_rate": 0.00841,
+   "top10": [
+    [
+     "daiin",
+     815
+    ],
+    [
+     "ol",
+     530
+    ],
+    [
+     "chedy",
+     494
+    ],
+    [
+     "aiin",
+     459
+    ],
+    [
+     "shedy",
+     424
+    ],
+    [
+     "chol",
+     378
+    ],
+    [
+     "or",
+     365
+    ],
+    [
+     "chey",
+     337
+    ],
+    [
+     "ar",
+     330
+    ],
+    [
+     "s",
+     310
+    ]
+   ]
+  },
+  "general_glyphmerged": {
+   "tokens": 34834,
+   "types": 6839,
+   "TTR": 0.1963311706952977,
+   "h1_letters": 3.9317,
+   "h2_letters": 2.6595,
+   "h1_with_space": 3.8715,
+   "h2_with_space": 2.3424,
+   "zipf_slope_r1_1000": -1.0525,
+   "hapax_frac_types": 0.6782,
+   "hapax_frac_tokens": 0.1331,
+   "wordlen_mean": 4.0557,
+   "wordlen_var": 2.1397,
+   "adjacent_repeat_rate": 0.00945,
+   "top10": [
+    [
+     "daN",
+     1046
+    ],
+    [
+     "aN",
+     612
+    ],
+    [
+     "qokaN",
+     546
+    ],
+    [
+     "ol",
+     530
+    ],
+    [
+     "Cedy",
+     494
+    ],
+    [
+     "Sedy",
+     424
+    ],
+    [
+     "Col",
+     378
+    ],
+    [
+     "or",
+     365
+    ],
+    [
+     "okaN",
+     347
+    ],
+    [
+     "Cey",
+     337
+    ]
+   ]
+  }
+ },
+ "la": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 24946,
+   "long_tokens_LD<=1": {
+    "coverage": 0.08049386675218471,
+    "frac_all_within_10": 0.006213420989336968,
+    "frac_all_within_30": 0.017838531227451295,
+    "median_distance_given_hit": 77.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.19196761784463456,
+    "median_distance_given_hit": 39,
+    "mean_distance_given_hit": 70.23179303125467,
+    "frac_all_within_10": 0.03453522420623529,
+    "frac_all_within_30": 0.08262042831716139,
+    "frac_all_within_prev2lines": 0.06760636160073491,
+    "frac_all_same_line": 0.014152839180111386,
+    "frac_hits_within_10": 0.17990130103185284
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.11204570247459379,
+    "median_distance_given_hit": 41,
+    "mean_distance_given_hit": 73.47296951063285,
+    "frac_all_within_10": 0.020411092610667737,
+    "frac_all_within_30": 0.046563702130102774,
+    "frac_all_within_prev2lines": 0.03878394671872309,
+    "frac_all_same_line": 0.008928058793133145,
+    "frac_hits_within_10": 0.18216756341275941
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.29169776654992247,
+   "frac_tokens_with_exact_repeat_on_page": 0.17836022277085606,
+   "frac_tokens_with_LD1_other_type_on_page": 0.20112533731411839
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 24946,
+   "long_tokens_LD<=1": {
+    "coverage": 0.08101499238354846,
+    "frac_all_within_10": 0.007416018600176381,
+    "frac_all_within_30": 0.018560089793954942,
+    "median_distance_given_hit": 81
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.19168054199919618,
+    "median_distance_given_hit": 42,
+    "mean_distance_given_hit": 74.70076381608507,
+    "frac_all_within_10": 0.03424814836079692,
+    "frac_all_within_30": 0.07851524372739278,
+    "frac_all_within_prev2lines": 0.06396049836366768,
+    "frac_all_same_line": 0.015616925991847046,
+    "frac_hits_within_10": 0.17867305676201886
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.11204570247459379,
+    "median_distance_given_hit": 47,
+    "mean_distance_given_hit": 82.6100435562388,
+    "frac_all_within_10": 0.01820060860079233,
+    "frac_all_within_30": 0.042544640293965666,
+    "frac_all_within_prev2lines": 0.03482230005167365,
+    "frac_all_same_line": 0.00815295401044956,
+    "frac_hits_within_10": 0.16243914937227774
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.29169776654992247,
+   "frac_tokens_with_exact_repeat_on_page": 0.17836022277085606,
+   "frac_tokens_with_LD1_other_type_on_page": 0.20112533731411839
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 24946,
+   "long_tokens_LD<=1": {
+    "coverage": 0.06141265132686603,
+    "frac_all_within_10": 0.004289264811993907,
+    "frac_all_within_30": 0.014150565220877095,
+    "median_distance_given_hit": 82.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.17399666992019291,
+    "median_distance_given_hit": 41,
+    "mean_distance_given_hit": 73.68091074080185,
+    "frac_all_within_10": 0.03149222024458862,
+    "frac_all_within_30": 0.07225699029683642,
+    "frac_all_within_prev2lines": 0.06011368203479359,
+    "frac_all_same_line": 0.014210254349199059,
+    "frac_hits_within_10": 0.18099323543969642
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.09327094218292473,
+    "median_distance_given_hit": 46,
+    "mean_distance_given_hit": 80.86457371498923,
+    "frac_all_within_10": 0.016449445943618305,
+    "frac_all_within_30": 0.037004076477005224,
+    "frac_all_within_prev2lines": 0.030774530630992707,
+    "frac_all_same_line": 0.007607509904116668,
+    "frac_hits_within_10": 0.17636195752539244
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.26359304128150657,
+   "frac_tokens_with_exact_repeat_on_page": 0.14767181489349487,
+   "frac_tokens_with_LD1_other_type_on_page": 0.19813974852155938
+  },
+  "type_network": {
+   "types": 11550,
+   "frac_types_with_LD1_neighbour": 0.6153246753246753,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.7889418384337142,
+   "giant_component_frac_types": 0.30787878787878786
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 11550,
+   "TTR": 0.33157260148131135,
+   "h1_letters": 4.0246,
+   "h2_letters": 3.5091,
+   "h1_with_space": 4.0341,
+   "h2_with_space": 3.3635,
+   "zipf_slope_r1_1000": -0.699,
+   "hapax_frac_types": 0.5984,
+   "hapax_frac_tokens": 0.1984,
+   "wordlen_mean": 5.7661,
+   "wordlen_var": 4.8799,
+   "adjacent_repeat_rate": 0.00032,
+   "top10": [
+    [
+     "et",
+     1167
+    ],
+    [
+     "in",
+     393
+    ],
+    [
+     "nec",
+     186
+    ],
+    [
+     "per",
+     183
+    ],
+    [
+     "ad",
+     177
+    ],
+    [
+     "atque",
+     149
+    ],
+    [
+     "quae",
+     144
+    ],
+    [
+     "non",
+     141
+    ],
+    [
+     "hic",
+     132
+    ],
+    [
+     "cum",
+     131
+    ]
+   ]
+  }
+ },
+ "it": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 15951,
+   "long_tokens_LD<=1": {
+    "coverage": 0.17585104382170397,
+    "frac_all_within_10": 0.01717760641966021,
+    "frac_all_within_30": 0.05454203498213278,
+    "median_distance_given_hit": 55
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.47846931159212264,
+    "median_distance_given_hit": 17,
+    "mean_distance_given_hit": 36.61222775544489,
+    "frac_all_within_10": 0.16851352127232014,
+    "frac_all_within_30": 0.32652006660159616,
+    "frac_all_within_prev2lines": 0.2821668484813688,
+    "frac_all_same_line": 0.07621863696388585,
+    "frac_hits_within_10": 0.3521929561408772
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.31032898891887234,
+    "median_distance_given_hit": 29.0,
+    "mean_distance_given_hit": 54.25753931544866,
+    "frac_all_within_10": 0.06510880174542114,
+    "frac_all_within_30": 0.16090601136820348,
+    "frac_all_within_prev2lines": 0.13245679508526154,
+    "frac_all_same_line": 0.02595165642762818,
+    "frac_hits_within_10": 0.20980573543015726
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6071941206866854,
+   "frac_tokens_with_exact_repeat_on_page": 0.43606820922087614,
+   "frac_tokens_with_LD1_other_type_on_page": 0.4847849801917667
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 15951,
+   "long_tokens_LD<=1": {
+    "coverage": 0.17516143188514827,
+    "frac_all_within_10": 0.019434518212024323,
+    "frac_all_within_30": 0.05322550310325371,
+    "median_distance_given_hit": 58.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.47743583854854454,
+    "median_distance_given_hit": 17,
+    "mean_distance_given_hit": 37.56136131321027,
+    "frac_all_within_10": 0.16977665499224895,
+    "frac_all_within_30": 0.3190560946201987,
+    "frac_all_within_prev2lines": 0.2743870930699891,
+    "frac_all_same_line": 0.08330941034621347,
+    "frac_hits_within_10": 0.355600986110276
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.31032898891887234,
+    "median_distance_given_hit": 31.0,
+    "mean_distance_given_hit": 57.23034227567067,
+    "frac_all_within_10": 0.06832405121433083,
+    "frac_all_within_30": 0.15326979387954298,
+    "frac_all_within_prev2lines": 0.12634207957742435,
+    "frac_all_same_line": 0.031520927829132454,
+    "frac_hits_within_10": 0.22016651248843663
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6071941206866854,
+   "frac_tokens_with_exact_repeat_on_page": 0.43606820922087614,
+   "frac_tokens_with_LD1_other_type_on_page": 0.4847849801917667
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 15951,
+   "long_tokens_LD<=1": {
+    "coverage": 0.14256159488433326,
+    "frac_all_within_10": 0.014920694627296094,
+    "frac_all_within_30": 0.03993480032599837,
+    "median_distance_given_hit": 64.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.45920652236320836,
+    "median_distance_given_hit": 17.0,
+    "mean_distance_given_hit": 37.177106776694174,
+    "frac_all_within_10": 0.1662743296779009,
+    "frac_all_within_30": 0.31107538611701213,
+    "frac_all_within_prev2lines": 0.2697651719584314,
+    "frac_all_same_line": 0.07983579261640926,
+    "frac_hits_within_10": 0.36209052263065766
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.2843773324912442,
+    "median_distance_given_hit": 30.0,
+    "mean_distance_given_hit": 56.867958812840705,
+    "frac_all_within_10": 0.06381696044094849,
+    "frac_all_within_30": 0.14373887581098926,
+    "frac_all_within_prev2lines": 0.11925130619509675,
+    "frac_all_same_line": 0.02945398174197623,
+    "frac_hits_within_10": 0.22440944881889763
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.5769937417465695,
+   "frac_tokens_with_exact_repeat_on_page": 0.3960498363667681,
+   "frac_tokens_with_LD1_other_type_on_page": 0.486478727679853
+  },
+  "type_network": {
+   "types": 6843,
+   "frac_types_with_LD1_neighbour": 0.6337863510156364,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.8994086237583969,
+   "giant_component_frac_types": 0.3279263480929417
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 6843,
+   "TTR": 0.19644600103347304,
+   "h1_letters": 3.9412,
+   "h2_letters": 3.451,
+   "h1_with_space": 3.911,
+   "h2_with_space": 3.2041,
+   "zipf_slope_r1_1000": -1.0283,
+   "hapax_frac_types": 0.6648,
+   "hapax_frac_tokens": 0.1306,
+   "wordlen_mean": 4.5415,
+   "wordlen_var": 6.5918,
+   "adjacent_repeat_rate": 0.00075,
+   "top10": [
+    [
+     "et",
+     1487
+    ],
+    [
+     "che",
+     1317
+    ],
+    [
+     "di",
+     1312
+    ],
+    [
+     "a",
+     643
+    ],
+    [
+     "in",
+     559
+    ],
+    [
+     "non",
+     557
+    ],
+    [
+     "la",
+     553
+    ],
+    [
+     "per",
+     471
+    ],
+    [
+     "il",
+     428
+    ],
+    [
+     "sua",
+     399
+    ]
+   ]
+  }
+ },
+ "de": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 15619,
+   "long_tokens_LD<=1": {
+    "coverage": 0.17107369229784236,
+    "frac_all_within_10": 0.017670785581663358,
+    "frac_all_within_30": 0.05365260259939817,
+    "median_distance_given_hit": 54.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.456106103232474,
+    "median_distance_given_hit": 22.0,
+    "mean_distance_given_hit": 41.97727844914401,
+    "frac_all_within_10": 0.12792099672733537,
+    "frac_all_within_30": 0.2772291439398289,
+    "frac_all_within_prev2lines": 0.233851983694092,
+    "frac_all_same_line": 0.05285066314520296,
+    "frac_hits_within_10": 0.2804632426988922
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.3314003559740483,
+    "median_distance_given_hit": 33.0,
+    "mean_distance_given_hit": 57.747920997921,
+    "frac_all_within_10": 0.0640466211172992,
+    "frac_all_within_30": 0.1585519894356089,
+    "frac_all_within_prev2lines": 0.12964345179996556,
+    "frac_all_same_line": 0.024516277200436355,
+    "frac_hits_within_10": 0.19326056826056826
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.591462364356663,
+   "frac_tokens_with_exact_repeat_on_page": 0.46934029970718266,
+   "frac_tokens_with_LD1_other_type_on_page": 0.44614457139576275
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 15619,
+   "long_tokens_LD<=1": {
+    "coverage": 0.1699852743453486,
+    "frac_all_within_10": 0.01997567065753249,
+    "frac_all_within_30": 0.05166784045073308,
+    "median_distance_given_hit": 58
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.45455589366710686,
+    "median_distance_given_hit": 22.0,
+    "mean_distance_given_hit": 43.24264241505621,
+    "frac_all_within_10": 0.13277257851524374,
+    "frac_all_within_30": 0.2732100821036918,
+    "frac_all_within_prev2lines": 0.23233048171326864,
+    "frac_all_same_line": 0.06149164609289774,
+    "frac_hits_within_10": 0.2920929645067576
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.3314003559740483,
+    "median_distance_given_hit": 35.0,
+    "mean_distance_given_hit": 61.26836451836452,
+    "frac_all_within_10": 0.06456335763908824,
+    "frac_all_within_30": 0.15166216914508812,
+    "frac_all_within_prev2lines": 0.12505023827295172,
+    "frac_all_same_line": 0.02976976517195843,
+    "frac_hits_within_10": 0.19481981981981983
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.591462364356663,
+   "frac_tokens_with_exact_repeat_on_page": 0.46934029970718266,
+   "frac_tokens_with_LD1_other_type_on_page": 0.44614457139576275
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 15619,
+   "long_tokens_LD<=1": {
+    "coverage": 0.13496382610922594,
+    "frac_all_within_10": 0.01671041680005122,
+    "frac_all_within_30": 0.04129585760932198,
+    "median_distance_given_hit": 60.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.43402997071826377,
+    "median_distance_given_hit": 22,
+    "mean_distance_given_hit": 41.97400621734241,
+    "frac_all_within_10": 0.12594017339381064,
+    "frac_all_within_30": 0.2630763047597175,
+    "frac_all_within_prev2lines": 0.222081874031119,
+    "frac_all_same_line": 0.060142389619337426,
+    "frac_hits_within_10": 0.2901646934321053
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.3021186197393351,
+    "median_distance_given_hit": 35.0,
+    "mean_distance_given_hit": 60.79522995058913,
+    "frac_all_within_10": 0.05997014411207441,
+    "frac_all_within_30": 0.13773899064132744,
+    "frac_all_within_prev2lines": 0.11207441005913762,
+    "frac_all_same_line": 0.028879830051099502,
+    "frac_hits_within_10": 0.19849866970733562
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.5601710972038813,
+   "frac_tokens_with_exact_repeat_on_page": 0.4275994717804444,
+   "frac_tokens_with_LD1_other_type_on_page": 0.4488717919274272
+  },
+  "type_network": {
+   "types": 5681,
+   "frac_types_with_LD1_neighbour": 0.4941031508537229,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.8384050066027444,
+   "giant_component_frac_types": 0.27178313677169513
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 5681,
+   "TTR": 0.16308778779353506,
+   "h1_letters": 4.1617,
+   "h2_letters": 3.3925,
+   "h1_with_space": 4.1115,
+   "h2_with_space": 3.1651,
+   "zipf_slope_r1_1000": -1.0417,
+   "hapax_frac_types": 0.599,
+   "hapax_frac_tokens": 0.0977,
+   "wordlen_mean": 4.8744,
+   "wordlen_var": 6.3703,
+   "adjacent_repeat_rate": 0.00112,
+   "top10": [
+    [
+     "und",
+     1496
+    ],
+    [
+     "die",
+     1020
+    ],
+    [
+     "ich",
+     993
+    ],
+    [
+     "der",
+     805
+    ],
+    [
+     "in",
+     513
+    ],
+    [
+     "auf",
+     473
+    ],
+    [
+     "den",
+     458
+    ],
+    [
+     "mir",
+     386
+    ],
+    [
+     "das",
+     384
+    ],
+    [
+     "dem",
+     378
+    ]
+   ]
+  }
+ },
+ "en": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 12808,
+   "long_tokens_LD<=1": {
+    "coverage": 0.15021861336664585,
+    "frac_all_within_10": 0.019206745783885072,
+    "frac_all_within_30": 0.050671455340412244,
+    "median_distance_given_hit": 54.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.503157834299822,
+    "median_distance_given_hit": 17,
+    "mean_distance_given_hit": 36.026017002339245,
+    "frac_all_within_10": 0.17652293736005054,
+    "frac_all_within_30": 0.3400126313371993,
+    "frac_all_within_prev2lines": 0.2955158752942527,
+    "frac_all_same_line": 0.07498421082850089,
+    "frac_hits_within_10": 0.3508301477720089
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.3889877705689843,
+    "median_distance_given_hit": 28.0,
+    "mean_distance_given_hit": 51.3929889298893,
+    "frac_all_within_10": 0.08396968479072171,
+    "frac_all_within_30": 0.2070390997301487,
+    "frac_all_within_prev2lines": 0.17063788252856404,
+    "frac_all_same_line": 0.03149222024458862,
+    "frac_hits_within_10": 0.2158671586715867
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6361026583223287,
+   "frac_tokens_with_exact_repeat_on_page": 0.5386404087960039,
+   "frac_tokens_with_LD1_other_type_on_page": 0.46276626284664407
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 12808,
+   "long_tokens_LD<=1": {
+    "coverage": 0.1503747657713929,
+    "frac_all_within_10": 0.017801374141161775,
+    "frac_all_within_30": 0.044269206745783884,
+    "median_distance_given_hit": 64.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.503330079807085,
+    "median_distance_given_hit": 18,
+    "mean_distance_given_hit": 38.15074431072834,
+    "frac_all_within_10": 0.17566170982373544,
+    "frac_all_within_30": 0.3320032152494689,
+    "frac_all_within_prev2lines": 0.2850376069357524,
+    "frac_all_same_line": 0.08517540334156284,
+    "frac_hits_within_10": 0.3489990303998175
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.3889877705689843,
+    "median_distance_given_hit": 31.5,
+    "mean_distance_given_hit": 55.9639852398524,
+    "frac_all_within_10": 0.08385485445254637,
+    "frac_all_within_30": 0.1897284262502153,
+    "frac_all_within_prev2lines": 0.15493483378308548,
+    "frac_all_same_line": 0.03763564333696963,
+    "frac_hits_within_10": 0.2155719557195572
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6361026583223287,
+   "frac_tokens_with_exact_repeat_on_page": 0.5386404087960039,
+   "frac_tokens_with_LD1_other_type_on_page": 0.46276626284664407
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 12808,
+   "long_tokens_LD<=1": {
+    "coverage": 0.09884447220487196,
+    "frac_all_within_10": 0.009525296689569019,
+    "frac_all_within_30": 0.023735165521549032,
+    "median_distance_given_hit": 78.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.4731009932824252,
+    "median_distance_given_hit": 18.0,
+    "mean_distance_given_hit": 37.3504854368932,
+    "frac_all_within_10": 0.16515473388069127,
+    "frac_all_within_30": 0.3154102313831314,
+    "frac_all_within_prev2lines": 0.27183211804558766,
+    "frac_all_same_line": 0.07837170580467359,
+    "frac_hits_within_10": 0.34908980582524274
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.34406040075788025,
+    "median_distance_given_hit": 33,
+    "mean_distance_given_hit": 58.12765957446808,
+    "frac_all_within_10": 0.06984555319515416,
+    "frac_all_within_30": 0.16412126083711318,
+    "frac_all_within_prev2lines": 0.13532755353964518,
+    "frac_all_same_line": 0.03123385198369409,
+    "frac_hits_within_10": 0.2030037546933667
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.593931216627433,
+   "frac_tokens_with_exact_repeat_on_page": 0.47976115289659527,
+   "frac_tokens_with_LD1_other_type_on_page": 0.46982832864442786
+  },
+  "type_network": {
+   "types": 4004,
+   "frac_types_with_LD1_neighbour": 0.41358641358641357,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.7845208704139633,
+   "giant_component_frac_types": 0.18756243756243757
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 4004,
+   "TTR": 0.11494516851352127,
+   "h1_letters": 4.1851,
+   "h2_letters": 3.6014,
+   "h1_with_space": 4.1004,
+   "h2_with_space": 3.315,
+   "zipf_slope_r1_1000": -1.0802,
+   "hapax_frac_types": 0.4973,
+   "hapax_frac_tokens": 0.0572,
+   "wordlen_mean": 4.3873,
+   "wordlen_var": 5.98,
+   "adjacent_repeat_rate": 0.00049,
+   "top10": [
+    [
+     "the",
+     1372
+    ],
+    [
+     "to",
+     1120
+    ],
+    [
+     "and",
+     1057
+    ],
+    [
+     "of",
+     1051
+    ],
+    [
+     "a",
+     652
+    ],
+    [
+     "i",
+     598
+    ],
+    [
+     "in",
+     565
+    ],
+    [
+     "her",
+     517
+    ],
+    [
+     "not",
+     443
+    ],
+    [
+     "was",
+     421
+    ]
+   ]
+  }
+ },
+ "da": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 12051,
+   "long_tokens_LD<=1": {
+    "coverage": 0.15376317318064892,
+    "frac_all_within_10": 0.03534976350510331,
+    "frac_all_within_30": 0.08065720687079911,
+    "median_distance_given_hit": 29
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.5043061376815755,
+    "median_distance_given_hit": 15,
+    "mean_distance_given_hit": 32.60676268002505,
+    "frac_all_within_10": 0.19722110581615662,
+    "frac_all_within_30": 0.35801228684618475,
+    "frac_all_within_prev2lines": 0.31363036114141357,
+    "frac_all_same_line": 0.09045759889762875,
+    "frac_hits_within_10": 0.39107417316559456
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.33455819027387035,
+    "median_distance_given_hit": 25.0,
+    "mean_distance_given_hit": 47.00566329157371,
+    "frac_all_within_10": 0.09154848711029454,
+    "frac_all_within_30": 0.1924843543664236,
+    "frac_all_within_prev2lines": 0.159585462479187,
+    "frac_all_same_line": 0.039874834931388874,
+    "frac_hits_within_10": 0.2736399519478291
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6385715105930987,
+   "frac_tokens_with_exact_repeat_on_page": 0.4607567319285755,
+   "frac_tokens_with_LD1_other_type_on_page": 0.5295113969110639
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 12051,
+   "long_tokens_LD<=1": {
+    "coverage": 0.15417807650817358,
+    "frac_all_within_10": 0.024230354327441705,
+    "frac_all_within_30": 0.05825242718446602,
+    "median_distance_given_hit": 48.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.5060860079232933,
+    "median_distance_given_hit": 18,
+    "mean_distance_given_hit": 38.00397073004708,
+    "frac_all_within_10": 0.17287707412298328,
+    "frac_all_within_30": 0.3304242980995579,
+    "frac_all_within_prev2lines": 0.28388930355399894,
+    "frac_all_same_line": 0.0847447895734053,
+    "frac_hits_within_10": 0.34159623347892676
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.33455819027387035,
+    "median_distance_given_hit": 30.0,
+    "mean_distance_given_hit": 55.43538699159087,
+    "frac_all_within_10": 0.07670666590113108,
+    "frac_all_within_30": 0.16905896537865303,
+    "frac_all_within_prev2lines": 0.1385715105930987,
+    "frac_all_same_line": 0.036372509617040825,
+    "frac_hits_within_10": 0.22927750128711172
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6385715105930987,
+   "frac_tokens_with_exact_repeat_on_page": 0.4607567319285755,
+   "frac_tokens_with_LD1_other_type_on_page": 0.5295113969110639
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 12051,
+   "long_tokens_LD<=1": {
+    "coverage": 0.05095012862003153,
+    "frac_all_within_10": 0.0034851879512073688,
+    "frac_all_within_30": 0.009708737864077669,
+    "median_distance_given_hit": 92.5
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.43047023023482806,
+    "median_distance_given_hit": 20,
+    "mean_distance_given_hit": 39.044014671557186,
+    "frac_all_within_10": 0.13882987885399323,
+    "frac_all_within_30": 0.2745593385772521,
+    "frac_all_within_prev2lines": 0.23488545673767008,
+    "frac_all_same_line": 0.06637193546534995,
+    "frac_hits_within_10": 0.3225075025008336
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.23758396968479073,
+    "median_distance_given_hit": 36.0,
+    "mean_distance_given_hit": 64.49456259062349,
+    "frac_all_within_10": 0.04578859734741919,
+    "frac_all_within_30": 0.10610323247401963,
+    "frac_all_within_prev2lines": 0.08729976459780674,
+    "frac_all_same_line": 0.021329735316070506,
+    "frac_hits_within_10": 0.19272595456742386
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.5473100993282425,
+   "frac_tokens_with_exact_repeat_on_page": 0.3401274616753746,
+   "frac_tokens_with_LD1_other_type_on_page": 0.5018947005798932
+  },
+  "type_network": {
+   "types": 7946,
+   "frac_types_with_LD1_neighbour": 0.6687641580669519,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.8935522765114543,
+   "giant_component_frac_types": 0.5532343317392399
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 7946,
+   "TTR": 0.22811046678532468,
+   "h1_letters": 4.2374,
+   "h2_letters": 3.669,
+   "h1_with_space": 4.1243,
+   "h2_with_space": 3.3516,
+   "zipf_slope_r1_1000": -0.9308,
+   "hapax_frac_types": 0.6036,
+   "hapax_frac_tokens": 0.1377,
+   "wordlen_mean": 4.145,
+   "wordlen_var": 4.6396,
+   "adjacent_repeat_rate": 0.00385,
+   "top10": [
+    [
+     "og",
+     1552
+    ],
+    [
+     "i",
+     935
+    ],
+    [
+     "en",
+     658
+    ],
+    [
+     "den",
+     454
+    ],
+    [
+     "det",
+     413
+    ],
+    [
+     "med",
+     402
+    ],
+    [
+     "saa",
+     396
+    ],
+    [
+     "som",
+     382
+    ],
+    [
+     "paa",
+     365
+    ],
+    [
+     "til",
+     345
+    ]
+   ]
+  }
+ },
+ "autocopist_s19": {
+  "selfcitation": {
+   "tokens": 31277,
+   "tokens_len>=5": 19536,
+   "long_tokens_LD<=1": {
+    "coverage": 0.7017301392301393,
+    "frac_all_within_10": 0.26428132678132676,
+    "frac_all_within_30": 0.46744471744471744,
+    "median_distance_given_hit": 17
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.7603990152508233,
+    "median_distance_given_hit": 13,
+    "mean_distance_given_hit": 29.864104612538366,
+    "frac_all_within_10": 0.332608626147009,
+    "frac_all_within_30": 0.5539214119001183,
+    "frac_all_within_prev2lines": 0.47283946670077054,
+    "frac_all_same_line": 0.14723279086868946,
+    "frac_hits_within_10": 0.43741327839212885
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.3034817917319436,
+    "median_distance_given_hit": 33.0,
+    "mean_distance_given_hit": 59.033607248209016,
+    "frac_all_within_10": 0.06017201138216581,
+    "frac_all_within_30": 0.14477091792691116,
+    "frac_all_within_prev2lines": 0.10947341496946639,
+    "frac_all_same_line": 0.0228922211209515,
+    "frac_hits_within_10": 0.19827222924568058
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.8892157176199763,
+   "frac_tokens_with_exact_repeat_on_page": 0.45407168206669435,
+   "frac_tokens_with_LD1_other_type_on_page": 0.8804552866323496
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 31277,
+   "tokens_len>=5": 19536,
+   "long_tokens_LD<=1": {
+    "coverage": 0.6412776412776413,
+    "frac_all_within_10": 0.19594594594594594,
+    "frac_all_within_30": 0.3891277641277641,
+    "median_distance_given_hit": 21.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.714454711129584,
+    "median_distance_given_hit": 16.0,
+    "mean_distance_given_hit": 33.42745905307437,
+    "frac_all_within_10": 0.2730121175304537,
+    "frac_all_within_30": 0.4924385331073952,
+    "frac_all_within_prev2lines": 0.4068484829107651,
+    "frac_all_same_line": 0.1195766857435176,
+    "frac_hits_within_10": 0.38212655508815896
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.3034817917319436,
+    "median_distance_given_hit": 37.0,
+    "mean_distance_given_hit": 63.936894226717236,
+    "frac_all_within_10": 0.05528023787447645,
+    "frac_all_within_30": 0.1333248073664354,
+    "frac_all_within_prev2lines": 0.09972184032995492,
+    "frac_all_same_line": 0.022764331617482494,
+    "frac_hits_within_10": 0.18215339233038347
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.8892157176199763,
+   "frac_tokens_with_exact_repeat_on_page": 0.45407168206669435,
+   "frac_tokens_with_LD1_other_type_on_page": 0.8804552866323496
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 31277,
+   "tokens_len>=5": 19536,
+   "long_tokens_LD<=1": {
+    "coverage": 0.16272522522522523,
+    "frac_all_within_10": 0.02206183456183456,
+    "frac_all_within_30": 0.057125307125307126,
+    "median_distance_given_hit": 52
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.3315535377433897,
+    "median_distance_given_hit": 33.5,
+    "mean_distance_given_hit": 56.71610414657666,
+    "frac_all_within_10": 0.06509575726572242,
+    "frac_all_within_30": 0.15624900086325416,
+    "frac_all_within_prev2lines": 0.11864948684336733,
+    "frac_all_same_line": 0.027815967004508106,
+    "frac_hits_within_10": 0.19633558341369334
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.07481535952936663,
+    "median_distance_given_hit": 70.0,
+    "mean_distance_given_hit": 98.1525641025641,
+    "frac_all_within_10": 0.007417591201202161,
+    "frac_all_within_30": 0.02106979569651821,
+    "frac_all_within_prev2lines": 0.01560251942321834,
+    "frac_all_same_line": 0.002973430955654315,
+    "frac_hits_within_10": 0.09914529914529914
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.4687789749656297,
+   "frac_tokens_with_exact_repeat_on_page": 0.1314384371902676,
+   "frac_tokens_with_LD1_other_type_on_page": 0.45551043898072063
+  },
+  "type_network": {
+   "types": 12419,
+   "frac_types_with_LD1_neighbour": 0.9000724696030277,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.9593631102727244,
+   "giant_component_frac_types": 0.7934616313712859
+  },
+  "general_raw": {
+   "tokens": 31277,
+   "types": 12419,
+   "TTR": 0.3970649358953864,
+   "h1_letters": 3.8469,
+   "h2_letters": 2.8374,
+   "h1_with_space": 3.8733,
+   "h2_with_space": 2.6824,
+   "zipf_slope_r1_1000": -0.7722,
+   "hapax_frac_types": 0.7063,
+   "hapax_frac_tokens": 0.2804,
+   "wordlen_mean": 5.4631,
+   "wordlen_var": 4.4559,
+   "adjacent_repeat_rate": 0.00182,
+   "top10": [
+    [
+     "daiin",
+     190
+    ],
+    [
+     "eey",
+     171
+    ],
+    [
+     "dain",
+     166
+    ],
+    [
+     "cho",
+     166
+    ],
+    [
+     "eeo",
+     158
+    ],
+    [
+     "chy",
+     154
+    ],
+    [
+     "ko",
+     153
+    ],
+    [
+     "shy",
+     150
+    ],
+    [
+     "ky",
+     143
+    ],
+    [
+     "sho",
+     137
+    ]
+   ]
+  },
+  "general_glyphmerged": {
+   "tokens": 31277,
+   "types": 11961,
+   "TTR": 0.3824215877481856,
+   "h1_letters": 3.9003,
+   "h2_letters": 3.2724,
+   "h1_with_space": 3.8781,
+   "h2_with_space": 3.0119,
+   "zipf_slope_r1_1000": -0.7875,
+   "hapax_frac_types": 0.6999,
+   "hapax_frac_tokens": 0.2677,
+   "wordlen_mean": 4.5516,
+   "wordlen_var": 3.0999,
+   "adjacent_repeat_rate": 0.0047,
+   "top10": [
+    [
+     "daN",
+     372
+    ],
+    [
+     "Ey",
+     171
+    ],
+    [
+     "Co",
+     166
+    ],
+    [
+     "Eo",
+     158
+    ],
+    [
+     "Cy",
+     154
+    ],
+    [
+     "ko",
+     153
+    ],
+    [
+     "Sy",
+     150
+    ],
+    [
+     "aN",
+     146
+    ],
+    [
+     "ky",
+     143
+    ],
+    [
+     "So",
+     137
+    ]
+   ]
+  }
+ },
+ "autocopist_s7": {
+  "selfcitation": {
+   "tokens": 36144,
+   "tokens_len>=5": 16743,
+   "long_tokens_LD<=1": {
+    "coverage": 0.6600967568536105,
+    "frac_all_within_10": 0.23030520217404288,
+    "frac_all_within_30": 0.4219673893567461,
+    "median_distance_given_hit": 18.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.7851372288623285,
+    "median_distance_given_hit": 11.0,
+    "mean_distance_given_hit": 27.685249136655155,
+    "frac_all_within_10": 0.3793160690571049,
+    "frac_all_within_30": 0.5999889331562638,
+    "frac_all_within_prev2lines": 0.5490814519698982,
+    "frac_all_same_line": 0.2063966356795042,
+    "frac_hits_within_10": 0.48312072732398337
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.37367197875166,
+    "median_distance_given_hit": 32.0,
+    "mean_distance_given_hit": 59.334369909669775,
+    "frac_all_within_10": 0.07436918990703852,
+    "frac_all_within_30": 0.18055555555555555,
+    "frac_all_within_prev2lines": 0.15717684816290395,
+    "frac_all_same_line": 0.035939575033200534,
+    "frac_hits_within_10": 0.19902265659706797
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.8994577246569279,
+   "frac_tokens_with_exact_repeat_on_page": 0.5223826914563966,
+   "frac_tokens_with_LD1_other_type_on_page": 0.8923749446657813
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 36144,
+   "tokens_len>=5": 16743,
+   "long_tokens_LD<=1": {
+    "coverage": 0.6009078420832586,
+    "frac_all_within_10": 0.17099683449799916,
+    "frac_all_within_30": 0.34396464193991516,
+    "median_distance_given_hit": 23
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.7494466578131916,
+    "median_distance_given_hit": 13.0,
+    "mean_distance_given_hit": 30.4555522740697,
+    "frac_all_within_10": 0.3334993359893758,
+    "frac_all_within_30": 0.5499944665781319,
+    "frac_all_within_prev2lines": 0.49856131031429834,
+    "frac_all_same_line": 0.17861885790172644,
+    "frac_hits_within_10": 0.44499409332545775
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.37367197875166,
+    "median_distance_given_hit": 36.0,
+    "mean_distance_given_hit": 63.54064860062194,
+    "frac_all_within_10": 0.07226648959716689,
+    "frac_all_within_30": 0.16984838424081453,
+    "frac_all_within_prev2lines": 0.1466356795042054,
+    "frac_all_same_line": 0.0351925630810093,
+    "frac_hits_within_10": 0.1933955279135199
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.8994577246569279,
+   "frac_tokens_with_exact_repeat_on_page": 0.5223826914563966,
+   "frac_tokens_with_LD1_other_type_on_page": 0.8923749446657813
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 36144,
+   "tokens_len>=5": 16743,
+   "long_tokens_LD<=1": {
+    "coverage": 0.23353043062772502,
+    "frac_all_within_10": 0.041509884727946006,
+    "frac_all_within_30": 0.09627904198769635,
+    "median_distance_given_hit": 41.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.5125885347498893,
+    "median_distance_given_hit": 19,
+    "mean_distance_given_hit": 41.6918551303503,
+    "frac_all_within_10": 0.16805002213368747,
+    "frac_all_within_30": 0.3259462151394422,
+    "frac_all_within_prev2lines": 0.2898406374501992,
+    "frac_all_same_line": 0.0879260734838424,
+    "frac_hits_within_10": 0.3278458466022562
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.1852312970340859,
+    "median_distance_given_hit": 55,
+    "mean_distance_given_hit": 87.7058999253174,
+    "frac_all_within_10": 0.02348937583001328,
+    "frac_all_within_30": 0.06050796812749004,
+    "frac_all_within_prev2lines": 0.051156485170429394,
+    "frac_all_same_line": 0.011232846392208942,
+    "frac_hits_within_10": 0.12681105302464526
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6432602921646746,
+   "frac_tokens_with_exact_repeat_on_page": 0.2836708720672864,
+   "frac_tokens_with_LD1_other_type_on_page": 0.6351261620185923
+  },
+  "type_network": {
+   "types": 10074,
+   "frac_types_with_LD1_neighbour": 0.8887234464959302,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.9681274900398407,
+   "giant_component_frac_types": 0.7933293627159024
+  },
+  "general_raw": {
+   "tokens": 36144,
+   "types": 10074,
+   "TTR": 0.2787184594953519,
+   "h1_letters": 3.8201,
+   "h2_letters": 2.6757,
+   "h1_with_space": 3.8157,
+   "h2_with_space": 2.4957,
+   "zipf_slope_r1_1000": -0.9648,
+   "hapax_frac_types": 0.6969,
+   "hapax_frac_tokens": 0.1943,
+   "wordlen_mean": 4.6159,
+   "wordlen_var": 4.0897,
+   "adjacent_repeat_rate": 0.00252,
+   "top10": [
+    [
+     "ko",
+     596
+    ],
+    [
+     "to",
+     592
+    ],
+    [
+     "ky",
+     541
+    ],
+    [
+     "ty",
+     522
+    ],
+    [
+     "kain",
+     335
+    ],
+    [
+     "tar",
+     329
+    ],
+    [
+     "kaiin",
+     328
+    ],
+    [
+     "tain",
+     324
+    ],
+    [
+     "kar",
+     317
+    ],
+    [
+     "taiin",
+     309
+    ]
+   ]
+  },
+  "general_glyphmerged": {
+   "tokens": 36144,
+   "types": 9815,
+   "TTR": 0.27155267817618417,
+   "h1_letters": 3.7509,
+   "h2_letters": 2.9428,
+   "h1_with_space": 3.7271,
+   "h2_with_space": 2.6893,
+   "zipf_slope_r1_1000": -0.9778,
+   "hapax_frac_types": 0.6941,
+   "hapax_frac_tokens": 0.1885,
+   "wordlen_mean": 4.0649,
+   "wordlen_var": 2.9107,
+   "adjacent_repeat_rate": 0.00479,
+   "top10": [
+    [
+     "kaN",
+     679
+    ],
+    [
+     "taN",
+     648
+    ],
+    [
+     "ko",
+     596
+    ],
+    [
+     "to",
+     592
+    ],
+    [
+     "ky",
+     541
+    ],
+    [
+     "ty",
+     522
+    ],
+    [
+     "tar",
+     329
+    ],
+    [
+     "kar",
+     317
+    ],
+    [
+     "kol",
+     306
+    ],
+    [
+     "tol",
+     306
+    ]
+   ]
+  }
+ },
+ "rugg_grille": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 19589,
+   "long_tokens_LD<=1": {
+    "coverage": 0.7958037674204911,
+    "frac_all_within_10": 0.03231405380570729,
+    "frac_all_within_30": 0.0784624023686763,
+    "median_distance_given_hit": 36
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.8092093931216627,
+    "median_distance_given_hit": 36.0,
+    "mean_distance_given_hit": 31.452532992762876,
+    "frac_all_within_10": 0.06660159614170064,
+    "frac_all_within_30": 0.1603605672618706,
+    "frac_all_within_prev2lines": 0.14718378595624965,
+    "frac_all_same_line": 0.031377389906413276,
+    "frac_hits_within_10": 0.0823045267489712
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.7879657805592237,
+    "median_distance_given_hit": 36.0,
+    "mean_distance_given_hit": 35.66216117749927,
+    "frac_all_within_10": 0.003645863237067233,
+    "frac_all_within_30": 0.008956766377676983,
+    "frac_all_within_prev2lines": 0.030085548601940633,
+    "frac_all_same_line": 0.0019521157489808807,
+    "frac_hits_within_10": 0.0046269309239288835
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.9851294712062927,
+   "frac_tokens_with_exact_repeat_on_page": 0.9820003444910145,
+   "frac_tokens_with_LD1_other_type_on_page": 0.19251306195096746
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 19589,
+   "long_tokens_LD<=1": {
+    "coverage": 0.7957527183623462,
+    "frac_all_within_10": 0.22563683700035733,
+    "frac_all_within_30": 0.5050793812854153,
+    "median_distance_given_hit": 21.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.8094390537980134,
+    "median_distance_given_hit": 19.0,
+    "mean_distance_given_hit": 27.375868917576963,
+    "frac_all_within_10": 0.2503014296377103,
+    "frac_all_within_30": 0.5390136073950738,
+    "frac_all_within_prev2lines": 0.449962680140093,
+    "frac_all_same_line": 0.11956708962507895,
+    "frac_hits_within_10": 0.3092282593275642
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.7879657805592237,
+    "median_distance_given_hit": 23.0,
+    "mean_distance_given_hit": 30.67666132322938,
+    "frac_all_within_10": 0.2056324280875007,
+    "frac_all_within_30": 0.4808807486938049,
+    "frac_all_within_prev2lines": 0.39452833438594476,
+    "frac_all_same_line": 0.09582591720732618,
+    "frac_hits_within_10": 0.26096619061498105
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.9851294712062927,
+   "frac_tokens_with_exact_repeat_on_page": 0.9820003444910145,
+   "frac_tokens_with_LD1_other_type_on_page": 0.19251306195096746
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 19589,
+   "long_tokens_LD<=1": {
+    "coverage": 0.3005258052988922,
+    "frac_all_within_10": 0.03287559344530094,
+    "frac_all_within_30": 0.08448619122977181,
+    "median_distance_given_hit": 63
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.4195039329390825,
+    "median_distance_given_hit": 45,
+    "mean_distance_given_hit": 72.09847396154109,
+    "frac_all_within_10": 0.06419015904001837,
+    "frac_all_within_30": 0.15947063214101165,
+    "frac_all_within_prev2lines": 0.12881093184819428,
+    "frac_all_same_line": 0.029482689326520067,
+    "frac_hits_within_10": 0.15301443919797442
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.07288855715680083,
+    "median_distance_given_hit": 89,
+    "mean_distance_given_hit": 119.94407246947617,
+    "frac_all_within_10": 0.006315668599644026,
+    "frac_all_within_30": 0.01558821840730321,
+    "frac_all_within_prev2lines": 0.012573922030200378,
+    "frac_all_same_line": 0.0028420508698398118,
+    "frac_hits_within_10": 0.08664828672705789
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.6214617902049722,
+   "frac_tokens_with_exact_repeat_on_page": 0.136762932766837,
+   "frac_tokens_with_LD1_other_type_on_page": 0.5925819601538727
+  },
+  "type_network": {
+   "types": 3748,
+   "frac_types_with_LD1_neighbour": 0.9989327641408752,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.999454555893667,
+   "giant_component_frac_types": 0.9983991462113126
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 3748,
+   "TTR": 0.10759602687029914,
+   "h1_letters": 3.8468,
+   "h2_letters": 2.7987,
+   "h1_with_space": 3.8437,
+   "h2_with_space": 2.4963,
+   "zipf_slope_r1_1000": -0.4318,
+   "hapax_frac_types": 0.0456,
+   "hapax_frac_tokens": 0.0049,
+   "wordlen_mean": 4.7354,
+   "wordlen_var": 2.6355,
+   "adjacent_repeat_rate": 0.00029,
+   "top10": [
+    [
+     "k",
+     136
+    ],
+    [
+     "l",
+     135
+    ],
+    [
+     "sh",
+     103
+    ],
+    [
+     "or",
+     100
+    ],
+    [
+     "ol",
+     100
+    ],
+    [
+     "ch",
+     93
+    ],
+    [
+     "s",
+     91
+    ],
+    [
+     "eey",
+     90
+    ],
+    [
+     "aiin",
+     83
+    ],
+    [
+     "y",
+     83
+    ]
+   ]
+  },
+  "general_glyphmerged": {
+   "tokens": 34834,
+   "types": 3523,
+   "TTR": 0.10113682034793592,
+   "h1_letters": 3.9181,
+   "h2_letters": 3.1765,
+   "h1_with_space": 3.8599,
+   "h2_with_space": 2.7543,
+   "zipf_slope_r1_1000": -0.4622,
+   "hapax_frac_types": 0.0423,
+   "hapax_frac_tokens": 0.0043,
+   "wordlen_mean": 4.045,
+   "wordlen_var": 1.9519,
+   "adjacent_repeat_rate": 0.00029,
+   "top10": [
+    [
+     "aN",
+     179
+    ],
+    [
+     "k",
+     136
+    ],
+    [
+     "l",
+     135
+    ],
+    [
+     "CaN",
+     104
+    ],
+    [
+     "yaN",
+     103
+    ],
+    [
+     "S",
+     103
+    ],
+    [
+     "or",
+     100
+    ],
+    [
+     "ol",
+     100
+    ],
+    [
+     "C",
+     93
+    ],
+    [
+     "s",
+     91
+    ]
+   ]
+  }
+ },
+ "rugg_sorted": {
+  "selfcitation": {
+   "tokens": 34834,
+   "tokens_len>=5": 19504,
+   "long_tokens_LD<=1": {
+    "coverage": 0.6789376538146021,
+    "frac_all_within_10": 0.3410582444626743,
+    "frac_all_within_30": 0.3417760459392945,
+    "median_distance_given_hit": 4.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.6983407016133663,
+    "median_distance_given_hit": 33.0,
+    "mean_distance_given_hit": 42.910137301652554,
+    "frac_all_within_10": 0.32941953264052365,
+    "frac_all_within_30": 0.34383074008152953,
+    "frac_all_within_prev2lines": 0.3419647470861802,
+    "frac_all_same_line": 0.2772865591089166,
+    "frac_hits_within_10": 0.47171750390528655
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.45154159729000404,
+    "median_distance_given_hit": 159,
+    "mean_distance_given_hit": 109.61040116981371,
+    "frac_all_within_10": 0.09685939025090429,
+    "frac_all_within_30": 0.09737612677269335,
+    "frac_all_within_prev2lines": 0.09806510880174542,
+    "frac_all_same_line": 0.0841993454670724,
+    "frac_hits_within_10": 0.21450823319982198
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.898001952115749,
+   "frac_tokens_with_exact_repeat_on_page": 0.6894126428202331,
+   "frac_tokens_with_LD1_other_type_on_page": 0.7368088649021072
+  },
+  "selfcitation_shuffled_within_page": {
+   "tokens": 34834,
+   "tokens_len>=5": 19504,
+   "long_tokens_LD<=1": {
+    "coverage": 0.6656070549630845,
+    "frac_all_within_10": 0.14161197703035275,
+    "frac_all_within_30": 0.3401866283839213,
+    "median_distance_given_hit": 30.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.6877188953321468,
+    "median_distance_given_hit": 27.0,
+    "mean_distance_given_hit": 43.546794122558026,
+    "frac_all_within_10": 0.15860940460469655,
+    "frac_all_within_30": 0.3713613136590687,
+    "frac_all_within_prev2lines": 0.30252052592294887,
+    "frac_all_same_line": 0.07073548831601309,
+    "frac_hits_within_10": 0.2306311571213892
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.45154159729000404,
+    "median_distance_given_hit": 62,
+    "mean_distance_given_hit": 86.19111195880221,
+    "frac_all_within_10": 0.048228742033645286,
+    "frac_all_within_30": 0.1311075386117012,
+    "frac_all_within_prev2lines": 0.10446690015502096,
+    "frac_all_same_line": 0.021272320146982833,
+    "frac_hits_within_10": 0.1068090787716956
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.898001952115749,
+   "frac_tokens_with_exact_repeat_on_page": 0.6894126428202331,
+   "frac_tokens_with_LD1_other_type_on_page": 0.7368088649021072
+  },
+  "selfcitation_shuffled_global": {
+   "tokens": 34834,
+   "tokens_len>=5": 19504,
+   "long_tokens_LD<=1": {
+    "coverage": 0.5251230516817064,
+    "frac_all_within_10": 0.08152173913043478,
+    "frac_all_within_30": 0.20744462674323216,
+    "median_distance_given_hit": 42.0
+   },
+   "nearest_earlier_LD<=1": {
+    "coverage": 0.5869265659987368,
+    "median_distance_given_hit": 34,
+    "mean_distance_given_hit": 55.11513817559305,
+    "frac_all_within_10": 0.11015100189470058,
+    "frac_all_within_30": 0.26999483263478213,
+    "frac_all_within_prev2lines": 0.2191537004076477,
+    "frac_all_same_line": 0.04888901647815353,
+    "frac_hits_within_10": 0.1876742479823918
+   },
+   "nearest_earlier_LD0": {
+    "coverage": 0.15519320204398002,
+    "median_distance_given_hit": 79.0,
+    "mean_distance_given_hit": 110.85016648168701,
+    "frac_all_within_10": 0.012774875122007234,
+    "frac_all_within_30": 0.03766435092151346,
+    "frac_all_within_prev2lines": 0.029425274157432395,
+    "frac_all_same_line": 0.005741516908767296,
+    "frac_hits_within_10": 0.08231594524602294
+   },
+   "frac_tokens_with_any_page_neighbour_LD<=1": 0.8020037894011598,
+   "frac_tokens_with_exact_repeat_on_page": 0.27743009703163574,
+   "frac_tokens_with_LD1_other_type_on_page": 0.7755641040362864
+  },
+  "type_network": {
+   "types": 1766,
+   "frac_types_with_LD1_neighbour": 0.9977349943374858,
+   "frac_tokens_whose_type_has_LD1_neighbour": 0.9995406786472986,
+   "giant_component_frac_types": 0.9835787089467724
+  },
+  "general_raw": {
+   "tokens": 34834,
+   "types": 1766,
+   "TTR": 0.05069759430441523,
+   "h1_letters": 3.8344,
+   "h2_letters": 2.6277,
+   "h1_with_space": 3.8352,
+   "h2_with_space": 2.3761,
+   "zipf_slope_r1_1000": -0.6208,
+   "hapax_frac_types": 0.1376,
+   "hapax_frac_tokens": 0.007,
+   "wordlen_mean": 4.7725,
+   "wordlen_var": 2.7379,
+   "adjacent_repeat_rate": 0.08974,
+   "top10": [
+    [
+     "chaaiin",
+     272
+    ],
+    [
+     "ytey",
+     240
+    ],
+    [
+     "ol",
+     158
+    ],
+    [
+     "ts",
+     151
+    ],
+    [
+     "chaain",
+     146
+    ],
+    [
+     "ttey",
+     137
+    ],
+    [
+     "chaiaiin",
+     137
+    ],
+    [
+     "yts",
+     134
+    ],
+    [
+     "choaaiin",
+     132
+    ],
+    [
+     "l",
+     128
+    ]
+   ]
+  },
+  "general_glyphmerged": {
+   "tokens": 34834,
+   "types": 1620,
+   "TTR": 0.0465062869610151,
+   "h1_letters": 3.9117,
+   "h2_letters": 2.9128,
+   "h1_with_space": 3.8593,
+   "h2_with_space": 2.5795,
+   "zipf_slope_r1_1000": -0.6871,
+   "hapax_frac_types": 0.1278,
+   "hapax_frac_tokens": 0.0059,
+   "wordlen_mean": 4.1081,
+   "wordlen_var": 1.9147,
+   "adjacent_repeat_rate": 0.09497,
+   "top10": [
+    [
+     "CaaN",
+     418
+    ],
+    [
+     "ytey",
+     240
+    ],
+    [
+     "CoaaN",
+     205
+    ],
+    [
+     "CaiaN",
+     197
+    ],
+    [
+     "CoaiaN",
+     177
+    ],
+    [
+     "aaN",
+     164
+    ],
+    [
+     "ol",
+     158
+    ],
+    [
+     "ts",
+     151
+    ],
+    [
+     "daaN",
+     144
+    ],
+    [
+     "CaN",
+     138
+    ]
+   ]
+  }
+ },
+ "_meta": {
+  "tokens_per_corpus": 34834,
+  "pages": 207,
+  "lines": 4130,
+  "page_tokens_median": 101,
+  "page_tokens_min_max": [
+   31,
+   620
+  ],
+  "runtime_s": 103.6
+ }
+}

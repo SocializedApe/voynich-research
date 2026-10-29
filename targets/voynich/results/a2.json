@@ -1,0 +1,7171 @@
+{
+ "voynich": {
+  "ALL": {
+   "label": "Voynich ZL P ALL",
+   "lines": 4130,
+   "tokens": 34116,
+   "zipf": {
+    "tokens": 34116,
+    "types": 7236,
+    "zipf_slope_1_1000": -1.0403,
+    "ranks_used_1000": 1000,
+    "zipf_slope_1_5000": -1.0554,
+    "ranks_used_5000": 5000,
+    "hapax_types": 5045,
+    "hapax_type_frac": 0.6972,
+    "hapax_token_frac": 0.1479,
+    "dis_legomena_type_frac": 0.1088,
+    "top10": [
+     [
+      "daiin",
+      767
+     ],
+     [
+      "ol",
+      523
+     ],
+     [
+      "chedy",
+      488
+     ],
+     [
+      "aiin",
+      454
+     ],
+     [
+      "shedy",
+      421
+     ],
+     [
+      "chol",
+      363
+     ],
+     [
+      "or",
+      354
+     ],
+     [
+      "chey",
+      335
+     ],
+     [
+      "ar",
+      329
+     ],
+     [
+      "qokeey",
+      303
+     ]
+    ],
+    "top1_share": 0.0225
+   },
+   "wordlength_raw": {
+    "mean": 5.07,
+    "variance": 3.734,
+    "skewness": 0.57,
+    "max": 22,
+    "dispersion_var_over_mean_Lminus1": 0.917,
+    "histogram_pct": {
+     "1": 3.16,
+     "2": 6.29,
+     "3": 9.01,
+     "4": 17.8,
+     "5": 24.78,
+     "6": 19.41,
+     "7": 11.39,
+     "8": 4.61,
+     "9": 1.87,
+     "10": 0.74,
+     "11": 0.34,
+     "12": 0.23,
+     "13": 0.15,
+     "14": 0.09,
+     "15": 0.05
+    },
+    "pct_over_15": 0.09,
+    "binomial_fit_Lminus1": {
+     "n": 40,
+     "p": 0.1018,
+     "loglik": -70585.9,
+     "chi2_vs_fit": 2560.8,
+     "shift": 1,
+     "n_at_cap": true,
+     "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+    },
+    "binomial_fit_L": {
+     "n": 23,
+     "p": 0.2204,
+     "loglik": -70600.9,
+     "chi2_vs_fit": 2350.9,
+     "shift": 0,
+     "n_at_cap": false,
+     "note": ""
+    }
+   },
+   "wordlength_merged": {
+    "mean": 4.111,
+    "variance": 2.484,
+    "skewness": 0.762,
+    "max": 17,
+    "dispersion_var_over_mean_Lminus1": 0.798,
+    "histogram_pct": {
+     "1": 3.25,
+     "2": 10.31,
+     "3": 23.07,
+     "4": 25.23,
+     "5": 21.72,
+     "6": 10.77,
+     "7": 3.58,
+     "8": 1.06,
+     "9": 0.48,
+     "10": 0.21,
+     "11": 0.14,
+     "12": 0.1,
+     "13": 0.03,
+     "14": 0.03,
+     "15": 0.01
+    },
+    "pct_over_15": 0.02,
+    "binomial_fit_Lminus1": {
+     "n": 19,
+     "p": 0.1637,
+     "loglik": -63115.0,
+     "chi2_vs_fit": 1510.6,
+     "shift": 1,
+     "n_at_cap": false,
+     "note": ""
+    },
+    "binomial_fit_L": {
+     "n": 17,
+     "p": 0.2418,
+     "loglik": -63866.2,
+     "chi2_vs_fit": 2311.2,
+     "shift": 0,
+     "n_at_cap": false,
+     "note": ""
+    }
+   },
+   "ttr": {
+    "types_after": {
+     "5000": 1882,
+     "10000": 3254,
+     "20000": 4872,
+     "N=34116": 7236
+    },
+    "heaps_beta": 0.7095
+   },
+   "positional_merged": {
+    "first_symbol_by_position": {
+     "N": 34088,
+     "chi2": 6383.2,
+     "df": 36,
+     "p": 0.0,
+     "cramers_V": 0.306,
+     "top_deviations": [
+      "START:p obs=375 exp=63.5 z=+39.1",
+      "START:y obs=600 exp=197.1 z=+28.7",
+      "START:t obs=392 exp=115.8 z=+25.7",
+      "START:s obs=420 exp=134.4 z=+24.6",
+      "START:C obs=142 exp=660.0 z=-20.2",
+      "END:d obs=691 exp=379.9 z=+16.0",
+      "START:a obs=15 exp=216.6 z=-13.7",
+      "START:d obs=638 exp=379.9 z=+13.2",
+      "MID:p obs=137 exp=400.9 z=-13.2",
+      "MID:d obs=1828 exp=2397.2 z=-11.6"
+     ],
+     "row_n": {
+      "START": 4102,
+      "MID": 25884,
+      "END": 4102
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "d": 15.6,
+       "y": 14.6,
+       "o": 13.7,
+       "q": 12.8,
+       "s": 10.2,
+       "t": 9.6,
+       "p": 9.1,
+       "S": 4.7
+      },
+      "MID": {
+       "o": 21.2,
+       "C": 18.6,
+       "q": 17.0,
+       "S": 10.1,
+       "d": 7.1,
+       "a": 5.5,
+       "l": 4.2,
+       "k": 3.8
+      },
+      "END": {
+       "o": 23.1,
+       "d": 16.8,
+       "C": 13.2,
+       "q": 8.8,
+       "a": 8.7,
+       "l": 5.8,
+       "S": 4.2,
+       "s": 4.0
+      }
+     }
+    },
+    "last_symbol_by_position": {
+     "N": 34088,
+     "chi2": 4090.8,
+     "df": 32,
+     "p": 0.0,
+     "cramers_V": 0.245,
+     "top_deviations": [
+      "END:m obs=630 exp=106.5 z=+50.7",
+      "END:g obs=89 exp=13.2 z=+20.8",
+      "MID:m obs=235 exp=672.0 z=-16.9",
+      "END:r obs=357 exp=616.5 z=-10.5",
+      "START:o obs=243 exp=136.6 z=+9.1",
+      "START:r obs=837 exp=616.5 z=+8.9",
+      "START:m obs=20 exp=106.5 z=-8.4",
+      "START:y obs=1326 exp=1667.5 z=-8.4",
+      "END:n obs=43 exp=12.9 z=+8.4",
+      "END:l obs=455 exp=640.8 z=-7.3"
+     ],
+     "row_n": {
+      "START": 4102,
+      "MID": 25884,
+      "END": 4102
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "y": 32.3,
+       "r": 20.4,
+       "l": 14.3,
+       "N": 14.1,
+       "o": 5.9,
+       "J": 5.4,
+       "s": 3.7,
+       "d": 1.5
+      },
+      "MID": {
+       "y": 42.2,
+       "l": 16.5,
+       "r": 15.2,
+       "N": 10.7,
+       "J": 4.8,
+       "o": 3.2,
+       "s": 3.0,
+       "d": 1.4
+      },
+      "END": {
+       "y": 39.1,
+       "m": 15.4,
+       "l": 11.1,
+       "N": 9.8,
+       "r": 8.7,
+       "J": 4.1,
+       "s": 3.4,
+       "d": 2.5
+      }
+     }
+    },
+    "first_symbol_para_vs_line_vs_mid": {
+     "N": 29986,
+     "chi2": 13569.5,
+     "df": 28,
+     "p": 0.0,
+     "cramers_V": 0.4757,
+     "top_deviations": [
+      "PARA_FIRST:p obs=331 exp=12.6 z=+89.6",
+      "LINE_FIRST:y obs=587 exp=167.3 z=+32.5",
+      "PARA_FIRST:t obs=171 exp=22.0 z=+31.8",
+      "LINE_FIRST:s obs=408 exp=107.0 z=+29.1",
+      "LINE_FIRST:d obs=621 exp=276.5 z=+20.7",
+      "LINE_FIRST:C obs=139 exp=554.3 z=-17.6",
+      "MID:p obs=137 exp=442.0 z=-14.5",
+      "LINE_FIRST:t obs=221 exp=99.8 z=+12.1",
+      "LINE_FIRST:a obs=15 exp=162.0 z=-11.5",
+      "MID:y obs=892 exp=1287.9 z=-11.0"
+     ],
+     "row_n": {
+      "PARA_FIRST": 740,
+      "LINE_FIRST": 3362,
+      "MID": 25884
+     },
+     "top_symbol_shares_pct": {
+      "PARA_FIRST": {
+       "p": 44.7,
+       "t": 23.1,
+       "k": 10.4,
+       "o": 5.7,
+       "f": 4.3,
+       "q": 3.6,
+       "d": 2.3,
+       "y": 1.8
+      },
+      "LINE_FIRST": {
+       "d": 18.5,
+       "y": 17.5,
+       "o": 15.5,
+       "q": 14.8,
+       "s": 12.1,
+       "t": 6.6,
+       "S": 5.5,
+       "C": 4.1
+      },
+      "MID": {
+       "o": 21.2,
+       "C": 18.6,
+       "q": 17.0,
+       "S": 10.1,
+       "d": 7.1,
+       "a": 5.5,
+       "l": 4.2,
+       "k": 3.8
+      }
+     }
+    },
+    "gallows_initial_pct": {
+     "END": 8.51,
+     "LINE_FIRST": 9.04,
+     "MID": 8.89,
+     "NONPARA_LINE_ALL": 8.51,
+     "PARA_FIRST": 83.11,
+     "PARA_LINE_ALL": 18.48,
+     "START": 22.4
+    },
+    "mean_word_length_by_position": {
+     "END": 4.108,
+     "MID": 4.064,
+     "PARA_FIRST": 5.27,
+     "START": 4.402
+    }
+   },
+   "positional_raw": {
+    "first_symbol_by_position": {
+     "N": 34088,
+     "chi2": 5513.9,
+     "df": 28,
+     "p": 0.0,
+     "cramers_V": 0.2844,
+     "top_deviations": [
+      "START:p obs=375 exp=63.5 z=+39.1",
+      "START:y obs=600 exp=197.1 z=+28.7",
+      "START:t obs=392 exp=115.8 z=+25.7",
+      "START:c obs=157 exp=752.9 z=-21.7",
+      "END:d obs=691 exp=379.9 z=+16.0",
+      "START:a obs=15 exp=216.6 z=-13.7",
+      "START:d obs=638 exp=379.9 z=+13.2",
+      "MID:p obs=137 exp=400.9 z=-13.2",
+      "MID:d obs=1828 exp=2397.2 z=-11.6",
+      "END:q obs=359 exp=634.9 z=-10.9"
+     ],
+     "row_n": {
+      "START": 4102,
+      "MID": 25884,
+      "END": 4102
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "d": 15.6,
+       "s": 14.9,
+       "y": 14.6,
+       "o": 13.7,
+       "q": 12.8,
+       "t": 9.6,
+       "p": 9.1,
+       "c": 3.8
+      },
+      "MID": {
+       "o": 21.2,
+       "c": 21.0,
+       "q": 17.0,
+       "s": 12.2,
+       "d": 7.1,
+       "a": 5.5,
+       "l": 4.2,
+       "k": 3.8
+      },
+      "END": {
+       "o": 23.1,
+       "d": 16.8,
+       "c": 16.4,
+       "q": 8.8,
+       "a": 8.7,
+       "s": 8.1,
+       "l": 5.8,
+       "y": 3.6
+      }
+     }
+    },
+    "last_symbol_by_position": {
+     "N": 34088,
+     "chi2": 3994.0,
+     "df": 28,
+     "p": 0.0,
+     "cramers_V": 0.242,
+     "top_deviations": [
+      "END:m obs=630 exp=106.5 z=+50.7",
+      "END:g obs=89 exp=13.2 z=+20.8",
+      "MID:m obs=235 exp=672.0 z=-16.9",
+      "END:r obs=357 exp=616.5 z=-10.5",
+      "START:o obs=243 exp=136.6 z=+9.1",
+      "START:r obs=837 exp=616.5 z=+8.9",
+      "START:m obs=20 exp=106.5 z=-8.4",
+      "START:y obs=1326 exp=1667.5 z=-8.4",
+      "END:l obs=455 exp=640.8 z=-7.3",
+      "MID:g obs=20 exp=83.5 z=-7.0"
+     ],
+     "row_n": {
+      "START": 4102,
+      "MID": 25884,
+      "END": 4102
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "y": 32.3,
+       "r": 20.4,
+       "n": 19.9,
+       "l": 14.3,
+       "o": 5.9,
+       "s": 3.7,
+       "d": 1.5,
+       "m": 0.5
+      },
+      "MID": {
+       "y": 42.2,
+       "l": 16.5,
+       "n": 16.2,
+       "r": 15.2,
+       "o": 3.2,
+       "s": 3.0,
+       "d": 1.4,
+       "m": 0.9
+      },
+      "END": {
+       "y": 39.1,
+       "n": 15.5,
+       "m": 15.4,
+       "l": 11.1,
+       "r": 8.7,
+       "s": 3.4,
+       "d": 2.5,
+       "g": 2.2
+      }
+     }
+    },
+    "first_symbol_para_vs_line_vs_mid": {
+     "N": 29986,
+     "chi2": 12707.7,
+     "df": 24,
+     "p": 0.0,
+     "cramers_V": 0.4603,
+     "top_deviations": [
+      "PARA_FIRST:p obs=331 exp=12.6 z=+89.6",
+      "LINE_FIRST:y obs=587 exp=167.3 z=+32.5",
+      "PARA_FIRST:t obs=171 exp=22.0 z=+31.8",
+      "LINE_FIRST:d obs=621 exp=276.5 z=+20.7",
+      "LINE_FIRST:c obs=150 exp=626.3 z=-19.0",
+      "MID:p obs=137 exp=442.0 z=-14.5",
+      "LINE_FIRST:t obs=221 exp=99.8 z=+12.1",
+      "PARA_FIRST:other obs=34 exp=5.8 z=+11.7",
+      "LINE_FIRST:a obs=15 exp=162.0 z=-11.5",
+      "PARA_FIRST:c obs=7 exp=137.9 z=-11.1"
+     ],
+     "row_n": {
+      "PARA_FIRST": 740,
+      "LINE_FIRST": 3362,
+      "MID": 25884
+     },
+     "top_symbol_shares_pct": {
+      "PARA_FIRST": {
+       "p": 44.7,
+       "t": 23.1,
+       "k": 10.4,
+       "o": 5.7,
+       "f": 4.3,
+       "q": 3.6,
+       "s": 2.4,
+       "d": 2.3
+      },
+      "LINE_FIRST": {
+       "d": 18.5,
+       "s": 17.7,
+       "y": 17.5,
+       "o": 15.5,
+       "q": 14.8,
+       "t": 6.6,
+       "c": 4.5,
+       "l": 2.0
+      },
+      "MID": {
+       "o": 21.2,
+       "c": 21.0,
+       "q": 17.0,
+       "s": 12.2,
+       "d": 7.1,
+       "a": 5.5,
+       "l": 4.2,
+       "k": 3.8
+      }
+     }
+    },
+    "gallows_initial_pct": {
+     "END": 5.34,
+     "LINE_FIRST": 8.72,
+     "MID": 6.48,
+     "NONPARA_LINE_ALL": 6.21,
+     "PARA_FIRST": 82.57,
+     "PARA_LINE_ALL": 16.37,
+     "START": 22.04
+    },
+    "mean_word_length_by_position": {
+     "END": 4.855,
+     "MID": 5.048,
+     "PARA_FIRST": 6.282,
+     "START": 5.418
+    }
+   },
+   "repetition_raw": {
+    "pairs": 29986,
+    "identical_pct": 0.907,
+    "ed1_pct": 3.538,
+    "identical_pct_shuffled": 0.361,
+    "ed1_pct_shuffled": 1.734,
+    "identical_ratio_obs_over_shuffled": 2.5,
+    "ed1_ratio_obs_over_shuffled": 2.0
+   },
+   "repetition_merged": {
+    "pairs": 29986,
+    "identical_pct": 0.907,
+    "ed1_pct": 4.712,
+    "identical_pct_shuffled": 0.361,
+    "ed1_pct_shuffled": 2.429,
+    "identical_ratio_obs_over_shuffled": 2.5,
+    "ed1_ratio_obs_over_shuffled": 1.9
+   },
+   "top_repeated_words": [
+    [
+     "chol",
+     21
+    ],
+    [
+     "qokeedy",
+     18
+    ],
+    [
+     "qokedy",
+     13
+    ],
+    [
+     "qokeey",
+     12
+    ],
+    [
+     "daiin",
+     11
+    ],
+    [
+     "shedy",
+     9
+    ],
+    [
+     "chedy",
+     9
+    ],
+    [
+     "ol",
+     8
+    ]
+   ]
+  },
+  "A": {
+   "label": "Voynich ZL P A",
+   "lines": 1557,
+   "tokens": 10715,
+   "zipf": {
+    "tokens": 10715,
+    "types": 3339,
+    "zipf_slope_1_1000": -0.9937,
+    "ranks_used_1000": 1000,
+    "zipf_slope_1_5000": -0.7929,
+    "ranks_used_5000": 3339,
+    "hapax_types": 2411,
+    "hapax_type_frac": 0.7221,
+    "hapax_token_frac": 0.225,
+    "dis_legomena_type_frac": 0.1066,
+    "top10": [
+     [
+      "daiin",
+      458
+     ],
+     [
+      "chol",
+      260
+     ],
+     [
+      "chor",
+      164
+     ],
+     [
+      "s",
+      162
+     ],
+     [
+      "shol",
+      107
+     ],
+     [
+      "ol",
+      102
+     ],
+     [
+      "y",
+      101
+     ],
+     [
+      "chy",
+      101
+     ],
+     [
+      "or",
+      100
+     ],
+     [
+      "dy",
+      96
+     ]
+    ],
+    "top1_share": 0.0427
+   },
+   "wordlength_raw": {
+    "mean": 4.979,
+    "variance": 4.439,
+    "skewness": 1.064,
+    "max": 22,
+    "dispersion_var_over_mean_Lminus1": 1.116,
+    "histogram_pct": {
+     "1": 4.36,
+     "2": 5.36,
+     "3": 10.61,
+     "4": 21.11,
+     "5": 24.43,
+     "6": 15.94,
+     "7": 9.11,
+     "8": 4.46,
+     "9": 1.99,
+     "10": 0.83,
+     "11": 0.56,
+     "12": 0.44,
+     "13": 0.33,
+     "14": 0.17,
+     "15": 0.1
+    },
+    "pct_over_15": 0.21,
+    "binomial_fit_Lminus1": {
+     "n": 40,
+     "p": 0.0995,
+     "loglik": -22895.5,
+     "chi2_vs_fit": 1329.3,
+     "shift": 1,
+     "n_at_cap": true,
+     "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+    },
+    "binomial_fit_L": {
+     "n": 40,
+     "p": 0.1245,
+     "loglik": -22834.3,
+     "chi2_vs_fit": 1028.9,
+     "shift": 0,
+     "n_at_cap": true,
+     "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+    }
+   },
+   "wordlength_merged": {
+    "mean": 3.93,
+    "variance": 2.89,
+    "skewness": 1.315,
+    "max": 17,
+    "dispersion_var_over_mean_Lminus1": 0.986,
+    "histogram_pct": {
+     "1": 4.49,
+     "2": 11.19,
+     "3": 30.13,
+     "4": 22.59,
+     "5": 17.23,
+     "6": 8.44,
+     "7": 3.09,
+     "8": 1.23,
+     "9": 0.6,
+     "10": 0.34,
+     "11": 0.31,
+     "12": 0.16,
+     "13": 0.07,
+     "14": 0.09,
+     "15": 0.01
+    },
+    "pct_over_15": 0.05,
+    "binomial_fit_Lminus1": {
+     "n": 40,
+     "p": 0.0733,
+     "loglik": -20217.3,
+     "chi2_vs_fit": 631.6,
+     "shift": 1,
+     "n_at_cap": true,
+     "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+    },
+    "binomial_fit_L": {
+     "n": 21,
+     "p": 0.1872,
+     "loglik": -20514.6,
+     "chi2_vs_fit": 1051.6,
+     "shift": 0,
+     "n_at_cap": false,
+     "note": ""
+    }
+   },
+   "ttr": {
+    "types_after": {
+     "5000": 1793,
+     "10000": 3201,
+     "N=10715": 3339
+    },
+    "heaps_beta": 0.7429
+   },
+   "positional_merged": {
+    "first_symbol_by_position": {
+     "N": 10707,
+     "chi2": 1467.8,
+     "df": 36,
+     "p": 2.85e-285,
+     "cramers_V": 0.2618,
+     "top_deviations": [
+      "START:p obs=78 exp=17.4 z=+14.6",
+      "START:y obs=231 exp=93.9 z=+14.1",
+      "START:C obs=76 exp=295.9 z=-12.8",
+      "END:d obs=418 exp=229.2 z=+12.5",
+      "START:t obs=133 exp=49.6 z=+11.8",
+      "MID:C obs=1745 exp=1453.3 z=+7.7",
+      "START:T obs=3 exp=56.3 z=-7.1",
+      "END:q obs=82 exp=158.8 z=-6.1",
+      "MID:d obs=925 exp=1125.7 z=-6.0",
+      "START:a obs=3 exp=40.7 z=-5.9"
+     ],
+     "row_n": {
+      "START": 1549,
+      "MID": 7609,
+      "END": 1549
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "o": 17.9,
+       "d": 15.6,
+       "y": 14.9,
+       "q": 13.4,
+       "t": 8.6,
+       "S": 6.5,
+       "s": 6.5,
+       "p": 5.0
+      },
+      "MID": {
+       "C": 22.9,
+       "o": 16.5,
+       "d": 12.2,
+       "q": 10.6,
+       "S": 10.2,
+       "y": 4.6,
+       "k": 4.6,
+       "T": 4.1
+      },
+      "END": {
+       "d": 27.0,
+       "o": 15.9,
+       "C": 14.5,
+       "s": 6.1,
+       "q": 5.3,
+       "T": 5.0,
+       "S": 4.8,
+       "a": 4.8
+      }
+     }
+    },
+    "last_symbol_by_position": {
+     "N": 10707,
+     "chi2": 1109.2,
+     "df": 24,
+     "p": 5.51e-219,
+     "cramers_V": 0.2276,
+     "top_deviations": [
+      "END:m obs=171 exp=45.9 z=+18.5",
+      "END:g obs=49 exp=8.8 z=+13.5",
+      "END:l obs=150 exp=290.5 z=-8.2",
+      "END:r obs=140 exp=265.2 z=-7.7",
+      "END:n obs=31 exp=9.0 z=+7.4",
+      "START:r obs=382 exp=265.2 z=+7.2",
+      "END:o obs=23 exp=86.7 z=-6.8",
+      "START:o obs=149 exp=86.7 z=+6.7",
+      "MID:m obs=132 exp=225.3 z=-6.2",
+      "END:d obs=55 exp=24.3 z=+6.2"
+     ],
+     "row_n": {
+      "START": 1549,
+      "MID": 7609,
+      "END": 1549
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "r": 24.7,
+       "y": 24.1,
+       "l": 16.2,
+       "N": 14.3,
+       "o": 9.6,
+       "s": 3.7,
+       "J": 2.8,
+       "d": 0.9
+      },
+      "MID": {
+       "y": 32.4,
+       "l": 21.1,
+       "r": 17.2,
+       "N": 11.5,
+       "o": 5.6,
+       "s": 4.8,
+       "J": 1.8,
+       "m": 1.7
+      },
+      "END": {
+       "y": 34.3,
+       "N": 15.6,
+       "m": 11.0,
+       "l": 9.7,
+       "r": 9.0,
+       "s": 4.9,
+       "d": 3.6,
+       "J": 3.4
+      }
+     }
+    },
+    "first_symbol_para_vs_line_vs_mid": {
+     "N": 9158,
+     "chi2": 1755.9,
+     "df": 22,
+     "p": 0.0,
+     "cramers_V": 0.3096,
+     "top_deviations": [
+      "PARA_FIRST:other obs=96 exp=14.5 z=+21.4",
+      "PARA_FIRST:t obs=54 exp=7.8 z=+16.6",
+      "LINE_FIRST:y obs=228 exp=83.6 z=+15.8",
+      "LINE_FIRST:C obs=76 exp=261.5 z=-11.5",
+      "PARA_FIRST:k obs=45 exp=10.6 z=+10.6",
+      "LINE_FIRST:other obs=17 exp=81.7 z=-7.2",
+      "PARA_FIRST:C obs=0 exp=46.5 z=-6.8",
+      "LINE_FIRST:T obs=3 exp=44.8 z=-6.2",
+      "LINE_FIRST:s obs=96 exp=51.4 z=+6.2",
+      "MID:C obs=1745 exp=1513.0 z=+6.0"
+     ],
+     "row_n": {
+      "PARA_FIRST": 234,
+      "LINE_FIRST": 1315,
+      "MID": 7609
+     },
+     "top_symbol_shares_pct": {
+      "PARA_FIRST": {
+       "p": 32.1,
+       "t": 23.1,
+       "k": 19.2,
+       "f": 7.3,
+       "o": 5.6,
+       "q": 4.3,
+       "d": 2.6,
+       "s": 1.7
+      },
+      "LINE_FIRST": {
+       "o": 20.1,
+       "d": 17.9,
+       "y": 17.3,
+       "q": 15.0,
+       "S": 7.5,
+       "s": 7.3,
+       "t": 6.0,
+       "C": 5.8
+      },
+      "MID": {
+       "C": 22.9,
+       "o": 16.5,
+       "d": 12.2,
+       "q": 10.6,
+       "S": 10.2,
+       "y": 4.6,
+       "k": 4.6,
+       "T": 4.1
+      }
+     }
+    },
+    "gallows_initial_pct": {
+     "END": 14.2,
+     "LINE_FIRST": 8.21,
+     "MID": 14.31,
+     "NONPARA_LINE_ALL": 13.52,
+     "PARA_FIRST": 82.48,
+     "PARA_LINE_ALL": 22.43,
+     "START": 19.43
+    },
+    "mean_word_length_by_position": {
+     "END": 4.089,
+     "MID": 3.837,
+     "PARA_FIRST": 4.859,
+     "START": 4.219
+    }
+   },
+   "positional_raw": {
+    "first_symbol_by_position": {
+     "N": 10707,
+     "chi2": 1378.5,
+     "df": 28,
+     "p": 6.07e-273,
+     "cramers_V": 0.2537,
+     "top_deviations": [
+      "START:c obs=83 exp=387.9 z=-15.5",
+      "START:p obs=78 exp=17.4 z=+14.6",
+      "START:y obs=231 exp=93.9 z=+14.1",
+      "END:d obs=418 exp=229.2 z=+12.5",
+      "START:t obs=133 exp=49.6 z=+11.8",
+      "MID:c obs=2260 exp=1905.3 z=+8.1",
+      "END:q obs=82 exp=158.8 z=-6.1",
+      "MID:d obs=925 exp=1125.7 z=-6.0",
+      "START:a obs=3 exp=40.7 z=-5.9",
+      "END:other obs=12 exp=2.6 z=+5.8"
+     ],
+     "row_n": {
+      "START": 1549,
+      "MID": 7609,
+      "END": 1549
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "o": 17.9,
+       "d": 15.6,
+       "y": 14.9,
+       "q": 13.4,
+       "s": 13.0,
+       "t": 8.6,
+       "c": 5.4,
+       "p": 5.0
+      },
+      "MID": {
+       "c": 29.7,
+       "o": 16.5,
+       "s": 13.6,
+       "d": 12.2,
+       "q": 10.6,
+       "y": 4.6,
+       "k": 4.6,
+       "a": 2.7
+      },
+      "END": {
+       "d": 27.0,
+       "c": 21.8,
+       "o": 15.9,
+       "s": 10.8,
+       "q": 5.3,
+       "a": 4.8,
+       "y": 4.3,
+       "k": 3.8
+      }
+     }
+    },
+    "last_symbol_by_position": {
+     "N": 10707,
+     "chi2": 1051.8,
+     "df": 18,
+     "p": 5.84e-212,
+     "cramers_V": 0.2216,
+     "top_deviations": [
+      "END:m obs=171 exp=45.9 z=+18.5",
+      "END:g obs=49 exp=8.8 z=+13.5",
+      "END:l obs=150 exp=290.5 z=-8.2",
+      "END:r obs=140 exp=265.2 z=-7.7",
+      "START:r obs=382 exp=265.2 z=+7.2",
+      "END:o obs=23 exp=86.7 z=-6.8",
+      "START:o obs=149 exp=86.7 z=+6.7",
+      "MID:m obs=132 exp=225.3 z=-6.2",
+      "END:d obs=55 exp=24.3 z=+6.2",
+      "END:n obs=333 exp=242.5 z=+5.8"
+     ],
+     "row_n": {
+      "START": 1549,
+      "MID": 7609,
+      "END": 1549
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "r": 24.7,
+       "y": 24.1,
+       "n": 17.6,
+       "l": 16.2,
+       "o": 9.6,
+       "s": 3.7,
+       "d": 0.9,
+       "m": 0.9
+      },
+      "MID": {
+       "y": 32.4,
+       "l": 21.1,
+       "r": 17.2,
+       "n": 14.1,
+       "o": 5.6,
+       "s": 4.8,
+       "m": 1.7,
+       "d": 1.3
+      },
+      "END": {
+       "y": 34.3,
+       "n": 21.5,
+       "m": 11.0,
+       "l": 9.7,
+       "r": 9.0,
+       "s": 4.9,
+       "d": 3.6,
+       "g": 3.2
+      }
+     }
+    },
+    "first_symbol_para_vs_line_vs_mid": {
+     "N": 9158,
+     "chi2": 2043.8,
+     "df": 18,
+     "p": 0.0,
+     "cramers_V": 0.334,
+     "top_deviations": [
+      "PARA_FIRST:other obs=94 exp=9.2 z=+28.0",
+      "PARA_FIRST:t obs=54 exp=7.8 z=+16.6",
+      "LINE_FIRST:y obs=228 exp=83.6 z=+15.8",
+      "LINE_FIRST:c obs=81 exp=336.4 z=-13.9",
+      "PARA_FIRST:k obs=45 exp=10.6 z=+10.6",
+      "PARA_FIRST:c obs=2 exp=59.9 z=-7.5",
+      "MID:c obs=2260 exp=1946.7 z=+7.1",
+      "MID:y obs=351 exp=483.6 z=-6.0",
+      "LINE_FIRST:t obs=79 exp=43.7 z=+5.4",
+      "LINE_FIRST:d obs=235 exp=167.4 z=+5.2"
+     ],
+     "row_n": {
+      "PARA_FIRST": 234,
+      "LINE_FIRST": 1315,
+      "MID": 7609
+     },
+     "top_symbol_shares_pct": {
+      "PARA_FIRST": {
+       "p": 32.1,
+       "t": 23.1,
+       "k": 19.2,
+       "f": 7.3,
+       "o": 5.6,
+       "q": 4.3,
+       "s": 3.0,
+       "d": 2.6
+      },
+      "LINE_FIRST": {
+       "o": 20.1,
+       "d": 17.9,
+       "y": 17.3,
+       "q": 15.0,
+       "s": 14.8,
+       "c": 6.2,
+       "t": 6.0,
+       "k": 1.4
+      },
+      "MID": {
+       "c": 29.7,
+       "o": 16.5,
+       "s": 13.6,
+       "d": 12.2,
+       "q": 10.6,
+       "y": 4.6,
+       "k": 4.6,
+       "a": 2.7
+      }
+     }
+    },
+    "gallows_initial_pct": {
+     "END": 6.84,
+     "LINE_FIRST": 7.83,
+     "MID": 7.54,
+     "NONPARA_LINE_ALL": 7.52,
+     "PARA_FIRST": 81.62,
+     "PARA_LINE_ALL": 16.82,
+     "START": 18.98
+    },
+    "mean_word_length_by_position": {
+     "END": 5.073,
+     "MID": 4.901,
+     "PARA_FIRST": 5.915,
+     "START": 5.252
+    }
+   },
+   "repetition_raw": {
+    "pairs": 9158,
+    "identical_pct": 0.95,
+    "ed1_pct": 3.92,
+    "identical_pct_shuffled": 0.496,
+    "ed1_pct_shuffled": 1.806,
+    "identical_ratio_obs_over_shuffled": 1.9,
+    "ed1_ratio_obs_over_shuffled": 2.2
+   },
+   "repetition_merged": {
+    "pairs": 9158,
+    "identical_pct": 0.95,
+    "ed1_pct": 5.427,
+    "identical_pct_shuffled": 0.496,
+    "ed1_pct_shuffled": 2.881,
+    "identical_ratio_obs_over_shuffled": 1.9,
+    "ed1_ratio_obs_over_shuffled": 1.9
+   },
+   "top_repeated_words": [
+    [
+     "chol",
+     20
+    ],
+    [
+     "daiin",
+     7
+    ],
+    [
+     "chor",
+     6
+    ],
+    [
+     "shol",
+     5
+    ],
+    [
+     "dy",
+     3
+    ],
+    [
+     "shor",
+     3
+    ],
+    [
+     "cthar",
+     2
+    ],
+    [
+     "sho",
+     2
+    ]
+   ]
+  },
+  "B": {
+   "label": "Voynich ZL P B",
+   "lines": 2478,
+   "tokens": 22862,
+   "zipf": {
+    "tokens": 22862,
+    "types": 4839,
+    "zipf_slope_1_1000": -1.0681,
+    "ranks_used_1000": 1000,
+    "zipf_slope_1_5000": -0.9245,
+    "ranks_used_5000": 4839,
+    "hapax_types": 3321,
+    "hapax_type_frac": 0.6863,
+    "hapax_token_frac": 0.1453,
+    "dis_legomena_type_frac": 0.1093,
+    "top10": [
+     [
+      "chedy",
+      486
+     ],
+     [
+      "shedy",
+      419
+     ],
+     [
+      "ol",
+      419
+     ],
+     [
+      "aiin",
+      363
+     ],
+     [
+      "qokeedy",
+      303
+     ],
+     [
+      "daiin",
+      297
+     ],
+     [
+      "qokain",
+      274
+     ],
+     [
+      "qokedy",
+      268
+     ],
+     [
+      "ar",
+      262
+     ],
+     [
+      "qokeey",
+      262
+     ]
+    ],
+    "top1_share": 0.0213
+   },
+   "wordlength_raw": {
+    "mean": 5.118,
+    "variance": 3.392,
+    "skewness": 0.248,
+    "max": 19,
+    "dispersion_var_over_mean_Lminus1": 0.824,
+    "histogram_pct": {
+     "1": 2.58,
+     "2": 6.69,
+     "3": 8.21,
+     "4": 16.17,
+     "5": 25.03,
+     "6": 21.17,
+     "7": 12.43,
+     "8": 4.68,
+     "9": 1.83,
+     "10": 0.66,
+     "11": 0.23,
+     "12": 0.14,
+     "13": 0.07,
+     "14": 0.05,
+     "15": 0.03
+    },
+    "pct_over_15": 0.03,
+    "binomial_fit_Lminus1": {
+     "n": 24,
+     "p": 0.1716,
+     "loglik": -46497.9,
+     "chi2_vs_fit": 1601.4,
+     "shift": 1,
+     "n_at_cap": false,
+     "note": ""
+    },
+    "binomial_fit_L": {
+     "n": 19,
+     "p": 0.2694,
+     "loglik": -46454.8,
+     "chi2_vs_fit": 1303.5,
+     "shift": 0,
+     "n_at_cap": false,
+     "note": ""
+    }
+   },
+   "wordlength_merged": {
+    "mean": 4.198,
+    "variance": 2.27,
+    "skewness": 0.453,
+    "max": 16,
+    "dispersion_var_over_mean_Lminus1": 0.71,
+    "histogram_pct": {
+     "1": 2.65,
+     "2": 9.85,
+     "3": 19.74,
+     "4": 26.52,
+     "5": 23.85,
+     "6": 11.88,
+     "7": 3.8,
+     "8": 0.97,
+     "9": 0.42,
+     "10": 0.16,
+     "11": 0.06,
+     "12": 0.07,
+     "13": 0.01,
+     "14": 0.0,
+     "15": 0.0
+    },
+    "pct_over_15": 0.01,
+    "binomial_fit_Lminus1": {
+     "n": 15,
+     "p": 0.2132,
+     "loglik": -41641.3,
+     "chi2_vs_fit": 484.5,
+     "shift": 1,
+     "n_at_cap": false,
+     "note": ""
+    },
+    "binomial_fit_L": {
+     "n": 16,
+     "p": 0.2624,
+     "loglik": -42183.5,
+     "chi2_vs_fit": 1532.8,
+     "shift": 0,
+     "n_at_cap": false,
+     "note": ""
+    }
+   },
+   "ttr": {
+    "types_after": {
+     "5000": 1681,
+     "10000": 2422,
+     "20000": 4344,
+     "N=22862": 4839
+    },
+    "heaps_beta": 0.6786
+   },
+   "positional_merged": {
+    "first_symbol_by_position": {
+     "N": 22847,
+     "chi2": 5545.8,
+     "df": 30,
+     "p": 0.0,
+     "cramers_V": 0.3484,
+     "top_deviations": [
+      "START:p obs=297 exp=43.9 z=+38.2",
+      "START:s obs=310 exp=67.8 z=+29.4",
+      "START:y obs=351 exp=101.1 z=+24.8",
+      "START:t obs=247 exp=64.8 z=+22.6",
+      "START:d obs=379 exp=162.6 z=+17.0",
+      "START:C obs=61 exp=362.1 z=-15.8",
+      "MID:p obs=101 exp=319.2 z=-12.2",
+      "START:o obs=272 exp=551.7 z=-11.9",
+      "START:a obs=12 exp=158.3 z=-11.6",
+      "MID:s obs=258 exp=493.4 z=-10.6"
+     ],
+     "row_n": {
+      "START": 2463,
+      "MID": 17921,
+      "END": 2463
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "d": 15.4,
+       "y": 14.3,
+       "q": 12.7,
+       "s": 12.6,
+       "p": 12.1,
+       "o": 11.0,
+       "t": 10.0,
+       "S": 3.5
+      },
+      "MID": {
+       "o": 23.3,
+       "q": 19.8,
+       "C": 16.7,
+       "S": 10.0,
+       "a": 6.6,
+       "l": 5.7,
+       "d": 4.9,
+       "k": 3.5
+      },
+      "END": {
+       "o": 27.4,
+       "C": 12.4,
+       "q": 11.2,
+       "a": 10.9,
+       "d": 10.3,
+       "l": 9.3,
+       "S": 3.9,
+       "r": 3.7
+      }
+     }
+    },
+    "last_symbol_by_position": {
+     "N": 22847,
+     "chi2": 3128.8,
+     "df": 22,
+     "p": 0.0,
+     "cramers_V": 0.2617,
+     "top_deviations": [
+      "END:m obs=442 exp=58.6 z=+50.1",
+      "MID:m obs=97 exp=426.7 z=-16.0",
+      "END:r obs=207 exp=346.5 z=-7.5",
+      "START:m obs=5 exp=58.6 z=-7.0",
+      "END:N obs=156 exp=254.6 z=-6.2",
+      "END:other obs=61 exp=28.2 z=+6.2",
+      "START:N obs=342 exp=254.6 z=+5.5",
+      "START:y obs=928 exp=1109.0 z=-5.4",
+      "START:r obs=440 exp=346.5 z=+5.0",
+      "START:o obs=87 exp=56.1 z=+4.1"
+     ],
+     "row_n": {
+      "START": 2463,
+      "MID": 17921,
+      "END": 2463
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "y": 37.7,
+       "r": 17.9,
+       "N": 13.9,
+       "l": 13.1,
+       "J": 7.1,
+       "o": 3.5,
+       "s": 3.5,
+       "d": 1.9
+      },
+      "MID": {
+       "y": 46.4,
+       "l": 14.6,
+       "r": 14.3,
+       "N": 10.4,
+       "J": 6.1,
+       "o": 2.2,
+       "s": 2.2,
+       "d": 1.5
+      },
+      "END": {
+       "y": 42.2,
+       "m": 17.9,
+       "l": 11.8,
+       "r": 8.4,
+       "N": 6.3,
+       "J": 4.6,
+       "s": 2.5,
+       "d": 1.9
+      }
+     }
+    },
+    "first_symbol_para_vs_line_vs_mid": {
+     "N": 20384,
+     "chi2": 11188.1,
+     "df": 26,
+     "p": 0.0,
+     "cramers_V": 0.5239,
+     "top_deviations": [
+      "PARA_FIRST:p obs=256 exp=9.4 z=+80.7",
+      "LINE_FIRST:s obs=302 exp=55.3 z=+33.2",
+      "LINE_FIRST:y obs=345 exp=84.2 z=+28.4",
+      "PARA_FIRST:t obs=108 exp=13.3 z=+25.9",
+      "LINE_FIRST:d obs=370 exp=122.1 z=+22.4",
+      "LINE_FIRST:C obs=59 exp=297.2 z=-13.8",
+      "MID:p obs=101 exp=349.9 z=-13.3",
+      "LINE_FIRST:t obs=139 exp=55.3 z=+11.3",
+      "MID:s obs=258 exp=499.4 z=-10.8",
+      "LINE_FIRST:a obs=12 exp=116.7 z=-9.7"
+     ],
+     "row_n": {
+      "PARA_FIRST": 479,
+      "LINE_FIRST": 1984,
+      "MID": 17921
+     },
+     "top_symbol_shares_pct": {
+      "PARA_FIRST": {
+       "p": 53.4,
+       "t": 22.5,
+       "k": 6.7,
+       "o": 4.4,
+       "q": 3.5,
+       "f": 3.1,
+       "d": 1.9,
+       "s": 1.7
+      },
+      "LINE_FIRST": {
+       "d": 18.6,
+       "y": 17.4,
+       "s": 15.2,
+       "q": 15.0,
+       "o": 12.7,
+       "t": 7.0,
+       "S": 4.3,
+       "C": 3.0
+      },
+      "MID": {
+       "o": 23.3,
+       "q": 19.8,
+       "C": 16.7,
+       "S": 10.0,
+       "a": 6.6,
+       "l": 5.7,
+       "d": 4.9,
+       "k": 3.5
+      }
+     }
+    },
+    "gallows_initial_pct": {
+     "END": 5.16,
+     "LINE_FIRST": 9.63,
+     "MID": 6.63,
+     "NONPARA_LINE_ALL": 6.08,
+     "PARA_FIRST": 86.01,
+     "PARA_LINE_ALL": 17.22,
+     "START": 24.48
+    },
+    "mean_word_length_by_position": {
+     "END": 4.132,
+     "MID": 4.163,
+     "PARA_FIRST": 5.489,
+     "START": 4.515
+    }
+   },
+   "positional_raw": {
+    "first_symbol_by_position": {
+     "N": 22847,
+     "chi2": 4511.5,
+     "df": 28,
+     "p": 0.0,
+     "cramers_V": 0.3142,
+     "top_deviations": [
+      "START:p obs=297 exp=43.9 z=+38.2",
+      "START:y obs=351 exp=101.1 z=+24.8",
+      "START:t obs=247 exp=64.8 z=+22.6",
+      "START:d obs=379 exp=162.6 z=+17.0",
+      "START:c obs=68 exp=375.7 z=-15.9",
+      "MID:p obs=101 exp=319.2 z=-12.2",
+      "START:o obs=272 exp=551.7 z=-11.9",
+      "START:a obs=12 exp=158.3 z=-11.6",
+      "MID:d obs=875 exp=1182.9 z=-9.0",
+      "END:a obs=269 exp=158.3 z=+8.8"
+     ],
+     "row_n": {
+      "START": 2463,
+      "MID": 17921,
+      "END": 2463
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "s": 16.1,
+       "d": 15.4,
+       "y": 14.3,
+       "q": 12.7,
+       "p": 12.1,
+       "o": 11.0,
+       "t": 10.0,
+       "c": 2.8
+      },
+      "MID": {
+       "o": 23.3,
+       "q": 19.8,
+       "c": 17.3,
+       "s": 11.5,
+       "a": 6.6,
+       "l": 5.7,
+       "d": 4.9,
+       "k": 3.5
+      },
+      "END": {
+       "o": 27.4,
+       "c": 13.0,
+       "q": 11.2,
+       "a": 10.9,
+       "d": 10.3,
+       "l": 9.3,
+       "s": 6.3,
+       "r": 3.7
+      }
+     }
+    },
+    "last_symbol_by_position": {
+     "N": 22847,
+     "chi2": 3100.1,
+     "df": 18,
+     "p": 0.0,
+     "cramers_V": 0.2605,
+     "top_deviations": [
+      "END:m obs=442 exp=58.6 z=+50.1",
+      "MID:m obs=97 exp=426.7 z=-16.0",
+      "END:r obs=207 exp=346.5 z=-7.5",
+      "START:m obs=5 exp=58.6 z=-7.0",
+      "END:n obs=294 exp=420.1 z=-6.2",
+      "START:y obs=928 exp=1109.0 z=-5.4",
+      "START:n obs=528 exp=420.1 z=+5.3",
+      "END:other obs=49 exp=23.5 z=+5.3",
+      "START:r obs=440 exp=346.5 z=+5.0",
+      "START:o obs=87 exp=56.1 z=+4.1"
+     ],
+     "row_n": {
+      "START": 2463,
+      "MID": 17921,
+      "END": 2463
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "y": 37.7,
+       "n": 21.4,
+       "r": 17.9,
+       "l": 13.1,
+       "o": 3.5,
+       "s": 3.5,
+       "d": 1.9,
+       "e": 0.4
+      },
+      "MID": {
+       "y": 46.4,
+       "n": 17.2,
+       "l": 14.6,
+       "r": 14.3,
+       "o": 2.2,
+       "s": 2.2,
+       "d": 1.5,
+       "m": 0.5
+      },
+      "END": {
+       "y": 42.2,
+       "m": 17.9,
+       "n": 11.9,
+       "l": 11.8,
+       "r": 8.4,
+       "s": 2.5,
+       "d": 1.9,
+       "g": 1.5
+      }
+     }
+    },
+    "first_symbol_para_vs_line_vs_mid": {
+     "N": 20384,
+     "chi2": 10031.6,
+     "df": 24,
+     "p": 0.0,
+     "cramers_V": 0.4961,
+     "top_deviations": [
+      "PARA_FIRST:p obs=256 exp=9.4 z=+80.7",
+      "LINE_FIRST:y obs=345 exp=84.2 z=+28.4",
+      "PARA_FIRST:t obs=108 exp=13.3 z=+25.9",
+      "LINE_FIRST:d obs=370 exp=122.1 z=+22.4",
+      "LINE_FIRST:c obs=65 exp=308.1 z=-13.8",
+      "MID:p obs=101 exp=349.9 z=-13.3",
+      "LINE_FIRST:t obs=139 exp=55.3 z=+11.3",
+      "LINE_FIRST:a obs=12 exp=116.7 z=-9.7",
+      "LINE_FIRST:s obs=387 exp=238.9 z=+9.6",
+      "MID:y obs=514 exp=760.5 z=-8.9"
+     ],
+     "row_n": {
+      "PARA_FIRST": 479,
+      "LINE_FIRST": 1984,
+      "MID": 17921
+     },
+     "top_symbol_shares_pct": {
+      "PARA_FIRST": {
+       "p": 53.4,
+       "t": 22.5,
+       "k": 6.7,
+       "o": 4.4,
+       "q": 3.5,
+       "f": 3.1,
+       "s": 2.1,
+       "d": 1.9
+      },
+      "LINE_FIRST": {
+       "s": 19.5,
+       "d": 18.6,
+       "y": 17.4,
+       "q": 15.0,
+       "o": 12.7,
+       "t": 7.0,
+       "c": 3.3,
+       "l": 2.9
+      },
+      "MID": {
+       "o": 23.3,
+       "q": 19.8,
+       "c": 17.3,
+       "s": 11.5,
+       "a": 6.6,
+       "l": 5.7,
+       "d": 4.9,
+       "k": 3.5
+      }
+     }
+    },
+    "gallows_initial_pct": {
+     "END": 4.55,
+     "LINE_FIRST": 9.32,
+     "MID": 6.05,
+     "NONPARA_LINE_ALL": 5.6,
+     "PARA_FIRST": 85.8,
+     "PARA_LINE_ALL": 16.42,
+     "START": 24.2
+    },
+    "mean_word_length_by_position": {
+     "END": 4.736,
+     "MID": 5.115,
+     "PARA_FIRST": 6.484,
+     "START": 5.521
+    }
+   },
+   "repetition_raw": {
+    "pairs": 20384,
+    "identical_pct": 0.893,
+    "ed1_pct": 3.365,
+    "identical_pct_shuffled": 0.428,
+    "ed1_pct_shuffled": 1.993,
+    "identical_ratio_obs_over_shuffled": 2.1,
+    "ed1_ratio_obs_over_shuffled": 1.7
+   },
+   "repetition_merged": {
+    "pairs": 20384,
+    "identical_pct": 0.893,
+    "ed1_pct": 4.356,
+    "identical_pct_shuffled": 0.428,
+    "ed1_pct_shuffled": 2.63,
+    "identical_ratio_obs_over_shuffled": 2.1,
+    "ed1_ratio_obs_over_shuffled": 1.7
+   },
+   "top_repeated_words": [
+    [
+     "qokeedy",
+     18
+    ],
+    [
+     "qokedy",
+     13
+    ],
+    [
+     "qokeey",
+     12
+    ],
+    [
+     "shedy",
+     9
+    ],
+    [
+     "chedy",
+     9
+    ],
+    [
+     "ar",
+     7
+    ],
+    [
+     "ol",
+     6
+    ],
+    [
+     "okaiin",
+     5
+    ]
+   ]
+  }
+ },
+ "languages": {
+  "ALL": {
+   "la": {
+    "label": "Latin sample N=34116 (lined as Voynich ALL)",
+    "tokens": 34116,
+    "lines": 4130,
+    "zipf": {
+     "tokens": 34116,
+     "types": 11640,
+     "zipf_slope_1_1000": -0.8201,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.8723,
+     "ranks_used_5000": 5000,
+     "hapax_types": 7795,
+     "hapax_type_frac": 0.6697,
+     "hapax_token_frac": 0.2285,
+     "dis_legomena_type_frac": 0.1491,
+     "top10": [
+      [
+       "et",
+       1673
+      ],
+      [
+       "in",
+       553
+      ],
+      [
+       "non",
+       437
+      ],
+      [
+       "te",
+       247
+      ],
+      [
+       "est",
+       235
+      ],
+      [
+       "ad",
+       209
+      ],
+      [
+       "cum",
+       201
+      ],
+      [
+       "me",
+       196
+      ],
+      [
+       "sed",
+       186
+      ],
+      [
+       "sidenote",
+       168
+      ]
+     ],
+     "top1_share": 0.049
+    },
+    "wordlength": {
+     "mean": 5.521,
+     "variance": 6.272,
+     "skewness": 0.503,
+     "max": 18,
+     "dispersion_var_over_mean_Lminus1": 1.387,
+     "histogram_pct": {
+      "1": 0.57,
+      "2": 11.99,
+      "3": 11.91,
+      "4": 13.32,
+      "5": 14.97,
+      "6": 13.69,
+      "7": 11.75,
+      "8": 9.44,
+      "9": 5.65,
+      "10": 3.37,
+      "11": 1.75,
+      "12": 1.0,
+      "13": 0.36,
+      "14": 0.15,
+      "15": 0.05
+     },
+     "pct_over_15": 0.03,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.113,
+      "loglik": -80353.5,
+      "chi2_vs_fit": 8363.3,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.138,
+      "loglik": -79329.6,
+      "chi2_vs_fit": 4821.7,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 2929,
+      "10000": 4882,
+      "20000": 8038,
+      "N=34116": 11640
+     },
+     "heaps_beta": 0.749
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 34088,
+      "chi2": 47.8,
+      "df": 44,
+      "p": 0.321,
+      "cramers_V": 0.0265,
+      "top_deviations": [
+       "START:g obs=57 exp=39.6 z=+2.8",
+       "START:e obs=383 exp=430.6 z=-2.3",
+       "START:q obs=164 exp=187.5 z=-1.7",
+       "END:g obs=29 exp=39.6 z=-1.7",
+       "END:n obs=225 exp=202.9 z=+1.6",
+       "START:other obs=8 exp=4.8 z=+1.5",
+       "END:s obs=382 exp=352.9 z=+1.5",
+       "START:h obs=94 exp=109.1 z=-1.4",
+       "START:s obs=328 exp=352.9 z=-1.3",
+       "START:f obs=171 exp=156.2 z=+1.2"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "a": 9.9,
+        "e": 9.3,
+        "i": 8.9,
+        "s": 8.0,
+        "p": 7.4,
+        "m": 6.4,
+        "c": 6.3,
+        "t": 5.9
+       },
+       "MID": {
+        "e": 10.7,
+        "a": 9.6,
+        "s": 8.6,
+        "i": 8.3,
+        "p": 6.8,
+        "c": 6.4,
+        "m": 6.3,
+        "t": 5.7
+       },
+       "END": {
+        "e": 10.3,
+        "a": 9.5,
+        "s": 9.3,
+        "i": 8.1,
+        "p": 6.8,
+        "c": 6.7,
+        "m": 6.0,
+        "t": 5.8
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 34088,
+      "chi2": 39.1,
+      "df": 32,
+      "p": 0.182,
+      "cramers_V": 0.0239,
+      "top_deviations": [
+       "END:a obs=455 exp=417.9 z=+1.8",
+       "END:b obs=22 exp=15.4 z=+1.7",
+       "END:æ obs=32 exp=43.3 z=-1.7",
+       "END:l obs=22 exp=15.5 z=+1.6",
+       "START:d obs=81 exp=95.9 z=-1.5",
+       "START:e obs=644 exp=609.7 z=+1.4",
+       "START:l obs=21 exp=15.5 z=+1.4",
+       "END:n obs=129 exp=146.0 z=-1.4",
+       "END:m obs=599 exp=568.9 z=+1.3",
+       "START:n obs=132 exp=146.0 z=-1.2"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "s": 19.3,
+        "e": 15.7,
+        "t": 13.9,
+        "m": 13.5,
+        "a": 10.4,
+        "i": 6.7,
+        "o": 5.8,
+        "r": 3.9
+       },
+       "MID": {
+        "s": 18.9,
+        "e": 14.7,
+        "t": 14.5,
+        "m": 13.8,
+        "a": 10.0,
+        "i": 6.7,
+        "o": 5.5,
+        "r": 4.2
+       },
+       "END": {
+        "s": 18.3,
+        "e": 15.1,
+        "m": 14.6,
+        "t": 13.7,
+        "a": 11.1,
+        "i": 6.3,
+        "o": 5.5,
+        "r": 3.9
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 29986,
+      "chi2": 55.7,
+      "df": 38,
+      "p": 0.0316,
+      "cramers_V": 0.0305,
+      "top_deviations": [
+       "LINE_FIRST:g obs=50 exp=33.6 z=+2.8",
+       "LINE_FIRST:q obs=123 exp=154.1 z=-2.5",
+       "LINE_FIRST:e obs=309 exp=354.0 z=-2.4",
+       "PARA_FIRST:f obs=37 exp=27.9 z=+1.7",
+       "PARA_FIRST:n obs=45 exp=36.1 z=+1.5",
+       "LINE_FIRST:d obs=201 exp=180.3 z=+1.5",
+       "LINE_FIRST:s obs=261 exp=286.0 z=-1.5",
+       "PARA_FIRST:v obs=24 exp=32.2 z=-1.4",
+       "PARA_FIRST:h obs=14 exp=19.7 z=-1.3",
+       "LINE_FIRST:t obs=209 exp=191.6 z=+1.3"
+      ],
+      "row_n": {
+       "PARA_FIRST": 740,
+       "LINE_FIRST": 3362,
+       "MID": 25884
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "e": 10.0,
+        "i": 9.5,
+        "s": 9.1,
+        "a": 8.9,
+        "p": 7.3,
+        "c": 6.6,
+        "n": 6.1,
+        "q": 5.5
+       },
+       "LINE_FIRST": {
+        "a": 10.1,
+        "e": 9.2,
+        "i": 8.7,
+        "s": 7.8,
+        "p": 7.4,
+        "m": 6.6,
+        "c": 6.2,
+        "t": 6.2
+       },
+       "MID": {
+        "e": 10.7,
+        "a": 9.6,
+        "s": 8.6,
+        "i": 8.3,
+        "p": 6.8,
+        "c": 6.4,
+        "m": 6.3,
+        "t": 5.7
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 5.563,
+      "MID": 5.505,
+      "PARA_FIRST": 5.478,
+      "START": 5.583
+     }
+    },
+    "repetition": {
+     "pairs": 29986,
+     "identical_pct": 0.047,
+     "ed1_pct": 0.454,
+     "identical_pct_shuffled": 0.378,
+     "ed1_pct_shuffled": 0.391,
+     "identical_ratio_obs_over_shuffled": 0.1,
+     "ed1_ratio_obs_over_shuffled": 1.2
+    },
+    "top_repeated_words": [
+     [
+      "iterumque",
+      2
+     ],
+     [
+      "euge",
+      2
+     ],
+     [
+      "italiam",
+      1
+     ],
+     [
+      "iam",
+      1
+     ],
+     [
+      "sic",
+      1
+     ],
+     [
+      "deus",
+      1
+     ],
+     [
+      "difficultas",
+      1
+     ],
+     [
+      "flagitia",
+      1
+     ]
+    ]
+   },
+   "it": {
+    "label": "Italian sample N=34116 (lined as Voynich ALL)",
+    "tokens": 34116,
+    "lines": 4130,
+    "zipf": {
+     "tokens": 34116,
+     "types": 6752,
+     "zipf_slope_1_1000": -1.0295,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -1.0244,
+     "ranks_used_5000": 5000,
+     "hapax_types": 4521,
+     "hapax_type_frac": 0.6696,
+     "hapax_token_frac": 0.1325,
+     "dis_legomena_type_frac": 0.1243,
+     "top10": [
+      [
+       "et",
+       1484
+      ],
+      [
+       "che",
+       1403
+      ],
+      [
+       "di",
+       1268
+      ],
+      [
+       "a",
+       601
+      ],
+      [
+       "in",
+       571
+      ],
+      [
+       "non",
+       541
+      ],
+      [
+       "la",
+       518
+      ],
+      [
+       "per",
+       461
+      ],
+      [
+       "il",
+       431
+      ],
+      [
+       "sua",
+       376
+      ]
+     ],
+     "top1_share": 0.0435
+    },
+    "wordlength": {
+     "mean": 4.526,
+     "variance": 6.524,
+     "skewness": 0.86,
+     "max": 17,
+     "dispersion_var_over_mean_Lminus1": 1.85,
+     "histogram_pct": {
+      "1": 4.82,
+      "2": 22.91,
+      "3": 16.79,
+      "4": 9.63,
+      "5": 13.05,
+      "6": 11.58,
+      "7": 8.43,
+      "8": 4.93,
+      "9": 3.3,
+      "10": 2.16,
+      "11": 1.22,
+      "12": 0.63,
+      "13": 0.28,
+      "14": 0.12,
+      "15": 0.15
+     },
+     "pct_over_15": 0.01,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0881,
+      "loglik": -81978.7,
+      "chi2_vs_fit": 21342.2,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1131,
+      "loglik": -79963.7,
+      "chi2_vs_fit": 12941.1,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1631,
+      "10000": 2717,
+      "20000": 4573,
+      "N=34116": 6752
+     },
+     "heaps_beta": 0.74
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 34088,
+      "chi2": 28.1,
+      "df": 38,
+      "p": 0.881,
+      "cramers_V": 0.0203,
+      "top_deviations": [
+       "END:t obs=150 exp=131.2 z=+1.6",
+       "END:l obs=163 exp=181.3 z=-1.4",
+       "END:m obs=257 exp=236.5 z=+1.3",
+       "END:e obs=257 exp=276.7 z=-1.2",
+       "END:g obs=62 exp=72.1 z=-1.2",
+       "START:f obs=117 exp=129.2 z=-1.1",
+       "START:r obs=126 exp=113.8 z=+1.1",
+       "END:h obs=161 exp=147.8 z=+1.1",
+       "START:n obs=191 exp=177.3 z=+1.0",
+       "START:h obs=137 exp=147.8 z=-0.9"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "c": 12.1,
+        "d": 10.3,
+        "s": 10.2,
+        "p": 7.7,
+        "e": 6.7,
+        "i": 6.5,
+        "a": 6.1,
+        "m": 5.7
+       },
+       "MID": {
+        "c": 11.7,
+        "s": 10.6,
+        "d": 10.1,
+        "p": 7.4,
+        "e": 6.8,
+        "a": 6.6,
+        "i": 6.2,
+        "m": 5.7
+       },
+       "END": {
+        "c": 11.4,
+        "d": 10.5,
+        "s": 10.3,
+        "p": 7.8,
+        "e": 6.3,
+        "m": 6.3,
+        "a": 6.1,
+        "i": 5.9
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 34088,
+      "chi2": 34.3,
+      "df": 28,
+      "p": 0.191,
+      "cramers_V": 0.0224,
+      "top_deviations": [
+       "END:o obs=807 exp=741.6 z=+2.4",
+       "END:n obs=236 exp=266.2 z=-1.8",
+       "END:a obs=782 exp=829.4 z=-1.6",
+       "START:d obs=17 exp=11.9 z=+1.5",
+       "START:i obs=582 exp=619.1 z=-1.5",
+       "START:a obs=870 exp=829.4 z=+1.4",
+       "END:t obs=173 exp=191.7 z=-1.4",
+       "START:s obs=42 exp=34.5 z=+1.3",
+       "START:l obs=172 exp=158.1 z=+1.1",
+       "START:n obs=284 exp=266.2 z=+1.1"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "a": 21.2,
+        "e": 20.2,
+        "o": 18.2,
+        "i": 14.2,
+        "n": 6.9,
+        "r": 4.6,
+        "t": 4.5,
+        "l": 4.2
+       },
+       "MID": {
+        "e": 20.9,
+        "a": 20.2,
+        "o": 17.8,
+        "i": 15.2,
+        "n": 6.5,
+        "r": 5.0,
+        "t": 4.8,
+        "l": 3.8
+       },
+       "END": {
+        "e": 21.0,
+        "o": 19.7,
+        "a": 19.1,
+        "i": 15.5,
+        "n": 5.8,
+        "r": 4.8,
+        "t": 4.2,
+        "l": 3.8
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 29986,
+      "chi2": 28.4,
+      "df": 38,
+      "p": 0.87,
+      "cramers_V": 0.0218,
+      "top_deviations": [
+       "PARA_FIRST:i obs=33 exp=46.1 z=-1.9",
+       "PARA_FIRST:f obs=15 exp=23.3 z=-1.7",
+       "LINE_FIRST:i obs=234 exp=209.7 z=+1.7",
+       "PARA_FIRST:r obs=28 exp=20.6 z=+1.6",
+       "LINE_FIRST:g obs=50 exp=60.2 z=-1.3",
+       "PARA_FIRST:s obs=68 exp=77.9 z=-1.1",
+       "LINE_FIRST:n obs=158 exp=145.1 z=+1.1",
+       "PARA_FIRST:u obs=41 exp=34.8 z=+1.0",
+       "LINE_FIRST:l obs=138 exp=150.7 z=-1.0",
+       "PARA_FIRST:m obs=48 exp=42.2 z=+0.9"
+      ],
+      "row_n": {
+       "PARA_FIRST": 740,
+       "LINE_FIRST": 3362,
+       "MID": 25884
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "c": 11.9,
+        "d": 10.9,
+        "s": 9.2,
+        "p": 8.1,
+        "e": 7.0,
+        "m": 6.5,
+        "a": 5.8,
+        "u": 5.5
+       },
+       "LINE_FIRST": {
+        "c": 12.2,
+        "s": 10.4,
+        "d": 10.1,
+        "p": 7.6,
+        "i": 7.0,
+        "e": 6.6,
+        "a": 6.2,
+        "m": 5.6
+       },
+       "MID": {
+        "c": 11.7,
+        "s": 10.6,
+        "d": 10.1,
+        "p": 7.4,
+        "e": 6.8,
+        "a": 6.6,
+        "i": 6.2,
+        "m": 5.7
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.498,
+      "MID": 4.535,
+      "PARA_FIRST": 4.569,
+      "START": 4.494
+     }
+    },
+    "repetition": {
+     "pairs": 29986,
+     "identical_pct": 0.047,
+     "ed1_pct": 1.374,
+     "identical_pct_shuffled": 0.788,
+     "ed1_pct_shuffled": 1.472,
+     "identical_ratio_obs_over_shuffled": 0.1,
+     "ed1_ratio_obs_over_shuffled": 0.9
+    },
+    "top_repeated_words": [
+     [
+      "di",
+      6
+     ],
+     [
+      "io",
+      2
+     ],
+     [
+      "i",
+      2
+     ],
+     [
+      "niente",
+      1
+     ],
+     [
+      "che",
+      1
+     ],
+     [
+      "le",
+      1
+     ],
+     [
+      "cui",
+      1
+     ]
+    ]
+   },
+   "de": {
+    "label": "German sample N=34116 (lined as Voynich ALL)",
+    "tokens": 34116,
+    "lines": 4130,
+    "zipf": {
+     "tokens": 34116,
+     "types": 7056,
+     "zipf_slope_1_1000": -1.0451,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -1.0027,
+     "ranks_used_5000": 5000,
+     "hapax_types": 4597,
+     "hapax_type_frac": 0.6515,
+     "hapax_token_frac": 0.1347,
+     "dis_legomena_type_frac": 0.1312,
+     "top10": [
+      [
+       "und",
+       1181
+      ],
+      [
+       "die",
+       930
+      ],
+      [
+       "ich",
+       801
+      ],
+      [
+       "der",
+       746
+      ],
+      [
+       "sie",
+       613
+      ],
+      [
+       "in",
+       535
+      ],
+      [
+       "er",
+       518
+      ],
+      [
+       "das",
+       464
+      ],
+      [
+       "den",
+       398
+      ],
+      [
+       "zu",
+       387
+      ]
+     ],
+     "top1_share": 0.0346
+    },
+    "wordlength": {
+     "mean": 4.987,
+     "variance": 7.035,
+     "skewness": 1.462,
+     "max": 23,
+     "dispersion_var_over_mean_Lminus1": 1.765,
+     "histogram_pct": {
+      "1": 0.15,
+      "2": 8.66,
+      "3": 29.95,
+      "4": 14.98,
+      "5": 13.95,
+      "6": 10.74,
+      "7": 6.09,
+      "8": 4.68,
+      "9": 3.3,
+      "10": 2.58,
+      "11": 1.7,
+      "12": 1.3,
+      "13": 0.84,
+      "14": 0.51,
+      "15": 0.27
+     },
+     "pct_over_15": 0.31,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0997,
+      "loglik": -80727.5,
+      "chi2_vs_fit": 36660.8,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1247,
+      "loglik": -79885.6,
+      "chi2_vs_fit": 27592.0,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1470,
+      "10000": 2468,
+      "20000": 4526,
+      "N=34116": 7056
+     },
+     "heaps_beta": 0.7794
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 34088,
+      "chi2": 44.6,
+      "df": 48,
+      "p": 0.612,
+      "cramers_V": 0.0256,
+      "top_deviations": [
+       "END:g obs=234 exp=205.8 z=+2.0",
+       "START:d obs=499 exp=541.0 z=-1.8",
+       "START:h obs=202 exp=182.3 z=+1.5",
+       "START:l obs=88 exp=103.6 z=-1.5",
+       "START:n obs=168 exp=149.3 z=+1.5",
+       "END:b obs=132 exp=150.8 z=-1.5",
+       "START:s obs=493 exp=465.5 z=+1.3",
+       "START:b obs=165 exp=150.8 z=+1.2",
+       "START:f obs=104 exp=117.4 z=-1.2",
+       "START:p obs=48 exp=40.3 z=+1.2"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "d": 12.2,
+        "s": 12.0,
+        "e": 7.8,
+        "i": 6.9,
+        "a": 6.6,
+        "w": 6.4,
+        "m": 5.3,
+        "g": 5.1
+       },
+       "MID": {
+        "d": 13.4,
+        "s": 11.2,
+        "e": 7.7,
+        "i": 7.5,
+        "a": 6.8,
+        "w": 6.6,
+        "m": 5.6,
+        "g": 4.9
+       },
+       "END": {
+        "d": 12.8,
+        "s": 11.4,
+        "e": 8.1,
+        "i": 7.3,
+        "a": 7.1,
+        "w": 6.1,
+        "g": 5.7,
+        "m": 5.6
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 34088,
+      "chi2": 47.7,
+      "df": 38,
+      "p": 0.134,
+      "cramers_V": 0.0265,
+      "top_deviations": [
+       "START:r obs=489 exp=542.1 z=-2.3",
+       "START:u obs=94 exp=75.9 z=+2.1",
+       "START:i obs=39 exp=28.3 z=+2.0",
+       "END:i obs=18 exp=28.3 z=-1.9",
+       "START:l obs=94 exp=78.6 z=+1.7",
+       "START:s obs=267 exp=294.1 z=-1.6",
+       "START:z obs=28 exp=20.7 z=+1.6",
+       "END:g obs=73 exp=88.1 z=-1.6",
+       "START:n obs=949 exp=902.5 z=+1.5",
+       "END:k obs=42 exp=34.5 z=+1.3"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "n": 23.1,
+        "e": 17.0,
+        "r": 11.9,
+        "t": 9.5,
+        "h": 7.4,
+        "s": 6.5,
+        "d": 5.7,
+        "m": 3.8
+       },
+       "MID": {
+        "n": 21.9,
+        "e": 17.4,
+        "r": 13.4,
+        "t": 10.0,
+        "h": 7.6,
+        "s": 7.3,
+        "d": 5.3,
+        "m": 4.0
+       },
+       "END": {
+        "n": 21.7,
+        "e": 17.4,
+        "r": 13.3,
+        "t": 9.7,
+        "h": 7.6,
+        "s": 7.2,
+        "d": 5.7,
+        "m": 4.3
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 29986,
+      "chi2": 52.9,
+      "df": 42,
+      "p": 0.121,
+      "cramers_V": 0.0297,
+      "top_deviations": [
+       "PARA_FIRST:a obs=35 exp=50.1 z=-2.1",
+       "PARA_FIRST:v obs=33 exp=23.6 z=+1.9",
+       "PARA_FIRST:z obs=29 exp=20.3 z=+1.9",
+       "PARA_FIRST:j obs=11 exp=6.5 z=+1.8",
+       "LINE_FIRST:h obs=170 exp=148.6 z=+1.8",
+       "LINE_FIRST:l obs=69 exp=84.2 z=-1.7",
+       "PARA_FIRST:d obs=83 exp=98.0 z=-1.5",
+       "PARA_FIRST:t obs=15 exp=10.2 z=+1.5",
+       "PARA_FIRST:e obs=46 exp=56.8 z=-1.4",
+       "LINE_FIRST:b obs=141 exp=125.7 z=+1.4"
+      ],
+      "row_n": {
+       "PARA_FIRST": 740,
+       "LINE_FIRST": 3362,
+       "MID": 25884
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "s": 12.3,
+        "d": 11.2,
+        "w": 7.3,
+        "i": 7.0,
+        "e": 6.2,
+        "g": 5.8,
+        "u": 5.4,
+        "m": 5.1
+       },
+       "LINE_FIRST": {
+        "d": 12.4,
+        "s": 12.0,
+        "e": 8.1,
+        "a": 7.0,
+        "i": 6.9,
+        "w": 6.2,
+        "m": 5.3,
+        "h": 5.1
+       },
+       "MID": {
+        "d": 13.4,
+        "s": 11.2,
+        "e": 7.7,
+        "i": 7.5,
+        "a": 6.8,
+        "w": 6.6,
+        "m": 5.6,
+        "g": 4.9
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.952,
+      "MID": 4.995,
+      "PARA_FIRST": 5.039,
+      "START": 4.967
+     }
+    },
+    "repetition": {
+     "pairs": 29986,
+     "identical_pct": 0.157,
+     "ed1_pct": 0.444,
+     "identical_pct_shuffled": 0.576,
+     "ed1_pct_shuffled": 0.829,
+     "identical_ratio_obs_over_shuffled": 0.3,
+     "ed1_ratio_obs_over_shuffled": 0.5
+    },
+    "top_repeated_words": [
+     [
+      "sie",
+      9
+     ],
+     [
+      "ja",
+      5
+     ],
+     [
+      "die",
+      3
+     ],
+     [
+      "weit",
+      2
+     ],
+     [
+      "he",
+      2
+     ],
+     [
+      "so",
+      2
+     ],
+     [
+      "aber",
+      2
+     ],
+     [
+      "jetzt",
+      2
+     ]
+    ]
+   },
+   "en": {
+    "label": "English sample N=34116 (lined as Voynich ALL)",
+    "tokens": 34116,
+    "lines": 4130,
+    "zipf": {
+     "tokens": 34116,
+     "types": 5139,
+     "zipf_slope_1_1000": -1.0558,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -1.0189,
+     "ranks_used_5000": 5000,
+     "hapax_types": 2833,
+     "hapax_type_frac": 0.5513,
+     "hapax_token_frac": 0.083,
+     "dis_legomena_type_frac": 0.171,
+     "top10": [
+      [
+       "the",
+       1595
+      ],
+      [
+       "and",
+       1142
+      ],
+      [
+       "of",
+       967
+      ],
+      [
+       "a",
+       959
+      ],
+      [
+       "to",
+       879
+      ],
+      [
+       "in",
+       629
+      ],
+      [
+       "i",
+       601
+      ],
+      [
+       "it",
+       466
+      ],
+      [
+       "he",
+       452
+      ],
+      [
+       "that",
+       404
+      ]
+     ],
+     "top1_share": 0.0468
+    },
+    "wordlength": {
+     "mean": 4.228,
+     "variance": 5.406,
+     "skewness": 1.083,
+     "max": 16,
+     "dispersion_var_over_mean_Lminus1": 1.674,
+     "histogram_pct": {
+      "1": 5.54,
+      "2": 18.13,
+      "3": 23.34,
+      "4": 18.04,
+      "5": 10.7,
+      "6": 7.37,
+      "7": 6.5,
+      "8": 4.1,
+      "9": 2.83,
+      "10": 1.8,
+      "11": 0.83,
+      "12": 0.52,
+      "13": 0.22,
+      "14": 0.06,
+      "15": 0.02
+     },
+     "pct_over_15": 0.01,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0807,
+      "loglik": -76479.3,
+      "chi2_vs_fit": 18687.7,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1057,
+      "loglik": -75381.8,
+      "chi2_vs_fit": 8549.8,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1324,
+      "10000": 1906,
+      "20000": 3094,
+      "N=34116": 5139
+     },
+     "heaps_beta": 0.6753
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 34088,
+      "chi2": 50.5,
+      "df": 48,
+      "p": 0.374,
+      "cramers_V": 0.0272,
+      "top_deviations": [
+       "START:other obs=8 exp=3.6 z=+2.3",
+       "START:j obs=23 exp=15.3 z=+2.0",
+       "END:d obs=106 exp=126.5 z=-1.8",
+       "END:y obs=93 exp=78.6 z=+1.6",
+       "END:l obs=93 exp=109.1 z=-1.5",
+       "START:s obs=306 exp=331.3 z=-1.4",
+       "END:h obs=331 exp=305.8 z=+1.4",
+       "END:w obs=303 exp=280.0 z=+1.4",
+       "START:a obs=451 exp=480.1 z=-1.3",
+       "START:e obs=94 exp=82.1 z=+1.3"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "t": 14.0,
+        "a": 11.0,
+        "h": 7.9,
+        "i": 7.7,
+        "s": 7.5,
+        "w": 6.8,
+        "o": 6.6,
+        "b": 4.9
+       },
+       "MID": {
+        "t": 13.8,
+        "a": 11.8,
+        "s": 8.1,
+        "i": 7.6,
+        "h": 7.3,
+        "w": 6.7,
+        "o": 6.2,
+        "b": 4.8
+       },
+       "END": {
+        "t": 13.8,
+        "a": 11.8,
+        "s": 8.3,
+        "h": 8.1,
+        "w": 7.4,
+        "i": 7.3,
+        "o": 5.7,
+        "b": 4.9
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 34088,
+      "chi2": 41.8,
+      "df": 40,
+      "p": 0.392,
+      "cramers_V": 0.0248,
+      "top_deviations": [
+       "END:h obs=153 exp=123.6 z=+2.6",
+       "END:r obs=232 exp=264.1 z=-2.0",
+       "END:s obs=480 exp=439.5 z=+1.9",
+       "END:i obs=60 exp=75.5 z=-1.8",
+       "END:other obs=4 exp=9.3 z=-1.7",
+       "START:f obs=168 exp=149.0 z=+1.6",
+       "MID:h obs=740 exp=779.8 z=-1.4",
+       "END:f obs=133 exp=149.0 z=-1.3",
+       "END:g obs=127 exp=142.7 z=-1.3",
+       "START:l obs=90 exp=100.8 z=-1.1"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 17.6,
+        "s": 10.9,
+        "d": 10.7,
+        "t": 10.7,
+        "n": 7.9,
+        "r": 6.8,
+        "y": 6.1,
+        "o": 4.7
+       },
+       "MID": {
+        "e": 18.2,
+        "t": 11.1,
+        "d": 10.9,
+        "s": 10.5,
+        "n": 7.9,
+        "r": 6.5,
+        "y": 6.2,
+        "o": 4.6
+       },
+       "END": {
+        "e": 19.0,
+        "s": 11.7,
+        "t": 11.1,
+        "d": 10.8,
+        "n": 7.4,
+        "y": 6.1,
+        "r": 5.7,
+        "o": 4.8
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 29986,
+      "chi2": 37.7,
+      "df": 42,
+      "p": 0.659,
+      "cramers_V": 0.0251,
+      "top_deviations": [
+       "LINE_FIRST:other obs=57 exp=43.7 z=+2.0",
+       "PARA_FIRST:i obs=70 exp=56.4 z=+1.8",
+       "PARA_FIRST:f obs=18 exp=26.6 z=-1.7",
+       "PARA_FIRST:r obs=8 exp=13.9 z=-1.6",
+       "LINE_FIRST:e obs=79 exp=66.7 z=+1.5",
+       "LINE_FIRST:h obs=271 exp=247.8 z=+1.5",
+       "PARA_FIRST:v obs=2 exp=5.1 z=-1.4",
+       "PARA_FIRST:n obs=14 exp=19.6 z=-1.3",
+       "LINE_FIRST:s obs=249 exp=270.7 z=-1.3",
+       "PARA_FIRST:g obs=16 exp=12.2 z=+1.1"
+      ],
+      "row_n": {
+       "PARA_FIRST": 740,
+       "LINE_FIRST": 3362,
+       "MID": 25884
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "t": 14.5,
+        "a": 10.7,
+        "i": 9.5,
+        "s": 7.7,
+        "h": 7.4,
+        "w": 6.6,
+        "o": 6.6,
+        "m": 4.9
+       },
+       "LINE_FIRST": {
+        "t": 13.9,
+        "a": 11.1,
+        "h": 8.1,
+        "s": 7.4,
+        "i": 7.3,
+        "w": 6.8,
+        "o": 6.6,
+        "b": 5.1
+       },
+       "MID": {
+        "t": 13.8,
+        "a": 11.8,
+        "s": 8.1,
+        "i": 7.6,
+        "h": 7.3,
+        "w": 6.7,
+        "o": 6.2,
+        "b": 4.8
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.219,
+      "MID": 4.228,
+      "PARA_FIRST": 4.322,
+      "START": 4.244
+     }
+    },
+    "repetition": {
+     "pairs": 29986,
+     "identical_pct": 0.137,
+     "ed1_pct": 0.827,
+     "identical_pct_shuffled": 0.824,
+     "ed1_pct_shuffled": 1.535,
+     "identical_ratio_obs_over_shuffled": 0.2,
+     "ed1_ratio_obs_over_shuffled": 0.5
+    },
+    "top_repeated_words": [
+     [
+      "it",
+      6
+     ],
+     [
+      "he",
+      4
+     ],
+     [
+      "had",
+      3
+     ],
+     [
+      "no",
+      2
+     ],
+     [
+      "that",
+      2
+     ],
+     [
+      "ay",
+      2
+     ],
+     [
+      "affection",
+      1
+     ],
+     [
+      "nonsense",
+      1
+     ]
+    ]
+   },
+   "da": {
+    "label": "Danish sample N=34116 (lined as Voynich ALL)",
+    "tokens": 34116,
+    "lines": 4130,
+    "zipf": {
+     "tokens": 34116,
+     "types": 7904,
+     "zipf_slope_1_1000": -0.9855,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.9726,
+     "ranks_used_5000": 5000,
+     "hapax_types": 5129,
+     "hapax_type_frac": 0.6489,
+     "hapax_token_frac": 0.1503,
+     "dis_legomena_type_frac": 0.1504,
+     "top10": [
+      [
+       "og",
+       1267
+      ],
+      [
+       "i",
+       900
+      ],
+      [
+       "en",
+       687
+      ],
+      [
+       "at",
+       575
+      ],
+      [
+       "det",
+       554
+      ],
+      [
+       "af",
+       520
+      ],
+      [
+       "den",
+       516
+      ],
+      [
+       "til",
+       459
+      ],
+      [
+       "han",
+       444
+      ],
+      [
+       "de",
+       444
+      ]
+     ],
+     "top1_share": 0.0371
+    },
+    "wordlength": {
+     "mean": 4.674,
+     "variance": 7.403,
+     "skewness": 1.329,
+     "max": 22,
+     "dispersion_var_over_mean_Lminus1": 2.015,
+     "histogram_pct": {
+      "1": 3.23,
+      "2": 16.12,
+      "3": 26.18,
+      "4": 11.68,
+      "5": 12.22,
+      "6": 9.73,
+      "7": 6.77,
+      "8": 4.24,
+      "9": 3.07,
+      "10": 2.36,
+      "11": 1.79,
+      "12": 1.15,
+      "13": 0.62,
+      "14": 0.4,
+      "15": 0.15
+     },
+     "pct_over_15": 0.3,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0918,
+      "loglik": -83543.9,
+      "chi2_vs_fit": 49015.4,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1168,
+      "loglik": -81745.6,
+      "chi2_vs_fit": 23072.7,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1932,
+      "10000": 3295,
+      "20000": 5140,
+      "N=34116": 7904
+     },
+     "heaps_beta": 0.7424
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 34088,
+      "chi2": 44.0,
+      "df": 46,
+      "p": 0.555,
+      "cramers_V": 0.0254,
+      "top_deviations": [
+       "START:h obs=383 exp=343.9 z=+2.1",
+       "START:ø obs=24 exp=16.5 z=+1.9",
+       "END:c obs=3 exp=8.1 z=-1.8",
+       "START:æ obs=15 exp=9.6 z=+1.7",
+       "END:a obs=225 exp=251.6 z=-1.7",
+       "START:c obs=4 exp=8.1 z=-1.4",
+       "START:e obs=227 exp=249.0 z=-1.4",
+       "START:i obs=184 exp=203.7 z=-1.4",
+       "END:ø obs=11 exp=16.5 z=-1.4",
+       "START:f obs=265 exp=244.8 z=+1.3"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "s": 12.9,
+        "h": 9.3,
+        "d": 9.3,
+        "o": 6.7,
+        "f": 6.5,
+        "m": 6.2,
+        "a": 5.9,
+        "e": 5.5
+       },
+       "MID": {
+        "s": 12.9,
+        "d": 9.5,
+        "h": 8.2,
+        "o": 6.7,
+        "a": 6.3,
+        "e": 6.1,
+        "f": 5.9,
+        "m": 5.9
+       },
+       "END": {
+        "s": 12.9,
+        "d": 9.8,
+        "h": 8.3,
+        "o": 6.9,
+        "e": 6.4,
+        "f": 6.0,
+        "m": 5.9,
+        "a": 5.5
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 34088,
+      "chi2": 42.9,
+      "df": 42,
+      "p": 0.431,
+      "cramers_V": 0.0251,
+      "top_deviations": [
+       "START:æ obs=16 exp=9.9 z=+2.0",
+       "END:l obs=103 exp=124.2 z=-1.9",
+       "START:e obs=796 exp=843.1 z=-1.6",
+       "START:f obs=84 exp=70.6 z=+1.6",
+       "START:n obs=568 exp=530.8 z=+1.6",
+       "END:f obs=57 exp=70.6 z=-1.6",
+       "END:j obs=15 exp=10.2 z=+1.5",
+       "END:p obs=32 exp=25.0 z=+1.4",
+       "END:s obs=206 exp=186.9 z=+1.4",
+       "END:e obs=877 exp=843.1 z=+1.2"
+      ],
+      "row_n": {
+       "START": 4102,
+       "MID": 25884,
+       "END": 4102
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 19.4,
+        "n": 13.8,
+        "t": 12.0,
+        "r": 11.9,
+        "g": 9.2,
+        "d": 6.8,
+        "a": 4.7,
+        "s": 4.7
+       },
+       "MID": {
+        "e": 20.6,
+        "n": 12.9,
+        "t": 12.6,
+        "r": 12.0,
+        "g": 9.1,
+        "d": 6.6,
+        "a": 4.7,
+        "s": 4.5
+       },
+       "END": {
+        "e": 21.4,
+        "n": 12.5,
+        "r": 12.0,
+        "t": 11.9,
+        "g": 9.4,
+        "d": 6.4,
+        "s": 5.0,
+        "a": 4.6
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 29986,
+      "chi2": 50.0,
+      "df": 40,
+      "p": 0.134,
+      "cramers_V": 0.0289,
+      "top_deviations": [
+       "PARA_FIRST:m obs=29 exp=43.9 z=-2.2",
+       "LINE_FIRST:i obs=138 exp=166.9 z=-2.2",
+       "PARA_FIRST:other obs=14 exp=8.0 z=+2.1",
+       "LINE_FIRST:m obs=227 exp=199.2 z=+2.0",
+       "LINE_FIRST:h obs=313 exp=282.1 z=+1.8",
+       "PARA_FIRST:n obs=12 exp=19.0 z=-1.6",
+       "PARA_FIRST:i obs=46 exp=36.7 z=+1.5",
+       "PARA_FIRST:g obs=27 exp=20.6 z=+1.4",
+       "PARA_FIRST:p obs=24 exp=18.2 z=+1.4",
+       "PARA_FIRST:a obs=38 exp=46.0 z=-1.2"
+      ],
+      "row_n": {
+       "PARA_FIRST": 740,
+       "LINE_FIRST": 3362,
+       "MID": 25884
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "s": 11.4,
+        "d": 10.1,
+        "h": 9.5,
+        "o": 6.9,
+        "f": 6.9,
+        "i": 6.2,
+        "v": 5.5,
+        "a": 5.1
+       },
+       "LINE_FIRST": {
+        "s": 13.2,
+        "h": 9.3,
+        "d": 9.1,
+        "m": 6.8,
+        "o": 6.7,
+        "f": 6.4,
+        "a": 6.1,
+        "e": 5.6
+       },
+       "MID": {
+        "s": 12.9,
+        "d": 9.5,
+        "h": 8.2,
+        "o": 6.7,
+        "a": 6.3,
+        "e": 6.1,
+        "f": 5.9,
+        "m": 5.9
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.648,
+      "MID": 4.678,
+      "PARA_FIRST": 4.57,
+      "START": 4.676
+     }
+    },
+    "repetition": {
+     "pairs": 29986,
+     "identical_pct": 0.097,
+     "ed1_pct": 0.974,
+     "identical_pct_shuffled": 0.545,
+     "ed1_pct_shuffled": 1.135,
+     "identical_ratio_obs_over_shuffled": 0.2,
+     "ed1_ratio_obs_over_shuffled": 0.9
+    },
+    "top_repeated_words": [
+     [
+      "lul",
+      6
+     ],
+     [
+      "hum",
+      4
+     ],
+     [
+      "saa",
+      2
+     ],
+     [
+      "da",
+      2
+     ],
+     [
+      "m",
+      2
+     ],
+     [
+      "det",
+      2
+     ],
+     [
+      "aldrig",
+      1
+     ],
+     [
+      "mikkel",
+      1
+     ]
+    ]
+   }
+  },
+  "A": {
+   "la": {
+    "label": "Latin sample N=10715 (lined as Voynich A)",
+    "tokens": 10715,
+    "lines": 1557,
+    "zipf": {
+     "tokens": 10715,
+     "types": 4887,
+     "zipf_slope_1_1000": -0.7789,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.619,
+     "ranks_used_5000": 4887,
+     "hapax_types": 3575,
+     "hapax_type_frac": 0.7315,
+     "hapax_token_frac": 0.3336,
+     "dis_legomena_type_frac": 0.133,
+     "top10": [
+      [
+       "et",
+       493
+      ],
+      [
+       "in",
+       171
+      ],
+      [
+       "non",
+       131
+      ],
+      [
+       "te",
+       99
+      ],
+      [
+       "me",
+       66
+      ],
+      [
+       "est",
+       65
+      ],
+      [
+       "mihi",
+       63
+      ],
+      [
+       "ut",
+       58
+      ],
+      [
+       "ad",
+       57
+      ],
+      [
+       "sidenote",
+       57
+      ]
+     ],
+     "top1_share": 0.046
+    },
+    "wordlength": {
+     "mean": 5.497,
+     "variance": 6.208,
+     "skewness": 0.51,
+     "max": 18,
+     "dispersion_var_over_mean_Lminus1": 1.381,
+     "histogram_pct": {
+      "1": 0.62,
+      "2": 11.93,
+      "3": 12.05,
+      "4": 13.71,
+      "5": 14.65,
+      "6": 13.92,
+      "7": 11.92,
+      "8": 9.15,
+      "9": 5.4,
+      "10": 3.34,
+      "11": 1.84,
+      "12": 0.98,
+      "13": 0.27,
+      "14": 0.14,
+      "15": 0.05
+     },
+     "pct_over_15": 0.04,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.1124,
+      "loglik": -25160.7,
+      "chi2_vs_fit": 2458.0,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1374,
+      "loglik": -24847.3,
+      "chi2_vs_fit": 1413.1,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 2929,
+      "10000": 4631,
+      "N=10715": 4887
+     },
+     "heaps_beta": 0.7633
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 10707,
+      "chi2": 30.1,
+      "df": 42,
+      "p": 0.915,
+      "cramers_V": 0.0375,
+      "top_deviations": [
+       "END:e obs=177 exp=152.6 z=+2.0",
+       "START:s obs=108 exp=125.1 z=-1.5",
+       "END:v obs=58 exp=70.6 z=-1.5",
+       "START:t obs=106 exp=92.9 z=+1.4",
+       "END:j obs=4 exp=7.8 z=-1.4",
+       "START:a obs=129 exp=144.4 z=-1.3",
+       "START:d obs=103 exp=90.7 z=+1.3",
+       "START:e obs=137 exp=152.6 z=-1.3",
+       "START:f obs=63 exp=55.1 z=+1.1",
+       "START:g obs=19 exp=14.6 z=+1.1"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 8.8,
+        "a": 8.3,
+        "i": 7.9,
+        "p": 7.3,
+        "m": 7.2,
+        "s": 7.0,
+        "t": 6.8,
+        "d": 6.6
+       },
+       "MID": {
+        "e": 9.7,
+        "a": 9.4,
+        "i": 8.2,
+        "s": 8.2,
+        "p": 7.2,
+        "m": 7.0,
+        "t": 5.8,
+        "c": 5.7
+       },
+       "END": {
+        "e": 11.4,
+        "a": 9.7,
+        "s": 8.6,
+        "i": 8.3,
+        "p": 7.2,
+        "m": 6.2,
+        "d": 6.2,
+        "t": 6.2
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 10707,
+      "chi2": 30.4,
+      "df": 32,
+      "p": 0.548,
+      "cramers_V": 0.0377,
+      "top_deviations": [
+       "END:o obs=68 exp=84.2 z=-1.8",
+       "START:n obs=42 exp=54.4 z=-1.7",
+       "END:d obs=41 exp=32.6 z=+1.5",
+       "START:c obs=26 exp=34.1 z=-1.4",
+       "START:r obs=53 exp=62.6 z=-1.2",
+       "MID:n obs=287 exp=267.2 z=+1.2",
+       "END:c obs=41 exp=34.1 z=+1.2",
+       "END:other obs=2 exp=0.9 z=+1.2",
+       "END:r obs=72 exp=62.6 z=+1.2",
+       "END:t obs=233 exp=215.0 z=+1.2"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "s": 21.3,
+        "e": 15.8,
+        "t": 13.2,
+        "m": 12.9,
+        "a": 10.2,
+        "i": 7.4,
+        "o": 5.7,
+        "r": 3.4
+       },
+       "MID": {
+        "s": 20.3,
+        "e": 14.7,
+        "t": 13.8,
+        "m": 13.4,
+        "a": 9.8,
+        "i": 6.8,
+        "o": 5.6,
+        "r": 4.0
+       },
+       "END": {
+        "s": 19.2,
+        "e": 15.6,
+        "t": 15.0,
+        "m": 13.4,
+        "a": 9.9,
+        "i": 6.3,
+        "r": 4.6,
+        "o": 4.4
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 9158,
+      "chi2": 30.4,
+      "df": 36,
+      "p": 0.731,
+      "cramers_V": 0.0407,
+      "top_deviations": [
+       "PARA_FIRST:t obs=22 exp=14.0 z=+2.2",
+       "LINE_FIRST:d obs=91 exp=76.2 z=+1.7",
+       "LINE_FIRST:other obs=41 exp=33.2 z=+1.4",
+       "LINE_FIRST:s obs=91 exp=105.1 z=-1.4",
+       "LINE_FIRST:e obs=111 exp=126.1 z=-1.3",
+       "PARA_FIRST:a obs=16 exp=21.6 z=-1.2",
+       "PARA_FIRST:c obs=9 exp=13.2 z=-1.2",
+       "PARA_FIRST:other obs=3 exp=5.9 z=-1.2",
+       "PARA_FIRST:i obs=24 exp=19.1 z=+1.1",
+       "PARA_FIRST:p obs=21 exp=16.8 z=+1.0"
+      ],
+      "row_n": {
+       "PARA_FIRST": 234,
+       "LINE_FIRST": 1315,
+       "MID": 7609
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "e": 11.1,
+        "i": 10.3,
+        "t": 9.4,
+        "p": 9.0,
+        "s": 7.3,
+        "a": 6.8,
+        "m": 6.4,
+        "n": 5.1
+       },
+       "LINE_FIRST": {
+        "a": 8.6,
+        "e": 8.4,
+        "i": 7.5,
+        "m": 7.4,
+        "p": 7.0,
+        "s": 6.9,
+        "d": 6.9,
+        "t": 6.4
+       },
+       "MID": {
+        "e": 9.7,
+        "a": 9.4,
+        "i": 8.2,
+        "s": 8.2,
+        "p": 7.2,
+        "m": 7.0,
+        "t": 5.8,
+        "c": 5.7
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 5.425,
+      "MID": 5.501,
+      "PARA_FIRST": 5.38,
+      "START": 5.551
+     }
+    },
+    "repetition": {
+     "pairs": 9158,
+     "identical_pct": 0.076,
+     "ed1_pct": 0.644,
+     "identical_pct_shuffled": 0.378,
+     "ed1_pct_shuffled": 0.389,
+     "identical_ratio_obs_over_shuffled": 0.2,
+     "ed1_ratio_obs_over_shuffled": 1.7
+    },
+    "top_repeated_words": [
+     [
+      "euge",
+      2
+     ],
+     [
+      "domine",
+      1
+     ],
+     [
+      "deus",
+      1
+     ],
+     [
+      "duo",
+      1
+     ],
+     [
+      "difficultas",
+      1
+     ],
+     [
+      "flagitia",
+      1
+     ]
+    ]
+   },
+   "it": {
+    "label": "Italian sample N=10715 (lined as Voynich A)",
+    "tokens": 10715,
+    "lines": 1557,
+    "zipf": {
+     "tokens": 10715,
+     "types": 2837,
+     "zipf_slope_1_1000": -0.975,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.8606,
+     "ranks_used_5000": 2837,
+     "hapax_types": 1892,
+     "hapax_type_frac": 0.6669,
+     "hapax_token_frac": 0.1766,
+     "dis_legomena_type_frac": 0.122,
+     "top10": [
+      [
+       "et",
+       448
+      ],
+      [
+       "che",
+       418
+      ],
+      [
+       "di",
+       384
+      ],
+      [
+       "a",
+       200
+      ],
+      [
+       "in",
+       175
+      ],
+      [
+       "non",
+       175
+      ],
+      [
+       "il",
+       147
+      ],
+      [
+       "la",
+       139
+      ],
+      [
+       "per",
+       138
+      ],
+      [
+       "sua",
+       102
+      ]
+     ],
+     "top1_share": 0.0418
+    },
+    "wordlength": {
+     "mean": 4.56,
+     "variance": 6.428,
+     "skewness": 0.865,
+     "max": 16,
+     "dispersion_var_over_mean_Lminus1": 1.806,
+     "histogram_pct": {
+      "1": 4.75,
+      "2": 21.39,
+      "3": 17.25,
+      "4": 10.42,
+      "5": 12.86,
+      "6": 12.04,
+      "7": 8.43,
+      "8": 5.41,
+      "9": 3.12,
+      "10": 2.0,
+      "11": 1.16,
+      "12": 0.55,
+      "13": 0.28,
+      "14": 0.14,
+      "15": 0.19
+     },
+     "pct_over_15": 0.03,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.089,
+      "loglik": -25603.2,
+      "chi2_vs_fit": 5614.1,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.114,
+      "loglik": -25004.2,
+      "chi2_vs_fit": 3136.1,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1631,
+      "10000": 2717,
+      "N=10715": 2837
+     },
+     "heaps_beta": 0.7406
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 10707,
+      "chi2": 41.2,
+      "df": 38,
+      "p": 0.331,
+      "cramers_V": 0.0439,
+      "top_deviations": [
+       "START:q obs=73 exp=53.1 z=+2.7",
+       "END:f obs=60 exp=46.6 z=+2.0",
+       "START:i obs=71 exp=86.5 z=-1.7",
+       "END:r obs=32 exp=43.0 z=-1.7",
+       "END:g obs=35 exp=27.8 z=+1.4",
+       "START:a obs=83 exp=95.9 z=-1.3",
+       "END:e obs=84 exp=95.6 z=-1.2",
+       "END:i obs=98 exp=86.5 z=+1.2",
+       "START:c obs=207 exp=191.1 z=+1.1",
+       "START:t obs=54 exp=46.7 z=+1.1"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "c": 13.4,
+        "s": 10.7,
+        "d": 9.7,
+        "p": 7.6,
+        "m": 6.5,
+        "e": 5.9,
+        "a": 5.4,
+        "u": 5.1
+       },
+       "MID": {
+        "c": 12.2,
+        "s": 10.7,
+        "d": 10.5,
+        "p": 7.3,
+        "e": 6.4,
+        "a": 6.3,
+        "m": 5.8,
+        "i": 5.6
+       },
+       "END": {
+        "c": 11.7,
+        "s": 11.6,
+        "d": 9.9,
+        "p": 7.0,
+        "a": 6.5,
+        "i": 6.3,
+        "m": 5.8,
+        "u": 5.5
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 10707,
+      "chi2": 16.0,
+      "df": 26,
+      "p": 0.936,
+      "cramers_V": 0.0273,
+      "top_deviations": [
+       "END:o obs=317 exp=288.2 z=+1.7",
+       "START:other obs=12 exp=7.5 z=+1.6",
+       "START:u obs=12 exp=18.8 z=-1.6",
+       "END:s obs=10 exp=14.5 z=-1.2",
+       "START:r obs=72 exp=80.9 z=-1.0",
+       "END:n obs=94 exp=103.2 z=-0.9",
+       "MID:o obs=1384 exp=1415.6 z=-0.8",
+       "END:h obs=14 exp=11.3 z=+0.8",
+       "START:n obs=110 exp=103.2 z=+0.7",
+       "MID:r obs=410 exp=397.3 z=+0.6"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "a": 20.4,
+        "e": 20.1,
+        "o": 18.8,
+        "i": 14.2,
+        "n": 7.1,
+        "r": 4.6,
+        "t": 4.5,
+        "l": 4.5
+       },
+       "MID": {
+        "a": 20.4,
+        "e": 20.0,
+        "o": 18.2,
+        "i": 14.4,
+        "n": 6.7,
+        "r": 5.4,
+        "t": 4.6,
+        "l": 4.2
+       },
+       "END": {
+        "o": 20.5,
+        "a": 20.3,
+        "e": 20.0,
+        "i": 14.1,
+        "n": 6.1,
+        "r": 5.0,
+        "t": 4.3,
+        "l": 4.1
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 9158,
+      "chi2": 46.6,
+      "df": 32,
+      "p": 0.0461,
+      "cramers_V": 0.0504,
+      "top_deviations": [
+       "PARA_FIRST:c obs=44 exp=29.1 z=+2.8",
+       "LINE_FIRST:q obs=64 exp=46.1 z=+2.6",
+       "PARA_FIRST:a obs=6 exp=14.4 z=-2.2",
+       "PARA_FIRST:l obs=16 exp=9.4 z=+2.2",
+       "PARA_FIRST:h obs=14 exp=8.5 z=+1.9",
+       "PARA_FIRST:s obs=18 exp=25.0 z=-1.4",
+       "LINE_FIRST:h obs=38 exp=47.7 z=-1.4",
+       "PARA_FIRST:i obs=8 exp=12.8 z=-1.3",
+       "LINE_FIRST:l obs=43 exp=52.7 z=-1.3",
+       "LINE_FIRST:m obs=88 exp=77.4 z=+1.2"
+      ],
+      "row_n": {
+       "PARA_FIRST": 234,
+       "LINE_FIRST": 1315,
+       "MID": 7609
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "c": 18.8,
+        "d": 9.4,
+        "p": 8.1,
+        "s": 7.7,
+        "l": 6.8,
+        "h": 6.0,
+        "m": 5.6,
+        "e": 4.7
+       },
+       "LINE_FIRST": {
+        "c": 12.4,
+        "s": 11.3,
+        "d": 9.8,
+        "p": 7.5,
+        "m": 6.7,
+        "e": 6.2,
+        "a": 5.9,
+        "u": 5.2
+       },
+       "MID": {
+        "c": 12.2,
+        "s": 10.7,
+        "d": 10.5,
+        "p": 7.3,
+        "e": 6.4,
+        "a": 6.3,
+        "m": 5.8,
+        "i": 5.6
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.533,
+      "MID": 4.582,
+      "PARA_FIRST": 4.628,
+      "START": 4.474
+     }
+    },
+    "repetition": {
+     "pairs": 9158,
+     "identical_pct": 0.022,
+     "ed1_pct": 1.245,
+     "identical_pct_shuffled": 0.657,
+     "ed1_pct_shuffled": 1.28,
+     "identical_ratio_obs_over_shuffled": 0.0,
+     "ed1_ratio_obs_over_shuffled": 1.0
+    },
+    "top_repeated_words": [
+     [
+      "di",
+      1
+     ],
+     [
+      "niente",
+      1
+     ]
+    ]
+   },
+   "de": {
+    "label": "German sample N=10715 (lined as Voynich A)",
+    "tokens": 10715,
+    "lines": 1557,
+    "zipf": {
+     "tokens": 10715,
+     "types": 3251,
+     "zipf_slope_1_1000": -0.9723,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.7716,
+     "ranks_used_5000": 3251,
+     "hapax_types": 2318,
+     "hapax_type_frac": 0.713,
+     "hapax_token_frac": 0.2163,
+     "dis_legomena_type_frac": 0.1193,
+     "top10": [
+      [
+       "und",
+       424
+      ],
+      [
+       "die",
+       292
+      ],
+      [
+       "der",
+       250
+      ],
+      [
+       "ich",
+       245
+      ],
+      [
+       "in",
+       168
+      ],
+      [
+       "sie",
+       162
+      ],
+      [
+       "das",
+       160
+      ],
+      [
+       "er",
+       152
+      ],
+      [
+       "den",
+       135
+      ],
+      [
+       "zu",
+       124
+      ]
+     ],
+     "top1_share": 0.0396
+    },
+    "wordlength": {
+     "mean": 5.001,
+     "variance": 7.146,
+     "skewness": 1.494,
+     "max": 21,
+     "dispersion_var_over_mean_Lminus1": 1.786,
+     "histogram_pct": {
+      "1": 0.05,
+      "2": 8.35,
+      "3": 30.78,
+      "4": 14.33,
+      "5": 14.15,
+      "6": 10.51,
+      "7": 6.32,
+      "8": 4.83,
+      "9": 2.97,
+      "10": 2.63,
+      "11": 1.68,
+      "12": 1.4,
+      "13": 0.88,
+      "14": 0.43,
+      "15": 0.33
+     },
+     "pct_over_15": 0.37,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.1,
+      "loglik": -25443.9,
+      "chi2_vs_fit": 8139.0,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.125,
+      "loglik": -25175.9,
+      "chi2_vs_fit": 6685.0,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1658,
+      "10000": 3103,
+      "N=10715": 3251
+     },
+     "heaps_beta": 0.8158
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 10707,
+      "chi2": 46.5,
+      "df": 46,
+      "p": 0.452,
+      "cramers_V": 0.0466,
+      "top_deviations": [
+       "START:m obs=66 exp=84.6 z=-2.0",
+       "END:w obs=115 exp=96.2 z=+1.9",
+       "END:g obs=96 exp=80.3 z=+1.8",
+       "START:p obs=9 exp=15.8 z=-1.7",
+       "END:b obs=45 exp=57.3 z=-1.6",
+       "END:k obs=28 exp=37.9 z=-1.6",
+       "END:v obs=65 exp=53.2 z=+1.6",
+       "START:h obs=80 exp=68.4 z=+1.4",
+       "END:n obs=46 exp=56.9 z=-1.4",
+       "END:o obs=13 exp=8.8 z=+1.4"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "d": 14.8,
+        "s": 10.7,
+        "e": 8.1,
+        "a": 7.2,
+        "i": 6.8,
+        "w": 6.6,
+        "u": 5.3,
+        "h": 5.2
+       },
+       "MID": {
+        "d": 13.4,
+        "s": 10.9,
+        "e": 7.6,
+        "i": 7.5,
+        "a": 6.7,
+        "w": 5.9,
+        "m": 5.7,
+        "u": 5.1
+       },
+       "END": {
+        "d": 13.6,
+        "s": 11.0,
+        "e": 7.8,
+        "w": 7.4,
+        "i": 7.2,
+        "a": 6.8,
+        "g": 6.2,
+        "m": 5.7
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 10707,
+      "chi2": 33.2,
+      "df": 38,
+      "p": 0.692,
+      "cramers_V": 0.0394,
+      "top_deviations": [
+       "START:e obs=239 exp=267.8 z=-1.8",
+       "END:s obs=98 exp=113.6 z=-1.5",
+       "START:i obs=4 exp=8.0 z=-1.4",
+       "START:k obs=17 exp=12.0 z=+1.4",
+       "START:s obs=129 exp=113.6 z=+1.4",
+       "START:t obs=143 exp=160.9 z=-1.4",
+       "END:m obs=73 exp=63.1 z=+1.2",
+       "START:m obs=72 exp=63.1 z=+1.1",
+       "START:ß obs=23 exp=18.4 z=+1.1",
+       "MID:m obs=291 exp=309.8 z=-1.1"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "n": 23.0,
+        "e": 15.4,
+        "r": 12.9,
+        "t": 9.2,
+        "s": 8.3,
+        "h": 7.0,
+        "d": 6.0,
+        "m": 4.6
+       },
+       "MID": {
+        "n": 21.9,
+        "e": 17.6,
+        "r": 12.9,
+        "t": 10.7,
+        "s": 7.3,
+        "h": 7.2,
+        "d": 5.9,
+        "m": 3.8
+       },
+       "END": {
+        "n": 21.9,
+        "e": 17.4,
+        "r": 13.8,
+        "t": 10.1,
+        "h": 7.5,
+        "s": 6.3,
+        "d": 6.3,
+        "m": 4.7
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 9158,
+      "chi2": 31.3,
+      "df": 34,
+      "p": 0.603,
+      "cramers_V": 0.0413,
+      "top_deviations": [
+       "PARA_FIRST:k obs=2 exp=6.0 z=-1.6",
+       "PARA_FIRST:w obs=20 exp=14.1 z=+1.6",
+       "LINE_FIRST:m obs=58 exp=71.2 z=-1.6",
+       "PARA_FIRST:m obs=8 exp=12.7 z=-1.3",
+       "LINE_FIRST:i obs=84 exp=96.5 z=-1.3",
+       "PARA_FIRST:a obs=11 exp=15.9 z=-1.2",
+       "LINE_FIRST:a obs=101 exp=89.5 z=+1.2",
+       "LINE_FIRST:d obs=195 exp=179.2 z=+1.2",
+       "PARA_FIRST:h obs=14 exp=10.5 z=+1.1",
+       "PARA_FIRST:s obs=31 exp=25.3 z=+1.1"
+      ],
+      "row_n": {
+       "PARA_FIRST": 234,
+       "LINE_FIRST": 1315,
+       "MID": 7609
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "d": 14.5,
+        "s": 13.2,
+        "i": 9.0,
+        "w": 8.5,
+        "e": 8.5,
+        "h": 6.0,
+        "u": 4.7,
+        "a": 4.7
+       },
+       "LINE_FIRST": {
+        "d": 14.8,
+        "s": 10.3,
+        "e": 8.1,
+        "a": 7.7,
+        "i": 6.4,
+        "w": 6.3,
+        "u": 5.4,
+        "h": 5.0
+       },
+       "MID": {
+        "d": 13.4,
+        "s": 10.9,
+        "e": 7.6,
+        "i": 7.5,
+        "a": 6.7,
+        "w": 5.9,
+        "m": 5.7,
+        "u": 5.1
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 5.036,
+      "MID": 4.994,
+      "PARA_FIRST": 4.906,
+      "START": 5.008
+     }
+    },
+    "repetition": {
+     "pairs": 9158,
+     "identical_pct": 0.076,
+     "ed1_pct": 0.448,
+     "identical_pct_shuffled": 0.563,
+     "ed1_pct_shuffled": 0.965,
+     "identical_ratio_obs_over_shuffled": 0.1,
+     "ed1_ratio_obs_over_shuffled": 0.5
+    },
+    "top_repeated_words": [
+     [
+      "sie",
+      2
+     ],
+     [
+      "ja",
+      1
+     ],
+     [
+      "so",
+      1
+     ],
+     [
+      "die",
+      1
+     ],
+     [
+      "nichts",
+      1
+     ],
+     [
+      "ich",
+      1
+     ]
+    ]
+   },
+   "en": {
+    "label": "English sample N=10715 (lined as Voynich A)",
+    "tokens": 10715,
+    "lines": 1557,
+    "zipf": {
+     "tokens": 10715,
+     "types": 2706,
+     "zipf_slope_1_1000": -0.9411,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.8486,
+     "ranks_used_5000": 2706,
+     "hapax_types": 1708,
+     "hapax_type_frac": 0.6312,
+     "hapax_token_frac": 0.1594,
+     "dis_legomena_type_frac": 0.1619,
+     "top10": [
+      [
+       "the",
+       607
+      ],
+      [
+       "of",
+       363
+      ],
+      [
+       "and",
+       325
+      ],
+      [
+       "a",
+       297
+      ],
+      [
+       "to",
+       274
+      ],
+      [
+       "in",
+       239
+      ],
+      [
+       "he",
+       131
+      ],
+      [
+       "is",
+       122
+      ],
+      [
+       "that",
+       114
+      ],
+      [
+       "i",
+       112
+      ]
+     ],
+     "top1_share": 0.0566
+    },
+    "wordlength": {
+     "mean": 4.318,
+     "variance": 5.546,
+     "skewness": 1.04,
+     "max": 16,
+     "dispersion_var_over_mean_Lminus1": 1.671,
+     "histogram_pct": {
+      "1": 4.83,
+      "2": 18.57,
+      "3": 21.87,
+      "4": 17.44,
+      "5": 11.53,
+      "6": 7.72,
+      "7": 7.17,
+      "8": 4.25,
+      "9": 3.09,
+      "10": 1.84,
+      "11": 0.85,
+      "12": 0.46,
+      "13": 0.28,
+      "14": 0.07,
+      "15": 0.04
+     },
+     "pct_over_15": 0.01,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.083,
+      "loglik": -24226.5,
+      "chi2_vs_fit": 3893.0,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.108,
+      "loglik": -23864.0,
+      "chi2_vs_fit": 2560.8,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1392,
+      "10000": 2557,
+      "N=10715": 2706
+     },
+     "heaps_beta": 0.7409
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 10707,
+      "chi2": 36.3,
+      "df": 46,
+      "p": 0.846,
+      "cramers_V": 0.0412,
+      "top_deviations": [
+       "START:h obs=130 exp=102.0 z=+2.8",
+       "START:w obs=90 exp=106.3 z=-1.6",
+       "END:y obs=15 exp=22.7 z=-1.6",
+       "START:e obs=42 exp=33.1 z=+1.5",
+       "START:other obs=9 exp=5.9 z=+1.3",
+       "START:a obs=196 exp=179.8 z=+1.2",
+       "START:d obs=35 exp=42.2 z=-1.1",
+       "MID:h obs=476 exp=501.0 z=-1.1",
+       "END:r obs=40 exp=33.6 z=+1.1",
+       "START:n obs=49 exp=42.2 z=+1.0"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "t": 14.2,
+        "a": 12.7,
+        "h": 8.4,
+        "s": 7.5,
+        "o": 7.0,
+        "i": 7.0,
+        "w": 5.8,
+        "b": 4.8
+       },
+       "MID": {
+        "t": 14.5,
+        "a": 11.5,
+        "s": 8.2,
+        "i": 7.2,
+        "o": 7.0,
+        "w": 7.0,
+        "h": 6.3,
+        "b": 4.7
+       },
+       "END": {
+        "t": 14.7,
+        "a": 11.2,
+        "i": 7.9,
+        "s": 7.6,
+        "w": 7.5,
+        "o": 6.7,
+        "h": 6.4,
+        "m": 4.6
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 10707,
+      "chi2": 40.2,
+      "df": 38,
+      "p": 0.373,
+      "cramers_V": 0.0433,
+      "top_deviations": [
+       "END:h obs=66 exp=48.2 z=+2.6",
+       "START:other obs=17 exp=10.1 z=+2.2",
+       "END:w obs=24 exp=16.3 z=+1.9",
+       "END:other obs=5 exp=10.1 z=-1.6",
+       "END:u obs=7 exp=12.7 z=-1.6",
+       "START:i obs=13 exp=19.2 z=-1.4",
+       "END:i obs=25 exp=19.2 z=+1.3",
+       "END:f obs=55 exp=63.7 z=-1.1",
+       "END:g obs=47 exp=54.5 z=-1.0",
+       "END:n obs=141 exp=129.3 z=+1.0"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 18.9,
+        "s": 12.3,
+        "t": 10.8,
+        "d": 9.9,
+        "n": 8.4,
+        "y": 6.5,
+        "r": 5.7,
+        "o": 4.5
+       },
+       "MID": {
+        "e": 19.4,
+        "s": 12.1,
+        "t": 10.1,
+        "d": 9.1,
+        "n": 8.2,
+        "r": 6.4,
+        "y": 6.3,
+        "o": 4.5
+       },
+       "END": {
+        "e": 19.6,
+        "s": 11.2,
+        "t": 10.3,
+        "d": 9.9,
+        "n": 9.1,
+        "y": 6.1,
+        "r": 5.9,
+        "o": 4.5
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 9158,
+      "chi2": 31.6,
+      "df": 30,
+      "p": 0.388,
+      "cramers_V": 0.0415,
+      "top_deviations": [
+       "LINE_FIRST:h obs=110 exp=87.0 z=+2.5",
+       "PARA_FIRST:w obs=7 exp=15.8 z=-2.2",
+       "LINE_FIRST:d obs=25 exp=35.6 z=-1.8",
+       "PARA_FIRST:d obs=10 exp=6.3 z=+1.5",
+       "LINE_FIRST:n obs=45 exp=36.5 z=+1.4",
+       "MID:h obs=476 exp=503.5 z=-1.2",
+       "PARA_FIRST:a obs=33 exp=27.3 z=+1.1",
+       "PARA_FIRST:h obs=20 exp=15.5 z=+1.1",
+       "PARA_FIRST:m obs=7 exp=10.1 z=-1.0",
+       "PARA_FIRST:n obs=4 exp=6.5 z=-1.0"
+      ],
+      "row_n": {
+       "PARA_FIRST": 234,
+       "LINE_FIRST": 1315,
+       "MID": 7609
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "t": 14.5,
+        "a": 14.1,
+        "h": 8.5,
+        "o": 8.1,
+        "i": 7.7,
+        "s": 6.4,
+        "c": 4.3,
+        "d": 4.3
+       },
+       "LINE_FIRST": {
+        "t": 14.1,
+        "a": 12.4,
+        "h": 8.4,
+        "s": 7.7,
+        "i": 6.8,
+        "o": 6.8,
+        "w": 6.3,
+        "b": 5.0
+       },
+       "MID": {
+        "t": 14.5,
+        "a": 11.5,
+        "s": 8.2,
+        "i": 7.2,
+        "o": 7.0,
+        "w": 7.0,
+        "h": 6.3,
+        "b": 4.7
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.291,
+      "MID": 4.338,
+      "PARA_FIRST": 4.402,
+      "START": 4.249
+     }
+    },
+    "repetition": {
+     "pairs": 9158,
+     "identical_pct": 0.131,
+     "ed1_pct": 0.721,
+     "identical_pct_shuffled": 0.867,
+     "ed1_pct_shuffled": 1.374,
+     "identical_ratio_obs_over_shuffled": 0.2,
+     "ed1_ratio_obs_over_shuffled": 0.5
+    },
+    "top_repeated_words": [
+     [
+      "ay",
+      2
+     ],
+     [
+      "affection",
+      1
+     ],
+     [
+      "no",
+      1
+     ],
+     [
+      "it",
+      1
+     ],
+     [
+      "had",
+      1
+     ],
+     [
+      "loathsome",
+      1
+     ],
+     [
+      "a",
+      1
+     ],
+     [
+      "hopelessly",
+      1
+     ]
+    ]
+   },
+   "da": {
+    "label": "Danish sample N=10715 (lined as Voynich A)",
+    "tokens": 10715,
+    "lines": 1557,
+    "zipf": {
+     "tokens": 10715,
+     "types": 3528,
+     "zipf_slope_1_1000": -0.8835,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.7287,
+     "ranks_used_5000": 3528,
+     "hapax_types": 2472,
+     "hapax_type_frac": 0.7007,
+     "hapax_token_frac": 0.2307,
+     "dis_legomena_type_frac": 0.1383,
+     "top10": [
+      [
+       "og",
+       419
+      ],
+      [
+       "i",
+       275
+      ],
+      [
+       "en",
+       235
+      ],
+      [
+       "det",
+       176
+      ],
+      [
+       "at",
+       171
+      ],
+      [
+       "den",
+       169
+      ],
+      [
+       "af",
+       166
+      ],
+      [
+       "som",
+       155
+      ],
+      [
+       "han",
+       152
+      ],
+      [
+       "paa",
+       138
+      ]
+     ],
+     "top1_share": 0.0391
+    },
+    "wordlength": {
+     "mean": 4.774,
+     "variance": 7.618,
+     "skewness": 1.219,
+     "max": 21,
+     "dispersion_var_over_mean_Lminus1": 2.019,
+     "histogram_pct": {
+      "1": 3.14,
+      "2": 15.49,
+      "3": 25.63,
+      "4": 11.38,
+      "5": 12.1,
+      "6": 9.99,
+      "7": 6.76,
+      "8": 4.52,
+      "9": 3.67,
+      "10": 2.77,
+      "11": 1.86,
+      "12": 1.19,
+      "13": 0.65,
+      "14": 0.42,
+      "15": 0.17
+     },
+     "pct_over_15": 0.27,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0943,
+      "loglik": -26554.9,
+      "chi2_vs_fit": 8955.0,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1193,
+      "loglik": -25949.3,
+      "chi2_vs_fit": 6815.4,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1968,
+      "10000": 3377,
+      "N=10715": 3528
+     },
+     "heaps_beta": 0.7721
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 10707,
+      "chi2": 52.5,
+      "df": 44,
+      "p": 0.179,
+      "cramers_V": 0.0495,
+      "top_deviations": [
+       "END:o obs=132 exp=106.5 z=+2.5",
+       "START:ø obs=1 exp=6.5 z=-2.2",
+       "START:e obs=77 exp=95.8 z=-1.9",
+       "START:i obs=91 exp=74.9 z=+1.9",
+       "END:ø obs=11 exp=6.5 z=+1.8",
+       "END:i obs=60 exp=74.9 z=-1.7",
+       "END:s obs=180 exp=200.7 z=-1.5",
+       "START:j obs=19 exp=13.9 z=+1.4",
+       "START:h obs=139 exp=124.0 z=+1.3",
+       "START:other obs=12 exp=8.2 z=+1.3"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "s": 12.4,
+        "d": 10.1,
+        "h": 9.0,
+        "a": 6.9,
+        "o": 6.5,
+        "m": 6.1,
+        "i": 5.9,
+        "f": 5.4
+       },
+       "MID": {
+        "s": 13.3,
+        "d": 9.4,
+        "h": 7.8,
+        "o": 6.6,
+        "e": 6.4,
+        "f": 6.2,
+        "a": 6.1,
+        "m": 6.0
+       },
+       "END": {
+        "s": 11.6,
+        "d": 9.6,
+        "o": 8.5,
+        "h": 8.1,
+        "a": 6.6,
+        "e": 6.1,
+        "f": 5.9,
+        "m": 5.9
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 10707,
+      "chi2": 28.0,
+      "df": 34,
+      "p": 0.755,
+      "cramers_V": 0.0362,
+      "top_deviations": [
+       "START:i obs=58 exp=47.3 z=+1.6",
+       "START:k obs=13 exp=20.1 z=-1.6",
+       "END:s obs=88 exp=75.4 z=+1.5",
+       "START:g obs=126 exp=142.4 z=-1.4",
+       "END:r obs=162 exp=181.4 z=-1.4",
+       "START:s obs=87 exp=75.4 z=+1.3",
+       "MID:s obs=346 exp=370.3 z=-1.3",
+       "END:other obs=13 exp=18.4 z=-1.3",
+       "START:t obs=211 exp=193.7 z=+1.2",
+       "START:m obs=57 exp=63.9 z=-0.9"
+      ],
+      "row_n": {
+       "START": 1549,
+       "MID": 7609,
+       "END": 1549
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 21.3,
+        "t": 13.6,
+        "n": 12.3,
+        "r": 11.3,
+        "g": 8.1,
+        "d": 6.2,
+        "s": 5.6,
+        "a": 4.6
+       },
+       "MID": {
+        "e": 20.9,
+        "n": 12.8,
+        "t": 12.2,
+        "r": 12.1,
+        "g": 9.5,
+        "d": 7.0,
+        "s": 4.5,
+        "a": 4.4
+       },
+       "END": {
+        "e": 21.8,
+        "n": 13.2,
+        "t": 12.9,
+        "r": 10.5,
+        "g": 8.9,
+        "d": 6.3,
+        "s": 5.7,
+        "a": 4.4
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 9158,
+      "chi2": 28.0,
+      "df": 34,
+      "p": 0.757,
+      "cramers_V": 0.0391,
+      "top_deviations": [
+       "LINE_FIRST:e obs=63 exp=81.4 z=-2.0",
+       "LINE_FIRST:a obs=96 exp=82.4 z=+1.5",
+       "LINE_FIRST:i obs=77 exp=65.8 z=+1.4",
+       "LINE_FIRST:k obs=35 exp=43.2 z=-1.3",
+       "PARA_FIRST:h obs=24 exp=18.7 z=+1.2",
+       "PARA_FIRST:s obs=25 exp=30.8 z=-1.1",
+       "PARA_FIRST:a obs=11 exp=14.7 z=-1.0",
+       "PARA_FIRST:t obs=7 exp=10.1 z=-1.0",
+       "LINE_FIRST:h obs=115 exp=105.1 z=+1.0",
+       "PARA_FIRST:b obs=14 exp=11.0 z=+0.9"
+      ],
+      "row_n": {
+       "PARA_FIRST": 234,
+       "LINE_FIRST": 1315,
+       "MID": 7609
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "s": 10.7,
+        "h": 10.3,
+        "d": 9.4,
+        "o": 8.1,
+        "m": 6.8,
+        "i": 6.0,
+        "b": 6.0,
+        "e": 6.0
+       },
+       "LINE_FIRST": {
+        "s": 12.7,
+        "d": 10.2,
+        "h": 8.7,
+        "a": 7.3,
+        "o": 6.2,
+        "m": 6.0,
+        "i": 5.9,
+        "f": 5.5
+       },
+       "MID": {
+        "s": 13.3,
+        "d": 9.4,
+        "h": 7.8,
+        "o": 6.6,
+        "e": 6.4,
+        "f": 6.2,
+        "a": 6.1,
+        "m": 6.0
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.716,
+      "MID": 4.778,
+      "PARA_FIRST": 4.795,
+      "START": 4.81
+     }
+    },
+    "repetition": {
+     "pairs": 9158,
+     "identical_pct": 0.055,
+     "ed1_pct": 0.874,
+     "identical_pct_shuffled": 0.616,
+     "ed1_pct_shuffled": 1.07,
+     "identical_ratio_obs_over_shuffled": 0.1,
+     "ed1_ratio_obs_over_shuffled": 0.8
+    },
+    "top_repeated_words": [
+     [
+      "m",
+      2
+     ],
+     [
+      "aldrig",
+      1
+     ],
+     [
+      "og",
+      1
+     ],
+     [
+      "gray",
+      1
+     ]
+    ]
+   }
+  },
+  "B": {
+   "la": {
+    "label": "Latin sample N=22862 (lined as Voynich B)",
+    "tokens": 22862,
+    "lines": 2478,
+    "zipf": {
+     "tokens": 22862,
+     "types": 8721,
+     "zipf_slope_1_1000": -0.7936,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.8284,
+     "ranks_used_5000": 5000,
+     "hapax_types": 5997,
+     "hapax_type_frac": 0.6877,
+     "hapax_token_frac": 0.2623,
+     "dis_legomena_type_frac": 0.1471,
+     "top10": [
+      [
+       "et",
+       1126
+      ],
+      [
+       "in",
+       377
+      ],
+      [
+       "non",
+       288
+      ],
+      [
+       "te",
+       175
+      ],
+      [
+       "est",
+       149
+      ],
+      [
+       "ad",
+       135
+      ],
+      [
+       "me",
+       124
+      ],
+      [
+       "cum",
+       124
+      ],
+      [
+       "sed",
+       120
+      ],
+      [
+       "mihi",
+       116
+      ]
+     ],
+     "top1_share": 0.0493
+    },
+    "wordlength": {
+     "mean": 5.543,
+     "variance": 6.332,
+     "skewness": 0.5,
+     "max": 18,
+     "dispersion_var_over_mean_Lminus1": 1.394,
+     "histogram_pct": {
+      "1": 0.63,
+      "2": 11.81,
+      "3": 11.84,
+      "4": 13.21,
+      "5": 14.98,
+      "6": 13.55,
+      "7": 11.95,
+      "8": 9.51,
+      "9": 5.5,
+      "10": 3.51,
+      "11": 1.87,
+      "12": 1.03,
+      "13": 0.37,
+      "14": 0.16,
+      "15": 0.05
+     },
+     "pct_over_15": 0.03,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.1136,
+      "loglik": -54003.1,
+      "chi2_vs_fit": 5625.9,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1386,
+      "loglik": -53297.4,
+      "chi2_vs_fit": 3177.1,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 2929,
+      "10000": 4882,
+      "20000": 7960,
+      "N=22862": 8721
+     },
+     "heaps_beta": 0.7569
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 22847,
+      "chi2": 40.5,
+      "df": 44,
+      "p": 0.624,
+      "cramers_V": 0.0298,
+      "top_deviations": [
+       "START:t obs=167 exp=143.7 z=+1.9",
+       "START:æ obs=1 exp=5.2 z=-1.8",
+       "START:a obs=210 exp=231.9 z=-1.4",
+       "START:p obs=191 exp=172.8 z=+1.4",
+       "START:q obs=129 exp=114.7 z=+1.3",
+       "END:u obs=47 exp=56.8 z=-1.3",
+       "START:n obs=107 exp=120.1 z=-1.2",
+       "END:j obs=7 exp=10.9 z=-1.2",
+       "END:m obs=141 exp=156.0 z=-1.2",
+       "START:i obs=189 exp=205.2 z=-1.1"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 10.0,
+        "a": 8.5,
+        "p": 7.8,
+        "s": 7.7,
+        "i": 7.7,
+        "c": 6.8,
+        "t": 6.8,
+        "m": 6.0
+       },
+       "MID": {
+        "e": 10.4,
+        "a": 9.5,
+        "i": 8.4,
+        "s": 8.4,
+        "p": 7.0,
+        "m": 6.5,
+        "c": 6.3,
+        "t": 5.8
+       },
+       "END": {
+        "e": 10.3,
+        "a": 9.8,
+        "s": 8.9,
+        "i": 8.3,
+        "c": 6.9,
+        "p": 6.4,
+        "d": 5.9,
+        "m": 5.7
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 22847,
+      "chi2": 34.7,
+      "df": 32,
+      "p": 0.34,
+      "cramers_V": 0.0276,
+      "top_deviations": [
+       "START:x obs=25 exp=15.2 z=+2.5",
+       "END:u obs=32 exp=20.9 z=+2.4",
+       "START:a obs=232 exp=255.3 z=-1.5",
+       "START:d obs=45 exp=56.1 z=-1.5",
+       "END:b obs=4 exp=8.3 z=-1.5",
+       "END:e obs=391 exp=365.1 z=+1.4",
+       "MID:x obs=97 exp=110.6 z=-1.3",
+       "END:m obs=312 exp=336.1 z=-1.3",
+       "START:n obs=76 exp=87.5 z=-1.2",
+       "START:o obs=154 exp=139.7 z=+1.2"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "s": 19.7,
+        "e": 14.6,
+        "t": 14.2,
+        "m": 14.0,
+        "a": 9.4,
+        "i": 7.1,
+        "o": 6.3,
+        "r": 4.0
+       },
+       "MID": {
+        "s": 19.3,
+        "e": 14.7,
+        "t": 14.0,
+        "m": 13.7,
+        "a": 10.5,
+        "i": 6.6,
+        "o": 5.6,
+        "r": 4.2
+       },
+       "END": {
+        "s": 18.9,
+        "e": 15.9,
+        "t": 14.3,
+        "m": 12.7,
+        "a": 10.3,
+        "i": 6.4,
+        "o": 5.6,
+        "r": 4.0
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 20384,
+      "chi2": 40.3,
+      "df": 36,
+      "p": 0.287,
+      "cramers_V": 0.0314,
+      "top_deviations": [
+       "LINE_FIRST:t obs=137 exp=116.6 z=+1.9",
+       "PARA_FIRST:d obs=17 exp=25.9 z=-1.8",
+       "LINE_FIRST:c obs=142 exp=125.5 z=+1.5",
+       "LINE_FIRST:u obs=57 exp=46.7 z=+1.5",
+       "LINE_FIRST:n obs=83 exp=96.9 z=-1.4",
+       "LINE_FIRST:s obs=147 exp=165.0 z=-1.4",
+       "PARA_FIRST:e obs=59 exp=49.6 z=+1.3",
+       "PARA_FIRST:i obs=32 exp=39.9 z=-1.3",
+       "PARA_FIRST:o obs=7 exp=11.5 z=-1.3",
+       "PARA_FIRST:r obs=14 exp=10.1 z=+1.2"
+      ],
+      "row_n": {
+       "PARA_FIRST": 479,
+       "LINE_FIRST": 1984,
+       "MID": 17921
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "e": 12.3,
+        "s": 9.0,
+        "a": 8.6,
+        "p": 8.4,
+        "i": 6.7,
+        "m": 6.5,
+        "t": 6.3,
+        "v": 5.6
+       },
+       "LINE_FIRST": {
+        "e": 9.5,
+        "a": 8.5,
+        "i": 7.9,
+        "p": 7.6,
+        "s": 7.4,
+        "c": 7.2,
+        "t": 6.9,
+        "m": 5.8
+       },
+       "MID": {
+        "e": 10.4,
+        "a": 9.5,
+        "i": 8.4,
+        "s": 8.4,
+        "p": 7.0,
+        "m": 6.5,
+        "c": 6.3,
+        "t": 5.8
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 5.586,
+      "MID": 5.54,
+      "PARA_FIRST": 5.695,
+      "START": 5.518
+     }
+    },
+    "repetition": {
+     "pairs": 20384,
+     "identical_pct": 0.059,
+     "ed1_pct": 0.476,
+     "identical_pct_shuffled": 0.349,
+     "ed1_pct_shuffled": 0.359,
+     "identical_ratio_obs_over_shuffled": 0.2,
+     "ed1_ratio_obs_over_shuffled": 1.3
+    },
+    "top_repeated_words": [
+     [
+      "iterumque",
+      2
+     ],
+     [
+      "iam",
+      1
+     ],
+     [
+      "italiam",
+      1
+     ],
+     [
+      "domine",
+      1
+     ],
+     [
+      "euge",
+      1
+     ],
+     [
+      "duo",
+      1
+     ],
+     [
+      "difficultas",
+      1
+     ],
+     [
+      "flagitia",
+      1
+     ]
+    ]
+   },
+   "it": {
+    "label": "Italian sample N=22862 (lined as Voynich B)",
+    "tokens": 22862,
+    "lines": 2478,
+    "zipf": {
+     "tokens": 22862,
+     "types": 5081,
+     "zipf_slope_1_1000": -1.0087,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.8931,
+     "ranks_used_5000": 5000,
+     "hapax_types": 3433,
+     "hapax_type_frac": 0.6757,
+     "hapax_token_frac": 0.1502,
+     "dis_legomena_type_frac": 0.1269,
+     "top10": [
+      [
+       "et",
+       948
+      ],
+      [
+       "che",
+       909
+      ],
+      [
+       "di",
+       837
+      ],
+      [
+       "a",
+       420
+      ],
+      [
+       "non",
+       396
+      ],
+      [
+       "in",
+       385
+      ],
+      [
+       "la",
+       383
+      ],
+      [
+       "per",
+       320
+      ],
+      [
+       "il",
+       280
+      ],
+      [
+       "sua",
+       265
+      ]
+     ],
+     "top1_share": 0.0415
+    },
+    "wordlength": {
+     "mean": 4.54,
+     "variance": 6.514,
+     "skewness": 0.865,
+     "max": 17,
+     "dispersion_var_over_mean_Lminus1": 1.84,
+     "histogram_pct": {
+      "1": 4.76,
+      "2": 22.43,
+      "3": 17.13,
+      "4": 9.64,
+      "5": 13.0,
+      "6": 11.69,
+      "7": 8.64,
+      "8": 4.89,
+      "9": 3.29,
+      "10": 2.17,
+      "11": 1.15,
+      "12": 0.63,
+      "13": 0.28,
+      "14": 0.14,
+      "15": 0.16
+     },
+     "pct_over_15": 0.02,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0885,
+      "loglik": -54885.1,
+      "chi2_vs_fit": 13657.7,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1135,
+      "loglik": -53553.8,
+      "chi2_vs_fit": 8443.4,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1631,
+      "10000": 2717,
+      "20000": 4573,
+      "N=22862": 5081
+     },
+     "heaps_beta": 0.7393
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 22847,
+      "chi2": 31.1,
+      "df": 38,
+      "p": 0.778,
+      "cramers_V": 0.0261,
+      "top_deviations": [
+       "START:r obs=49 exp=66.2 z=-2.1",
+       "END:t obs=66 exp=80.3 z=-1.6",
+       "START:f obs=65 exp=77.7 z=-1.4",
+       "START:a obs=173 exp=157.3 z=+1.3",
+       "END:other obs=0 exp=1.7 z=-1.3",
+       "END:d obs=232 exp=251.0 z=-1.2",
+       "END:f obs=88 exp=77.7 z=+1.2",
+       "START:b obs=41 exp=48.4 z=-1.1",
+       "START:m obs=154 exp=140.8 z=+1.1",
+       "END:q obs=73 exp=82.8 z=-1.1"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "c": 11.4,
+        "s": 11.3,
+        "d": 10.0,
+        "p": 7.7,
+        "a": 7.0,
+        "m": 6.3,
+        "e": 6.1,
+        "i": 5.5
+       },
+       "MID": {
+        "c": 11.6,
+        "s": 11.0,
+        "d": 10.3,
+        "p": 7.6,
+        "e": 6.3,
+        "a": 6.3,
+        "i": 5.8,
+        "m": 5.6
+       },
+       "END": {
+        "c": 11.7,
+        "s": 10.6,
+        "d": 9.4,
+        "p": 7.3,
+        "e": 6.7,
+        "a": 6.4,
+        "i": 6.0,
+        "m": 5.8
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 22847,
+      "chi2": 27.3,
+      "df": 28,
+      "p": 0.5,
+      "cramers_V": 0.0245,
+      "top_deviations": [
+       "START:o obs=478 exp=438.9 z=+1.9",
+       "START:n obs=189 exp=165.5 z=+1.8",
+       "START:l obs=81 exp=95.3 z=-1.5",
+       "START:h obs=9 exp=14.3 z=-1.4",
+       "END:d obs=3 exp=6.1 z=-1.3",
+       "START:c obs=51 exp=59.3 z=-1.1",
+       "END:i obs=383 exp=362.9 z=+1.1",
+       "END:m obs=13 exp=9.6 z=+1.1",
+       "END:other obs=4 exp=6.9 z=-1.1",
+       "END:r obs=136 exp=123.8 z=+1.1"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "a": 20.3,
+        "e": 20.2,
+        "o": 19.4,
+        "i": 14.1,
+        "n": 7.7,
+        "r": 5.1,
+        "t": 4.3,
+        "l": 3.3
+       },
+       "MID": {
+        "e": 20.8,
+        "a": 20.7,
+        "o": 17.7,
+        "i": 14.7,
+        "n": 6.6,
+        "r": 4.9,
+        "t": 4.5,
+        "l": 3.9
+       },
+       "END": {
+        "a": 20.0,
+        "e": 20.0,
+        "o": 17.2,
+        "i": 15.6,
+        "n": 6.9,
+        "r": 5.5,
+        "t": 4.5,
+        "l": 3.9
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 20384,
+      "chi2": 44.6,
+      "df": 38,
+      "p": 0.215,
+      "cramers_V": 0.0331,
+      "top_deviations": [
+       "PARA_FIRST:l obs=36 exp=22.3 z=+2.9",
+       "LINE_FIRST:r obs=36 exp=53.2 z=-2.4",
+       "LINE_FIRST:u obs=111 exp=93.5 z=+1.8",
+       "PARA_FIRST:e obs=21 exp=30.2 z=-1.7",
+       "LINE_FIRST:a obs=146 exp=126.6 z=+1.7",
+       "PARA_FIRST:u obs=15 exp=22.6 z=-1.6",
+       "LINE_FIRST:t obs=54 exp=66.1 z=-1.5",
+       "PARA_FIRST:g obs=12 exp=8.2 z=+1.3",
+       "LINE_FIRST:f obs=52 exp=61.6 z=-1.2",
+       "PARA_FIRST:d obs=42 exp=49.3 z=-1.0"
+      ],
+      "row_n": {
+       "PARA_FIRST": 479,
+       "LINE_FIRST": 1984,
+       "MID": 17921
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "c": 12.7,
+        "s": 10.9,
+        "d": 8.8,
+        "l": 7.5,
+        "p": 7.3,
+        "m": 6.5,
+        "a": 5.6,
+        "n": 5.4
+       },
+       "LINE_FIRST": {
+        "s": 11.4,
+        "c": 11.1,
+        "d": 10.3,
+        "p": 7.8,
+        "a": 7.4,
+        "e": 6.6,
+        "m": 6.2,
+        "i": 5.7
+       },
+       "MID": {
+        "c": 11.6,
+        "s": 11.0,
+        "d": 10.3,
+        "p": 7.6,
+        "e": 6.3,
+        "a": 6.3,
+        "i": 5.8,
+        "m": 5.6
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.476,
+      "MID": 4.553,
+      "PARA_FIRST": 4.637,
+      "START": 4.512
+     }
+    },
+    "repetition": {
+     "pairs": 20384,
+     "identical_pct": 0.039,
+     "ed1_pct": 1.334,
+     "identical_pct_shuffled": 0.674,
+     "ed1_pct_shuffled": 1.44,
+     "identical_ratio_obs_over_shuffled": 0.1,
+     "ed1_ratio_obs_over_shuffled": 0.9
+    },
+    "top_repeated_words": [
+     [
+      "di",
+      4
+     ],
+     [
+      "niente",
+      1
+     ],
+     [
+      "io",
+      1
+     ],
+     [
+      "forma",
+      1
+     ],
+     [
+      "le",
+      1
+     ]
+    ]
+   },
+   "de": {
+    "label": "German sample N=22862 (lined as Voynich B)",
+    "tokens": 22862,
+    "lines": 2478,
+    "zipf": {
+     "tokens": 22862,
+     "types": 5509,
+     "zipf_slope_1_1000": -1.0182,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.8747,
+     "ranks_used_5000": 5000,
+     "hapax_types": 3720,
+     "hapax_type_frac": 0.6753,
+     "hapax_token_frac": 0.1627,
+     "dis_legomena_type_frac": 0.1358,
+     "top10": [
+      [
+       "und",
+       834
+      ],
+      [
+       "die",
+       625
+      ],
+      [
+       "der",
+       529
+      ],
+      [
+       "ich",
+       511
+      ],
+      [
+       "in",
+       373
+      ],
+      [
+       "sie",
+       370
+      ],
+      [
+       "er",
+       334
+      ],
+      [
+       "das",
+       301
+      ],
+      [
+       "den",
+       271
+      ],
+      [
+       "zu",
+       268
+      ]
+     ],
+     "top1_share": 0.0365
+    },
+    "wordlength": {
+     "mean": 5.016,
+     "variance": 7.172,
+     "skewness": 1.463,
+     "max": 23,
+     "dispersion_var_over_mean_Lminus1": 1.786,
+     "histogram_pct": {
+      "1": 0.06,
+      "2": 8.63,
+      "3": 30.04,
+      "4": 14.52,
+      "5": 13.99,
+      "6": 10.71,
+      "7": 6.2,
+      "8": 4.83,
+      "9": 3.26,
+      "10": 2.72,
+      "11": 1.66,
+      "12": 1.36,
+      "13": 0.9,
+      "14": 0.5,
+      "15": 0.27
+     },
+     "pct_over_15": 0.35,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.1004,
+      "loglik": -54409.0,
+      "chi2_vs_fit": 24403.4,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1254,
+      "loglik": -53813.3,
+      "chi2_vs_fit": 14563.8,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1470,
+      "10000": 2679,
+      "20000": 4880,
+      "N=22862": 5509
+     },
+     "heaps_beta": 0.7922
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 22847,
+      "chi2": 30.3,
+      "df": 46,
+      "p": 0.964,
+      "cramers_V": 0.0257,
+      "top_deviations": [
+       "END:j obs=13 exp=19.9 z=-1.6",
+       "START:d obs=351 exp=324.5 z=+1.5",
+       "START:j obs=26 exp=19.9 z=+1.4",
+       "START:s obs=249 exp=271.3 z=-1.4",
+       "START:z obs=56 exp=67.1 z=-1.3",
+       "END:w obs=175 exp=159.7 z=+1.2",
+       "START:b obs=81 exp=92.0 z=-1.1",
+       "START:e obs=204 exp=189.4 z=+1.1",
+       "START:m obs=122 exp=134.3 z=-1.1",
+       "END:i obs=196 exp=182.3 z=+1.0"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "d": 14.3,
+        "s": 10.1,
+        "e": 8.3,
+        "i": 7.4,
+        "a": 6.9,
+        "w": 6.5,
+        "g": 5.3,
+        "m": 5.0
+       },
+       "MID": {
+        "d": 13.0,
+        "s": 11.2,
+        "e": 7.6,
+        "i": 7.3,
+        "a": 6.9,
+        "w": 6.4,
+        "m": 5.5,
+        "g": 5.2
+       },
+       "END": {
+        "d": 13.3,
+        "s": 10.6,
+        "i": 8.0,
+        "e": 7.7,
+        "w": 7.1,
+        "a": 6.7,
+        "g": 5.5,
+        "m": 5.4
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 22847,
+      "chi2": 44.6,
+      "df": 38,
+      "p": 0.213,
+      "cramers_V": 0.0313,
+      "top_deviations": [
+       "START:ß obs=43 exp=27.4 z=+3.0",
+       "START:u obs=30 exp=46.5 z=-2.4",
+       "END:m obs=82 exp=101.9 z=-2.0",
+       "START:k obs=29 exp=20.7 z=+1.8",
+       "END:h obs=162 exp=183.4 z=-1.6",
+       "END:r obs=355 exp=327.7 z=+1.5",
+       "START:r obs=303 exp=327.7 z=-1.4",
+       "END:f obs=27 exp=35.6 z=-1.4",
+       "END:n obs=574 exp=543.5 z=+1.3",
+       "START:f obs=43 exp=35.6 z=+1.2"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "n": 21.8,
+        "e": 17.2,
+        "r": 12.3,
+        "t": 10.9,
+        "h": 7.6,
+        "s": 7.0,
+        "d": 5.4,
+        "m": 4.3
+       },
+       "MID": {
+        "n": 21.9,
+        "e": 17.2,
+        "r": 13.3,
+        "t": 10.3,
+        "h": 7.5,
+        "s": 7.1,
+        "d": 5.5,
+        "m": 4.2
+       },
+       "END": {
+        "n": 23.3,
+        "e": 16.8,
+        "r": 14.4,
+        "t": 10.0,
+        "s": 7.8,
+        "h": 6.6,
+        "d": 5.6,
+        "m": 3.3
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 20384,
+      "chi2": 42.3,
+      "df": 38,
+      "p": 0.292,
+      "cramers_V": 0.0322,
+      "top_deviations": [
+       "PARA_FIRST:s obs=30 exp=53.0 z=-3.2",
+       "PARA_FIRST:k obs=4 exp=11.5 z=-2.2",
+       "PARA_FIRST:b obs=11 exp=18.1 z=-1.7",
+       "PARA_FIRST:d obs=76 exp=63.0 z=+1.6",
+       "PARA_FIRST:e obs=46 exp=36.8 z=+1.5",
+       "LINE_FIRST:m obs=94 exp=108.4 z=-1.4",
+       "LINE_FIRST:r obs=17 exp=23.7 z=-1.4",
+       "LINE_FIRST:h obs=101 exp=89.4 z=+1.2",
+       "PARA_FIRST:v obs=20 exp=15.7 z=+1.1",
+       "LINE_FIRST:f obs=49 exp=57.5 z=-1.1"
+      ],
+      "row_n": {
+       "PARA_FIRST": 479,
+       "LINE_FIRST": 1984,
+       "MID": 17921
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "d": 15.9,
+        "e": 9.6,
+        "i": 8.1,
+        "w": 7.3,
+        "a": 6.3,
+        "s": 6.3,
+        "g": 5.8,
+        "m": 5.8
+       },
+       "LINE_FIRST": {
+        "d": 13.9,
+        "s": 11.0,
+        "e": 8.0,
+        "i": 7.3,
+        "a": 7.1,
+        "w": 6.3,
+        "g": 5.1,
+        "h": 5.1
+       },
+       "MID": {
+        "d": 13.0,
+        "s": 11.2,
+        "e": 7.6,
+        "i": 7.3,
+        "a": 6.9,
+        "w": 6.4,
+        "m": 5.5,
+        "g": 5.2
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 5.054,
+      "MID": 5.021,
+      "PARA_FIRST": 4.839,
+      "START": 4.946
+     }
+    },
+    "repetition": {
+     "pairs": 20384,
+     "identical_pct": 0.103,
+     "ed1_pct": 0.422,
+     "identical_pct_shuffled": 0.624,
+     "ed1_pct_shuffled": 0.883,
+     "identical_ratio_obs_over_shuffled": 0.2,
+     "ed1_ratio_obs_over_shuffled": 0.5
+    },
+    "top_repeated_words": [
+     [
+      "sie",
+      4
+     ],
+     [
+      "ja",
+      2
+     ],
+     [
+      "weit",
+      2
+     ],
+     [
+      "die",
+      2
+     ],
+     [
+      "jetzt",
+      2
+     ],
+     [
+      "so",
+      1
+     ],
+     [
+      "wir",
+      1
+     ],
+     [
+      "aber",
+      1
+     ]
+    ]
+   },
+   "en": {
+    "label": "English sample N=22862 (lined as Voynich B)",
+    "tokens": 22862,
+    "lines": 2478,
+    "zipf": {
+     "tokens": 22862,
+     "types": 4205,
+     "zipf_slope_1_1000": -1.0305,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.9494,
+     "ranks_used_5000": 4205,
+     "hapax_types": 2455,
+     "hapax_type_frac": 0.5838,
+     "hapax_token_frac": 0.1074,
+     "dis_legomena_type_frac": 0.1662,
+     "top10": [
+      [
+       "the",
+       1129
+      ],
+      [
+       "and",
+       770
+      ],
+      [
+       "of",
+       684
+      ],
+      [
+       "a",
+       629
+      ],
+      [
+       "to",
+       560
+      ],
+      [
+       "in",
+       424
+      ],
+      [
+       "i",
+       348
+      ],
+      [
+       "he",
+       272
+      ],
+      [
+       "it",
+       268
+      ],
+      [
+       "that",
+       263
+      ]
+     ],
+     "top1_share": 0.0494
+    },
+    "wordlength": {
+     "mean": 4.272,
+     "variance": 5.499,
+     "skewness": 1.073,
+     "max": 16,
+     "dispersion_var_over_mean_Lminus1": 1.681,
+     "histogram_pct": {
+      "1": 5.21,
+      "2": 17.95,
+      "3": 23.35,
+      "4": 17.7,
+      "5": 10.9,
+      "6": 7.5,
+      "7": 6.6,
+      "8": 4.26,
+      "9": 2.94,
+      "10": 1.86,
+      "11": 0.86,
+      "12": 0.55,
+      "13": 0.24,
+      "14": 0.06,
+      "15": 0.02
+     },
+     "pct_over_15": 0.0,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0818,
+      "loglik": -51507.6,
+      "chi2_vs_fit": 12742.9,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1068,
+      "loglik": -50752.2,
+      "chi2_vs_fit": 5913.6,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1324,
+      "10000": 2075,
+      "20000": 3694,
+      "N=22862": 4205
+     },
+     "heaps_beta": 0.6893
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 22847,
+      "chi2": 57.9,
+      "df": 48,
+      "p": 0.155,
+      "cramers_V": 0.0356,
+      "top_deviations": [
+       "START:a obs=334 exp=287.6 z=+2.7",
+       "START:j obs=16 exp=8.7 z=+2.5",
+       "START:u obs=15 exp=25.1 z=-2.0",
+       "START:g obs=32 exp=42.9 z=-1.7",
+       "START:y obs=33 exp=44.2 z=-1.7",
+       "END:f obs=77 exp=92.0 z=-1.6",
+       "START:w obs=152 exp=169.7 z=-1.4",
+       "END:h obs=195 exp=176.5 z=+1.4",
+       "START:q obs=8 exp=5.1 z=+1.3",
+       "MID:a obs=2035 exp=2092.8 z=-1.3"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "t": 13.6,
+        "a": 13.6,
+        "s": 7.8,
+        "i": 7.5,
+        "o": 6.9,
+        "h": 6.7,
+        "w": 6.2,
+        "m": 4.7
+       },
+       "MID": {
+        "t": 13.9,
+        "a": 11.4,
+        "s": 7.9,
+        "h": 7.1,
+        "i": 7.1,
+        "w": 7.0,
+        "o": 6.4,
+        "b": 4.9
+       },
+       "END": {
+        "t": 13.8,
+        "a": 12.1,
+        "s": 8.2,
+        "h": 7.9,
+        "i": 7.6,
+        "w": 7.1,
+        "o": 6.7,
+        "m": 4.3
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 22847,
+      "chi2": 37.0,
+      "df": 40,
+      "p": 0.605,
+      "cramers_V": 0.0285,
+      "top_deviations": [
+       "START:t obs=302 exp=264.2 z=+2.3",
+       "START:d obs=295 exp=260.9 z=+2.1",
+       "START:u obs=18 exp=27.1 z=-1.7",
+       "END:d obs=237 exp=260.9 z=-1.5",
+       "END:r obs=141 exp=159.0 z=-1.4",
+       "START:other obs=4 exp=7.1 z=-1.2",
+       "START:y obs=142 exp=156.7 z=-1.2",
+       "END:p obs=11 exp=15.7 z=-1.2",
+       "START:e obs=432 exp=454.9 z=-1.1",
+       "START:v obs=3 exp=5.7 z=-1.1"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 17.5,
+        "t": 12.3,
+        "d": 12.0,
+        "s": 10.8,
+        "n": 7.5,
+        "r": 6.5,
+        "y": 5.8,
+        "o": 4.5
+       },
+       "MID": {
+        "e": 18.5,
+        "s": 11.2,
+        "t": 10.6,
+        "d": 10.5,
+        "n": 8.0,
+        "r": 6.6,
+        "y": 6.4,
+        "o": 4.5
+       },
+       "END": {
+        "e": 19.2,
+        "s": 11.2,
+        "t": 10.4,
+        "d": 9.6,
+        "n": 8.0,
+        "y": 6.4,
+        "r": 5.7,
+        "o": 4.7
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 20384,
+      "chi2": 49.7,
+      "df": 38,
+      "p": 0.0961,
+      "cramers_V": 0.0349,
+      "top_deviations": [
+       "LINE_FIRST:a obs=270 exp=230.6 z=+2.6",
+       "LINE_FIRST:w obs=111 exp=136.1 z=-2.1",
+       "PARA_FIRST:e obs=4 exp=10.3 z=-2.0",
+       "PARA_FIRST:o obs=40 exp=30.9 z=+1.6",
+       "PARA_FIRST:h obs=25 exp=33.9 z=-1.5",
+       "LINE_FIRST:r obs=30 exp=39.4 z=-1.5",
+       "PARA_FIRST:d obs=10 exp=15.4 z=-1.4",
+       "PARA_FIRST:w obs=41 exp=32.9 z=+1.4",
+       "LINE_FIRST:d obs=75 exp=63.8 z=+1.4",
+       "LINE_FIRST:g obs=26 exp=34.4 z=-1.4"
+      ],
+      "row_n": {
+       "PARA_FIRST": 479,
+       "LINE_FIRST": 1984,
+       "MID": 17921
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "t": 14.0,
+        "a": 13.4,
+        "s": 9.0,
+        "w": 8.6,
+        "o": 8.4,
+        "i": 7.9,
+        "h": 5.2,
+        "b": 5.0
+       },
+       "LINE_FIRST": {
+        "a": 13.6,
+        "t": 13.5,
+        "s": 7.5,
+        "i": 7.4,
+        "h": 7.0,
+        "o": 6.5,
+        "w": 5.6,
+        "m": 5.0
+       },
+       "MID": {
+        "t": 13.9,
+        "a": 11.4,
+        "s": 7.9,
+        "h": 7.1,
+        "i": 7.1,
+        "w": 7.0,
+        "o": 6.4,
+        "b": 4.9
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.251,
+      "MID": 4.274,
+      "PARA_FIRST": 4.299,
+      "START": 4.282
+     }
+    },
+    "repetition": {
+     "pairs": 20384,
+     "identical_pct": 0.167,
+     "ed1_pct": 0.844,
+     "identical_pct_shuffled": 0.859,
+     "ed1_pct_shuffled": 1.447,
+     "identical_ratio_obs_over_shuffled": 0.2,
+     "ed1_ratio_obs_over_shuffled": 0.6
+    },
+    "top_repeated_words": [
+     [
+      "he",
+      4
+     ],
+     [
+      "it",
+      3
+     ],
+     [
+      "no",
+      2
+     ],
+     [
+      "had",
+      2
+     ],
+     [
+      "that",
+      2
+     ],
+     [
+      "ay",
+      2
+     ],
+     [
+      "affection",
+      1
+     ],
+     [
+      "nonsense",
+      1
+     ]
+    ]
+   },
+   "da": {
+    "label": "Danish sample N=22862 (lined as Voynich B)",
+    "tokens": 22862,
+    "lines": 2478,
+    "zipf": {
+     "tokens": 22862,
+     "types": 5962,
+     "zipf_slope_1_1000": -0.9658,
+     "ranks_used_1000": 1000,
+     "zipf_slope_1_5000": -0.8652,
+     "ranks_used_5000": 5000,
+     "hapax_types": 3983,
+     "hapax_type_frac": 0.6681,
+     "hapax_token_frac": 0.1742,
+     "dis_legomena_type_frac": 0.1412,
+     "top10": [
+      [
+       "og",
+       893
+      ],
+      [
+       "i",
+       611
+      ],
+      [
+       "en",
+       474
+      ],
+      [
+       "det",
+       380
+      ],
+      [
+       "at",
+       366
+      ],
+      [
+       "den",
+       348
+      ],
+      [
+       "af",
+       334
+      ],
+      [
+       "han",
+       330
+      ],
+      [
+       "som",
+       317
+      ],
+      [
+       "til",
+       298
+      ]
+     ],
+     "top1_share": 0.0391
+    },
+    "wordlength": {
+     "mean": 4.689,
+     "variance": 7.433,
+     "skewness": 1.294,
+     "max": 21,
+     "dispersion_var_over_mean_Lminus1": 2.015,
+     "histogram_pct": {
+      "1": 3.34,
+      "2": 15.91,
+      "3": 25.86,
+      "4": 11.97,
+      "5": 12.08,
+      "6": 9.79,
+      "7": 6.64,
+      "8": 4.3,
+      "9": 3.25,
+      "10": 2.48,
+      "11": 1.78,
+      "12": 1.08,
+      "13": 0.65,
+      "14": 0.43,
+      "15": 0.15
+     },
+     "pct_over_15": 0.29,
+     "binomial_fit_Lminus1": {
+      "n": 40,
+      "p": 0.0922,
+      "loglik": -56117.2,
+      "chi2_vs_fit": 19924.2,
+      "shift": 1,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     },
+     "binomial_fit_L": {
+      "n": 40,
+      "p": 0.1172,
+      "loglik": -54885.9,
+      "chi2_vs_fit": 15567.8,
+      "shift": 0,
+      "n_at_cap": true,
+      "note": "n=40 is the search cap: likelihood still rising with n, i.e. no finite binomial optimum (over-dispersed, Poisson-or-wider)"
+     }
+    },
+    "ttr": {
+     "types_after": {
+      "5000": 1957,
+      "10000": 3218,
+      "20000": 5560,
+      "N=22862": 5962
+     },
+     "heaps_beta": 0.7533
+    },
+    "positional": {
+     "first_symbol_by_position": {
+      "N": 22847,
+      "chi2": 31.9,
+      "df": 46,
+      "p": 0.943,
+      "cramers_V": 0.0264,
+      "top_deviations": [
+       "START:b obs=121 exp=101.8 z=+1.9",
+       "START:æ obs=3 exp=6.5 z=-1.4",
+       "START:p obs=73 exp=62.4 z=+1.3",
+       "START:r obs=42 exp=34.4 z=+1.3",
+       "START:j obs=23 exp=29.5 z=-1.2",
+       "END:e obs=134 exp=148.1 z=-1.2",
+       "END:l obs=85 exp=74.4 z=+1.2",
+       "START:g obs=77 exp=68.2 z=+1.1",
+       "END:k obs=97 exp=86.4 z=+1.1",
+       "START:h obs=193 exp=207.2 z=-1.0"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "s": 13.0,
+        "d": 9.3,
+        "h": 7.8,
+        "o": 6.9,
+        "m": 6.2,
+        "a": 6.1,
+        "e": 5.8,
+        "f": 5.6
+       },
+       "MID": {
+        "s": 13.2,
+        "d": 9.6,
+        "h": 8.4,
+        "o": 6.7,
+        "e": 6.1,
+        "m": 6.0,
+        "a": 6.0,
+        "f": 6.0
+       },
+       "END": {
+        "s": 12.9,
+        "d": 9.1,
+        "h": 8.8,
+        "o": 7.3,
+        "f": 6.1,
+        "a": 6.0,
+        "m": 5.7,
+        "e": 5.4
+       }
+      }
+     },
+     "last_symbol_by_position": {
+      "N": 22847,
+      "chi2": 51.1,
+      "df": 40,
+      "p": 0.112,
+      "cramers_V": 0.0334,
+      "top_deviations": [
+       "START:k obs=18 exp=31.8 z=-2.4",
+       "START:u obs=25 exp=16.5 z=+2.1",
+       "END:v obs=31 exp=21.1 z=+2.1",
+       "START:b obs=1 exp=5.4 z=-1.9",
+       "START:æ obs=2 exp=6.3 z=-1.7",
+       "START:a obs=130 exp=115.1 z=+1.4",
+       "MID:k obs=253 exp=231.4 z=+1.4",
+       "END:k obs=24 exp=31.8 z=-1.4",
+       "END:u obs=11 exp=16.5 z=-1.4",
+       "END:a obs=101 exp=115.1 z=-1.3"
+      ],
+      "row_n": {
+       "START": 2463,
+       "MID": 17921,
+       "END": 2463
+      },
+      "top_symbol_shares_pct": {
+       "START": {
+        "e": 19.6,
+        "n": 13.0,
+        "r": 12.1,
+        "t": 12.0,
+        "g": 9.9,
+        "d": 7.0,
+        "a": 5.3,
+        "s": 4.1
+       },
+       "MID": {
+        "e": 20.7,
+        "n": 12.8,
+        "t": 12.4,
+        "r": 11.5,
+        "g": 9.3,
+        "d": 6.5,
+        "a": 4.7,
+        "s": 4.6
+       },
+       "END": {
+        "e": 19.8,
+        "t": 13.4,
+        "n": 13.2,
+        "r": 11.3,
+        "g": 10.0,
+        "d": 6.3,
+        "s": 4.9,
+        "a": 4.1
+       }
+      }
+     },
+     "first_symbol_para_vs_line_vs_mid": {
+      "N": 20384,
+      "chi2": 43.1,
+      "df": 40,
+      "p": 0.341,
+      "cramers_V": 0.0325,
+      "top_deviations": [
+       "PARA_FIRST:i obs=37 exp=24.1 z=+2.6",
+       "PARA_FIRST:d obs=31 exp=46.0 z=-2.2",
+       "LINE_FIRST:p obs=65 exp=50.8 z=+2.0",
+       "LINE_FIRST:b obs=98 exp=82.5 z=+1.7",
+       "LINE_FIRST:j obs=16 exp=24.3 z=-1.7",
+       "LINE_FIRST:other obs=14 exp=21.9 z=-1.7",
+       "LINE_FIRST:i obs=86 exp=99.9 z=-1.4",
+       "LINE_FIRST:r obs=35 exp=27.8 z=+1.4",
+       "LINE_FIRST:g obs=64 exp=54.5 z=+1.3",
+       "PARA_FIRST:p obs=8 exp=12.3 z=-1.2"
+      ],
+      "row_n": {
+       "PARA_FIRST": 479,
+       "LINE_FIRST": 1984,
+       "MID": 17921
+      },
+      "top_symbol_shares_pct": {
+       "PARA_FIRST": {
+        "s": 11.9,
+        "i": 7.7,
+        "o": 7.5,
+        "m": 7.3,
+        "h": 7.3,
+        "e": 6.9,
+        "d": 6.5,
+        "a": 5.8
+       },
+       "LINE_FIRST": {
+        "s": 13.2,
+        "d": 10.0,
+        "h": 8.0,
+        "o": 6.8,
+        "a": 6.1,
+        "m": 5.9,
+        "f": 5.6,
+        "e": 5.6
+       },
+       "MID": {
+        "s": 13.2,
+        "d": 9.6,
+        "h": 8.4,
+        "o": 6.7,
+        "e": 6.1,
+        "m": 6.0,
+        "a": 6.0,
+        "f": 6.0
+       }
+      }
+     },
+     "gallows_initial_pct": {
+      "END": 0.0,
+      "LINE_FIRST": 0.0,
+      "MID": 0.0,
+      "NONPARA_LINE_ALL": 0.0,
+      "PARA_FIRST": 0.0,
+      "PARA_LINE_ALL": 0.0,
+      "START": 0.0
+     },
+     "mean_word_length_by_position": {
+      "END": 4.616,
+      "MID": 4.697,
+      "PARA_FIRST": 5.006,
+      "START": 4.713
+     }
+    },
+    "repetition": {
+     "pairs": 20384,
+     "identical_pct": 0.064,
+     "ed1_pct": 0.966,
+     "identical_pct_shuffled": 0.595,
+     "ed1_pct_shuffled": 1.157,
+     "identical_ratio_obs_over_shuffled": 0.1,
+     "ed1_ratio_obs_over_shuffled": 0.8
+    },
+    "top_repeated_words": [
+     [
+      "da",
+      2
+     ],
+     [
+      "m",
+      2
+     ],
+     [
+      "aldrig",
+      1
+     ],
+     [
+      "det",
+      1
+     ],
+     [
+      "mikkel",
+      1
+     ],
+     [
+      "hudløs",
+      1
+     ],
+     [
+      "klik",
+      1
+     ],
+     [
+      "og",
+      1
+     ]
+    ]
+   }
+  }
+ },
+ "controls": {
+  "aeneid_real_verse_lines": {
+   "lines": 9916,
+   "tokens": 63775,
+   "positional": {
+    "first_symbol_by_position": {
+     "N": 63775,
+     "chi2": 2778.3,
+     "df": 40,
+     "p": 0.0,
+     "cramers_V": 0.1476,
+     "top_deviations": [
+      "END:r obs=645 exp=307.4 z=+19.3",
+      "END:e obs=235 exp=691.1 z=-17.4",
+      "START:h obs=596 exp=310.3 z=+16.2",
+      "END:u obs=391 exp=190.2 z=+14.6",
+      "START:q obs=497 exp=274.6 z=+13.4",
+      "END:q obs=93 exp=274.6 z=-11.0",
+      "START:m obs=306 exp=563.3 z=-10.8",
+      "END:a obs=1435 exp=1102.2 z=+10.0",
+      "START:n obs=585 exp=396.5 z=+9.5",
+      "START:r obs=140 exp=307.4 z=-9.5"
+     ],
+     "row_n": {
+      "START": 9916,
+      "MID": 43943,
+      "END": 9916
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "a": 11.3,
+       "i": 10.8,
+       "e": 8.1,
+       "s": 7.9,
+       "c": 7.4,
+       "t": 6.9,
+       "p": 6.6,
+       "h": 6.0
+      },
+      "MID": {
+       "a": 10.3,
+       "s": 8.8,
+       "p": 8.4,
+       "i": 8.4,
+       "e": 7.8,
+       "c": 7.3,
+       "t": 6.6,
+       "m": 6.4
+      },
+      "END": {
+       "a": 14.5,
+       "c": 8.3,
+       "p": 7.8,
+       "t": 7.1,
+       "s": 7.0,
+       "r": 6.5,
+       "i": 6.3,
+       "v": 5.6
+      }
+     }
+    },
+    "last_symbol_by_position": {
+     "N": 63775,
+     "chi2": 3986.8,
+     "df": 30,
+     "p": 0.0,
+     "cramers_V": 0.1768,
+     "top_deviations": [
+      "END:e obs=696 exp=1737.7 z=-25.0",
+      "START:c obs=660 exp=269.8 z=+23.8",
+      "END:s obs=3170 exp=2102.0 z=+23.3",
+      "END:o obs=969 exp=533.3 z=+18.9",
+      "END:c obs=13 exp=269.8 z=-15.6",
+      "END:a obs=684 exp=1179.3 z=-14.4",
+      "END:m obs=1579 exp=1115.4 z=+13.9",
+      "START:s obs=1507 exp=2102.0 z=-13.0",
+      "MID:e obs=8690 exp=7700.6 z=+11.3",
+      "START:t obs=1826 exp=1418.6 z=+10.8"
+     ],
+     "row_n": {
+      "START": 9916,
+      "MID": 43943,
+      "END": 9916
+     },
+     "top_symbol_shares_pct": {
+      "START": {
+       "t": 18.4,
+       "e": 18.1,
+       "s": 15.2,
+       "a": 11.6,
+       "m": 11.5,
+       "c": 6.7,
+       "i": 4.8,
+       "r": 4.0
+      },
+      "MID": {
+       "s": 20.1,
+       "e": 19.8,
+       "t": 13.3,
+       "a": 13.1,
+       "m": 10.1,
+       "i": 5.6,
+       "o": 4.9,
+       "r": 4.0
+      },
+      "END": {
+       "s": 32.0,
+       "m": 15.9,
+       "t": 14.5,
+       "o": 9.8,
+       "i": 7.7,
+       "e": 7.0,
+       "a": 6.9,
+       "r": 3.5
+      }
+     }
+    },
+    "first_symbol_para_vs_line_vs_mid": {
+     "N": 53859,
+     "chi2": 0.0,
+     "df": 0,
+     "p": 1.0,
+     "cramers_V": 0,
+     "top_deviations": [
+      "LINE_FIRST:other obs=9916 exp=9916.0 z=+0.0",
+      "MID:other obs=43943 exp=43943.0 z=+0.0"
+     ],
+     "row_n": {
+      "PARA_FIRST": 0,
+      "LINE_FIRST": 9916,
+      "MID": 43943
+     },
+     "top_symbol_shares_pct": {
+      "PARA_FIRST": {},
+      "LINE_FIRST": {
+       "a": 11.3,
+       "i": 10.8,
+       "e": 8.1,
+       "s": 7.9,
+       "c": 7.4,
+       "t": 6.9,
+       "p": 6.6,
+       "h": 6.0
+      },
+      "MID": {
+       "a": 10.3,
+       "s": 8.8,
+       "p": 8.4,
+       "i": 8.4,
+       "e": 7.8,
+       "c": 7.3,
+       "t": 6.6,
+       "m": 6.4
+      }
+     }
+    },
+    "gallows_initial_pct": {
+     "END": 0.0,
+     "LINE_FIRST": 0.0,
+     "MID": 0.0,
+     "NONPARA_LINE_ALL": 0.0,
+     "START": 0.0
+    },
+    "mean_word_length_by_position": {
+     "END": 6.096,
+     "MID": 5.66,
+     "START": 5.879
+    }
+   },
+   "repetition": {
+    "pairs": 53859,
+    "identical_pct": 0.03,
+    "ed1_pct": 0.069,
+    "identical_pct_shuffled": 0.186,
+    "ed1_pct_shuffled": 0.175,
+    "identical_ratio_obs_over_shuffled": 0.2,
+    "ed1_ratio_obs_over_shuffled": 0.4
+   }
+  },
+  "IT2a_transliteration": {
+   "tokens": 33641,
+   "zipf": {
+    "tokens": 33641,
+    "types": 7464,
+    "zipf_slope_1_1000": -1.0271,
+    "ranks_used_1000": 1000,
+    "zipf_slope_1_5000": -1.0499,
+    "ranks_used_5000": 5000,
+    "hapax_types": 5232,
+    "hapax_type_frac": 0.701,
+    "hapax_token_frac": 0.1555,
+    "dis_legomena_type_frac": 0.1081,
+    "top10": [
+     [
+      "daiin",
+      776
+     ],
+     [
+      "ol",
+      509
+     ],
+     [
+      "chedy",
+      485
+     ],
+     [
+      "shedy",
+      415
+     ],
+     [
+      "aiin",
+      412
+     ],
+     [
+      "chol",
+      368
+     ],
+     [
+      "or",
+      332
+     ],
+     [
+      "chey",
+      326
+     ],
+     [
+      "qokeey",
+      304
+     ],
+     [
+      "qokeedy",
+      301
+     ]
+    ],
+    "top1_share": 0.0231
+   },
+   "wordlength_raw": {
+    "mean": 5.181,
+    "variance": 3.457,
+    "skewness": 0.725,
+    "max": 21,
+    "dispersion_var_over_mean_Lminus1": 0.827,
+    "histogram_pct": {
+     "1": 1.47,
+     "2": 5.73,
+     "3": 8.98,
+     "4": 17.85,
+     "5": 25.51,
+     "6": 20.14,
+     "7": 11.96,
+     "8": 4.71,
+     "9": 1.97,
+     "10": 0.74,
+     "11": 0.34,
+     "12": 0.25,
+     "13": 0.14,
+     "14": 0.07,
+     "15": 0.06
+    },
+    "pct_over_15": 0.1,
+    "binomial_fit_Lminus1": {
+     "n": 28,
+     "p": 0.1493,
+     "loglik": -68075.6,
+     "chi2_vs_fit": 1685.6,
+     "shift": 1,
+     "n_at_cap": false,
+     "note": ""
+    },
+    "binomial_fit_L": {
+     "n": 21,
+     "p": 0.2467,
+     "loglik": -68358.3,
+     "chi2_vs_fit": 2099.1,
+     "shift": 0,
+     "n_at_cap": false,
+     "note": ""
+    }
+   },
+   "wordlength_merged": {
+    "mean": 4.2,
+    "variance": 2.321,
+    "skewness": 0.89,
+    "max": 19,
+    "dispersion_var_over_mean_Lminus1": 0.725,
+    "histogram_pct": {
+     "1": 1.52,
+     "2": 9.49,
+     "3": 23.41,
+     "4": 25.91,
+     "5": 22.63,
+     "6": 11.21,
+     "7": 3.75,
+     "8": 1.11,
+     "9": 0.43,
+     "10": 0.24,
+     "11": 0.12,
+     "12": 0.09,
+     "13": 0.04,
+     "14": 0.03,
+     "15": 0.01
+    },
+    "pct_over_15": 0.02,
+    "binomial_fit_Lminus1": {
+     "n": 18,
+     "p": 0.1778,
+     "loglik": -61158.7,
+     "chi2_vs_fit": 1701.9,
+     "shift": 1,
+     "n_at_cap": false,
+     "note": ""
+    },
+    "binomial_fit_L": {
+     "n": 19,
+     "p": 0.221,
+     "loglik": -62297.7,
+     "chi2_vs_fit": 3095.8,
+     "shift": 0,
+     "n_at_cap": false,
+     "note": ""
+    }
+   },
+   "repetition_raw": {
+    "pairs": 29524,
+    "identical_pct": 0.931,
+    "ed1_pct": 3.346,
+    "identical_pct_shuffled": 0.312,
+    "ed1_pct_shuffled": 1.574,
+    "identical_ratio_obs_over_shuffled": 3.0,
+    "ed1_ratio_obs_over_shuffled": 2.1
+   }
+  }
+ },
+ "voynich_line_length_hist": {
+  "1": 28,
+  "2": 59,
+  "3": 159,
+  "4": 272,
+  "5": 348,
+  "6": 390,
+  "7": 386,
+  "8": 444,
+  "9": 490,
+  "10": 556,
+  "11": 441,
+  "12": 295,
+  "13": 147,
+  "14": 64,
+  "15": 17,
+  "16": 12,
+  "17": 4,
+  "18": 2,
+  "19": 4,
+  "20": 2,
+  "21": 1,
+  "22": 3,
+  "23": 1,
+  "25": 4,
+  "26": 1
+ },
+ "merge_map": [
+  [
+   "cfh",
+   "F"
+  ],
+  [
+   "ckh",
+   "K"
+  ],
+  [
+   "cph",
+   "P"
+  ],
+  [
+   "cth",
+   "T"
+  ],
+  [
+   "iiin",
+   "M"
+  ],
+  [
+   "iin",
+   "N"
+  ],
+  [
+   "eee",
+   "W"
+  ],
+  [
+   "ee",
+   "E"
+  ],
+  [
+   "ch",
+   "C"
+  ],
+  [
+   "sh",
+   "S"
+  ],
+  [
+   "in",
+   "J"
+  ]
+ ]
+}

@@ -1,0 +1,929 @@
+[
+ {
+  "hypothesis": "The physical object and its documented history establish, independently of any reading of the text, that Beinecke MS 408 is a genuine early-15th-century European (Alpine/N. Italian-German) production written by several hands on freshly prepared calfskin with period inks, whose 17th-century Prague-Rome provenance is archivally secured; this rules out a modern (Voynich-era) forgery and constrains any hoax scenario to a coordinated 1420s-era multi-scribe project, while leaving cipher vs. constructed/natural language vs. contemporary meaningless text undecided.",
+  "claims": [
+   {
+    "claim": "The parchment dates to the early 15th century: four folios (f8, f26, f47, f68) AMS-dated by Greg Hodgins at the University of Arizona in 2009 gave a combined uncalibrated age of ~1434 +/- 18 BP-years, calibrated 95% range 1404-1438 (voynich.nu quotes 1404-1435 for the combined calibration; 1404-1438 is the widely cited figure).",
+    "evidence": "Individual uncalibrated dates: f8 1461+/-38, f26 1436+/-35, f47 1444+/-35, f68 1400+/-35; all four consistent with a single production batch. Announced Dec 2009 (ORF documentary), reported UA press 2011; the internal lab report was not released publicly until ~2020-21 (via Voynich.net/proto57). No peer-reviewed paper exists; results presented at conferences 2012/2014.",
+    "source": "voynich.nu/extra/carbon.html; ScienceDaily 10 Feb 2011 (UA press release); proto57.wordpress.com 2021 (report release); Wikipedia",
+    "strength": "strong",
+    "year": "2009 (report released ~2021)",
+    "counter": "Radiocarbon dates the skin, not the ink; the four samples cover only 4 of ~116 folios (though drawn from different sections and thicknesses). Formal peer-reviewed publication is absent, so the numbers rest on a lab report and press statements."
+   },
+   {
+    "claim": "McCrone Associates (2009, report released by Beinecke 2011; supplemented by Yale 2014 tests reported in Clemens 2016) found iron-gall ink throughout text and drawings with only minor variation, mineral pigments consistent with a medieval palette, and nothing anachronistic.",
+    "evidence": "Blue = ground azurite with minor cuprite; green = copper/copper-chlorine (possibly atacamite) or copper resinate; red-brown = red ochre (hematite, iron sulfide) with possible palmierite/lead sulfide; white = probable egg white + calcium carbonate. Folio numbers are in a different, high-iron ink; quire numbers and the f1r Latin alphabet columns are high-carbon/low-iron inks distinct from the main text. Sample from f47r (Currier A) indistinguishable from Currier B samples. 2014 XRF (Clemens 2016) confirmed iron-gall ink everywhere.",
+    "source": "ciphermysteries.com 2011/06/01 (McCrone report online); voynich.nu/origin.html; Clemens ed., The Voynich Manuscript (Yale UP 2016); voynich.nu/extra/nofake.html",
+    "strength": "strong",
+    "year": "2009 / 2011 / 2016",
+    "counter": "Iron-gall ink and these pigments were used for centuries, so ink analysis cannot date the writing; it can only fail to exclude the 15th century. McCrone did not (and could not) radiocarbon-date the ink. Pelling notes the Beinecke released text only, without spectra or images. *Ink-on-parchment aging (e.g., ink-parchment interaction, corrosion halo) is described qualitatively by conservators but no published quantitative test exists.*"
+   },
+   {
+    "claim": "Lisa Fagin Davis (Manuscript Studies 5.1, 2020) identified five scribal hands using DigiPal glyph comparison; the hands correlate with the Currier A/B 'language' split, and different scribes alternate by bifolium within the same quires.",
+    "evidence": "Davis 2020, 'How Many Glyphs and How Many Scribes?'. Scribe 1 is the dominant hand (~113 of 227 pages, mostly Herbal A). *From memory of the paper, not re-verified in this sweep: Scribes 1 and 5 write Currier A; Scribes 2, 3 and 4 write Currier B (Scribe 2 = Herbal-B pages and the balneological/Quire 13 section; Scribe 3 = the 'recipes/stars' Quire 20; Scribe 4 = astronomical/cosmological material; Scribe 5 = a small group of herbal folios).* Davis accepted Currier's A/B page assignments with two exceptions and allocated Currier's ~30 unassigned pages to B (Edwards 2024 summary). Her 2025 codicology posts add that scribal output is organized by individual bifolium rather than sequential leaves, which she calls 'extremely rare if not unprecedented'.",
+    "source": "Davis, Manuscript Studies 5:1 (2020) 164-180, open access UPenn repository; codingcodices.wordpress.com 2021; manuscriptroadtrip.wordpress.com 2025/01/19; Edwards, Medium 2024",
+    "strength": "moderate",
+    "year": "2020",
+    "counter": "Scribe identification is expert judgment aided by software, not a blind test; independent replication is limited (a 2022 CEUR machine-learning paper attempts it). Pelling (2024) questions whether f1r shows one or several hands. Number of scribes could be 4-6 depending on split criteria; the A/B-to-scribe correlation is the robust part."
+   },
+   {
+    "claim": "Multispectral images made in 2014 by the Lazarus Project (Phelps, Heyworth, Van Duzer, Boydston, Easton) at Yale and released by Davis in September 2024 recovered on f1r (a) the erased ex libris 'Jacobi a Tepenecz' and (b) three previously unknown columns of faded letters in the right margin: a Roman alphabet a-z, a column of Voynichese glyphs, and a Roman alphabet offset by one letter, i.e., a substitution-cipher key attempt.",
+    "evidence": "Davis attributes the alphabet columns on palaeographic grounds to Johannes Marcus Marci (c.1662-65). Imaged folios: f1r, f8r, f17r, f26r, f47r, f70v1, f71r, f93r, f102v1, f116v. On f116v the processing removed show-through and corrected some letter readings (initial 'p' letters likely 'u/v'). XRF (Davis 2025 talk) showed zinc-heavy ink in the Marci marginalia and sulphur-based residue from Voynich's c.1914 chemical reagent on the Tepenecz margin. MSI also confirmed the manuscript is not a palimpsest.",
+    "source": "manuscriptroadtrip.wordpress.com 2024/09/08; Medievalists.net Sept 2024; Hackaday 10 Sept 2024; ciphermysteries.com 2025/10/11 (Davis Toronto talk); Wikipedia",
+    "strength": "strong",
+    "year": "2014 imaging / 2024 release",
+    "counter": "The Marci attribution of the alphabet columns is palaeographic opinion, not chemically dated; the columns yield nonsense when applied and do not constitute a working key. The MSI covered only 10 folios."
+   },
+   {
+    "claim": "The codex is misbound relative to its original order: 15th-century quire marks and 17th-century (Prague-era) folio numbers disagree, bifolia have been reordered/reoriented, and water-stain patterns show leaves were out of sequence when staining occurred.",
+    "evidence": "Quire marks (15th c.) vs. folio numbers (c.1600s, written on top of pre-existing water stains). Quire 9 quire mark sits on f67r1 rather than the final verso and the sewing holes are in the wrong fold; iconographic continuity f78v-f81r implies those bifolia were originally innermost/consecutive (Davis 2025). Pelling (2012/2013) documented bifolio reorientation before foliation; Zandbergen (2010) proposed f18v-f23r as an original centrefold. Davis's 2025 'singulion' hypothesis (individual bifolium quires) is provisional.",
+    "source": "manuscriptroadtrip.wordpress.com 2025/01/19 (Voynich Codicology); ciphermysteries.com 2013/05/30; voynich.nu/descr.html; ciphermysteries.com 2025/10/11",
+    "strength": "moderate",
+    "year": "2010-2025",
+    "counter": "Reconstruction of the original order is incomplete; Davis's use of text-similarity (LSA) to predict adjacency is criticized by Pelling as weak codicological support. The singulion model is unconfirmed. Whether misordering happened in the 15th or 16th century affects how much the current sequence can be trusted for text analysis."
+   },
+   {
+    "claim": "The zodiac month names (f70v-f73v: marc, aberil, may, yuny, jollet, augst, septembr, octembre, novembre, decembre) are later additions in a Latin-script hand, in a Romance dialect most often identified as Occitan/Provencal (Toulon-area per Pelling) or French; Toresella calls them French in a French hand.",
+    "evidence": "Orthography consistent with c.1400 Occitan/Catalan/Old French forms; added after the main text and diagrams (they sit inside the completed diagrams in a different ink/hand). No consensus on exact dialect; Catalan and Judeo-Catalan also proposed.",
+    "source": "inamidst.com/voynich/months; stephenbax.net (Month names in the Voynich zodiac pages); voynich.nu/origin.html (Toresella); Pelling, Curse of the Voynich 2006",
+    "strength": "moderate",
+    "year": "c.1400s hand (analysis 2006-2015)",
+    "counter": "The names constrain where the book was within a few decades of manufacture, not necessarily where it was made or by whom; a French/Occitan owner could have annotated a book produced elsewhere. Dialect identification from ten short words is inherently loose."
+   },
+   {
+    "claim": "The f116v marginalia ('michiton oladabas' etc.) are 15th-century Latin-script additions in a hand generally characterized as German (c.1430-1450), mixing pseudo-Latin, German words, a few Voynichese glyphs, and '+' signs typical of written charms/prayers; no word has been securely read.",
+    "evidence": "Palaeographic dating to 1430-1450 (Zandbergen; also reported in Clemens 2016 essays); MSI 2014/2024 improved readings but no consensus text; German colour annotations inside some herbal drawings support a German-speaking annotator. Voynich Ninja f116v wiki project compiles readings.",
+    "source": "voynich.nu/origin.html; inamidst.com/voynich/michitonese; manuscriptroadtrip.wordpress.com 2024/09/08; voynich.ninja thread-710",
+    "strength": "moderate",
+    "year": "15th c. (readings 2002-2024)",
+    "counter": "Whether f116v is by one of the five scribes, the original owner, or a later hand is unresolved; its language is disputed (German vs. Latin vs. Romance vs. Voynichese). It anchors the book in German-speaking hands early, but it is not proof of German origin of the main text."
+   },
+   {
+    "claim": "The 17th-century provenance is archivally secured: Georg Baresch's letter to Kircher of April 1639 (Kircher correspondence, APUG, Pontifical Gregorian University; located by Zandbergen 1998-99, transcription 1999), Kircher's reply to an earlier lost Baresch letter (found in Prague), Marci's letter to Kircher of August 1665 (still with the MS at the Beinecke), and the Tepenecz ex libris on f1r with a shelf/catalogue number matching other books from Tepenecz's library.",
+    "evidence": "Baresch letter describes the MS's unreadable script and drawings and mentions sending a partial transcription ~1.5 years earlier; Marci letter says he inherited it from Baresch and reports Raphael Mnishovsky's claim that Rudolf II paid 600 ducats and believed it Roger Bacon's. Tepenecz (Jacobus Horcicky de Tepenec, ennobled 1608, d. 1622) signature visible under UV/MSI. Later chain: Collegio Romano; Jesuit private library of P. Beckx; 1903 Jesuit sale list; Voynich 1912 (place now shown by Potenza/Mancini 2022 to be Villa Torlonia/Castel Gandolfo, not Villa Mondragone); Kraus 1961; Yale 1969.",
+    "source": "voynich.nu/history.html; voynich.nu/letters.html; Wikipedia (Georg Baresch; Voynich manuscript); Zandbergen nofake.html",
+    "strength": "strong",
+    "year": "1639 / 1665 (letters); 1999 (Baresch letter identified)",
+    "counter": "The Rudolf II purchase and the 600-ducat price rest solely on Mnishovsky's hearsay reported by Marci; no court record exists (a 1599 Widemann sale of 600 Rheinische Gulden is a candidate, not proof). Ownership between Tepenecz (d.1622) and Baresch is undocumented, and nothing before c.1600 is documented at all."
+   },
+   {
+    "claim": "The hypothesis that Wilfrid Voynich (or a c.1908-1912 associate) forged the manuscript is rejected by essentially all specialists.",
+    "evidence": "Arguments: (1) radiocarbon puts all sampled parchment in 1404-1438 and the parchment is homogeneous, not a patchwork; a forger would need 14-15 unused 15th-century calfskins; (2) inks/pigments show nothing anachronistic; (3) wormholes cut through text and drawings, foldouts show heavy wear, sewing examined in 2014 is centuries old; (4) Baresch's 1639 letter lies in the Kircher archive Voynich never accessed and was found only in 1999, and Kircher's reply surfaced in Prague; (5) Tepenecz ex libris carries a catalogue number matching his other books; (6) 17th-century folio numbers, 15th-century quire marks and the Marci alphabet columns were invisible/unknown until UV/MSI; (7) Panofsky 1931, Toresella 1999, Davis 2019-20 all judge it authentic on independent expertise. Principal proponent: Richard SantaColoma (proto57.wordpress.com), who argues Voynich could have used old blank vellum from the Libreria Franceschini (Florence, 1908). Zandbergen concedes only that a 'fake of wholly unprecedented quality' is not strictly falsifiable.",
+    "source": "voynich.nu/extra/nofake.html; Wikipedia; proto57.wordpress.com (SantaColoma); ciphermysteries.com 2017/11/27",
+    "strength": "strong",
+    "year": "1999-2024",
+    "counter": "SantaColoma notes that blank early vellum did survive in some old blank books and that the claim the Kircher archive was 'under lock and seal' is an assumption; radiocarbon dates skin not ink. These objections do not account for the Baresch letter's content matching the MS, the Tepenecz catalogue number, worm damage through ink, or the 2024 MSI finds."
+   },
+   {
+    "claim": "Geographic origin: the evidence points to an 'Alpine' zone mixing northern Italian and German influences; no single city or scriptorium is established.",
+    "evidence": "For northern Italy: swallowtail (Ghibelline) merlons on the f86v rosettes castle (Scaliger/Verona region and north Italy generally); Toresella's identification of herbal style and a humanist-like hand with N. Italy; script parallels with N. Italian ciphers/shorthand; alchemical-herbal parallels (Touwaide). For German-speaking lands: f116v and colour annotations in German; the human crossbowman Sagittarius on f73v matched in eight other 15th-century examples, all German (incl. Alsatian Diebold Lauber workshop parallels found by Gheuens); German warrior-grave iconography (Vogt). For France/Occitania: month names. Panofsky's 1932 Spain/Provence guess was later withdrawn.",
+    "source": "voynich.nu/origin.html; voynich.nu/illustr.html; ciphermysteries.com 2018/09/10 (Lauber); voynichviews.wordpress.com 2018/06/18; Clemens ed. 2016",
+    "strength": "moderate",
+    "year": "1932-2018",
+    "counter": "Swallowtail merlons also occur in Alpine/Central European castles and in art beyond Italy; iconographic parallels show where models circulated, not where the book was made. No documentary evidence before c.1600 exists; parchment DNA/isotope provenance (advocated by Pelling, resisted by Davis) has not been done."
+   },
+   {
+    "claim": "Constraint on hoax vs. cipher vs. language: any 'meaningless text' hypothesis must be a 1420s-era hoax executed on fresh calfskin, with period iron-gall ink and azurite/ochre pigments, by five scribes who maintained two statistically distinct text 'languages' aligned with their hands, alternating bifolia within quires, and who left the book to be annotated in German and Occitan within decades; a Voynich-era hoax is excluded.",
+    "evidence": "Derived from the conjunction of radiocarbon (1404-1438), McCrone/Yale ink homogeneity across A and B samples, Davis's five scribes correlated with Currier A/B, palaeographically 15th-century quire marks and f116v/month-name annotations, wormholes through ink, and the 17th-century archival trail. Bowern & Lindemann (Annual Review of Linguistics 2021) argue the text's statistical structure is more consistent with natural language or a structured system than with random gibberish, and Davis argues five independent hands producing consistent structure raises the bar for a hoax.",
+    "source": "Synthesis of the above; Bowern & Lindemann 2021; Davis 2020; Zandbergen nofake.html",
+    "strength": "moderate",
+    "year": "2009-2025",
+    "counter": "The physical evidence cannot distinguish between (a) a meaningful cipher, (b) an unknown/constructed language, and (c) a contemporary sophisticated glossolalia or Cardan-grille-style hoax (Rugg 2004 dates his grille method to the 16th century, which the radiocarbon now excludes unless a 1420s analogue is posited). Five coordinated hoaxers is improbable but not impossible for a 15th-century workshop; the A/B split could reflect two hoax methods rather than two dialects."
+   }
+  ],
+  "consensus_state": "Specialist consensus (Beinecke/Yale, Zandbergen, Davis, Clemens, Bowern) holds that MS 408 is an authentic early-15th-century (c.1404-1438) European codex written by several hands on freshly made calfskin with period inks and pigments, that it is misbound relative to its original order, that it was in German- and French/Occitan-speaking hands within decades of manufacture, and that its ownership is continuously documented from c.1600-1665 (Tepenecz, Baresch, Marci, Kircher) to 1912 and 1969. The modern-forgery hypothesis is rejected by all mainstream researchers and defended only by a small group (chiefly SantaColoma). Genuinely open questions: exact place of production (N. Italy vs. German/Alpine), whether the five-scribe count and singulion quire model hold up to independent replication, the original folio order, the reading of f116v, and the nature of the text itself, which the physical evidence constrains to a 1420s multi-scribe production but does not classify as cipher, language, or contemporary hoax. Caveats: the radiocarbon result has no peer-reviewed publication; McCrone's spectra were never released; Davis's scribe attributions are expert judgment. Checked: radiocarbon figures, McCrone pigments, MSI 2024 findings, provenance documents, forgery counterarguments, origin arguments (via web sources). Not checked: full text of Davis 2020 (PDF not text-extractable; scribe-to-section mapping given from memory and asterisked), the released 2009 lab report itself, Clemens 2016 essays directly. User must verify starred items against Davis 2020 and the primary lab report before citing.",
+  "decisive_tests": [
+   "Independent, blind replication of Davis's five-scribe attribution (e.g., automated palaeographic clustering on the 2014 high-resolution scans) and a test of whether hand boundaries coincide with Currier A/B boundaries at the line level rather than the page level.",
+   "Parchment DNA/isotope analysis of bifolia (advocated by Pelling) to identify animal groupings, which would test the singulion hypothesis, reconstruct original quire composition, and localize the herd/region of the calfskins.",
+   "Full multispectral and XRF imaging of all folios (only 10 imaged in 2014) to recover erased marginalia, further ex libris or catalogue marks, and to compare ink chemistry of quire marks, month names, f116v and main text at scale.",
+   "Peer-reviewed publication of the 2009 Arizona radiocarbon data (raw fractions, pretreatment, calibration) and release of McCrone's spectra so both can be independently re-evaluated.",
+   "Archival search in Prague, Vienna and Innsbruck records for a pre-1600 trace (Rudolf II's Kunstkammer inventories, Tepenecz's library catalogue, Widemann/Dee-Kelley sale records) to test the 600-ducat purchase claim and close the 1440-1600 gap.",
+   "Systematic corpus comparison of the month-name spellings against dated Occitan/Catalan/French documents, and of the f116v hand against dated German charters c.1420-1460, to narrow when and where the annotations were added.",
+   "A physical test of ink-parchment interaction age (e.g., iron migration halos, gall-ink corrosion depth) on a few folios, which would directly address the residual 'old vellum, modern ink' objection."
+  ],
+  "sources": [
+   "https://voynich.nu/extra/carbon.html",
+   "https://www.sciencedaily.com/releases/2011/02/110210153016.htm",
+   "https://proto57.wordpress.com/2021/05/14/the-long-awaited-voynich-radiocarbon-report/",
+   "https://ciphermysteries.com/2011/06/01/voynich-the-mccrone-report-now-online",
+   "https://www.voynich.nu/origin.html",
+   "https://www.voynich.nu/extra/nofake.html",
+   "http://voynich.nu/history.html",
+   "https://www.voynich.nu/letters.html",
+   "https://www.voynich.nu/descr.html",
+   "https://muse.jhu.edu/article/754633 (Davis, How Many Glyphs and How Many Scribes?, Manuscript Studies 5.1, 2020)",
+   "https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/",
+   "https://manuscriptroadtrip.wordpress.com/2025/01/19/voynich-codicology/",
+   "https://ciphermysteries.com/2025/10/11/lisa-fagin-davis-the-materiality-of-the-voynich-manuscript",
+   "https://www.medievalists.net/2024/09/hidden-secrets-of-the-voynich-manuscript-revealed-through-cutting-edge-scans/",
+   "https://hackaday.com/2024/09/10/shedding-new-light-on-the-voynich-manuscript-with-multispectral-imaging/",
+   "https://ciphermysteries.com/2013/05/30/evidence-of-bifolio-reordering-in-the-voynich-manuscript",
+   "http://inamidst.com/voynich/months",
+   "https://stephenbax.net/?p=1226",
+   "http://inamidst.com/voynich/michitonese",
+   "https://www.voynich.ninja/archive/index.php/thread-710.html",
+   "https://en.wikipedia.org/wiki/Voynich_manuscript",
+   "https://en.wikipedia.org/wiki/Georg_Baresch",
+   "https://proto57.wordpress.com/2016/03/23/the-modern-forgery-hypothesis/",
+   "https://ciphermysteries.com/2017/11/27/voynich-metatheories-rich-santacoloma-document-x",
+   "https://ciphermysteries.com/2018/09/10/voynich-zodiac-gemini-and-the-workshop-of-diebold-lauber",
+   "https://voynichviews.wordpress.com/2018/06/18/the-voynich-sagittarius-a-coincidence/",
+   "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011619-030613 (Bowern & Lindemann 2021)",
+   "https://medium.com/@robert.edwards_87384/voynich-reconsidered-scribes-and-languages-f9b1fd2a0996",
+   "https://codingcodices.wordpress.com/2021/02/05/episode-2-scribes-of-the-voynich-manuscript/",
+   "Clemens, R. (ed.), The Voynich Manuscript, Yale University Press 2016 (not fetched directly)"
+  ]
+ },
+ {
+  "hypothesis": "Between 2022 and 2026 Voynich research converged on a shared, transliteration-grounded statistical description of Voynichese (low conditional entropy, rigid word-slot grammar, line/paragraph/position effects, a real but non-primitive Currier A/B split, gradual drift across the codex) while failing to converge on a generative mechanism. Three mechanisms remain live and each now has a reproducible model that matches part of the signature: (1) meaningless-but-structured generation (Timm & Schinner self-citation; Gaskell & Bowern human gibberish), (2) verbose homophonic/cipher-like encoding of a Romance/Latin plaintext (Greshko's Naibbe cipher; Parisel's directional-constraint results), (3) an unusual natural or constructed language (Ponnaluri 2024, minority). No claimed decipherment since 2022 has gained any specialist acceptance; the most consequential new empirical inputs were material (2014 Lazarus Project MSI released 2024; Yale XRF 2025) rather than textual, and the biggest infrastructure change was Zandbergen's IVTFF 2.0 / STA1 / RF reference transliteration, which every serious 2024-2026 quantitative paper now uses.",
+  "claims": [
+   {
+    "claim": "Parisel (arXiv 2604.25979, Apr/May 2026) confirms Currier A/B is a genuine statistical partition and reduces its dominant component to a single boolean switch set once per folio governing the vowel after ch/sh; template identity explains ~92% of variance.",
+    "evidence": "Beta-Binomial mixture on character-pair substitution ratios across 185 folios selects k=2 by BIC and predicts held-out Currier labels at 89%; two-state binomial mixture gives Delta AIC=2,549 and assigns 195/197 folios unambiguously. Code (4 Python scripts) at github.com/labyrinthinesecurity/currier-models, input file RF1b-e.txt (Zandbergen Reference transliteration, Eva). Presented on voynich.ninja thread 5710 under handle Labyrinthinesecurity; forum also reports 96% agreement (kappa 0.87) between the switch and plant-morphometric groupings vs 78% (kappa 0.11) for Currier's labels.",
+    "source": "https://arxiv.org/abs/2604.25979 ; https://github.com/labyrinthinesecurity/currier-models ; https://www.voynich.ninja/thread-5710.html",
+    "strength": "moderate",
+    "year": "2026",
+    "counter": "Not peer-reviewed; single author. voynich.ninja reviewers (nablator, Grove, oshfdk, rikforto) noted a factual error in the original Currier labels for several folios (acknowledged by the author), asked whether the switch collapses to che/cho frequency with many exceptions, and questioned the fixed/switchable template mechanism. Repo has no licence, dependency list or reproducibility instructions (*inferred from README excerpt; user must verify)."
+   },
+   {
+    "claim": "Parisel's two earlier preprints (arXiv 2509.10573, Sept 2025; arXiv 2604.19762, Mar/Jun 2026) argue for a right-to-left optimisation inside words combined with left-to-right dependency across word boundaries, a dissociation absent in English, French, Hebrew and Arabic controls, and claim slot-based and Cardan-grille generators cannot reproduce all four signatures at once, implying cipher-like constraints.",
+    "evidence": "n-gram perplexity asymmetry method (2509.10573, 4 versions in 2 weeks); four-signature joint criterion applied to two generative models (2604.19762 v2, 16 Jun 2026). cs.CR category, CC-BY.",
+    "source": "https://arxiv.org/abs/2509.10573 ; https://arxiv.org/abs/2604.19762",
+    "strength": "weak",
+    "year": "2025-2026",
+    "counter": "No peer review, no code links found for these two, transliteration not stated in abstracts, and only two generator families were tested (self-citation and human-gibberish generators were not among them, so the 'cipher-like' inference is underdetermined)."
+   },
+   {
+    "claim": "Timm & Schinner, Cryptologia 48(4):305-322 (online 19 Jul 2023, print 2024), 'The Voynich manuscript: discussion of text creation hypotheses', reviews the Malta 2022 conference papers and argues the observed structures are consistent with a meaningless self-citation process rather than an underlying meaningful text.",
+    "evidence": "Crossref record: Timm (Modular Design GmbH) and Schinner (JKU Linz), 33 references, DOI 10.1080/01611194.2023.2225716. Follows their 2020 Cryptologia generating-algorithm paper; supporting code and Gephi graphs at github.com/TorstenTimm/SelfCitationTextgenerator (MIT).",
+    "source": "https://www.tandfonline.com/doi/abs/10.1080/01611194.2023.2225716 ; https://github.com/TorstenTimm/SelfCitationTextgenerator",
+    "strength": "moderate",
+    "year": "2023/2024",
+    "counter": "Abstract and full text not retrieved (403); summary rests on Crossref metadata and search snippets. Bowern & Gaskell 2022 ('Enciphered after all?') show word-level predictability is also compatible with some encipherments, so the meaningless inference is not forced."
+   },
+   {
+    "claim": "Timm (2026), 'The challenge of analyzing a dynamic text: why the Voynich manuscript resists conventional interpretation', Cryptologia (online 7 Sep 2026, open access, DOI 10.1080/01611194.2026.2693462), argues all prior approaches share a false assumption of a static generating system: vocabulary, glyph usage and frequency distributions drift continuously from start to end, evidenced by one highly connected word-similarity network spanning the codex, a strong frequency/similar-form correlation and asymmetric vocabulary distribution. A companion analysis (cited as Timm 2026a/2026b) argues Davis's five-scribe diagnostics (k crossbar, n flourish) appear on nearly every page, that Scribes 1/2 replicate Currier A/B and Scribe 4 replicates label pages, and that the confirmation chain is circular.",
+    "evidence": "Crossref: sole author Torsten Timm, 22 references, TDM licence. Preprint on academia.edu (Feb 2026). Search results earlier misattributed authorship to 'Nils Kopal et al.'; Crossref shows Timm alone.",
+    "source": "https://api.crossref.org/works/10.1080/01611194.2026.2693462 ; https://www.academia.edu/164728008/",
+    "strength": "moderate",
+    "year": "2026",
+    "counter": "Full text not retrieved; too recent for published rebuttal. Farrugia, Layfield & van der Plas (CEUR 2022) report character-sequence ML models with 'reasonable overlap' with Davis's scribe assignments, and Pelling (Aug 2024) criticised Davis on f1r but did not reject five scribes, so the scribe question is genuinely open rather than settled either way."
+   },
+   {
+    "claim": "Kinnison (2026), 'The Voynich Manuscript's positional entropy collapse: comparative evidence from languages and ciphers', Cryptologia online 7 Sep 2026 (DOI 10.1080/01611194.2026.2697318), is a new comparative entropy paper by an independent researcher.",
+    "evidence": "Crossref metadata only (1-18 pp., TDM licence).",
+    "source": "https://api.crossref.org/works/10.1080/01611194.2026.2697318",
+    "strength": "weak",
+    "year": "2026",
+    "counter": "No abstract or content retrieved; not checked. Listed so the sweep is complete."
+   },
+   {
+    "claim": "Gaskell & Bowern (2022), 'Gibberish after all?', show that human-produced meaningless writing is strongly non-random and can reproduce most Voynichese statistics, including Zipf's law, undermining the 'too structured to be a hoax' argument.",
+    "evidence": "42 volunteers wrote gibberish documents; compared against several Voynich transliterations and a large meaningful corpus across many metrics. CEUR-WS Vol. 3313 paper 4 (Malta conference, 30 Nov-1 Dec 2022). Data and stats.py / rstats.r released at github.com/danielgaskell/voynich under a modified MIT licence requiring citation.",
+    "source": "https://ceur-ws.org/Vol-3313/paper4.pdf ; https://github.com/danielgaskell/voynich",
+    "strength": "strong",
+    "year": "2022",
+    "counter": "Gibberish samples are short and modern; the authors themselves note gibberish 'varies widely', so the result is existence-proof rather than a match to a specific generator. Greshko 2025 (below) argues a cipher can hit the same metrics."
+   },
+   {
+    "claim": "Bowern & Gaskell (2022), 'Enciphered after all?', show the unusual word-level predictability of Voynichese is compatible with some types of encipherment, so word-level metrics do not decide between cipher and non-cipher.",
+    "evidence": "CEUR-WS Vol. 3313 paper 6; tests effects of textual manipulations/encipherment on word-level metrics.",
+    "source": "https://ceur-ws.org/Vol-3313/paper6.pdf",
+    "strength": "moderate",
+    "year": "2022",
+    "counter": "Conference paper, not journal-reviewed; shows compatibility, not likelihood."
+   },
+   {
+    "claim": "Zandbergen's 2022 keynote 'Transliteration of the Voynich MS text' introduced the Super Transliteration Alphabet (STA), consolidated as STA1 in early 2023 (299 codes), plus the stroke-based analytical alignment alphabet 'aaa' (197 codes), enabling automatic alignment of the ZL and GC transliterations into a combined Reference (RF) file.",
+    "evidence": "CEUR-WS Vol. 3313 keynote1.pdf; STA1 definition PDF and voynich.nu/extra/sta.html; RF1b (2025) described on voynich.nu/transcr.html as 'full coverage; automated alignment'.",
+    "source": "https://ceur-ws.org/Vol-3313/keynote1.pdf ; https://www.voynich.nu/data/sta/STA1_def.pdf ; https://www.voynich.nu/transcr.html",
+    "strength": "strong",
+    "year": "2022-2023",
+    "counter": "STA/aaa are conventions maintained by one person; RF inherits any shared errors of ZL and GC. Rozanova & Temerev 2026 argue that uncertain-space and glyph-unit conventions in ZL materially affect results."
+   },
+   {
+    "claim": "voynich.nu IVTFF datasets: format 2.0 (Feb 2023; 2.0.1 minor), legacy 1.7 (Apr 2020). Files currently offered in IVTFF 2.0 (2025 releases): FG (Friedman First Study Group, FSG alphabet, incomplete), CD (Currier/D'Imperio), IT (Takahashi via LSI, Eva-T), ZL 3b (Zandbergen-Landini, Eva, ~complete, 5,389 loci), GC (Glen Claston v101, complete), RF 1b (Reference, STA1/Eva, full coverage). 2025 fixes: spurious locus removed on f89v2, three post-medieval loci removed from f1r, Eva high-ASCII @169 corrected, @221-223 added.",
+    "evidence": "voynich.nu/transcr.html and IVTFF_format.pdf; ivtt 2.4 (7 Sep 2025) processes IVTFF 1.5-2.0.1; browser-based ivtt by Jeremie Bornais (Feb 2026); bitrans alphabet converter.",
+    "source": "https://www.voynich.nu/transcr.html ; http://www.voynich.nu/software/ivtt/IVTFF_format.pdf ; https://www.voynich.nu/software/ivtt/IVTT_manual.pdf",
+    "strength": "strong",
+    "year": "2023-2026",
+    "counter": "Format spec PDF could not be text-extracted in this session (no poppler); version details taken from the HTML page. The Takahashi original (TT) is not distributed in IVTFF."
+   },
+   {
+    "claim": "v4j (Massimiliano Zattera) is an open-source Java library (CC BY-NC-SA 4.0 for notes) that parses IVTFF texts (IvtffText / VoynichFactory), bundles transliterations, and implements the 12-slot 'Slot alphabet' word grammar; 86.6% of tokens fit the slot pattern, a further 10.4% are separable into two slot-conforming parts, 3.0% unstructured. Twelve reproducible working notes cover clustering (t-SNE/k-means), grammar F1, 'five languages', token length and positional word preferences.",
+    "evidence": "github.com/mzattera/v4j; mzattera.github.io/v4j notes 001-012; CEUR-WS Vol. 3313 paper 10 'A new transliteration alphabet brings new evidence of word structure and multiple languages'.",
+    "source": "https://github.com/mzattera/v4j ; https://mzattera.github.io/v4j/005/ ; https://ceur-ws.org/Vol-3313/paper10.pdf",
+    "strength": "strong",
+    "year": "2022-2025",
+    "counter": "Slot grammar is descriptive; Greshko's Naibbe cipher and Timm's generator both reproduce slot-like structure, so it does not discriminate mechanisms. Code licence for the library itself was not verified (*)."
+   },
+   {
+    "claim": "tvtt ('The Voynich Transliteration Tool', github.com/Krymorn) lets users write glyph-to-letter substitution rules, score them statistically against IVTFF texts, or run a solver; it consumes voynich.nu IVTFF files.",
+    "evidence": "Repository README as indexed by search.",
+    "source": "https://github.com/Krymorn/The-Voynich-Transliteration-Tool",
+    "strength": "weak",
+    "year": "2025 (*inferred)",
+    "counter": "Not fetched directly; maintainer, licence, and release date not verified. Note the user's 'tvtt' may instead mean voynich.nu's ivtt (Intermediate Voynich Transliteration Tool), which is the established tool."
+   },
+   {
+    "claim": "voynichTEI (github.com/newtfire) converts the ZL3b-n IVTFF 2.0 transliteration (all 5,389 loci, Eva with high-ASCII) into TEI P5 XML via an Invisible XML grammar + XSLT pipeline, with EVA font/CSS for Oxygen; focus on the herbal section.",
+    "evidence": "Repository README (115 commits).",
+    "source": "https://github.com/newtfire/voynichTEI",
+    "strength": "moderate",
+    "year": "2023-2025 (*inferred)",
+    "counter": "Licence not stated; last update date not visible; not yet used in any published analysis found."
+   },
+   {
+    "claim": "Yale/Bowern lab datasets: chirila/Voynich-public provides corpora partitioned by Currier language, scribal hand and transcription system plus 294 Wikipedia language samples and 18 historical transcriptions, supporting Lindemann & Bowern 'Character entropy in modern and historical texts' (arXiv 2010.14697; lingbuzz/005522 version 2022). Bowern's resources page also lists a Zooniverse 'Voynich Explorations' image-tagging beta and a Zotero bibliography.",
+    "evidence": "github.com/chirila/Voynich-public; campuspress.yale.edu/clairebowern/voynich-resources.",
+    "source": "https://github.com/chirila/Voynich-public ; https://campuspress.yale.edu/clairebowern/voynich-resources/",
+    "strength": "moderate",
+    "year": "2022",
+    "counter": "No new Bowern-lab Voynich paper after 2022 was found; Yale News (Feb 2025) profiles Bowern's teaching without new results. Repo licence not verified."
+   },
+   {
+    "claim": "2024 multispectral release: Lazarus Project images of ten folios (1r, 8r, 17r, 26r, 47r, 70v1, 71r, 93r, 102v1, 116v) captured in 2014 were published by Lisa Fagin Davis in Sept 2024. f1r shows three erased columns (Roman alphabet a-z, Voynichese glyphs, second Roman alphabet offset by one) attributed by Davis to Johannes Marcus Marci's hand, i.e. a 17th-century decryption attempt; f71r pigments flagged for XRF; other folios show offsets/show-through and text under stains.",
+    "evidence": "Manuscript Road Trip post (8 Sep 2024) with freely downloadable TIFF/JPEG sets; covered by Medievalists.net, Hackaday, Art Newspaper, Language Log (Mair, 11 Sep 2024). Davis's Oct 2025 Toronto talk (reported by Pelling) adds Yale XRF showing Marci-annotation ink contains zinc not iron and confirms Voynich's sulphur-based reagent use on marginalia.",
+    "source": "https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/ ; https://languagelog.ldc.upenn.edu/nll/?p=65930 ; https://ciphermysteries.com/2025/10/11/lisa-fagin-davis-the-materiality-of-the-voynich-manuscript",
+    "strength": "strong",
+    "year": "2024-2025",
+    "counter": "Davis herself stresses processed MSI has 'unnatural color profiles' and warns against over-reading; no decryption key results. Marci attribution is palaeographic, not documentary. Only ten folios were imaged; a full-codex campaign has not been announced."
+   },
+   {
+    "claim": "Pelling (Cipher Mysteries, 22 Jan 2026) proposes reading the f17r marginalia, using the MSI images, as Occitan 'meilhor aller lucent ben balsamina' (with a macron abbreviation on lucent), tying to earlier Occitan zodiac month-names.",
+    "evidence": "Blog post crediting competing readings by Ponzi, Prinke and Winkler.",
+    "source": "https://ciphermysteries.com/2026/01/22/finally-i-can-read-the-voynich-manuscript",
+    "strength": "weak",
+    "year": "2026",
+    "counter": "Concerns marginalia only, not Voynichese; self-described as contested; no independent palaeographic confirmation."
+   },
+   {
+    "claim": "Greshko (2025), 'The Naibbe cipher', Cryptologia online 26 Nov 2025 (DOI 10.1080/01611194.2025.2566408, 37 pp.), demonstrates a hand-executable 15th-century-plausible verbose homophonic substitution (die roll splits plaintext into 1-2 letter chunks; card draw from a 52- or 78-card deck selects one of six tables) that turns Latin/Italian into decipherable text reproducing many Voynich properties at once: glyph frequencies, word-length distribution, slot grammar, positional patterns, binomial word-length fit.",
+    "evidence": "Code (naibbe.py, naibbe_v2.py, decrypt script, 'voynichesque' generator) at github.com/greshko/naibbe-cipher (modified MIT); ten-page voynich.ninja discussion (thread 4848) of the preprint; press coverage Dec 2025-Jan 2026 (Schneier, Live Science, Art Newspaper, Newsweek).",
+    "source": "https://www.tandfonline.com/doi/full/10.1080/01611194.2025.2566408 ; https://github.com/greshko/naibbe-cipher ; https://www.voynich.ninja/thread-4848.html",
+    "strength": "moderate",
+    "year": "2025",
+    "counter": "Author states it 'cannot be exactly how the VM was made' and does not prove meaning. Forum reviewers (oshfdk, bi3mw, MarcoP) note it does not reproduce line-start/line-end effects, paragraph structure, short-offset word-length autocorrelation (Gaskell & Bowern's long-long-short-short clustering), Voynich B properties, or Scribe 2/3 differences, and question 1.5-2.5x verbosity for labels. Zandbergen cautioned against assuming it is the actual method."
+   },
+   {
+    "claim": "Ponnaluri (2024), Cryptologia 49(6):505-524 (online 10 Nov 2024), argues from Zipf, Heaps and brevity laws and affix-stripped entropy (~2.0-2.5 bits, 'syllabary range') that the VM is a single natural language and that Currier's two languages and Davis's five scribes are artefacts of vocabulary variation.",
+    "evidence": "Crossref record; voynich.ninja thread 4401 summary of the paper's claims.",
+    "source": "https://www.tandfonline.com/doi/full/10.1080/01611194.2024.2414128 ; https://www.voynich.ninja/archive/index.php/thread-4401.html",
+    "strength": "weak",
+    "year": "2024",
+    "counter": "Forum consensus (Torsten Timm, Koen Gheuens, tavie, Mauro) was sceptical: Zipf/Heaps are satisfied by self-citation text (Timm & Schinner 2019) and human gibberish (Gaskell & Bowern 2022); brevity-law figure shows uniformly short words; results depend on the Claston (GC) transliteration and a 71+ symbol set; paper arguably confirms rather than refutes the A/B statistical difference."
+   },
+   {
+    "claim": "Steckley & Steckley (2024), 'Subtle signs of scribal intent', HistoCrypt 2024 proceedings (also arXiv 2404.13069, OSF), find token distributions within paragraphs depend on line/paragraph position and on adjacency to plant drawings: tokens immediately before drawings ~7.5% shorter, line-initial tokens ~12% longer, paragraph-top ~10% longer, p<<0.001; some tokens show Bayes factor >=150 propensity for drawing-adjacent positions.",
+    "evidence": "Zandbergen-Landini IVTFF transliteration; chi-squared, binomial tests, Bayes factors; supplemental material at quantumlynxresearch.com.",
+    "source": "https://arxiv.org/abs/2404.13069 ; https://dspace.ut.ee/collections/7f8f02b3-2111-4f29-aca3-178d220b27c6",
+    "strength": "moderate",
+    "year": "2024",
+    "counter": "Authors leave open whether this reflects stenography in meaningful text or a scribe's positional habits in meaningless text; code not released; it is the only Voynich paper in HistoCrypt 2023-2025 proceedings that this sweep could confirm (HistoCrypt 2023's Voynich item is a report on the Malta 2022 conference by Layfield, Zandbergen, Davis, Abela, Bowern, Rosner, van der Plas; HistoCrypt 2025 collection page 1 shows no Voynich title - not fully checked)."
+   },
+   {
+    "claim": "Rozanova & Temerev (arXiv 2608.17096, 17 Aug 2026) argue none of the three standard unit assumptions holds: glyph information density (2.7 bits) is below single-letter substitution norms (~3.5), token succession explains <1% of entropy (below all controls at 2-10%) while token-edge glyphs share 0.2 bits mutual information, and transcriber-marked uncertain spaces are physically narrower (AUC 0.905, blind audit) and behave like word-internal junctures; 70% hapax types vs 41-60% in controls.",
+    "evidence": "ZL3b transliteration vs Latin (Caesar, Celsus, Pliny), Italian and English (Culpeper) prose, a published Voynich cipher mimic (*likely Naibbe) and a self-citation generator as controls.",
+    "source": "https://arxiv.org/abs/2608.17096",
+    "strength": "moderate",
+    "year": "2026",
+    "counter": "One month old, no peer review or community response yet; the finding that both a cipher mimic and self-citation fail on edge-glyph coupling and open vocabulary cuts against every current model equally."
+   },
+   {
+    "claim": "Other Malta 2022 (CEUR Vol. 3313) contributions that later work builds on: Davis keynote on palaeography/five scribes; Farrugia, Layfield & van der Plas character-sequence ML supporting scribe partitions; Lindemann on MATTR morphological complexity; Painter & Bowern phylogenetics of glyph forms; Feaster on rightward/downward grapheme distributions; Boxer comparing Voynichese to Dee's Sloane MS 3188 gibberish; Guzy's archival finding that Carl Widemann sold Rudolf II a barrel of 'rare books' for 500 thalers / 600 florins in 1599, the only 600-gulden book sale in ~7,000 Hofkammer entries.",
+    "evidence": "CEUR-WS Vol. 3313 table of contents; Art Newspaper (Jan 2023) and History Blog coverage of Guzy.",
+    "source": "https://ceur-ws.org/Vol-3313/ ; https://www.theartnewspaper.com/2023/01/13/unknown-history-of-600-year-old-coded-voynich-manuscript-revealed-by-researcher",
+    "strength": "moderate",
+    "year": "2022",
+    "counter": "Guzy's identification of the Widemann sale with the VM is circumstantial (matches Marci's 600-ducat figure, not a title); Feaster/Painter/Boxer papers were not read in this sweep."
+   },
+   {
+    "claim": "Claimed decipherments since 2022 have uniformly failed to gain specialist acceptance: Gladyseva (2023, medieval Galician via plant names, 700-page thesis; long voynich.ninja thread, rejected); 'dai' trigram anchor herbal-medicine reading (2024-25, academia/ResearchGate); Quereshi SSRN 2025 (Czech shorthand + Latin alchemical compression, 'under consideration' at DSH); Jama arXiv 2505.02261 (prime/Fibonacci/golden-ratio numerology); GitHub LLM-assisted 'solutions' (Latin-Occitan pharmaceutical manual claiming 87.8% coverage; Elu-Sinhala phonetic transcription); an anonymous 2026 'custom LLM' decoding.",
+    "evidence": "Zandbergen's notice: since May 2025 new ChatGPT-style solutions arrive weekly and he no longer reviews them; the 2026 Malta conference CFP explicitly refuses 'solutions'; Language Log commenters and Cipher Mysteries treat all as unsupported; Manifold market on scientific recognition of a decipherment by end-2026 exists.",
+    "source": "https://www.voynich.ninja/thread-2821-page-6.html ; http://www.voynich.nu/notice.html ; https://www.themedievalacademyblog.org/call-for-papers-the-voynich-manuscript/ ; https://arxiv.org/abs/2505.02261",
+    "strength": "refuted",
+    "year": "2023-2026",
+    "counter": "'Refuted' here means no claim survived community scrutiny or produced a reproducible key; formal published rebuttals of each individual claim were not found (most were never peer reviewed, so none were needed)."
+   },
+   {
+    "claim": "Community infrastructure: second University of Malta online Voynich conference set for 9 Dec 2026 (abstracts due 30 Jun, papers 31 Aug, 4-9 pp., EasyChair 'voy2026'); voynich.ninja is the de facto peer-review venue where Greshko, Parisel and Ponnaluri were all dissected pre- or post-publication; Cryptologia remains the only journal regularly publishing Voynich work (5 articles 2023-2026: Timm & Schinner, Ponnaluri, Greshko, Timm, Kinnison).",
+    "evidence": "Medieval Academy blog CFP; Crossref query on Cryptologia 2022+; voynich.nu notice.",
+    "source": "https://www.themedievalacademyblog.org/call-for-papers-the-voynich-manuscript/ ; https://api.crossref.org/works?query.bibliographic=Voynich+manuscript&filter=from-pub-date:2022-01-01,container-title:Cryptologia",
+    "strength": "strong",
+    "year": "2026",
+    "counter": "Crossref query returned only five Cryptologia items; a book-chapter (Yale UP 'Cryptic', 2025) and any non-English journal items were not enumerated."
+   }
+  ],
+  "consensus_state": "Strongest counter to any 'consensus' framing: the field has no agreed mechanism and the three camps each gained a reproducible model in 2022-2026, so agreement is on the description, not the explanation. What is broadly accepted among the specialists cited here (Zandbergen, Bowern, Davis, Timm/Schinner, Pelling, the voynich.ninja core): (1) the codex is a genuine early-15th-century object, not a modern forgery (radiocarbon 1404-38; Davis 2024 MSI/XRF); (2) the text is not a simple substitution of a known language (Marci's own f1r alphabet attempt notwithstanding); (3) Voynichese has a rigid word grammar (Zattera slots, ~87% conformity), anomalously low conditional entropy, strong line/paragraph/drawing-position effects (Steckley 2024), and a real Currier A/B difference that is now seen as one axis of a continuous or higher-dimensional drift rather than two discrete languages (Parisel 2026 and Timm 2026 agree on this from opposite camps); (4) Zipf/Heaps/brevity-law compliance proves nothing about meaning (Gaskell & Bowern 2022; Timm & Schinner); (5) the ZL/GC/RF IVTFF 2.0 files and STA1 are the standard data, and results should be reported against a named file version; (6) no decipherment since 2022 (or before) has met the bar, and LLM-generated 'solutions' are now explicitly excluded by voynich.nu and the 2026 conference. Live disputes: (a) meaningless generation (self-citation; human gibberish) vs verbose homophonic cipher (Naibbe) vs natural/constructed language, with Rozanova & Temerev 2026 arguing both leading generators fail on edge-glyph coupling and hapax-rich vocabulary; (b) whether Davis's five scribes are real palaeographic entities or a re-labelling of Currier A/B plus label pages (Timm 2026 vs Davis 2020/Farrugia 2022); (c) directionality (Parisel's RTL-inside-words claim vs LTR writing); (d) what the units are (glyph vs multi-glyph, space vs uncertain space); (e) whether computational methods such as LSA can do codicology (Davis/Layfield vs Pelling's demand for physical/DNA evidence); (f) whether the 1599 Widemann sale is the VM's entry into Rudolf's library. Audit note: checked - arXiv abstracts, Crossref records, voynich.nu HTML pages, GitHub READMEs, CEUR TOC, Davis's MSI post, Cipher Mysteries posts, voynich.ninja threads 4401/4848/5710; not checked - full texts of all five Cryptologia articles (403 paywall), the Zattera/Farrugia/IVTFF PDFs (no PDF renderer), HistoCrypt 2025 full collection, Painter/Feaster/Boxer 2022 papers, Timm's separate scribe paper as a standalone item; user must verify - Naibbe volume/issue, tvtt identity, licences marked (*), and all strength ratings. All output unvalidated until user review.",
+  "decisive_tests": [
+   "Re-run Parisel's currier-models scripts against ZL3b, GC and RF1b separately and against Timm's self-citation output, Greshko's Naibbe output and Gaskell's gibberish samples: if the per-folio ch/sh switch appears only in the VM, it is a property of the source, not of transliteration; if a generator reproduces it, the switch is not evidence for meaning.",
+   "Positional/line-effect test on generators: score Naibbe, self-citation and human gibberish on Steckley's drawing-adjacent token-length shortening and on Gaskell & Bowern's short-offset word-length autocorrelation; the current reports say Naibbe fails autocorrelation and self-citation was never tested on drawing adjacency.",
+   "Edge-glyph mutual-information and hapax-ratio test (Rozanova & Temerev): any proposed mechanism must reproduce 0.2-bit token-edge coupling with <1% token-succession entropy and ~70% singleton types simultaneously; publish as a shared benchmark on the RF1b file.",
+   "Scribe-hypothesis falsification: blind palaeographic re-coding of k-crossbar and n-flourish variants on a random folio sample by independent coders, compared with Davis's assignments and with Currier/label-page partitions; Timm predicts variants on nearly every page, Davis predicts page-level segregation.",
+   "Full-codex multispectral and XRF campaign plus bifolio parchment DNA/collagen matching to fix quire order (the Pelling-Davis dispute); the 2014 ten-folio set is insufficient for quire reconstruction.",
+   "Archival test of Guzy: locate any inventory or correspondence naming the Widemann 1599 barrel's contents; a title or description matching the VM would convert a circumstantial link into provenance.",
+   "Decipherment gate (applies to every future claim): publish a key that decrypts held-out folios not used in its construction, on a named IVTFF file, with the plaintext independently readable by a philologist of the claimed language; none of the 2022-2026 claims meets this.",
+   "Transliteration-sensitivity audit: repeat any headline statistic (entropy, slot conformity, Currier split) across ZL, GC, IT and RF and with uncertain spaces treated three ways (space, no space, dropped); results that flip are transliteration artefacts."
+  ],
+  "sources": [
+   "https://arxiv.org/abs/2604.25979",
+   "https://github.com/labyrinthinesecurity/currier-models",
+   "https://www.voynich.ninja/thread-5710.html",
+   "https://arxiv.org/abs/2604.19762",
+   "https://arxiv.org/abs/2509.10573",
+   "https://arxiv.org/abs/2608.17096",
+   "https://arxiv.org/abs/2404.13069",
+   "https://arxiv.org/abs/2505.02261",
+   "https://www.tandfonline.com/doi/abs/10.1080/01611194.2023.2225716",
+   "https://api.crossref.org/works/10.1080/01611194.2026.2693462",
+   "https://api.crossref.org/works/10.1080/01611194.2026.2697318",
+   "https://www.tandfonline.com/doi/full/10.1080/01611194.2024.2414128",
+   "https://www.tandfonline.com/doi/full/10.1080/01611194.2025.2566408",
+   "https://github.com/greshko/naibbe-cipher",
+   "https://www.voynich.ninja/thread-4848.html",
+   "https://www.voynich.ninja/archive/index.php/thread-4401.html",
+   "https://www.academia.edu/164728008/",
+   "https://github.com/TorstenTimm/SelfCitationTextgenerator",
+   "https://ceur-ws.org/Vol-3313/",
+   "https://ceur-ws.org/Vol-3313/keynote1.pdf",
+   "https://ceur-ws.org/Vol-3313/paper4.pdf",
+   "https://ceur-ws.org/Vol-3313/paper6.pdf",
+   "https://ceur-ws.org/Vol-3313/paper10.pdf",
+   "https://github.com/danielgaskell/voynich",
+   "https://github.com/chirila/Voynich-public",
+   "https://campuspress.yale.edu/clairebowern/voynich-resources/",
+   "https://www.voynich.nu/transcr.html",
+   "https://www.voynich.nu/data/sta/STA1_def.pdf",
+   "http://www.voynich.nu/software/ivtt/IVTFF_format.pdf",
+   "https://www.voynich.nu/software/ivtt/IVTT_manual.pdf",
+   "http://www.voynich.nu/notice.html",
+   "https://github.com/mzattera/v4j",
+   "https://mzattera.github.io/v4j/",
+   "https://mzattera.github.io/v4j/005/",
+   "https://github.com/newtfire/voynichTEI",
+   "https://github.com/Krymorn/The-Voynich-Transliteration-Tool",
+   "https://manuscriptroadtrip.wordpress.com/2024/09/08/multispectral-imaging-and-the-voynich-manuscript/",
+   "https://languagelog.ldc.upenn.edu/nll/?p=65930",
+   "https://ciphermysteries.com/2025/10/11/lisa-fagin-davis-the-materiality-of-the-voynich-manuscript",
+   "https://ciphermysteries.com/2026/01/22/finally-i-can-read-the-voynich-manuscript",
+   "https://ciphermysteries.com/2024/08/19/voynich-manuscript-f1r-five-scribes-five-vibes",
+   "https://dspace.ut.ee/collections/7f8f02b3-2111-4f29-aca3-178d220b27c6",
+   "https://dspace.ut.ee/items/0d1e8740-c53c-435a-b7f6-547c86a840e5",
+   "https://ecp.ep.liu.se/index.php/histocrypt/article/view/700",
+   "https://www.themedievalacademyblog.org/call-for-papers-the-voynich-manuscript/",
+   "https://news.yale.edu/2025/02/21/deciphering-mysterious-manuscript",
+   "https://www.theartnewspaper.com/2023/01/13/unknown-history-of-600-year-old-coded-voynich-manuscript-revealed-by-researcher",
+   "https://www.voynich.ninja/thread-2821-page-6.html",
+   "https://api.crossref.org/works?query.bibliographic=Voynich+manuscript&filter=from-pub-date:2022-01-01,container-title:Cryptologia"
+  ]
+ },
+ {
+  "hypothesis": "The text of Beinecke MS 408 (Voynichese) is meaningless: a medieval (or later) hoax or constructed gibberish produced by a low-technology generative procedure (Rugg's table-and-grille, Timm & Schinner's self-citation/autocopy, or intuitive glossographia), rather than an encipherment or encoding of a natural or constructed language.",
+  "claims": [
+   {
+    "claim": "A table-and-grille (modified Cardan grille) procedure can produce Voynich-like text (prefix/midfix/suffix word structure, high adjacent-word similarity, low character entropy) fast enough for a hoax to be feasible.",
+    "evidence": "Rugg 2004, Cryptologia 28(1):31-46: table of word fragments in 3-column groups plus a 3-hole grille yields words built from up to three fragments (based on Stolfi's prefix-stem-suffix grammar). Rugg & Taylor's own summary claims one person could produce the whole MS in ~10 weeks. Qualitative match only in 2004; no entropy or repeat-distance numbers in the original.",
+    "source": "Rugg, G. (2004) 'An elegant hoax? A possible solution to the Voynich manuscript', Cryptologia 28(1):31-46, doi:10.1080/0161-110491892755; Zandbergen 2021 (arXiv:2104.12548) description of the mechanics; hydeandrugg.wordpress.com 2016/09/25",
+    "strength": "weak",
+    "counter": "(1) Anachronism: Cardan grilles date from c.1550; vellum is radiocarbon-dated 1404-1438, so Rugg must posit a late-16th-c. forger using century-old vellum with period-consistent ink and codicology (Pelling, ciphermysteries 2016; Bowern & Lindemann 2021). Rugg & Taylor reply with a 1470s+ date and re-used vellum, which is ad hoc. (2) Never retrofitted to a single actual paragraph of the MS (Pelling). (3) Zandbergen 2021 finds the mechanics workable but identifies a 'prohibitive problem': the special positional roles of glyphs f and p cannot arise from the table; and Stolfi's word grammar fails on ~4% of words. (4) Reddy & Knight 2011: the grille just emulates a finite-state affixal grammar such as many real languages have, so it shows possibility, not plausibility.",
+    "year": "2004"
+   },
+   {
+    "claim": "Table-and-grille output reproduces the main quantitative features of Voynichese: a Zipf-like word-frequency distribution, a symmetric (near-binomial) word-length distribution, and non-homogeneous distribution of words and syllables across the corpus.",
+    "evidence": "Rugg & Taylor: three independent grille-generated gibberish corpora all follow Zipf's law comparably to natural-language texts; building syllables by systematically increasing length yields a binomial word-length distribution; the distribution of common syllables in the VMS 'is very different from ... real human languages' but matches grille output with several table changes.",
+    "source": "Rugg, G. & Taylor, G. (2016/2017) 'Hoaxing statistical features of the Voynich Manuscript', Cryptologia 41(3):247-268, doi:10.1080/01611194.2016.1206753; authors' summary at hydeandrugg.wordpress.com (25 Sep 2016)",
+    "strength": "moderate",
+    "counter": "Zipf is a necessary-not-sufficient test (Reddy & Knight 2011) and is now known to be reproduced by human gibberish (Gaskell & Bowern 2022) and by ciphers (Greshko 2025), so it discriminates nothing. Comment critiques (Knox, on ciphermysteries) argue Rugg conflates token and type length distributions. The paper still does not address section/topic-level structure (Montemurro & Zanette 2013), scribal hands (Davis 2020) or the f/p problem. Bowern & Lindemann 2021 accept that the method could yield gibberish or cipher but say it fails to explain higher-level document structure.",
+    "year": "2016"
+   },
+   {
+    "claim": "Statistical signatures of the VMS text (random-walk mapping of the text, token/syllable repetition statistics, long-range character correlations, and a geometric distribution of the probability that similar words repeat at a given distance) are more consistent with a quasi-stochastic generating process such as Rugg's than with encoded natural language (Latin, medieval German).",
+    "evidence": "Schinner 2007 abstract: 'random walk mapping and token/syllable repetition statistics ... suggest that the text has been generated by a stochastic process rather than by encoding or encryption of language'; also argued the 'Chinese theory' becomes less convincing. Reddy & Knight 2011 summarise the key result as similar-word repeat probability at fixed distance following a geometric distribution plus long-range character correlations.",
+    "source": "Schinner, A. (2007) 'The Voynich manuscript: evidence of the hoax hypothesis', Cryptologia 31(2):95-107, doi:10.1080/01611190601133539 (abstract via T&F/ACM DL; full text paywalled, methods paraphrased from Reddy & Knight 2011 sec. 8)",
+    "strength": "moderate",
+    "counter": "Reddy & Knight 2011: 'These observations only confirm that the VMS has some properties unlike natural language, but not that it is necessarily a hoax.' Bowern & Gaskell 2022 ('Enciphered after all?') show several encipherment types (bigraph encoding of multiple phonemes, patterned nulls) lower conditional entropy and raise word-formation predictability to Voynichese levels while preserving topic structure, so extreme predictability 'is not conclusive evidence that the Voynich manuscript is gibberish'. Only two comparison languages were used.",
+    "year": "2007"
+   },
+   {
+    "claim": "Similarly spelled words cluster spatially in the MS: for control words occurring 7 times, 120/140 (85%) have a word within edit distance <=3 within +/-3 lines; for words occurring 8 times, 66/72 (91%); similar words occur directly above one another about twice as often as side by side (44% vs 35% under the strictest definition). Word frequency correlates with edit-distance proximity to hubs daiin/ol/chedy. This is the fingerprint of a copy-and-modify ('self-citation'/autocopy) generation process, not language.",
+    "evidence": "Timm 2014 (arXiv:1407.6639) sections 3-6: edit-distance series tables (e.g., daiin 863, aiin 469, dain 211, ain 89); proportion of words related to daiin ~15%, ol ~33%, chedy ~31%; repeated words within previous 20 lines peak in the immediately preceding lines (graphs 2-3), a decay absent in Latin and weaker in English. Timm 2016 (arXiv:1601.07435) tabulates similar-token probabilities by line/word offset (e.g., 0.99% at {n-1,m} vs ~0.5-0.6% at nine lines' distance), concluding 'the distribution of words within the manuscript is not compatible with natural languages'.",
+    "source": "Timm, T. (2014) 'How the Voynich manuscript was created', arXiv:1407.6639; Timm, T. (2016) 'Co-occurrence patterns in the Voynich manuscript', arXiv:1601.07435 (both preprints, not peer-reviewed)",
+    "strength": "moderate",
+    "counter": "Locality of similar words is also predicted by a verbose/homophonic cipher with a small effective alphabet (Greshko 2025), by abbreviation-heavy or formulaic texts (recipes, herbals), and by a small phoneme inventory (Bennett 1976 Hawaiian comparison). Statistics are transcription-dependent (Zandbergen 2022 keynote on transliteration uncertainty). The 'above one another' preference could reflect line-as-unit effects (Currier 1976; Vogt 2012) rather than copying. No comparison against enciphered medieval texts of matching genre was run.",
+    "year": "2014"
+   },
+   {
+    "claim": "A concrete, tool-free 'self-citation' algorithm (copy a nearby earlier word, apply a small modification, respecting line/paragraph position rules) generates text that reproduces key VMS statistics, in particular both of Zipf's laws, the network of low-edit-distance word types, the binomial word-length distribution and Currier A/B as drift of the scribe's preferences over time; results 'support the hoax hypothesis'.",
+    "evidence": "Timm & Schinner 2020 abstract: statistical (network) analysis of word/token similarity; the analysed generator sample 'reproduces some of the statistical key properties of the Voynich manuscript; in particular, both of Zipf's laws are fulfilled'. Timm 2014 already argued Currier B pages were written after Currier A because variants invented later do not appear on earlier pages, and that paragraph-initial gallows (86% of paragraphs) and line-initial 9/o/8/s (68% vs 50% mid-line) are position rules shared by A and B. Timm 2026 (Academia preprint): 6796/8026 word types (84.67%) form one connected similarity network; frequency correlates with number of similar forms.",
+    "source": "Timm, T. & Schinner, A. (2020) 'A possible generating algorithm of the Voynich manuscript', Cryptologia 44(1):1-19, doi:10.1080/01611194.2019.1596999; generator materials github.com/TorstenTimm/SelfCitationTextgenerator; Timm 2026 'The Challenge of Analyzing a Dynamic Text' (academia.edu, Feb 2026, not peer-reviewed; discussed at voynich.ninja thread-5376)",
+    "strength": "moderate",
+    "counter": "(1) Multiple scribes: Davis 2020 identifies five hands (scribes 1-3 wrote 188/227 pages) with a shared, statistically consistent system; a single drifting autocopier is hard to reconcile with Herbal-B pages in scribe 2/3 hands and with zodiac labels bridging A/B while running text stays firmly A (kckluge, voynich.ninja). (2) Only 'some' statistics were reproduced; the paper does not demonstrate the Montemurro-Zanette long-range information peak, topic/scribe/illustration co-clustering (Sterneck et al. 2021) or the f/p positional roles. (3) Gaskell & Bowern 2022 note participants used self-citation intuitively yet still could not reproduce the VMS's extreme within-word character-position bias. (4) Parisel 2026 (arXiv:2604.19762, preprint) reports that neither a parametric slot generator nor a Cardan grille reproduces four positional/directional signatures simultaneously (*self-citation itself not explicitly tested there). (5) Zandbergen 2021 shows the same mechanics could encode meaningful text, so a generator's existence does not decide meaning.",
+    "year": "2020"
+   },
+   {
+    "claim": "Timm & Schinner rebut the linguistics case: Bowern & Lindemann 2021 neglect opposing arguments and did not verify their assumptions about word distribution; Malta 2022 conference results (topic modelling, Currier A/B, MATTR) do not demonstrate meaningful text because those methods presuppose natural language and the statistics are those of an algorithmically generated pseudo-text.",
+    "evidence": "Timm & Schinner 2021 review, Cryptologia 45(5):434-438; Timm & Schinner 2023 'The Voynich manuscript: discussion of text creation hypotheses', Cryptologia (online 2023, vol 47/48 issue 4, pp. 307-322), which reviews selected Malta 2022 proceedings on 'existing versus non-existing linguistic structures'. (*Full text paywalled; content characterised from abstract and secondary summaries; Zandbergen's page-correlation plot, defined as tokens shared between pages, is cited within it.)",
+    "source": "doi:10.1080/01611194.2021.1911875; doi:10.1080/01611194.2023.2225716",
+    "strength": "weak",
+    "counter": "Bowern's group partly conceded the low-level point in 2022 (gibberish can match nearly all word-level metrics) but the topic/scribe/section clustering (Sterneck, Polish & Bowern 2021; Montemurro & Zanette 2013; Reddy & Knight 2011 page-adjacency similarity) has not been reproduced by any published generator run at MS length. Timm & Schinner's critique is argumentative rather than a new quantitative test; no independent replication of their rebuttals exists.",
+    "year": "2021"
+   },
+   {
+    "claim": "Human-produced intuitive gibberish reproduces almost all word- and character-level statistics of Voynichese, so the 'too non-random to be meaningless' argument is invalid; a classifier trained on gibberish vs meaningful text labels all VMS transcriptions as gibberish.",
+    "evidence": "Gaskell & Bowern 2022: 42 volunteers wrote 1-3-page gibberish documents; compared on 42 metrics (200-word excerpts x100 iterations) against 75 meaningful texts (5.6M words) and 5 VMS transcriptions (v101, EVA Full, EVA Basic, Currier A, Currier B). VMS plausibly resembles meaningful text on 38/42 metrics and gibberish on 41/42. Gibberish vs meaningful differences (all also shown by VMS except charbias_mean): lower DEFLATE information content, lower h2, more repeated words/characters, higher word-position bias in 200-word sections, positive word-length autocorrelation (Moran's I; long-long-short-short), weaker Zipf fit (Urzua LMZ). Random forest scored all five VMS samples <0.5 (gibberish side) 'albeit with low confidence'.",
+    "source": "Gaskell, D.E. & Bowern, C.L. (2022) 'Gibberish after all? Voynichese is statistically similar to human-produced samples of meaningless text', Proc. Int. Conf. on the Voynich MS 2022, CEUR-WS Vol-3313 paper4; data at github.com/danielgaskell/voynich",
+    "strength": "strong",
+    "counter": "The authors themselves: (a) the one metric gibberish never matched is the VMS's extreme within-word character-position bias (charbias_words_mean); (b) samples were far too short to test page/section-level 'topic word' structure, which 'pose[s] a serious challenge to proponents of the hoax hypothesis'; (c) 39/42 writers were students in a Voynich course (20 after learning VMS statistics), a contamination risk they judge small (2019 vs 2018 differences: +11% charbias_mean, -26% charbias_skew, -10% chardist_shape, +6% unique_chars). Companion paper (Bowern & Gaskell 2022, 'Enciphered after all?') shows several cipher types also reproduce the same word-level anomalies, so the test cannot separate gibberish from cipher.",
+    "year": "2022"
+   },
+   {
+    "claim": "(Counter-evidence) The long-range distribution of words carries information typical of natural language: the entropy-difference keyword measure I = I_mutual - <I_shuffled> peaks at a scale of ~807 words (natural languages 600-800) at a value slightly above English (~0.6 bits/word; Latin ~0.2), and the most informative words form semantic networks in which related words share morphology; illustrated sections (herbal vs pharmaceutical) share vocabulary. This 'limits severely the scope of the hoax hypothesis'.",
+    "evidence": "Montemurro & Zanette 2013, PLoS ONE 8(6):e66344, analysis of the full ~35-38k-word text, top-100 informative words, 30 keywords; comparison corpora in English, Latin, Chinese, plus DNA and code as negative controls.",
+    "source": "doi:10.1371/journal.pone.0066344",
+    "strength": "moderate",
+    "counter": "Timm 2016 (arXiv:1601.07435) argues the same keyword clustering follows from local self-citation, because copied-and-modified words are morphologically similar and stay near their source (the M&Z network is 'morphologically similar' by their own description). Gaskell & Bowern 2022 report gibberish writers consciously reusing invented words around an illustration (e.g., 'pitshol'), which could create pseudo-topics, and note that scribal drift over weeks would create large-scale non-randomness. Amancio et al. 2013 (PLoS ONE 8(7):e67310) independently found the MS 'mostly compatible with natural languages and incompatible with random texts' (*'90% of cases' figure from secondary summary), but the null was shuffled/random text, not structured gibberish.",
+    "year": "2013"
+   },
+   {
+    "claim": "(Counter-evidence) Higher-level document structure is inconsistent with gibberish: unsupervised topic models (LDA, LSA, NMF; TF-IDF on 40-word chunks) cluster pages into groups matching the conjunction of illustration subject and Davis's scribal hand; nearest-neighbour pages in topic space are physically adjacent (Reddy & Knight 2011 ADJPAGESIM); word repetition rate (0.84% Currier A, 0.94% B) lies inside the natural-language range (0.02-4.8%, mean 0.63%); MATTR at 2,000-word windows resembles medieval Germanic morphology.",
+    "evidence": "Bowern & Lindemann 2021 (Annu. Rev. Linguist. 7:285-308) sections 1.1, 3, 4.3; Sterneck, Polish & Bowern 2021 arXiv:2107.02858; Lindemann 2022 'Crux of the MATTR' (CEUR Vol-3313 paper9: 160 modern languages, Turkic/Uralic excluded); Reddy & Knight 2011 (ACL LaTeCH): word entropy ~10 bits comparable to baselines, page topicality between English and Quran.",
+    "source": "doi:10.1146/annurev-linguistics-011619-030613; arXiv:2107.02858; ceur-ws.org/Vol-3313/paper9.pdf; Reddy & Knight 2011",
+    "strength": "moderate",
+    "counter": "Bowern & Lindemann's premise that 'gibberish is by nature random' was refuted by their own lab a year later (Gaskell & Bowern 2022). Topic-hand co-clustering is confounded: if each scribe self-cited from his own pages, topics would track hands automatically (Timm & Schinner 2023). MATTR only shows Voynichese has a type-token profile like an inflecting language, which a copy-and-vary generator also produces (Lindemann concedes any gibberish method 'should be able to produce' the observed MATTR). No study yet controls topic recovery for physical page adjacency and scribe simultaneously.",
+    "year": "2021"
+   },
+   {
+    "claim": "(Counter-evidence, but double-edged) Voynichese character statistics are extreme: h1 = 3.83 +/- 0.04 bits vs 4.01 +/- 0.02 for Latin/Italian/German plaintexts; conditional h2 = 1.84-2.12 (EVA/Cuva/FSG/C-D) vs 3.04-3.27; Bennett 1976 gave h2 = 2.22 vs 3.01-3.37 for European languages; conditional entropy lower than all 250 languages in Lindemann & Bowern's Wikipedia corpus and not reachable by devoweling or abbreviation (abbreviated Latin h2 ~3.4).",
+    "evidence": "Zandbergen voynich.nu/extra/sol_ent.html and a2_char.html; Lindemann & Bowern 2020/21 arXiv:2010.14697; Bowern & Lindemann 2021 sec. 2.3.2.",
+    "source": "voynich.nu; arXiv:2010.14697",
+    "strength": "strong",
+    "counter": "Both camps use this. Hoax side (Schinner, Rugg & Taylor, Timm): a copy-and-vary process trivially produces low h2. Cipher side: verbose/homophonic substitution (Bowern & Gaskell 2022; Greshko 2025 Naibbe, h1 3.86 +/- 0.01, h2 2.00 +/- 0.01, and 3.92/2.32 against Cuva Voynich B) produces the same values from Latin/Italian plaintext. Zandbergen explicitly leaves three options open (meaningless process, exotic language, complex transformation). Hence entropy constrains the mechanism but does not decide meaning.",
+    "year": "1976-2021"
+   },
+   {
+    "claim": "(Counter-evidence) A historically plausible hand cipher (Naibbe: dice split plaintext into 1-2 letter units, card draw selects one of six substitution tables) turns Latin/Italian into text matching many VMS statistics at once (h1, h2, word-length distribution 'almost identical', slot grammar, over/under-produced glyph pairs), while remaining fully decipherable; therefore the low-level statistics do not require meaninglessness.",
+    "evidence": "Greshko 2025, Cryptologia, doi:10.1080/01611194.2025.2566408 (open access); code github.com/greshko/naibbe-cipher; datasets Zenodo 10.5281/zenodo.16415087. Author notes 'incomplete replication of Voynich B's properties' and that any real system would encode only ~1-2 plaintext letters per token.",
+    "source": "Greshko, M.A. (2025) 'The Naibbe cipher', Cryptologia 1-37",
+    "strength": "moderate",
+    "counter": "Shows feasibility, not actuality: no key, no decipherment, and Voynich B not fully matched. Cuts both ways: it confirms that Zipf, binomial length and low h2 are cheap to produce by any structured process, weakening the discriminating power of every statistic used by both sides. Commenters (e.g., Schneier blog thread) note it does not adjudicate hoax vs asemic vs cipher.",
+    "year": "2025"
+   },
+   {
+    "claim": "(Counter-evidence, physical/paleographic) Five distinct scribal hands (Davis 2020) share one writing system with consistent statistics; Currier A/B is a robust, intrinsic property recoverable from raw character-pair counts (BIC selects 2 components; 89% held-out folio prediction; delta-AIC 2,549 for a two-state vowel switch after ch/sh; 195/197 folios unambiguous).",
+    "evidence": "Davis, L.F. (2020) Manuscript Studies 5(1):164-180; Parisel 2026 arXiv:2604.25979 (preprint, not peer-reviewed).",
+    "source": "doi:10.1353/mns.2020.0011; arXiv:2604.25979",
+    "strength": "moderate",
+    "counter": "Timm 2014/2026 treats A/B as temporal drift of one generative habit (B written after A), and argues variants invented later never appear on earlier pages; multiple hands could still share a copying convention if later scribes copied earlier pages. Davis's hand attribution has itself been challenged (Timm 2026 critiques the five-scribe hypothesis; Pelling 2021 raises scribe-2 error-pattern questions). Parisel's model shows structure, not meaning: a rule-governed generator would also produce a discrete switch.",
+    "year": "2020-2026"
+   },
+   {
+    "claim": "Voynichese belongs to the same statistical 'universality class' as the Enochian tables of Liber Loagaeth (Dee/Kelly), a known product of scrying/glossolalic composition; therefore it most likely carries no rationally comprehensible content.",
+    "evidence": "Daruka 2020, Cryptologia 45(1):44-80: comparative statistical-linguistic analyses of VMS sections and Liber Loagaeth tables; author further speculates on Dee's involvement using Bacon-manuscript character sets.",
+    "source": "Daruka, I. (2020) 'On the Voynich manuscript', Cryptologia 45(1):44-80, doi:10.1080/01611194.2019.1706063",
+    "strength": "weak",
+    "counter": "A Dee/Kelly (1580s) provenance contradicts the 1404-1438 vellum date and the 1639 Baresch letter unless one posits old vellum; statistical similarity to one other odd text is not a generative account; Bowern & Lindemann 2021 cite it only as another hoax vote. No independent replication located.",
+    "year": "2020"
+   },
+   {
+    "claim": "Symbol-position autocorrelation is anomalous: 90.4% of autocorrelation lags of symbol reuse are significant (vs ~12% in English), spaces are autocorrelated up to 44 lags, and the effective alphabet may reduce from 19 to ~10 symbols via ligatures; plaintext natural language is rejected, and word spaces may be arbitrary.",
+    "evidence": "Matlach, Janeckova & Dostal 2022, PLoS ONE 17(1):e0260948, ACF on 28 language samples and Playfair/Vigenere/Fialka/GPG ciphertexts; MDS 96.8% variance.",
+    "source": "doi:10.1371/journal.pone.0260948",
+    "strength": "moderate",
+    "counter": "Authors favour a Trithemius-style steganographic numeric code, not gibberish; their result is equally compatible with self-citation (Gaskell & Bowern cite it as the only other report of positive word-length autocorrelation, which they show is common in gibberish). So it rejects plaintext, not meaning.",
+    "year": "2022"
+   },
+   {
+    "claim": "Non-peer-reviewed 2025-2026 computational work reports layered positional/directional constraints (right-to-left optimisation within words, left-to-right at word boundaries; n-gram perplexity asymmetry) absent from English, French, Hebrew, Arabic, which neither a parametric slot generator nor a Cardan grille reproduces across their parameter spaces; interpreted as 'cipher-like'.",
+    "evidence": "Parisel 2025 arXiv:2509.10573 and 2026 arXiv:2604.19762 (single independent author, cs.CR, no journal review).",
+    "source": "arXiv:2509.10573; arXiv:2604.19762",
+    "strength": "weak",
+    "counter": "Untested against the Timm-Schinner self-citation generator and against human gibberish corpora (*inferred from abstract; full parameter tables not verified); directional asymmetry can arise from any process with position-dependent glyph choice, including copying rules (line-initial 9/o/8/s, paragraph-initial gallows) that Timm documents.",
+    "year": "2025-2026"
+   }
+  ],
+  "consensus_state": "No consensus, but the debate has moved. (1) Low-level statistics are now agreed to be non-diagnostic: Zipf, binomial word length, low h1/h2, adjacent-word similarity and repeat rates are reproduced by human gibberish (Gaskell & Bowern 2022), by explicit generators (Rugg & Taylor 2016; Timm & Schinner 2020) and by a hand cipher from Latin (Greshko 2025). The Yale linguistics group, previously the main academic opponent of the hoax view, conceded in 2022 that the 'too non-random to be meaningless' argument is refuted, while its companion paper showed the same anomalies are compatible with encipherment. (2) The hoax/meaningless position is a serious minority view held mainly by Timm & Schinner (peer-reviewed in Cryptologia 2020, 2021, 2023) with Rugg, Daruka and, conditionally, Gaskell; most manuscript scholars (Davis, Clemens), Zandbergen (formally agnostic) and Bowern/Lindemann lean toward an encoded meaningful text, largely on higher-level evidence: section/topic and scribe co-clustering, page-adjacency similarity, long-range keyword information (Montemurro & Zanette), the cost and multi-scribe collaboration implied by a 200+ page vellum codex, and the failure of any generator to reproduce all features simultaneously. (3) Hoax proponents answer that those higher-level features are confounds of per-scribe/per-section self-citation and have not been tested against MS-length structured gibberish. (4) 2023-2026 output is thin on peer-reviewed tests: Timm & Schinner 2023 (rebuttal essay), Greshko 2025 (cipher feasibility), Timm 2026 and Parisel 2025-26 (preprints). The December 2026 Malta conference CFP still frames the question as open ('hoax, natural language, or enciphered') and bars proposed solutions. Field's operative position: meaninglessness is neither established nor excluded; the burden has shifted to whichever side can reproduce or explain the page/section/scribe-level structure with a fully specified model. (Checked: primary texts of Gaskell & Bowern 2022, Bowern & Gaskell 2022, Bowern & Lindemann 2021, Timm 2014/2016, Zandbergen 2021 and voynich.nu entropy pages, Montemurro & Zanette 2013, Reddy & Knight 2011, Lindemann 2022; abstracts only for Rugg 2004, Rugg & Taylor 2016, Schinner 2007, Timm & Schinner 2020/2021/2023, Daruka 2020, Greshko 2025. Not checked: paywalled full texts of the Cryptologia papers; user must verify quoted numbers against them. All output unvalidated until user review.)",
+  "decisive_tests": [
+   "Pre-registered generator bake-off at full manuscript length: run (a) the Timm-Schinner self-citation generator, (b) Rugg/Zandbergen table-grille or wheel output, (c) Naibbe-enciphered Latin/Italian, (d) long-form human gibberish, and (e) enciphered medieval herbals through one identical metric battery that includes the higher-level statistics both sides invoke: Montemurro-Zanette information peak and scale (~807 words), topic/illustration/scribe co-clustering (LDA/NMF as in Sterneck et al.), ADJPAGESIM page-adjacency similarity, Currier A/B separability (Parisel's beta-binomial test), positional f/p and gallows rules, within-word character-position bias (charbias_words_mean, the one metric gibberish failed), word-length autocorrelation and repeat-distance decay. A model that reproduces all simultaneously would decide the mechanism; systematic failure of every meaningless generator on the same feature set would be strong evidence for encoded content.",
+   "MS-length human gibberish experiment (Gaskell & Bowern's stated open test): have several writers produce 30k+ words over weeks with plant/astronomical illustrations and section breaks, then test whether keyword clustering, illustration-topic correlation and A/B-like drift emerge spontaneously; if yes, the higher-level anti-hoax evidence collapses; if not, it survives.",
+   "Illustration-text mutual information under confound control: predict illustration class (herbal, balneological, astronomical, pharmaceutical) or plant identity from text using held-out pages while controlling for scribal hand, quire and physical adjacency; self-citation predicts prediction accuracy falls to chance once adjacency and hand are partialled out, whereas encoded content predicts residual signal, especially for labels that recur across the herbal and pharmaceutical sections depicting the same plant.",
+   "Copy-order test of autocopy: self-citation predicts that similar-word density is a function of physical writing order (including across page and bifolio boundaries in the original quire sequence) and that Currier B pages were written after A; test against codicological page order, ink/multispectral layering and Davis's hand assignments; a shared vocabulary across hands and non-adjacent pages that tracks subject rather than writing order would falsify simple self-citation.",
+   "Ultimately decisive: a key that deciphers held-out passages into coherent text with out-of-sample validation (as the Malta 2026 CFP implies, no proposed solution so far has met this bar); short of that, demonstrate a lower bound on text-to-image mutual information significantly above what any calibrated structured-gibberish null achieves."
+  ],
+  "sources": [
+   "Rugg, G. (2004) An elegant hoax? A possible solution to the Voynich manuscript. Cryptologia 28(1):31-46. https://www.tandfonline.com/doi/abs/10.1080/0161-110491892755",
+   "Rugg, G. & Taylor, G. (2016/2017) Hoaxing statistical features of the Voynich Manuscript. Cryptologia 41(3):247-268. https://www.tandfonline.com/doi/abs/10.1080/01611194.2016.1206753 ; authors' summary https://hydeandrugg.wordpress.com/2016/09/25/the-rugg-and-taylor-cryptologia-article-on-the-voynich-manuscript/",
+   "Schinner, A. (2007) The Voynich manuscript: evidence of the hoax hypothesis. Cryptologia 31(2):95-107. https://www.tandfonline.com/doi/abs/10.1080/01611190601133539",
+   "Timm, T. (2014) How the Voynich manuscript was created. arXiv:1407.6639. https://arxiv.org/abs/1407.6639",
+   "Timm, T. (2016) Co-occurrence patterns in the Voynich manuscript. arXiv:1601.07435. https://arxiv.org/abs/1601.07435",
+   "Timm, T. & Schinner, A. (2020) A possible generating algorithm of the Voynich manuscript. Cryptologia 44(1):1-19. https://www.tandfonline.com/doi/abs/10.1080/01611194.2019.1596999 ; https://github.com/TorstenTimm/SelfCitationTextgenerator",
+   "Timm, T. & Schinner, A. (2021) Review of The linguistics of the Voynich manuscript by Claire Bowern and Luke Lindemann. Cryptologia 45(5):434-438. https://www.tandfonline.com/doi/abs/10.1080/01611194.2021.1911875",
+   "Timm, T. & Schinner, A. (2023/2024) The Voynich manuscript: discussion of text creation hypotheses. Cryptologia (vol 47/48 no 4, pp 307-322). https://www.tandfonline.com/doi/abs/10.1080/01611194.2023.2225716",
+   "Timm, T. (2026) The Challenge of Analyzing a Dynamic Text (preprint, Academia.edu, Feb 2026); discussion https://www.voynich.ninja/thread-5376.html",
+   "Gaskell, D.E. & Bowern, C.L. (2022) Gibberish after all? CEUR-WS Vol-3313 paper4. https://ceur-ws.org/Vol-3313/paper4.pdf ; https://github.com/danielgaskell/voynich",
+   "Bowern, C.L. & Gaskell, D.E. (2022) Enciphered after all? CEUR-WS Vol-3313 paper6. https://ceur-ws.org/Vol-3313/paper6.pdf",
+   "Bowern, C.L. & Lindemann, L. (2021) The Linguistics of the Voynich Manuscript. Annual Review of Linguistics 7:285-308. https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011619-030613",
+   "Lindemann, L. & Bowern, C. (2020/2021) Character Entropy in Modern and Historical Texts. arXiv:2010.14697. https://arxiv.org/abs/2010.14697",
+   "Sterneck, R., Polish, A. & Bowern, C. (2021) Topic Modeling in the Voynich Manuscript. arXiv:2107.02858. https://arxiv.org/abs/2107.02858",
+   "Lindemann, L. (2022) Crux of the MATTR: Voynichese Morphological Complexity. CEUR-WS Vol-3313 paper9. https://ceur-ws.org/Vol-3313/paper9.pdf",
+   "Montemurro, M.A. & Zanette, D.H. (2013) Keywords and Co-Occurrence Patterns in the Voynich Manuscript. PLoS ONE 8(6):e66344. https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066344",
+   "Amancio, D.R. et al. (2013) Probing the Statistical Properties of Unknown Texts: Application to the Voynich Manuscript. PLoS ONE 8(7):e67310. https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0067310",
+   "Reddy, S. & Knight, K. (2011) What we know about the Voynich manuscript. ACL LaTeCH workshop, pp. 78-86.",
+   "Zandbergen, R. (2021) The Cardan grille approach to the Voynich MS taken to the next level. arXiv:2104.12548 / https://www.voynich.nu/papers/Grilles_RZ_2021.pdf",
+   "Zandbergen, R. voynich.nu entropy and word statistics pages: https://www.voynich.nu/extra/sol_ent.html ; https://www.voynich.nu/a2_char.html ; https://www.voynich.nu/a4_word.html ; references https://www.voynich.nu/refs.html",
+   "Davis, L.F. (2020) How Many Glyphs and How Many Scribes? Manuscript Studies 5(1):164-180. https://repository.upenn.edu/mss_sims/vol5/iss1/6/",
+   "Daruka, I. (2020) On the Voynich manuscript. Cryptologia 45(1):44-80. https://www.tandfonline.com/doi/full/10.1080/01611194.2019.1706063",
+   "Matlach, V., Janeckova, B.A. & Dostal, D. (2022) The Voynich manuscript: Symbol roles revisited. PLoS ONE 17(1):e0260948. https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0260948",
+   "Greshko, M.A. (2025) The Naibbe cipher. Cryptologia 1-37. https://www.tandfonline.com/doi/full/10.1080/01611194.2025.2566408 ; https://github.com/greshko/naibbe-cipher ; coverage https://www.sci.news/othersciences/linguistics/voynich-manuscript-cipher-14466.html",
+   "Parisel, C. (2025) Directionality of the Voynich Script. arXiv:2509.10573; (2026) Evidence of Layered Positional and Directional Constraints. arXiv:2604.19762; (2026) A Quantitative Confirmation of the Currier Language Distinction. arXiv:2604.25979",
+   "Pelling, N. (2016) Gordon Rugg ... cracks it once again (NOT). https://ciphermysteries.com/2016/09/14/gordon-rugg-man-cracked-mystery-voynich-manuscript-cracks-not",
+   "Vogt, E. (2012) The Line as a Functional Unit in the Voynich Manuscript (working paper).",
+   "Language Log (Mair, V.) Yet again the Voynich manuscript. https://languagelog.ldc.upenn.edu/nll/?p=65930",
+   "Medieval Academy blog: Call for Papers, 2026 International Conference on the Voynich Manuscript (online, 9 Dec 2026, University of Malta). https://www.themedievalacademyblog.org/call-for-papers-the-voynich-manuscript/",
+   "Wikipedia, Voynich manuscript (overview of statistics and hoax debate; secondary). https://en.wikipedia.org/wiki/Voynich_manuscript"
+  ]
+ },
+ {
+  "hypothesis": "The Voynich manuscript text (Beinecke MS 408) is enciphered natural language. Sub-question: which cipher classes are excluded by reproducible statistics, which are merely unlikely, and which remain live as of September 2026.",
+  "claims": [
+   {
+    "claim": "Voynichese second-order (conditional) character entropy is far below every European language, so it cannot be a simple monoalphabetic substitution of Latin, Italian, German, etc.",
+    "evidence": "Bennett (1976) first reported h2 roughly 0.8 bits below European languages, closest to Hawaiian. Zandbergen's tabulation: Voynich H0 3.83-3.87 vs Latin/Italian/German 4.00-4.04; conditional entropy H1 1.84-2.12 (Currier-D, FSG, ZL-Eva, ZL-Cuva) vs 3.04-3.27 (Mattioli, Pliny, Dante, Tristan). Lindemann & Bowern (2021, arXiv 2010.14697): h2 Voynich A 2.31, Voynich B 2.43 (maximal transcription), minimal transcription mean 2.48 vs 294-language Wikipedia range 2.77-6.14; nearest are Hawaiian 2.77, Venda 2.79, Tswana 2.82, Min Dong 2.84; h2 is stable to ~0.1 bit at 10k words. A monoalphabetic substitution leaves h2 unchanged by construction.",
+    "source": "Bennett 1976 'Scientific and Engineering Problem-Solving with the Computer'; voynich.nu/extra/sol_ent.html; arXiv 2010.14697",
+    "strength": "strong",
+    "year": "1976; 2021",
+    "counter": "Pelling (2017) argues entropy values depend on unresolved glyph parsing (EVA is near stroke-level); Stallings (1998) showed Bennett's Hawaiian sample lacked vowel-length/okina marks. Neither rescues simple substitution: Lindemann & Bowern show every transcription (Currier, EVA, v101, maximal/minimal) stays below all comparison texts, and re-tokenizing into ~50 glyph pairs (Pelling's own tables) barely moves h2 (4.03/4.01/4.04 on his scheme)."
+   },
+   {
+    "claim": "Simple substitution plus conventional medieval Latin abbreviation, or of a vowel-less (abjad) plaintext, is also excluded as an explanation of the low h2.",
+    "evidence": "Lindemann & Bowern built parallel diplomatic vs normalized texts (Medical Casebooks, Necrologium Lundense, Codex Wormianus, Hebrew Bereshit with/without niqqud): scribal abbreviations RAISE conditional entropy, and vowel-less Hebrew remains above Voynichese. Conclusion quoted: the unusual entropy is 'not attributable to conventional scholarly abbreviations or the absence of characters that represent vowels'. Zandbergen: expanding glyphs into letter groups (e.g. one glyph -> 'ius') lowers, not raises, entropy, so abbreviation-expansion 'a very firm: no'.",
+    "source": "arXiv 2010.14697; voynich.nu/extra/sol_ent.html",
+    "strength": "strong",
+    "year": "2021",
+    "counter": "Nicholas Gibbs (TLS 2017) and several 2020-2026 'Cappelli abbreviation' readings (Edwards; Schechter's 'Latin-Occitan' GitHub) claim abbreviated Latin anyway; none supplies a reproducible key that yields grammatical Latin, and Fagin Davis rejected Gibbs for palaeographic inconsistencies. *Untested residual: non-standard, idiosyncratic shorthand (Pelling's 'Quattrocento shorthand') is not the same as conventional abbreviation and was not in the L&B corpus.*"
+   },
+   {
+    "claim": "Currier (1976): the text contains two statistically distinct 'languages' A and B, and the line is a functional unit; this rules out a straightforward encipherment of running linguistic text.",
+    "evidence": "Currier: words beginning with ct/c't occur line-initially at ~1/10 expected frequency; certain glyphs are line-final fillers (m, g); in ~25,000 words 'not one single case of a repeat going over the end of a line to the beginning of the next'; word-final glyphs condition the next word's initial. His verdict: 'this can't be a straightforward simple encipherment of any linguistic data; there has to be an intermediate step somewhere.' Fagin Davis (2020) found 5 scribes; scribes 1,4 write A, scribes 2,3,5 write B, no hand writes both. Parisel (2026, arXiv 2604.25979): two-state model predicts Currier labels at 89% blind, dAIC 2549 vs one-state, 195/197 folios assigned, dominant feature a folio-level boolean switch on the vowel after ch/sh.",
+    "source": "voynich.com/currier1.htm; Currier papers PDF at voynich.nu/extra/img/curr_main.pdf; Fagin Davis Manuscript Studies 2020; arXiv 2604.25979",
+    "strength": "strong",
+    "year": "1976; 2020; 2026",
+    "counter": "A/B could be two ciphers/key tables, two dialects, or two scribal habits; Zattera (2022) shows the A/B split is a difference in word-internal structure, not vocabulary, with further sub-'languages' by section. Line effects are compatible with a per-line generation procedure (grille, table, or self-citation) but hard to reconcile with a cipher that treats plaintext as a continuous stream."
+   },
+   {
+    "claim": "Voynichese words obey a rigid positional grammar (Tiltman 1951/1968; Stolfi 2000 core-mantle-crust; Zattera 2022 12-slot alphabet) unlike any European plaintext; this excludes ciphers that preserve or randomize letter order within words (plain substitution, Vigenere-type polyalphabetics, letter-level transposition).",
+    "evidence": "Stolfi's grammar covers >96.5% of text tokens and 88% of label tokens; Stolfi: 'simple Vigenere-style ciphers ... seem to be out of the question'. Zattera: 86.6% of tokens fit a 12-slot template, 10.4% are concatenations of two regular words, 3.0% unstructured (82% of those are hapax); 9 of 12 slots admit only a few glyphs. Rozanova & Temerev (2026, arXiv 2608.17096): order concentrates at token edges (edge-glyph mutual information 0.2 bits, above all prose controls), hapax rate 70% vs 41-60% controls.",
+    "source": "voynich.nu/hist/stolfi/grammar.html; ceur-ws.org/Vol-3313/paper10.pdf; arXiv 2608.17096",
+    "strength": "strong",
+    "year": "2000; 2022; 2026",
+    "counter": "Stolfi himself notes the structure is compatible with a codebook cipher, a constructed language, or a syllabic (East Asian) language; Bowern & Gaskell (2022) found that sorting letters within words alphabetically was among the manipulations closest to Voynichese, so within-word anagramming (Hauer-Kondrak's premise) is not excluded by word structure alone."
+   },
+   {
+    "claim": "Letter-level transposition (including Cardan-grille rearrangement of a real plaintext) is excluded; word-level transposition is untestable by character statistics.",
+    "evidence": "Transposition preserves unigram frequencies and destroys within-word structure, whereas Voynichese has un-European unigram entropy (H0 3.83 vs 4.0+) and extreme within-word order (above). Parisel (2026, arXiv 2604.19762): word-internal right-to-left optimization with left-to-right dependency at boundaries, 80.6% end-class to start-class transition rate; a slot generator cannot jointly reach cross-boundary MI and the transition rate, and a Cardan grille (Rugg's variant) cannot jointly reach the transition rate and Zipfian shape; neither pattern appears in English, French, Hebrew or Arabic controls. Currier's zero cross-line repeats and Feaster's (2022) 'rightwardness' (e.g. Sh-initial words score 0.433 mid-line; ~90% of matched word pairs conform) show glyph choice depends on line position, which no plaintext transposition produces.",
+    "source": "arXiv 2604.19762; ceur-ws.org/Vol-3313/paper12.pdf; voynich.com/currier1.htm",
+    "strength": "moderate",
+    "year": "1976; 2022; 2026",
+    "counter": "*Inference: the exclusion is of transposition acting on letters of a European plaintext; whole-word or block transposition after some other encoding leaves all character statistics untouched and can only be tested via syntax/topic locality (Montemurro & Zanette 2013; Sterneck et al. 2021 find topic clusters matching illustration and scribe, which argues against heavy word scrambling).* Pelling (2009) still posits an 'in-page transposition' for gallows and a 'space transposition' to hide repeats; not quantified."
+   },
+   {
+    "claim": "Verbose (one plaintext letter -> several glyphs) homophonic substitution with nulls is NOT excluded: Greshko's Naibbe cipher (Cryptologia, Nov 2025) reproduces several headline statistics from Latin/Italian by hand with 15th-century tools.",
+    "evidence": "Naibbe: die roll splits plaintext into unigram/bigram units, card draw selects one of several tables (6 encodings per unigram, 36 per bigram per commentary), output follows an expanded slot grammar. Reported EVA character entropy 3.86 +/- 0.01 and conditional entropy 2.00 +/- 0.01 (VMS EVA: 3.86/2.00), near-identical word-length distribution, matching glyph frequencies and positional patterns; ciphertexts remain decipherable. Hermes (2022) shows Trithemius' Polygraphia III, applied as a random procedure, also mimics low joint entropy and binomial word lengths. Bowern & Gaskell (2022, 22 manipulations): encoding multiple phonemes as bigraphs lowers h2 to Voynich levels for Latin; nulls in some patterns raise word-formation predictability; closest matches are contrast-merging, vowel-removal, affix-replacement and letter-sorting manipulations, with Currier B matching better than A.",
+    "source": "doi:10.1080/01611194.2025.2566408; github.com/greshko/naibbe-cipher; ceur-ws.org/Vol-3313/paper6.pdf; Hermes, CEUR Vol-3313",
+    "strength": "moderate",
+    "year": "2022; 2025",
+    "counter": "Greshko: 'incomplete replication of Voynich B's properties' and no claim the VMS is a ciphertext. Schneier-blog critique (Dillinger): Naibbe was fitted to a linearized text and does not reproduce line-position rules or the manuscript's whitespace behaviour; information density falls to ~1/3 bit per glyph. Rozanova & Temerev (2026): consecutive-token predictability <1% of token entropy vs 2-10% in controls, which they argue is incompatible with padding/expansion ciphers; Zandbergen: contracting glyph groups (Eva->Cuva) raises H1 only 1.84->2.12, so the required expansion is extreme. Bowern & Gaskell warn of circularity and note no manipulated text is as close to Voynichese as other Voynichese subsets."
+   },
+   {
+    "claim": "Hauer & Kondrak (TACL 2016): under the assumption of monoalphabetic substitution + within-word anagramming + abjad, Hebrew is the best-fitting source language; this is a language-ID result, not a decipherment.",
+    "evidence": "Method validated at 97% language ID on 380 UDHR languages and 93% word accuracy decrypting 50 anagrammed ciphertexts in 5 languages. Applied to 43 Currier-B pages (17,597 words, 95,465 chars, 35-symbol Currier alphabet): decomposition-pattern distance to Hebrew 0.020 vs 0.048 for second-ranked Malay; VMS alphagram-distance minimum less than half of Hebrew's; first line rendered into Hebrew and, after 'a couple of spelling corrections', Google-translated to 'She made recommendations to the priest, man of the house and me and people.' Authors' own caveat (5.4): results are 'either tantalizing clues for Hebrew ... or simply artifacts of the combinatorial power of anagramming and language models'; 'None of the decipherments appear to be syntactically correct or semantically consistent.'",
+    "source": "aclanthology.org/Q16-1006",
+    "strength": "weak",
+    "year": "2016",
+    "counter": "Gorman (wellformedness.com): assumptions unsupported; benchmark snippets below unicity distance; single sentence hand-edited; 43/240 pages. Zandbergen (voynich.nu/misc/misc_01): 35 Currier symbols vs 22 Hebrew letters unexplained; the translated first line is in Currier-A while the model was trained on B; low bigram entropy unaddressed; result not checked across FSG/EVA/v101. Kondrak publicly stated 'We do not claim to have deciphered the manuscript' (2018)."
+   },
+   {
+    "claim": "Cheshire (Romance Studies, 2019) 'proto-Romance' reading is rejected.",
+    "evidence": "Claimed a phonetic script for an unattested 'proto-Romance' with a full decipherment in two weeks. University of Bristol withdrew its press release within a day after 'concerns ... from academics in linguistics and medieval studies'. Critics (Fagin Davis: ''proto-Romance language' is not a thing'; Gheuens: proto-Italic extinct millennia earlier, standard Latin 'Alfonsus dei gratia Rex Aragonum' misread as a Romance hybrid, macron abbreviation misread as a pitch mark; readings inconsistent with his own rules; no reproducible key; no engagement with entropy or word-structure constraints).",
+    "source": "Romance Studies 37(1) 2019; shropshirestar.com 2019/05/17; herculeaf.wordpress.com 2019/05/18; websites.umass.edu/phonolist/?p=2127",
+    "strength": "refuted",
+    "year": "2019",
+    "counter": "Cheshire maintains the reading and has self-published follow-ups; no independent replication."
+   },
+   {
+    "claim": "Bax (2014) 'provisional partial decoding' of ~10 words / 14 signs via plant and star names is not a cipher solution and has not been substantiated.",
+    "evidence": "Bax proposed sound values from presumed labels (juniper, Taurus, coriander, etc.) assuming an unenciphered unknown language. Pelling: 'every one of Bax's conclusions appeared to be built upon easily demonstrable mistakes'; no statistical account of the entropy/word-structure anomalies; identifications rest on illustration matches that are themselves disputed. Elenigmavoynich (2026) status: 'survives as an interesting hypothesis, not as a decipherment'.",
+    "source": "stephenbax.net 2014 PDF; ciphermysteries.com/2014/02/21",
+    "strength": "weak",
+    "year": "2014",
+    "counter": "Bax framed it as provisional and testable; supporters note the label-based approach is how Linear B and Egyptian were cracked. No follow-up produced additional consistent readings before his death (2017)."
+   },
+   {
+    "claim": "2018-2026 language-specific claims (Old Turkish/Ardic; Judaeo-Greek/Caveney; medieval Galician/Gladyseva 2023; Latin-Occitan/Schechter 2025; Hebrew-Aramaic web tools) and post-May-2025 LLM-assisted 'solutions' have no scholarly acceptance.",
+    "evidence": "Ardic family (ATA) claim >30% translated as phonetic Old Turkic; 2025 paper 'The Code Is Deciphered ... How Does AI Assess the Findings' in a Turkish-studies venue; Zandbergen: 'pseudo-rigorous ... readings rest on pure speculation'; Gheuens' 2025 review negative. Caveney's Judaeo-Greek is a voynich.ninja forum theory without publication. Gladyseva's Galician was presented at a Vilnius conference and on Medium. Schechter's GitHub claims '87.8% coverage, 3,648-entry glossary'. arXiv 2505.02261 offers Fibonacci/golden-ratio 'structured decoding'. Zandbergen (voynich.nu/notice.html): 'If you have a solution based on interaction with ChatGPT ... please DO NOT ask me to review it. Since May 2025 there are new ones every week.' Fagin Davis (Medieval Academy): none meets 'the minimum criteria of a real decipherment' (reproducibility, coherent full-text output, peer review).",
+    "source": "academia.edu/129055807; voynichrevisionist.com 2025/03/25; voynich.ninja thread 2697; github.com/scott-schechter/voynich-decoded; arXiv 2505.02261; voynich.nu/notice.html; elenigmavoynich.com 2026",
+    "strength": "weak",
+    "year": "2018-2026",
+    "counter": "Proponents argue mainstream researchers refuse engagement; however none has published a key that a third party can apply to unselected folios, and none addresses why the same key yields Currier A vs B or the line-position effects."
+   },
+   {
+    "claim": "Statistical evidence for meaning at the word/topic level (Montemurro & Zanette 2013; Sterneck, Polish & Bowern 2021) supports 'enciphered language' over 'random text', but human-produced gibberish also reproduces most of it.",
+    "evidence": "Montemurro & Zanette: long-range information structure with optimal scale ~807 words, information profile between English and Latin; keyword networks align with illustrated sections; 'severely limits the scope of the hoax hypothesis'. Sterneck et al.: LDA/LSA/NMF topics match scribe x subject matter. Counter-data: Gaskell & Bowern (2022), 42 volunteers writing gibberish: VMS plausibly resembles gibberish on 41/42 metrics and meaningful text on 38/42; a classifier labels most VMS transcriptions gibberish (low confidence); VMS shows positive word-length autocorrelation typical of gibberish. Timm & Schinner (Cryptologia 2020) self-citation generator reproduces both Zipf laws and word-similarity clustering; their 2023 Cryptologia review of the Malta proceedings keeps self-citation as a serious hypothesis.",
+    "source": "PLOS ONE 8(6) e66344; arXiv 2107.02858; ceur-ws.org/Vol-3313/paper4.pdf; doi:10.1080/01611194.2019.1596999; doi:10.1080/01611194.2023.2225716",
+    "strength": "moderate",
+    "year": "2013-2023",
+    "counter": "Zipf-type and topic-clustering statistics do not discriminate cipher from structured gibberish; Gaskell & Bowern explicitly say page/quire-level structure 'could also be produced by gibberish'. Conversely Zandbergen finds existing proofs of meaninglessness 'not convincing'."
+   },
+   {
+    "claim": "All statistics are transliteration-dependent; Zandbergen's 2022 keynote quantifies the uncertainty and provides a super-alphabet (STA, ~299 codes) and IVTFF format so any analysis can be rerun across alphabets.",
+    "evidence": "Five main files (FSG, Currier/D'Imperio, IT/Takahashi, ZL/Zandbergen-Landini, GC/Claston-v101). Character-level correspondence between files generally >95% (GC just over 90%); glyph-family correspondence up to 99%. Hapax-legomena share per token ranges 14.1% (ZL all spaces) to 19.6% (GC certain spaces), 'completely dominated by the accuracy of the transliteration'. Bigram frequencies per page change markedly between Cuva-1 and Cuva-2 parsings. EVA is stroke-like and its assumptions 'were likely sub-optimal or even incorrect', biasing downstream analyses.",
+    "source": "ceur-ws.org/Vol-3313/keynote1.pdf; voynich.nu/transcr.html",
+    "strength": "strong",
+    "year": "2022",
+    "counter": "Lindemann & Bowern show the h2 anomaly survives every transcription and parsing tested, so parsing uncertainty widens error bars but does not overturn the substitution exclusion. Pelling argues no parsing has yet maximized the h1:h2 ratio, so the 'true' token inventory is still unknown."
+   },
+   {
+    "claim": "D'Imperio (1978) catalogued the cipher hypotheses (substitution, polyalphabetic, Trithemius/Selenus systems, Cardan grille, codebook/nomenclator, synthetic languages, shorthand) and found no quantitative basis to choose; Friedman favoured an a priori artificial language; Tiltman's word-structure findings were judged the firmest constraint.",
+    "evidence": "'An Elegant Enigma' (NSA, 1978) chapters 4-5; frequency tables but no discriminating statistic; Newbold's shorthand-microscopy reading dismissed via Manly. The Friedman/Tiltman/Currier line concluded the text is not a simple cipher of a known language and possibly synthetic.",
+    "source": "archive.org VoynichManuscriptAnElegantEnigma; voynich.nu/extra/curr_main.html",
+    "strength": "moderate",
+    "year": "1978",
+    "counter": "Historical, pre-entropy-corpus work; useful as a taxonomy, not as evidence."
+   },
+   {
+    "claim": "Low-entropy natural languages (Polynesian, Bantu, Sinitic romanizations) narrow but do not close the gap; a direct unenciphered exotic language remains merely unlikely.",
+    "evidence": "Closest h2 values Hawaiian 2.77, Venda 2.79, Tswana 2.82, Min Dong 2.84 vs Voynich 2.11-2.48 depending on transcription; these languages' predictability comes from CV syllable structure and vowel-final words (97% of Venda words end in a vowel), a pattern Voynichese only partly mirrors. Zandbergen lists 'a language with intrinsically low conditional entropy' as one of three surviving options.",
+    "source": "arXiv 2010.14697; voynich.nu/extra/sol_ent.html",
+    "strength": "moderate",
+    "year": "2021",
+    "counter": "Bowern & Gaskell found devowelled Uzbek/Turkish close to Currier B on line-bias metrics but far on entropy; no single language matches on all metrics simultaneously."
+   }
+  ],
+  "consensus_state": "Strongest counter to the hypothesis first: no proposed cipher, including the best current model (Naibbe, 2025), simultaneously reproduces Currier A/B, the line-position effects (Currier 1976; Feaster 2022), the near-zero token-to-token predictability (Rozanova & Temerev 2026), and the word-length/entropy profile, while human-generated and algorithmic gibberish (Gaskell & Bowern 2022; Timm & Schinner 2020) match 41/42 tested metrics. The enciphered-language hypothesis is therefore live but not favoured over structured meaninglessness.\n\nDefinitively excluded (reproducible, transcription-robust): (1) monoalphabetic substitution of any European language (entropy invariance; Bennett 1976; Zandbergen; Lindemann & Bowern 2021); (2) substitution plus conventional scribal abbreviation, or of vowel-less European/Semitic plaintext (Lindemann & Bowern 2021); (3) Vigenere-type polyalphabetic substitution (would raise, not lower, h2 and cannot generate the slot grammar; Stolfi 2000); (4) letter-level transposition or Cardan-grille rearrangement of a real plaintext (H0 mismatch, rigid within-word order, line-position dependence; Parisel 2026). Merely unlikely / constrained: verbose homophonic substitution with nulls (feasible in principle per Naibbe and Polygraphia III, but incomplete on Currier B, line effects and token predictability); nomenclator/codebook or constructed language (compatible with word grammar, no positive evidence); an unenciphered low-entropy non-European language (nearest h2 2.77 vs 2.1-2.5); within-word anagramming (Hauer & Kondrak) as a component. Live and unresolved: meaningless structured text vs multi-step cipher. Every published claimed decipherment 2014-2026 (Bax, Hauer-Kondrak, Gibbs, Cheshire, Ardic, Caveney, Gladyseva, Schechter, LLM-assisted) lacks a reproducible key and fails Fagin Davis's minimum criteria.\n\nChecked: primary statistics above were read from the cited papers/PDFs (Zandbergen keynote and entropy page, Lindemann & Bowern arXiv, Hauer & Kondrak TACL PDF, Zattera, Feaster, Bowern & Gaskell, Gaskell & Bowern CEUR PDFs, Currier seminar page, Parisel arXiv abstracts, Rozanova & Temerev abstract). Not checked: full text of Greshko's Cryptologia paper (paywalled; numbers taken from the abstract, press coverage and Schneier-blog commentary), Timm & Schinner 2020/2023 full texts (abstracts only), D'Imperio chapter detail (summary of archive.org text), Bax and Cheshire originals beyond critiques, and the Turkish 2025 journal paper. Items marked with * are inferences. User must verify before relying on any figure; all output is unvalidated until reviewed.",
+  "decisive_tests": [
+   "Pre-registered blind decipherment: a claimant publishes the complete key/procedure; an independent party applies it to 10 unselected folios (5 Currier A, 5 Currier B) and to a control of shuffled-glyph Voynichese; acceptance requires grammatical plaintext in the claimed language at a rate significantly above the control and consistent across both Currier languages (or an explicit, documented key change explaining A/B).",
+   "Line-boundary test for cipher class: encipher long Latin/Italian samples with each candidate system (Naibbe, Polygraphia III, Pelling verbose scheme) as a continuous stream and separately with a per-line reset; check whether Currier's zero cross-line repeats in 25k words, the 1/10 line-initial depletion of ct-words, and Feaster's rightwardness scores emerge. Only per-line procedures can pass; a stream cipher that fails excludes that class.",
+   "Token-predictability discriminator: compute Rozanova & Temerev's next-token information (VMS <1% of token entropy; controls 2-10%) on Naibbe, Polygraphia III, self-citation and human-gibberish outputs of matched length. If every plaintext-preserving cipher stays above ~2% while gibberish generators reach <1%, verbose substitution is excluded; if Naibbe-type output also reaches <1%, the test cannot separate cipher from hoax and unicity becomes the issue.",
+   "Transliteration-robustness requirement: any claimed statistic or decipherment must hold across ZL, GC (v101), IT, Currier, Cuva and the Zattera slot alphabet using Zandbergen's STA/IVTFF tooling; results that flip between alphabets (as hapax share does, 14-20%) are inadmissible.",
+   "Unicity-distance computation for the surviving class: for a verbose homophonic cipher with the Naibbe key space (6 unigram + 36 bigram homophones over ~26 letters plus nulls), compute the unicity distance against ~38,000 tokens / ~155,000 glyphs. If the ciphertext is shorter than unicity, no unique decipherment is provable in principle and the field should stop adjudicating 'solutions' and instead test generative models.",
+   "A/B key-switch test: fit Parisel's folio-level boolean switch (vowel after ch/sh) as a table change in a Naibbe-type cipher and check whether one switch reproduces the full A/B signature (final -dy/-89 rates, qo- doubling, Zattera's section-specific grammars). Success supports 'two keys, one system'; failure supports two scribal generation habits."
+  ],
+  "sources": [
+   "https://www.voynich.nu/extra/sol_ent.html",
+   "https://arxiv.org/abs/2010.14697",
+   "https://ceur-ws.org/Vol-3313/keynote1.pdf",
+   "https://www.voynich.nu/transcr.html",
+   "https://www.voynich.com/currier1.htm",
+   "https://voynich.nu/extra/img/curr_main.pdf",
+   "https://arxiv.org/abs/2604.25979",
+   "https://arxiv.org/abs/2604.19762",
+   "https://arxiv.org/abs/2608.17096",
+   "https://ceur-ws.org/Vol-3313/paper10.pdf",
+   "https://ceur-ws.org/Vol-3313/paper12.pdf",
+   "https://ceur-ws.org/Vol-3313/paper6.pdf",
+   "https://ceur-ws.org/Vol-3313/paper4.pdf",
+   "https://ceur-ws.org/Vol-3313/",
+   "https://www.voynich.nu/hist/stolfi/grammar.html",
+   "https://aclanthology.org/Q16-1006/",
+   "http://www.voynich.nu/misc/misc_01.html",
+   "https://www.wellformedness.com/blog/another-pseudo-decipherment-voynich-manuscript/",
+   "https://ciphermysteries.com/2018/01/27/kondrak-hauer-finally-revealed-voynich-manuscripts-secrets-errrm-no-not-really-sorry",
+   "https://ciphermysteries.com/2017/02/21/voynich-entropy-transcription-parsing",
+   "https://ciphermysteries.com/2009/08/27/voynich-cipher-structure",
+   "https://ciphermysteries.com/2014/02/21/stephen-bax-voynich-manuscript",
+   "https://stephenbax.net/wp-content/uploads/2014/01/Voynich-a-provisional-partial-decoding-BAX.pdf",
+   "https://herculeaf.wordpress.com/2019/05/18/cheshire-and-his-proto-romance-voynich-solution/",
+   "https://websites.umass.edu/phonolist/?p=2127",
+   "https://www.shropshirestar.com/news/uk-news/2019/05/17/university-backtracks-over-voynich-manuscript-translation-claims/",
+   "https://www.tandfonline.com/doi/full/10.1080/01611194.2025.2566408",
+   "https://github.com/greshko/naibbe-cipher",
+   "https://www.schneier.com/blog/archives/2025/12/substitution-cipher-based-on-the-voynich-manuscript.html",
+   "https://www.sci.news/othersciences/linguistics/voynich-manuscript-cipher-14466.html",
+   "https://archaeologymag.com/2026/01/voynich-manuscript-may-be-a-cipher/",
+   "https://www.tandfonline.com/doi/abs/10.1080/01611194.2019.1596999",
+   "https://www.tandfonline.com/doi/abs/10.1080/01611194.2023.2225716",
+   "https://arxiv.org/abs/2104.12548",
+   "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066344",
+   "https://arxiv.org/abs/2107.02858",
+   "https://www.annualreviews.org/content/journals/10.1146/annurev-linguistics-011619-030613",
+   "https://campuspress.yale.edu/clairebowern/voynich",
+   "https://archive.org/stream/VoynichManuscriptAnElegantEnigma/Voynich%20Manuscript-%20An.%20Elegant.%20Enigma_djvu.txt",
+   "https://www.voynich.nu/myviews.html",
+   "http://www.voynich.nu/notice.html",
+   "https://www.academia.edu/129055807/_The_Code_Is_Deciphered_The_Answer_Is_Evident_How_Does_AI_Assess_the_Findings_on_the_Voynich_Manuscript_",
+   "https://voynichrevisionist.com/2025/03/25/correspondence-koens-review-of-the-turkic-language-theory/",
+   "https://www.voynich.ninja/thread-2697-page-13.html",
+   "https://github.com/scott-schechter/voynich-decoded",
+   "https://arxiv.org/pdf/2505.02261",
+   "https://elenigmavoynich.com/en/voynich-questions/has-the-voynich-manuscript-been-deciphered-in-2026",
+   "https://medium.com/@robert.edwards_87384/voynich-reconsidered-scribes-and-languages-f9b1fd2a0996",
+   "https://news.yale.edu/2025/02/21/deciphering-mysterious-manuscript"
+  ]
+ },
+ {
+  "hypothesis": "Voynichese (Beinecke MS 408) is statistically language-like at the word and document level (Zipfian frequencies, normal unigram word entropy, medium morphological complexity, page topics, section-level keyword clustering) but is aberrant at the character level and in word sequencing (conditional character entropy h2 ~2.0-2.2 bits vs >2.5-4 for every tested language; rigid word-internal slot grammar; near-absent bigram word order; strong line-position effects; per-folio Currier A/B switch). The natural-language properties it does have are exactly those that human gibberish (Gaskell & Bowern 2022), self-citation generators (Timm & Schinner 2020) and verbose ciphers (Greshko 2025) also reproduce; the properties it lacks are those a one-to-one script of any known language would have. The evidence therefore supports 'non-random, structured, and not a simple substitution of a known language' but does not currently discriminate between an enciphered/encoded natural language and a structured meaningless text; the only features not yet reproduced by any published generator are the 0.2-bit edge-glyph coupling across token boundaries, the ~70% hapax vocabulary, and the large-scale topic/section structure at manuscript length.",
+  "claims": [
+   {
+    "claim": "Voynichese word frequencies follow Zipf's law (rank-frequency power law), as in natural languages.",
+    "evidence": "Landini 2001 (Cryptologia 25:275-295) first showed a smooth Zipfian rank-frequency curve; Reddy & Knight 2011 confirm and call it 'a necessary (though not sufficient) test of linguistic plausibility'; Bowern & Lindemann 2021 Fig. 7 show the first 100 ranks of Voynich A and B fall within the curves for Arabic, Bavarian, Occitan and Turkish (Voynich B less of an outlier once chedy/shedy are merged). Most frequent word = 4.5% of tokens in A (daiin), 2.1% in B (chedy); top-10 words = 15.7% (A) / 14.5% (B), within the natural-language range.",
+    "source": "Landini 2001; Reddy & Knight 2011 (ACL W11-1511); Bowern & Lindemann 2021 \u00a73.3",
+    "strength": "moderate",
+    "year": "2001/2011/2021",
+    "counter": "Zipf is reproduced by every proposed hoax mechanism: Rugg & Taylor 2016 (table-and-grille) report a word-frequency distribution 'that mimics Zipf's distribution'; Timm & Schinner 2020 state their self-citation output satisfies 'both of Zipf's laws'; Gaskell & Bowern 2022 found human gibberish obeys Zipf (though with a weaker average fit, and the VMS also shows a weaker-than-natural fit on the LMZ statistic). Zipf therefore does not discriminate language from structured nonsense."
+   },
+   {
+    "claim": "Word-level entropy and lexical statistics are normal for a natural language.",
+    "evidence": "Unigram word entropy for VMS B = 9.666 bits vs English WSJ 10.07, Arabic Quran 9.645, Chinese 10.31 (Reddy & Knight Table 1); Adelaide (Abbott group) report 10.46 bits vs a 10.25-bit average across test languages; voynich.nu gives 9.93 bits for the first 8000 words of the Recipes section. Corpus: 37,919 tokens / 8,114 types in the Currier transliteration; ~half of all types are hapax legomena.",
+    "source": "Reddy & Knight 2011; voynich.nu/a4_word.html; Adelaide 'Cracking the Voynich code' 2014",
+    "strength": "moderate",
+    "year": "2011",
+    "counter": "Gaskell & Bowern 2022: the VMS falls within the 5-95% quantiles of human gibberish on 41 of 42 word/character metrics; gibberish has lower total information content (DEFLATE compression) and higher word repetition, and the VMS shares these. Normal word entropy is also produced by Timm's self-citation model, which generates new variants of earlier words continuously."
+   },
+   {
+    "claim": "Voynichese has medium morphological complexity, closest to Germanic/Iranian (and Romance) profiles; heavily agglutinating families (Turkic, Uralic) and very isolating ones (Philippine) can be excluded; Voynich A is more complex than B.",
+    "evidence": "Bowern & Lindemann 2021 \u00a73.3-3.4: MATTR (2,000-word window) and top-10 proportional frequency place both Voynich languages in the medium range across 101 languages/7 families, closest to Germanic and Iranian, farthest from Turkic, Dravidian, Kartvelian. Lindemann 2022 ('Crux of the MATTR', 160 languages/10 families, 10,000-word samples, MATTR window 1000, MCW rank 70): Voynichese sits above Romance/Germanic averages and below Semitic/Slavic; Turkic, Uralic and Philippine are statistically excluded by both measures (3 SD), Celtic and Semitic 'possible but less likely'; Euclidean-nearest family centroid = Iranian; A more complex than B.",
+    "source": "Bowern & Lindemann 2021; Lindemann 2022 (CEUR Vol-3313 paper9)",
+    "strength": "weak",
+    "year": "2021/2022",
+    "counter": "Lindemann concedes the result 'does not exclude the hypothesis that Voynich is meaningless' because a hoaxer imitating medieval European text would produce similar word distributions, and that the method assumes spaces are conventional word separators. Rozanova & Temerev 2026 show two separator regimes (uncertain separators behave as word-internal junctures; AUC 0.905 on image gaps), and Lindemann notes 45% of running-text tokens differ across transcribers. Timm & Schinner's 2021 Cryptologia review (45:434-438) describes 'severe deficiencies' in the B&L analysis. Family attribution from two scalar statistics is a weak inference (*)."
+   },
+   {
+    "claim": "Conditional (second-order) character entropy h2 is far below that of any natural-language text, refuting a one-to-one substitution of any known alphabet or abjad.",
+    "evidence": "Bowern & Lindemann 2021 Fig. 4: EVA h2 = 2.17 (Voynich A) and 2.01 (Voynich B), lower than all 250 languages in the Wikipedia corpus (alphabets and abjads cluster ~2.5-4.0); the A/B gap disappears (2.23 vs 2.24) when qo- and -dy are removed. Zandbergen (voynich.nu/extra/sol_ent): H2-H1 = 2.05 (FSG) vs 3.23 Latin (Mattioli), 3.13 Italian (Dante), 3.04 German (Tristan), while H1 differs by only ~0.19 bits. Rozanova & Temerev 2026 (ZL transliteration): 2.69 bits vs 3.45-3.52 in Latin/Italian/English controls. Bennett 1976 first noted the ~0.8-bit deficit. Lindemann & Bowern 2020 (arXiv 2010.14697) show the result is robust to EVA/Currier/CUVA parsing and to scribal-abbreviation expansion (abbreviated Secreta Secretorum h2 3.4 vs 3.2 plain).",
+    "source": "Bennett 1976; Bowern & Lindemann 2021 \u00a72.3.2; Lindemann & Bowern 2020; Zandbergen sol_ent; Rozanova & Temerev 2026 (arXiv 2608.17096)",
+    "strength": "strong",
+    "year": "1976-2026",
+    "counter": "The fact is undisputed; its interpretation is not. Schinner 2007 and Rugg & Taylor 2016 read the extreme predictability as a hallmark of a generative procedure; Gaskell & Bowern 2022 found human gibberish also has significantly lower h2 than meaningful text. Conversely Bowern & Gaskell 2022 ('Enciphered after all?') show bigraph encoding of letters, null insertion and phonemic-contrast conflation bring Latin h2 to Voynich levels, and Greshko's Naibbe cipher (Cryptologia 2025) reproduces it. Low h2 is therefore compatible with both camps and only excludes simple substitution."
+   },
+   {
+    "claim": "Characters obey a rigid positional 'slot grammar' within words (prefix / midfix / suffix fields), unparalleled in any comparison text.",
+    "evidence": "Tiltman 1967, Stolfi 2000 (core-mantle-crust), Reddy & Knight 2011 (Linguistica MDL segmentation yields consistent affix signatures); Bowern & Lindemann 2021 \u00a73.2: q only word-initially, m/g/r/n almost only word-finally; Reddy & Knight: letter predictability given the previous letter 40.0% (VMS B) vs 22.6% English, 24.8% Arabic, 38.9% Pinyin. Lindemann & Bowern 2020: 'distinct from every comparison text' because character placement is highly constrained within the word. Gaskell & Bowern 2022: character-position-within-word bias (charbias_words_mean) was the single metric out of 42 that no human gibberish sample could replicate. Stolfi's word grammar fails to parse ~4% of tokens (Zandbergen 2021).",
+    "source": "Reddy & Knight 2011 Table 2; Bowern & Lindemann 2021; Lindemann & Bowern 2020; Gaskell & Bowern 2022; Zandbergen 2021 grille paper",
+    "strength": "strong",
+    "year": "2011-2022",
+    "counter": "Hoax side: the slot grammar is exactly what a table-and-grille (Rugg 2004; Rugg & Taylor 2016) or three-wheel device (Zandbergen 2021) produces by construction, and Timm's copy-and-modify rules generate it too. Cipher side: Greshko's Naibbe cipher yields words 'that follow an expanded version of the slot grammar'. Zandbergen notes one 'prohibitive problem' for all generators and all solutions alike: the special paragraph-top behaviour of gallows f and p."
+   },
+   {
+    "claim": "The word-length distribution is nearly binomial and symmetric (lengths 1-10, mean ~5-5.5 EVA characters), unlike the right-skewed distributions of European languages.",
+    "evidence": "Stolfi 2000 ('almost perfectly binomial' for word types); Timm 2014 gives mean token length 5.5 (4.9 on Currier-A paragraphs, higher in B because of more gallows); Reddy & Knight 2011 Fig. 3 show the narrow binomial shape vs wide asymmetric English/Latin; Adelaide report finds Hebrew the closest match on shape (peak shifted by one). Gaskell & Bowern 2022 add that adjacent word lengths are positively autocorrelated (Moran's I; long-long-short-short), a pattern common in gibberish and rare in natural languages.",
+    "source": "Stolfi 2000; Reddy & Knight 2011; Timm 2014 (arXiv 1407.6639); Gaskell & Bowern 2022 Fig. 3",
+    "strength": "strong",
+    "year": "2000-2022",
+    "counter": "As evidence for language it is weak: Reddy & Knight show devowelled English, Buckwalter Arabic and Pinyin Chinese are also binomial; Zandbergen 2021 proves a three-wheel grille with symmetric fragment lengths gives an exactly binomial output and Rugg & Taylor claim their grille yields 'a symmetrical distribution of word length frequencies'; Timm 2014 explains it as a side effect of adding glyphs to short source words and deleting from long ones during copying."
+   },
+   {
+    "claim": "Word order is anomalously weak: a word is barely more predictable from its predecessor than from unigram frequency, and repeated word bigrams/trigrams are rare.",
+    "evidence": "Reddy & Knight 2011 Table 4: bigram context improves word prediction by 8.85% for VMS B vs 151% English, 252% Arabic, 123% Hungarian (chosen as a free-word-order control). Adelaide 2014: bigram word entropy 14.81 bits, near the maximum in their set (Chinese 14.83) despite normal unigram entropy. Rozanova & Temerev 2026: adjacent-token mutual information is 0.79% of token entropy vs 2.02-15.81% in prose, cipher and pseudo-text controls, and 'order sits at the edges of tokens ... not in the succession of tokens'. Reddy & Knight Fig. 5: almost no long-range collocation (PMI) beyond distance 1.",
+    "source": "Reddy & Knight 2011; Adelaide 2014; Rozanova & Temerev 2026",
+    "strength": "strong",
+    "year": "2011/2026",
+    "counter": "Pro-language side: Bowern & Lindemann 2021 \u00a74.2 list a few syntagmatic regularities (in Voynich B a qo- word is usually preceded by a -y word; aiin is preceded by 1-2 letter words; gallows preceded by o-), and a verbose/homophonic cipher that renders one plaintext word as many ciphertext variants would dilute bigram statistics; the Naibbe cipher reproduces weak token order. But Timm 2014 treats weak word order plus similarity-based clustering as decisive against any language or conlang, and self-citation also reproduces it (Rozanova & Temerev). Currently the weak-order fact counts against a plaintext reading and is neutral between cipher and hoax."
+   },
+   {
+    "claim": "There is unusually strong statistical coupling across word boundaries (last glyphs of a word predict the first glyphs of the next), stronger than within-token order.",
+    "evidence": "Currier 1976 first observation; Reddy & Knight 2011 Table 5: the last character of the previous word improves prediction of the first character by 31.8% (comparable to English 31.1%). Parisel 2026 (arXiv 2604.19762): end-to-start boundary transition rate 80.6% vs 19.8-35.5% in English/French/Hebrew/Arabic; cross-boundary MI 0.230 bits (0.586 in Currier A) vs 0.054-0.173; 97% of that MI sits in specific grapheme pairs, not classes; 'bilateral positional extremity' (q, iin ratios >100:1). Rozanova & Temerev 2026: 0.197 bits final-to-initial glyph MI vs 0.067 bits between token identities, reversing the prose pattern.",
+    "source": "Reddy & Knight 2011; Parisel 2026; Rozanova & Temerev 2026",
+    "strength": "strong",
+    "year": "2011/2026",
+    "counter": "Parisel shows a surface Markov model reproduces the directional dissociation (10/10 runs), so it is 'non-diagnostic', and neither slot-based nor Cardan-grille generators reproduce all four boundary signatures jointly; he reads the result as cipher-like rather than linguistic. Rozanova & Temerev find neither the Naibbe cipher nor a self-citation generator reproduces the edge coupling, so it is currently unexplained by any camp. Hoax-side caveat: since ~half of separators are 'uncertain' and behave like internal junctures, some boundary coupling may be intra-word structure misread as syntax (*)."
+   },
+   {
+    "claim": "Adjacent repetition of identical words is elevated but within natural-language range.",
+    "evidence": "Bowern & Lindemann 2021 \u00a74.2: probability that a word repeats its predecessor = 0.84% (A) and 0.94% (B); corpus range 0.02-4.8%, mean 0.63%, but 0.25-0.37% for the relevant families (Germanic, Romance, Iranian, Semitic). Sequences such as 'qokedy qokedy qokedy' and 'dar dar' are common (Reddy & Knight; Stolfi).",
+    "source": "Bowern & Lindemann 2021; Reddy & Knight 2011",
+    "strength": "moderate",
+    "year": "2021",
+    "counter": "Gaskell & Bowern 2022: higher repeated_words and tripled_words are significant markers of gibberish vs meaningful text, and the VMS shares them; Barlow 1986 and Rugg cite adjacent near-duplicates as the classic hoax symptom. Bowern & Lindemann's own comparison shows the VMS is 2-4x the rate of the language families they otherwise find closest."
+   },
+   {
+    "claim": "Similarly spelled words cluster locally (same line / preceding lines) and word similarity correlates with frequency, which a 'self-citation' copying process reproduces along with Zipf, line effects and binomial lengths (hoax hypothesis).",
+    "evidence": "Schinner 2007 (Cryptologia 31:2): random-walk mapping shows positive long-range correlations beyond ~72 characters (about one line) unlike Latin/German, and the recurrence of similar tokens follows a geometric distance distribution; text more consistent with a quasi-stochastic (Rugg-type) process. Timm 2014 / Timm & Schinner 2020 (Cryptologia 44:1-19): similar words concentrate within the previous ~20 lines; second word shorter than first in 48% of lines vs longer in 32%; 62% of m-glyph occurrences line-final; a concrete hand-executable algorithm reproduces both Zipf laws, the binomial length distribution, first/last-word effects, and A/B as process drift (B more repetitive, written later).",
+    "source": "Schinner 2007; Timm 2014 (arXiv 1407.6639); Timm & Schinner 2020; Timm & Schinner 2023 (Cryptologia 48:4)",
+    "strength": "moderate",
+    "year": "2007-2023",
+    "counter": "Bowern & Lindemann 2021: gibberish cannot explain higher-level document structure (topics, section keywords, page adjacency). Rozanova & Temerev 2026 tested a self-citation generator directly: it reproduces low entropy, weak token order and the null substitution-attack result but fails to produce the 0.2-bit edge-glyph coupling, the ~70% hapax vocabulary, or the graded space structure. Zandbergen 2021: no generator yet accounts for the paragraph-top restriction of f/p. Reddy & Knight: Schinner's observations 'only confirm that the VMS has some properties unlike natural language, but not that it is necessarily a hoax'."
+   },
+   {
+    "claim": "Long-range information structure: content-like keywords cluster across sections at the same scale as in natural-language texts (Montemurro & Zanette), and network/intermittency metrics are compatible with natural languages and incompatible with shuffled text (Amancio et al.).",
+    "evidence": "Montemurro & Zanette 2013 (PLoS ONE 8:e66344): the entropy-based information measure peaks at a domain scale of ~807 words (natural languages 600-800; unlike DNA or Fortran); magnitude slightly above English, well below Chinese (~0.2-0.6 bits/word range); all 30 top keywords (shedy 0.0094 bits, qokeedy 0.0084, daiin 0.0078, chedy 0.0072 ...) significant at p<0.01 vs shuffled text; strongest inter-section link Pharmacological-Herbal, then Recipes-Astrological. Amancio et al. 2013 (PLoS ONE 8:e67310): intermittency (~1.4-1.9 SD distance), degree (~0.95) and shortest paths (~1.07) separate VMS from its shuffled versions; VMS 'compatible with natural languages for most of the measurements' against the New Testament in 15 languages + Esperanto. Landini 2001: spectral analysis of the space-less text shows natural-language-like structure and recovers the modal token length.",
+    "source": "Montemurro & Zanette 2013; Amancio et al. 2013; Landini 2001",
+    "strength": "moderate",
+    "year": "2001/2013",
+    "counter": "The null model is wrong: both papers compare against shuffled text, and Gaskell & Bowern 2022 argue the proper null is human-produced gibberish, whose word-placement bias within a sample (wordbias_mean) already matches or exceeds meaningful text and whose properties would drift over months of writing, producing section-level clustering; self-citation copies vocabulary from the current section by construction. Pelling (Cipher Mysteries 2013) argues the 30 'informative' words may be the least informative (cipher container layer) and that M&Z assume a homogeneity across A/B that does not hold. M&Z's argument that these features were 'out of reach of sixteenth-century mathematics' is a non sequitur: a generative procedure need not be aware of the statistics it produces. Amancio also assume no polyalphabetic encryption."
+   },
+   {
+    "claim": "Pages have topics and are in order: within-page word bursts and adjacent-page similarity match meaningful texts, and unsupervised topic models align with illustration sections and scribal hands.",
+    "evidence": "Reddy & Knight 2011: topicality 1-T/Trand = 0.037 (VMS B) vs 0.033 WSJ, 0.069 Genesis, 0.025 Quran; ADJPAGESIM (nearest bag-of-words neighbour is an adjacent page) = 38.8% for VMS B and 15.6% overall vs 0% when pages are scrambled, 25.0% Genesis, 27.5% Quran, 0.44% WSJ. Sterneck, Polish & Bowern 2021 (arXiv 2107.02858): LDA/LSA/NMF clusters 'match closely to a conjunction of scribe and subject matter' (Davis 2020's five hands); NMF topic 0 tracks the balneological section, recipes and botanicals are distinct topics.",
+    "source": "Reddy & Knight 2011 Tables 6-7; Sterneck et al. 2021; Bowern & Lindemann 2021 \u00a74.3",
+    "strength": "moderate",
+    "year": "2011/2021",
+    "counter": "Scribe and topic are confounded (scribe 1 = Voynich A herbal; scribes 2-5 = B), so clusters may reflect individual scribal habits or vocabulary drift rather than content; Gaskell & Bowern 2022 explicitly say gibberish at manuscript length has not been tested and that participants spontaneously reused an invented 'label' word around its illustration ('pitshol'). Currier A/B vocabulary differences alone would produce section-level clustering. No quantitative purity/agreement metric is reported by Sterneck et al. (*)."
+   },
+   {
+    "claim": "The line is a functional unit: word length and glyph choice depend on position in the line and paragraph, unlike prose.",
+    "evidence": "Currier 1976; Vogt 2012 ('The Line as a Functional Unit'): across Currier/Takahashi/Stolfi transcriptions the first word is longer than average, the second shorter, and mean length falls ~0.5-1.0 characters (~0.7) along the line; natural-language controls (Latin De bello gallico, German/English Tom Sawyer, French, Italian) show only a ~0.1-character first-word excess and no second-word dip. Bowern & Lindemann 2021: ~85% of paragraphs begin with a gallows (t,k,f,p); line-initial s- variants (saiin/sol/sor for aiin/ol/or), line-final -m/-g variants (dam/am for daiin/aiin); Reddy & Knight Fig. 7: low-frequency glyphs concentrate at line ends, high-frequency at line starts.",
+    "source": "Currier 1976; Vogt 2012; Reddy & Knight 2011; Bowern & Lindemann 2021 \u00a74.1",
+    "strength": "strong",
+    "year": "1976-2021",
+    "counter": "Interpretation splits three ways. Bowern & Lindemann treat the effects as 'typographical' positional allographs comparable to scribal punctuation, i.e. compatible with encoded language. Timm 2014 derives them from copying the first/last word of the line above. Gaskell & Bowern 2022 found character-position-in-line bias is the single most important variable separating gibberish from meaningful text, but the VMS value was not significantly different from meaningful text on that metric. Vogt attributes the overall length drop-off to a 'short words make long lines' selection effect present in natural text too."
+   },
+   {
+    "claim": "The Currier A/B distinction is real and reduces largely to a per-folio binary switch in a few character-pair choices, with the same slot grammar in both.",
+    "evidence": "Currier 1976; Bowern & Lindemann 2021: top-10 vocabularies differ substantially (daiin/chol/chor vs chedy/ol/shedy), B has ~2x qo- and ~3x -dy; scribe 1 writes A, scribes 2-5 write B (Davis 2020). Parisel 2026 (arXiv 2604.25979): a Beta-Binomial mixture on 11 character-pair substitution ratios over 185 folios selects 2 components by BIC and predicts held-out Currier labels at 89.2% without seeing them; the dominant component is a boolean switch, set once per folio, governing the vowel after ch/sh (two-state model \u0394AIC = 2,549; 195/197 folios assigned unambiguously; word-template identity explains 92% of variance, with fixed vs switchable contexts). Lindemann 2022: A more morphologically complex than B by MATTR/MCW.",
+    "source": "Currier 1976; Bowern & Lindemann 2021; Parisel 2026; Lindemann 2022",
+    "strength": "strong",
+    "year": "1976/2026",
+    "counter": "A per-folio boolean switch in a phoneme-like slot looks more like a cipher key or scribal convention than a dialect difference (Parisel reads it as a 'low-resolution projection of a higher-dimensional generative system'); Timm & Schinner explain A vs B as drift and increasing repetitiveness of the copying process over time (B written later, more repetitive); Bowern & Lindemann themselves say A and B are 'two methods of encoding at least one natural language' rather than two languages."
+   },
+   {
+    "claim": "The character stream is optimized right-to-left at the n-gram level even though the manuscript is written left-to-right.",
+    "evidence": "Parisel 2025 (arXiv 2509.10573): perplexity asymmetry \u0394 = X_LTR - X_RTL is positive for EVA Voynich at n=2 (+0.0653, 95% CI 0.0631-0.0677), n=3 (+0.0167) and n=4 (+0.0058), with 1,000 bootstrap resamples; English and French are negative (-0.003 to -0.12), Hebrew/Arabic inconsistent across orders; shuffle controls remove the signal; 73.9% next-glyph prediction accuracy at n=4. The grapheme boundary distribution is Zipfian rather than plateau-shaped as in natural languages.",
+    "source": "Parisel 2025 (arXiv 2509.10573)",
+    "strength": "weak",
+    "year": "2025",
+    "counter": "The author concedes the RTL signal 'could be a byproduct of a cipher or a scribal artifact rather than a natural language', the comparison set is four languages, and Hebrew/Arabic themselves fail to show a consistent RTL signature under the method, which undermines its validity as a directionality detector. Single transcription (EVA) only."
+   },
+   {
+    "claim": "Voynichese is an abjad (consonant-only script), explaining the binomial word lengths and the two-class letter structure.",
+    "evidence": "Reddy & Knight 2011: a two-state bigram HMM over letters puts the last character of every word in one state and all others in the other (grammar ab+), the same pattern learned on undiacritized Arabic and devowelled English; binomial word-length shape matches Buckwalter Arabic and devowelled English; Hauer & Kondrak 2016 (TACL 4:75-86) find Hebrew the best anagram-pattern match among 380 languages.",
+    "source": "Reddy & Knight 2011 \u00a73.1, \u00a74.1; Hauer & Kondrak 2016",
+    "strength": "weak",
+    "year": "2011/2016",
+    "counter": "Bowern & Lindemann 2021: abjads have higher h2 than alphabets (Hebrew/Arabic ~3.5-4 per Zandbergen's ranges), whereas Voynichese is lower; almost every Voynich word contains one of the Sukhotin 'vowels' (a, o, e, h, i), unlike abjad text; the HMM split is likely driven by word-final-only glyphs (m, n, g), i.e. positional allographs, not vowel loss. Hauer & Kondrak produced no grammatical sentences; Bowern & Lindemann call the Hebrew claim 'unconvincing'. Lindemann 2022 ranks Semitic as 'possible but less likely' by MATTR/MCW."
+   },
+   {
+    "claim": "Voynichese is a syllabary-like or verbose (many-to-one / homophonic) encoding of a European language, which would reconcile normal word-level statistics with abnormal character-level statistics.",
+    "evidence": "Bowern & Lindemann 2021 conclude the script 'is not structure-preserving in that the graphemes are not one-to-one' and that only manipulations conflating phonemic distinctions reach Voynich h2. Bowern & Gaskell 2022 (CEUR paper6): of 22 manipulations, encoding letters as bigraphs, adding nulls in patterns, devowelling, and merging place/manner/voicing contrasts bring Latin, Uzbek and Turkish texts closest to Voynich metrics (Currier B matches better than A). Greshko 2025 (Cryptologia, Naibbe cipher): a dice-and-cards verbose homophonic substitution encrypts Latin/Italian into decipherable text that 'reproduce[s] many key statistical properties of the Voynich Manuscript at once', incompletely for Voynich B. Rozanova & Temerev 2026: BPE finds an optimal unit scale of ~64 merges (88 multi-glyph units of ~2.4 glyphs) that survives space erasure, and Naibbe reproduces entropy, unit scale and token order. voynich.nu 'Key' analysis: stripping positional affixes leaves roots with h2 in the 2.0-2.5 syllabary band (*not independently verified).",
+    "source": "Bowern & Lindemann 2021 \u00a76; Bowern & Gaskell 2022; Greshko 2025; Rozanova & Temerev 2026",
+    "strength": "moderate",
+    "year": "2021-2026",
+    "counter": "Bowern & Gaskell 2022 found no single manipulation matches Voynich on all metrics and that 'no manuscript is as close as the other samples of Voynichese'; several gibberish samples were equidistant with the enciphered Latin. Rozanova & Temerev: concatenative homophonic ciphers (1-3 symbols/letter) are rejected (language-match differential +0.13 to +0.52 vs Voynich -0.15 to +0.08) and Naibbe lacks the edge-glyph coupling and hapax-rich vocabulary. Zandbergen (sol_ent) notes expanding characters verbosely lowers rather than raises entropy, which constrains which verbose schemes are viable. A verbose cipher must also explain why 15th-century plaintext would leave no decipherable trace after a century of attack."
+   },
+   {
+    "claim": "Long-range correlation/Hurst-type statistics do not match any single natural language.",
+    "evidence": "Landini 2001: spectral analysis (1/f-like) indicates non-random, language-like long-range organization. Schinner 2007: bit-sequence random walk shows positive correlations building beyond ~1 line, unlike Latin/German. Arutyunov et al. 2016 (arXiv 1611.09122): Hurst exponents of inter-occurrence distances of frequent letters are <0.5 (antipersistent) with sharp unimodal peaks for every natural and constructed language tested (Klingon, Elvish, Esperanto included); the Voynich distribution is shifted right and flatter, i.e. symbols placed 'more randomly', not matching one language; they suggest a two-language mixture and reject their own Danish/Spanish letter-frequency match.",
+    "source": "Landini 2001; Schinner 2007; Arutyunov et al. 2016",
+    "strength": "weak",
+    "year": "2001-2016",
+    "counter": "Methods are heterogeneous (character series with/without spaces, binary encodings), sensitive to transcription and sample length, and no study reports a Voynich Hurst exponent with confidence intervals against matched-length controls; the same 'beyond one line' correlation is what self-citation from the line above predicts (Timm & Schinner). Gaskell & Bowern's positive word-length autocorrelation is the only long-range statistic tested against human gibberish, and it favoured gibberish."
+   },
+   {
+    "claim": "The vocabulary is open and hapax-rich, yet built from a closed set of near-neighbour variants.",
+    "evidence": "8,114 types / 37,919 tokens (Currier transliteration; Reddy & Knight); ~half of types occur once (voynich.nu); Rozanova & Temerev 2026: 7,022 distinct forms with 70% singleton types in the ZL transliteration; Timm 2014: a grid of words occurring >=4 times covers 80% of the text, with most tokens at edit distance 1 from a frequent word; Bowern & Lindemann: most frequent words have 4-5 letters rather than the 1-3 typical of function words.",
+    "source": "Reddy & Knight 2011; voynich.nu/a4_word.html; Timm 2014; Rozanova & Temerev 2026",
+    "strength": "moderate",
+    "year": "2011-2026",
+    "counter": "For the hoax side, Timm's copy-and-modify process naturally yields many one-off variants ('strange words usually occur only once'); for the language side, Lindemann 2022 reports the hapax proportion is 'middle range' among languages. Rozanova & Temerev found neither their self-citation generator nor Naibbe reproduced the 70% hapax rate, so this is presently unexplained by any tested model; it is also inflated by uncertain word spaces and transcription disagreement (45% of tokens)."
+   },
+   {
+    "claim": "At the sub-paragraph scale Voynichese is statistically closer to human-produced meaningless text than to meaningful text (Gaskell & Bowern 2022).",
+    "evidence": "42 volunteers wrote 1-3 pages of invented 'gibberish'; 42 metrics on 200-word excerpts vs 75 meaningful texts (5.6M words) and five VMS transcriptions/subsets. Gibberish replicated meaningful text on all 42 metrics (36 probable, 6 plausible); the VMS plausibly resembled meaningful text on 38/42 and gibberish on 41/42. Gibberish had significantly lower information content and h2, more repeated/tripled words and characters, higher positional bias of words within a sample, positive word-length autocorrelation and weaker Zipf fit, and all of these except line-position character bias were also significant in the VMS. A random forest classified all five VMS samples as gibberish (score <0.5, low confidence). Only within-word character-position bias could not be produced by gibberish writers.",
+    "source": "Gaskell & Bowern 2022 (CEUR Vol-3313 paper4; data at github.com/danielgaskell/voynich)",
+    "strength": "moderate",
+    "year": "2022",
+    "counter": "The authors state the study 'cannot and does not attempt to prove that the VMS is gibberish'; samples are too short to test topic/section structure, which 'pose[s] a serious challenge to proponents of the hoax hypothesis'; 20 of 42 participants had been taught VMS statistics (contamination effects found small); Latin-alphabet writing cannot mimic Voynich glyph typography; and the companion paper (Bowern & Gaskell 2022) shows several phoneme-conflating ciphers of Latin/Uzbek land equally close to the VMS, so proximity to gibberish is not proximity to gibberish alone. Bowern & Lindemann 2021 (fn. 4) report that sustained language-like nonsense becomes very difficult beyond ~100 words."
+   }
+  ],
+  "consensus_state": "No consensus, but the disagreement has narrowed to a specific shape. Agreed facts (all camps): Zipfian word frequencies; normal unigram word entropy and top-word proportions; medium MATTR/type-token profile; near-binomial word lengths; h2 of ~2.0-2.2 bits (EVA) far below every tested language; rigid word-internal slot grammar; near-absent bigram word order but strong glyph coupling across word boundaries; line- and paragraph-position effects; a real Currier A/B split now shown to be largely a per-folio switch; page-level topics and adjacent-page similarity. Interpretive camps: (1) Yale group (Bowern, Lindemann, Sterneck; Annual Review 2021) - enciphered/encoded natural language of medium morphological complexity in a non-structure-preserving script, with the document-level structure as the key argument; but Bowern's own 2022 papers concede that low-level statistics are reproduced by human gibberish and that the correct null model is gibberish, not shuffled text, and that no tested cipher matches Voynichese on all metrics. (2) Hoax/structured-nonsense camp (Rugg & Taylor 2016; Schinner 2007; Timm & Schinner 2020, 2023, and their 2021 Cryptologia review calling B&L deficient) - self-citation or grille generation reproduces Zipf, binomial lengths, line effects and A/B; not yet shown to reproduce section keywords at manuscript length, edge-glyph coupling, or the hapax profile. (3) 2025-2026 quantitative wave (Greshko's Naibbe cipher; Parisel's directional/boundary and A/B-switch papers; Rozanova & Temerev's units paper) - converging on 'cipher-like layered constraints' in which glyphs are not letters, tokens are not words and spaces are not uniform, with both a verbose homophonic cipher and a self-citation generator reproducing the entropy/unit-scale/weak-order profile and both failing on edge coupling and vocabulary openness. Net: the evidence excludes random text, a one-to-one substitution of any known language, heavily agglutinating or purely isolating plaintexts if tokens are words, and simple grille output; it does not currently discriminate enciphered language from structured meaninglessness. Checked: primary texts of Bowern & Lindemann 2021, Gaskell & Bowern 2022, Bowern & Gaskell 2022, Lindemann 2022, Reddy & Knight 2011, Timm 2014, Vogt 2012, Zandbergen 2021, Arutyunov 2016, Sterneck et al. 2021 (full text), plus abstracts/summaries of Montemurro & Zanette 2013, Amancio 2013, Parisel 2025/2026, Rozanova & Temerev 2026, Timm & Schinner 2020/2023, Schinner 2007, Landini 2001, Greshko 2025. Not checked: full text of Rugg & Taylor 2016, Schinner 2007, Landini 2001, Greshko 2025, Timm & Schinner 2021 review and 2023 discussion (paywalled); Parisel and Rozanova & Temerev numbers taken from arXiv HTML summaries, not re-derived; the 'syllabary band 2.0-2.5 after affix stripping' claim is from a secondary voynich.nu/academia summary. User must verify: exact figures before quoting, especially Parisel's 2026 statistics and the Naibbe reproduction list; all output unvalidated until user review.",
+  "decisive_tests": [
+   "Manuscript-length gibberish test: have volunteers (or a Timm-Schinner self-citation generator tuned to observed human behaviour) produce ~38,000 tokens over weeks with illustrations, then run Montemurro & Zanette's information-vs-scale measure (VMS peak ~807 words), Reddy & Knight's ADJPAGESIM (VMS B 38.8%) and Sterneck-style NMF topic/section alignment. Gaskell & Bowern 2022 name this as the untested gap; if gibberish reproduces the section-level structure, the Yale group's main argument for language collapses; if it cannot, the hoax hypothesis loses its last unaddressed feature.",
+   "Joint-profile benchmark: require any generator (grille, self-citation, Naibbe-class cipher) to reproduce simultaneously h2 ~2.0-2.2 (EVA), binomial word lengths, Zipf, ~70% hapax types, 0.2-bit final-to-initial glyph MI across boundaries, ~80% end-to-start boundary rate, first/second-word line effects, paragraph-initial gallows in ~85% of paragraphs, and the per-folio ch/sh switch, evaluated separately for Currier A and B. Rozanova & Temerev 2026 and Parisel 2026 publish code and controls for this; a model passing all is decisive for its class, and the two features no model yet passes (edge coupling, hapax rate) are the discriminators to target.",
+   "Re-tokenize on 'certain' spaces only: using Rozanova & Temerev's separator classification (uncertain separators 0.494 internality index, image-gap AUC 0.905) and the Zandbergen-Landini transliteration, recompute MATTR/MCW, word-length distribution, Zipf slope and bigram predictability. If the binomial shape and medium-morphology placement survive, word-level language arguments stand; if they collapse into a different distribution, the entire word-level case (Lindemann 2022, B&L \u00a73) rests on an artefact of assumed word boundaries.",
+   "Localize the A/B switch: test whether Parisel's per-folio boolean switch aligns with Davis's five hands, with quire/gathering, with illustration section, or is arbitrary per folio. Scribe-aligned = dialect/orthographic habit (compatible with language); quire- or arbitrary-aligned and independent of scribe = cipher-key or generation-parameter behaviour; bimodal within a single scribe's run is strong evidence against a natural dialect reading.",
+   "Constrained decipherment attack on the verbose-cipher class: extend Rozanova & Temerev's calibrated substitution attack (null for Voynich) to Naibbe-type many-to-one schemes with a 15th-century Latin/Italian language model; a recovered plaintext segment is decisive for language, while a demonstrated information-theoretic ceiling (ciphertext unigram/bigram capacity insufficient to carry Latin at observed token counts) would be decisive against that cipher class.",
+   "Illustration-adjacent word-length test: Gaskell & Bowern observed 17/31 gibberish writers choosing word lengths to fit around drawings; measure whether Voynich tokens abutting illustrations (e.g. f29v) have a length distribution or hapax rate significantly different from mid-paragraph tokens, controlling for line position. A significant fit-to-space effect favours composition without prior text; its absence favours copying/encoding of a pre-existing text.",
+   "Cross-scribe consistency of collocations: check whether the few syntagmatic regularities B&L report (qo- words after -y words in B; aiin after 1-2-glyph words; o- before gallows) hold with the same strength across Davis's scribes 2-5 and across quires written at different times. Stable rules across independent hands are hard for intuitive gibberish and unnecessary for self-citation; they are expected for a shared cipher or language.",
+   "Independent replication of Gaskell & Bowern with Voynich-like typography: repeat the gibberish protocol using an invented glyph set with positional allographs available, uncontaminated participants, and 1,000+ word samples, then retest the one metric gibberish failed (within-word character-position bias) and the random-forest classification; if uncontaminated writers with allographs reproduce the slot grammar, the last small-scale feature separating Voynichese from gibberish disappears."
+  ],
+  "sources": [
+   "Bowern & Lindemann 2021, The Linguistics of the Voynich Manuscript, Annual Review of Linguistics 7:285-308, https://doi.org/10.1146/annurev-linguistics-011619-030613 (full text read via https://www.info-quest.org/documents/PDF/Bowern-2021-The-linguistics-of-the-voynich-manu.pdf)",
+   "Lindemann & Bowern 2020/2022, Character Entropy in Modern and Historical Texts, arXiv:2010.14697, https://arxiv.org/abs/2010.14697",
+   "Gaskell & Bowern 2022, Gibberish after all?, CEUR Vol-3313 paper4, https://ceur-ws.org/Vol-3313/paper4.pdf (data: https://github.com/danielgaskell/voynich)",
+   "Bowern & Gaskell 2022, Enciphered after all?, CEUR Vol-3313 paper6, https://ceur-ws.org/Vol-3313/paper6.pdf",
+   "Lindemann 2022, Crux of the MATTR: Voynichese Morphological Complexity, CEUR Vol-3313 paper9, https://ceur-ws.org/Vol-3313/paper9.pdf",
+   "Sterneck, Polish & Bowern 2021, Topic Modeling in the Voynich Manuscript, arXiv:2107.02858, https://arxiv.org/abs/2107.02858",
+   "Reddy & Knight 2011, What We Know About the Voynich Manuscript, ACL LaTeCH, https://aclanthology.org/W11-1511.pdf",
+   "Montemurro & Zanette 2013, Keywords and Co-Occurrence Patterns in the Voynich Manuscript, PLoS ONE 8:e66344, https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0066344",
+   "Amancio, Altmann, Rybski, Oliveira & Costa 2013, Probing the Statistical Properties of Unknown Texts, PLoS ONE 8:e67310, https://pmc.ncbi.nlm.nih.gov/articles/PMC3699599/",
+   "Landini 2001, Evidence of Linguistic Structure in the Voynich Manuscript Using Spectral Analysis, Cryptologia 25:275-295, https://www.tandfonline.com/doi/abs/10.1080/0161-110191889932",
+   "Schinner 2007, The Voynich Manuscript: Evidence of the Hoax Hypothesis, Cryptologia 31:95-107, https://www.semanticscholar.org/paper/fef198034bf45615a26622ad00d871e4ca69501a",
+   "Timm 2014, How the Voynich Manuscript was created, arXiv:1407.6639, https://arxiv.org/pdf/1407.6639",
+   "Timm & Schinner 2020, A possible generating algorithm of the Voynich manuscript, Cryptologia 44:1-19, https://doi.org/10.1080/01611194.2019.1596999",
+   "Timm & Schinner 2021, Review of The linguistics of the Voynich manuscript by Bowern and Lindemann, Cryptologia 45:434-438, https://doi.org/10.1080/01611194.2021.1911875",
+   "Timm & Schinner 2023, The Voynich manuscript: discussion of text creation hypotheses, Cryptologia 48(4), https://doi.org/10.1080/01611194.2023.2225716",
+   "Rugg & Taylor 2016/2017, Hoaxing statistical features of the Voynich Manuscript, Cryptologia 41:247-268, https://doi.org/10.1080/01611194.2016.1206753",
+   "Zandbergen 2021, The Cardan grille approach to the Voynich MS taken to the next level, https://www.voynich.nu/papers/Grilles_RZ_2021.pdf",
+   "Zandbergen, Voynich MS - what we learn from entropy, https://www.voynich.nu/extra/sol_ent.html; word statistics, https://www.voynich.nu/a4_word.html",
+   "Vogt 2012, The Line as a Functional Unit in the Voynich Manuscript, https://voynichthoughts.wordpress.com/wp-content/uploads/2012/11/the_voynich_line.pdf",
+   "Arutyunov, Borisov, Fedorov et al. 2016, Statistical Properties of European Languages and Voynich Manuscript Analysis, arXiv:1611.09122, https://arxiv.org/pdf/1611.09122",
+   "Greshko 2025, The Naibbe cipher, Cryptologia, https://doi.org/10.1080/01611194.2025.2566408 (summary via https://www.sci.news/othersciences/linguistics/voynich-manuscript-cipher-14466.html; code https://github.com/greshko/naibbe-cipher)",
+   "Parisel 2025, Directionality of the Voynich Script, arXiv:2509.10573, https://arxiv.org/html/2509.10573",
+   "Parisel 2026, A Quantitative Confirmation of the Currier Language Distinction, arXiv:2604.25979, https://arxiv.org/abs/2604.25979",
+   "Parisel 2026, Evidence of Layered Positional and Directional Constraints in the Voynich Manuscript, arXiv:2604.19762, https://arxiv.org/html/2604.19762",
+   "Rozanova & Temerev 2026, A Glyph Is Not a Letter, a Token Is Not a Word, a Space Is Not a Space, arXiv:2608.17096, https://arxiv.org/html/2608.17096",
+   "Hauer & Kondrak 2016, Decoding Anagrammed Texts Written in an Unknown Language and Script, TACL 4:75-86 (as summarized in Bowern & Lindemann 2021)",
+   "Adelaide (Abbott group) 2014, Cracking the Voynich code, semester report, https://www.eleceng.adelaide.edu.au/personal/dabbott/wiki/index.php/Semester_B_Final_Report_2014_-_Cracking_the_Voynich_code",
+   "Pelling 2013, Montemurro Voynich paper and the 'genuine message', https://ciphermysteries.com/2013/06/26/montemurro-voynich-paper-and-the-genuine-message",
+   "Davis 2020, How Many Glyphs and How Many Scribes? Digital Paleography and the Voynich Manuscript, Manuscript Studies 5:164-180"
+  ]
+ }
+]

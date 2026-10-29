@@ -1,0 +1,63 @@
+{
+ "dataset": "florence1429",
+ "target": "florence1429",
+ "piece": "Galeotto Fibindacci da Ricasoli to the Signoria of Florence, Urbino, no. 171",
+ "date": "early 1425 (1424 Florentine style)",
+ "year": 1425,
+ "date_basis": "content and sibling letters (NOTES)",
+ "shelfmark": "ASF, Dieci di Balìa, Responsive 2 no. 171 (old 168) (DECODE R3754)",
+ "system": "Homophonic substitution of graphic signs (two or three per letter) with about 17 nulls and a nomenclator of about 30 signs (persons, places, 'che', 'per', 'con'); about twenty short runs inside clear Italian. Key: Gabbrielli 1863 (Meister 1902) extended here from sibling glosses.",
+ "language": "Italian",
+ "outcome": "read (98.0% of cipher tokens given a value)",
+ "sign_inventory_note": "Sign names of cipher171.tsv (as in key_extended.md: Unicode look-alikes such as ∵, ᴗ, ⊐, ∂, ℘, +o). 0: = value 'null' in the TSV; N: = a sign whose value is a word or name (il Conte, Dieci, fanti, il Papa, ella ...). Each TSV run (L2a, L3b ...) is one line. The cipher writes no word separators.",
+ "counts": {
+  "lines": 21,
+  "sign_tokens": 99,
+  "distinct_signs": 50,
+  "letter_sign_tokens": 87,
+  "distinct_letter_signs": 39,
+  "code_sign_tokens": 7,
+  "distinct_code_signs": 7,
+  "null_tokens": 5,
+  "distinct_nulls": 5,
+  "dividers": 0,
+  "plaintext_letters": 131,
+  "unvalued_signs": 2
+ },
+ "plaintext": "pavolo dimadonn cintadini il conte il papa acomandino alo madonna pure femina e sospetosa conte d urbino fanti dieci madonna parenti citadini ella il conte",
+ "plaintext_source": "value column of cipher171.tsv (letters joined per run; word/name values as words)",
+ "source_files": [
+  "targets/florence1429/cipher171.tsv",
+  "targets/florence1429/READING.md",
+  "targets/florence1429/key_extended.md",
+  "targets/florence1429/NOTES.md"
+ ],
+ "caveats": [
+  "Very short (99 cipher tokens in 20 runs): too short for statistics on its own.",
+  "About 270 more signs of the same cipher (sibling letters R3755-R3757, glossed runs) are in TRANSCRIPTION.md as a markdown table; not included here."
+ ],
+ "line_ids": ["L2a", "L3a", "L3b", "L3c", "L4a", "L4b", "L4c", "L7a", "L7b", "L7c", "L7d", "L7e", "L7f", "L9a", "L11a", "L11b", "L11c", "L12a", "L12b", "L12c", "L13a"],
+ "lines": [
+  ["Ᵽ", "0:4", "∵", "♀", "+o", "÷", "8"],
+  ["ᴗ", "·:'", "6", "℘", "⊐", "∂", "7", "E"],
+  ["ᴗ", "⊓̍", "ϙ", "ô", "∵", "⊐", "·:'", "E", "‡"],
+  ["N:ɣρ"],
+  ["0:■", "N:⊡"],
+  ["0:q", "Ħ", "⊢", "+o", "6", "∵", "7", "ᴗ", "·:'", "E", "q‡"],
+  ["℘", "÷", "∂"],
+  ["ɧ", "∵", "ᴗ", "∂", "7", "E", "℘"],
+  ["♀", "0:ϡ", "99", "∧", "▽"],
+  ["π", "⊔", "6", "·:'", "7", "Ħ"],
+  ["ς"],
+  ["⊀", "ψ"],
+  ["π", "+o", "8̊", "♀", "⊔", "ô", "+o", "ʓ", "Ħ"],
+  ["N:oɣ"],
+  ["N:↑"],
+  ["N:+o–"],
+  ["6", "∵", "ᴗ", "+o", "7", "0:▼", "E", "Ħ"],
+  ["Ч", "∵", "Γ°", "▽", "9", "ll", "⊓"],
+  ["ᴗ", "·:'", "ô", "ɤ", "ᴗ", "#", "7", "⊓"],
+  ["N:E"],
+  ["N:ɣ"]
+ ]
+}

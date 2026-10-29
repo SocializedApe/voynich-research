@@ -1,0 +1,742 @@
+{
+ "seed": 1421,
+ "rows": [
+  {
+   "target": "benedict1399",
+   "folder": "benedict1399",
+   "date": "22 June 1400",
+   "year": 1400,
+   "reconstructed": true,
+   "system": "Simple substitution, one invented sign per letter (c and i share one sign, u/v one), no word division, cipher runs inside clear Latin; one name sign (dotted V = King of Aragon) and groups of null separator signs. Puig broke it in 1920; key rebuilt here from the plate.",
+   "n": 788,
+   "inventory": 21,
+   "h1": 3.8288926160980625,
+   "h2": 3.1143428346862243,
+   "h2_over_log2inv": 0.7090432077005862,
+   "codes": 4,
+   "nulls": 4,
+   "letters_only": {
+    "h1": 3.775266913433776,
+    "h2": 3.107892909307908,
+    "inventory": 19,
+    "n": 780
+   },
+   "plaintext": {
+    "n": 780,
+    "h1": 3.9546729269476066,
+    "h2": 3.1165366417264333,
+    "inventory": 21
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.9840590824282527,
+     "p05": 1.728363292651398,
+     "p95": 2.229057382478141
+    },
+    "voynich_merged": {
+     "mean": 2.36930944463988,
+     "p05": 1.9956909803763336,
+     "p95": 2.637903527672173
+    },
+    "latin": {
+     "mean": 3.214064144996505,
+     "p05": 3.1424756063859345,
+     "p95": 3.2801211867122833
+    },
+    "italian": {
+     "mean": 3.1779089863486836,
+     "p05": 3.0922624260790674,
+     "p95": 3.2663059944967805
+    }
+   }
+  },
+  {
+   "target": "siena1421_no14",
+   "folder": "siena1421",
+   "date": "undated, c. 1409-1429 (Carlo Malatesta alive)",
+   "year": 1420,
+   "reconstructed": false,
+   "system": "Italian; substitution with a few homophones (e, o, i, a), a point after every cipher word, two or three code signs for persons (7H, Z7, CIRC) and numbers in cipher digits; key recovered ciphertext-only here (homsolve2).",
+   "n": 1453,
+   "inventory": 56,
+   "h1": 4.675535775413929,
+   "h2": 3.5294744409648926,
+   "h2_over_log2inv": 0.6077593824271317,
+   "codes": 23,
+   "nulls": 0,
+   "letters_only": {
+    "h1": 4.580265431769307,
+    "h2": 3.558398662583132,
+    "inventory": 46,
+    "n": 1430
+   },
+   "plaintext": {
+    "n": 1260,
+    "h1": 3.8735333191830033,
+    "h2": 3.061993934166607,
+    "inventory": 19
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 2.056338113437205,
+     "p05": 1.7975683136238967,
+     "p95": 2.3036572483397926
+    },
+    "voynich_merged": {
+     "mean": 2.504074464211241,
+     "p05": 2.1262223934799693,
+     "p95": 2.74867785080665
+    },
+    "latin": {
+     "mean": 3.3305462243270143,
+     "p05": 3.273266931715467,
+     "p95": 3.381967723321911
+    },
+    "italian": {
+     "mean": 3.2817956361553966,
+     "p05": 3.2174708031194212,
+     "p95": 3.3519605170147884
+    }
+   }
+  },
+  {
+   "target": "florence1429",
+   "folder": "florence1429",
+   "date": "early 1425 (1424 Florentine style)",
+   "year": 1425,
+   "reconstructed": false,
+   "system": "Homophonic substitution of graphic signs (two or three per letter) with about 17 nulls and a nomenclator of about 30 signs (persons, places, 'che', 'per', 'con'); about twenty short runs inside clear Italian. Key: Gabbrielli 1863 (Meister 1902) extended here from sibling glosses.",
+   "n": 99,
+   "inventory": 51,
+   "h1": 5.290775752453131,
+   "h2": 1.2016797795189582,
+   "h2_over_log2inv": 0.21184585200751274,
+   "codes": 7,
+   "nulls": 5,
+   "letters_only": {
+    "h1": 4.9197307844117,
+    "h2": 1.3140666382638893,
+    "inventory": 39,
+    "n": 87
+   },
+   "plaintext": {
+    "n": 131,
+    "h1": 3.685423744928771,
+    "h2": 2.1451163707911194,
+    "inventory": 17
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.4579076561151136,
+     "p05": 1.1816722805034616,
+     "p95": 1.7458530585087795
+    },
+    "voynich_merged": {
+     "mean": 1.6712180920376183,
+     "p05": 1.30751366877672,
+     "p95": 1.9375124756003888
+    },
+    "latin": {
+     "mean": 2.1473200473733063,
+     "p05": 1.9965666187058324,
+     "p95": 2.294603247900934
+    },
+    "italian": {
+     "mean": 2.204330691617315,
+     "p05": 2.0462687200607856,
+     "p95": 2.379658701929408
+    }
+   }
+  },
+  {
+   "target": "r1854_p1",
+   "folder": "r1854",
+   "date": "22 Apr 1428",
+   "year": 1428,
+   "reconstructed": false,
+   "system": "Unknown. Three cipher runs of letter-like invented signs inside clear Latin, with separator marks (// : ... . |) between groups; none of the Gonzaga register's Malatesta keys fits; not monoalphabetic or homophonic in Latin/Italian under every test run.",
+   "n": 261,
+   "inventory": 28,
+   "h1": 4.263891735024142,
+   "h2": 2.8517275622907956,
+   "h2_over_log2inv": 0.593200961552933,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.7721587497525704,
+     "p05": 1.4893511092829956,
+     "p95": 2.0273935489052013
+    },
+    "voynich_merged": {
+     "mean": 2.0667340219358814,
+     "p05": 1.7197184762997622,
+     "p95": 2.332522452990587
+    },
+    "latin": {
+     "mean": 2.7901246977959677,
+     "p05": 2.6789837027454206,
+     "p95": 2.886279003157462
+    },
+    "italian": {
+     "mean": 2.796986911166211,
+     "p05": 2.682266969723497,
+     "p95": 2.905587625499878
+    }
+   }
+  },
+  {
+   "target": "r1854_p2",
+   "folder": "r1854",
+   "date": "9 Aug 1428",
+   "year": 1428,
+   "reconstructed": false,
+   "system": "Latin; homophonic substitution of graphic signs and numerals, 13 null signs, syllable signs (3 = con, 8t = rum), a word sign (S = et), two code signs (ARW = cardinalis, ARO), occasional dot-group separators; whole letter in cipher; key recovered ciphertext-only here.",
+   "n": 1802,
+   "inventory": 53,
+   "h1": 5.02125196923211,
+   "h2": 3.8932006984576084,
+   "h2_over_log2inv": 0.6796883318021736,
+   "codes": 16,
+   "nulls": 183,
+   "letters_only": {
+    "h1": 4.633809351588299,
+    "h2": 3.7260145361707533,
+    "inventory": 37,
+    "n": 1603
+   },
+   "plaintext": {
+    "n": 1651,
+    "h1": 3.9791833897755087,
+    "h2": 3.26599564120279,
+    "inventory": 21
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 2.0701408040247693,
+     "p05": 1.8206887763793138,
+     "p95": 2.315200719070372
+    },
+    "voynich_merged": {
+     "mean": 2.522477891292886,
+     "p05": 2.1385900941569322,
+     "p95": 2.782752461784873
+    },
+    "latin": {
+     "mean": 3.364101235343958,
+     "p05": 3.3142692243195984,
+     "p95": 3.4121166094802104
+    },
+    "italian": {
+     "mean": 3.3159690510964555,
+     "p05": 3.239259857352597,
+     "p95": 3.3898848057292397
+    }
+   }
+  },
+  {
+   "target": "r1854_p3",
+   "folder": "r1854",
+   "date": "6 Nov 1428",
+   "year": 1428,
+   "reconstructed": false,
+   "system": "Italian; homophonic substitution of graphic signs with about ten null signs and three name codes (MALx = signor Malatesta, FIOL = fioli del signor marchese, PAPA); runs inside clear Italian; contemporary interlinear decipherment.",
+   "n": 893,
+   "inventory": 55,
+   "h1": 5.008370972037908,
+   "h2": 3.510613737836488,
+   "h2_over_log2inv": 0.6072297715058124,
+   "codes": 15,
+   "nulls": 104,
+   "letters_only": {
+    "h1": 4.767980937998224,
+    "h2": 3.4176813334278817,
+    "inventory": 42,
+    "n": 774
+   },
+   "plaintext": {
+    "n": 985,
+    "h1": 3.9559170867248405,
+    "h2": 2.9908403183528596,
+    "inventory": 20
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.9880212206097077,
+     "p05": 1.730130725780016,
+     "p95": 2.2355427733032687
+    },
+    "voynich_merged": {
+     "mean": 2.4075935611696453,
+     "p05": 2.0159420422100114,
+     "p95": 2.6722343765296888
+    },
+    "latin": {
+     "mean": 3.2456015665280837,
+     "p05": 3.1760938930540155,
+     "p95": 3.3102314760957308
+    },
+    "italian": {
+     "mean": 3.2046830089030194,
+     "p05": 3.129573526589997,
+     "p95": 3.303548005612424
+    }
+   }
+  },
+  {
+   "target": "r1854_p4p5",
+   "folder": "r1854",
+   "date": "13 and 21 Feb 1430",
+   "year": 1430,
+   "reconstructed": false,
+   "system": "Latin; homophonic substitution of graphic signs (up to four signs per letter), three signs for the word et (E, C, J), syllable signs m = rum and 3c = com; no word division, no nulls found; key recovered ciphertext-only here.",
+   "n": 1736,
+   "inventory": 47,
+   "h1": 4.772404224558724,
+   "h2": 3.7982672405485483,
+   "h2_over_log2inv": 0.6838070903126102,
+   "codes": 15,
+   "nulls": 0,
+   "letters_only": {
+    "h1": 4.731634563480763,
+    "h2": 3.7983364700559443,
+    "inventory": 44,
+    "n": 1721
+   },
+   "plaintext": {
+    "n": 1685,
+    "h1": 3.9525211012303516,
+    "h2": 3.312260256332589,
+    "inventory": 20
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 2.098904357902746,
+     "p05": 1.8349991969224897,
+     "p95": 2.338947369629138
+    },
+    "voynich_merged": {
+     "mean": 2.5375736237337376,
+     "p05": 2.158245145719076,
+     "p95": 2.8082000656678856
+    },
+    "latin": {
+     "mean": 3.3605341984959347,
+     "p05": 3.310934631796517,
+     "p95": 3.410338462725621
+    },
+    "italian": {
+     "mean": 3.306667375000407,
+     "p05": 3.2387005420187545,
+     "p95": 3.3828619216040954
+    }
+   }
+  },
+  {
+   "target": "maria1435",
+   "folder": "maria1435",
+   "date": "5 Aug 1435",
+   "year": 1435,
+   "reconstructed": false,
+   "system": "Unknown. Three short cipher runs of digit-like, letter-like and figure signs inside a Catalan letter; dotted figures (sq, bp, O) may be nomenclator signs (hypothesis from the 1429 key).",
+   "n": 42,
+   "inventory": 21,
+   "h1": 4.052682601195655,
+   "h2": 1.1587750001055355,
+   "h2_over_log2inv": 0.26381859245783895,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.0734043045372428,
+     "p05": 0.7918144743100037,
+     "p95": 1.3443759872869214
+    },
+    "voynich_merged": {
+     "mean": 1.1821647428661355,
+     "p05": 0.8452444398061849,
+     "p95": 1.4518484740324498
+    },
+    "latin": {
+     "mean": 1.4226657063115,
+     "p05": 1.2174669990461866,
+     "p95": 1.6046451205322159
+    },
+    "italian": {
+     "mean": 1.5009471611359282,
+     "p05": 1.2949654617024602,
+     "p95": 1.707640694349874
+    }
+   }
+  },
+  {
+   "target": "it1583_f68",
+   "folder": "it1583",
+   "date": "4 May 1446",
+   "year": 1446,
+   "reconstructed": false,
+   "system": "Graphic-sign cipher of the Sforza family (homophonic letters with syllable and word signs, cf. ASMi Sforzesco cart. 1597 no. 14), dot separators, stretches inside clear Lombard Italian.",
+   "n": 404,
+   "inventory": 26,
+   "h1": 4.275188058798516,
+   "h2": 3.008963026786608,
+   "h2_over_log2inv": 0.6401450092368335,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.8636807884715096,
+     "p05": 1.5886425254279195,
+     "p95": 2.0990144187657456
+    },
+    "voynich_merged": {
+     "mean": 2.224583446364859,
+     "p05": 1.8590823344704241,
+     "p95": 2.498664211404889
+    },
+    "latin": {
+     "mean": 2.9939846723925854,
+     "p05": 2.8956824346870533,
+     "p95": 3.0793759578232254
+    },
+    "italian": {
+     "mean": 2.9867867334694376,
+     "p05": 2.8829550265561643,
+     "p95": 3.0876462402619955
+    }
+   }
+  },
+  {
+   "target": "it1583_f70",
+   "folder": "it1583",
+   "date": "4 May 1446",
+   "year": 1446,
+   "reconstructed": false,
+   "system": "Same sign family as f. 68, a different hand; almost all cipher.",
+   "n": 390,
+   "inventory": 31,
+   "h1": 4.358327787973202,
+   "h2": 3.096553237456873,
+   "h2_over_log2inv": 0.625036442533514,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.8635009231005033,
+     "p05": 1.562892918687261,
+     "p95": 2.1082675689626633
+    },
+    "voynich_merged": {
+     "mean": 2.1886089698759643,
+     "p05": 1.8180834601771152,
+     "p95": 2.485299317606512
+    },
+    "latin": {
+     "mean": 2.9852291562494275,
+     "p05": 2.884648717028199,
+     "p95": 3.0741433407685337
+    },
+    "italian": {
+     "mean": 2.965758460047623,
+     "p05": 2.863831749006351,
+     "p95": 3.0646018837609565
+    }
+   }
+  },
+  {
+   "target": "siena1421_no07",
+   "folder": "siena1421",
+   "date": "c. 1454 (undated)",
+   "year": 1454,
+   "reconstructed": false,
+   "system": "Mixed digits, letters and drawn signs, homophonic-looking (faint glosses give o for several signs), runs inside a clear Italian despatch; key R4750 (Milan 1454) does not fit.",
+   "n": 363,
+   "inventory": 45,
+   "h1": 5.005535211598769,
+   "h2": 2.779110973417418,
+   "h2_over_log2inv": 0.506042482322544,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.8537828742675102,
+     "p05": 1.5632336314217437,
+     "p95": 2.0872590819474173
+    },
+    "voynich_merged": {
+     "mean": 2.187137151499023,
+     "p05": 1.8283283297908661,
+     "p95": 2.450579511110577
+    },
+    "latin": {
+     "mean": 2.9518534918591848,
+     "p05": 2.8672344111609616,
+     "p95": 3.0387890457433433
+    },
+    "italian": {
+     "mean": 2.939580508790435,
+     "p05": 2.8125328213056657,
+     "p95": 3.0544308234362254
+    }
+   }
+  },
+  {
+   "target": "siena1421_no04",
+   "folder": "siena1421",
+   "date": "12 May 1456",
+   "year": 1456,
+   "reconstructed": false,
+   "system": "Substitution of capitals, digits and drawn signs in 15 short runs inside a clear Italian letter, plus Latin code words (Calor = duca, storps = Lucca, cras = parte, vapor = cardinali ...); key rebuilt from an alphabet fragment below the text and the recipient's glosses.",
+   "n": 153,
+   "inventory": 52,
+   "h1": 5.173716221691956,
+   "h2": 1.797973572426181,
+   "h2_over_log2inv": 0.31540962826153673,
+   "codes": 9,
+   "nulls": 0,
+   "letters_only": {
+    "h1": 4.983801681906851,
+    "h2": 1.8691747063551007,
+    "inventory": 45,
+    "n": 144
+   },
+   "plaintext": {
+    "n": 118,
+    "h1": 3.7652057155062506,
+    "h2": 2.2463407014706775,
+    "inventory": 18
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.6211223645061943,
+     "p05": 1.3370292361034468,
+     "p95": 1.8774658071772028
+    },
+    "voynich_merged": {
+     "mean": 1.8655610845349535,
+     "p05": 1.4894389703964812,
+     "p95": 2.1181975347763506
+    },
+    "latin": {
+     "mean": 2.4683807151817843,
+     "p05": 2.3406561882265033,
+     "p95": 2.586442570267604
+    },
+    "italian": {
+     "mean": 2.509804772866016,
+     "p05": 2.369745246671214,
+     "p95": 2.6276026582050274
+    }
+   }
+  },
+  {
+   "target": "siena1421_no11",
+   "folder": "siena1421",
+   "date": "13 June 1478",
+   "year": 1478,
+   "reconstructed": false,
+   "system": "Florentine cipher of graphic signs (44 types), no word division, two cipher blocks inside a clear letter; homophonic anneal fails; no key known.",
+   "n": 409,
+   "inventory": 44,
+   "h1": 4.99442943456162,
+   "h2": 2.828042555899347,
+   "h2_over_log2inv": 0.5180104365159612,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.8603128965106421,
+     "p05": 1.5868082200913483,
+     "p95": 2.0950452936282713
+    },
+    "voynich_merged": {
+     "mean": 2.231469576797904,
+     "p05": 1.8630019628757082,
+     "p95": 2.495509079100414
+    },
+    "latin": {
+     "mean": 3.0001926706792097,
+     "p05": 2.897023541260723,
+     "p95": 3.088902619197884
+    },
+    "italian": {
+     "mean": 2.990141730212298,
+     "p05": 2.8926778662270163,
+     "p95": 3.1014969934825434
+    }
+   }
+  },
+  {
+   "target": "buda1489",
+   "folder": "buda1489",
+   "date": "12 Jan 1490 and 2 Apr 1490",
+   "year": 1490,
+   "reconstructed": false,
+   "system": "Italian; homophonic substitution of cursive letters, numerals and marks with syllable signs (letter + superscript: q^e = re, b^o = no, m^o = si ...), nulls (w, \u00f7, -, lone dots) and a small nomenclator (M. = Ser.mo Re, S. = S.V.); no word division (Somogyi 2016 key, extended here).",
+   "n": 690,
+   "inventory": 75,
+   "h1": 5.148766776410632,
+   "h2": 3.2521703754412714,
+   "h2_over_log2inv": 0.522116718600837,
+   "codes": 2,
+   "nulls": 37,
+   "letters_only": {
+    "h1": 5.028178649744428,
+    "h2": 3.2116132043451513,
+    "inventory": 69,
+    "n": 651
+   },
+   "plaintext": {
+    "n": 684,
+    "h1": 3.9127068212072187,
+    "h2": 3.0102872833301224,
+    "inventory": 21
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.9681431419715738,
+     "p05": 1.7169212490153956,
+     "p95": 2.177403563183058
+    },
+    "voynich_merged": {
+     "mean": 2.356458277716602,
+     "p05": 1.9750292458991296,
+     "p95": 2.6124754571252455
+    },
+    "latin": {
+     "mean": 3.175150855262236,
+     "p05": 3.0966629479720877,
+     "p95": 3.239754658937425
+    },
+    "italian": {
+     "mean": 3.150613664833054,
+     "p05": 3.0463858577686116,
+     "p95": 3.251570224282676
+    }
+   }
+  },
+  {
+   "target": "siena1421_no06_24",
+   "folder": "siena1421",
+   "date": "undated; 15th-century hand (no. 6)",
+   "year": null,
+   "reconstructed": false,
+   "system": "About 65 sign types (letters, digits, drawn signs, signs with a cross above), no word division, frequent 'p p' pairs and point-framed single signs; not plain homophonic substitution (validated solvers fail): probably syllabic or nomenclator elements. No key.",
+   "n": 3694,
+   "inventory": 73,
+   "h1": 5.257560400165395,
+   "h2": 4.367885684103034,
+   "h2_over_log2inv": 0.7056558134328376,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 2.1274844098267067,
+     "p05": 1.874037396810392,
+     "p95": 2.3494177541687318
+    },
+    "voynich_merged": {
+     "mean": 2.600986205790901,
+     "p05": 2.2500297632696773,
+     "p95": 2.8531349765020364
+    },
+    "latin": {
+     "mean": 3.431085973181056,
+     "p05": 3.3967757062215442,
+     "p95": 3.4648111018457994
+    },
+    "italian": {
+     "mean": 3.37369326800241,
+     "p05": 3.32077229174682,
+     "p95": 3.4232067009889553
+    }
+   }
+  },
+  {
+   "target": "siena1421_no20_23",
+   "folder": "siena1421",
+   "date": "undated",
+   "year": null,
+   "reconstructed": false,
+   "system": "About 50-67 sign types, mostly letter-shaped, with superscripts (o^n, q^o ...); no word division; 'f' + o^n / a / o groups behave as units (syllabic or nomenclator element); not plain homophonic substitution. No key.",
+   "n": 4931,
+   "inventory": 86,
+   "h1": 4.78571778652021,
+   "h2": 3.8726738626921504,
+   "h2_over_log2inv": 0.6026321682215964,
+   "codes": 0,
+   "nulls": 0,
+   "refs": {
+    "voynich_raw": {
+     "mean": 2.149160796601435,
+     "p05": 1.8926716101623389,
+     "p95": 2.3593160844221694
+    },
+    "voynich_merged": {
+     "mean": 2.642776870331519,
+     "p05": 2.3124173403649095,
+     "p95": 2.877534314814298
+    },
+    "latin": {
+     "mean": 3.449782976143218,
+     "p05": 3.4212960676010606,
+     "p95": 3.479326488397482
+    },
+    "italian": {
+     "mean": 3.3835783244354714,
+     "p05": 3.336555833849887,
+     "p95": 3.430609213144901
+    }
+   }
+  },
+  {
+   "target": "siena1421_no25",
+   "folder": "siena1421",
+   "date": "undated",
+   "year": null,
+   "reconstructed": false,
+   "system": "Italian (Sienese spelling); simple monoalphabetic substitution, one sign per letter, 21 signs built on a running horizontal stroke, a point after each cipher word, one code sign (TH); key recovered ciphertext-only here.",
+   "n": 496,
+   "inventory": 21,
+   "h1": 3.9206809410917787,
+   "h2": 2.7575100985665735,
+   "h2_over_log2inv": 0.6278030099250111,
+   "codes": 1,
+   "nulls": 0,
+   "letters_only": {
+    "h1": 3.9076006277541078,
+    "h2": 2.7565230491753394,
+    "inventory": 20,
+    "n": 495
+   },
+   "plaintext": {
+    "n": 495,
+    "h1": 3.870029475015333,
+    "h2": 2.7375228429321616,
+    "inventory": 19
+   },
+   "refs": {
+    "voynich_raw": {
+     "mean": 1.9061414790949691,
+     "p05": 1.6156911399523484,
+     "p95": 2.1334977855288217
+    },
+    "voynich_merged": {
+     "mean": 2.2672394847537163,
+     "p05": 1.9011782453887287,
+     "p95": 2.543336945587588
+    },
+    "latin": {
+     "mean": 3.0716418299717994,
+     "p05": 2.982715861017395,
+     "p95": 3.1529115434745822
+    },
+    "italian": {
+     "mean": 3.0549534250893404,
+     "p05": 2.955824813113289,
+     "p95": 3.155181397854993
+    }
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+Voynich lines 4103, tokens 34807; middle slot of 0-3 letters: 92.3%
+  slot P: 9 values; top [('-', 14273), ('o', 7159), ('qo', 5182), ('d', 3276), ('y', 1728), ('l', 1406), ('s', 1182), ('r', 484)]
+  slot C: 51 values; top [('-', 10734), ('k', 6315), ('ch', 5919), ('t', 3447), ('sh', 3231), ('kch', 816), ('tch', 813), ('pch', 601)]
+  slot M: 1412 values; top [('-', 17534), ('e', 5374), ('ee', 1639), ('o', 799), ('eo', 555), ('d', 485), ('ed', 389), ('al', 354)]
+  slot E: 28 values; top [('dy', 6036), ('y', 4213), ('ey', 3677), ('aiin', 3633), ('ol', 2594), ('ar', 2396), ('al', 1813), ('or', 1657)]
+Latin letters: H1 3.97, H(x|x-1) 3.43, I(x;x-1) 0.544 bits
+slotcipher     K=12  mix  9.625  hmm  9.481  gain +0.144  H(z) 3.44  I(z;z-1) 0.330  purity 0.80 NMI 0.96
+slotcipher     K=24  mix  9.190  hmm  8.720  gain +0.470  H(z) 4.15  I(z;z-1) 0.676  purity 0.99 NMI 0.98
+slotcipher_m   K=12  mix 12.607  hmm 12.588  gain +0.019  H(z) 3.37  I(z;z-1) 0.068  purity 0.37 NMI 0.72
+slotcipher_m   K=24  mix 12.324  hmm 12.279  gain +0.045  H(z) 4.52  I(z;z-1) 0.238  purity 0.49 NMI 0.75
+shuffled       K=12  mix 10.427  hmm 10.446  gain -0.020  H(z) 3.47  I(z;z-1) 0.006
+shuffled       K=24  mix 10.244  hmm 10.244  gain +0.000  H(z) 4.23  I(z;z-1) 0.053
+voynich        K=12  mix 10.436  hmm 10.423  gain +0.013  H(z) 3.48  I(z;z-1) 0.297
+voynich        K=24  mix 10.280  hmm 10.089  gain +0.191  H(z) 4.41  I(z;z-1) 0.542
+voynich_A      K=24  mix 10.199  hmm 10.131  gain +0.068  H(z) 4.38  I(z;z-1) 0.678
+voynich_B      K=24  mix 10.049  hmm  9.886  gain +0.164  H(z) 4.43  I(z;z-1) 0.520

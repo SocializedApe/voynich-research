@@ -1,0 +1,54 @@
+{
+ "dataset": "it1583_f68",
+ "target": "it1583",
+ "piece": "Sforza side to Giorgio (Zorzo) del Maino, reply, f. 68",
+ "date": "4 May 1446",
+ "year": 1446,
+ "date_basis": "dated at the head in clear; Mazzatinti 1883",
+ "shelfmark": "BnF italien 1583 f. 68 (DECODE R7898)",
+ "system": "Graphic-sign cipher of the Sforza family (homophonic letters with syllable and word signs, cf. ASMi Sforzesco cart. 1597 no. 14), dot separators, stretches inside clear Lombard Italian.",
+ "language": "Italian (Lombard) context; cipher unread",
+ "outcome": "not read",
+ "sign_inventory_note": "Sign codes of transcription.txt (draft 1): 8 p c k n r z x > as written; B barred b, H looped h, E barred epsilon, F double-barred stroke, + cross/stroke, D divide sign, S long s, J barred yogh, g barred g, Q phi, d d with apostrophe, 7 hooked 7, V cross-circle, M barred m-like sign, - dash-hook. '|' = the written dot separators ('.', for :: or .:.). Rows are the transcription's paragraphs, split at clear text.",
+ "counts": {
+  "lines": 12,
+  "sign_tokens": 404,
+  "distinct_signs": 26,
+  "letter_sign_tokens": 404,
+  "distinct_letter_signs": 26,
+  "code_sign_tokens": 0,
+  "distinct_code_signs": 0,
+  "null_tokens": 0,
+  "distinct_nulls": 0,
+  "dividers": 23,
+  "plaintext_letters": 0,
+  "illegible_signs": 1
+ },
+ "plaintext": null,
+ "plaintext_source": null,
+ "source_files": [
+  "targets/it1583/transcription.txt",
+  "targets/it1583/NOTES.md",
+  "targets/it1583/profile.json"
+ ],
+ "caveats": [
+  "Short (about 400 signs).",
+  "Draft transcription from a binarized scan: diacritics that may separate signs are unreliable.",
+  "Probably syllabic/word signs over homophonic letters."
+ ],
+ "line_ids": ["f68.p1", "f68.p2a", "f68.p2b", "f68.p3a", "f68.p3b", "f68.p3c", "f68.p3d", "f68.p3e", "f68.p4a", "f68.p4b", "f68.p4c", "f68.p4d"],
+ "lines": [
+  ["R", "8", "H", "c", "E", "D", "F", "p", "B", "H", "c", "B", "E", "+", "n", "+", "F", "r", "B", "|", "z", "S", "x", "J", "p", "g", "c", "k", "|", "F", "p", "n", "p", "F", "Q", "B", "c", "|", "B", "F", "|", "B", "S", "d", "8", ">", "|", "g", "d", "+", "F", "p"],
+  ["E", "D", "8", "g", "M", "J", "|", "B", "F", "|", "B", "-", "d", "E", "p", "B", "+", "x", "J", "p", "g", "+", "d", "p", "k", "|", "g", "F", "p", "B", "H", "c", "B", "E", "c", "B", "+", "H", "+", "F", "E", "p", "S", "d", "8", "r", "c", "d", "E", "d", "f", "F", "|", "d", "r", ">", "B", "r", "c", "F", "F", "p", "B", "H", "c", "d", "S", "p"],
+  ["+", "D", "F", "D", "B", "+", "8", "|", ">", "p", "d", "E", "p", "|", "S", "x", "J", "p", "g", "d", "H", "+", "F", "E", "p", "S", "p", "8", "B", "B", "Q", "-", "8", "+", "F", "8", "c", "B", "+", "F", "Q", "B", "H", "p", "r", "B", "+", "S", "8", "Q", "c", "7", "8", "7", "-", "k", ">", "V", "8", "B", "z", "+", "B", "z", "8", "E", "7", "+"],
+  ["V", "B", "J", "8", "-", "k", "Q", "B", "Q", "|", "d", "c", "D"],
+  ["B", "z", "J", "p", "F", "8", "Q", "d", "p", "F"],
+  ["V", "8", "z", "B", "p", "r", "J", "F", "p", "|", "+"],
+  ["E", "M", "r", "+", "d", "E", "p", "r", "k", "Q", "B", "|", "8", "Q", "c", "7", "8", "B", "-", "B", "V", "8", "z", "B", "8", "c", "F", "B", "S", "p", "J", "p", "B", "|", "J", "p", "F", "d", "x", "J", "p", "B", "E", "c", "V", "B", "p", "8", "J", "c", "8", "p", "-", "H", "J", "+", "n", "|", "F", "S", "x", "J", "p", "B", "E", "c", "+", "d", "c", "d", "-", "J", "c", "8", "p", "d", "S", "c", "n", "|", "F", "d", "p", "8", "z", "B", "p", "r", "J", "F", "p"],
+  ["D", "F", "B", "M", "D", "E"],
+  ["R", "8", "H", "E", "J", "+", "8", "z", "H", "|", "F", "E", "p", "S", "p", "8", "d", "g", "p", "-", "p", "+", "S", "8", "Q", "B", "n", "Q", "S", "p", "d", "E", "Q", "-", "S", "F", "p", "B", "H", "c", "d", "S", "p", ">", "c", "V"],
+  ["M", "D", "F", "|", "B", "r", "E", "V", "S", "p", "r", "p", "B", "+", "V"],
+  ["D", "E", "|", "B", "d", "E", "7", "E", "|", "8", "p", "H", "|", "F", "E", "p", "B", "+", "V"],
+  ["J", "B", "+", "B", "J", "B", "H", "p", "r", "B", "c", "g", "g", "S", "|", "F", "p", ">", "c", "x", "J", "p", "g", "B", "D", "H", "E", "J"]
+ ]
+}

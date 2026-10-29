@@ -1,0 +1,5395 @@
+{
+ "method": "a1_charstats.py -- character-level statistics of Voynichese vs natural languages and controls.\n\nPure Python 3.12, no third-party packages.\n\nMETHOD (every choice is explicit; see also results/a1.md)\n---------------------------------------------------------\nVoynich text\n  * Files: data/ZL3b-n.words.tsv (main), data/RF1b-er.words.tsv, data/GC2a-n.words.tsv.\n  * Only locus_type == 'P' (paragraph text). Words containing '?' (unread glyph) are dropped.\n  * EVA files (ZL, RF): words containing any character outside a-z are dropped as well\n    (extended-EVA codes '@nnn;', digits, apostrophes: 96 of 34212 ZL paragraph words, 0 RF words).\n  * GC (v101): every character is a symbol (v101 uses digits, capitals and punctuation as glyphs);\n    words containing '@' (extended codes '@nnn;') are dropped.\n  * Subsets: Currier A ($L=A), Currier B ($L=B), ALL (A + B + pages with unknown language '?').\n  * Alphabets:\n      raw     : one EVA character = one symbol.\n      merge1  : greedy longest-match tokenisation with the token list\n                ckh cth cph cfh ch sh iiin iin eee ee   (benches, bench-gallows, i-groups, e-groups)\n      merge2  : merge1 tokens plus  aiin ain in qo   (a+i-groups, and the qo digraph)\n                Greedy longest match is applied left to right; e.g. 'daiin' -> d,aiin (merge2) or d,a,iin (merge1);\n                'cheey' -> ch,ee,y ; 'qokeedy' -> qo,k,ee,d,y (merge2).\n    Merging is applied to EVA files only; GC v101 already encodes most of these composites as single glyphs.\n\nNatural languages\n  * Gutenberg texts: header stripped up to the line containing '*** START OF', footer from '*** END OF'.\n  * Normalisation for ALL texts (identical to Voynich treatment): lower-case; a character is a letter iff\n    str.isalpha() (so accented letters such as ae/oe/aa/ss are kept as distinct symbols); every other\n    character (digits, punctuation, apostrophe, whitespace) is a word break.\n  * Sample: for each language, an equal share of the target letter budget is taken from the START of each\n    book (whole words), so that a 150k-letter sample of e.g. Danish mixes all five Danish books.\n  * Italian: targets/vatican5/corpus_it.txt (already lower-cased, no punctuation); first N letters.\n\nControls (built from the Latin sample)\n  * LAT-novowel : a e i o u y removed from every Latin word, empty words dropped (\"abjad-like\").\n  * LAT-verbose12 : each Latin letter -> fixed group of 1-3 symbols over a 12-symbol output alphabet;\n                    the 4 most frequent letters get 1-symbol codes, the next 8 get 2-symbol codes, the rest\n                    3-symbol codes; codes drawn with random.Random(1) (prefix-free is not required).\n  * LAT-verbose6  : same idea over a 6-symbol alphabet; all letters get 2- or 3-symbol codes.\n  * LAT-verbose20 : 20-symbol output alphabet (inventory comparable to EVA); 6 letters -> 1 symbol,\n                    10 letters -> 2 symbols, rest -> 3 symbols (random.Random(3)).\n    Word boundaries are kept in both, so the 'with spaces' statistics are meaningful.\n\nStatistics (all logs base 2)\n  * with spaces  : the symbol stream is words joined by a single space symbol (line ends count as a space).\n  * without spaces: words concatenated with nothing between them; bigrams span word boundaries.\n  * h0 = log2(number of distinct symbols in the sample).\n  * h1 = -sum p(x) log2 p(x)  over unigrams.\n  * h2 = H(X_n | X_{n-1}) = H(bigram) - H(unigram over first positions), plug-in (maximum-likelihood) estimate.\n  * h2_within: conditional entropy using only bigrams inside words (no-space stream) -- extra diagnostic.\n  * word entropy H_w = -sum p(w) log2 p(w) over word types, plus type/token counts. Because H_w depends\n    strongly on sample size, each language is also evaluated at exactly the token counts of the\n    Voynich A, B and ALL subsets.\n  * Sample sizes: Voynich subsets are reported at full size (and ALL additionally truncated to 150k letters);\n    languages/controls are reported at 150,000 letters (spaces excluded from the count) and at the letter\n    count of Voynich ZL Currier A, so that A can be compared like with like.\n",
+ "voynich": {
+  "ZL3b": {
+   "A": {
+    "raw": {
+     "label": "ZL3b A raw",
+     "n_words": 11217,
+     "n_letters": 53747,
+     "mean_word_len": 4.791566372470357,
+     "with_spaces": {
+      "n_symbols": 64963,
+      "inventory": 25,
+      "h0": 4.643856189774724,
+      "h1": 3.833546582353604,
+      "h2": 2.145091075918107,
+      "h2_over_h1": 0.5595578480231038,
+      "h1_minus_h2": 1.688455506435497
+     },
+     "without_spaces": {
+      "n_symbols": 53747,
+      "inventory": 24,
+      "h0": 4.584962500721156,
+      "h1": 3.8312912521527114,
+      "h2": 2.364018137031005,
+      "h2_over_h1": 0.6170290853515037,
+      "h1_minus_h2": 1.4672731151217064,
+      "h2_within_word": 2.126683238519696
+     },
+     "word_entropy": {
+      "tokens": 11217,
+      "types": 3213,
+      "H_word_bits": 9.743874352803596,
+      "TTR": 0.2864402246589997,
+      "hapax_frac": 0.6887643946467475
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1566
+      ],
+      [
+       "h",
+       0.1169
+      ],
+      [
+       "c",
+       0.0918
+      ],
+      [
+       "y",
+       0.0815
+      ],
+      [
+       "e",
+       0.0679
+      ],
+      [
+       "i",
+       0.0662
+      ],
+      [
+       "a",
+       0.0641
+      ],
+      [
+       "d",
+       0.0563
+      ],
+      [
+       "l",
+       0.0538
+      ],
+      [
+       "k",
+       0.0488
+      ],
+      [
+       "s",
+       0.0431
+      ],
+      [
+       "r",
+       0.0413
+      ]
+     ]
+    },
+    "merge1": {
+     "label": "ZL3b A merge1",
+     "n_words": 11217,
+     "n_letters": 42699,
+     "mean_word_len": 3.8066327895159136,
+     "with_spaces": {
+      "n_symbols": 53915,
+      "inventory": 35,
+      "h0": 5.129283016944966,
+      "h1": 3.878004919408745,
+      "h2": 2.443367770559575,
+      "h2_over_h1": 0.6300579347723211,
+      "h1_minus_h2": 1.4346371488491698
+     },
+     "without_spaces": {
+      "n_symbols": 42699,
+      "inventory": 34,
+      "h0": 5.087462841250339,
+      "h1": 3.965184335722943,
+      "h2": 2.797780272324023,
+      "h2_over_h1": 0.7055864331749722,
+      "h1_minus_h2": 1.1674040633989202,
+      "h2_within_word": 2.5034446986983987
+     },
+     "word_entropy": {
+      "tokens": 11217,
+      "types": 3213,
+      "H_word_bits": 9.743874352803596,
+      "TTR": 0.2864402246589997,
+      "hapax_frac": 0.6887643946467475
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1971
+      ],
+      [
+       "y",
+       0.1026
+      ],
+      [
+       "ch",
+       0.0898
+      ],
+      [
+       "a",
+       0.0807
+      ],
+      [
+       "d",
+       0.0708
+      ],
+      [
+       "l",
+       0.0677
+      ],
+      [
+       "k",
+       0.054
+      ],
+      [
+       "r",
+       0.052
+      ],
+      [
+       "e",
+       0.0459
+      ],
+      [
+       "t",
+       0.0371
+      ],
+      [
+       "iin",
+       0.033
+      ],
+      [
+       "sh",
+       0.0316
+      ]
+     ]
+    },
+    "merge2": {
+     "label": "ZL3b A merge2",
+     "n_words": 11217,
+     "n_letters": 39817,
+     "mean_word_len": 3.5497013461709903,
+     "with_spaces": {
+      "n_symbols": 51033,
+      "inventory": 39,
+      "h0": 5.285402218862249,
+      "h1": 3.8956260401862353,
+      "h2": 2.547992358243835,
+      "h2_over_h1": 0.6540649261400935,
+      "h1_minus_h2": 1.3476336819424004
+     },
+     "without_spaces": {
+      "n_symbols": 39817,
+      "inventory": 38,
+      "h0": 5.247927513443585,
+      "h1": 4.019198493239017,
+      "h2": 2.957847529444522,
+      "h2_over_h1": 0.735929697032911,
+      "h1_minus_h2": 1.061350963794495,
+      "h2_within_word": 2.682038637330634
+     },
+     "word_entropy": {
+      "tokens": 11217,
+      "types": 3213,
+      "H_word_bits": 9.743874352803596,
+      "TTR": 0.2864402246589997,
+      "hapax_frac": 0.6887643946467475
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.184
+      ],
+      [
+       "y",
+       0.11
+      ],
+      [
+       "ch",
+       0.0963
+      ],
+      [
+       "d",
+       0.076
+      ],
+      [
+       "l",
+       0.0726
+      ],
+      [
+       "k",
+       0.0579
+      ],
+      [
+       "r",
+       0.0558
+      ],
+      [
+       "e",
+       0.0493
+      ],
+      [
+       "a",
+       0.0478
+      ],
+      [
+       "t",
+       0.0398
+      ],
+      [
+       "sh",
+       0.0339
+      ],
+      [
+       "aiin",
+       0.0325
+      ]
+     ]
+    }
+   },
+   "B": {
+    "raw": {
+     "label": "ZL3b B raw",
+     "n_words": 23069,
+     "n_letters": 117432,
+     "mean_word_len": 5.090467727253023,
+     "with_spaces": {
+      "n_symbols": 140500,
+      "inventory": 25,
+      "h0": 4.643856189774724,
+      "h1": 3.870481659969011,
+      "h2": 1.9982789162642125,
+      "h2_over_h1": 0.5162868841187616,
+      "h1_minus_h2": 1.8722027437047983
+     },
+     "without_spaces": {
+      "n_symbols": 117432,
+      "inventory": 24,
+      "h0": 4.584962500721156,
+      "h1": 3.86000931414146,
+      "h2": 2.1897711733720073,
+      "h2_over_h1": 0.56729686256186,
+      "h1_minus_h2": 1.6702381407694529,
+      "h2_within_word": 1.9296147531024386
+     },
+     "word_entropy": {
+      "tokens": 23069,
+      "types": 4787,
+      "H_word_bits": 9.79353762932457,
+      "TTR": 0.20750791104946031,
+      "hapax_frac": 0.6797576770419888
+     },
+     "top_symbols": [
+      [
+       "e",
+       0.1204
+      ],
+      [
+       "o",
+       0.1156
+      ],
+      [
+       "y",
+       0.0975
+      ],
+      [
+       "h",
+       0.0856
+      ],
+      [
+       "a",
+       0.0781
+      ],
+      [
+       "d",
+       0.0739
+      ],
+      [
+       "i",
+       0.0624
+      ],
+      [
+       "k",
+       0.0622
+      ],
+      [
+       "c",
+       0.0608
+      ],
+      [
+       "l",
+       0.0548
+      ],
+      [
+       "r",
+       0.036
+      ],
+      [
+       "q",
+       0.0356
+      ]
+     ]
+    },
+    "merge1": {
+     "label": "ZL3b B merge1",
+     "n_words": 23069,
+     "n_letters": 97716,
+     "mean_word_len": 4.23581429624171,
+     "with_spaces": {
+      "n_symbols": 120784,
+      "inventory": 35,
+      "h0": 5.129283016944966,
+      "h1": 3.939412044465008,
+      "h2": 2.204675270134283,
+      "h2_over_h1": 0.5596457657258569,
+      "h1_minus_h2": 1.7347367743307252
+     },
+     "without_spaces": {
+      "n_symbols": 97716,
+      "inventory": 34,
+      "h0": 5.087462841250339,
+      "h1": 3.9997845008740733,
+      "h2": 2.480807302289738,
+      "h2_over_h1": 0.6202352406104896,
+      "h1_minus_h2": 1.5189771985843352,
+      "h2_within_word": 2.216620947268374
+     },
+     "word_entropy": {
+      "tokens": 23069,
+      "types": 4787,
+      "H_word_bits": 9.79353762932457,
+      "TTR": 0.20750791104946031,
+      "hapax_frac": 0.6797576770419888
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1389
+      ],
+      [
+       "y",
+       0.1172
+      ],
+      [
+       "a",
+       0.0939
+      ],
+      [
+       "d",
+       0.0888
+      ],
+      [
+       "e",
+       0.0718
+      ],
+      [
+       "k",
+       0.0693
+      ],
+      [
+       "l",
+       0.0659
+      ],
+      [
+       "ch",
+       0.0629
+      ],
+      [
+       "r",
+       0.0433
+      ],
+      [
+       "q",
+       0.0428
+      ],
+      [
+       "t",
+       0.0355
+      ],
+      [
+       "ee",
+       0.0325
+      ]
+     ]
+    },
+    "merge2": {
+     "label": "ZL3b B merge2",
+     "n_words": 23069,
+     "n_letters": 88508,
+     "mean_word_len": 3.8366639212796394,
+     "with_spaces": {
+      "n_symbols": 111576,
+      "inventory": 39,
+      "h0": 5.285402218862249,
+      "h1": 3.942322330873921,
+      "h2": 2.354075094466671,
+      "h2_over_h1": 0.5971290262165923,
+      "h1_minus_h2": 1.5882472364072502
+     },
+     "without_spaces": {
+      "n_symbols": 88508,
+      "inventory": 38,
+      "h0": 5.247927513443585,
+      "h1": 4.042977091641844,
+      "h2": 2.697811351755224,
+      "h2_over_h1": 0.6672833633741043,
+      "h1_minus_h2": 1.3451657398866201,
+      "h2_within_word": 2.4408969028325487
+     },
+     "word_entropy": {
+      "tokens": 23069,
+      "types": 4787,
+      "H_word_bits": 9.79353762932457,
+      "TTR": 0.20750791104946031,
+      "hapax_frac": 0.6797576770419888
+     },
+     "top_symbols": [
+      [
+       "y",
+       0.1294
+      ],
+      [
+       "o",
+       0.1071
+      ],
+      [
+       "d",
+       0.098
+      ],
+      [
+       "e",
+       0.0793
+      ],
+      [
+       "k",
+       0.0765
+      ],
+      [
+       "l",
+       0.0728
+      ],
+      [
+       "ch",
+       0.0695
+      ],
+      [
+       "a",
+       0.0617
+      ],
+      [
+       "r",
+       0.0478
+      ],
+      [
+       "qo",
+       0.0462
+      ],
+      [
+       "t",
+       0.0392
+      ],
+      [
+       "ee",
+       0.0359
+      ]
+     ]
+    }
+   },
+   "ALL": {
+    "raw": {
+     "label": "ZL3b ALL raw",
+     "n_words": 34834,
+     "n_letters": 173828,
+     "mean_word_len": 4.990182006086008,
+     "with_spaces": {
+      "n_symbols": 208661,
+      "inventory": 26,
+      "h0": 4.700439718141092,
+      "h1": 3.870884762740746,
+      "h2": 2.1091230757999093,
+      "h2_over_h1": 0.5448684745413509,
+      "h1_minus_h2": 1.7617616869408366
+     },
+     "without_spaces": {
+      "n_symbols": 173828,
+      "inventory": 25,
+      "h0": 4.643856189774724,
+      "h1": 3.865533863830157,
+      "h2": 2.3206841352115135,
+      "h2_over_h1": 0.6003528146334923,
+      "h1_minus_h2": 1.5448497286186433,
+      "h2_within_word": 2.0680012182963856
+     },
+     "word_entropy": {
+      "tokens": 34834,
+      "types": 7021,
+      "H_word_bits": 10.215129416420766,
+      "TTR": 0.20155595108227595,
+      "hapax_frac": 0.6803874092009685
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1284
+      ],
+      [
+       "e",
+       0.104
+      ],
+      [
+       "h",
+       0.0955
+      ],
+      [
+       "y",
+       0.0926
+      ],
+      [
+       "a",
+       0.0739
+      ],
+      [
+       "c",
+       0.0705
+      ],
+      [
+       "d",
+       0.0682
+      ],
+      [
+       "i",
+       0.0635
+      ],
+      [
+       "k",
+       0.0578
+      ],
+      [
+       "l",
+       0.0545
+      ],
+      [
+       "r",
+       0.0376
+      ],
+      [
+       "s",
+       0.0374
+      ]
+     ]
+    },
+    "raw_150k": {
+     "label": "ZL3b ALL raw 150k",
+     "n_words": 30256,
+     "n_letters": 150008,
+     "mean_word_len": 4.957958751983078,
+     "with_spaces": {
+      "n_symbols": 180263,
+      "inventory": 26,
+      "h0": 4.700439718141092,
+      "h1": 3.8678872003847227,
+      "h2": 2.1167313475199037,
+      "h2_over_h1": 0.547257776108197,
+      "h1_minus_h2": 1.751155852864819
+     },
+     "without_spaces": {
+      "n_symbols": 150008,
+      "inventory": 25,
+      "h0": 4.643856189774724,
+      "h1": 3.8636134549602943,
+      "h2": 2.331957371222109,
+      "h2_over_h1": 0.6035690160019059,
+      "h1_minus_h2": 1.5316560837381852,
+      "h2_within_word": 2.080863886860231
+     },
+     "word_entropy": {
+      "tokens": 30256,
+      "types": 6335,
+      "H_word_bits": 10.144166656763282,
+      "TTR": 0.20937995769434162,
+      "hapax_frac": 0.6789265982636148
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1302
+      ],
+      [
+       "e",
+       0.1011
+      ],
+      [
+       "h",
+       0.0965
+      ],
+      [
+       "y",
+       0.0947
+      ],
+      [
+       "a",
+       0.0719
+      ],
+      [
+       "c",
+       0.0704
+      ],
+      [
+       "d",
+       0.0692
+      ],
+      [
+       "i",
+       0.0619
+      ],
+      [
+       "k",
+       0.0582
+      ],
+      [
+       "l",
+       0.0553
+      ],
+      [
+       "s",
+       0.039
+      ],
+      [
+       "r",
+       0.0372
+      ]
+     ]
+    },
+    "merge1": {
+     "label": "ZL3b ALL merge1",
+     "n_words": 34834,
+     "n_letters": 142597,
+     "mean_word_len": 4.093615433197451,
+     "with_spaces": {
+      "n_symbols": 177430,
+      "inventory": 36,
+      "h0": 5.169925001442312,
+      "h1": 3.9352586415483852,
+      "h2": 2.3575328653839116,
+      "h2_over_h1": 0.5990795218624577,
+      "h1_minus_h2": 1.5777257761644736
+     },
+     "without_spaces": {
+      "n_symbols": 142597,
+      "inventory": 35,
+      "h0": 5.129283016944966,
+      "h1": 4.007504534564513,
+      "h2": 2.6750446647171042,
+      "h2_over_h1": 0.6675088304067998,
+      "h1_minus_h2": 1.3324598698474084,
+      "h2_within_word": 2.4023968839235845
+     },
+     "word_entropy": {
+      "tokens": 34834,
+      "types": 7021,
+      "H_word_bits": 10.215129416420766,
+      "TTR": 0.20155595108227595,
+      "hapax_frac": 0.6803874092009685
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1565
+      ],
+      [
+       "y",
+       0.1129
+      ],
+      [
+       "a",
+       0.0901
+      ],
+      [
+       "d",
+       0.0831
+      ],
+      [
+       "ch",
+       0.0711
+      ],
+      [
+       "l",
+       0.0664
+      ],
+      [
+       "k",
+       0.0644
+      ],
+      [
+       "e",
+       0.0641
+      ],
+      [
+       "r",
+       0.0459
+      ],
+      [
+       "q",
+       0.0374
+      ],
+      [
+       "t",
+       0.036
+      ],
+      [
+       "sh",
+       0.0298
+      ]
+     ]
+    },
+    "merge1_150k": {
+     "label": "ZL3b ALL merge1 150k",
+     "n_words": 30256,
+     "n_letters": 123091,
+     "mean_word_len": 4.068317028027499,
+     "with_spaces": {
+      "n_symbols": 153346,
+      "inventory": 36,
+      "h0": 5.169925001442312,
+      "h1": 3.9265096861830444,
+      "h2": 2.364215518945165,
+      "h2_over_h1": 0.602116308859387,
+      "h1_minus_h2": 1.5622941672378796
+     },
+     "without_spaces": {
+      "n_symbols": 123091,
+      "inventory": 35,
+      "h0": 5.129283016944966,
+      "h1": 3.999018854524938,
+      "h2": 2.6864697859139555,
+      "h2_over_h1": 0.6717822255011833,
+      "h1_minus_h2": 1.3125490686109824,
+      "h2_within_word": 2.410835124907543
+     },
+     "word_entropy": {
+      "tokens": 30256,
+      "types": 6335,
+      "H_word_bits": 10.144166656763282,
+      "TTR": 0.20937995769434162,
+      "hapax_frac": 0.6789265982636148
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1587
+      ],
+      [
+       "y",
+       0.1154
+      ],
+      [
+       "a",
+       0.0877
+      ],
+      [
+       "d",
+       0.0843
+      ],
+      [
+       "ch",
+       0.0701
+      ],
+      [
+       "l",
+       0.0674
+      ],
+      [
+       "k",
+       0.0646
+      ],
+      [
+       "e",
+       0.0638
+      ],
+      [
+       "r",
+       0.0454
+      ],
+      [
+       "q",
+       0.037
+      ],
+      [
+       "t",
+       0.0356
+      ],
+      [
+       "sh",
+       0.0312
+      ]
+     ]
+    },
+    "merge2": {
+     "label": "ZL3b ALL merge2",
+     "n_words": 34834,
+     "n_letters": 130404,
+     "mean_word_len": 3.7435838548544527,
+     "with_spaces": {
+      "n_symbols": 165237,
+      "inventory": 40,
+      "h0": 5.321928094887363,
+      "h1": 3.9469990799260253,
+      "h2": 2.497409080718875,
+      "h2_over_h1": 0.6327361699728801,
+      "h1_minus_h2": 1.4495899992071504
+     },
+     "without_spaces": {
+      "n_symbols": 130404,
+      "inventory": 39,
+      "h0": 5.285402218862249,
+      "h1": 4.059811860516718,
+      "h2": 2.882358675222947,
+      "h2_over_h1": 0.7099734604095892,
+      "h1_minus_h2": 1.1774531852937713,
+      "h2_within_word": 2.6232410703010767
+     },
+     "word_entropy": {
+      "tokens": 34834,
+      "types": 7021,
+      "H_word_bits": 10.215129416420766,
+      "TTR": 0.20155595108227595,
+      "hapax_frac": 0.6803874092009685
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1312
+      ],
+      [
+       "y",
+       0.1234
+      ],
+      [
+       "d",
+       0.0909
+      ],
+      [
+       "ch",
+       0.0777
+      ],
+      [
+       "l",
+       0.0726
+      ],
+      [
+       "k",
+       0.0704
+      ],
+      [
+       "e",
+       0.0701
+      ],
+      [
+       "a",
+       0.0578
+      ],
+      [
+       "r",
+       0.0502
+      ],
+      [
+       "qo",
+       0.04
+      ],
+      [
+       "t",
+       0.0394
+      ],
+      [
+       "sh",
+       0.0326
+      ]
+     ]
+    },
+    "merge2_150k": {
+     "label": "ZL3b ALL merge2 150k",
+     "n_words": 30256,
+     "n_letters": 112953,
+     "mean_word_len": 3.7332429931253306,
+     "with_spaces": {
+      "n_symbols": 143208,
+      "inventory": 40,
+      "h0": 5.321928094887363,
+      "h1": 3.9390296126671083,
+      "h2": 2.4969965473334526,
+      "h2_over_h1": 0.6339115957147481,
+      "h1_minus_h2": 1.4420330653336557
+     },
+     "without_spaces": {
+      "n_symbols": 112953,
+      "inventory": 39,
+      "h0": 5.285402218862249,
+      "h1": 4.050965470270486,
+      "h2": 2.884191387461323,
+      "h2_over_h1": 0.7119762951888956,
+      "h1_minus_h2": 1.1667740828091633,
+      "h2_within_word": 2.6215653695084646
+     },
+     "word_entropy": {
+      "tokens": 30256,
+      "types": 6335,
+      "H_word_bits": 10.144166656763282,
+      "TTR": 0.20937995769434162,
+      "hapax_frac": 0.6789265982636148
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1335
+      ],
+      [
+       "y",
+       0.1258
+      ],
+      [
+       "d",
+       0.0919
+      ],
+      [
+       "ch",
+       0.0764
+      ],
+      [
+       "l",
+       0.0734
+      ],
+      [
+       "k",
+       0.0704
+      ],
+      [
+       "e",
+       0.0695
+      ],
+      [
+       "a",
+       0.0565
+      ],
+      [
+       "r",
+       0.0495
+      ],
+      [
+       "qo",
+       0.0395
+      ],
+      [
+       "t",
+       0.0388
+      ],
+      [
+       "sh",
+       0.034
+      ]
+     ]
+    }
+   }
+  },
+  "RF1b": {
+   "A": {
+    "raw": {
+     "label": "RF1b A raw",
+     "n_words": 11053,
+     "n_letters": 54274,
+     "mean_word_len": 4.910341083868633,
+     "with_spaces": {
+      "n_symbols": 65326,
+      "inventory": 24,
+      "h0": 4.584962500721156,
+      "h1": 3.8429999944325304,
+      "h2": 2.1583841372543775,
+      "h2_over_h1": 0.5616404216448851,
+      "h1_minus_h2": 1.6846158571781529
+     },
+     "without_spaces": {
+      "n_symbols": 54274,
+      "inventory": 23,
+      "h0": 4.523561956057013,
+      "h1": 3.8361834619326762,
+      "h2": 2.3752105427368098,
+      "h2_over_h1": 0.6191597889690538,
+      "h1_minus_h2": 1.4609729191958665,
+      "h2_within_word": 2.1451327262479865
+     },
+     "word_entropy": {
+      "tokens": 11053,
+      "types": 3384,
+      "H_word_bits": 9.875422253641188,
+      "TTR": 0.306161223197322,
+      "hapax_frac": 0.70951536643026
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1544
+      ],
+      [
+       "h",
+       0.117
+      ],
+      [
+       "c",
+       0.0923
+      ],
+      [
+       "y",
+       0.0809
+      ],
+      [
+       "e",
+       0.068
+      ],
+      [
+       "a",
+       0.0664
+      ],
+      [
+       "i",
+       0.0656
+      ],
+      [
+       "d",
+       0.0561
+      ],
+      [
+       "l",
+       0.0538
+      ],
+      [
+       "k",
+       0.0483
+      ],
+      [
+       "s",
+       0.0438
+      ],
+      [
+       "r",
+       0.041
+      ]
+     ]
+    },
+    "merge1": {
+     "label": "RF1b A merge1",
+     "n_words": 11053,
+     "n_letters": 43042,
+     "mean_word_len": 3.8941463855966707,
+     "with_spaces": {
+      "n_symbols": 54094,
+      "inventory": 34,
+      "h0": 5.087462841250339,
+      "h1": 3.889531248860597,
+      "h2": 2.4596037779674673,
+      "h2_over_h1": 0.6323650899290206,
+      "h1_minus_h2": 1.4299274708931295
+     },
+     "without_spaces": {
+      "n_symbols": 43042,
+      "inventory": 33,
+      "h0": 5.044394119358453,
+      "h1": 3.9702252059262526,
+      "h2": 2.8115926274750738,
+      "h2_over_h1": 0.7081695575551438,
+      "h1_minus_h2": 1.1586325784511788,
+      "h2_within_word": 2.521044653824983
+     },
+     "word_entropy": {
+      "tokens": 11053,
+      "types": 3384,
+      "H_word_bits": 9.875422253641188,
+      "TTR": 0.306161223197322,
+      "hapax_frac": 0.70951536643026
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1947
+      ],
+      [
+       "y",
+       0.102
+      ],
+      [
+       "ch",
+       0.0896
+      ],
+      [
+       "a",
+       0.0837
+      ],
+      [
+       "d",
+       0.0707
+      ],
+      [
+       "l",
+       0.0678
+      ],
+      [
+       "k",
+       0.053
+      ],
+      [
+       "r",
+       0.0517
+      ],
+      [
+       "e",
+       0.0459
+      ],
+      [
+       "t",
+       0.0375
+      ],
+      [
+       "iin",
+       0.0328
+      ],
+      [
+       "sh",
+       0.0317
+      ]
+     ]
+    },
+    "merge2": {
+     "label": "RF1b A merge2",
+     "n_words": 11053,
+     "n_letters": 40142,
+     "mean_word_len": 3.6317741789559395,
+     "with_spaces": {
+      "n_symbols": 51194,
+      "inventory": 38,
+      "h0": 5.247927513443585,
+      "h1": 3.909825253352681,
+      "h2": 2.565558566345147,
+      "h2_over_h1": 0.6561824122817705,
+      "h1_minus_h2": 1.3442666870075342
+     },
+     "without_spaces": {
+      "n_symbols": 40142,
+      "inventory": 37,
+      "h0": 5.20945336562895,
+      "h1": 4.026504296951822,
+      "h2": 2.9717078332813047,
+      "h2_over_h1": 0.7380366725377573,
+      "h1_minus_h2": 1.0547964636705176,
+      "h2_within_word": 2.6980021508633345
+     },
+     "word_entropy": {
+      "tokens": 11053,
+      "types": 3384,
+      "H_word_bits": 9.875422253641188,
+      "TTR": 0.306161223197322,
+      "hapax_frac": 0.70951536643026
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1815
+      ],
+      [
+       "y",
+       0.1093
+      ],
+      [
+       "ch",
+       0.096
+      ],
+      [
+       "d",
+       0.0759
+      ],
+      [
+       "l",
+       0.0727
+      ],
+      [
+       "k",
+       0.0568
+      ],
+      [
+       "r",
+       0.0554
+      ],
+      [
+       "a",
+       0.0511
+      ],
+      [
+       "e",
+       0.0493
+      ],
+      [
+       "t",
+       0.0402
+      ],
+      [
+       "sh",
+       0.034
+      ],
+      [
+       "aiin",
+       0.0325
+      ]
+     ]
+    }
+   },
+   "B": {
+    "raw": {
+     "label": "RF1b B raw",
+     "n_words": 23028,
+     "n_letters": 118046,
+     "mean_word_len": 5.126194198367205,
+     "with_spaces": {
+      "n_symbols": 141073,
+      "inventory": 24,
+      "h0": 4.584962500721156,
+      "h1": 3.875692958795299,
+      "h2": 2.0083924777427864,
+      "h2_over_h1": 0.5182021638698296,
+      "h1_minus_h2": 1.8673004810525127
+     },
+     "without_spaces": {
+      "n_symbols": 118046,
+      "inventory": 23,
+      "h0": 4.523561956057013,
+      "h1": 3.8645126131883827,
+      "h2": 2.2017166949262723,
+      "h2_over_h1": 0.5697268751077422,
+      "h1_minus_h2": 1.6627959182621104,
+      "h2_within_word": 1.9442281870080862
+     },
+     "word_entropy": {
+      "tokens": 23028,
+      "types": 4945,
+      "H_word_bits": 9.841997175728366,
+      "TTR": 0.21473857912107,
+      "hapax_frac": 0.6867542972699696
+     },
+     "top_symbols": [
+      [
+       "e",
+       0.1209
+      ],
+      [
+       "o",
+       0.1125
+      ],
+      [
+       "y",
+       0.0973
+      ],
+      [
+       "h",
+       0.0855
+      ],
+      [
+       "a",
+       0.0807
+      ],
+      [
+       "d",
+       0.0737
+      ],
+      [
+       "i",
+       0.0624
+      ],
+      [
+       "k",
+       0.0615
+      ],
+      [
+       "c",
+       0.0609
+      ],
+      [
+       "l",
+       0.0548
+      ],
+      [
+       "r",
+       0.0361
+      ],
+      [
+       "q",
+       0.0355
+      ]
+     ]
+    },
+    "merge1": {
+     "label": "RF1b B merge1",
+     "n_words": 23028,
+     "n_letters": 98047,
+     "mean_word_len": 4.257729720340455,
+     "with_spaces": {
+      "n_symbols": 121074,
+      "inventory": 34,
+      "h0": 5.087462841250339,
+      "h1": 3.9440694103517417,
+      "h2": 2.2159563560944338,
+      "h2_over_h1": 0.5618451719633426,
+      "h1_minus_h2": 1.728113054257308
+     },
+     "without_spaces": {
+      "n_symbols": 98047,
+      "inventory": 33,
+      "h0": 5.044394119358453,
+      "h1": 4.00365473620039,
+      "h2": 2.494840162857291,
+      "h2_over_h1": 0.6231406870076371,
+      "h1_minus_h2": 1.5088145733430984,
+      "h2_within_word": 2.2325931473081044
+     },
+     "word_entropy": {
+      "tokens": 23028,
+      "types": 4945,
+      "H_word_bits": 9.841997175728366,
+      "TTR": 0.21473857912107,
+      "hapax_frac": 0.6867542972699696
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1355
+      ],
+      [
+       "y",
+       0.1172
+      ],
+      [
+       "a",
+       0.0971
+      ],
+      [
+       "d",
+       0.0887
+      ],
+      [
+       "e",
+       0.0722
+      ],
+      [
+       "k",
+       0.0685
+      ],
+      [
+       "l",
+       0.0659
+      ],
+      [
+       "ch",
+       0.0627
+      ],
+      [
+       "r",
+       0.0435
+      ],
+      [
+       "q",
+       0.0428
+      ],
+      [
+       "t",
+       0.0359
+      ],
+      [
+       "ee",
+       0.0325
+      ]
+     ]
+    },
+    "merge2": {
+     "label": "RF1b B merge2",
+     "n_words": 23028,
+     "n_letters": 88837,
+     "mean_word_len": 3.8577818308146603,
+     "with_spaces": {
+      "n_symbols": 111864,
+      "inventory": 38,
+      "h0": 5.247927513443585,
+      "h1": 3.948326104304889,
+      "h2": 2.366127107084225,
+      "h2_over_h1": 0.5992734755380057,
+      "h1_minus_h2": 1.5821989972206638
+     },
+     "without_spaces": {
+      "n_symbols": 88837,
+      "inventory": 37,
+      "h0": 5.20945336562895,
+      "h1": 4.048161368066011,
+      "h2": 2.7123731347232063,
+      "h2_over_h1": 0.6700259421770602,
+      "h1_minus_h2": 1.3357882333428046,
+      "h2_within_word": 2.454384638366212
+     },
+     "word_entropy": {
+      "tokens": 23028,
+      "types": 4945,
+      "H_word_bits": 9.841997175728366,
+      "TTR": 0.21473857912107,
+      "hapax_frac": 0.6867542972699696
+     },
+     "top_symbols": [
+      [
+       "y",
+       0.1293
+      ],
+      [
+       "o",
+       0.1034
+      ],
+      [
+       "d",
+       0.0979
+      ],
+      [
+       "e",
+       0.0797
+      ],
+      [
+       "k",
+       0.0757
+      ],
+      [
+       "l",
+       0.0728
+      ],
+      [
+       "ch",
+       0.0692
+      ],
+      [
+       "a",
+       0.0653
+      ],
+      [
+       "r",
+       0.048
+      ],
+      [
+       "qo",
+       0.0462
+      ],
+      [
+       "t",
+       0.0396
+      ],
+      [
+       "ee",
+       0.0359
+      ]
+     ]
+    }
+   },
+   "ALL": {
+    "raw": {
+     "label": "RF1b ALL raw",
+     "n_words": 34618,
+     "n_letters": 174969,
+     "mean_word_len": 5.05427812120862,
+     "with_spaces": {
+      "n_symbols": 209586,
+      "inventory": 25,
+      "h0": 4.643856189774724,
+      "h1": 3.877579839988643,
+      "h2": 2.120181060764669,
+      "h2_over_h1": 0.5467794728298564,
+      "h1_minus_h2": 1.757398779223974
+     },
+     "without_spaces": {
+      "n_symbols": 174969,
+      "inventory": 24,
+      "h0": 4.584962500721156,
+      "h1": 3.8702992168402184,
+      "h2": 2.33270798205462,
+      "h2_over_h1": 0.6027203198927561,
+      "h1_minus_h2": 1.5375912347855984,
+      "h2_within_word": 2.084177435163862
+     },
+     "word_entropy": {
+      "tokens": 34618,
+      "types": 7348,
+      "H_word_bits": 10.3020074545949,
+      "TTR": 0.2122595181697383,
+      "hapax_frac": 0.6914806750136091
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1257
+      ],
+      [
+       "e",
+       0.1044
+      ],
+      [
+       "h",
+       0.0954
+      ],
+      [
+       "y",
+       0.0923
+      ],
+      [
+       "a",
+       0.0764
+      ],
+      [
+       "c",
+       0.0707
+      ],
+      [
+       "d",
+       0.068
+      ],
+      [
+       "i",
+       0.0633
+      ],
+      [
+       "k",
+       0.0572
+      ],
+      [
+       "l",
+       0.0545
+      ],
+      [
+       "s",
+       0.0377
+      ],
+      [
+       "r",
+       0.0377
+      ]
+     ]
+    },
+    "raw_150k": {
+     "label": "RF1b ALL raw 150k",
+     "n_words": 29898,
+     "n_letters": 150002,
+     "mean_word_len": 5.017124891297077,
+     "with_spaces": {
+      "n_symbols": 179899,
+      "inventory": 25,
+      "h0": 4.643856189774724,
+      "h1": 3.8746022752280016,
+      "h2": 2.1270919808529567,
+      "h2_over_h1": 0.548983309707004,
+      "h1_minus_h2": 1.747510294375045
+     },
+     "without_spaces": {
+      "n_symbols": 150002,
+      "inventory": 24,
+      "h0": 4.584962500721156,
+      "h1": 3.868608274552948,
+      "h2": 2.343282502549548,
+      "h2_over_h1": 0.6057171820582778,
+      "h1_minus_h2": 1.5253257720034,
+      "h2_within_word": 2.096437094770319
+     },
+     "word_entropy": {
+      "tokens": 29898,
+      "types": 6567,
+      "H_word_bits": 10.220156824554996,
+      "TTR": 0.2196467991169978,
+      "hapax_frac": 0.6901172529313233
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.128
+      ],
+      [
+       "e",
+       0.1008
+      ],
+      [
+       "h",
+       0.0966
+      ],
+      [
+       "y",
+       0.0945
+      ],
+      [
+       "a",
+       0.0741
+      ],
+      [
+       "c",
+       0.0708
+      ],
+      [
+       "d",
+       0.0691
+      ],
+      [
+       "i",
+       0.0617
+      ],
+      [
+       "k",
+       0.0574
+      ],
+      [
+       "l",
+       0.0552
+      ],
+      [
+       "s",
+       0.0394
+      ],
+      [
+       "r",
+       0.0374
+      ]
+     ]
+    },
+    "merge1": {
+     "label": "RF1b ALL merge1",
+     "n_words": 34618,
+     "n_letters": 143268,
+     "mean_word_len": 4.138540643595817,
+     "with_spaces": {
+      "n_symbols": 177885,
+      "inventory": 35,
+      "h0": 5.129283016944966,
+      "h1": 3.942330751594996,
+      "h2": 2.3704978097296485,
+      "h2_over_h1": 0.6012934883179418,
+      "h1_minus_h2": 1.5718329418653476
+     },
+     "without_spaces": {
+      "n_symbols": 143268,
+      "inventory": 34,
+      "h0": 5.087462841250339,
+      "h1": 4.0120951229125685,
+      "h2": 2.6898658833036038,
+      "h2_over_h1": 0.6704392096643271,
+      "h1_minus_h2": 1.3222292396089648,
+      "h2_within_word": 2.4196091421117307
+     },
+     "word_entropy": {
+      "tokens": 34618,
+      "types": 7348,
+      "H_word_bits": 10.3020074545949,
+      "TTR": 0.2122595181697383,
+      "hapax_frac": 0.6914806750136091
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1535
+      ],
+      [
+       "y",
+       0.1127
+      ],
+      [
+       "a",
+       0.0933
+      ],
+      [
+       "d",
+       0.0831
+      ],
+      [
+       "ch",
+       0.0708
+      ],
+      [
+       "l",
+       0.0665
+      ],
+      [
+       "e",
+       0.0643
+      ],
+      [
+       "k",
+       0.0636
+      ],
+      [
+       "r",
+       0.046
+      ],
+      [
+       "q",
+       0.0374
+      ],
+      [
+       "t",
+       0.0365
+      ],
+      [
+       "sh",
+       0.0301
+      ]
+     ]
+    },
+    "merge1_150k": {
+     "label": "RF1b ALL merge1 150k",
+     "n_words": 29898,
+     "n_letters": 122863,
+     "mean_word_len": 4.1094053113920666,
+     "with_spaces": {
+      "n_symbols": 152760,
+      "inventory": 35,
+      "h0": 5.129283016944966,
+      "h1": 3.9328085266877033,
+      "h2": 2.3763349584188536,
+      "h2_over_h1": 0.6042335756478474,
+      "h1_minus_h2": 1.5564735682688497
+     },
+     "without_spaces": {
+      "n_symbols": 122863,
+      "inventory": 34,
+      "h0": 5.087462841250339,
+      "h1": 4.002969366563199,
+      "h2": 2.7004790804965433,
+      "h2_over_h1": 0.6746189723692726,
+      "h1_minus_h2": 1.3024902860666554,
+      "h2_within_word": 2.427063322103594
+     },
+     "word_entropy": {
+      "tokens": 29898,
+      "types": 6567,
+      "H_word_bits": 10.220156824554996,
+      "TTR": 0.2196467991169978,
+      "hapax_frac": 0.6901172529313233
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1562
+      ],
+      [
+       "y",
+       0.1153
+      ],
+      [
+       "a",
+       0.0905
+      ],
+      [
+       "d",
+       0.0843
+      ],
+      [
+       "ch",
+       0.0699
+      ],
+      [
+       "l",
+       0.0674
+      ],
+      [
+       "e",
+       0.0638
+      ],
+      [
+       "k",
+       0.0635
+      ],
+      [
+       "r",
+       0.0456
+      ],
+      [
+       "q",
+       0.037
+      ],
+      [
+       "t",
+       0.036
+      ],
+      [
+       "sh",
+       0.0315
+      ]
+     ]
+    },
+    "merge2": {
+     "label": "RF1b ALL merge2",
+     "n_words": 34618,
+     "n_letters": 131054,
+     "mean_word_len": 3.7857184123866197,
+     "with_spaces": {
+      "n_symbols": 165671,
+      "inventory": 39,
+      "h0": 5.285402218862249,
+      "h1": 3.9559661584157326,
+      "h2": 2.511477876263122,
+      "h2_over_h1": 0.6348582813127267,
+      "h1_minus_h2": 1.4444882821526108
+     },
+     "without_spaces": {
+      "n_symbols": 131054,
+      "inventory": 38,
+      "h0": 5.247927513443585,
+      "h1": 4.066109388233154,
+      "h2": 2.89759801522956,
+      "h2_over_h1": 0.7126217567129086,
+      "h1_minus_h2": 1.1685113730035939,
+      "h2_within_word": 2.6382615690284212
+     },
+     "word_entropy": {
+      "tokens": 34618,
+      "types": 7348,
+      "H_word_bits": 10.3020074545949,
+      "TTR": 0.2122595181697383,
+      "hapax_frac": 0.6914806750136091
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1279
+      ],
+      [
+       "y",
+       0.1232
+      ],
+      [
+       "d",
+       0.0908
+      ],
+      [
+       "ch",
+       0.0774
+      ],
+      [
+       "l",
+       0.0727
+      ],
+      [
+       "e",
+       0.0703
+      ],
+      [
+       "k",
+       0.0695
+      ],
+      [
+       "a",
+       0.0613
+      ],
+      [
+       "r",
+       0.0503
+      ],
+      [
+       "qo",
+       0.0399
+      ],
+      [
+       "t",
+       0.0399
+      ],
+      [
+       "sh",
+       0.0329
+      ]
+     ]
+    },
+    "merge2_150k": {
+     "label": "RF1b ALL merge2 150k",
+     "n_words": 29898,
+     "n_letters": 112785,
+     "mean_word_len": 3.7723259080874976,
+     "with_spaces": {
+      "n_symbols": 142682,
+      "inventory": 39,
+      "h0": 5.285402218862249,
+      "h1": 3.947144890922933,
+      "h2": 2.510102877990936,
+      "h2_over_h1": 0.635928740230262,
+      "h1_minus_h2": 1.4370420129319972
+     },
+     "without_spaces": {
+      "n_symbols": 112785,
+      "inventory": 38,
+      "h0": 5.247927513443585,
+      "h1": 4.056541187503607,
+      "h2": 2.898301364670779,
+      "h2_over_h1": 0.7144760106464967,
+      "h1_minus_h2": 1.1582398228328277,
+      "h2_within_word": 2.6358082489438592
+     },
+     "word_entropy": {
+      "tokens": 29898,
+      "types": 6567,
+      "H_word_bits": 10.220156824554996,
+      "TTR": 0.2196467991169978,
+      "hapax_frac": 0.6901172529313233
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1308
+      ],
+      [
+       "y",
+       0.1256
+      ],
+      [
+       "d",
+       0.0918
+      ],
+      [
+       "ch",
+       0.0762
+      ],
+      [
+       "l",
+       0.0734
+      ],
+      [
+       "e",
+       0.0695
+      ],
+      [
+       "k",
+       0.0692
+      ],
+      [
+       "a",
+       0.0597
+      ],
+      [
+       "r",
+       0.0497
+      ],
+      [
+       "qo",
+       0.0393
+      ],
+      [
+       "t",
+       0.0393
+      ],
+      [
+       "sh",
+       0.0343
+      ]
+     ]
+    }
+   }
+  },
+  "GC2a": {
+   "A": {
+    "raw": {
+     "label": "GC2a A raw",
+     "n_words": 11384,
+     "n_letters": 42105,
+     "mean_word_len": 3.6986120871398454,
+     "with_spaces": {
+      "n_symbols": 53488,
+      "inventory": 68,
+      "h0": 6.087462841250339,
+      "h1": 3.96640136369292,
+      "h2": 2.5659794534878038,
+      "h2_over_h1": 0.6469288451178695,
+      "h1_minus_h2": 1.4004219102051163
+     },
+     "without_spaces": {
+      "n_symbols": 42105,
+      "inventory": 67,
+      "h0": 6.066089190457772,
+      "h1": 4.0899790913241825,
+      "h2": 2.948360476245597,
+      "h2_over_h1": 0.7208742173034014,
+      "h1_minus_h2": 1.1416186150785856,
+      "h2_within_word": 2.611128976809225
+     },
+     "word_entropy": {
+      "tokens": 11384,
+      "types": 3589,
+      "H_word_bits": 9.9491829987431,
+      "TTR": 0.31526704146170065,
+      "hapax_frac": 0.7199777096684313
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1962
+      ],
+      [
+       "9",
+       0.1004
+      ],
+      [
+       "1",
+       0.0906
+      ],
+      [
+       "a",
+       0.0797
+      ],
+      [
+       "e",
+       0.0686
+      ],
+      [
+       "8",
+       0.0642
+      ],
+      [
+       "c",
+       0.0604
+      ],
+      [
+       "h",
+       0.0526
+      ],
+      [
+       "y",
+       0.0478
+      ],
+      [
+       "k",
+       0.0375
+      ],
+      [
+       "m",
+       0.0333
+      ],
+      [
+       "4",
+       0.0261
+      ]
+     ]
+    }
+   },
+   "B": {
+    "raw": {
+     "label": "GC2a B raw",
+     "n_words": 24457,
+     "n_letters": 96688,
+     "mean_word_len": 3.9533875781984706,
+     "with_spaces": {
+      "n_symbols": 121144,
+      "inventory": 71,
+      "h0": 6.149747119504682,
+      "h1": 4.037140157499705,
+      "h2": 2.40229560034234,
+      "h2_over_h1": 0.595048848100963,
+      "h1_minus_h2": 1.6348445571573649
+     },
+     "without_spaces": {
+      "n_symbols": 96688,
+      "inventory": 70,
+      "h0": 6.129283016944966,
+      "h1": 4.1490729633989565,
+      "h2": 2.72665298556183,
+      "h2_over_h1": 0.6571716163140531,
+      "h1_minus_h2": 1.4224199778371265,
+      "h2_within_word": 2.444294556066904
+     },
+     "word_entropy": {
+      "tokens": 24457,
+      "types": 5742,
+      "H_word_bits": 10.134998962728215,
+      "TTR": 0.23477940875822872,
+      "hapax_frac": 0.68826192964124
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1369
+      ],
+      [
+       "9",
+       0.1149
+      ],
+      [
+       "c",
+       0.0968
+      ],
+      [
+       "a",
+       0.0933
+      ],
+      [
+       "h",
+       0.0685
+      ],
+      [
+       "8",
+       0.0676
+      ],
+      [
+       "e",
+       0.0668
+      ],
+      [
+       "1",
+       0.0633
+      ],
+      [
+       "4",
+       0.0431
+      ],
+      [
+       "y",
+       0.0384
+      ],
+      [
+       "k",
+       0.0363
+      ],
+      [
+       "m",
+       0.0245
+      ]
+     ]
+    }
+   },
+   "ALL": {
+    "raw": {
+     "label": "GC2a ALL raw",
+     "n_words": 36385,
+     "n_letters": 140940,
+     "mean_word_len": 3.873574275113371,
+     "with_spaces": {
+      "n_symbols": 177324,
+      "inventory": 71,
+      "h0": 6.149747119504682,
+      "h1": 4.033266136760134,
+      "h2": 2.5329157106680134,
+      "h2_over_h1": 0.6280060935187056,
+      "h1_minus_h2": 1.5003504260921208
+     },
+     "without_spaces": {
+      "n_symbols": 140940,
+      "inventory": 70,
+      "h0": 6.129283016944966,
+      "h1": 4.153275519950484,
+      "h2": 2.8973002101516183,
+      "h2_over_h1": 0.6975940305992896,
+      "h1_minus_h2": 1.255975309798866,
+      "h2_within_word": 2.6003635230070676
+     },
+     "word_entropy": {
+      "tokens": 36385,
+      "types": 8351,
+      "H_word_bits": 10.515520808797005,
+      "TTR": 0.2295176583757043,
+      "hapax_frac": 0.7015926236378877
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1548
+      ],
+      [
+       "9",
+       0.1106
+      ],
+      [
+       "a",
+       0.0894
+      ],
+      [
+       "c",
+       0.086
+      ],
+      [
+       "1",
+       0.0715
+      ],
+      [
+       "e",
+       0.0673
+      ],
+      [
+       "8",
+       0.0665
+      ],
+      [
+       "h",
+       0.0635
+      ],
+      [
+       "y",
+       0.0412
+      ],
+      [
+       "4",
+       0.0376
+      ],
+      [
+       "k",
+       0.0367
+      ],
+      [
+       "m",
+       0.0271
+      ]
+     ]
+    },
+    "raw_150k": {
+     "label": "GC2a ALL raw 150k",
+     "n_words": 36385,
+     "n_letters": 140940,
+     "mean_word_len": 3.873574275113371,
+     "with_spaces": {
+      "n_symbols": 177324,
+      "inventory": 71,
+      "h0": 6.149747119504682,
+      "h1": 4.033266136760134,
+      "h2": 2.5329157106680134,
+      "h2_over_h1": 0.6280060935187056,
+      "h1_minus_h2": 1.5003504260921208
+     },
+     "without_spaces": {
+      "n_symbols": 140940,
+      "inventory": 70,
+      "h0": 6.129283016944966,
+      "h1": 4.153275519950484,
+      "h2": 2.8973002101516183,
+      "h2_over_h1": 0.6975940305992896,
+      "h1_minus_h2": 1.255975309798866,
+      "h2_within_word": 2.6003635230070676
+     },
+     "word_entropy": {
+      "tokens": 36385,
+      "types": 8351,
+      "H_word_bits": 10.515520808797005,
+      "TTR": 0.2295176583757043,
+      "hapax_frac": 0.7015926236378877
+     },
+     "top_symbols": [
+      [
+       "o",
+       0.1548
+      ],
+      [
+       "9",
+       0.1106
+      ],
+      [
+       "a",
+       0.0894
+      ],
+      [
+       "c",
+       0.086
+      ],
+      [
+       "1",
+       0.0715
+      ],
+      [
+       "e",
+       0.0673
+      ],
+      [
+       "8",
+       0.0665
+      ],
+      [
+       "h",
+       0.0635
+      ],
+      [
+       "y",
+       0.0412
+      ],
+      [
+       "4",
+       0.0376
+      ],
+      [
+       "k",
+       0.0367
+      ],
+      [
+       "m",
+       0.0271
+      ]
+     ]
+    }
+   }
+  }
+ },
+ "languages": {
+  "la": {
+   "files": [
+    "corp_la_227.txt",
+    "corp_la_33849.txt",
+    "corp_la_50280.txt"
+   ],
+   "150k": {
+    "label": "la 150k",
+    "n_words": 26016,
+    "n_letters": 150002,
+    "mean_word_len": 5.765759532595326,
+    "with_spaces": {
+     "n_symbols": 176017,
+     "inventory": 25,
+     "h0": 4.643856189774724,
+     "h1": 4.034585071792759,
+     "h2": 3.363591868817232,
+     "h2_over_h1": 0.8336896629924393,
+     "h1_minus_h2": 0.6709932029755272
+    },
+    "without_spaces": {
+     "n_symbols": 150002,
+     "inventory": 24,
+     "h0": 4.584962500721156,
+     "h1": 4.025199603467203,
+     "h2": 3.5099093044884917,
+     "h2_over_h1": 0.8719839139070635,
+     "h1_minus_h2": 0.5152902989787114,
+     "h2_within_word": 3.2348597320507118
+    },
+    "word_entropy": {
+     "tokens": 26016,
+     "types": 9515,
+     "H_word_bits": 11.898885498693668,
+     "TTR": 0.36573646986469865,
+     "hapax_frac": 0.622070415133999
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1212
+     ],
+     [
+      "a",
+      0.098
+     ],
+     [
+      "i",
+      0.0975
+     ],
+     [
+      "t",
+      0.081
+     ],
+     [
+      "u",
+      0.0795
+     ],
+     [
+      "s",
+      0.0766
+     ],
+     [
+      "r",
+      0.0695
+     ],
+     [
+      "n",
+      0.0597
+     ],
+     [
+      "m",
+      0.0524
+     ],
+     [
+      "o",
+      0.0522
+     ],
+     [
+      "c",
+      0.0402
+     ],
+     [
+      "l",
+      0.032
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "la sizeA",
+    "n_words": 9359,
+    "n_letters": 53747,
+    "mean_word_len": 5.74281440324821,
+    "with_spaces": {
+     "n_symbols": 63105,
+     "inventory": 25,
+     "h0": 4.643856189774724,
+     "h1": 4.0319994458706585,
+     "h2": 3.359219444070571,
+     "h2_over_h1": 0.833139857573862,
+     "h1_minus_h2": 0.6727800018000876
+    },
+    "without_spaces": {
+     "n_symbols": 53747,
+     "inventory": 24,
+     "h0": 4.584962500721156,
+     "h1": 4.023034609873573,
+     "h2": 3.5052221984781786,
+     "h2_over_h1": 0.8712881042274535,
+     "h1_minus_h2": 0.5178124113953944,
+     "h2_within_word": 3.231096983376209
+    },
+    "word_entropy": {
+     "tokens": 9359,
+     "types": 4655,
+     "H_word_bits": 11.267440405522366,
+     "TTR": 0.4973821989528796,
+     "hapax_frac": 0.7056928034371643
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1194
+     ],
+     [
+      "i",
+      0.1
+     ],
+     [
+      "a",
+      0.0984
+     ],
+     [
+      "t",
+      0.0823
+     ],
+     [
+      "u",
+      0.0795
+     ],
+     [
+      "s",
+      0.0767
+     ],
+     [
+      "r",
+      0.0683
+     ],
+     [
+      "n",
+      0.0596
+     ],
+     [
+      "m",
+      0.0532
+     ],
+     [
+      "o",
+      0.0514
+     ],
+     [
+      "c",
+      0.0394
+     ],
+     [
+      "l",
+      0.032
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 5279,
+     "H_word_bits": 11.379869970329722,
+     "TTR": 0.47062494428100204,
+     "hapax_frac": 0.6866830839174086
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 8826,
+     "H_word_bits": 11.850674561491802,
+     "TTR": 0.38259135636568553,
+     "hapax_frac": 0.6300702469975074
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 11961,
+     "H_word_bits": 12.038603380030152,
+     "TTR": 0.34337141872882815,
+     "hapax_frac": 0.6236936710977343
+    }
+   }
+  },
+  "it": {
+   "files": [
+    "targets/vatican5/corpus_it.txt"
+   ],
+   "150k": {
+    "label": "it 150k",
+    "n_words": 33031,
+    "n_letters": 150003,
+    "mean_word_len": 4.541279404196058,
+    "with_spaces": {
+     "n_symbols": 183033,
+     "inventory": 22,
+     "h0": 4.459431618637297,
+     "h1": 3.911608478634256,
+     "h2": 3.2049105769097497,
+     "h2_over_h1": 0.819333170590925,
+     "h1_minus_h2": 0.7066979017245063
+    },
+    "without_spaces": {
+     "n_symbols": 150003,
+     "inventory": 21,
+     "h0": 4.392317422778761,
+     "h1": 3.941875758352625,
+     "h2": 3.4512200411522973,
+     "h2_over_h1": 0.875527351119412,
+     "h1_minus_h2": 0.49065571720032786,
+     "h2_within_word": 3.0347028691135147
+    },
+    "word_entropy": {
+     "tokens": 33031,
+     "types": 6619,
+     "H_word_bits": 9.82459653925541,
+     "TTR": 0.20038751475886288,
+     "hapax_frac": 0.6664148662940022
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1229
+     ],
+     [
+      "a",
+      0.1052
+     ],
+     [
+      "i",
+      0.1012
+     ],
+     [
+      "o",
+      0.093
+     ],
+     [
+      "t",
+      0.0767
+     ],
+     [
+      "n",
+      0.0695
+     ],
+     [
+      "r",
+      0.0661
+     ],
+     [
+      "s",
+      0.0587
+     ],
+     [
+      "c",
+      0.0515
+     ],
+     [
+      "u",
+      0.0513
+     ],
+     [
+      "l",
+      0.0471
+     ],
+     [
+      "d",
+      0.0367
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "it sizeA",
+    "n_words": 11838,
+    "n_letters": 53747,
+    "mean_word_len": 4.540209494847103,
+    "with_spaces": {
+     "n_symbols": 65584,
+     "inventory": 22,
+     "h0": 4.459431618637297,
+     "h1": 3.9138897045919663,
+     "h2": 3.204650382146024,
+     "h2_over_h1": 0.8187891391998533,
+     "h1_minus_h2": 0.7092393224459421
+    },
+    "without_spaces": {
+     "n_symbols": 53747,
+     "inventory": 21,
+     "h0": 4.392317422778761,
+     "h1": 3.9447169805192903,
+     "h2": 3.452361872693443,
+     "h2_over_h1": 0.8751862021388839,
+     "h1_minus_h2": 0.49235510782584724,
+     "h2_within_word": 3.022090144258687
+    },
+    "word_entropy": {
+     "tokens": 11838,
+     "types": 3136,
+     "H_word_bits": 9.467539466746892,
+     "TTR": 0.2649096131103227,
+     "hapax_frac": 0.6744260204081632
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1219
+     ],
+     [
+      "a",
+      0.1057
+     ],
+     [
+      "i",
+      0.1011
+     ],
+     [
+      "o",
+      0.0921
+     ],
+     [
+      "t",
+      0.076
+     ],
+     [
+      "n",
+      0.0681
+     ],
+     [
+      "r",
+      0.066
+     ],
+     [
+      "s",
+      0.0582
+     ],
+     [
+      "u",
+      0.0527
+     ],
+     [
+      "c",
+      0.0518
+     ],
+     [
+      "l",
+      0.0491
+     ],
+     [
+      "d",
+      0.0379
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 3014,
+     "H_word_bits": 9.442646467022945,
+     "TTR": 0.2686992957118659,
+     "hapax_frac": 0.6715328467153284
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 4982,
+     "H_word_bits": 9.713731194578108,
+     "TTR": 0.2159608132125363,
+     "hapax_frac": 0.6545564030509835
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 6843,
+     "H_word_bits": 9.827584243684992,
+     "TTR": 0.19644600103347304,
+     "hapax_frac": 0.6647669150957183
+    }
+   }
+  },
+  "de": {
+   "files": [
+    "corp_de_35312.txt",
+    "corp_de_50285.txt",
+    "corp_de_56156.txt",
+    "corp_de_66452.txt"
+   ],
+   "150k": {
+    "label": "de 150k",
+    "n_words": 30743,
+    "n_letters": 150001,
+    "mean_word_len": 4.879192011189539,
+    "with_spaces": {
+     "n_symbols": 180743,
+     "inventory": 34,
+     "h0": 5.087462841250339,
+     "h1": 4.110429746113061,
+     "h2": 3.164617371657961,
+     "h2_over_h1": 0.7698993942544604,
+     "h1_minus_h2": 0.9458123744550999
+    },
+    "without_spaces": {
+     "n_symbols": 150001,
+     "inventory": 33,
+     "h0": 5.044394119358453,
+     "h1": 4.160105490380694,
+     "h2": 3.3906119613734385,
+     "h2_over_h1": 0.8150302844996272,
+     "h1_minus_h2": 0.7694935290072555,
+     "h2_within_word": 2.939168270292636
+    },
+    "word_entropy": {
+     "tokens": 30743,
+     "types": 5312,
+     "H_word_bits": 9.569303034878322,
+     "TTR": 0.17278730117425106,
+     "hapax_frac": 0.6078689759036144
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1603
+     ],
+     [
+      "n",
+      0.1048
+     ],
+     [
+      "i",
+      0.0795
+     ],
+     [
+      "r",
+      0.0705
+     ],
+     [
+      "a",
+      0.061
+     ],
+     [
+      "h",
+      0.0563
+     ],
+     [
+      "s",
+      0.0546
+     ],
+     [
+      "t",
+      0.0535
+     ],
+     [
+      "d",
+      0.052
+     ],
+     [
+      "u",
+      0.0402
+     ],
+     [
+      "l",
+      0.0392
+     ],
+     [
+      "c",
+      0.0375
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "de sizeA",
+    "n_words": 11183,
+    "n_letters": 53748,
+    "mean_word_len": 4.806223732451042,
+    "with_spaces": {
+     "n_symbols": 64930,
+     "inventory": 31,
+     "h0": 4.954196310386875,
+     "h1": 4.112666415337883,
+     "h2": 3.1384738831279924,
+     "h2_over_h1": 0.7631238632492263,
+     "h1_minus_h2": 0.9741925322098908
+    },
+    "without_spaces": {
+     "n_symbols": 53748,
+     "inventory": 30,
+     "h0": 4.906890595608519,
+     "h1": 4.167654640089582,
+     "h2": 3.3753110229176073,
+     "h2_over_h1": 0.8098826113012705,
+     "h1_minus_h2": 0.7923436171719747,
+     "h2_within_word": 2.9028145884093313
+    },
+    "word_entropy": {
+     "tokens": 11183,
+     "types": 2551,
+     "H_word_bits": 9.145613186923061,
+     "TTR": 0.22811410176160243,
+     "hapax_frac": 0.6127009016072129
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.157
+     ],
+     [
+      "n",
+      0.1042
+     ],
+     [
+      "i",
+      0.0813
+     ],
+     [
+      "r",
+      0.0689
+     ],
+     [
+      "a",
+      0.0598
+     ],
+     [
+      "h",
+      0.059
+     ],
+     [
+      "s",
+      0.0537
+     ],
+     [
+      "d",
+      0.0521
+     ],
+     [
+      "t",
+      0.052
+     ],
+     [
+      "u",
+      0.0412
+     ],
+     [
+      "c",
+      0.0399
+     ],
+     [
+      "l",
+      0.0381
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 2561,
+     "H_word_bits": 9.150012875789244,
+     "TTR": 0.2283141659980387,
+     "hapax_frac": 0.6118703631393987
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 4068,
+     "H_word_bits": 9.368688208269461,
+     "TTR": 0.1763405435866314,
+     "hapax_frac": 0.5867748279252704
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 5998,
+     "H_word_bits": 9.655619719819088,
+     "TTR": 0.1721880920939312,
+     "hapax_frac": 0.616705568522841
+    }
+   }
+  },
+  "en": {
+   "files": [
+    "corp_en_1342.txt",
+    "corp_en_2554.txt",
+    "corp_en_2701.txt"
+   ],
+   "150k": {
+    "label": "en 150k",
+    "n_words": 34175,
+    "n_letters": 150002,
+    "mean_word_len": 4.389231894659839,
+    "with_spaces": {
+     "n_symbols": 184176,
+     "inventory": 31,
+     "h0": 4.954196310386875,
+     "h1": 4.099916349227075,
+     "h2": 3.315080875636437,
+     "h2_over_h1": 0.8085728081406839,
+     "h1_minus_h2": 0.784835473590638
+    },
+    "without_spaces": {
+     "n_symbols": 150002,
+     "inventory": 30,
+     "h0": 4.906890595608519,
+     "h1": 4.184233429764823,
+     "h2": 3.601366860937497,
+     "h2_over_h1": 0.860699318379069,
+     "h1_minus_h2": 0.5828665688273258,
+     "h2_within_word": 3.195071449745905
+    },
+    "word_entropy": {
+     "tokens": 34175,
+     "types": 3978,
+     "H_word_bits": 9.04420912145188,
+     "TTR": 0.11640087783467447,
+     "hapax_frac": 0.5002513826043238
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1275
+     ],
+     [
+      "t",
+      0.0874
+     ],
+     [
+      "a",
+      0.0779
+     ],
+     [
+      "i",
+      0.074
+     ],
+     [
+      "o",
+      0.0726
+     ],
+     [
+      "n",
+      0.0714
+     ],
+     [
+      "s",
+      0.0632
+     ],
+     [
+      "h",
+      0.0614
+     ],
+     [
+      "r",
+      0.0594
+     ],
+     [
+      "d",
+      0.0412
+     ],
+     [
+      "l",
+      0.0406
+     ],
+     [
+      "m",
+      0.0279
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "en sizeA",
+    "n_words": 12266,
+    "n_letters": 53753,
+    "mean_word_len": 4.382276210663623,
+    "with_spaces": {
+     "n_symbols": 66018,
+     "inventory": 29,
+     "h0": 4.857980995127572,
+     "h1": 4.095549815137383,
+     "h2": 3.3184040827422834,
+     "h2_over_h1": 0.8102462996487737,
+     "h1_minus_h2": 0.7771457323950992
+    },
+    "without_spaces": {
+     "n_symbols": 53753,
+     "inventory": 28,
+     "h0": 4.807354922057604,
+     "h1": 4.179454784472813,
+     "h2": 3.6028839550237954,
+     "h2_over_h1": 0.8620464009824802,
+     "h1_minus_h2": 0.5765708294490173,
+     "h2_within_word": 3.1937706917072823
+    },
+    "word_entropy": {
+     "tokens": 12266,
+     "types": 2332,
+     "H_word_bits": 8.86921954602711,
+     "TTR": 0.1901190282080548,
+     "hapax_frac": 0.5840480274442539
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1256
+     ],
+     [
+      "t",
+      0.0895
+     ],
+     [
+      "a",
+      0.0779
+     ],
+     [
+      "i",
+      0.0743
+     ],
+     [
+      "o",
+      0.0733
+     ],
+     [
+      "n",
+      0.0723
+     ],
+     [
+      "s",
+      0.0653
+     ],
+     [
+      "h",
+      0.062
+     ],
+     [
+      "r",
+      0.058
+     ],
+     [
+      "l",
+      0.0408
+     ],
+     [
+      "d",
+      0.0398
+     ],
+     [
+      "u",
+      0.0284
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 2227,
+     "H_word_bits": 8.852292392781527,
+     "TTR": 0.19853793349380405,
+     "hapax_frac": 0.5976650202065559
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 3218,
+     "H_word_bits": 8.983610156008055,
+     "TTR": 0.13949455979886427,
+     "hapax_frac": 0.5236171535114978
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 4004,
+     "H_word_bits": 9.041617117937774,
+     "TTR": 0.11494516851352127,
+     "hapax_frac": 0.49725274725274726
+    }
+   }
+  },
+  "fr": {
+   "files": [
+    "corp_fr_18143.txt",
+    "corp_fr_19919.txt",
+    "corp_fr_62215.txt",
+    "corp_fr_78027.txt"
+   ],
+   "150k": {
+    "label": "fr 150k",
+    "n_words": 35331,
+    "n_letters": 150003,
+    "mean_word_len": 4.245648297529082,
+    "with_spaces": {
+     "n_symbols": 185333,
+     "inventory": 41,
+     "h0": 5.357552004618084,
+     "h1": 4.0985289961367615,
+     "h2": 3.2915406608770237,
+     "h2_over_h1": 0.8031029337549159,
+     "h1_minus_h2": 0.8069883352597378
+    },
+    "without_spaces": {
+     "n_symbols": 150003,
+     "inventory": 40,
+     "h0": 5.321928094887363,
+     "h1": 4.19553621304567,
+     "h2": 3.591476290072312,
+     "h2_over_h1": 0.8560231893374954,
+     "h1_minus_h2": 0.6040599229733576,
+     "h2_within_word": 3.1215840837056863
+    },
+    "word_entropy": {
+     "tokens": 35331,
+     "types": 5823,
+     "H_word_bits": 9.606723996017534,
+     "TTR": 0.16481277065466587,
+     "hapax_frac": 0.5886999828267216
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1522
+     ],
+     [
+      "s",
+      0.0746
+     ],
+     [
+      "a",
+      0.071
+     ],
+     [
+      "t",
+      0.0704
+     ],
+     [
+      "i",
+      0.0685
+     ],
+     [
+      "r",
+      0.0684
+     ],
+     [
+      "n",
+      0.0683
+     ],
+     [
+      "u",
+      0.0661
+     ],
+     [
+      "o",
+      0.0648
+     ],
+     [
+      "l",
+      0.0554
+     ],
+     [
+      "m",
+      0.0349
+     ],
+     [
+      "d",
+      0.0329
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "fr sizeA",
+    "n_words": 12408,
+    "n_letters": 53748,
+    "mean_word_len": 4.3317214700193425,
+    "with_spaces": {
+     "n_symbols": 66155,
+     "inventory": 40,
+     "h0": 5.321928094887363,
+     "h1": 4.104942024071243,
+     "h2": 3.287511798055874,
+     "h2_over_h1": 0.8008668036669007,
+     "h1_minus_h2": 0.817430226015369
+    },
+    "without_spaces": {
+     "n_symbols": 53748,
+     "inventory": 39,
+     "h0": 5.285402218862249,
+     "h1": 4.195473393188555,
+     "h2": 3.578215614498305,
+     "h2_over_h1": 0.852875296577406,
+     "h1_minus_h2": 0.6172577786902504,
+     "h2_within_word": 3.1240230231622714
+    },
+    "word_entropy": {
+     "tokens": 12408,
+     "types": 2947,
+     "H_word_bits": 9.33453975203574,
+     "TTR": 0.23750805931656996,
+     "hapax_frac": 0.6263997285374957
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1525
+     ],
+     [
+      "s",
+      0.0801
+     ],
+     [
+      "a",
+      0.0717
+     ],
+     [
+      "t",
+      0.07
+     ],
+     [
+      "n",
+      0.0685
+     ],
+     [
+      "i",
+      0.0665
+     ],
+     [
+      "r",
+      0.0661
+     ],
+     [
+      "o",
+      0.0636
+     ],
+     [
+      "u",
+      0.0634
+     ],
+     [
+      "l",
+      0.0572
+     ],
+     [
+      "m",
+      0.0343
+     ],
+     [
+      "d",
+      0.0338
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 2771,
+     "H_word_bits": 9.304000821295896,
+     "TTR": 0.24703574930908442,
+     "hapax_frac": 0.6319018404907976
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 4300,
+     "H_word_bits": 9.479527306576328,
+     "TTR": 0.1863973297498808,
+     "hapax_frac": 0.6025581395348837
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 5732,
+     "H_word_bits": 9.594345494899166,
+     "TTR": 0.1645518746052707,
+     "hapax_frac": 0.5879274249825541
+    }
+   }
+  },
+  "da": {
+   "files": [
+    "corp_da_24747.txt",
+    "corp_da_36942.txt",
+    "corp_da_41072.txt",
+    "corp_da_44967.txt",
+    "corp_da_66058.txt"
+   ],
+   "150k": {
+    "label": "da 150k",
+    "n_words": 35638,
+    "n_letters": 150002,
+    "mean_word_len": 4.209046523373927,
+    "with_spaces": {
+     "n_symbols": 185639,
+     "inventory": 37,
+     "h0": 5.20945336562895,
+     "h1": 4.11416971910533,
+     "h2": 3.342324257317384,
+     "h2_over_h1": 0.8123933832375315,
+     "h1_minus_h2": 0.7718454617879464
+    },
+    "without_spaces": {
+     "n_symbols": 150002,
+     "inventory": 36,
+     "h0": 5.169925001442312,
+     "h1": 4.218400234323169,
+     "h2": 3.6514657601225355,
+     "h2_over_h1": 0.865604389648059,
+     "h1_minus_h2": 0.5669344742006333,
+     "h2_within_word": 3.17356150097034
+    },
+    "word_entropy": {
+     "tokens": 35638,
+     "types": 8218,
+     "H_word_bits": 10.37979713530003,
+     "TTR": 0.23059655423985634,
+     "hapax_frac": 0.6147481138963251
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1375
+     ],
+     [
+      "a",
+      0.0842
+     ],
+     [
+      "n",
+      0.0822
+     ],
+     [
+      "r",
+      0.074
+     ],
+     [
+      "d",
+      0.0706
+     ],
+     [
+      "s",
+      0.0637
+     ],
+     [
+      "t",
+      0.059
+     ],
+     [
+      "g",
+      0.0489
+     ],
+     [
+      "l",
+      0.0475
+     ],
+     [
+      "i",
+      0.0466
+     ],
+     [
+      "o",
+      0.0441
+     ],
+     [
+      "m",
+      0.0357
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "da sizeA",
+    "n_words": 12848,
+    "n_letters": 53751,
+    "mean_word_len": 4.183608343711083,
+    "with_spaces": {
+     "n_symbols": 66598,
+     "inventory": 33,
+     "h0": 5.044394119358453,
+     "h1": 4.125385673896996,
+     "h2": 3.3505705233917054,
+     "h2_over_h1": 0.8121835843354325,
+     "h1_minus_h2": 0.7748151505052903
+    },
+    "without_spaces": {
+     "n_symbols": 53751,
+     "inventory": 32,
+     "h0": 5.0,
+     "h1": 4.234784926148474,
+     "h2": 3.657256348913693,
+     "h2_over_h1": 0.863622689863487,
+     "h1_minus_h2": 0.5775285772347809,
+     "h2_within_word": 3.183297080411628
+    },
+    "word_entropy": {
+     "tokens": 12848,
+     "types": 4142,
+     "H_word_bits": 10.085527826452848,
+     "TTR": 0.3223848069738481,
+     "hapax_frac": 0.6600676001931434
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1321
+     ],
+     [
+      "n",
+      0.0841
+     ],
+     [
+      "a",
+      0.0838
+     ],
+     [
+      "r",
+      0.0767
+     ],
+     [
+      "d",
+      0.0675
+     ],
+     [
+      "s",
+      0.0666
+     ],
+     [
+      "t",
+      0.0561
+     ],
+     [
+      "g",
+      0.0501
+     ],
+     [
+      "l",
+      0.0488
+     ],
+     [
+      "i",
+      0.0444
+     ],
+     [
+      "o",
+      0.0425
+     ],
+     [
+      "m",
+      0.0374
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 3759,
+     "H_word_bits": 10.013733659169258,
+     "TTR": 0.33511634126771866,
+     "hapax_frac": 0.6738494280393722
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 6146,
+     "H_word_bits": 10.306481542251259,
+     "TTR": 0.26641813689366683,
+     "hapax_frac": 0.6210543442889684
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 8106,
+     "H_word_bits": 10.380161020861843,
+     "TTR": 0.2327036803123385,
+     "hapax_frac": 0.6159634838391315
+    }
+   }
+  },
+  "nl": {
+   "files": [
+    "corp_nl_76186.txt",
+    "corp_nl_76280.txt",
+    "corp_nl_76761.txt",
+    "corp_nl_76765.txt"
+   ],
+   "150k": {
+    "label": "nl 150k",
+    "n_words": 30287,
+    "n_letters": 150008,
+    "mean_word_len": 4.952884075676033,
+    "with_spaces": {
+     "n_symbols": 180294,
+     "inventory": 35,
+     "h0": 5.129283016944966,
+     "h1": 4.078530321269697,
+     "h2": 3.2191731074569274,
+     "h2_over_h1": 0.7892973335686172,
+     "h1_minus_h2": 0.8593572138127694
+    },
+    "without_spaces": {
+     "n_symbols": 150008,
+     "inventory": 34,
+     "h0": 5.087462841250339,
+     "h1": 4.1170518969566094,
+     "h2": 3.461038485758599,
+     "h2_over_h1": 0.8406594263038204,
+     "h1_minus_h2": 0.6560134111980105,
+     "h2_within_word": 3.0617075756555305
+    },
+    "word_entropy": {
+     "tokens": 30287,
+     "types": 4952,
+     "H_word_bits": 9.505692105956934,
+     "TTR": 0.1635024928187011,
+     "hapax_frac": 0.5741114701130856
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1781
+     ],
+     [
+      "n",
+      0.1014
+     ],
+     [
+      "a",
+      0.0763
+     ],
+     [
+      "i",
+      0.0664
+     ],
+     [
+      "r",
+      0.0628
+     ],
+     [
+      "o",
+      0.0618
+     ],
+     [
+      "t",
+      0.0611
+     ],
+     [
+      "d",
+      0.0609
+     ],
+     [
+      "s",
+      0.037
+     ],
+     [
+      "l",
+      0.0355
+     ],
+     [
+      "h",
+      0.0331
+     ],
+     [
+      "g",
+      0.0314
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "nl sizeA",
+    "n_words": 11092,
+    "n_letters": 53750,
+    "mean_word_len": 4.8458348359177785,
+    "with_spaces": {
+     "n_symbols": 64841,
+     "inventory": 31,
+     "h0": 4.954196310386875,
+     "h1": 4.080300103919689,
+     "h2": 3.1852694575621685,
+     "h2_over_h1": 0.7806458781064362,
+     "h1_minus_h2": 0.8950306463575206
+    },
+    "without_spaces": {
+     "n_symbols": 53750,
+     "inventory": 30,
+     "h0": 4.906890595608519,
+     "h1": 4.1259394222327455,
+     "h2": 3.4434762256543436,
+     "h2_over_h1": 0.8345920463831997,
+     "h1_minus_h2": 0.6824631965784018,
+     "h2_within_word": 3.0133501581380564
+    },
+    "word_entropy": {
+     "tokens": 11092,
+     "types": 2119,
+     "H_word_bits": 8.879324898455538,
+     "TTR": 0.19103858636855392,
+     "hapax_frac": 0.5578102878716376
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1741
+     ],
+     [
+      "n",
+      0.1004
+     ],
+     [
+      "a",
+      0.0721
+     ],
+     [
+      "i",
+      0.068
+     ],
+     [
+      "o",
+      0.0644
+     ],
+     [
+      "r",
+      0.0643
+     ],
+     [
+      "d",
+      0.0612
+     ],
+     [
+      "t",
+      0.0604
+     ],
+     [
+      "l",
+      0.0355
+     ],
+     [
+      "s",
+      0.0348
+     ],
+     [
+      "h",
+      0.0319
+     ],
+     [
+      "g",
+      0.0318
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 2138,
+     "H_word_bits": 8.88347822567414,
+     "TTR": 0.19060354818578942,
+     "hapax_frac": 0.558933582787652
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 3963,
+     "H_word_bits": 9.3443637013245,
+     "TTR": 0.17178898088343664,
+     "hapax_frac": 0.5697703759777946
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 5310,
+     "H_word_bits": 9.519294454560262,
+     "TTR": 0.1524372739277717,
+     "hapax_frac": 0.560075329566855
+    }
+   }
+  },
+  "sv": {
+   "files": [
+    "corp_sv_48961.txt",
+    "corp_sv_59341.txt",
+    "corp_sv_62635.txt",
+    "corp_sv_62806.txt"
+   ],
+   "150k": {
+    "label": "sv 150k",
+    "n_words": 33231,
+    "n_letters": 150001,
+    "mean_word_len": 4.513887635039572,
+    "with_spaces": {
+     "n_symbols": 183231,
+     "inventory": 37,
+     "h0": 5.20945336562895,
+     "h1": 4.236464095792643,
+     "h2": 3.4051069971281285,
+     "h2_over_h1": 0.8037615615602267,
+     "h1_minus_h2": 0.8313570986645145
+    },
+    "without_spaces": {
+     "n_symbols": 150001,
+     "inventory": 36,
+     "h0": 5.169925001442312,
+     "h1": 4.340628049593889,
+     "h2": 3.6832134932466003,
+     "h2_over_h1": 0.8485439091219077,
+     "h1_minus_h2": 0.6574145563472884,
+     "h2_within_word": 3.240125598877702
+    },
+    "word_entropy": {
+     "tokens": 33231,
+     "types": 7312,
+     "H_word_bits": 10.03632818079273,
+     "TTR": 0.22003550901266888,
+     "hapax_frac": 0.6459245076586433
+    },
+    "top_symbols": [
+     [
+      "a",
+      0.0942
+     ],
+     [
+      "n",
+      0.0906
+     ],
+     [
+      "e",
+      0.0905
+     ],
+     [
+      "t",
+      0.0818
+     ],
+     [
+      "r",
+      0.0724
+     ],
+     [
+      "s",
+      0.0577
+     ],
+     [
+      "d",
+      0.051
+     ],
+     [
+      "l",
+      0.0509
+     ],
+     [
+      "i",
+      0.048
+     ],
+     [
+      "o",
+      0.0428
+     ],
+     [
+      "g",
+      0.0405
+     ],
+     [
+      "m",
+      0.0345
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "sv sizeA",
+    "n_words": 11553,
+    "n_letters": 53751,
+    "mean_word_len": 4.652557777200727,
+    "with_spaces": {
+     "n_symbols": 65303,
+     "inventory": 31,
+     "h0": 4.954196310386875,
+     "h1": 4.247464344597461,
+     "h2": 3.4055478748183923,
+     "h2_over_h1": 0.8017837463780151,
+     "h1_minus_h2": 0.8419164697790684
+    },
+    "without_spaces": {
+     "n_symbols": 53751,
+     "inventory": 30,
+     "h0": 4.906890595608519,
+     "h1": 4.342379838506039,
+     "h2": 3.665546408216647,
+     "h2_over_h1": 0.8441330663228551,
+     "h1_minus_h2": 0.6768334302893919,
+     "h2_within_word": 3.2382179324867177
+    },
+    "word_entropy": {
+     "tokens": 11553,
+     "types": 3591,
+     "H_word_bits": 9.695540284379932,
+     "TTR": 0.3108283562710984,
+     "hapax_frac": 0.683375104427736
+    },
+    "top_symbols": [
+     [
+      "a",
+      0.0934
+     ],
+     [
+      "n",
+      0.0899
+     ],
+     [
+      "e",
+      0.0885
+     ],
+     [
+      "t",
+      0.0818
+     ],
+     [
+      "r",
+      0.0724
+     ],
+     [
+      "s",
+      0.0574
+     ],
+     [
+      "l",
+      0.0534
+     ],
+     [
+      "d",
+      0.0513
+     ],
+     [
+      "i",
+      0.049
+     ],
+     [
+      "o",
+      0.0428
+     ],
+     [
+      "g",
+      0.0404
+     ],
+     [
+      "m",
+      0.0353
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 3512,
+     "H_word_bits": 9.678218619820832,
+     "TTR": 0.3130961932780601,
+     "hapax_frac": 0.6825170842824602
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 5559,
+     "H_word_bits": 9.865038332534624,
+     "TTR": 0.24097273397199706,
+     "hapax_frac": 0.648857708220903
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 7509,
+     "H_word_bits": 10.048075661876943,
+     "TTR": 0.21556525233966814,
+     "hapax_frac": 0.6445598614995339
+    }
+   }
+  },
+  "no": {
+   "files": [
+    "corp_no_30027.txt",
+    "corp_no_43724.txt",
+    "corp_no_59635.txt",
+    "corp_no_77368.txt"
+   ],
+   "150k": {
+    "label": "no 150k",
+    "n_words": 35483,
+    "n_letters": 150003,
+    "mean_word_len": 4.2274610376800155,
+    "with_spaces": {
+     "n_symbols": 185485,
+     "inventory": 34,
+     "h0": 5.087462841250339,
+     "h1": 4.095433513177531,
+     "h2": 3.2410106589351892,
+     "h2_over_h1": 0.7913718165627309,
+     "h1_minus_h2": 0.8544228542423413
+    },
+    "without_spaces": {
+     "n_symbols": 150003,
+     "inventory": 33,
+     "h0": 5.044394119358453,
+     "h1": 4.193441164756236,
+     "h2": 3.575949431677115,
+     "h2_over_h1": 0.8527482063492797,
+     "h1_minus_h2": 0.6174917330791212,
+     "h2_within_word": 3.0571671567254137
+    },
+    "word_entropy": {
+     "tokens": 35483,
+     "types": 5443,
+     "H_word_bits": 9.316590326562515,
+     "TTR": 0.15339740157258405,
+     "hapax_frac": 0.560903913283116
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.16
+     ],
+     [
+      "n",
+      0.0752
+     ],
+     [
+      "t",
+      0.0717
+     ],
+     [
+      "d",
+      0.0694
+     ],
+     [
+      "g",
+      0.067
+     ],
+     [
+      "r",
+      0.0648
+     ],
+     [
+      "a",
+      0.06
+     ],
+     [
+      "i",
+      0.0563
+     ],
+     [
+      "s",
+      0.049
+     ],
+     [
+      "l",
+      0.043
+     ],
+     [
+      "o",
+      0.0428
+     ],
+     [
+      "m",
+      0.0373
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "no sizeA",
+    "n_words": 12510,
+    "n_letters": 53753,
+    "mean_word_len": 4.2968025579536375,
+    "with_spaces": {
+     "n_symbols": 66262,
+     "inventory": 32,
+     "h0": 5.0,
+     "h1": 4.101090550552044,
+     "h2": 3.2285092366225907,
+     "h2_over_h1": 0.787231883038526,
+     "h1_minus_h2": 0.8725813139294534
+    },
+    "without_spaces": {
+     "n_symbols": 53753,
+     "inventory": 31,
+     "h0": 4.954196310386875,
+     "h1": 4.193905605734328,
+     "h2": 3.5570823660971485,
+     "h2_over_h1": 0.848155085139148,
+     "h1_minus_h2": 0.6368232396371791,
+     "h2_within_word": 3.034769814894462
+    },
+    "word_entropy": {
+     "tokens": 12510,
+     "types": 2769,
+     "H_word_bits": 9.012493723920953,
+     "TTR": 0.22134292565947242,
+     "hapax_frac": 0.6200794510653665
+    },
+    "top_symbols": [
+     [
+      "e",
+      0.1607
+     ],
+     [
+      "n",
+      0.0759
+     ],
+     [
+      "t",
+      0.0715
+     ],
+     [
+      "d",
+      0.0698
+     ],
+     [
+      "g",
+      0.0678
+     ],
+     [
+      "r",
+      0.0641
+     ],
+     [
+      "i",
+      0.0579
+     ],
+     [
+      "a",
+      0.0564
+     ],
+     [
+      "s",
+      0.05
+     ],
+     [
+      "l",
+      0.0443
+     ],
+     [
+      "o",
+      0.0432
+     ],
+     [
+      "m",
+      0.0382
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 2578,
+     "H_word_bits": 8.981446776471355,
+     "TTR": 0.2298297227422662,
+     "hapax_frac": 0.6252909231962762
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 3999,
+     "H_word_bits": 9.146725526881744,
+     "TTR": 0.17334951666738913,
+     "hapax_frac": 0.5636409102275569
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 5373,
+     "H_word_bits": 9.307921767113656,
+     "TTR": 0.1542458517540334,
+     "hapax_frac": 0.5615112600037223
+    }
+   }
+  },
+  "is": {
+   "files": [
+    "corp_is_15178.txt",
+    "corp_is_16696.txt",
+    "corp_is_16846.txt",
+    "corp_is_17025.txt",
+    "corp_is_19960.txt"
+   ],
+   "150k": {
+    "label": "is 150k",
+    "n_words": 33493,
+    "n_letters": 150004,
+    "mean_word_len": 4.47866718418774,
+    "with_spaces": {
+     "n_symbols": 183496,
+     "inventory": 46,
+     "h0": 5.523561956057013,
+     "h1": 4.385104894228766,
+     "h2": 3.493435357053592,
+     "h2_over_h1": 0.7966594736767415,
+     "h1_minus_h2": 0.8916695371751739
+    },
+    "without_spaces": {
+     "n_symbols": 150004,
+     "inventory": 45,
+     "h0": 5.491853096329675,
+     "h1": 4.525554073410652,
+     "h2": 3.878275955187015,
+     "h2_over_h1": 0.8569726252909801,
+     "h1_minus_h2": 0.6472781182236371,
+     "h2_within_word": 3.4155162462122846
+    },
+    "word_entropy": {
+     "tokens": 33493,
+     "types": 7636,
+     "H_word_bits": 10.167922985047673,
+     "TTR": 0.2279879377780432,
+     "hapax_frac": 0.6367207962283918
+    },
+    "top_symbols": [
+     [
+      "a",
+      0.0993
+     ],
+     [
+      "r",
+      0.0899
+     ],
+     [
+      "n",
+      0.078
+     ],
+     [
+      "i",
+      0.0768
+     ],
+     [
+      "e",
+      0.0669
+     ],
+     [
+      "s",
+      0.0543
+     ],
+     [
+      "t",
+      0.0489
+     ],
+     [
+      "l",
+      0.0485
+     ],
+     [
+      "g",
+      0.043
+     ],
+     [
+      "ð",
+      0.0409
+     ],
+     [
+      "u",
+      0.0406
+     ],
+     [
+      "m",
+      0.0363
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "is sizeA",
+    "n_words": 11916,
+    "n_letters": 53753,
+    "mean_word_len": 4.510993622020813,
+    "with_spaces": {
+     "n_symbols": 65668,
+     "inventory": 44,
+     "h0": 5.459431618637297,
+     "h1": 4.381746650164881,
+     "h2": 3.501411377797494,
+     "h2_over_h1": 0.799090330260363,
+     "h1_minus_h2": 0.880335272367387
+    },
+    "without_spaces": {
+     "n_symbols": 53753,
+     "inventory": 43,
+     "h0": 5.426264754702098,
+     "h1": 4.518345151625659,
+     "h2": 3.8592990976831834,
+     "h2_over_h1": 0.8541399490684423,
+     "h1_minus_h2": 0.6590460539424754,
+     "h2_within_word": 3.4147001776784
+    },
+    "word_entropy": {
+     "tokens": 11916,
+     "types": 3237,
+     "H_word_bits": 9.636300336998412,
+     "TTR": 0.2716515609264854,
+     "hapax_frac": 0.6224899598393574
+    },
+    "top_symbols": [
+     [
+      "a",
+      0.1043
+     ],
+     [
+      "r",
+      0.1005
+     ],
+     [
+      "n",
+      0.0744
+     ],
+     [
+      "i",
+      0.0705
+     ],
+     [
+      "e",
+      0.0698
+     ],
+     [
+      "s",
+      0.0585
+     ],
+     [
+      "l",
+      0.0523
+     ],
+     [
+      "t",
+      0.0487
+     ],
+     [
+      "g",
+      0.0397
+     ],
+     [
+      "u",
+      0.0368
+     ],
+     [
+      "ð",
+      0.0338
+     ],
+     [
+      "m",
+      0.0334
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 3131,
+     "H_word_bits": 9.598174772131959,
+     "TTR": 0.27912989212802,
+     "hapax_frac": 0.6314276588949217
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 5420,
+     "H_word_bits": 9.916606103575877,
+     "TTR": 0.2349473319172916,
+     "hapax_frac": 0.624169741697417
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 7900,
+     "H_word_bits": 10.192106463064372,
+     "TTR": 0.2267899178963082,
+     "hapax_frac": 0.6360759493670886
+    }
+   }
+  },
+  "fi": {
+   "files": [
+    "corp_fi_75789.txt",
+    "corp_fi_78071.txt"
+   ],
+   "150k": {
+    "label": "fi 150k",
+    "n_words": 12886,
+    "n_letters": 84589,
+    "mean_word_len": 6.5644109886698745,
+    "with_spaces": {
+     "n_symbols": 97474,
+     "inventory": 32,
+     "h0": 5.0,
+     "h1": 4.031961676907999,
+     "h2": 3.2970622425186935,
+     "h2_over_h1": 0.8177315427876587,
+     "h1_minus_h2": 0.7348994343893054
+    },
+    "without_spaces": {
+     "n_symbols": 84589,
+     "inventory": 31,
+     "h0": 4.954196310386875,
+     "h1": 3.996896434472994,
+     "h2": 3.453234777020627,
+     "h2_over_h1": 0.8639790481526323,
+     "h1_minus_h2": 0.5436616574523669,
+     "h2_within_word": 3.202721373977706
+    },
+    "word_entropy": {
+     "tokens": 12886,
+     "types": 5227,
+     "H_word_bits": 10.792725120407766,
+     "TTR": 0.40563402141859384,
+     "hapax_frac": 0.7206810790128181
+    },
+    "top_symbols": [
+     [
+      "i",
+      0.1138
+     ],
+     [
+      "a",
+      0.1126
+     ],
+     [
+      "t",
+      0.0977
+     ],
+     [
+      "n",
+      0.0976
+     ],
+     [
+      "e",
+      0.0776
+     ],
+     [
+      "s",
+      0.0711
+     ],
+     [
+      "ä",
+      0.0558
+     ],
+     [
+      "l",
+      0.0527
+     ],
+     [
+      "k",
+      0.0523
+     ],
+     [
+      "o",
+      0.05
+     ],
+     [
+      "u",
+      0.0491
+     ],
+     [
+      "m",
+      0.0341
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "fi sizeA",
+    "n_words": 7861,
+    "n_letters": 53748,
+    "mean_word_len": 6.837298053682738,
+    "with_spaces": {
+     "n_symbols": 61608,
+     "inventory": 30,
+     "h0": 4.906890595608519,
+     "h1": 4.045802986744103,
+     "h2": 3.2717917377114327,
+     "h2_over_h1": 0.8086878546561252,
+     "h1_minus_h2": 0.7740112490326707
+    },
+    "without_spaces": {
+     "n_symbols": 53748,
+     "inventory": 29,
+     "h0": 4.857980995127572,
+     "h1": 4.006144104110505,
+     "h2": 3.4242979898180845,
+     "h2_over_h1": 0.8547615614487214,
+     "h1_minus_h2": 0.5818461142924205,
+     "h2_within_word": 3.1650581869937344
+    },
+    "word_entropy": {
+     "tokens": 7861,
+     "types": 3552,
+     "H_word_bits": 10.457217704137506,
+     "TTR": 0.45185090955349194,
+     "hapax_frac": 0.737331081081081
+    },
+    "top_symbols": [
+     [
+      "i",
+      0.1168
+     ],
+     [
+      "a",
+      0.1097
+     ],
+     [
+      "t",
+      0.1004
+     ],
+     [
+      "n",
+      0.0967
+     ],
+     [
+      "e",
+      0.0771
+     ],
+     [
+      "s",
+      0.0726
+     ],
+     [
+      "ä",
+      0.0552
+     ],
+     [
+      "l",
+      0.053
+     ],
+     [
+      "k",
+      0.051
+     ],
+     [
+      "u",
+      0.0498
+     ],
+     [
+      "o",
+      0.0456
+     ],
+     [
+      "m",
+      0.0317
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 4760,
+     "H_word_bits": 10.73798763976821,
+     "TTR": 0.4243558883837033,
+     "hapax_frac": 0.7304621848739495
+    },
+    "B_words": {
+     "tokens": 12886,
+     "types": 5227,
+     "H_word_bits": 10.792725120407766,
+     "TTR": 0.40563402141859384,
+     "hapax_frac": 0.7206810790128181
+    },
+    "ALL_words": {
+     "tokens": 12886,
+     "types": 5227,
+     "H_word_bits": 10.792725120407766,
+     "TTR": 0.40563402141859384,
+     "hapax_frac": 0.7206810790128181
+    }
+   }
+  }
+ },
+ "controls": {
+  "LAT-novowel": {
+   "150k": {
+    "label": "LAT-novowel 150k",
+    "n_words": 48243,
+    "n_letters": 150002,
+    "mean_word_len": 3.1093008312086727,
+    "with_spaces": {
+     "n_symbols": 198244,
+     "inventory": 22,
+     "h0": 4.459431618637297,
+     "h1": 3.569406414839844,
+     "h2": 3.194262973675054,
+     "h2_over_h1": 0.8949003286358406,
+     "h1_minus_h2": 0.37514344116479004
+    },
+    "without_spaces": {
+     "n_symbols": 150002,
+     "inventory": 21,
+     "h0": 4.392317422778761,
+     "h1": 3.6593306457333394,
+     "h2": 3.5153425289472193,
+     "h2_over_h1": 0.9606517883389396,
+     "h1_minus_h2": 0.1439881167861201,
+     "h2_within_word": 3.234597471066668
+    },
+    "word_entropy": {
+     "tokens": 48243,
+     "types": 8969,
+     "H_word_bits": 10.551757639991404,
+     "TTR": 0.185912982194308,
+     "hapax_frac": 0.5517894971568736
+    },
+    "top_symbols": [
+     [
+      "t",
+      0.1489
+     ],
+     [
+      "s",
+      0.1368
+     ],
+     [
+      "r",
+      0.1181
+     ],
+     [
+      "n",
+      0.1129
+     ],
+     [
+      "m",
+      0.1014
+     ],
+     [
+      "c",
+      0.0703
+     ],
+     [
+      "l",
+      0.057
+     ],
+     [
+      "d",
+      0.0528
+     ],
+     [
+      "p",
+      0.0453
+     ],
+     [
+      "q",
+      0.0329
+     ],
+     [
+      "b",
+      0.0278
+     ],
+     [
+      "v",
+      0.0264
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "LAT-novowel sizeA",
+    "n_words": 16882,
+    "n_letters": 53748,
+    "mean_word_len": 3.1837460016585712,
+    "with_spaces": {
+     "n_symbols": 70629,
+     "inventory": 19,
+     "h0": 4.247927513443585,
+     "h1": 3.5570253910330387,
+     "h2": 3.170520888892638,
+     "h2_over_h1": 0.8913405276457272,
+     "h1_minus_h2": 0.3865045021404008
+    },
+    "without_spaces": {
+     "n_symbols": 53748,
+     "inventory": 18,
+     "h0": 4.169925001442312,
+     "h1": 3.6316302336004602,
+     "h2": 3.4782491388714907,
+     "h2_over_h1": 0.9577652225411437,
+     "h1_minus_h2": 0.15338109472896955,
+     "h2_within_word": 3.1875818836510086
+    },
+    "word_entropy": {
+     "tokens": 16882,
+     "types": 4366,
+     "H_word_bits": 10.400311933230121,
+     "TTR": 0.25861864707972987,
+     "hapax_frac": 0.5558863948694457
+    },
+    "top_symbols": [
+     [
+      "t",
+      0.1469
+     ],
+     [
+      "s",
+      0.1378
+     ],
+     [
+      "r",
+      0.1261
+     ],
+     [
+      "n",
+      0.1076
+     ],
+     [
+      "m",
+      0.0977
+     ],
+     [
+      "c",
+      0.0725
+     ],
+     [
+      "l",
+      0.0592
+     ],
+     [
+      "p",
+      0.0491
+     ],
+     [
+      "d",
+      0.0482
+     ],
+     [
+      "q",
+      0.0331
+     ],
+     [
+      "v",
+      0.028
+     ],
+     [
+      "b",
+      0.0263
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 3378,
+     "H_word_bits": 10.21784720236212,
+     "TTR": 0.30115004011767854,
+     "hapax_frac": 0.5914742451154529
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 5212,
+     "H_word_bits": 10.514229821394157,
+     "TTR": 0.2259309029433439,
+     "hapax_frac": 0.5297390636991558
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 6989,
+     "H_word_bits": 10.610157820764293,
+     "TTR": 0.20063730837687316,
+     "hapax_frac": 0.5341250536557447
+    }
+   }
+  },
+  "LAT-verbose12": {
+   "150k": {
+    "label": "LAT-verbose12 150k",
+    "n_words": 14899,
+    "n_letters": 150002,
+    "mean_word_len": 10.067924021746427,
+    "with_spaces": {
+     "n_symbols": 164900,
+     "inventory": 13,
+     "h0": 3.700439718141092,
+     "h1": 3.464532871200783,
+     "h2": 2.7839276744376353,
+     "h2_over_h1": 0.8035506597669386,
+     "h1_minus_h2": 0.6806051967631475
+    },
+    "without_spaces": {
+     "n_symbols": 150002,
+     "inventory": 12,
+     "h0": 3.584962500721156,
+     "h1": 3.3275390487724703,
+     "h2": 2.7073185567432274,
+     "h2_over_h1": 0.8136098531261287,
+     "h1_minus_h2": 0.6202204920292429,
+     "h2_within_word": 2.5928988631123584
+    },
+    "word_entropy": {
+     "tokens": 14899,
+     "types": 6507,
+     "H_word_bits": 11.57815884443966,
+     "TTR": 0.4367407208537486,
+     "hapax_frac": 0.6635930536345475
+    },
+    "top_symbols": [
+     [
+      "h",
+      0.1997
+     ],
+     [
+      "b",
+      0.1495
+     ],
+     [
+      "g",
+      0.1152
+     ],
+     [
+      "j",
+      0.0951
+     ],
+     [
+      "a",
+      0.0938
+     ],
+     [
+      "d",
+      0.0749
+     ],
+     [
+      "c",
+      0.0685
+     ],
+     [
+      "e",
+      0.0638
+     ],
+     [
+      "k",
+      0.0603
+     ],
+     [
+      "l",
+      0.039
+     ],
+     [
+      "i",
+      0.0237
+     ],
+     [
+      "f",
+      0.0167
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "LAT-verbose12 sizeA",
+    "n_words": 5409,
+    "n_letters": 53752,
+    "mean_word_len": 9.937511554816048,
+    "with_spaces": {
+     "n_symbols": 59160,
+     "inventory": 13,
+     "h0": 3.700439718141092,
+     "h1": 3.466986307019247,
+     "h2": 2.7853691240602774,
+     "h2_over_h1": 0.8033977862621003,
+     "h1_minus_h2": 0.6816171829589694
+    },
+    "without_spaces": {
+     "n_symbols": 53752,
+     "inventory": 12,
+     "h0": 3.584962500721156,
+     "h1": 3.3302452984522892,
+     "h2": 2.7111386825665185,
+     "h2_over_h1": 0.8140957916302752,
+     "h1_minus_h2": 0.6191066158857708,
+     "h2_within_word": 2.593892138581071
+    },
+    "word_entropy": {
+     "tokens": 5409,
+     "types": 3085,
+     "H_word_bits": 10.87687646075579,
+     "TTR": 0.570345720096136,
+     "hapax_frac": 0.7497568881685576
+    },
+    "top_symbols": [
+     [
+      "h",
+      0.1996
+     ],
+     [
+      "b",
+      0.149
+     ],
+     [
+      "g",
+      0.1132
+     ],
+     [
+      "a",
+      0.0953
+     ],
+     [
+      "j",
+      0.0934
+     ],
+     [
+      "d",
+      0.0751
+     ],
+     [
+      "c",
+      0.0696
+     ],
+     [
+      "e",
+      0.0648
+     ],
+     [
+      "k",
+      0.0607
+     ],
+     [
+      "l",
+      0.0381
+     ],
+     [
+      "i",
+      0.0245
+     ],
+     [
+      "f",
+      0.0167
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 5279,
+     "H_word_bits": 11.379869970329722,
+     "TTR": 0.47062494428100204,
+     "hapax_frac": 0.6866830839174086
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 8826,
+     "H_word_bits": 11.850674561491802,
+     "TTR": 0.38259135636568553,
+     "hapax_frac": 0.6300702469975074
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 11961,
+     "H_word_bits": 12.038603380030152,
+     "TTR": 0.34337141872882815,
+     "hapax_frac": 0.6236936710977343
+    }
+   }
+  },
+  "LAT-verbose6": {
+   "150k": {
+    "label": "LAT-verbose6 150k",
+    "n_words": 10675,
+    "n_letters": 150001,
+    "mean_word_len": 14.051615925058549,
+    "with_spaces": {
+     "n_symbols": 160675,
+     "inventory": 7,
+     "h0": 2.807354922057604,
+     "h1": 2.7438782377282385,
+     "h2": 2.4438784137802543,
+     "h2_over_h1": 0.8906657664968525,
+     "h1_minus_h2": 0.2999998239479842
+    },
+    "without_spaces": {
+     "n_symbols": 150001,
+     "inventory": 6,
+     "h0": 2.584962500721156,
+     "h1": 2.561583839714212,
+     "h2": 2.289245156350014,
+     "h2_over_h1": 0.8936834785018858,
+     "h1_minus_h2": 0.2723386833641981,
+     "h2_within_word": 2.2506177170557895
+    },
+    "word_entropy": {
+     "tokens": 10675,
+     "types": 5091,
+     "H_word_bits": 11.343390584467196,
+     "TTR": 0.47690866510538643,
+     "hapax_frac": 0.6902376743272441
+    },
+    "top_symbols": [
+     [
+      "a",
+      0.2041
+     ],
+     [
+      "e",
+      0.1911
+     ],
+     [
+      "c",
+      0.1801
+     ],
+     [
+      "f",
+      0.1601
+     ],
+     [
+      "b",
+      0.1498
+     ],
+     [
+      "d",
+      0.1149
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "LAT-verbose6 sizeA",
+    "n_words": 3849,
+    "n_letters": 53765,
+    "mean_word_len": 13.968563263185242,
+    "with_spaces": {
+     "n_symbols": 57613,
+     "inventory": 7,
+     "h0": 2.807354922057604,
+     "h1": 2.7440935043391765,
+     "h2": 2.445986135151824,
+     "h2_over_h1": 0.8913639900695943,
+     "h1_minus_h2": 0.2981073691873526
+    },
+    "without_spaces": {
+     "n_symbols": 53765,
+     "inventory": 6,
+     "h0": 2.584962500721156,
+     "h1": 2.5613357909120826,
+     "h2": 2.29123625564561,
+     "h2_over_h1": 0.8945473935027117,
+     "h1_minus_h2": 0.27009953526647257,
+     "h2_within_word": 2.251238390035327
+    },
+    "word_entropy": {
+     "tokens": 3849,
+     "types": 2374,
+     "H_word_bits": 10.612977906978331,
+     "TTR": 0.6167835801506885,
+     "hapax_frac": 0.7780117944397641
+    },
+    "top_symbols": [
+     [
+      "a",
+      0.2041
+     ],
+     [
+      "e",
+      0.191
+     ],
+     [
+      "c",
+      0.1776
+     ],
+     [
+      "f",
+      0.1622
+     ],
+     [
+      "b",
+      0.152
+     ],
+     [
+      "d",
+      0.1132
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 5279,
+     "H_word_bits": 11.379869970329722,
+     "TTR": 0.47062494428100204,
+     "hapax_frac": 0.6866830839174086
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 8826,
+     "H_word_bits": 11.850674561491802,
+     "TTR": 0.38259135636568553,
+     "hapax_frac": 0.6300702469975074
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 11961,
+     "H_word_bits": 12.038603380030152,
+     "TTR": 0.34337141872882815,
+     "hapax_frac": 0.6236936710977343
+    }
+   }
+  },
+  "LAT-verbose20": {
+   "150k": {
+    "label": "LAT-verbose20 150k",
+    "n_words": 17318,
+    "n_letters": 150000,
+    "mean_word_len": 8.661508257304538,
+    "with_spaces": {
+     "n_symbols": 167317,
+     "inventory": 20,
+     "h0": 4.321928094887363,
+     "h1": 3.753742878804249,
+     "h2": 2.7880922059007043,
+     "h2_over_h1": 0.7427499154627363,
+     "h1_minus_h2": 0.9656506729035446
+    },
+    "without_spaces": {
+     "n_symbols": 150000,
+     "inventory": 19,
+     "h0": 4.247927513443585,
+     "h1": 3.651699651158713,
+     "h2": 2.7374956723520056,
+     "h2_over_h1": 0.7496497340583246,
+     "h1_minus_h2": 0.9142039788067073,
+     "h2_within_word": 2.589557509607988
+    },
+    "word_entropy": {
+     "tokens": 17318,
+     "types": 7221,
+     "H_word_bits": 11.664746928554761,
+     "TTR": 0.4169650075066405,
+     "hapax_frac": 0.6526796842542584
+    },
+    "top_symbols": [
+     [
+      "r",
+      0.1409
+     ],
+     [
+      "p",
+      0.1268
+     ],
+     [
+      "s",
+      0.1195
+     ],
+     [
+      "h",
+      0.1158
+     ],
+     [
+      "t",
+      0.1007
+     ],
+     [
+      "e",
+      0.0844
+     ],
+     [
+      "l",
+      0.0536
+     ],
+     [
+      "a",
+      0.0518
+     ],
+     [
+      "c",
+      0.0495
+     ],
+     [
+      "i",
+      0.0427
+     ],
+     [
+      "m",
+      0.0401
+     ],
+     [
+      "g",
+      0.0265
+     ]
+    ]
+   },
+   "sizeA": {
+    "label": "LAT-verbose20 sizeA",
+    "n_words": 6268,
+    "n_letters": 53748,
+    "mean_word_len": 8.574984045947671,
+    "with_spaces": {
+     "n_symbols": 60015,
+     "inventory": 20,
+     "h0": 4.321928094887363,
+     "h1": 3.7562291337834117,
+     "h2": 2.7799397543993782,
+     "h2_over_h1": 0.7400879060855696,
+     "h1_minus_h2": 0.9762893793840335
+    },
+    "without_spaces": {
+     "n_symbols": 53748,
+     "inventory": 19,
+     "h0": 4.247927513443585,
+     "h1": 3.6550383095814114,
+     "h2": 2.7330117846306847,
+     "h2_over_h1": 0.7477382049502183,
+     "h1_minus_h2": 0.9220265249507267,
+     "h2_within_word": 2.5801542991876074
+    },
+    "word_entropy": {
+     "tokens": 6268,
+     "types": 3472,
+     "H_word_bits": 10.993823946299713,
+     "TTR": 0.5539246968730057,
+     "hapax_frac": 0.7430875576036866
+    },
+    "top_symbols": [
+     [
+      "r",
+      0.139
+     ],
+     [
+      "p",
+      0.1266
+     ],
+     [
+      "s",
+      0.1187
+     ],
+     [
+      "h",
+      0.1165
+     ],
+     [
+      "t",
+      0.101
+     ],
+     [
+      "e",
+      0.085
+     ],
+     [
+      "l",
+      0.0531
+     ],
+     [
+      "a",
+      0.0529
+     ],
+     [
+      "c",
+      0.05
+     ],
+     [
+      "i",
+      0.0416
+     ],
+     [
+      "m",
+      0.0409
+     ],
+     [
+      "g",
+      0.0262
+     ]
+    ]
+   },
+   "word_entropy_at": {
+    "A_words": {
+     "tokens": 11217,
+     "types": 5270,
+     "H_word_bits": 11.376711735332377,
+     "TTR": 0.4698225907105287,
+     "hapax_frac": 0.6859582542694497
+    },
+    "B_words": {
+     "tokens": 23069,
+     "types": 8813,
+     "H_word_bits": 11.847464763159456,
+     "TTR": 0.38202782955481385,
+     "hapax_frac": 0.6297515034607966
+    },
+    "ALL_words": {
+     "tokens": 34834,
+     "types": 11939,
+     "H_word_bits": 12.03474318501417,
+     "TTR": 0.34273985186886374,
+     "hapax_frac": 0.6229164921685233
+    }
+   }
+  }
+ },
+ "verbose_maps": {
+  "LAT-verbose12": {
+   "e": "c",
+   "i": "j",
+   "a": "b",
+   "t": "e",
+   "s": "bh",
+   "u": "hh",
+   "r": "kg",
+   "n": "db",
+   "o": "ha",
+   "m": "gg",
+   "c": "ja",
+   "l": "lh",
+   "d": "eld",
+   "p": "jbf",
+   "b": "aaa",
+   "q": "kia",
+   "v": "gkd",
+   "h": "gla",
+   "f": "idh",
+   "g": "hid",
+   "y": "fdk",
+   "x": "dhe",
+   "æ": "agi",
+   "w": "kbc",
+   "j": "kle",
+   "k": "blf",
+   "z": "lli",
+   "ā": "gik",
+   "ē": "dee",
+   "ι": "jhi",
+   "ī": "gja",
+   "ν": "hdl",
+   "â": "ggk",
+   "α": "cfi",
+   "κ": "lkl",
+   "ū": "fbh",
+   "π": "kib",
+   "ο": "cig",
+   "λ": "fhl",
+   "τ": "aha",
+   "δ": "elj",
+   "σ": "jjg",
+   "ό": "kcc",
+   "υ": "ida",
+   "ξ": "dii",
+   "ō": "dgi",
+   "ά": "fjf",
+   "ä": "hek",
+   "ε": "ijl",
+   "ô": "agl",
+   "ἐ": "ici",
+   "ω": "idg",
+   "ύ": "ahf",
+   "χ": "jid",
+   "ρ": "igh",
+   "η": "fgf",
+   "é": "aii",
+   "μ": "jjf",
+   "ῥ": "hja",
+   "ή": "dkc",
+   "ἁ": "ijc",
+   "ὀ": "bie",
+   "ς": "akb",
+   "β": "bah",
+   "ἑ": "aed",
+   "ὶ": "ebj",
+   "έ": "cfe"
+  },
+  "LAT-verbose6": {
+   "e": "aa",
+   "i": "ac",
+   "a": "bf",
+   "t": "fc",
+   "s": "ce",
+   "u": "be",
+   "r": "aef",
+   "n": "bdf",
+   "o": "dfe",
+   "m": "ced",
+   "c": "eca",
+   "l": "acd",
+   "d": "cdd",
+   "p": "ebe",
+   "b": "bbb",
+   "q": "abc",
+   "v": "bbe",
+   "h": "ece",
+   "f": "feb",
+   "g": "ddf",
+   "y": "ccd",
+   "x": "fdf",
+   "æ": "ebd",
+   "w": "cde",
+   "j": "ecf",
+   "k": "ddc",
+   "z": "efe",
+   "ā": "fdd",
+   "ē": "fbc",
+   "ι": "fbe",
+   "ī": "cdc",
+   "ν": "cfe",
+   "â": "eee",
+   "α": "fee",
+   "κ": "dcf",
+   "ū": "bde",
+   "π": "acf",
+   "ο": "abf",
+   "λ": "aae",
+   "τ": "fac",
+   "δ": "ebf",
+   "σ": "aeb",
+   "ό": "cbb",
+   "υ": "adf",
+   "ξ": "aac",
+   "ō": "faa",
+   "ά": "aaa",
+   "ä": "afa",
+   "ε": "ccb",
+   "ô": "bfb",
+   "ἐ": "efa",
+   "ω": "dea",
+   "ύ": "bba",
+   "χ": "ace",
+   "ρ": "fff",
+   "η": "acc",
+   "é": "dac",
+   "μ": "dee",
+   "ῥ": "def",
+   "ή": "bdb",
+   "ἁ": "aff",
+   "ὀ": "caa",
+   "ς": "dbe",
+   "β": "edd",
+   "ἑ": "ecb",
+   "ὶ": "ccc",
+   "έ": "edf"
+  },
+  "LAT-verbose20": {
+   "e": "h",
+   "i": "s",
+   "a": "r",
+   "t": "e",
+   "s": "l",
+   "u": "t",
+   "r": "ps",
+   "n": "ct",
+   "o": "ap",
+   "m": "ir",
+   "c": "hg",
+   "l": "pr",
+   "d": "rp",
+   "p": "me",
+   "b": "he",
+   "q": "qm",
+   "v": "acf",
+   "h": "sbj",
+   "f": "aip",
+   "g": "tmn",
+   "y": "mso",
+   "x": "eld",
+   "æ": "bep",
+   "w": "gin",
+   "j": "jnq",
+   "k": "msl",
+   "z": "rsn",
+   "ā": "shk",
+   "ē": "ait",
+   "ι": "fkr",
+   "ī": "ssd",
+   "ν": "gsi",
+   "â": "jdc",
+   "α": "ppc",
+   "κ": "lcn",
+   "ū": "eaj",
+   "π": "nnd",
+   "ο": "btt",
+   "λ": "bms",
+   "τ": "kri",
+   "δ": "qhb",
+   "σ": "jac",
+   "ό": "dtr",
+   "υ": "bgn",
+   "ξ": "jti",
+   "ō": "ebk",
+   "ά": "kle",
+   "ä": "mmo",
+   "ε": "qmt",
+   "ô": "rdt",
+   "ἐ": "qin",
+   "ω": "hjn",
+   "ύ": "iqj",
+   "χ": "rka",
+   "ρ": "nsk",
+   "η": "amt",
+   "é": "seb",
+   "μ": "kol",
+   "ῥ": "lti",
+   "ή": "pas",
+   "ἁ": "bal",
+   "ὀ": "ioj",
+   "ς": "stk",
+   "β": "flf",
+   "ἑ": "klt",
+   "ὶ": "ijm",
+   "έ": "das"
+  }
+ },
+ "sizes": {
+  "ZL_A_letters": 53747,
+  "ZL_B_letters": 117432,
+  "ZL_ALL_letters": 173828,
+  "ZL_A_words": 11217,
+  "ZL_B_words": 23069,
+  "ZL_ALL_words": 34834,
+  "target_letters": 150000
+ }
+}

@@ -1,0 +1,126 @@
+{
+ "matched": {
+  "Voynich (ZL)": {
+   "tokens": 29747,
+   "types": 6570,
+   "rep": [
+    2040,
+    134,
+    1,
+    0
+   ]
+  },
+  "Latin (Vulgate)": {
+   "tokens": 30000,
+   "types": 6388,
+   "rep": [
+    3175,
+    1321,
+    559,
+    292
+   ]
+  },
+  "Italian": {
+   "tokens": 30000,
+   "types": 6083,
+   "rep": [
+    2856,
+    926,
+    221,
+    66
+   ]
+  },
+  "English": {
+   "tokens": 30000,
+   "types": 3363,
+   "rep": [
+    3628,
+    1585,
+    365,
+    86
+   ]
+  },
+  "German": {
+   "tokens": 29843,
+   "types": 5117,
+   "rep": [
+    3525,
+    1378,
+    464,
+    224
+   ]
+  },
+  "Icelandic": {
+   "tokens": 27255,
+   "types": 6368,
+   "rep": [
+    2727,
+    952,
+    344,
+    178
+   ]
+  },
+  "naibbe (generator)": {
+   "tokens": 28892,
+   "types": 4995,
+   "rep": [
+    2247,
+    113,
+    1,
+    0
+   ]
+  },
+  "autocopist (generator)": {
+   "tokens": 27716,
+   "types": 11452,
+   "rep": [
+    615,
+    12,
+    0,
+    0
+   ]
+  },
+  "rugg (generator)": {
+   "tokens": 30000,
+   "types": 1742,
+   "rep": [
+    6573,
+    6197,
+    5997,
+    5956
+   ]
+  }
+ },
+ "documents": {
+  "gibberish volunteers (21)": [
+   6.857142857142857,
+   1.8571428571428572,
+   0.47619047619047616
+  ],
+  "Voynich (ZL)": [
+   2.905,
+   0.085,
+   0
+  ],
+  "Latin (Vulgate)": [
+   9.945,
+   3.195,
+   1.335
+  ],
+  "Italian": [
+   5.535,
+   0.81,
+   0.16
+  ],
+  "Icelandic": [
+   10,
+   3.34,
+   1.565
+  ],
+  "naibbe (generator)": [
+   0.7,
+   0.015,
+   0
+  ]
+ }
+}

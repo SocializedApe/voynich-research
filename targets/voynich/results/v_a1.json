@@ -1,0 +1,1103 @@
+{
+ "hygiene": {
+  "ZL_dropped": {
+   "?": 98,
+   "non a-z": 96
+  },
+  "ZL_offending_chars": {
+   "@": 73,
+   ";": 73,
+   "1": 61,
+   "9": 9,
+   "2": 19,
+   "0": 14,
+   "3": 16,
+   "'": 23,
+   "6": 19,
+   "5": 23,
+   "7": 15,
+   "8": 16,
+   "4": 18
+  },
+  "ZL_kept_words": 34116,
+  "GC_dropped": {
+   "@": 273,
+   "?": 45
+  },
+  "GC_kept_words": 36385,
+  "GC_symbol_inventory": "!#$%&(*+123456789ABCDEFGHIJKLMNPQRSTUVWXYZ\\abcdefghijklmnopqrstuvwxyz|",
+  "ZL_lang_counts": {
+   "A": 10715,
+   "B": 22862,
+   "?": 539
+  }
+ },
+ "voynich": {
+  "ZL A raw": {
+   "letters": 53348,
+   "words": 10715,
+   "inv": 24,
+   "h0": 4.585,
+   "h1": 3.832,
+   "h2": 2.353,
+   "h2_over_h1": 0.614,
+   "h1_minus_h2": 1.479,
+   "h1_sp": 3.842,
+   "h2_sp": 2.169,
+   "h2_sp_over_h1_sp": 0.564,
+   "h2_within": 2.128,
+   "mean_wlen": 4.979,
+   "H_word": 9.856,
+   "types": 3339,
+   "hapax": 0.722
+  },
+  "ZL A merge2": {
+   "letters": 39483,
+   "words": 10715,
+   "inv": 37,
+   "h0": 5.209,
+   "h1": 3.989,
+   "h2": 2.939,
+   "h2_over_h1": 0.737,
+   "h1_minus_h2": 1.05,
+   "h1_sp": 3.885,
+   "h2_sp": 2.578,
+   "h2_sp_over_h1_sp": 0.664,
+   "h2_within": 2.684,
+   "mean_wlen": 3.685,
+   "H_word": 9.856,
+   "types": 3339,
+   "hapax": 0.722
+  },
+  "ZL B raw": {
+   "letters": 117006,
+   "words": 22862,
+   "inv": 24,
+   "h0": 4.585,
+   "h1": 3.859,
+   "h2": 2.182,
+   "h2_over_h1": 0.565,
+   "h1_minus_h2": 1.677,
+   "h1_sp": 3.871,
+   "h2_sp": 1.999,
+   "h2_sp_over_h1_sp": 0.516,
+   "h2_within": 1.924,
+   "mean_wlen": 5.118,
+   "H_word": 9.817,
+   "types": 4839,
+   "hapax": 0.686
+  },
+  "ZL B merge2": {
+   "letters": 88175,
+   "words": 22862,
+   "inv": 38,
+   "h0": 5.248,
+   "h1": 4.028,
+   "h2": 2.69,
+   "h2_over_h1": 0.668,
+   "h1_minus_h2": 1.338,
+   "h1_sp": 3.932,
+   "h2_sp": 2.358,
+   "h2_sp_over_h1_sp": 0.6,
+   "h2_within": 2.437,
+   "mean_wlen": 3.857,
+   "H_word": 9.817,
+   "types": 4839,
+   "hapax": 0.686
+  },
+  "ZL ALL raw": {
+   "letters": 172976,
+   "words": 34116,
+   "inv": 25,
+   "h0": 4.644,
+   "h1": 3.865,
+   "h2": 2.311,
+   "h2_over_h1": 0.598,
+   "h1_minus_h2": 1.554,
+   "h1_sp": 3.874,
+   "h2_sp": 2.117,
+   "h2_sp_over_h1_sp": 0.546,
+   "h2_within": 2.065,
+   "mean_wlen": 5.07,
+   "H_word": 10.271,
+   "types": 7236,
+   "hapax": 0.697
+  },
+  "ZL ALL merge2": {
+   "letters": 129724,
+   "words": 34116,
+   "inv": 39,
+   "h0": 5.285,
+   "h1": 4.039,
+   "h2": 2.87,
+   "h2_over_h1": 0.71,
+   "h1_minus_h2": 1.17,
+   "h1_sp": 3.936,
+   "h2_sp": 2.509,
+   "h2_sp_over_h1_sp": 0.637,
+   "h2_within": 2.621,
+   "mean_wlen": 3.802,
+   "H_word": 10.271,
+   "types": 7236,
+   "hapax": 0.697
+  },
+  "ZL ALL raw h2 Miller-Madow": 2.312,
+  "GC ALL raw": {
+   "letters": 140940,
+   "words": 36385,
+   "inv": 70,
+   "h0": 6.129,
+   "h1": 4.153,
+   "h2": 2.897,
+   "h2_over_h1": 0.698,
+   "h1_minus_h2": 1.256,
+   "h1_sp": 4.033,
+   "h2_sp": 2.533,
+   "h2_sp_over_h1_sp": 0.628,
+   "h2_within": 2.6,
+   "mean_wlen": 3.874,
+   "H_word": 10.516,
+   "types": 8351,
+   "hapax": 0.702
+  },
+  "GC ALL raw h2 Miller-Madow": 2.904,
+  "a1_reported": {
+   "ZL A raw": {
+    "h1": 3.832,
+    "h2": 2.353,
+    "h2_within": 2.128
+   },
+   "ZL A merge2": {
+    "h1": 3.989,
+    "h2": 2.939,
+    "h2_within": 2.684
+   },
+   "ZL B raw": {
+    "h1": 3.859,
+    "h2": 2.182,
+    "h2_within": 1.924
+   },
+   "ZL B merge2": {
+    "h1": 4.028,
+    "h2": 2.69,
+    "h2_within": 2.437
+   },
+   "ZL ALL raw": {
+    "h1": 3.865,
+    "h2": 2.311,
+    "h2_within": 2.065
+   },
+   "ZL ALL merge2": {
+    "h1": 4.039,
+    "h2": 2.87,
+    "h2_within": 2.621
+   }
+  }
+ },
+ "languages": {
+  "la": {
+   "letters_per_book_in_150k_sample": {
+    "corp_la_227.txt": 150002
+   },
+   "recomputed_150k": {
+    "letters": 150002,
+    "words": 26016,
+    "inv": 24,
+    "h0": 4.585,
+    "h1": 4.025,
+    "h2": 3.51,
+    "h2_over_h1": 0.872,
+    "h1_minus_h2": 0.515,
+    "h1_sp": 4.035,
+    "h2_sp": 3.364,
+    "h2_sp_over_h1_sp": 0.834,
+    "h2_within": 3.235,
+    "mean_wlen": 5.766,
+    "H_word": 11.899,
+    "types": 9515,
+    "hapax": 0.622
+   },
+   "folded_to_az_150k": {
+    "letters": 150002,
+    "words": 26016,
+    "inv": 24,
+    "h0": 4.585,
+    "h1": 4.025,
+    "h2": 3.51,
+    "h2_over_h1": 0.872,
+    "h1_minus_h2": 0.515,
+    "h1_sp": 4.035,
+    "h2_sp": 3.364,
+    "h2_sp_over_h1_sp": 0.834,
+    "h2_within": 3.235,
+    "mean_wlen": 5.766,
+    "H_word": 11.899,
+    "types": 9515,
+    "hapax": 0.622
+   },
+   "a1_h2": 3.51
+  },
+  "de": {
+   "letters_per_book_in_150k_sample": {
+    "corp_de_35312.txt": 129732,
+    "corp_de_50285.txt": 20268
+   },
+   "recomputed_150k": {
+    "letters": 150000,
+    "words": 30731,
+    "inv": 33,
+    "h0": 5.044,
+    "h1": 4.16,
+    "h2": 3.391,
+    "h2_over_h1": 0.815,
+    "h1_minus_h2": 0.769,
+    "h1_sp": 4.11,
+    "h2_sp": 3.165,
+    "h2_sp_over_h1_sp": 0.77,
+    "h2_within": 2.94,
+    "mean_wlen": 4.881,
+    "H_word": 9.573,
+    "types": 5327,
+    "hapax": 0.608
+   },
+   "folded_to_az_150k": {
+    "letters": 150721,
+    "words": 30731,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 4.072,
+    "h2": 3.335,
+    "h2_over_h1": 0.819,
+    "h1_minus_h2": 0.736,
+    "h1_sp": 4.038,
+    "h2_sp": 3.126,
+    "h2_sp_over_h1_sp": 0.774,
+    "h2_within": 2.886,
+    "mean_wlen": 4.905,
+    "H_word": 9.554,
+    "types": 5272,
+    "hapax": 0.608
+   },
+   "a1_h2": 3.391
+  },
+  "en": {
+   "letters_per_book_in_150k_sample": {
+    "corp_en_1342.txt": 150002
+   },
+   "recomputed_150k": {
+    "letters": 150002,
+    "words": 34175,
+    "inv": 30,
+    "h0": 4.907,
+    "h1": 4.184,
+    "h2": 3.601,
+    "h2_over_h1": 0.861,
+    "h1_minus_h2": 0.583,
+    "h1_sp": 4.1,
+    "h2_sp": 3.315,
+    "h2_sp_over_h1_sp": 0.809,
+    "h2_within": 3.195,
+    "mean_wlen": 4.389,
+    "H_word": 9.044,
+    "types": 3978,
+    "hapax": 0.5
+   },
+   "folded_to_az_150k": {
+    "letters": 150002,
+    "words": 34175,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 4.183,
+    "h2": 3.601,
+    "h2_over_h1": 0.861,
+    "h1_minus_h2": 0.582,
+    "h1_sp": 4.099,
+    "h2_sp": 3.315,
+    "h2_sp_over_h1_sp": 0.809,
+    "h2_within": 3.195,
+    "mean_wlen": 4.389,
+    "H_word": 9.044,
+    "types": 3977,
+    "hapax": 0.5
+   },
+   "a1_h2": 3.601
+  },
+  "fr": {
+   "letters_per_book_in_150k_sample": {
+    "corp_fr_18143.txt": 129737,
+    "corp_fr_19919.txt": 20265
+   },
+   "recomputed_150k": {
+    "letters": 150002,
+    "words": 35349,
+    "inv": 40,
+    "h0": 5.322,
+    "h1": 4.196,
+    "h2": 3.592,
+    "h2_over_h1": 0.856,
+    "h1_minus_h2": 0.604,
+    "h1_sp": 4.099,
+    "h2_sp": 3.292,
+    "h2_sp_over_h1_sp": 0.803,
+    "h2_within": 3.123,
+    "mean_wlen": 4.243,
+    "H_word": 9.605,
+    "types": 5825,
+    "hapax": 0.589
+   },
+   "folded_to_az_150k": {
+    "letters": 150006,
+    "words": 35349,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 4.019,
+    "h2": 3.467,
+    "h2_over_h1": 0.863,
+    "h1_minus_h2": 0.552,
+    "h1_sp": 3.956,
+    "h2_sp": 3.216,
+    "h2_sp_over_h1_sp": 0.813,
+    "h2_within": 3.016,
+    "mean_wlen": 4.244,
+    "H_word": 9.549,
+    "types": 5682,
+    "hapax": 0.58
+   },
+   "a1_h2": 3.592
+  },
+  "da": {
+   "letters_per_book_in_150k_sample": {
+    "corp_da_24747.txt": 103789,
+    "corp_da_36942.txt": 46215
+   },
+   "recomputed_150k": {
+    "letters": 150004,
+    "words": 35633,
+    "inv": 36,
+    "h0": 5.17,
+    "h1": 4.218,
+    "h2": 3.652,
+    "h2_over_h1": 0.866,
+    "h1_minus_h2": 0.567,
+    "h1_sp": 4.114,
+    "h2_sp": 3.342,
+    "h2_sp_over_h1_sp": 0.812,
+    "h2_within": 3.174,
+    "mean_wlen": 4.21,
+    "H_word": 10.378,
+    "types": 8215,
+    "hapax": 0.615
+   },
+   "folded_to_az_150k": {
+    "letters": 152138,
+    "words": 35633,
+    "inv": 25,
+    "h0": 4.644,
+    "h1": 4.091,
+    "h2": 3.574,
+    "h2_over_h1": 0.874,
+    "h1_minus_h2": 0.517,
+    "h1_sp": 4.016,
+    "h2_sp": 3.291,
+    "h2_sp_over_h1_sp": 0.82,
+    "h2_within": 3.106,
+    "mean_wlen": 4.27,
+    "H_word": 10.349,
+    "types": 8129,
+    "hapax": 0.615
+   },
+   "a1_h2": 3.652
+  },
+  "nl": {
+   "letters_per_book_in_150k_sample": {
+    "corp_nl_76186.txt": 80372,
+    "corp_nl_76280.txt": 69636
+   },
+   "recomputed_150k": {
+    "letters": 150008,
+    "words": 30287,
+    "inv": 34,
+    "h0": 5.087,
+    "h1": 4.117,
+    "h2": 3.461,
+    "h2_over_h1": 0.841,
+    "h1_minus_h2": 0.656,
+    "h1_sp": 4.079,
+    "h2_sp": 3.219,
+    "h2_sp_over_h1_sp": 0.789,
+    "h2_within": 3.062,
+    "mean_wlen": 4.953,
+    "H_word": 9.506,
+    "types": 4952,
+    "hapax": 0.574
+   },
+   "folded_to_az_150k": {
+    "letters": 150008,
+    "words": 30287,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 4.105,
+    "h2": 3.456,
+    "h2_over_h1": 0.842,
+    "h1_minus_h2": 0.649,
+    "h1_sp": 4.068,
+    "h2_sp": 3.215,
+    "h2_sp_over_h1_sp": 0.79,
+    "h2_within": 3.057,
+    "mean_wlen": 4.953,
+    "H_word": 9.5,
+    "types": 4945,
+    "hapax": 0.574
+   },
+   "a1_h2": 3.461
+  },
+  "sv": {
+   "letters_per_book_in_150k_sample": {
+    "corp_sv_48961.txt": 127665,
+    "corp_sv_59341.txt": 22336
+   },
+   "recomputed_150k": {
+    "letters": 150001,
+    "words": 33231,
+    "inv": 36,
+    "h0": 5.17,
+    "h1": 4.341,
+    "h2": 3.683,
+    "h2_over_h1": 0.849,
+    "h1_minus_h2": 0.657,
+    "h1_sp": 4.236,
+    "h2_sp": 3.405,
+    "h2_sp_over_h1_sp": 0.804,
+    "h2_within": 3.24,
+    "mean_wlen": 4.514,
+    "H_word": 10.036,
+    "types": 7312,
+    "hapax": 0.646
+   },
+   "folded_to_az_150k": {
+    "letters": 150008,
+    "words": 33231,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 4.119,
+    "h2": 3.509,
+    "h2_over_h1": 0.852,
+    "h1_minus_h2": 0.609,
+    "h1_sp": 4.055,
+    "h2_sp": 3.27,
+    "h2_sp_over_h1_sp": 0.806,
+    "h2_within": 3.057,
+    "mean_wlen": 4.514,
+    "H_word": 9.979,
+    "types": 7180,
+    "hapax": 0.645
+   },
+   "a1_h2": 3.683
+  },
+  "no": {
+   "letters_per_book_in_150k_sample": {
+    "corp_no_30027.txt": 129742,
+    "corp_no_43724.txt": 20262
+   },
+   "recomputed_150k": {
+    "letters": 150004,
+    "words": 35486,
+    "inv": 32,
+    "h0": 5.0,
+    "h1": 4.193,
+    "h2": 3.576,
+    "h2_over_h1": 0.853,
+    "h1_minus_h2": 0.617,
+    "h1_sp": 4.095,
+    "h2_sp": 3.241,
+    "h2_sp_over_h1_sp": 0.791,
+    "h2_within": 3.058,
+    "mean_wlen": 4.227,
+    "H_word": 9.317,
+    "types": 5441,
+    "hapax": 0.561
+   },
+   "folded_to_az_150k": {
+    "letters": 151463,
+    "words": 35486,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 4.05,
+    "h2": 3.488,
+    "h2_over_h1": 0.861,
+    "h1_minus_h2": 0.561,
+    "h1_sp": 3.982,
+    "h2_sp": 3.19,
+    "h2_sp_over_h1_sp": 0.801,
+    "h2_within": 2.971,
+    "mean_wlen": 4.268,
+    "H_word": 9.295,
+    "types": 5400,
+    "hapax": 0.559
+   },
+   "a1_h2": 3.576
+  },
+  "is": {
+   "letters_per_book_in_150k_sample": {
+    "corp_is_15178.txt": 103791,
+    "corp_is_16696.txt": 17852,
+    "corp_is_16846.txt": 15302,
+    "corp_is_17025.txt": 13056
+   },
+   "recomputed_150k": {
+    "letters": 150001,
+    "words": 33530,
+    "inv": 43,
+    "h0": 5.426,
+    "h1": 4.525,
+    "h2": 3.878,
+    "h2_over_h1": 0.857,
+    "h1_minus_h2": 0.648,
+    "h1_sp": 4.385,
+    "h2_sp": 3.492,
+    "h2_sp_over_h1_sp": 0.797,
+    "h2_within": 3.413,
+    "mean_wlen": 4.474,
+    "H_word": 10.166,
+    "types": 7626,
+    "hapax": 0.636
+   },
+   "folded_to_az_150k": {
+    "letters": 153989,
+    "words": 33492,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 4.136,
+    "h2": 3.601,
+    "h2_over_h1": 0.871,
+    "h1_minus_h2": 0.535,
+    "h1_sp": 4.074,
+    "h2_sp": 3.335,
+    "h2_sp_over_h1_sp": 0.819,
+    "h2_within": 3.233,
+    "mean_wlen": 4.598,
+    "H_word": 10.141,
+    "types": 7530,
+    "hapax": 0.633
+   },
+   "a1_h2": 3.876
+  },
+  "fi": {
+   "letters_per_book_in_150k_sample": {
+    "corp_fi_75789.txt": 55187,
+    "corp_fi_78071.txt": 29402
+   },
+   "recomputed_150k": {
+    "letters": 84589,
+    "words": 12886,
+    "inv": 31,
+    "h0": 4.954,
+    "h1": 3.997,
+    "h2": 3.453,
+    "h2_over_h1": 0.864,
+    "h1_minus_h2": 0.544,
+    "h1_sp": 4.032,
+    "h2_sp": 3.297,
+    "h2_sp_over_h1_sp": 0.818,
+    "h2_within": 3.203,
+    "mean_wlen": 6.564,
+    "H_word": 10.793,
+    "types": 5227,
+    "hapax": 0.721
+   },
+   "folded_to_az_150k": {
+    "letters": 84589,
+    "words": 12886,
+    "inv": 26,
+    "h0": 4.7,
+    "h1": 3.822,
+    "h2": 3.319,
+    "h2_over_h1": 0.868,
+    "h1_minus_h2": 0.503,
+    "h1_sp": 3.88,
+    "h2_sp": 3.188,
+    "h2_sp_over_h1_sp": 0.822,
+    "h2_within": 3.056,
+    "mean_wlen": 6.564,
+    "H_word": 10.792,
+    "types": 5224,
+    "hapax": 0.721
+   },
+   "a1_h2": 3.453
+  }
+ },
+ "latin_by_book": {
+  "corp_la_227.txt": {
+   "en_stopword_share": 0.019,
+   "letters": 50008,
+   "words": 8697,
+   "inv": 24,
+   "h0": 4.585,
+   "h1": 4.024,
+   "h2": 3.507,
+   "h2_over_h1": 0.871,
+   "h1_minus_h2": 0.517,
+   "h1_sp": 4.033,
+   "h2_sp": 3.36,
+   "h2_sp_over_h1_sp": 0.833,
+   "h2_within": 3.232,
+   "mean_wlen": 5.75,
+   "H_word": 11.225,
+   "types": 4421,
+   "hapax": 0.71
+  },
+  "corp_la_33849.txt": {
+   "en_stopword_share": 0.033,
+   "letters": 50002,
+   "words": 9292,
+   "inv": 27,
+   "h0": 4.755,
+   "h1": 4.048,
+   "h2": 3.528,
+   "h2_over_h1": 0.872,
+   "h1_minus_h2": 0.52,
+   "h1_sp": 4.04,
+   "h2_sp": 3.339,
+   "h2_sp_over_h1_sp": 0.827,
+   "h2_within": 3.2,
+   "mean_wlen": 5.381,
+   "H_word": 10.223,
+   "types": 3636,
+   "hapax": 0.719
+  },
+  "corp_la_50280.txt": {
+   "en_stopword_share": 0.267,
+   "letters": 50001,
+   "words": 10283,
+   "inv": 45,
+   "h0": 5.492,
+   "h1": 4.128,
+   "h2": 3.63,
+   "h2_over_h1": 0.88,
+   "h1_minus_h2": 0.497,
+   "h1_sp": 4.083,
+   "h2_sp": 3.425,
+   "h2_sp_over_h1_sp": 0.839,
+   "h2_within": 3.316,
+   "mean_wlen": 4.862,
+   "H_word": 9.975,
+   "types": 3605,
+   "hapax": 0.664
+  },
+  "Aeneid+Confessions 150k": {
+   "letters": 150007,
+   "words": 26967,
+   "inv": 27,
+   "h0": 4.755,
+   "h1": 4.045,
+   "h2": 3.543,
+   "h2_over_h1": 0.876,
+   "h1_minus_h2": 0.503,
+   "h1_sp": 4.045,
+   "h2_sp": 3.381,
+   "h2_sp_over_h1_sp": 0.836,
+   "h2_within": 3.251,
+   "mean_wlen": 5.563,
+   "H_word": 11.568,
+   "types": 9959,
+   "hapax": 0.678
+  }
+ },
+ "italian": {
+  "window_counts_200w_first4MB": {
+   "la": 97,
+   "it": 3471
+  },
+  "share_of_first_150k_sample_windows": {
+   "la": 1,
+   "it": 164
+  },
+  "a1_it_150k_mixed": {
+   "letters": 150003,
+   "words": 33031,
+   "inv": 21,
+   "h0": 4.392,
+   "h1": 3.942,
+   "h2": 3.451,
+   "h2_over_h1": 0.876,
+   "h1_minus_h2": 0.491,
+   "h1_sp": 3.912,
+   "h2_sp": 3.205,
+   "h2_sp_over_h1_sp": 0.819,
+   "h2_within": 3.035,
+   "mean_wlen": 4.541,
+   "H_word": 9.825,
+   "types": 6619,
+   "hapax": 0.666
+  },
+  "italian_windows_only_150k": {
+   "letters": 150001,
+   "words": 33053,
+   "inv": 21,
+   "h0": 4.392,
+   "h1": 3.941,
+   "h2": 3.45,
+   "h2_over_h1": 0.875,
+   "h1_minus_h2": 0.491,
+   "h1_sp": 3.911,
+   "h2_sp": 3.203,
+   "h2_sp_over_h1_sp": 0.819,
+   "h2_within": 3.034,
+   "mean_wlen": 4.538,
+   "H_word": 9.821,
+   "types": 6611,
+   "hapax": 0.666
+  },
+  "latin_windows_only_150k": null,
+  "german_windows_only_150k": null
+ },
+ "controls": {
+  "LAT-verbose12": {
+   "recomputed_150k": {
+    "letters": 150002,
+    "words": 14899,
+    "inv": 12,
+    "h0": 3.585,
+    "h1": 3.328,
+    "h2": 2.707,
+    "h2_over_h1": 0.814,
+    "h1_minus_h2": 0.62,
+    "h1_sp": 3.465,
+    "h2_sp": 2.784,
+    "h2_sp_over_h1_sp": 0.804,
+    "h2_within": 2.593,
+    "mean_wlen": 10.068,
+    "H_word": 11.578,
+    "types": 6507,
+    "hapax": 0.664
+   },
+   "a1_h2": 2.707
+  },
+  "LAT-verbose6": {
+   "recomputed_150k": {
+    "letters": 150001,
+    "words": 10675,
+    "inv": 6,
+    "h0": 2.585,
+    "h1": 2.562,
+    "h2": 2.289,
+    "h2_over_h1": 0.894,
+    "h1_minus_h2": 0.272,
+    "h1_sp": 2.744,
+    "h2_sp": 2.444,
+    "h2_sp_over_h1_sp": 0.891,
+    "h2_within": 2.251,
+    "mean_wlen": 14.052,
+    "H_word": 11.343,
+    "types": 5091,
+    "hapax": 0.69
+   },
+   "a1_h2": 2.289
+  },
+  "LAT-verbose20": {
+   "recomputed_150k": {
+    "letters": 150000,
+    "words": 17318,
+    "inv": 19,
+    "h0": 4.248,
+    "h1": 3.652,
+    "h2": 2.737,
+    "h2_over_h1": 0.75,
+    "h1_minus_h2": 0.914,
+    "h1_sp": 3.754,
+    "h2_sp": 2.788,
+    "h2_sp_over_h1_sp": 0.743,
+    "h2_within": 2.59,
+    "mean_wlen": 8.662,
+    "H_word": 11.665,
+    "types": 7221,
+    "hapax": 0.653
+   },
+   "a1_h2": 2.737
+  },
+  "LAT-verbose24 (8/12/rest)": {
+   "recomputed_150k": {
+    "letters": 150006,
+    "words": 19643,
+    "inv": 22,
+    "h0": 4.459,
+    "h1": 4.102,
+    "h2": 2.916,
+    "h2_over_h1": 0.711,
+    "h1_minus_h2": 1.186,
+    "h1_sp": 4.144,
+    "h2_sp": 2.902,
+    "h2_sp_over_h1_sp": 0.7,
+    "h2_within": 2.686,
+    "mean_wlen": 7.637,
+    "H_word": 11.739,
+    "types": 7887,
+    "hapax": 0.645
+   }
+  },
+  "LAT-verbose24 (0/24/rest)": {
+   "recomputed_150k": {
+    "letters": 150002,
+    "words": 13017,
+    "inv": 20,
+    "h0": 4.322,
+    "h1": 3.901,
+    "h2": 2.325,
+    "h2_over_h1": 0.596,
+    "h1_minus_h2": 1.576,
+    "h1_sp": 3.991,
+    "h2_sp": 2.39,
+    "h2_sp_over_h1_sp": 0.599,
+    "h2_within": 2.116,
+    "mean_wlen": 11.524,
+    "H_word": 11.487,
+    "types": 5908,
+    "hapax": 0.674
+   }
+  },
+  "LAT-novowel": {
+   "recomputed_150k": {
+    "letters": 150000,
+    "words": 48275,
+    "inv": 21,
+    "h0": 4.392,
+    "h1": 3.659,
+    "h2": 3.515,
+    "h2_over_h1": 0.961,
+    "h1_minus_h2": 0.144,
+    "h1_sp": 3.569,
+    "h2_sp": 3.194,
+    "h2_sp_over_h1_sp": 0.895,
+    "h2_within": 3.234,
+    "mean_wlen": 3.107,
+    "H_word": 10.546,
+    "types": 8967,
+    "hapax": 0.552
+   },
+   "a1_h2": 3.515
+  }
+ },
+ "redundancy_h1_minus_h2": {
+  "ZL A raw": {
+   "h1": 3.832,
+   "h2": 2.353,
+   "h1-h2": 1.479,
+   "h2/h1": 0.614,
+   "inv": 24
+  },
+  "ZL A merge2": {
+   "h1": 3.989,
+   "h2": 2.939,
+   "h1-h2": 1.05,
+   "h2/h1": 0.737,
+   "inv": 37
+  },
+  "ZL B raw": {
+   "h1": 3.859,
+   "h2": 2.182,
+   "h1-h2": 1.677,
+   "h2/h1": 0.565,
+   "inv": 24
+  },
+  "ZL B merge2": {
+   "h1": 4.028,
+   "h2": 2.69,
+   "h1-h2": 1.338,
+   "h2/h1": 0.668,
+   "inv": 38
+  },
+  "ZL ALL raw": {
+   "h1": 3.865,
+   "h2": 2.311,
+   "h1-h2": 1.554,
+   "h2/h1": 0.598,
+   "inv": 25
+  },
+  "ZL ALL merge2": {
+   "h1": 4.039,
+   "h2": 2.87,
+   "h1-h2": 1.17,
+   "h2/h1": 0.71,
+   "inv": 39
+  },
+  "GC ALL raw": {
+   "h1": 4.153,
+   "h2": 2.897,
+   "h1-h2": 1.256,
+   "h2/h1": 0.698,
+   "inv": 70
+  },
+  "la": {
+   "h1": 4.025,
+   "h2": 3.51,
+   "h1-h2": 0.515,
+   "h2/h1": 0.872,
+   "inv": 24
+  },
+  "de": {
+   "h1": 4.16,
+   "h2": 3.391,
+   "h1-h2": 0.769,
+   "h2/h1": 0.815,
+   "inv": 33
+  },
+  "en": {
+   "h1": 4.184,
+   "h2": 3.601,
+   "h1-h2": 0.583,
+   "h2/h1": 0.861,
+   "inv": 30
+  },
+  "fr": {
+   "h1": 4.196,
+   "h2": 3.592,
+   "h1-h2": 0.604,
+   "h2/h1": 0.856,
+   "inv": 40
+  },
+  "da": {
+   "h1": 4.218,
+   "h2": 3.652,
+   "h1-h2": 0.567,
+   "h2/h1": 0.866,
+   "inv": 36
+  },
+  "nl": {
+   "h1": 4.117,
+   "h2": 3.461,
+   "h1-h2": 0.656,
+   "h2/h1": 0.841,
+   "inv": 34
+  },
+  "sv": {
+   "h1": 4.341,
+   "h2": 3.683,
+   "h1-h2": 0.657,
+   "h2/h1": 0.849,
+   "inv": 36
+  },
+  "no": {
+   "h1": 4.193,
+   "h2": 3.576,
+   "h1-h2": 0.617,
+   "h2/h1": 0.853,
+   "inv": 32
+  },
+  "is": {
+   "h1": 4.525,
+   "h2": 3.878,
+   "h1-h2": 0.648,
+   "h2/h1": 0.857,
+   "inv": 43
+  },
+  "fi": {
+   "h1": 3.997,
+   "h2": 3.453,
+   "h1-h2": 0.544,
+   "h2/h1": 0.864,
+   "inv": 31
+  },
+  "it (italian windows only)": {
+   "h1": 3.941,
+   "h2": 3.45,
+   "h1-h2": 0.491,
+   "h2/h1": 0.875,
+   "inv": 21
+  },
+  "LAT-verbose12": {
+   "h1": 3.328,
+   "h2": 2.707,
+   "h1-h2": 0.62,
+   "h2/h1": 0.814,
+   "inv": 12
+  },
+  "LAT-verbose6": {
+   "h1": 2.562,
+   "h2": 2.289,
+   "h1-h2": 0.272,
+   "h2/h1": 0.894,
+   "inv": 6
+  },
+  "LAT-verbose20": {
+   "h1": 3.652,
+   "h2": 2.737,
+   "h1-h2": 0.914,
+   "h2/h1": 0.75,
+   "inv": 19
+  },
+  "LAT-verbose24 (8/12/rest)": {
+   "h1": 4.102,
+   "h2": 2.916,
+   "h1-h2": 1.186,
+   "h2/h1": 0.711,
+   "inv": 22
+  },
+  "LAT-verbose24 (0/24/rest)": {
+   "h1": 3.901,
+   "h2": 2.325,
+   "h1-h2": 1.576,
+   "h2/h1": 0.596,
+   "inv": 20
+  },
+  "LAT-novowel": {
+   "h1": 3.659,
+   "h2": 3.515,
+   "h1-h2": 0.144,
+   "h2/h1": 0.961,
+   "inv": 21
+  }
+ },
+ "extra_checks": {
+  "GC_reserved_chars": {
+   "words_with_!": 42,
+   "words_with_%": 133,
+   "of_words": 36385,
+   "GC_ALL_h2_after_stripping_!_%": 2.893,
+   "a1_GC_ALL_h2": 2.897
+  },
+  "latin_word_entropy_by_genre": {
+   "Aeneid_H_w@10715/22862/34116": [
+    11.34,
+    11.84,
+    12.05
+   ],
+   "Confessions_prose_H_w@10715/22862/34116": [
+    10.26,
+    10.53,
+    10.76
+   ],
+   "Confessions_types": [
+    3985,
+    6990,
+    9486
+   ],
+   "Confessions_hapax": [
+    0.71,
+    0.69,
+    0.67
+   ],
+   "Confessions_150k": {
+    "h1": 4.036,
+    "h2": 3.504,
+    "h2/h1": 0.868,
+    "h1-h2": 0.533,
+    "mean_wlen": 5.394
+   },
+   "phrasebook_corp_la_50280_english_stopword_token_share": 0.267
+  },
+  "italian_150k_stopword_token_shares": {
+   "it": 0.238,
+   "la": 0.081,
+   "de": 0.002
+  },
+  "verbose_controls_mean_wlen": {
+   "verbose6": 14.05,
+   "verbose12": 10.07,
+   "verbose20": 8.66,
+   "verbose24_8/12/rest": 7.64,
+   "verbose24_0/24/rest": 11.52,
+   "Voynich_ZL_raw_ALL": 5.07,
+   "Voynich_ZL_merge2_ALL": 3.8
+  }
+ }
+}
