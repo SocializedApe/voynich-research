@@ -4,7 +4,8 @@ Statistical tests of what the Voynich manuscript (Beinecke MS 408) could be: cip
 each against controls and calibrated solvers. Not a decipherment.
 
 **Start here: [`targets/voynich/README.md`](targets/voynich/README.md)** (the main results and the author's notes).
-The full chain of tests is in `targets/voynich/HYPOTHESES_2026-10-28.md`.
+The full chain of tests is in `targets/voynich/HYPOTHESES_2026-10-28.md`. People, data sources and licences:
+[`CREDITS.md`](CREDITS.md).
 
 ## Layout
 
