@@ -1,0 +1,336 @@
+{
+ "interior": {
+  "n": 18360,
+  "mean_len": 4.95735294117647,
+  "no_opener": 0.3951525054466231,
+  "no_middle": 0.4556644880174292,
+  "no_ending": 0.011764705882352941,
+  "m_final": 0.008169934640522876,
+  "paragraph_type": 1.0,
+  "prefixed_like": 0.14030501089324618,
+  "types_per_token": 0.20675381263616557,
+  "r_opener_middle_within_ctx": -0.17267561495536984,
+  "r_stem_ending_within_ctx": -0.1632407153041374,
+  "var_ratio": 0.7085368752005566,
+  "chain_mi_ending": 0.8051169732120966,
+  "jsd": {
+   "first vs line-first": null,
+   "opener vs line-first": null,
+   "ending vs line-first": null,
+   "first vs line-last": null,
+   "opener vs line-last": null,
+   "ending vs line-last": null
+  }
+ },
+ "line-first": {
+  "n": 3339,
+  "mean_len": 5.438754117999401,
+  "no_opener": 0.12368972746331237,
+  "no_middle": 0.3638814016172507,
+  "no_ending": 0.010482180293501049,
+  "m_final": 0.003893381251871818,
+  "paragraph_type": 1.0,
+  "prefixed_like": 0.36807427373465107,
+  "types_per_token": 0.46630727762803237,
+  "r_opener_middle_within_ctx": -0.31899867226400974,
+  "r_stem_ending_within_ctx": -0.2507065240016103,
+  "var_ratio": 0.704748073655245,
+  "chain_mi_ending": 0.8361889400382947,
+  "jsd": {
+   "first vs interior": {
+    "jsd": 0.20454566285450898,
+    "floor": 0.0010428119711274756
+   },
+   "opener vs interior": {
+    "jsd": 0.2207245607235814,
+    "floor": 0.001894968608195265
+   },
+   "ending vs interior": {
+    "jsd": 0.022519860999702195,
+    "floor": 0.0011338852022685449
+   },
+   "first vs line-last": null,
+   "opener vs line-last": null,
+   "ending vs line-last": null
+  }
+ },
+ "line-last": {
+  "n": 3339,
+  "mean_len": 4.649595687331536,
+  "no_opener": 0.32914046121593293,
+  "no_middle": 0.4273734651093142,
+  "no_ending": 0.03024857741838874,
+  "m_final": 0.1710092842168314,
+  "paragraph_type": 1.0,
+  "prefixed_like": 0.16022761305780173,
+  "types_per_token": 0.4504342617550165,
+  "r_opener_middle_within_ctx": -0.21131548781205786,
+  "r_stem_ending_within_ctx": -0.1675585438097226,
+  "var_ratio": 0.6942840828397713,
+  "chain_mi_ending": 0.811800781771705,
+  "jsd": {
+   "first vs interior": {
+    "jsd": 0.049191512517630674,
+    "floor": 0.0009709415538741214
+   },
+   "opener vs interior": {
+    "jsd": 0.04687002858198695,
+    "floor": 0.002117113907349651
+   },
+   "ending vs interior": {
+    "jsd": 0.13064999278066358,
+    "floor": 0.0011366377591301598
+   },
+   "first vs line-first": null,
+   "opener vs line-first": null,
+   "ending vs line-first": null
+  }
+ },
+ "labels": {
+  "n": 741,
+  "mean_len": 5.186234817813765,
+  "no_opener": 0.20917678812415655,
+  "no_middle": 0.2699055330634278,
+  "no_ending": 0.06747638326585695,
+  "m_final": 0.0553306342780027,
+  "paragraph_type": 0.5978407557354926,
+  "prefixed_like": 0.07692307692307693,
+  "types_per_token": 0.7624831309041835,
+  "r_opener_middle_within_ctx": -0.14712593378584088,
+  "r_stem_ending_within_ctx": -0.15339904768432056,
+  "var_ratio": 0.9669687829864683,
+  "chain_mi_ending": 0.6721075370000518,
+  "jsd": {
+   "first vs interior": {
+    "jsd": 0.17788590518106795,
+    "floor": 0.005157043224762073
+   },
+   "opener vs interior": {
+    "jsd": 0.169663541066348,
+    "floor": 0.010467914159133208
+   },
+   "ending vs interior": {
+    "jsd": 0.11812041863832948,
+    "floor": 0.006082077259950389
+   },
+   "first vs line-first": {
+    "jsd": 0.24585327855914704,
+    "floor": 0.0033211249714412885
+   },
+   "opener vs line-first": {
+    "jsd": 0.2691387150055441,
+    "floor": 0.006075737626320155
+   },
+   "ending vs line-first": {
+    "jsd": 0.15544442971109726,
+    "floor": 0.005375438699646626
+   },
+   "first vs line-last": {
+    "jsd": 0.1118012036532649,
+    "floor": 0.004241404167087662
+   },
+   "opener vs line-last": {
+    "jsd": 0.11614720159934591,
+    "floor": 0.006763480213941459
+   },
+   "ending vs line-last": {
+    "jsd": 0.05606591271606717,
+    "floor": 0.00452090891306319
+   }
+  }
+ },
+ "labels, single-word loci": {
+  "n": 603,
+  "mean_len": 5.416252072968491,
+  "no_opener": 0.16583747927031509,
+  "no_middle": 0.23217247097844113,
+  "no_ending": 0.0779436152570481,
+  "m_final": 0.04809286898839138,
+  "paragraph_type": 0.548922056384743,
+  "prefixed_like": 0.07131011608623548,
+  "types_per_token": 0.7960199004975125,
+  "r_opener_middle_within_ctx": -0.1757276319596266,
+  "r_stem_ending_within_ctx": -0.10199417740082345,
+  "var_ratio": 0.9769902992457186,
+  "chain_mi_ending": 0.7184247817522049,
+  "jsd": {
+   "first vs interior": {
+    "jsd": 0.2003837863922196,
+    "floor": 0.00598399585951572
+   },
+   "opener vs interior": {
+    "jsd": 0.19147071951302577,
+    "floor": 0.012993086090632993
+   },
+   "ending vs interior": {
+    "jsd": 0.12409921402335612,
+    "floor": 0.00705595143796394
+   },
+   "first vs line-first": {
+    "jsd": 0.23793726601045626,
+    "floor": 0.004259235192931598
+   },
+   "opener vs line-first": {
+    "jsd": 0.26443029512969374,
+    "floor": 0.0073404116604357875
+   },
+   "ending vs line-first": {
+    "jsd": 0.16606964749920577,
+    "floor": 0.006094622350304984
+   },
+   "first vs line-last": {
+    "jsd": 0.13517931830113095,
+    "floor": 0.004763340717272155
+   },
+   "opener vs line-last": {
+    "jsd": 0.13261112226425084,
+    "floor": 0.009291353087831708
+   },
+   "ending vs line-last": {
+    "jsd": 0.062275309814084925,
+    "floor": 0.006158704959308982
+   }
+  }
+ },
+ "labels, multi-word loci": {
+  "n": 138,
+  "mean_len": 4.181159420289855,
+  "no_opener": 0.39855072463768115,
+  "no_middle": 0.43478260869565216,
+  "no_ending": 0.021739130434782608,
+  "m_final": 0.08695652173913043,
+  "paragraph_type": 0.8115942028985508,
+  "prefixed_like": 0.10144927536231885,
+  "types_per_token": 0.855072463768116,
+  "r_opener_middle_within_ctx": null,
+  "r_stem_ending_within_ctx": null,
+  "var_ratio": 0.8634724726112883,
+  "chain_mi_ending": 0.20687735680297403,
+  "jsd": {
+   "first vs interior": {
+    "jsd": 0.15230745405014728,
+    "floor": 0.02653344871817735
+   },
+   "opener vs interior": {
+    "jsd": 0.13304811979103717,
+    "floor": 0.053681402738068845
+   },
+   "ending vs interior": {
+    "jsd": 0.12598203715155792,
+    "floor": 0.029217302452814686
+   },
+   "first vs line-first": {
+    "jsd": 0.3035015420137482,
+    "floor": 0.01987930850719418
+   },
+   "opener vs line-first": {
+    "jsd": 0.299163531936881,
+    "floor": 0.035766360736323874
+   },
+   "ending vs line-first": {
+    "jsd": 0.14042276475042012,
+    "floor": 0.025868697035883535
+   },
+   "first vs line-last": {
+    "jsd": 0.08585781877650564,
+    "floor": 0.022640850011890232
+   },
+   "opener vs line-last": {
+    "jsd": 0.09417102011002415,
+    "floor": 0.042000151754175936
+   },
+   "ending vs line-last": {
+    "jsd": 0.07537852782241763,
+    "floor": 0.02764962784887884
+   }
+  }
+ },
+ "circular": {
+  "n": 2338,
+  "mean_len": 4.769033361847733,
+  "no_opener": 0.4405474764756202,
+  "no_middle": 0.38152266894781867,
+  "no_ending": 0.03293413173652695,
+  "m_final": 0.018819503849443968,
+  "paragraph_type": 0.7698887938408896,
+  "prefixed_like": 0.10521813515825491,
+  "types_per_token": 0.4692044482463644,
+  "r_opener_middle_within_ctx": 0.024468597035542626,
+  "r_stem_ending_within_ctx": -0.15569821427098907,
+  "var_ratio": 0.8715640874372859,
+  "chain_mi_ending": 0.8498577664648113,
+  "jsd": {
+   "first vs interior": {
+    "jsd": 0.10385022523897096,
+    "floor": 0.0013982309671637782
+   },
+   "opener vs interior": {
+    "jsd": 0.10077292092404083,
+    "floor": 0.0030089741051146025
+   },
+   "ending vs interior": {
+    "jsd": 0.05941447881952927,
+    "floor": 0.0016767182732162415
+   },
+   "first vs line-first": null,
+   "opener vs line-first": null,
+   "ending vs line-first": null,
+   "first vs line-last": null,
+   "opener vs line-last": null,
+   "ending vs line-last": null
+  }
+ },
+ "radial": {
+  "n": 350,
+  "mean_len": 5.2057142857142855,
+  "no_opener": 0.27714285714285714,
+  "no_middle": 0.2914285714285714,
+  "no_ending": 0.03428571428571429,
+  "m_final": 0.02857142857142857,
+  "paragraph_type": 0.7257142857142858,
+  "prefixed_like": 0.11428571428571428,
+  "types_per_token": 0.8057142857142857,
+  "r_opener_middle_within_ctx": -0.2414143733941129,
+  "r_stem_ending_within_ctx": -0.2808724190445443,
+  "var_ratio": 0.6327716606048529,
+  "chain_mi_ending": 0.8298702024140993,
+  "jsd": {
+   "first vs interior": {
+    "jsd": 0.10596729942219435,
+    "floor": 0.010541738435188798
+   },
+   "opener vs interior": {
+    "jsd": 0.1115282908579936,
+    "floor": 0.022564545233959503
+   },
+   "ending vs interior": {
+    "jsd": 0.13573515440359973,
+    "floor": 0.012328387081774674
+   },
+   "first vs line-first": {
+    "jsd": 0.19208305433504916,
+    "floor": 0.008088686438651457
+   },
+   "opener vs line-first": {
+    "jsd": 0.20011847383194517,
+    "floor": 0.013130018109870996
+   },
+   "ending vs line-first": {
+    "jsd": 0.17307266384924744,
+    "floor": 0.009885716073288801
+   },
+   "first vs line-last": {
+    "jsd": 0.06172815925720111,
+    "floor": 0.008664801335024883
+   },
+   "opener vs line-last": {
+    "jsd": 0.09509967617238008,
+    "floor": 0.016045292854796726
+   },
+   "ending vs line-last": {
+    "jsd": 0.14364557824997476,
+    "floor": 0.010572513148541742
+   }
+  }
+ }
+}

@@ -35,3 +35,5 @@
   information-theoretic analysis", PLOS ONE 8(6).
 - Davis, L. F. (2020), the five scribal hands; Currier, P. (1976), languages A and B.
 - Timm, T. and A. Schinner (2020), the self-citation (copying) hypothesis, basis of the autocopist control.
+- Teh, Y. W. (2006), "A hierarchical Bayesian language model based on Pitman-Yor processes", ACL: the hierarchical
+  Pitman-Yor process and its Gibbs sampler, used in `targets/voynich/reinforce/` (10 Nov 2026).

@@ -265,6 +265,30 @@ letters (German about 16% and 10%; KL 0.35, flagged degenerate). Both halves fal
 'den'), which Voynich's own repetitiveness (qokeedy qokeedy, chedy chedy) fits easily; the shuffled control, without that
 repetition, scores -3.78. Not a decryption.
 
+## Tier 5: nomenclator layer (`nomen.py`, `kaggle_pkg/analyze5.py`; run 11 Nov 2026, `kaggle_results/tier5/`): calibration passes, no signal
+
+The tier shelved on 29 Oct was run: sweep variant `nom` (the 16 commonest cipher words of 4+ glyphs are whole-word
+units, the rest SentencePiece units as before) against the la-nom and it-nom plaintext models (12 word symbols beside
+the letters), every Voynich group, K 42 and 50, parts full / h1 / h2 / shuf / s1 / s2, two seeds, and the calibration
+cipher syn_gate7 at K 36-60: 384 jobs on 2 x T4 (Kaggle kernel socializedape/voynich-verbose-tier5, private). Rule:
+tier 4's unchanged, with syn_gate7 as calibration, written before any tier-5 result.
+
+Calibration passes: gate 7 at K 60, similarity 0.962, per-char -2.042, KL 0.019, stability 0.97 against a null of 0.80
+(normalised 0.87); threshold PC* = -2.292. Every Voynich cell (seven texts x Latin, Italian) is 'all degenerate':
+per-char -2.87 to -3.05 against the threshold -2.29, letter KL 0.22-0.41 against the limit 0.15, normalised stability
+-3.8 to +0.30. A verbose letter cipher of Latin or Italian with a small nomenclator of whole-word codes for the
+commonest words is not found. Not covered: a nomenclator with a second key and heavy miscopying (Zhang & Sheng's
+surviving case), more than 12 code words, units of two letters, a syllable or nothing.
+
+Reproduce (from `targets/voynich`): `python verbose/prepare.py` and `python verbose/nomen.py` write the git-ignored
+`verbose/kaggle_pkg/data/` (language-model tables incl. la-nom, it-nom; texts incl. syn_gate7). On Kaggle: upload that
+folder as a private dataset, `python verbose/kaggle_pkg/build_kernel5.py <out dir> <kaggle user> <user/dataset>`,
+`kaggle kernels push -p <out dir>`, then `kaggle kernels output <user>/voynich-verbose-tier5` (commands in the
+script's docstring; 384 jobs took about 2.5 h on 2 x T4). On any machine with a GPU: `python
+verbose/kaggle_pkg/gpu_sweep.py --tier 5 --out <dir>` then `python verbose/kaggle_pkg/analyze5.py <dir>`. The job list
+is `sweep.jobs(5)`, the decision rule is the docstring of `analyze5.py`, and the raw results of the run reported here
+are `kaggle_results/tier5/gpu_shard0.jsonl`, `gpu_shard1.jsonl` with the analysis output in `analysis.md`.
+
 ## Where the verbose programme stands (29 Oct 2026)
 
 Validated pipeline (gates 2-5: plain, homophonic with unaligned spaces, abbreviated Latin, positional; all broken blind,
@@ -275,6 +299,7 @@ setting chosen blind) against every Voynich Currier and scribe group:
 | Latin, Italian, German 1470-1610, Catalan | 36-50, one letter each | no signal (tiers 1, full sweep) |
 | abbreviated Latin (ten scribal signs) | 42-60 | far from a decryption (tier 3; rule void on the stability flaw) |
 | Latin, Italian, German, abbreviated Latin, positional (one group, several letters) | 42-50 x 4 positions | no signal (tier 4) |
+| Latin, Italian with a 12-word nomenclator layer (11 Nov) | 42-50 + 16 word units | no signal (tier 5) |
 
 Excluded at this level: a verbose cipher in which each glyph group of 1-3 glyphs (fixed or by position in the word,
 with homophones and arbitrary spaces) stands for one letter or scribal sign of Latin, Italian, German or Catalan. Still
@@ -292,7 +317,7 @@ per position; a nomenclator layer (code words for frequent words beside the lett
    calibrated solvers over 16 languages and more cipher families (Naibbe, word codes, syllable and word-class codes,
    one-key nomenclators); only a nomenclator with a second key whose scribe miscopies more than half of the words
    survives their tests in 9 of 16 languages. Tier 5 here (a nomenclator layer: `nomen.py`, la-nom / it-nom models and
-   gate 7 built) was shelved unrun, as it would largely repeat their Cipher-MN.
+   gate 7 built) was shelved unrun, as it would largely repeat their Cipher-MN; it was run on 11 Nov 2026 (section above): no signal.
 3. Known limits of this pipeline, untested: copying noise (the synthetics are clean; Voynich was copied by up to five
    scribes), the full homophony of Greshko's real Naibbe tables (hundreds of glyph strings per letter; the sweep stopped
    at 60 units), medieval rather than classical Latin spelling in the language models, non-prose plaintext (lists,

@@ -18,6 +18,8 @@ Job grid:
 Solver: solver.solve (60,000 iterations x 4 restarts). Recorded per job: objective, per-character LM score, letter KL to
 the language, the key (unit -> letter), first 400 decrypted letters, similarity to the plaintext where known.
 
+Tier 5 = nomenclator layer (variant nom: the 16 commonest cipher words of 4+ glyphs are whole-word units; plaintext
+models la-nom / it-nom with 12 word symbols; verbose/nomen.py) on every Voynich text and syn_gate7; run 11 Nov 2026.
 Tier 4 = positional units (variant rawpos: every unit tagged start/mid/end/only) on every Voynich text in la, it,
 de, lab with K 42/50, and syn_gate5 (verbose/positional.py) with K 36-60. Tier 3 = abbreviated Latin ('lab', verbose/abbrev.py) on every Voynich text and syn_gate4, K 42/50/60, parts with
 shuffled halves s1/s2. Tiers: 1 = A/B herbal and all, Latin and Italian, K 42 and 50, plus the calibration ciphers (288 jobs); 2 = the rest;
@@ -36,7 +38,9 @@ SYN3 = ['syn_gate4']   # tier 3: abbreviated Latin (verbose/abbrev.py)
 SYN4 = ['syn_gate5']   # tier 4: positional cipher (verbose/positional.py)
 LANGS4 = ('la', 'it', 'de', 'lab')
 KS4_VOY, KS4_SYN = (42, 50), (36, 42, 50, 60)
-LANGS = {'la': 'la', 'it': 'it-cinquecento', 'de': 'de-1500s', 'ca': 'ca-modern', 'lab': 'la-abbr'}
+LANGS = {'la': 'la', 'it': 'it-cinquecento', 'de': 'de-1500s', 'ca': 'ca-modern', 'lab': 'la-abbr', 'lan': 'la-nom', 'itn': 'it-nom'}
+SYN5 = ['syn_gate7']   # tier 5: nomenclator layer (verbose/nomen.py)
+NCAND, MINLEN = 16, 4   # tier 5 cipher side, as fixed in nomen.py
 LANGS_012 = ('la', 'it', 'de', 'ca')
 KS3 = (42, 50, 60)
 PARTS3 = ('full', 'h1', 'h2', 'shuf', 's1', 's2')   # s1, s2: halves of the shuffled stream (stability null)
@@ -51,6 +55,13 @@ TIER1 = dict(text={'voy_A_herbal', 'voy_B_herbal', 'voy_A_all', 'voy_B_all', 'sy
 
 def jobs(tier=0):
     out = []
+    if tier == 5:
+        for text in VOY + SYN5:
+            langs = ('lan', 'itn') if text in VOY else ('lan',)
+            for lang, k, part, seed in itertools.product(langs, KS4_VOY if text in VOY else KS4_SYN, PARTS3, SEEDS):
+                out.append(dict(text=text, lang=lang, variant='nom', K=k, part=part, seed=seed))
+        for j in out: j['id'] = '|'.join(str(j[x]) for x in ('text', 'lang', 'variant', 'K', 'part', 'seed'))
+        return out
     if tier == 4:
         for text in VOY + SYN4:
             langs = LANGS4 if text in VOY else ('la',)
@@ -99,6 +110,13 @@ def text_words(text, variant):
 def units_for(text, variant, k):
     import sentencepiece as spm
     variant = variant[:-3] if variant.endswith('pos') else variant   # positional variants share the unit model
+    if variant == 'nom':   # tier 5: the NCAND commonest words of MINLEN+ glyphs are whole-word units, the rest as raw
+        if (text, 'nom', k) not in _cache:
+            import collections
+            pieces, truth = units_for(text, 'raw', k); words, _ = text_words(text, 'raw')
+            cand = {w for w, _ in collections.Counter(w for w in words if len(w) >= MINLEN).most_common(NCAND)}
+            _cache[(text, 'nom', k)] = ([['W:' + w] if w in cand else ps for w, ps in zip(words, pieces)], truth)
+        return _cache[(text, 'nom', k)]
     key = (text, variant, k)
     if key not in _cache:
         words, truth = text_words(text, variant)

@@ -113,11 +113,104 @@ zodiac labels carry no positional day or degree names (aligned similarity 0.320 
 leaves do have their own vocabulary, as strongly as a real topical text (result 3).
 Scripts: `meaning/duplicates.py`, `formula.py`, `zodiac.py`.
 
+### 9. The line is the unit of production (10 Nov 2026)
+
+The last glyph of a word predicts the first glyph of the next (normalised MI 0.060, three times Latin's 0.019), but
+only inside a line: across a line break it is 0.0004, while Latin and English poured into the same lines carry
+theirs across unchanged (0.019 inside, 0.022 across). It is strictly adjacent (lag 2: 0.003). The line also has a
+shaped start and end two words deep (word 1 JSD 0.205 from interior words, word 2 0.020; last word 0.049,
+penultimate 0.010). The boundary rule is one rule with an A/B modification (PMI-matrix correlation within A or B
+0.92-0.94, A vs B 0.77; the two B hands 0.93). And near-copies are not taken from the word above: against a null
+that keeps position vocabulary, vertical alignment is 1.01 (the autocopist, which copies from the same position by
+construction, shows 1.04 with same-index 1.22); the near-copy locality is in the same line. Whatever made the text
+worked line by line, with a word-to-word memory that restarts at each line. A cipher of running prose does not do
+this; an itemised plaintext or a clerk restarting a chained table at each line would. Scripts: `lines/`.
+
+### 10. Where re-use lives, and a generator fitted by likelihood (10 Nov 2026)
+
+A hierarchical Pitman-Yor model (book > hand > section > quire > page > line) fitted to the word tokens: Voynich
+re-uses whole words at the hand, section and quire levels (13-18% of draws at each), 5% at the page, none at the
+line; Pliny laid out leaf by leaf 2-7% at every level, English 4-8%, the autocopist 27% at the page only, gibberish
+volunteers 18% at the page. The hierarchy saves 0.23 bits/token over a flat model (English 0.02). Whole-word re-use
+is weak at the page because the locality is in near-copies, so the model was moved to word parts (opener, middle,
+ending): with nothing tuned on the battery, a version with the slots chained inside the word reaches 25 of 30
+held-out items (the best count of any model here), the line-bound coupling (0.05 of 0.06, zero across lines) and
+the quire drift, but only half the A/B convention; a version with independent slots reproduces both scribe
+ratios (2.5-2.95 / 1.7-2.0 against 2.96 / 2.00) and the A/B drift as a faithful sample of its fit, but breaks the
+words. The ending convention is context-free and the chain is context-bound, and one tree cannot hold both: the
+duel of #33 in fitted form. Scripts and caveats: `reinforce/README.md`.
+
+### 11. Human improvisers, read with their own lines and pages (10 Nov 2026)
+
+The Gaskell-Bowern volunteers' transcriptions keep their written lines, page breaks and paragraphs (38 writers, 88
+pages, 10,049 words), which every earlier use here threw away by pouring the words into the Voynich skeleton. Read
+as written, with the tests and fits of sections 9 and 10 (and Voynich refitted with a script-neutral word split so
+that both get one model), the volunteers have the scribe-level habits and none of the line-level or book-level
+structure. Each writer has an ending habit more distinctive than a Voynich hand's (scribe ratio on last units 3.40
+against 2.13), re-uses his own words at 20% of draws (a hand 18%), and keeps that habit as a context-free layer on
+top of a within-word chain (ending re-use at the writer 64%, 49% once the preceding unit is known). But adjacent
+words are not coupled at all (0.003 inside a line against Voynich's 0.059; five of 35 writers show some, against 62
+of 128 Voynich pages of the same size), so there is nothing to restart at a line; the line-first word has no
+vocabulary of its own (JSD 0.012 against 0.205) and the last word is longer, not shorter; the within-word chain is
+four to six times weaker (excess MI 0.09 against 0.56; 0.8 against 1.4 bits in the fitted model); and no word stock
+is shared between writers (the root of the fit is a pass-through), where Voynich takes 47% of its root draws from a
+stock shared across hands (English in the same skeleton 51%, Latin 22%; 0.68 types per token against 0.20). The
+one thing they do that Voynich does not is align a near-copy weakly under its source (1.06, z 2.2). Casual
+improvisation by untrained writers gives the personal habits, not the line structure, the chain or the shared
+stock; whether a practised writer of one taught system would is untested, there being no such sample. Tables:
+`reinforce/gibberish_fit.md`.
+
+## 12. Second session of 10-11 Nov 2026: lines are composed, not wrapped; the word needs a length budget
+
+- The first word of a line is as much longer as wrapping any text would make it (+0.41 to +0.46 of +0.48 glyphs),
+  but it is not the word that did not fit: its length is unrelated to the space left on the line above (r -0.01;
+  wrapping 0.09-0.38). The last word is built to the remaining space in a vocabulary of its own, with endings (-am,
+  -om) that Currier A and B share, and the A/B ending convention weakens by 40% there. A text wrapped from a
+  stream, copied from an exemplar with other line breaks or enciphered word by word would show the overflow
+  signal. Tables: `lines/README.md` s5-6.
+- Word parts share a length budget (a longer start is followed by a shorter middle and ending); the Naibbe cipher
+  has it too. The scribe and language habits are close to context-free in held-out likelihood. A generator that
+  borrows the book's transition tables reaches 23-26 of 30 held-out battery items, the best and steadiest so far,
+  but loses the A/B and scribe convention, which does not emerge from re-use and has to be a parameter of the
+  language and the hand. Tables: `reinforce/README.md` s4.
+
+Reproduce: `lines/wrapping.py`, `lines/edges.py`, `reinforce/lengths.py`, `reinforce/product.py`, `reinforce/slots6.py`;
+exact commands in the Reproduce tables of `lines/README.md` and `reinforce/README.md`.
+
+## 13. 11 Nov 2026: five follow-ups
+
+Lines are filled to a margin and are not list items, and no rate of trimming the overflow word reproduces both the
+missing overflow signal and the last-word length; the line-final -am/-om words are a line-end form used at a fixed
+rate, not padding; labels follow the word recipe without the line effects or the length budget; a generator with the
+convention drawn as a graded preference carries a quarter to a half of the A/B difference (the convention is a few
+endings switched on or off), and with 10% copying of nearby stems its best seeds reach 32 of 37 battery items; a
+verbose cipher with a nomenclator layer gives no signal (Kaggle, calibration passed). Tables: `lines/README.md` s7,
+`reinforce/README.md` s4.4, `verbose/README.md` tier 5.
+
+Reproduce: `python lines/listcipher.py`, `python lines/lineend.py`, `python lines/labels.py`, `python
+reinforce/slots7.py generate tilt7_q0 tilt7_q10 tilt7_q20 notilt7_q10` then `report`, and for the cipher tier
+`verbose/kaggle_pkg/build_kernel5.py` (Kaggle) or `gpu_sweep.py --tier 5` then `analyze5.py`; all from
+`targets/voynich`, prerequisites in the Reproduce sections of the three READMEs.
+
+## 14. 11 Nov 2026: generator v8
+
+The scribes' convention is a few large switches (one value in twenty to fifty per level; a language changes a switched
+ending by a factor of about 40), measured by the fourth moment of the log-ratios. The battery does not separate that
+from a graded preference, and section 13's 'a quarter to a half' was partly an exponent of 0.75 in that generator: at
+full strength a graded preference carries a third to most of the A/B difference. Voynich's own convention on slot
+frequencies gives three quarters of the A/B difference; with separate transition tables for A and B the generator
+gives 0.092-0.095 of 0.101 and 31-33 of 37 battery items on every seed. Languages A and B differ in how word parts
+follow one another, not only in which parts they prefer. No variant passes 33 of 37; the clustering beyond the page is
+closer and not reached. Table: `reinforce/README.md` s4.5.
+
+Reproduce (from `targets/voynich`): `python reinforce/slots8.py generate norm8 cat8 emp8 cat8p emp8p lang8`, then
+`python reinforce/slots8.py report` -> `reinforce/slots8_gen.md`.
+
 ## Where this leaves the hypotheses
 
 Best supported: meaningless text, made page by page by several people from one shared, learned word template, each
-with strong personal habits, working with page-level material. Not random gibberish (free invention lacks the
-template), and not a cipher or code of a real text in any form tested here.
+with strong personal habits, working with page-level material. Not random gibberish (free invention, section 11, has the personal habits but not the shared
+stock, the chain between words or the line structure), and not a cipher or code of a real text in any form tested here.
 
 Still open: a two-key nomenclator with more than half its words miscopied (Zhang & Sheng), which would leave the text
 unreadable anyway; units of two letters, syllables or nulls in a verbose cipher; other plaintext languages.
@@ -129,8 +222,8 @@ phrases.
 
 ## Files
 
-- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#45 plus the 29 Oct homophone tests), and the hypothesis table.
-- `meaning/README.md`, `verbose/README.md`, `glyphs/README.md`, `controls2/README.md`: detailed tables per programme.
+- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#63 plus the 29 Oct homophone tests), and the hypothesis table.
+- `meaning/README.md`, `verbose/README.md`, `glyphs/README.md`, `controls2/README.md`, `lines/README.md`, `reinforce/README.md`: detailed tables per programme.
 - `data/`: ZL3b transliteration (René Zandbergen, voynich.nu), parsed to words.
 - Bulky regenerable data (language-model tables, transformer checkpoints) is archived in the private Kaggle dataset
   socializedape/voynich-archive.

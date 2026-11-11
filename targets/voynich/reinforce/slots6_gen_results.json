@@ -1,0 +1,2684 @@
+{
+ "marks": {
+  "voynich_ZL": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": true,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": true,
+   "k_jsd_oddeven": true
+  },
+  "autocopist_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": false,
+   "c_ttr": false,
+   "c_hapax_types": true,
+   "c_hapax_tokens": false,
+   "c_heaps": false,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": false
+  },
+  "autocopist_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": false,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": false
+  },
+  "len5_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": false,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "len5_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "len5_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "len5_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": false,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": false,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "len5_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": false,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": false,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": false,
+   "c_ttr": false,
+   "c_hapax_types": false,
+   "c_hapax_tokens": false,
+   "c_heaps": false,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": false,
+   "f_irrev": false,
+   "f_lock": false,
+   "g_len_first": false,
+   "g_len_mid": false,
+   "g_len_last": false,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": false,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": false,
+   "c_ttr": false,
+   "c_hapax_types": false,
+   "c_hapax_tokens": false,
+   "c_heaps": false,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": false,
+   "f_irrev": false,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6g_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6g_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": false,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": false,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6g_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": false,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6g_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": false,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": false,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6g_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6t_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6t_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6t_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6t_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6t_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  }
+ },
+ "tol": {
+  "a_h0_raw": 0.4700439718141092,
+  "a_h1_raw": 0.38700565465683195,
+  "a_h2_raw": 0.21109100230272687,
+  "a_h3_raw": 0.18410151259403673,
+  "a_h2_mrg": 0.3227790199693592,
+  "a_h3_mrg": 0.21357561310897744,
+  "b_len_mean": 0.8471307315490479,
+  "b_len_sd": 0.17880665893586709,
+  "b_len1": 0.005615788949936454,
+  "b_len9": 0.039959846538540233,
+  "c_zipf": 0.1926740951778485,
+  "c_ttr": 0.11834647640003448,
+  "c_hapax_types": 0.06803874092009686,
+  "c_hapax_tokens": 0.0861789340525943,
+  "c_heaps": 0.09546296352895878,
+  "d_adj_exact": 0.0008411563747021503,
+  "d_adj_ld1": 0.006232315308522612,
+  "e_cover": 0.06511167250387553,
+  "e_w10": 0.04670744291009593,
+  "e_prev2": 0.07624198526912768,
+  "e_w10_shuf": 0.06048721845892213,
+  "e_ratio": 0.11395155545001188,
+  "f_irrev": 0.075,
+  "f_lock": 0.09915910563852731,
+  "g_len_first": 0.7453401918003886,
+  "g_len_mid": 0.8738748933605072,
+  "g_len_last": 0.7042864043000279,
+  "g_gal_init": 0.07628668502379965,
+  "g_gal_mid": 0.168783007220597,
+  "h_peak_log2s": 0.9,
+  "h_peak_R": 0.06554999181494026,
+  "i_tok_acc": 0.009428768888216704,
+  "i_char_bits": 0.18732234999746689,
+  "j_one_page": 0.06829511465603191,
+  "j_jacc_excess": 0.0036951326240252064,
+  "k_jsd_halves": 0.006243244972555022,
+  "k_jsd_oddeven": 0.004961316026073189
+ },
+ "meta": {
+  "len5_s19": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "tree": {
+      "book": 0.21340887629839472,
+      "context": 0.49944977204842006,
+      "lang": 0.6094079325541292,
+      "hand": 0.7442954934398175,
+      "section": 0.6885986448001571,
+      "quire": 0.6910053269093747,
+      "page": 0.8581203051301461,
+      "line": 0.9859906987426078
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9618467457518436,
+      "context": 0.7008988764044943,
+      "lang": 0.8015129682997119,
+      "hand": 0.9159826768405857,
+      "section": 0.9027105517909003,
+      "quire": 0.8338922006954794,
+      "page": 0.9293628808864266,
+      "line": 0.9948900499511971
+     }
+    },
+    "ending": {
+     "tree": {
+      "book": 0.08239048447925733,
+      "context": 0.34804119547657514,
+      "lang": 0.610152784622967,
+      "hand": 0.7753893188115029,
+      "section": 0.8024379024839007,
+      "quire": 0.8051603345575754,
+      "page": 0.9330741540676746,
+      "line": 0.9968708732847218
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4128633551408114,
+    "ci": [
+     1.3389973799803236,
+     1.4937947121762454
+    ],
+    "same_ratio": 1.1946528445321514,
+    "same_ci": [
+     1.1511828545589844,
+     1.2439506356163215
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.02826301025734906,
+    "quire_halves_within_cell": 0.03764303255930779,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.12916553368764008,
+    "line_break": 0.0006285265583752734
+   },
+   "lengths": {
+    "mean_chars": 5.543779066429351,
+    "sd_chars": 2.589887946684592,
+    "share_9plus": 0.12131825228225297
+   },
+   "voynich_types_share": 0.5702474593787679,
+   "types_per_token": 0.18189125566974795
+  },
+  "len5_s7": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "tree": {
+      "book": 0.21342456826327794,
+      "context": 0.47375733251003393,
+      "lang": 0.6255310930861336,
+      "hand": 0.7634915953995871,
+      "section": 0.7071949947862357,
+      "quire": 0.6540940558605872,
+      "page": 0.8539021549213744,
+      "line": 0.9858184532353448
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.8704699761925756,
+      "context": 0.6872500302993576,
+      "lang": 0.7779558740335659,
+      "hand": 0.9257626674813425,
+      "section": 0.8927026921728289,
+      "quire": 0.814540953952588,
+      "page": 0.9132035008404336,
+      "line": 0.9905839122696216
+     }
+    },
+    "ending": {
+     "tree": {
+      "book": 0.08042635658914729,
+      "context": 0.32344337651483496,
+      "lang": 0.6374533830580714,
+      "hand": 0.7721499460070962,
+      "section": 0.7780044807169147,
+      "quire": 0.7846313212166871,
+      "page": 0.9194204738953505,
+      "line": 0.9946890968593902
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.5373934598415555,
+    "ci": [
+     1.4593137414870017,
+     1.6287374205207956
+    ],
+    "same_ratio": 1.2779951024628795,
+    "same_ci": [
+     1.2043514031373963,
+     1.3574277488750404
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.025529701746683047,
+    "quire_halves_within_cell": 0.040569845291083796,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.05818921728376037,
+    "line_break": 0.00042476224703929855
+   },
+   "lengths": {
+    "mean_chars": 4.904375035884481,
+    "sd_chars": 2.7322817444698084,
+    "share_9plus": 0.09708905092725498
+   },
+   "voynich_types_share": 0.5706493655623815,
+   "types_per_token": 0.15301142561864844
+  },
+  "len5_s3": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "tree": {
+      "book": 0.19746835443037974,
+      "context": 0.48017018690168667,
+      "lang": 0.6711881693013768,
+      "hand": 0.7362769392505819,
+      "section": 0.693738278808085,
+      "quire": 0.6684309492304478,
+      "page": 0.8385307171221678,
+      "line": 0.9831773554573118
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.8797619047619047,
+      "context": 0.6604172966434835,
+      "lang": 0.8146925502562081,
+      "hand": 0.9201196844682201,
+      "section": 0.825245987504209,
+      "quire": 0.8360389102624253,
+      "page": 0.9237770522118524,
+      "line": 0.9935407934776368
+     }
+    },
+    "ending": {
+     "tree": {
+      "book": 0.08456375838926175,
+      "context": 0.32500817973606716,
+      "lang": 0.610574682027036,
+      "hand": 0.7827877397831526,
+      "section": 0.7763972641547614,
+      "quire": 0.7814605142477624,
+      "page": 0.9129204561859391,
+      "line": 0.9942871906757765
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.9057844114156688,
+    "ci": [
+     1.6588906769470293,
+     2.1090072111125684
+    ],
+    "same_ratio": 1.3631174384939002,
+    "same_ci": [
+     1.2752477459082114,
+     1.4595155526363504
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.040884573406015985,
+    "quire_halves_within_cell": 0.04882589416316739,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04951989846293348,
+    "line_break": 0.0012322836527323341
+   },
+   "lengths": {
+    "mean_chars": 5.281162083022335,
+    "sd_chars": 2.974448122980151,
+    "share_9plus": 0.1336912212206465
+   },
+   "voynich_types_share": 0.5939886317965206,
+   "types_per_token": 0.15220761325142101
+  },
+  "len5_s11": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "tree": {
+      "book": 0.195900439238653,
+      "context": 0.5360226024172029,
+      "lang": 0.6449033302965888,
+      "hand": 0.771375029280862,
+      "section": 0.6799214270545764,
+      "quire": 0.6510213251304738,
+      "page": 0.8457963049579046,
+      "line": 0.9820290520755584
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9439878892733564,
+      "context": 0.6520022560631697,
+      "lang": 0.7054259710548565,
+      "hand": 0.9044170564951421,
+      "section": 0.8533701827115001,
+      "quire": 0.8221149294707942,
+      "page": 0.9165823041101437,
+      "line": 0.9925073204340586
+     }
+    },
+    "ending": {
+     "tree": {
+      "book": 0.09134925758553905,
+      "context": 0.35827454608534753,
+      "lang": 0.603461511619792,
+      "hand": 0.7652745139927366,
+      "section": 0.7785446985446985,
+      "quire": 0.7758565068714111,
+      "page": 0.8965696766356221,
+      "line": 0.9925360280186025
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.8941938070520052,
+    "ci": [
+     1.5485132584530683,
+     2.1759083812446884
+    ],
+    "same_ratio": 1.343619226283629,
+    "same_ci": [
+     1.2870210457931897,
+     1.4115746171544035
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.05867698186717862,
+    "quire_halves_within_cell": 0.04042722109087669,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03127023036544262,
+    "line_break": 0.001061753518640547
+   },
+   "lengths": {
+    "mean_chars": 4.687919848423953,
+    "sd_chars": 2.528328201413684,
+    "share_9plus": 0.0863237067233163
+   },
+   "voynich_types_share": 0.5058850548314865,
+   "types_per_token": 0.14118390078658782
+  },
+  "len5_s23": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "tree": {
+      "book": 0.17922077922077922,
+      "context": 0.5618615209988649,
+      "lang": 0.5886788850706377,
+      "hand": 0.7510215786077855,
+      "section": 0.6862976629766298,
+      "quire": 0.6967536251756882,
+      "page": 0.8497975354677076,
+      "line": 0.9854452546362749
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9669586983729662,
+      "context": 0.6750971666760548,
+      "lang": 0.8138724613762435,
+      "hand": 0.9242013388695873,
+      "section": 0.8826477187733732,
+      "quire": 0.8376405726278858,
+      "page": 0.9221236893035616,
+      "line": 0.9938278693230752
+     }
+    },
+    "ending": {
+     "tree": {
+      "book": 0.07561817136285222,
+      "context": 0.3524166582227176,
+      "lang": 0.6307682474753931,
+      "hand": 0.784732671280971,
+      "section": 0.7844356139591612,
+      "quire": 0.7994778560644187,
+      "page": 0.9160111793010055,
+      "line": 0.9963541367629327
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.7918439805733277,
+    "ci": [
+     1.6564815833736621,
+     2.006023116882019
+    ],
+    "same_ratio": 1.3137011078635705,
+    "same_ci": [
+     1.2567902879521407,
+     1.3720651636133183
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.04607448427592083,
+    "quire_halves_within_cell": 0.04514736678301008,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03360228502812821,
+    "line_break": 0.0004287428138617533
+   },
+   "lengths": {
+    "mean_chars": 5.376126772693346,
+    "sd_chars": 2.7065953643942784,
+    "share_9plus": 0.12990182006086007
+   },
+   "voynich_types_share": 0.549865074352644,
+   "types_per_token": 0.18349888040420279
+  },
+  "prod6_s19": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.08333333333333333,
+      "lang": 0.13186813186813187,
+      "hand": 0.31641168289290683,
+      "section": 0.35887197404542054,
+      "quire": 0.37814372670221297,
+      "page": 0.6299004309704265,
+      "line": 0.9658666819773785
+     },
+     "ctx": {
+      "book": 0.06779661016949153,
+      "context": 0.0033874949761727047
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9257408068546947,
+      "context": 0.46183017312448477,
+      "lang": 0.7367589893100097,
+      "hand": 0.8858757062146893,
+      "section": 0.8208922261484098,
+      "quire": 0.7858655281335694,
+      "page": 0.8464770523594053,
+      "line": 0.9770339323649309
+     }
+    },
+    "ending": {
+     "loc": {
+      "book": 0.11224489795918367,
+      "lang": 0.22072072072072071,
+      "hand": 0.3535031847133758,
+      "section": 0.3850988808830293,
+      "quire": 0.3047703592954259,
+      "page": 0.6297037276766012,
+      "line": 0.9757420910604582
+     },
+     "ctx": {
+      "book": 0.005964214711729622,
+      "context": 0.057759660102199004
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 2.4255815830471588,
+    "ci": [
+     1.9256053792980155,
+     2.8743708744017784
+    ],
+    "same_ratio": 1.7443439481127518,
+    "same_ci": [
+     1.515542974508032,
+     2.019437081310414
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.02982675946991314,
+    "quire_halves_within_cell": 0.01865697191310555,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.07293472073702967,
+    "line_break": 0.0
+   },
+   "lengths": {
+    "mean_chars": 6.160389274846414,
+    "sd_chars": 2.8238911812015477,
+    "share_9plus": 0.28762128954469773
+   },
+   "voynich_types_share": 0.0017511626571740254,
+   "types_per_token": 0.022736406958718494
+  },
+  "prod6_s7": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.07885304659498207,
+      "lang": 0.1908344733242134,
+      "hand": 0.4720697449144333,
+      "section": 0.35999070091828433,
+      "quire": 0.39313622446648083,
+      "page": 0.6506213950169472,
+      "line": 0.9655508985473962
+     },
+     "ctx": {
+      "book": 0.020023557126030624,
+      "context": 0.024372739277717173
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9737681673165545,
+      "context": 0.44404218479458524,
+      "lang": 0.8085783377879597,
+      "hand": 0.868224763799105,
+      "section": 0.8149398892340943,
+      "quire": 0.7685306941656862,
+      "page": 0.8487928097280151,
+      "line": 0.9773784233794569
+     }
+    },
+    "ending": {
+     "loc": {
+      "book": 0.09467455621301775,
+      "lang": 0.2717041800643087,
+      "hand": 0.21027721433400948,
+      "section": 0.4256115107913669,
+      "quire": 0.3168885646543863,
+      "page": 0.6454764847842722,
+      "line": 0.975426307630476
+     },
+     "ctx": {
+      "book": 0.0034280117531831538,
+      "context": 0.05862088763851409
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 2.622547153234892,
+    "ci": [
+     2.2274162519985774,
+     3.034964398811603
+    ],
+    "same_ratio": 1.8742135025037363,
+    "same_ci": [
+     1.4632962724631149,
+     2.4801124415513423
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.038299304660480045,
+    "quire_halves_within_cell": 0.03645147662418206,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.0,
+    "line_break": 0.0
+   },
+   "lengths": {
+    "mean_chars": 4.698886145719699,
+    "sd_chars": 2.0385601891776974,
+    "share_9plus": 0.045128322902910946
+   },
+   "voynich_types_share": 0.6340644198197164,
+   "types_per_token": 0.024085663432278807
+  },
+  "prod6g_s19": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3820689655172414,
+      "lang": 0.4807692307692308,
+      "hand": 0.6041666666666666,
+      "section": 0.46750327776737216,
+      "quire": 0.482796039245829,
+      "page": 0.6551438135015848,
+      "line": 0.9691393466153758
+     },
+     "ctx": {
+      "book": 0.14707167832167833,
+      "context": 0.13136590687259575
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9262424523920112,
+      "context": 0.7002081436190972,
+      "lang": 0.787723523082441,
+      "hand": 0.934230051218228,
+      "section": 0.8367780181046223,
+      "quire": 0.8116648785721252,
+      "page": 0.8952760718339785,
+      "line": 0.98630648217259
+     }
+    },
+    "ending": {
+     "loc": {
+      "book": 0.30094043887147337,
+      "lang": 0.38135086670651525,
+      "hand": 0.43454545454545457,
+      "section": 0.4761315854563443,
+      "quire": 0.3418160297598918,
+      "page": 0.6927492093241185,
+      "line": 0.9803065970029282
+     },
+     "ctx": {
+      "book": 0.10872828651082994,
+      "context": 0.13386346672790952
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4468316750401027,
+    "ci": [
+     1.3661659418157182,
+     1.536647625279501
+    ],
+    "same_ratio": 1.2881554715706893,
+    "same_ci": [
+     1.2085298717829234,
+     1.368694522161556
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.017853598155690528,
+    "quire_halves_within_cell": 0.03436965926390023,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.0010481062024711187,
+    "line_break": 0.0006247998439396415
+   },
+   "lengths": {
+    "mean_chars": 5.143509215134639,
+    "sd_chars": 2.6165083202876325,
+    "share_9plus": 0.11052420049377046
+   },
+   "voynich_types_share": 0.6615662858127117,
+   "types_per_token": 0.16822644542688178
+  },
+  "prod6g_s7": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3562874251497006,
+      "lang": 0.46180435534047704,
+      "hand": 0.6345689844264093,
+      "section": 0.46218572587185724,
+      "quire": 0.4168533153023708,
+      "page": 0.6995506415183587,
+      "line": 0.9710627547798129
+     },
+     "ctx": {
+      "book": 0.14545002486325212,
+      "context": 0.11546190503531033
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9577059344552702,
+      "context": 0.5687299288457905,
+      "lang": 0.7663095927427137,
+      "hand": 0.9231180400890868,
+      "section": 0.8709314505179035,
+      "quire": 0.8153924018599943,
+      "page": 0.9146486126782976,
+      "line": 0.9922202445886203
+     }
+    },
+    "ending": {
+     "loc": {
+      "book": 0.30428360413589367,
+      "lang": 0.4184177997527812,
+      "hand": 0.455518018018018,
+      "section": 0.44278234854151083,
+      "quire": 0.3478298573472662,
+      "page": 0.6753440702781844,
+      "line": 0.9803640121720159
+     },
+     "ctx": {
+      "book": 0.08297632468996617,
+      "context": 0.1273181374519148
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.461680951561341,
+    "ci": [
+     1.3267893326179463,
+     1.6041727160199066
+    ],
+    "same_ratio": 1.2503538210473937,
+    "same_ci": [
+     1.1772709251069318,
+     1.340600744708412
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.029264946727957677,
+    "quire_halves_within_cell": 0.028007100613214604,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.0017738982490690977,
+    "line_break": -0.0006637955515003987
+   },
+   "lengths": {
+    "mean_chars": 5.603663087787793,
+    "sd_chars": 2.5750946571444064,
+    "share_9plus": 0.15972900040190618
+   },
+   "voynich_types_share": 0.5378078888442327,
+   "types_per_token": 0.14953780788884424
+  },
+  "prod6g_s3": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.368705035971223,
+      "lang": 0.42725409836065575,
+      "hand": 0.6573497221754504,
+      "section": 0.546315886303008,
+      "quire": 0.46302921884317233,
+      "page": 0.6933845245126994,
+      "line": 0.9720388126543033
+     },
+     "ctx": {
+      "book": 0.1464921846601236,
+      "context": 0.15794913016018833
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9748369058713886,
+      "context": 0.689367169932541,
+      "lang": 0.760232489987301,
+      "hand": 0.9131617679853709,
+      "section": 0.8797033781928042,
+      "quire": 0.7968920989275553,
+      "page": 0.9247918112421929,
+      "line": 0.9928231038640409
+     }
+    },
+    "ending": {
+     "loc": {
+      "book": 0.28177641653905056,
+      "lang": 0.4045848822800496,
+      "hand": 0.4061399094111726,
+      "section": 0.4758141762452107,
+      "quire": 0.3583780304655653,
+      "page": 0.6827303354328402,
+      "line": 0.9799333984038583
+     },
+     "ctx": {
+      "book": 0.06768013327780091,
+      "context": 0.13785382097950277
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.393108852646624,
+    "ci": [
+     1.3225585248907972,
+     1.5039109914493134
+    ],
+    "same_ratio": 1.261558167113008,
+    "same_ci": [
+     1.2031619359624703,
+     1.3326603919415771
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.014853388803217526,
+    "quire_halves_within_cell": 0.04141715543873477,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.0033943859574168725,
+    "line_break": -0.00010791058970430445
+   },
+   "lengths": {
+    "mean_chars": 5.481627145891944,
+    "sd_chars": 2.700865774302133,
+    "share_9plus": 0.13903083194580007
+   },
+   "voynich_types_share": 0.5461617959464891,
+   "types_per_token": 0.18794855600849744
+  },
+  "prod6g_s11": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.36614853195164077,
+      "lang": 0.45305164319248825,
+      "hand": 0.6373005319148937,
+      "section": 0.5433526011560693,
+      "quire": 0.4697496817988969,
+      "page": 0.6959166199179191,
+      "line": 0.9722971809151978
+     },
+     "ctx": {
+      "book": 0.13903641881638848,
+      "context": 0.15134638571510592
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9554133858267716,
+      "context": 0.6517834231460098,
+      "lang": 0.7708817565896839,
+      "hand": 0.9092176258992806,
+      "section": 0.8815252289032462,
+      "quire": 0.7998034491503931,
+      "page": 0.9138950052149728,
+      "line": 0.99087098811506
+     }
+    },
+    "ending": {
+     "loc": {
+      "book": 0.24646781789638933,
+      "lang": 0.3858267716535433,
+      "hand": 0.462983735277622,
+      "section": 0.4601290322580645,
+      "quire": 0.334932365270755,
+      "page": 0.6781056765231662,
+      "line": 0.9795889073893322
+     },
+     "ctx": {
+      "book": 0.07598094806078476,
+      "context": 0.12657174025377504
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.2718244964795267,
+    "ci": [
+     1.1989131936710946,
+     1.3433707063403308
+    ],
+    "same_ratio": 1.145266393092373,
+    "same_ci": [
+     1.09589726470078,
+     1.2067120996360172
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.02072118708207798,
+    "quire_halves_within_cell": 0.03170916447786665,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.00193176269418735,
+    "line_break": -0.00023634421098421408
+   },
+   "lengths": {
+    "mean_chars": 4.281535281621404,
+    "sd_chars": 2.5168889450885636,
+    "share_9plus": 0.05580754435321812
+   },
+   "voynich_types_share": 0.7172589998277545,
+   "types_per_token": 0.14838950450709076
+  },
+  "prod6g_s23": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "template_share_of_base_draws": 0.10054099042863088,
+   "novel_middle_tokens": 0,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3495575221238938,
+      "lang": 0.49069478908188585,
+      "hand": 0.611764705882353,
+      "section": 0.4952076677316294,
+      "quire": 0.4465424639140651,
+      "page": 0.7032992976450452,
+      "line": 0.972785209852443
+     },
+     "ctx": {
+      "book": 0.13994823123382227,
+      "context": 0.1663604524315324
+     }
+    },
+    "middle": {
+     "tree": {
+      "book": 0.9730085005696258,
+      "context": 0.7202550022091776,
+      "lang": 0.8130452632659345,
+      "hand": 0.9197583309732843,
+      "section": 0.8369612452099712,
+      "quire": 0.7988449521885946,
+      "page": 0.9156769252998121,
+      "line": 0.9934259631394614
+     }
+    },
+    "ending": {
+     "loc": {
+      "book": 0.31676136363636365,
+      "lang": 0.39198218262806234,
+      "hand": 0.45502913605269824,
+      "section": 0.49691552310210246,
+      "quire": 0.3323013847634188,
+      "page": 0.7005773908965679,
+      "line": 0.979474077051157
+     },
+     "ctx": {
+      "book": 0.08428010741582317,
+      "context": 0.1389734167767124
+     }
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.3222173475140029,
+    "ci": [
+     1.2434002232579981,
+     1.4043572955300403
+    ],
+    "same_ratio": 1.225987393716737,
+    "same_ci": [
+     1.1233521113289602,
+     1.3379743004681737
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.01273606592601912,
+    "quire_halves_within_cell": 0.03226942831183149,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.0020438792680428086,
+    "line_break": 0.0016852112872227842
+   },
+   "lengths": {
+    "mean_chars": 5.379198484239536,
+    "sd_chars": 2.658416925232589,
+    "share_9plus": 0.11580639604983636
+   },
+   "voynich_types_share": 0.6466096342653729,
+   "types_per_token": 0.1874318194867084
+  },
+  "prod6t_s19": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 503,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3760330578512397,
+      "lang": 0.4739787353105764,
+      "hand": 0.6236258942592916,
+      "section": 0.5223771761917784,
+      "quire": 0.46706969219634725,
+      "page": 0.6933203459370111,
+      "line": 0.9725842567606362
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9862715278063217,
+      "hand": 0.9552397031685579,
+      "section": 0.9387416608307839,
+      "quire": 0.882108137984849,
+      "page": 0.8958958375811948
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.3548387096774194,
+      "lang": 0.38137082601054484,
+      "hand": 0.4554429028815368,
+      "section": 0.4836753129436056,
+      "quire": 0.33316135689410553,
+      "page": 0.6820021111893033,
+      "line": 0.9790434632829994
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4910310287884265,
+    "ci": [
+     1.4026154333234027,
+     1.5716247693884284
+    ],
+    "same_ratio": 1.2917556953296152,
+    "same_ci": [
+     1.170820454276579,
+     1.4125919739309938
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.012426197757504838,
+    "quire_halves_within_cell": 0.03718536282023027,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03791147172845175,
+    "line_break": 0.00027318830551861974
+   },
+   "lengths": {
+    "mean_chars": 5.055635298845955,
+    "sd_chars": 1.9239441477691943,
+    "share_9plus": 0.035138083481655855
+   },
+   "voynich_types_share": 0.8608543377160246,
+   "types_per_token": 0.20063730837687316
+  },
+  "prod6t_s7": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 443,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.38024124066628373,
+      "lang": 0.49985644559287973,
+      "hand": 0.6196406333392634,
+      "section": 0.5207040296433534,
+      "quire": 0.4620158356516157,
+      "page": 0.6900472533963379,
+      "line": 0.9720388126543033
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.905455000417049,
+      "hand": 0.9584682415957149,
+      "section": 0.937106682649086,
+      "quire": 0.8677675204784814,
+      "page": 0.8945363612573057
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.3789954337899543,
+      "lang": 0.37542857142857144,
+      "hand": 0.45103092783505155,
+      "section": 0.47334390630718554,
+      "quire": 0.3532123928125135,
+      "page": 0.6793618266978922,
+      "line": 0.9806510880174543
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4409691887118026,
+    "ci": [
+     1.3843357749589527,
+     1.4932723737109836
+    ],
+    "same_ratio": 1.3088890575099947,
+    "same_ci": [
+     1.2581061486831768,
+     1.3612733034398687
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.009885768608137882,
+    "quire_halves_within_cell": 0.03319452907419594,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03838960270920551,
+    "line_break": 0.00039982847274051413
+   },
+   "lengths": {
+    "mean_chars": 4.946001033473044,
+    "sd_chars": 1.9368617169721776,
+    "share_9plus": 0.033473043578113336
+   },
+   "voynich_types_share": 0.8739162886834702,
+   "types_per_token": 0.18725957397944537
+  },
+  "prod6t_s3": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 481,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3623426382047072,
+      "lang": 0.4735614307931571,
+      "hand": 0.7010721424677449,
+      "section": 0.4663164138632319,
+      "quire": 0.5058944570669182,
+      "page": 0.6887825907225322,
+      "line": 0.9722397657461102
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9692689284062723,
+      "hand": 0.9501497902935889,
+      "section": 0.9487626482737712,
+      "quire": 0.8704271812634009,
+      "page": 0.8824556807265741
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.33097595473833097,
+      "lang": 0.39920948616600793,
+      "hand": 0.43945409429280397,
+      "section": 0.4699160447761194,
+      "quire": 0.36229986058890623,
+      "page": 0.6931681747635363,
+      "line": 0.980335304587472
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4908151064485906,
+    "ci": [
+     1.4281347096767762,
+     1.5628830816868433
+    ],
+    "same_ratio": 1.3489649077634067,
+    "same_ci": [
+     1.2767092977315886,
+     1.4289794925839219
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.011848784490104868,
+    "quire_halves_within_cell": 0.03907160283607558,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04058073393001124,
+    "line_break": 0.000633895592395121
+   },
+   "lengths": {
+    "mean_chars": 5.031463512660045,
+    "sd_chars": 1.930969190882454,
+    "share_9plus": 0.03341562840902566
+   },
+   "voynich_types_share": 0.8742607796979962,
+   "types_per_token": 0.1866567147040248
+  },
+  "prod6t_s11": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 492,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.33856502242152464,
+      "lang": 0.5018284106891702,
+      "hand": 0.6696176304388773,
+      "section": 0.49584384047819186,
+      "quire": 0.4597054656305011,
+      "page": 0.688716068365959,
+      "line": 0.9708330941034621
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9812039517749498,
+      "hand": 0.9646650244316117,
+      "section": 0.9252008219689893,
+      "quire": 0.8801091710236427,
+      "page": 0.8855337487624483
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.3106936416184971,
+      "lang": 0.3961076130509445,
+      "hand": 0.47216216216216217,
+      "section": 0.43958655102768207,
+      "quire": 0.3642146257031588,
+      "page": 0.6770970671823269,
+      "line": 0.9798185680656829
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.478711797011468,
+    "ci": [
+     1.3637869594147305,
+     1.6882778975900328
+    ],
+    "same_ratio": 1.3425066909568857,
+    "same_ci": [
+     1.2435354229222337,
+     1.4496609961510427
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.019515473543800857,
+    "quire_halves_within_cell": 0.0412420493074324,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03713698632894796,
+    "line_break": -0.0005627687838110313
+   },
+   "lengths": {
+    "mean_chars": 4.963914566228397,
+    "sd_chars": 1.9303456054717154,
+    "share_9plus": 0.03332950565539416
+   },
+   "voynich_types_share": 0.8671700063156687,
+   "types_per_token": 0.19684790721708675
+  },
+  "prod6t_s23": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 503,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.36424208772903943,
+      "lang": 0.4906020157995097,
+      "hand": 0.6274141172449154,
+      "section": 0.5329264960378906,
+      "quire": 0.4706159715375713,
+      "page": 0.6894319995271588,
+      "line": 0.9714072457943389
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9765377562927154,
+      "hand": 0.9527137015126851,
+      "section": 0.9399537244364831,
+      "quire": 0.8739155958515427,
+      "page": 0.893128659229268
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.30814814814814817,
+      "lang": 0.38637664567830565,
+      "hand": 0.47088948787061996,
+      "section": 0.46456298522414224,
+      "quire": 0.34489311163895486,
+      "page": 0.6800693139097744,
+      "line": 0.9774358385485445
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.434391092269269,
+    "ci": [
+     1.3788853029501797,
+     1.4923462905297218
+    ],
+    "same_ratio": 1.3137093798238868,
+    "same_ci": [
+     1.2542360404652309,
+     1.3760679116427381
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.011633818629350463,
+    "quire_halves_within_cell": 0.033718315995293666,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.041155729789746874,
+    "line_break": 0.0005509588717162058
+   },
+   "lengths": {
+    "mean_chars": 5.009559625653098,
+    "sd_chars": 1.9526005837287685,
+    "share_9plus": 0.034621346959866794
+   },
+   "voynich_types_share": 0.8643279554458287,
+   "types_per_token": 0.1971349830625251
+  },
+  "prod6e_s19": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 495,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.29490022172949004,
+      "lang": 0.4993080542485469,
+      "hand": 0.6408300815892161,
+      "section": 0.5068776409242111,
+      "quire": 0.48327250608272504,
+      "page": 0.6812087489271021,
+      "line": 0.9699431589826032
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.983195449844881,
+      "hand": 0.9518887658422542,
+      "section": 0.945109896499593,
+      "quire": 0.8428188708834292,
+      "page": 0.8913480299368065
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.28304597701149425,
+      "lang": 0.420036210018105,
+      "hand": 0.44034015413234123,
+      "section": 0.4705514567962986,
+      "quire": 0.3407328504473796,
+      "page": 0.6883303516438396,
+      "line": 0.9788425101911925
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4568849762915903,
+    "ci": [
+     1.3731221532907716,
+     1.5606551451496478
+    ],
+    "same_ratio": 1.3117290492205687,
+    "same_ci": [
+     1.224402618304558,
+     1.415844765545221
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.010928499013334229,
+    "quire_halves_within_cell": 0.032536185039179114,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04323429885952914,
+    "line_break": -0.0010338792513403213
+   },
+   "lengths": {
+    "mean_chars": 5.02589424125854,
+    "sd_chars": 1.958009590321223,
+    "share_9plus": 0.03617155652523397
+   },
+   "voynich_types_share": 0.8637825113394959,
+   "types_per_token": 0.19819716369064708
+  },
+  "prod6e_s7": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 459,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3651523864289822,
+      "lang": 0.4846711259754738,
+      "hand": 0.6247605780950722,
+      "section": 0.5275098741618444,
+      "quire": 0.4740073145245559,
+      "page": 0.6782824404937688,
+      "line": 0.9720962278233909
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.976720810550016,
+      "hand": 0.9557698958613534,
+      "section": 0.9536076807504855,
+      "quire": 0.8916516909001797,
+      "page": 0.8903272727272727
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.3188405797101449,
+      "lang": 0.3871571072319202,
+      "hand": 0.43777292576419213,
+      "section": 0.4633868723915518,
+      "quire": 0.33980832867763977,
+      "page": 0.6818554767625857,
+      "line": 0.9796750301429638
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4425470563781562,
+    "ci": [
+     1.3785658777867809,
+     1.5163079875626255
+    ],
+    "same_ratio": 1.3344385749651961,
+    "same_ci": [
+     1.2793651446387122,
+     1.3924234198287646
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.012953053265421234,
+    "quire_halves_within_cell": 0.03695646617240683,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04081961925729902,
+    "line_break": 0.00018865528533409227
+   },
+   "lengths": {
+    "mean_chars": 5.0484871102945394,
+    "sd_chars": 1.9251742062992347,
+    "share_9plus": 0.03499454555893667
+   },
+   "voynich_types_share": 0.8646724464603548,
+   "types_per_token": 0.19756559683068267
+  },
+  "prod6e_s3": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 510,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.35491198182850653,
+      "lang": 0.4837912087912088,
+      "hand": 0.6583468981732682,
+      "section": 0.47296834901625323,
+      "quire": 0.49356132573358663,
+      "page": 0.6991881918819188,
+      "line": 0.9724694264224608
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.973158126677617,
+      "hand": 0.9420311733403781,
+      "section": 0.959236867827535,
+      "quire": 0.8962977384081249,
+      "page": 0.897884861904207
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.30952380952380953,
+      "lang": 0.36129032258064514,
+      "hand": 0.4464714354296688,
+      "section": 0.5128015755785328,
+      "quire": 0.3370954356846473,
+      "page": 0.7065169593386298,
+      "line": 0.9792444163748062
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4215003706835079,
+    "ci": [
+     1.3727476175313478,
+     1.477153236732685
+    ],
+    "same_ratio": 1.3155075606131315,
+    "same_ci": [
+     1.258707693669776,
+     1.3778522716961088
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.01200467827180351,
+    "quire_halves_within_cell": 0.03516980138861042,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.040347091655812184,
+    "line_break": 0.00012951242338046266
+   },
+   "lengths": {
+    "mean_chars": 5.064104036286387,
+    "sd_chars": 1.9310757815779354,
+    "share_9plus": 0.037262444737899754
+   },
+   "voynich_types_share": 0.8653614284894069,
+   "types_per_token": 0.1967904920479991
+  },
+  "prod6e_s11": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 485,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.39590854392298436,
+      "lang": 0.4675105485232067,
+      "hand": 0.6262110269508543,
+      "section": 0.5438260369767219,
+      "quire": 0.4463590883824347,
+      "page": 0.6908398074025935,
+      "line": 0.9718378595624965
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9781870860927152,
+      "hand": 0.9410664900868617,
+      "section": 0.9578048052529473,
+      "quire": 0.8830176247735134,
+      "page": 0.8837229613671431
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.28631284916201116,
+      "lang": 0.40202133632790565,
+      "hand": 0.46283783783783783,
+      "section": 0.45864123957091774,
+      "quire": 0.36003947989529245,
+      "page": 0.6836731700161361,
+      "line": 0.9784980191766665
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4406522400752393,
+    "ci": [
+     1.3597081260998853,
+     1.5338038739108983
+    ],
+    "same_ratio": 1.3363740122187941,
+    "same_ci": [
+     1.2361312401511335,
+     1.4529515404789735
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.01444898920999976,
+    "quire_halves_within_cell": 0.03519454565438098,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04241728851175189,
+    "line_break": 0.0017575540427224225
+   },
+   "lengths": {
+    "mean_chars": 5.018975713383476,
+    "sd_chars": 1.926183103276032,
+    "share_9plus": 0.03542515932709422
+   },
+   "voynich_types_share": 0.8644427857840041,
+   "types_per_token": 0.20020669460871562
+  },
+  "prod6e_s23": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 492,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3733480176211454,
+      "lang": 0.5091112980095318,
+      "hand": 0.6497267759562841,
+      "section": 0.49841125737630504,
+      "quire": 0.47447770837820374,
+      "page": 0.6854552970355497,
+      "line": 0.9722684733306539
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9766041030117852,
+      "hand": 0.9343012112067207,
+      "section": 0.9139396198285501,
+      "quire": 0.8848652748919891,
+      "page": 0.882913051074486
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.3309248554913295,
+      "lang": 0.3963344788087056,
+      "hand": 0.4475775442194309,
+      "section": 0.4645706800047636,
+      "quire": 0.3568939136348181,
+      "page": 0.6892228373905147,
+      "line": 0.9799908135729459
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4953865704082503,
+    "ci": [
+     1.4163469983577759,
+     1.5811716719678077
+    ],
+    "same_ratio": 1.3369373880055266,
+    "same_ci": [
+     1.2641181303066926,
+     1.4095849909117328
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0150859582003543,
+    "quire_halves_within_cell": 0.039810943793293634,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.040937794851234006,
+    "line_break": -0.0001802302617898963
+   },
+   "lengths": {
+    "mean_chars": 5.050094735028995,
+    "sd_chars": 1.9541713854565042,
+    "share_9plus": 0.0355686972498134
+   },
+   "voynich_types_share": 0.8666819773784233,
+   "types_per_token": 0.19839811678245392
+  },
+  "voynich_ZL": {
+   "scribe": {
+    "between_ratio": 2.960975440502372,
+    "ci": [
+     2.1750120881483292,
+     3.5941640688614744
+    ],
+    "same_ratio": 1.9963207755993588,
+    "same_ci": [
+     1.8697785510946672,
+     2.148080770892749
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.10054660139999413,
+    "quire_halves_within_cell": 0.051782444759507475,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.05971999499614818,
+    "line_break": 0.000988139291398611
+   },
+   "lengths": {
+    "mean_chars": 4.990182006086008,
+    "sd_chars": 1.7880665893586707,
+    "share_9plus": 0.024286616524085664
+   },
+   "voynich_types_share": 1.0,
+   "types_per_token": 0.20155595108227595
+  }
+ },
+ "weights": {
+  "opener": [
+   1.0,
+   0.75
+  ],
+  "middle": [
+   1.0,
+   0.75
+  ],
+  "ending": [
+   1.0,
+   0.75
+  ]
+ }
+}

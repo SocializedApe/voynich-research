@@ -1,0 +1,12 @@
+{
+ "fitted (d~0.9-1.0, theta small)": -9.94729298970464,
+ "d 0.8 all, same theta": -10.336314285678593,
+ "d 0.5 all, same theta": -11.623790120803866,
+ "d 0.5 all, theta 10 all": -11.267370065759192,
+ "d 0.9 root, 0.5 others, theta 10": -11.136854266753657,
+ "d 0.9 root, 0.7 others, theta 20": -10.390388544273398,
+ "flat root only d 0.91 theta 2": -10.320781028840676,
+ "flat root only d 0.8 theta 50": -10.337554708828241,
+ "root+page d 0.9/0.5 theta 2/10": -10.3807052187925,
+ "root+page d 0.9/0.9 theta 2/5": -10.125151405077817
+}

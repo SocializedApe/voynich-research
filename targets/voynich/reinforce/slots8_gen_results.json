@@ -1,0 +1,6304 @@
+{
+ "marks": {
+  "voynich_ZL": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": true,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": true,
+   "k_jsd_oddeven": true
+  },
+  "autocopist_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": false,
+   "c_zipf": false,
+   "c_ttr": false,
+   "c_hapax_types": true,
+   "c_hapax_tokens": false,
+   "c_heaps": false,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": false
+  },
+  "autocopist_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": false,
+   "a_h3_raw": false,
+   "a_h2_mrg": false,
+   "a_h3_mrg": false,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": false,
+   "f_lock": false,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": false,
+   "g_gal_mid": false,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": false,
+   "j_one_page": false,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": false
+  },
+  "prod6e_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "prod6e_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": false,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "tilt7_q10_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "tilt7_q10_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "tilt7_q10_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "tilt7_q10_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "tilt7_q10_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "norm8_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "norm8_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": true,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "norm8_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "norm8_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "norm8_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": false,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8p_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8p_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8p_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8p_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "cat8p_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": false,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": false,
+   "e_w10": false,
+   "e_prev2": false,
+   "e_w10_shuf": false,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8p_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8p_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8p_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8p_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "emp8p_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": false,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": true,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "lang8_s19": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": false,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "lang8_s7": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": true,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": true,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "lang8_s3": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "lang8_s11": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": true,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  },
+  "lang8_s23": {
+   "a_h0_raw": true,
+   "a_h1_raw": true,
+   "a_h2_raw": true,
+   "a_h3_raw": true,
+   "a_h2_mrg": true,
+   "a_h3_mrg": true,
+   "b_len_mean": true,
+   "b_len_sd": true,
+   "b_len1": true,
+   "b_len9": true,
+   "c_zipf": true,
+   "c_ttr": true,
+   "c_hapax_types": true,
+   "c_hapax_tokens": true,
+   "c_heaps": true,
+   "d_adj_exact": true,
+   "d_adj_ld1": false,
+   "e_cover": true,
+   "e_w10": true,
+   "e_prev2": true,
+   "e_w10_shuf": true,
+   "e_ratio": true,
+   "f_irrev": true,
+   "f_lock": true,
+   "g_len_first": true,
+   "g_len_mid": true,
+   "g_len_last": true,
+   "g_gal_init": true,
+   "g_gal_mid": true,
+   "h_peak_log2s": false,
+   "h_peak_R": false,
+   "i_tok_acc": false,
+   "i_char_bits": true,
+   "j_one_page": true,
+   "j_jacc_excess": false,
+   "k_jsd_halves": false,
+   "k_jsd_oddeven": true
+  }
+ },
+ "tol": {
+  "a_h0_raw": 0.4700439718141092,
+  "a_h1_raw": 0.38700565465683195,
+  "a_h2_raw": 0.21109100230272687,
+  "a_h3_raw": 0.18410151259403673,
+  "a_h2_mrg": 0.3227790199693592,
+  "a_h3_mrg": 0.21357561310897744,
+  "b_len_mean": 0.8471307315490479,
+  "b_len_sd": 0.17880665893586709,
+  "b_len1": 0.005615788949936454,
+  "b_len9": 0.039959846538540233,
+  "c_zipf": 0.1926740951778485,
+  "c_ttr": 0.11834647640003448,
+  "c_hapax_types": 0.06803874092009686,
+  "c_hapax_tokens": 0.0861789340525943,
+  "c_heaps": 0.09546296352895878,
+  "d_adj_exact": 0.0008411563747021503,
+  "d_adj_ld1": 0.006232315308522612,
+  "e_cover": 0.06511167250387553,
+  "e_w10": 0.04670744291009593,
+  "e_prev2": 0.07624198526912768,
+  "e_w10_shuf": 0.06048721845892213,
+  "e_ratio": 0.11395155545001188,
+  "f_irrev": 0.075,
+  "f_lock": 0.09915910563852731,
+  "g_len_first": 0.7453401918003886,
+  "g_len_mid": 0.8738748933605072,
+  "g_len_last": 0.7042864043000279,
+  "g_gal_init": 0.07628668502379965,
+  "g_gal_mid": 0.168783007220597,
+  "h_peak_log2s": 0.9,
+  "h_peak_R": 0.06554999181494026,
+  "i_tok_acc": 0.009428768888216704,
+  "i_char_bits": 0.18732234999746689,
+  "j_one_page": 0.06829511465603191,
+  "j_jacc_excess": 0.0036951326240252064,
+  "k_jsd_halves": 0.006243244972555022,
+  "k_jsd_oddeven": 0.004961316026073189
+ },
+ "meta": {
+  "prod6e_s19": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 495,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.29490022172949004,
+      "lang": 0.4993080542485469,
+      "hand": 0.6408300815892161,
+      "section": 0.5068776409242111,
+      "quire": 0.48327250608272504,
+      "page": 0.6812087489271021,
+      "line": 0.9699431589826032
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.983195449844881,
+      "hand": 0.9518887658422542,
+      "section": 0.945109896499593,
+      "quire": 0.8428188708834292,
+      "page": 0.8913480299368065
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.28304597701149425,
+      "lang": 0.420036210018105,
+      "hand": 0.44034015413234123,
+      "section": 0.4705514567962986,
+      "quire": 0.3407328504473796,
+      "page": 0.6883303516438396,
+      "line": 0.9788425101911925
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4568849762915903,
+    "ci": [
+     1.3731221532907716,
+     1.5606551451496478
+    ],
+    "same_ratio": 1.3117290492205687,
+    "same_ci": [
+     1.224402618304558,
+     1.415844765545221
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.010928499013334229,
+    "quire_halves_within_cell": 0.032536185039179114,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04323429885952914,
+    "line_break": -0.0010338792513403213
+   },
+   "lengths": {
+    "mean_chars": 5.02589424125854,
+    "sd_chars": 1.958009590321223,
+    "share_9plus": 0.03617155652523397
+   },
+   "voynich_types_share": 0.8637825113394959,
+   "types_per_token": 0.19819716369064708
+  },
+  "prod6e_s7": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 459,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3651523864289822,
+      "lang": 0.4846711259754738,
+      "hand": 0.6247605780950722,
+      "section": 0.5275098741618444,
+      "quire": 0.4740073145245559,
+      "page": 0.6782824404937688,
+      "line": 0.9720962278233909
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.976720810550016,
+      "hand": 0.9557698958613534,
+      "section": 0.9536076807504855,
+      "quire": 0.8916516909001797,
+      "page": 0.8903272727272727
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.3188405797101449,
+      "lang": 0.3871571072319202,
+      "hand": 0.43777292576419213,
+      "section": 0.4633868723915518,
+      "quire": 0.33980832867763977,
+      "page": 0.6818554767625857,
+      "line": 0.9796750301429638
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4425470563781562,
+    "ci": [
+     1.3785658777867809,
+     1.5163079875626255
+    ],
+    "same_ratio": 1.3344385749651961,
+    "same_ci": [
+     1.2793651446387122,
+     1.3924234198287646
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.012953053265421234,
+    "quire_halves_within_cell": 0.03695646617240683,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04081961925729902,
+    "line_break": 0.00018865528533409227
+   },
+   "lengths": {
+    "mean_chars": 5.0484871102945394,
+    "sd_chars": 1.9251742062992347,
+    "share_9plus": 0.03499454555893667
+   },
+   "voynich_types_share": 0.8646724464603548,
+   "types_per_token": 0.19756559683068267
+  },
+  "prod6e_s3": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 510,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.35491198182850653,
+      "lang": 0.4837912087912088,
+      "hand": 0.6583468981732682,
+      "section": 0.47296834901625323,
+      "quire": 0.49356132573358663,
+      "page": 0.6991881918819188,
+      "line": 0.9724694264224608
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.973158126677617,
+      "hand": 0.9420311733403781,
+      "section": 0.959236867827535,
+      "quire": 0.8962977384081249,
+      "page": 0.897884861904207
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.30952380952380953,
+      "lang": 0.36129032258064514,
+      "hand": 0.4464714354296688,
+      "section": 0.5128015755785328,
+      "quire": 0.3370954356846473,
+      "page": 0.7065169593386298,
+      "line": 0.9792444163748062
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4215003706835079,
+    "ci": [
+     1.3727476175313478,
+     1.477153236732685
+    ],
+    "same_ratio": 1.3155075606131315,
+    "same_ci": [
+     1.258707693669776,
+     1.3778522716961088
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.01200467827180351,
+    "quire_halves_within_cell": 0.03516980138861042,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.040347091655812184,
+    "line_break": 0.00012951242338046266
+   },
+   "lengths": {
+    "mean_chars": 5.064104036286387,
+    "sd_chars": 1.9310757815779354,
+    "share_9plus": 0.037262444737899754
+   },
+   "voynich_types_share": 0.8653614284894069,
+   "types_per_token": 0.1967904920479991
+  },
+  "prod6e_s11": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 485,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.39590854392298436,
+      "lang": 0.4675105485232067,
+      "hand": 0.6262110269508543,
+      "section": 0.5438260369767219,
+      "quire": 0.4463590883824347,
+      "page": 0.6908398074025935,
+      "line": 0.9718378595624965
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9781870860927152,
+      "hand": 0.9410664900868617,
+      "section": 0.9578048052529473,
+      "quire": 0.8830176247735134,
+      "page": 0.8837229613671431
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.28631284916201116,
+      "lang": 0.40202133632790565,
+      "hand": 0.46283783783783783,
+      "section": 0.45864123957091774,
+      "quire": 0.36003947989529245,
+      "page": 0.6836731700161361,
+      "line": 0.9784980191766665
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4406522400752393,
+    "ci": [
+     1.3597081260998853,
+     1.5338038739108983
+    ],
+    "same_ratio": 1.3363740122187941,
+    "same_ci": [
+     1.2361312401511335,
+     1.4529515404789735
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.01444898920999976,
+    "quire_halves_within_cell": 0.03519454565438098,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.04241728851175189,
+    "line_break": 0.0017575540427224225
+   },
+   "lengths": {
+    "mean_chars": 5.018975713383476,
+    "sd_chars": 1.926183103276032,
+    "share_9plus": 0.03542515932709422
+   },
+   "voynich_types_share": 0.8644427857840041,
+   "types_per_token": 0.20020669460871562
+  },
+  "prod6e_s23": {
+   "good_turing_new_middle": 0.03467876212895447,
+   "novel_middle_tokens": 492,
+   "realised": {
+    "opener": {
+     "loc": {
+      "book": 0.3733480176211454,
+      "lang": 0.5091112980095318,
+      "hand": 0.6497267759562841,
+      "section": 0.49841125737630504,
+      "quire": 0.47447770837820374,
+      "page": 0.6854552970355497,
+      "line": 0.9722684733306539
+     },
+     "ctx": null
+    },
+    "middle": {
+     "loc": {
+      "book": 0.9766041030117852,
+      "hand": 0.9343012112067207,
+      "section": 0.9139396198285501,
+      "quire": 0.8848652748919891,
+      "page": 0.882913051074486
+     },
+     "ctx": null
+    },
+    "ending": {
+     "loc": {
+      "book": 0.3309248554913295,
+      "lang": 0.3963344788087056,
+      "hand": 0.4475775442194309,
+      "section": 0.4645706800047636,
+      "quire": 0.3568939136348181,
+      "page": 0.6892228373905147,
+      "line": 0.9799908135729459
+     },
+     "ctx": null
+    }
+   },
+   "scribe": {
+    "between_ratio": 1.4953865704082503,
+    "ci": [
+     1.4163469983577759,
+     1.5811716719678077
+    ],
+    "same_ratio": 1.3369373880055266,
+    "same_ci": [
+     1.2641181303066926,
+     1.4095849909117328
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0150859582003543,
+    "quire_halves_within_cell": 0.039810943793293634,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.040937794851234006,
+    "line_break": -0.0001802302617898963
+   },
+   "lengths": {
+    "mean_chars": 5.050094735028995,
+    "sd_chars": 1.9541713854565042,
+    "share_9plus": 0.0355686972498134
+   },
+   "voynich_types_share": 0.8666819773784233,
+   "types_per_token": 0.19839811678245392
+  },
+  "tilt7_q10_s19": {
+   "sigma": {
+    "opener": [
+     0.38564229350496876,
+     0.18538033870390241,
+     0.24057484279087826,
+     0.12903247930230058
+    ],
+    "middle": [
+     0.39808350662066977,
+     0.21117565024059853,
+     0.23922271304026213,
+     0.12611045132306395
+    ],
+    "ending": [
+     0.8282686597910337,
+     0.21567703228418325,
+     0.24803976667095815,
+     0.1832563575735565
+    ]
+   },
+   "copy_share": 0.09978756387437561,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.3569619589860007,
+    "ci": [
+     1.204952476090796,
+     1.4618327723361728
+    ],
+    "same_ratio": 1.1381523506461828,
+    "same_ci": [
+     1.0940757681752749,
+     1.183366565680136
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.032391635045758344,
+    "quire_halves_within_cell": 0.035243401031958915,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.024856432512129368,
+    "line_break": 0.0009919561997426489
+   },
+   "lengths": {
+    "mean_chars": 4.891083424240684,
+    "sd_chars": 2.0802273910548426,
+    "share_9plus": 0.03565482000344491
+   },
+   "voynich_types_share": 0.8602227708560601,
+   "types_per_token": 0.1950680369753689
+  },
+  "tilt7_q10_s7": {
+   "sigma": {
+    "opener": [
+     0.38564229350496876,
+     0.18538033870390241,
+     0.24057484279087826,
+     0.12903247930230058
+    ],
+    "middle": [
+     0.39808350662066977,
+     0.21117565024059853,
+     0.23922271304026213,
+     0.12611045132306395
+    ],
+    "ending": [
+     0.8282686597910337,
+     0.21567703228418325,
+     0.24803976667095815,
+     0.1832563575735565
+    ]
+   },
+   "copy_share": 0.10067749899523454,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.6513795768762394,
+    "ci": [
+     1.2291493889795153,
+     2.0313709469916463
+    ],
+    "same_ratio": 1.126008010037057,
+    "same_ci": [
+     1.0866977174958334,
+     1.1708398982654404
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.05013236491687967,
+    "quire_halves_within_cell": 0.031242681367893408,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.032747781764139866,
+    "line_break": 0.0020720570582494296
+   },
+   "lengths": {
+    "mean_chars": 5.1168111615088705,
+    "sd_chars": 1.9444818847973067,
+    "share_9plus": 0.03964517425503818
+   },
+   "voynich_types_share": 0.8564907848653615,
+   "types_per_token": 0.2033358213239938
+  },
+  "tilt7_q10_s3": {
+   "sigma": {
+    "opener": [
+     0.38564229350496876,
+     0.18538033870390241,
+     0.24057484279087826,
+     0.12903247930230058
+    ],
+    "middle": [
+     0.39808350662066977,
+     0.21117565024059853,
+     0.23922271304026213,
+     0.12611045132306395
+    ],
+    "ending": [
+     0.8282686597910337,
+     0.21567703228418325,
+     0.24803976667095815,
+     0.1832563575735565
+    ]
+   },
+   "copy_share": 0.10021817764253316,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.438147224337894,
+    "ci": [
+     1.1589860212565584,
+     1.6958484761063188
+    ],
+    "same_ratio": 1.102473489311578,
+    "same_ci": [
+     1.0510174631899454,
+     1.1574904741086531
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.035735602227148985,
+    "quire_halves_within_cell": 0.0296289808162597,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.025834246023569863,
+    "line_break": -0.0015954728272635328
+   },
+   "lengths": {
+    "mean_chars": 5.003760693575242,
+    "sd_chars": 1.986436375897247,
+    "share_9plus": 0.03711890681518057
+   },
+   "voynich_types_share": 0.8477636791640352,
+   "types_per_token": 0.21338347591433657
+  },
+  "tilt7_q10_s11": {
+   "sigma": {
+    "opener": [
+     0.38564229350496876,
+     0.18538033870390241,
+     0.24057484279087826,
+     0.12903247930230058
+    ],
+    "middle": [
+     0.39808350662066977,
+     0.21117565024059853,
+     0.23922271304026213,
+     0.12611045132306395
+    ],
+    "ending": [
+     0.8282686597910337,
+     0.21567703228418325,
+     0.24803976667095815,
+     0.1832563575735565
+    ]
+   },
+   "copy_share": 0.09817993913992076,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.297644996657155,
+    "ci": [
+     1.1861900266662124,
+     1.3900511836830138
+    ],
+    "same_ratio": 1.1158039209886281,
+    "same_ci": [
+     1.0812940418166626,
+     1.1471392366349353
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.02200665523272078,
+    "quire_halves_within_cell": 0.02382023818470499,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03700898205041537,
+    "line_break": -0.0009070609932575636
+   },
+   "lengths": {
+    "mean_chars": 5.130102773152667,
+    "sd_chars": 1.9514134410395125,
+    "share_9plus": 0.04027674111500258
+   },
+   "voynich_types_share": 0.8435436642360912,
+   "types_per_token": 0.21674226330596544
+  },
+  "tilt7_q10_s23": {
+   "sigma": {
+    "opener": [
+     0.38564229350496876,
+     0.18538033870390241,
+     0.24057484279087826,
+     0.12903247930230058
+    ],
+    "middle": [
+     0.39808350662066977,
+     0.21117565024059853,
+     0.23922271304026213,
+     0.12611045132306395
+    ],
+    "ending": [
+     0.8282686597910337,
+     0.21567703228418325,
+     0.24803976667095815,
+     0.1832563575735565
+    ]
+   },
+   "copy_share": 0.10102199000976057,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.5212202990478765,
+    "ci": [
+     1.2817295357785838,
+     1.6906514695615855
+    ],
+    "same_ratio": 1.1479174044070712,
+    "same_ci": [
+     1.1066988572933814,
+     1.1959338862305902
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.043440905584801896,
+    "quire_halves_within_cell": 0.03162074541978728,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03267098174127852,
+    "line_break": -4.679854144125478e-05
+   },
+   "lengths": {
+    "mean_chars": 5.096428776482747,
+    "sd_chars": 1.9410640591989905,
+    "share_9plus": 0.03777918125968881
+   },
+   "voynich_types_share": 0.8135729459723259,
+   "types_per_token": 0.24349773210082104
+  },
+  "norm8_s19": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.09978756387437561,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.5369644331410617,
+    "ci": [
+     1.3016616349400918,
+     1.6893558115106968
+    ],
+    "same_ratio": 1.1674337009646896,
+    "same_ci": [
+     1.0992099922952498,
+     1.2369242941630438
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.049843221430327066,
+    "quire_halves_within_cell": 0.04448917439885312,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.02443921968568302,
+    "line_break": 0.001493887100262078
+   },
+   "lengths": {
+    "mean_chars": 4.8538209795027845,
+    "sd_chars": 2.1368846364693646,
+    "share_9plus": 0.03711890681518057
+   },
+   "voynich_types_share": 0.8603950163633232,
+   "types_per_token": 0.19024516277200437
+  },
+  "norm8_s7": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.10067749899523454,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.089710919291949,
+    "ci": [
+     1.3571910313372515,
+     2.715526555401186
+    ],
+    "same_ratio": 1.1855000377969087,
+    "same_ci": [
+     1.1189937973480761,
+     1.277879169027768
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0855736968775918,
+    "quire_halves_within_cell": 0.0416148101577649,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03483554279631176,
+    "line_break": 0.0037762404860537994
+   },
+   "lengths": {
+    "mean_chars": 5.171412987311248,
+    "sd_chars": 1.960945940419365,
+    "share_9plus": 0.044180972612964345
+   },
+   "voynich_types_share": 0.8557730952517655,
+   "types_per_token": 0.199087098811506
+  },
+  "norm8_s3": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.10021817764253316,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.6445211643143673,
+    "ci": [
+     1.232914180692038,
+     2.0345415920381194
+    ],
+    "same_ratio": 1.1167183921579504,
+    "same_ci": [
+     1.0722382176063991,
+     1.1618484053544789
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.060730849704266204,
+    "quire_halves_within_cell": 0.0399433481930262,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.02332888684530041,
+    "line_break": -0.0005940679685636033
+   },
+   "lengths": {
+    "mean_chars": 4.96423034965838,
+    "sd_chars": 2.0006130355731306,
+    "share_9plus": 0.03746339782970661
+   },
+   "voynich_types_share": 0.8430843428833897,
+   "types_per_token": 0.20993856576907619
+  },
+  "norm8_s11": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.09817993913992076,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.4410475088256385,
+    "ci": [
+     1.2999857605089309,
+     1.5779561687453192
+    ],
+    "same_ratio": 1.127436725043576,
+    "same_ci": [
+     1.0886978201044402,
+     1.1666331696372931
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.03468111657024565,
+    "quire_halves_within_cell": 0.02727854688089834,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.039836060018243594,
+    "line_break": -0.0009820097966433622
+   },
+   "lengths": {
+    "mean_chars": 5.146609634265373,
+    "sd_chars": 1.947215434240583,
+    "share_9plus": 0.03955905150140667
+   },
+   "voynich_types_share": 0.8399839237526554,
+   "types_per_token": 0.21295286214617903
+  },
+  "norm8_s23": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.10102199000976057,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.7511775375747063,
+    "ci": [
+     1.3782476955308636,
+     1.9955133601032358
+    ],
+    "same_ratio": 1.1562574248149966,
+    "same_ci": [
+     1.100553741880914,
+     1.2189814831063055
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.06848803246796356,
+    "quire_halves_within_cell": 0.04027504669127644,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.031417592035581934,
+    "line_break": 0.0018805928388139325
+   },
+   "lengths": {
+    "mean_chars": 5.133260607452489,
+    "sd_chars": 1.9337761699841873,
+    "share_9plus": 0.04021932594591491
+   },
+   "voynich_types_share": 0.7969799621059884,
+   "types_per_token": 0.24656944364701153
+  },
+  "cat8_s19": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.09978756387437561,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.4694470021852755,
+    "ci": [
+     1.3324168766215227,
+     1.6534671698297756
+    ],
+    "same_ratio": 1.1425176139694413,
+    "same_ci": [
+     1.0953659552249833,
+     1.1918343645218052
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.034207253935071895,
+    "quire_halves_within_cell": 0.030062167517208093,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.027192669957369246,
+    "line_break": -0.001958180660572949
+   },
+   "lengths": {
+    "mean_chars": 5.312683010851467,
+    "sd_chars": 1.91630482109701,
+    "share_9plus": 0.04360682092208761
+   },
+   "voynich_types_share": 0.8122811046678532,
+   "types_per_token": 0.22920135499799046
+  },
+  "cat8_s7": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.10067749899523454,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.8717901591075758,
+    "ci": [
+     1.1975260995660038,
+     2.300522087764836
+    ],
+    "same_ratio": 1.197367438042796,
+    "same_ci": [
+     1.1475149546572088,
+     1.2579667316489838
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0846842768975612,
+    "quire_halves_within_cell": 0.043266159402540715,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03178788177671083,
+    "line_break": 0.001243880037767282
+   },
+   "lengths": {
+    "mean_chars": 5.0154159729000405,
+    "sd_chars": 1.9821555783313025,
+    "share_9plus": 0.03815237985875868
+   },
+   "voynich_types_share": 0.8458402709995981,
+   "types_per_token": 0.2056324280875007
+  },
+  "cat8_s3": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.10021817764253316,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.4190536108127703,
+    "ci": [
+     1.225921619225708,
+     1.5634676300743262
+    ],
+    "same_ratio": 1.1758365568087417,
+    "same_ci": [
+     1.111933773034028,
+     1.2535538969708808
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.027676086735429206,
+    "quire_halves_within_cell": 0.02973106742493253,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.031068087352444897,
+    "line_break": -0.002752529897622873
+   },
+   "lengths": {
+    "mean_chars": 5.1902164551874606,
+    "sd_chars": 1.951746264287699,
+    "share_9plus": 0.04306137681575472
+   },
+   "voynich_types_share": 0.8247114887753344,
+   "types_per_token": 0.22469426422460814
+  },
+  "cat8_s11": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.09817993913992076,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.2832528580496922,
+    "ci": [
+     1.302544690023965,
+     2.967333906798761
+    ],
+    "same_ratio": 1.2353667591962385,
+    "same_ci": [
+     1.1433892191770085,
+     1.3642587680828024
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.1283186102547943,
+    "quire_halves_within_cell": 0.053550759213623816,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.026166497983903532,
+    "line_break": 0.002205903011228403
+   },
+   "lengths": {
+    "mean_chars": 5.249095711086869,
+    "sd_chars": 1.9589400381916122,
+    "share_9plus": 0.04722397657461101
+   },
+   "voynich_types_share": 0.8048745478555435,
+   "types_per_token": 0.20881896997186658
+  },
+  "cat8_s23": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782987
+    ]
+   },
+   "copy_share": 0.10102199000976057,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.2982299301291664,
+    "ci": [
+     1.1703505911934966,
+     1.3979015705471949
+    ],
+    "same_ratio": 1.1210993443017179,
+    "same_ci": [
+     1.068256885385077,
+     1.181537893372707
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.02263417497501564,
+    "quire_halves_within_cell": 0.02712085701124605,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03280890865766343,
+    "line_break": 0.0002552083159244477
+   },
+   "lengths": {
+    "mean_chars": 5.111213182522823,
+    "sd_chars": 1.938637522255509,
+    "share_9plus": 0.037233737153355914
+   },
+   "voynich_types_share": 0.8171613940403054,
+   "types_per_token": 0.2292300625825343
+  },
+  "emp8_s19": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.09978756387437561,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.0893714625415774,
+    "ci": [
+     1.5013782605882415,
+     2.545551352719218
+    ],
+    "same_ratio": 1.38842566867858,
+    "same_ci": [
+     1.2533272639391846,
+     1.5287595015308009
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.07350472410548192,
+    "quire_halves_within_cell": 0.05023422521588862,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03349758398205701,
+    "line_break": -0.0012929972245538345
+   },
+   "lengths": {
+    "mean_chars": 5.098897628753517,
+    "sd_chars": 1.9628540576964928,
+    "share_9plus": 0.03932939082505598
+   },
+   "voynich_types_share": 0.8523856002755928,
+   "types_per_token": 0.21613940403054488
+  },
+  "emp8_s7": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.10067749899523454,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.1083778223458776,
+    "ci": [
+     1.510584504155375,
+     2.5966353795610084
+    ],
+    "same_ratio": 1.3952057980687251,
+    "same_ci": [
+     1.2296290929800502,
+     1.5607474381619741
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0719368670509115,
+    "quire_halves_within_cell": 0.04561905512508227,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03434071936758601,
+    "line_break": 0.00011626442062431437
+   },
+   "lengths": {
+    "mean_chars": 5.11620830223345,
+    "sd_chars": 1.9392625365430254,
+    "share_9plus": 0.03907102256416145
+   },
+   "voynich_types_share": 0.8499741631739105,
+   "types_per_token": 0.21596715852328185
+  },
+  "emp8_s3": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.10021817764253316,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.070871194161893,
+    "ci": [
+     1.4490685893561064,
+     2.5622366892162134
+    ],
+    "same_ratio": 1.3660163237776448,
+    "same_ci": [
+     1.2274994791925864,
+     1.5095549051764807
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.07566739360945142,
+    "quire_halves_within_cell": 0.048847300772597385,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03310709203312055,
+    "line_break": 0.00023409922432559888
+   },
+   "lengths": {
+    "mean_chars": 5.120256071654131,
+    "sd_chars": 1.9550941855234734,
+    "share_9plus": 0.04113796865131768
+   },
+   "voynich_types_share": 0.8515243727392777,
+   "types_per_token": 0.2196991445139806
+  },
+  "emp8_s11": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.09817993913992076,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.0621813565850187,
+    "ci": [
+     1.5149629254958628,
+     2.500530618923404
+    ],
+    "same_ratio": 1.3572285388965983,
+    "same_ci": [
+     1.228363563244762,
+     1.4900634240283592
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0763464231126013,
+    "quire_halves_within_cell": 0.04812609982792083,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03394883644419527,
+    "line_break": -0.0006235787753136544
+   },
+   "lengths": {
+    "mean_chars": 5.100993282425216,
+    "sd_chars": 1.9437362548655437,
+    "share_9plus": 0.039358098409599813
+   },
+   "voynich_types_share": 0.8500315783429983,
+   "types_per_token": 0.21791927427226274
+  },
+  "emp8_s23": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.10102199000976057,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.094383521661758,
+    "ci": [
+     1.4614349446449992,
+     2.6494263818987767
+    ],
+    "same_ratio": 1.379800422625357,
+    "same_ci": [
+     1.2303033024805583,
+     1.5358132387320858
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0742331882101944,
+    "quire_halves_within_cell": 0.04689978386822224,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.032326295592269565,
+    "line_break": 0.0002386242881646588
+   },
+   "lengths": {
+    "mean_chars": 5.102399954067865,
+    "sd_chars": 1.9417342355262492,
+    "share_9plus": 0.03838204053510937
+   },
+   "voynich_types_share": 0.8520698168456106,
+   "types_per_token": 0.21565137509329965
+  },
+  "cat8p_s19": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.1777108725457985
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.09978756387437561,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.471397421295306,
+    "ci": [
+     1.4079879802596436,
+     3.1250365574116126
+    ],
+    "same_ratio": 1.375515079714489,
+    "same_ci": [
+     1.245384046223114,
+     1.5366998576337247
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.13141359207460543,
+    "quire_halves_within_cell": 0.06051740318696732,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.030776799101294862,
+    "line_break": 0.005866569247878936
+   },
+   "lengths": {
+    "mean_chars": 5.230550611471551,
+    "sd_chars": 1.9082521907725452,
+    "share_9plus": 0.041826950680369755
+   },
+   "voynich_types_share": 0.7937647126370787,
+   "types_per_token": 0.22176609060113683
+  },
+  "cat8p_s7": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.1777108725457985
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.10067749899523454,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.7219787015349026,
+    "ci": [
+     1.4518381819933932,
+     3.692122794192576
+    ],
+    "same_ratio": 1.4025644136859532,
+    "same_ci": [
+     1.3138984563865945,
+     1.5057384609689577
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.12254600384024063,
+    "quire_halves_within_cell": 0.05311980981718395,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.024917793593116015,
+    "line_break": 0.0026841846378213375
+   },
+   "lengths": {
+    "mean_chars": 5.378394671872309,
+    "sd_chars": 1.9168225079582366,
+    "share_9plus": 0.05173106734799334
+   },
+   "voynich_types_share": 0.8336108399839237,
+   "types_per_token": 0.1979675030142964
+  },
+  "cat8p_s3": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.1777108725457985
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.10021817764253316,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.295676349810686,
+    "ci": [
+     1.453603563455189,
+     3.055537498172873
+    ],
+    "same_ratio": 1.2926724171904929,
+    "same_ci": [
+     1.2289357717630716,
+     1.363686112979464
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.10058319915603284,
+    "quire_halves_within_cell": 0.04710679215521266,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.029252123860204003,
+    "line_break": -0.00014564159782114516
+   },
+   "lengths": {
+    "mean_chars": 5.240914049491876,
+    "sd_chars": 1.91393635204196,
+    "share_9plus": 0.04366423609117529
+   },
+   "voynich_types_share": 0.8170752712866739,
+   "types_per_token": 0.22544066142274788
+  },
+  "cat8p_s11": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.1777108725457985
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.09817993913992076,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.675949793561716,
+    "ci": [
+     1.4571068264414726,
+     3.7534121254571446
+    ],
+    "same_ratio": 1.4006621825337995,
+    "same_ci": [
+     1.28022254955285,
+     1.5557068063046922
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.1358714280415122,
+    "quire_halves_within_cell": 0.056574544315685246,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.035704840347562744,
+    "line_break": 0.00021574631463630714
+   },
+   "lengths": {
+    "mean_chars": 5.422805305161623,
+    "sd_chars": 1.9082933762532053,
+    "share_9plus": 0.05072630188895906
+   },
+   "voynich_types_share": 0.8286731354423839,
+   "types_per_token": 0.21926853074582306
+  },
+  "cat8p_s23": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554933
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.1777108725457985
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.10102199000976057,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 1.5872312025795579,
+    "ci": [
+     1.3968773630667732,
+     1.7721971905830605
+    ],
+    "same_ratio": 1.2957962928448734,
+    "same_ci": [
+     1.2188075513308738,
+     1.3742423627784464
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.03414367165038353,
+    "quire_halves_within_cell": 0.03935710750553617,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.031191883064625354,
+    "line_break": -0.0012697909505542298
+   },
+   "lengths": {
+    "mean_chars": 5.16986277774588,
+    "sd_chars": 1.942504226931019,
+    "share_9plus": 0.039501636332319
+   },
+   "voynich_types_share": 0.8343572371820634,
+   "types_per_token": 0.22856978813802606
+  },
+  "emp8p_s19": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.09978756387437561,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.208247815129904,
+    "ci": [
+     1.6795383623567726,
+     2.711997832918404
+    ],
+    "same_ratio": 1.5073235200126163,
+    "same_ci": [
+     1.3466804372584746,
+     1.6915467109590643
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.07279952661337132,
+    "quire_halves_within_cell": 0.05145196066030619,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03157870590823271,
+    "line_break": 0.0015032464959213506
+   },
+   "lengths": {
+    "mean_chars": 5.10535683527588,
+    "sd_chars": 1.9482698243440817,
+    "share_9plus": 0.03938680599414365
+   },
+   "voynich_types_share": 0.8500028707584544,
+   "types_per_token": 0.21972785209852444
+  },
+  "emp8p_s7": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.10067749899523454,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.2498590583761766,
+    "ci": [
+     1.6400326587495444,
+     2.8240128553004626
+    ],
+    "same_ratio": 1.5126918905893652,
+    "same_ci": [
+     1.3685685539691934,
+     1.6590693521588689
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.07729833722365054,
+    "quire_halves_within_cell": 0.05413537312286377,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.0346388589479852,
+    "line_break": -0.002164299021071168
+   },
+   "lengths": {
+    "mean_chars": 5.131652982718034,
+    "sd_chars": 1.934079252367106,
+    "share_9plus": 0.04042027903772177
+   },
+   "voynich_types_share": 0.8448642131251076,
+   "types_per_token": 0.22165126026296147
+  },
+  "emp8p_s3": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.10021817764253316,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.1998087010347707,
+    "ci": [
+     1.6372922363974725,
+     2.680672471524043
+    ],
+    "same_ratio": 1.5191653041381208,
+    "same_ci": [
+     1.3719811770133854,
+     1.6768829915181174
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.0745396814694601,
+    "quire_halves_within_cell": 0.05398960261326621,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03536935836160926,
+    "line_break": 0.0010918968954651783
+   },
+   "lengths": {
+    "mean_chars": 5.125021530688408,
+    "sd_chars": 1.9426121767007947,
+    "share_9plus": 0.040822185221335475
+   },
+   "voynich_types_share": 0.8488832749612447,
+   "types_per_token": 0.22084744789573404
+  },
+  "emp8p_s11": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.09817993913992076,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.213984207451693,
+    "ci": [
+     1.66829259610378,
+     2.6749721826296007
+    ],
+    "same_ratio": 1.4879855854522033,
+    "same_ci": [
+     1.3551290687941582,
+     1.6360244945760476
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.07421528127574843,
+    "quire_halves_within_cell": 0.051449625152120454,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03466250512985198,
+    "line_break": -0.000848162661790686
+   },
+   "lengths": {
+    "mean_chars": 5.160331859677327,
+    "sd_chars": 1.932871448253614,
+    "share_9plus": 0.039673881839582016
+   },
+   "voynich_types_share": 0.845151288970546,
+   "types_per_token": 0.22242636504564506
+  },
+  "emp8p_s23": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.33172422982554944
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579845
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.37042211717829887
+    ]
+   },
+   "copy_share": 0.10102199000976057,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.1053998354451804,
+    "ci": [
+     1.5047406160870536,
+     2.609598240271919
+    ],
+    "same_ratio": 1.432258771461941,
+    "same_ci": [
+     1.2953176593950728,
+     1.5691365715171968
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.07237946432043427,
+    "quire_halves_within_cell": 0.04607127082579403,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03471081455260629,
+    "line_break": 0.0019919604313652414
+   },
+   "lengths": {
+    "mean_chars": 5.101596141700638,
+    "sd_chars": 1.9470767477687743,
+    "share_9plus": 0.03889877705689843
+   },
+   "voynich_types_share": 0.8504908996956996,
+   "types_per_token": 0.218924039731297
+  },
+  "lang8_s19": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.3317242298255492
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579854
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.09978756387437561,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.230280582724165,
+    "ci": [
+     1.5211505899502578,
+     2.8000393756806607
+    ],
+    "same_ratio": 1.4072142747510976,
+    "same_ci": [
+     1.2494983639852082,
+     1.5759942879701812
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.09181150733753103,
+    "quire_halves_within_cell": 0.05279111241964764,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.032347542387654415,
+    "line_break": 2.0209846553576004e-05
+   },
+   "lengths": {
+    "mean_chars": 5.107050582763966,
+    "sd_chars": 1.9629236055607286,
+    "share_9plus": 0.04174082792673824
+   },
+   "voynich_types_share": 0.8508066831256818,
+   "types_per_token": 0.21857954871677096
+  },
+  "lang8_s7": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.3317242298255492
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579854
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.10067749899523454,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.281312813286545,
+    "ci": [
+     1.5343170945298257,
+     2.827720998531941
+    ],
+    "same_ratio": 1.402647903244053,
+    "same_ci": [
+     1.250756426862319,
+     1.5643186124803743
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.09436963705189164,
+    "quire_halves_within_cell": 0.04766466433477157,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03363514386661452,
+    "line_break": 0.001657655760090425
+   },
+   "lengths": {
+    "mean_chars": 5.110926106677384,
+    "sd_chars": 1.9182597404603787,
+    "share_9plus": 0.03757822816788196
+   },
+   "voynich_types_share": 0.855170235976345,
+   "types_per_token": 0.2144169489579147
+  },
+  "lang8_s3": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.3317242298255492
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579854
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.10021817764253316,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.255030553445742,
+    "ci": [
+     1.5136459123536448,
+     2.7963963877215976
+    ],
+    "same_ratio": 1.3952953052773438,
+    "same_ci": [
+     1.2690825685144922,
+     1.5274999822621862
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.09498077107088586,
+    "quire_halves_within_cell": 0.052751316624419654,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03321529597984853,
+    "line_break": -0.0002638929257026732
+   },
+   "lengths": {
+    "mean_chars": 5.117126944938853,
+    "sd_chars": 1.9470227164478435,
+    "share_9plus": 0.039185852902336796
+   },
+   "voynich_types_share": 0.8519549865074353,
+   "types_per_token": 0.21812022736406958
+  },
+  "lang8_s11": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.3317242298255492
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579854
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.09817993913992076,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.2474060041851938,
+    "ci": [
+     1.5223553497696014,
+     2.85971637009128
+    ],
+    "same_ratio": 1.3928178532675612,
+    "same_ci": [
+     1.2084033166262862,
+     1.5627570757745106
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.09416624757584208,
+    "quire_halves_within_cell": 0.05049081070493866,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.034431776744601045,
+    "line_break": 0.002495996145330154
+   },
+   "lengths": {
+    "mean_chars": 5.092352299477522,
+    "sd_chars": 1.940774212279559,
+    "share_9plus": 0.038008841936039504
+   },
+   "voynich_types_share": 0.85393580984096,
+   "types_per_token": 0.2182063501177011
+  },
+  "lang8_s23": {
+   "moments": {
+    "opener": [
+     {
+      "sd": 0.3856422935049691,
+      "pi": 0.04217523174963996,
+      "s": 1.8778284658414948
+     },
+     {
+      "sd": 0.1853803387039025,
+      "pi": 0.016926638956949236,
+      "s": 1.4248800500198036
+     },
+     {
+      "sd": 0.24057484279087832,
+      "pi": 0.024105187861883846,
+      "s": 1.5495120232036435
+     },
+     {
+      "sd": 0.12903247930230055,
+      "pi": 0.010909133272652331,
+      "s": 1.2353895359422016
+     },
+     {
+      "sd": 0.29028967608040235,
+      "pi": 0.06256570841374631,
+      "s": 1.160548802015506
+     }
+    ],
+    "middle": [
+     {
+      "sd": 0.3980835066206704,
+      "pi": 0.021358651985239084,
+      "s": 2.723875569786794
+     },
+     {
+      "sd": 0.2111756502405987,
+      "pi": 0.03785614851419772,
+      "s": 1.0853645353125745
+     },
+     {
+      "sd": 0.23922271304026232,
+      "pi": 0.012600319877730937,
+      "s": 2.131138261132036
+     },
+     {
+      "sd": 0.1261104513230639,
+      "pi": 0.0058879956074580474,
+      "s": 1.643491042041755
+     },
+     {
+      "sd": 0.21647288178790416,
+      "pi": 0.02075432991704031,
+      "s": 1.5026199156196232
+     }
+    ],
+    "ending": [
+     {
+      "sd": 0.8282686597910336,
+      "pi": 0.04805205985041919,
+      "s": 3.77846343728498
+     },
+     {
+      "sd": 0.21567703228418322,
+      "pi": 0.03710399210425172,
+      "s": 1.1196791202394336
+     },
+     {
+      "sd": 0.24803976667095803,
+      "pi": 0.04178790581645034,
+      "s": 1.2133777042316942
+     },
+     {
+      "sd": 0.18325635757355643,
+      "pi": 0.024775094323322477,
+      "s": 1.1642637935731568
+     },
+     {
+      "sd": 0.35986790682406855,
+      "pi": 0.0890504929563305,
+      "s": 1.2059379264969687
+     }
+    ]
+   },
+   "page": {
+    "opener": [
+     0.29028967608040235,
+     0.3317242298255492
+    ],
+    "middle": [
+     0.21647288178790416,
+     0.17771087254579854
+    ],
+    "ending": [
+     0.35986790682406855,
+     0.3704221171782988
+    ]
+   },
+   "copy_share": 0.10102199000976057,
+   "good_turing_new_middle": 0.03467876212895447,
+   "scribe": {
+    "between_ratio": 2.2303269913569577,
+    "ci": [
+     1.4723361853372536,
+     2.8841378203931445
+    ],
+    "same_ratio": 1.3936389729866923,
+    "same_ci": [
+     1.2099446786307673,
+     1.5633438340780097
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.09162836849216943,
+    "quire_halves_within_cell": 0.04792457874668282,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.03212721305233178,
+    "line_break": -0.0001155960414419546
+   },
+   "lengths": {
+    "mean_chars": 5.105328127691336,
+    "sd_chars": 1.945963998316486,
+    "share_9plus": 0.03829591778147787
+   },
+   "voynich_types_share": 0.8512085893092955,
+   "types_per_token": 0.21754607567319287
+  },
+  "voynich_ZL": {
+   "scribe": {
+    "between_ratio": 2.960975440502372,
+    "ci": [
+     2.1750120881483297,
+     3.5941640688614744
+    ],
+    "same_ratio": 1.996320775599359,
+    "same_ci": [
+     1.8697785510946672,
+     2.148080770892749
+    ],
+    "docs": 163,
+    "scribes": 3
+   },
+   "drift": {
+    "A_vs_B": 0.10054660139999401,
+    "quire_halves_within_cell": 0.051782444759507495,
+    "cells": 4
+   },
+   "coupling": {
+    "within": 0.05971999499614818,
+    "line_break": 0.000988139291398611
+   },
+   "lengths": {
+    "mean_chars": 4.990182006086008,
+    "sd_chars": 1.7880665893586707,
+    "share_9plus": 0.024286616524085664
+   },
+   "voynich_types_share": 1.0,
+   "types_per_token": 0.20155595108227595
+  }
+ }
+}
