@@ -105,7 +105,7 @@ class Slot:
     def __init__(self, counts, data, kind, mom, page, nprng):
         self.vals = sorted(counts); self.idx = {v: i for i, v in enumerate(self.vals)}
         tot = sum(counts.values()); self.base = np.array([counts[v] / tot for v in self.vals])
-        self.table = slots6.Table(data, self.idx, self.base); self.kind, self.mom, self.page, self.np = kind, mom, page, nprng
+        self.table = self.table0 = slots6.Table(data, self.idx, self.base); self.kind, self.mom, self.page, self.np = kind, mom, page, nprng
         self.cnt = node_counts(data, LV) if kind in ('emp', 'lang') else None
         self.tabs = {l: slots6.Table([r for r in data if r[0]['lang'] == l], self.idx, self.base) for l in {k['lang'] for k, _ in data}} if kind == 'lang' else None
         self.logt = {}; self.t = {}; self.pt = None; self.pkey = None; self.cur = None
@@ -129,7 +129,7 @@ class Slot:
         if path not in self.t:
             self.t[path] = sum(self.level(path[:i]) for i in range(2 if self.kind == 'lang' else 1, len(LV) + 1))
         if self.tabs:
-            self.table = self.tabs[keys['lang']]
+            self.table = self.tabs.get(keys['lang'], self.table0)   # a language absent from the source: the book table
         tot = self.t[path]
         if self.page:
             sd, rho = self.page; z = self.np.normal(size=len(self.vals)) * sd
@@ -142,7 +142,8 @@ class Slot:
         return self.vals[min(int(np.searchsorted(c, rng.random() * c[-1], side='right')), len(self.vals) - 1)]
 
 
-def generate(variant, ref, seed):
+def generate(variant, ref, seed, skel=None):
+    """skel: pages to generate on (default ref); everything borrowed or estimated comes from ref (robust.py)"""
     kind, drift = VARIANTS[variant]
     rng = random.Random(seed); nprng = np.random.RandomState(seed)
     words = [w for p in ref for ln in p['lines'] for w in ln['words']]
@@ -154,7 +155,7 @@ def generate(variant, ref, seed):
     pg = {s: (mom[s][-1]['sd'], page_rho(data[s], ref, mom[s][-1]['sd'])) for s in SLOTS}
     sl = {s: Slot(counts[s], data[s], kind, mom[s][:len(LV)], pg[s] if drift else None, nprng) for s in SLOTS}
     out = []; copies = 0
-    for p in ref:
+    for p in (skel or ref):
         lines = []; recent = []; k = slots6.loc_of(p, 0)
         for s in SLOTS:
             sl[s].start_page(k)
@@ -171,7 +172,7 @@ def generate(variant, ref, seed):
                 w = o + m + e; ws.append(w if w else 'o'); prev = (m + e) or EMPTY; recent.append((o, m))
             lines.append({'words': ws, 'para_start': ln['para_start']})
         g = {key: p[key] for key in ('folio', 'hand', 'lang', 'quire', 'illus')}; g['lines'] = lines; out.append(g)
-    return out, dict(moments=mom, page=pg, copy_share=copies / len(words), good_turing_new_middle=gt)
+    return out, dict(moments=mom, page=pg, copy_share=copies / max(sum(len(ln['words']) for p in out for ln in p['lines']), 1), good_turing_new_middle=gt)
 
 
 def rng_(xs):

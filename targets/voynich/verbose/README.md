@@ -289,6 +289,49 @@ verbose/kaggle_pkg/gpu_sweep.py --tier 5 --out <dir>` then `python verbose/kaggl
 is `sweep.jobs(5)`, the decision rule is the docstring of `analyze5.py`, and the raw results of the run reported here
 are `kaggle_results/tier5/gpu_shard0.jsonl`, `gpu_shard1.jsonl` with the analysis output in `analysis.md`.
 
+## Tier 6: how much copying noise the tier-5 solver survives (`kaggle_pkg/analyze6.py`; run 11 Nov 2026, `kaggle_results/tier6/`)
+
+Tier 5's calibration cipher is clean. Here it carries copying noise (`sweep.noisy`, seed fixed): every glyph replaced
+with probability 2, 5, 10 or 20% by a glyph drawn from the text's glyph frequencies (g), every word break dropped and
+every word of 4+ glyphs split with probability 5 or 15% (w), or both at 5%. Variant nom against la-nom, K 42, 50, 60,
+six parts, two seeds: 252 jobs on 2 x T4 (Kaggle kernel voynich-verbose-tier6). Rule written before any result
+(docstring of `analyze6.py`): a noise level is detected if the noisy cipher would have been reported as SIGNAL by the
+tier-5 rule with the tier-5 threshold PC* = -2.292 unchanged.
+
+| noise | chosen K | per-char | letter KL | similarity to the plaintext | stability | null | normalised | detected by the rule |
+|---|---|---|---|---|---|---|---|---|
+| none (tier 5) | 60 | -2.042 | 0.019 | 0.962 | 0.97 | 0.80 | 0.87 | (calibration) |
+| word breaks 5% | 60 | -2.094 | 0.020 | 0.942 | 0.96 | 0.81 | 0.79 | yes |
+| word breaks 15% | 60 | -2.175 | 0.027 | 0.912 | 0.97 | 0.83 | 0.84 | yes |
+| glyphs 2% | 60 | -2.319 | 0.039 | 0.880 | 0.94 | 0.73 | 0.79 | no (per-char 0.03 under the threshold) |
+| glyphs 5% | 60 | -2.594 | 0.095 | 0.771 | 0.95 | 0.76 | 0.78 | no |
+| glyphs 5% + word breaks 5% | 60 | -2.620 | 0.104 | 0.755 | 0.93 | 0.76 | 0.72 | no |
+| glyphs 10% | none (KL over 0.15; K 60 shown) | -2.880 | 0.209 | 0.637 | 0.87 | 0.74 | 0.50 | no |
+| glyphs 20% | none (K 60 shown) | -1.655 | 1.700 | 0.036 | 0.56 | 0.76 | -0.82 | no |
+| Voynich cells (tier 5) | | -2.87 to -3.05 | 0.22-0.41 | | 0.02-0.68 | 0.26-0.86 | -3.8 to +0.30 | no signal |
+
+- The rule is fragile to miscopied glyphs. The solver still recovers the plaintext at 2%, 5% and 10% glyph noise
+  (similarity 0.88, 0.77, 0.64) and the rule reports none of them: the per-character threshold, set 0.25 below a clean
+  calibration, is crossed at 2%. Moved word breaks do not matter up to 15%.
+- **Tier 5's 'no signal' therefore covers, by its own rule, a cipher copied with under about 2% glyph errors.** Two
+  transcribers of Voynich disagree on more glyphs than that, so the per-character score of tiers 2 to 5 cannot by
+  itself exclude a verbose cipher of this kind.
+- What still separates the Voynich cells from the noisy ciphers, read after the results and not part of the rule:
+  half-to-half key stability. Every noisy cipher up to 10% keeps its two halves' keys in agreement well above the
+  shuffled null (0.87-0.97 against 0.73-0.83; normalised 0.50-0.84). No Voynich cell does (normalised -3.8 to +0.30,
+  the two halves usually agreeing less than shuffled text). On that reading the tier-5 negative reaches about 10%
+  glyph noise; at 20% the solver collapses (similarity 0.04) and nothing is excluded.
+- Not tested: noise in the plaintext model's direction (another dialect or period), line-edge effects, a second key.
+
+Reproduction of tier 5: the tier-5 kernel was re-run on 11 Nov from the in-repo builder (`build_kernel5.py`); all 384
+results have identical keys and per-character scores to `kaggle_results/tier5/`, and `analysis.md` is identical.
+
+Reproduce (from `targets/voynich`): as tier 5 with the tier argument, `python verbose/kaggle_pkg/build_kernel5.py <out
+dir> <kaggle user> <user/dataset> 6`, `kaggle kernels push -p <out dir>`, `kaggle kernels output
+<user>/voynich-verbose-tier6`; or `python verbose/kaggle_pkg/gpu_sweep.py --tier 6 --out <dir>` then `python
+verbose/kaggle_pkg/analyze6.py <dir> verbose/kaggle_results/tier5`. Job list `sweep.jobs(6)`; raw results
+`kaggle_results/tier6/gpu_shard0.jsonl`, `gpu_shard1.jsonl`, `analysis.md` (about 1.5 h on 2 x T4).
+
 ## Where the verbose programme stands (29 Oct 2026)
 
 Validated pipeline (gates 2-5: plain, homophonic with unaligned spaces, abbreviated Latin, positional; all broken blind,
@@ -299,7 +342,7 @@ setting chosen blind) against every Voynich Currier and scribe group:
 | Latin, Italian, German 1470-1610, Catalan | 36-50, one letter each | no signal (tiers 1, full sweep) |
 | abbreviated Latin (ten scribal signs) | 42-60 | far from a decryption (tier 3; rule void on the stability flaw) |
 | Latin, Italian, German, abbreviated Latin, positional (one group, several letters) | 42-50 x 4 positions | no signal (tier 4) |
-| Latin, Italian with a 12-word nomenclator layer (11 Nov) | 42-50 + 16 word units | no signal (tier 5) |
+| Latin, Italian with a 12-word nomenclator layer (11 Nov) | 42-50 + 16 word units | no signal (tier 5); by the rule this covers under about 2% miscopied glyphs, by key stability about 10% (tier 6) |
 
 Excluded at this level: a verbose cipher in which each glyph group of 1-3 glyphs (fixed or by position in the word,
 with homophones and arbitrary spaces) stands for one letter or scribal sign of Latin, Italian, German or Catalan. Still

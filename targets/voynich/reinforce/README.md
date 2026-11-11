@@ -160,6 +160,9 @@ batch two writers; the writer level sits at small nodes (a page's worth) and the
 
 ### 4.1 A length budget between the slots (`lengths.py`, `lengths.md`)
 
+(Qualified in 4.6: the budget is found without the recipe as well, and Latin words have a stronger one against
+their own letter chain, so it is a constraint on generators and not a mark of Voynich.)
+
 Among words whose opener ends in the same glyph unit, a longer opener is followed by a shorter middle (r -0.22),
 and among words with the same last unit before the ending a longer stem gets a shorter ending (r -0.18); the
 variance of the word length is 0.70 of the sum of the slot variances. Resampling the middle and the ending from
@@ -328,6 +331,56 @@ Six variants, five seeds, copying at q = 0.1, b = 1, nothing tuned on the batter
   and the Jaccard excess are matched by two seeds of five. No variant passes 33 of 37. lang8 and emp8 borrow the
   convention from Voynich and are controls: they say what form the convention has, they are not generators of it.
 
+### 4.6 Robustness checks (`robust.py`, `recipe_free.py`; 11 Nov 2026, third session)
+
+**The ceiling of the battery, and held-out generation (`robust.md`).** One half of Voynich scored against the other
+with the b3 rule (the autocopist seeds regenerated on the reference half), both directions; and the two best v8
+variants built from one half and generated on the skeleton of the other ('held-out') beside built from and scored
+against the same half ('in-sample'); five seeds:
+
+| split, direction | tokens in the reference half | other half of Voynich /37 | /30 held-out items | lang8 in-sample | lang8 held-out | cat8p in-sample | cat8p held-out |
+|---|---|---|---|---|---|---|---|
+| odd / even pages, 0 | 17570 | 35 | 28 | 26-27 | 27-28 | 17-30 | 19-27 |
+| odd / even pages, 1 | 17264 | 36 | 29 | 34-36 | 34-35 | 29-34 | 24-34 |
+| alternate quires, 0 | 15950 | 33 | 27 | 34-36 | 28-30 | 28-34 | 24-29 |
+| alternate quires, 1 | 18884 | 30 | 25 | 31-33 | 31-33 | 20-32 | 23-31 |
+| first / second half, 0 | 9341 | 28 | 21 | 30-31 | 23-26 | 25-33 | 23-29 |
+| first / second half, 1 | 25493 | 22 | 16 | 27-28 | 21-24 | 23-31 | 21-30 |
+
+- Voynich does not match itself on all 37. Interleaved pages match on 35-36; alternate quires on 30-33; the two
+  halves of the book on 22-28. A generator at 31-33 of 37 against the whole book is where another set of quires of
+  the same book is, and three items below interleaved pages. The items the other half misses in the interleaved
+  split are the adjacent-page Jaccard excess (an artefact of removing every second page) and the scale of the
+  clustering peak.
+- The score moves by up to nine items with the half used as reference (lang8 in-sample 26-27 against 34-36 on the two
+  halves of the same split), because the tolerances come from two autocopist seeds on that half. Differences of one to
+  three items between generator variants, here and in sections 2 to 4.5, are inside this noise. The ranges over five
+  seeds were already as wide.
+- Held out, lang8 keeps its score when the source pages are interleaved with the target pages (27-28 against 26-27;
+  34-35 against 34-36) and loses up to six items when whole quires are held out in one direction (28-30 against
+  34-36; 31-33 against 31-33 in the other). The borrowed tables are not a page-level overfit; part of what they carry
+  is quire-level.
+
+**Without the word recipe (`recipe_free.md`).** The length budget, the switched convention and the A/B chaining
+difference restated on glyph units and whole words:
+
+- Length. Variance of word length over that of a unit Markov chain fitted to the same tokens: Voynich 0.31 / 0.70 /
+  0.90 (orders 1, 2, 3), Naibbe 0.23 / 0.62 / 0.87, Latin 0.19 / 0.33 / 0.62. The budget of 4.1 is there without the
+  recipe (0.70 at order 2, the same number as the recipe's variance ratio), **and it is not a property of Voynich**:
+  Latin words are narrower still against their own letter chain. Any vocabulary of real words has it. 4.1's reading
+  ('the word is not a concatenation of independent draws') stands as a constraint on generators and says nothing
+  about what kind of text this is.
+- Convention. Share of values switched and size of a switch by language: whole words 0.09 and 3.49 (a factor of
+  33), first unit 0.08 and 1.31, last unit 0.19 and 0.37. The few large switches of 4.5 are a property of whole
+  words and of the recipe's endings; the last glyph alone does not carry them (-edy and -y end in the same glyph).
+- Chaining. Next-unit models on held-out pages (odd/even, both directions), bits per unit: per-language chain less
+  the book chain with a language tilt of unit frequencies, -0.035 to -0.044 at order 1 (pseudocounts 1, 10, 100; all
+  intervals below zero); at order 2, +0.012 with pseudocount 1 and -0.016, -0.029 with 10 and 100 (added after the
+  first run: a context-by-language cell is thin at order 2). A and B differ in how units follow one another beyond
+  unit frequencies, without the recipe; at order 2 the size depends on the smoothing.
+
+Both hold on the Takahashi and RF transliterations (`lines/README.md` s8.2).
+
 ## What this adds, and what is next
 
 - Whole-word re-use in Voynich lives at the hand, section and quire levels (13-18% of draws each), five to ten
@@ -353,6 +406,12 @@ Six variants, five seeds, copying at q = 0.1, b = 1, nothing tuned on the batter
   separate that from a normal tilt, and part of v7's shortfall was its exponent of 0.75. Voynich's own context-free
   convention gives three quarters of the A/B difference; separate transition tables for A and B give 0.092-0.095 of
   0.101 and 31-33 of 37 on every seed. A and B differ in the chaining rule as well as in slot frequencies.
+- (11 Nov, robustness) Half of Voynich matches the other half on 35-36 of 37 items with interleaved pages, 30-33
+  with alternate quires: the generators (31-33) are at the level of another set of quires, and differences of one to
+  three items between variants are inside the noise of the rule. The best variant keeps its score when built from
+  interleaved held-out pages. The length budget survives without the recipe but Latin has a stronger one: it is a
+  property of any real vocabulary. The A/B chaining difference survives without the recipe and on three
+  transliterations.
 - Next: a generator that draws the chaining difference itself (switches on context-value pairs, not on values),
   and the remaining clustering beyond the page (JSD halves, the peak).
 
@@ -375,6 +434,7 @@ sweeps (default 60). Generators need the fits of their own script and the ones n
 | 4.2 | `python reinforce/product.py heldout <text> <slot> [len]` for text voynich, v4, v5 and slot opener, middle, ending (with and without `len`), then `python reinforce/product.py report` | `product_heldout_<text>_<slot>[_len].json`, `product_heldout.md` |
 | 4.3 | `python reinforce/slots6.py fit opener`, `fit middle`, `fit ending`; `python reinforce/slots6.py generate len5 prod6 prod6g prod6t prod6e`; `python reinforce/slots6.py report` (needs 4.2's weights) | `slots6_fit_<slot>.json`, `slots6_gen_<variant>.json`, `slots6_gen.md`, `slots6_gen_results.json` |
 | 4.4 | `python reinforce/slots7.py generate tilt7_q0 tilt7_q10 tilt7_q20 notilt7_q10`; `python reinforce/slots7.py report` (needs 4.2's weights) | `slots7_gen_<variant>.json`, `slots7_gen.md`, `slots7_gen_results.json` |
+| 4.6 | `python reinforce/robust.py run oddeven quires halves` (about 15 minutes a split); `python reinforce/robust.py report`; `python reinforce/recipe_free.py` | `robust_<split>.json`, `robust_results.json`, `robust.md`; `recipe_free_results.json`, `recipe_free.md` |
 | 4.5 | `python reinforce/slots8.py generate norm8 cat8 emp8 cat8p emp8p lang8`; `python reinforce/slots8.py report` (about 2 minutes a variant; the report also reads 4.3's prod6e and 4.4's tilt7_q10 files) | `slots8_gen_<variant>.json`, `slots8_gen.md`, `slots8_gen_results.json` |
 
 The battery and its match rule are `b3_bakeoff.py` (`battery`, `score`); the held-out items are those outside

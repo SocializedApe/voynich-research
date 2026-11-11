@@ -18,6 +18,8 @@ Job grid:
 Solver: solver.solve (60,000 iterations x 4 restarts). Recorded per job: objective, per-character LM score, letter KL to
 the language, the key (unit -> letter), first 400 decrypted letters, similarity to the plaintext where known.
 
+Tier 6 = how much copying noise the tier-5 solver survives: syn_gate7 with glyphs miscopied (2, 5, 10, 20%), word breaks
+moved (5, 15%) or both (5% + 5%), variant nom against la-nom, K 42, 50, 60 (252 jobs; 11 Nov 2026).
 Tier 5 = nomenclator layer (variant nom: the 16 commonest cipher words of 4+ glyphs are whole-word units; plaintext
 models la-nom / it-nom with 12 word symbols; verbose/nomen.py) on every Voynich text and syn_gate7; run 11 Nov 2026.
 Tier 4 = positional units (variant rawpos: every unit tagged start/mid/end/only) on every Voynich text in la, it,
@@ -40,6 +42,9 @@ LANGS4 = ('la', 'it', 'de', 'lab')
 KS4_VOY, KS4_SYN = (42, 50), (36, 42, 50, 60)
 LANGS = {'la': 'la', 'it': 'it-cinquecento', 'de': 'de-1500s', 'ca': 'ca-modern', 'lab': 'la-abbr', 'lan': 'la-nom', 'itn': 'it-nom'}
 SYN5 = ['syn_gate7']   # tier 5: nomenclator layer (verbose/nomen.py)
+# tier 6: the calibration cipher with copying noise (see noisy()); g = glyphs miscopied, w = word breaks moved, in %
+SYN6 = ['syn_gate7~g02', 'syn_gate7~g05', 'syn_gate7~g10', 'syn_gate7~g20', 'syn_gate7~w05', 'syn_gate7~w15', 'syn_gate7~g05w05']
+KS6 = (42, 50, 60)
 NCAND, MINLEN = 16, 4   # tier 5 cipher side, as fixed in nomen.py
 LANGS_012 = ('la', 'it', 'de', 'ca')
 KS3 = (42, 50, 60)
@@ -55,6 +60,11 @@ TIER1 = dict(text={'voy_A_herbal', 'voy_B_herbal', 'voy_A_all', 'voy_B_all', 'sy
 
 def jobs(tier=0):
     out = []
+    if tier == 6:
+        for text, k, part, seed in itertools.product(SYN6, KS6, PARTS3, SEEDS):
+            out.append(dict(text=text, lang='lan', variant='nom', K=k, part=part, seed=seed))
+        for j in out: j['id'] = '|'.join(str(j[x]) for x in ('text', 'lang', 'variant', 'K', 'part', 'seed'))
+        return out
     if tier == 5:
         for text in VOY + SYN5:
             langs = ('lan', 'itn') if text in VOY else ('lan',)
@@ -99,9 +109,35 @@ def load_lm(lang):
     return _cache[lang]
 
 
+def noisy(lines, spec):
+    """copying noise on a cipher text (tier 6). spec 'g05': every glyph is replaced with probability 0.05 by a glyph
+    drawn from the glyph frequencies of the text; 'w15': every word break is dropped with probability 0.15 and every
+    word of 4+ glyphs is split in two at a random point with probability 0.15; 'g05w05': both. Seed fixed."""
+    import re
+    rng = random.Random(31); g = re.search(r'g(\d+)', spec); w = re.search(r'w(\d+)', spec)
+    pool = [c for ln in lines for x in ln for c in x]
+    if g:
+        e = int(g.group(1)) / 100
+        lines = [[''.join(rng.choice(pool) if rng.random() < e else c for c in x) for x in ln] for ln in lines]
+    if w:
+        e = int(w.group(1)) / 100; out = []
+        for ln in lines:
+            cur = []; glue = False
+            for x in ln:
+                parts = [x]
+                if len(x) >= 4 and rng.random() < e:
+                    i = rng.randint(1, len(x) - 1); parts = [x[:i], x[i:]]
+                if glue and cur: cur[-1] += parts[0]; parts = parts[1:]
+                cur += parts; glue = rng.random() < e
+            out.append(cur)
+        lines = out
+    return lines
+
+
 def text_words(text, variant):
-    t = json.load(open(os.path.join(DATA, 'texts', text + '.json'), encoding='utf-8'))
-    lines = t['lines']
+    base, _, spec = text.partition('~')
+    t = json.load(open(os.path.join(DATA, 'texts', base + '.json'), encoding='utf-8'))
+    lines = noisy(t['lines'], spec) if spec else t['lines']
     if variant.startswith('nogal'):
         lines = [[ln[0][1:] if ln and ln[0][:1] in GALLOWS and len(ln[0]) > 1 else ln[0]] + ln[1:] for ln in lines if ln]
     return [w for ln in lines for w in ln if w], t.get('truth')

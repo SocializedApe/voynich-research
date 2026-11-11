@@ -23,6 +23,7 @@
 | Auchinleck manuscript item list | `targets/voynich/meaning/data/auchinleck_raw/` | item-to-scribe list from the National Library of Scotland's online Auchinleck edition (auchinleck.nls.uk); page texts are not included |
 | Herbal / pharmaceutical plant pairs | `targets/voynich/meaning/data/voynich_nu/` | voynich.nu |
 | Naibbe cipher tables (not included) | | Greshko, github.com/greshko/naibbe-cipher (`references/naibbe_tables.csv`) |
+| Line-by-line transcriptions of medieval manuscripts (not included; fetched by `targets/voynich/lines/fetch_mss.py`, text only) | `targets/voynich/data/external/cremma/` | Cremma Medieval (Pinche et al., CremmaLab; Old French) and CREMMA Medii Aevi (Clérice et al.; Latin), HTR-United, github.com/HTR-United/cremma-medieval and /cremma-medieval-lat; CC BY 4.0; authors and citation in each repository's `htr-united.yml` and citation file |
 | Language corpora (not included) | | Project Gutenberg and other public-domain texts; see `lang/README.md` |
 
 ## Prior work this builds on or agrees with

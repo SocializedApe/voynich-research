@@ -162,6 +162,9 @@ stock; whether a practised writer of one taught system would is untested, there 
 
 ## 12. Second session of 10-11 Nov 2026: lines are composed, not wrapped; the word needs a length budget
 
+**Corrected in section 15: the "not wrapped" argument is withdrawn (real manuscripts show the same), and the length
+budget is not specific to Voynich.**
+
 - The first word of a line is as much longer as wrapping any text would make it (+0.41 to +0.46 of +0.48 glyphs),
   but it is not the word that did not fit: its length is unrelated to the space left on the line above (r -0.01;
   wrapping 0.09-0.38). The last word is built to the remaining space in a vocabulary of its own, with endings (-am,
@@ -206,6 +209,38 @@ closer and not reached. Table: `reinforce/README.md` s4.5.
 Reproduce (from `targets/voynich`): `python reinforce/slots8.py generate norm8 cat8 emp8 cat8p emp8p lang8`, then
 `python reinforce/slots8.py report` -> `reinforce/slots8_gen.md`.
 
+## 15. 11 Nov 2026: robustness checks, with two withdrawals
+
+Seven checks of the November results. What changed:
+
+- **Withdrawn: "lines are composed, not wrapped".** 35 real manuscripts transcribed line by line (15,118 lines of
+  prose) show no overflow correlation either (r -0.009; Voynich -0.011; the wrapping simulation +0.35 to +0.55 on the
+  same words) and fit the last word to the space more strongly than Voynich. Scribes break words and fill lines. The
+  missing overflow word is not evidence against copying from an exemplar or against a cipher written out line by line.
+- **Weakened: "lines are not list items".** Real verse fills its lines as evenly as Voynich.
+- **Not specific to Voynich: the length budget.** Latin words are narrower against their own letter chain than
+  Voynich words are.
+- **Stands, now against real manuscripts: the coupling between adjacent words stops at the line break** (Voynich
+  0.062 within a line, 0.001 across; real prose 0.039 and 0.030).
+- **Stands: A and B differ in the chaining rule**, without the word recipe (per-language unit chain better by 0.04
+  bits per unit on held-out pages) and on three transliterations; the few large switches hold for whole words.
+- **Generator scores recalibrated.** Half of Voynich matches the other half on 35-36 of 37 battery items (interleaved
+  pages) or 30-33 (alternate quires). The generators' 31-33 is the level of another set of quires of the same book,
+  and one to three items of difference between variants is noise. The best variant keeps its score on held-out
+  interleaved pages.
+- Three transliterations (ZL, Takahashi, RF) agree on every measure.
+- A fresh clone of commit 16a25e4 with the git-ignored inputs copied in regenerates every table of `lines/`
+  (sections 1-7), `reinforce/lengths.md`, `product_heldout.md`, `slots7_gen.md` and `slots8_gen.md` with no changed
+  line other than the runtime. Not rerun there: the Gibbs fits (`hpy.py fit`, `slots*.py fit`, hours) and
+  `volunteers.py`.
+- **Scope of the cipher negative narrowed.** The solver recovers a planted cipher with up to 10% of its glyphs
+  miscopied, but the pre-set detection rule already fails at 2%. By its own rule the 'no signal' of section 13 covers
+  only a nearly clean cipher; by the stability of the key between two halves of the text (read after the results) it
+  reaches about 10% miscopying. The tier-5 run itself reproduces bit for bit.
+Tables: `lines/README.md` s8, `reinforce/README.md` s4.6, `verbose/README.md` tier 6. Reproduce (from
+`targets/voynich`): `python lines/fetch_mss.py`, `python lines/manuscripts.py`, `python lines/translit.py`, `python
+reinforce/robust.py run oddeven quires halves`, `python reinforce/robust.py report`, `python reinforce/recipe_free.py`.
+
 ## Where this leaves the hypotheses
 
 Best supported: meaningless text, made page by page by several people from one shared, learned word template, each
@@ -222,7 +257,7 @@ phrases.
 
 ## Files
 
-- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#63 plus the 29 Oct homophone tests), and the hypothesis table.
+- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#68 plus the 29 Oct homophone tests), and the hypothesis table.
 - `meaning/README.md`, `verbose/README.md`, `glyphs/README.md`, `controls2/README.md`, `lines/README.md`, `reinforce/README.md`: detailed tables per programme.
 - `data/`: ZL3b transliteration (René Zandbergen, voynich.nu), parsed to words.
 - Bulky regenerable data (language-model tables, transformer checkpoints) is archived in the private Kaggle dataset

@@ -95,6 +95,9 @@ excess against null B (+5%, z 3.7) is unexplained and not pursued.
 
 ## 5. Wrapping: the first word is long but it is not an overflow word (`wrapping.py`, second session, 10 Nov 2026)
 
+**Correction (section 8.1): real copied manuscripts show no overflow correlation either, so the absence of one in
+Voynich is not evidence that its lines were composed. The measurements below stand; the conclusion does not.**
+
 Section 2 read the longer first word and the shorter last word as a shaped line. Wrapping any stream of words into
 lines of limited width selects by length (the word that did not fit opens the next line), and the controls of
 `boundaries.py` were poured in by word count, so they could not show it. Here streams are wrapped greedily into the
@@ -235,6 +238,67 @@ gone as a whole (variance ratio 0.97 against 0.70), though it holds within chain
 are nearer line-last words than interior or line-first words, without being like any of them. Limit: labels sit in
 the zodiac, astronomical and pharmaceutical pages, the reference groups are all paragraphs; section is confounded.
 
+## 8. Robustness (11 Nov 2026, third session): real manuscripts, other transliterations
+
+### 8.1 Real manuscripts have no overflow signal either: sections 5-7 corrected (`fetch_mss.py`, `manuscripts.py`, `manuscripts.md`)
+
+Sections 5 to 7 compared Voynich with text wrapped by a simulation. The same functions were run on line-by-line
+graphic transcriptions of 35 real manuscripts (CREMMA Medieval, Old French, and CREMMA Medieval LAT, Latin; about
+30,000 main-text lines; one column of a page as the unit a paragraph is for Voynich; genre set by hand before the
+run). The reading was fixed in the docstring before the run: r near 0 in real prose means the missing overflow signal
+is what scribes do and section 5 is withdrawn as evidence against copying.
+
+| text | lines | fill CV | first - interior | last - interior | r(slack, next first) [95%] | r(space, last word) | coupling within line | across line break |
+|---|---|---|---|---|---|---|---|---|
+| Voynich | 4130 | 0.16 | +0.48 | -0.31 | -0.011 [-0.038, +0.016] | +0.27 | 0.062 | 0.001 |
+| real prose, French (6 mss) | 10284 | 0.13 | +0.01 | -0.02 | -0.011 [-0.034, +0.012] | +0.52 | 0.015 | 0.033 |
+| real prose, Latin (14 mss) | 4834 | 0.12 | +0.32 | +0.31 | -0.001 [-0.045, +0.049] | +0.35 | 0.044 | 0.023 |
+| real prose, both | 15118 | 0.13 | +0.16 | +0.14 | -0.009 [-0.032, +0.010] | +0.43 | 0.039 | 0.030 |
+| real verse, French (5 mss) | 9368 | 0.12 | -1.70 | +2.44 | -0.029 [-0.066, +0.012] | +0.49 | 0.014 | 0.010 |
+| real verse, Latin (5 mss) | 1304 | 0.22 | -1.79 | +0.46 | +0.034 [-0.091, +0.146] | +0.20 | 0.024 | 0.005 |
+| the prose pool re-wrapped by the simulation (J 0 / 4 / 8) | | 0.06-0.11 | +1.12 to +1.16 | +0.07 to +0.09 | +0.35 to +0.55 | +0.64 to +0.71 | 0.037 | 0.019-0.021 |
+
+(Coupling here is on characters, for all rows including Voynich; r with the slack measured in pixels from the page
+coordinates is the same, -0.008 for the prose pool. Per-manuscript rows in `manuscripts.md`: of 17 prose manuscripts
+with 150+ lines, 2 have an interval above zero, 2 below.)
+
+- **Withdrawn.** Real copied prose has no overflow correlation (-0.009), where the simulation gives +0.35 to +0.55
+  for the very same words. Scribes break words at the line end and fill the line; a transliteration counts the two
+  halves as two words. Voynich's r = -0.01 is what a copied manuscript looks like. Section 5's conclusion ("the first
+  word is not the word that did not fit, so the lines were not cut from a stream of ready words") and the sentence of
+  section 6 that builds on it do not follow, and the wrapping simulation is not a valid stand-in for a scribe.
+- **Withdrawn.** The last word fitted to the remaining space (section 6: r +0.27) is stronger in real manuscripts
+  (+0.43), for the same reason. It is not a mark of composition.
+- **Weakened.** Section 7's "not a list" rested on the fill of a line being more even (CV 0.16) than Vulgate verses
+  (0.43-0.50). Real verse manuscripts, one verse a line, fill as evenly (French 0.12, Latin 0.22). A list of items of
+  regular length is not excluded by the fill.
+- **Stands, and is now tested against real manuscripts.** The coupling between adjacent words stops at the line break
+  in Voynich (0.062 within a line, 0.001 across) and does not in real prose (0.039 within, 0.030 across; French
+  higher across than within, as broken words would give). Section 1 is the line result that separates Voynich from
+  copied text. The first-word and last-word vocabulary of sections 2 and 6 was not re-tested on the manuscripts
+  (their first 'word' is often a fragment); the last word is shorter in Voynich (-0.31) and not in real prose (+0.14).
+- Limits: character counts stand in for width (abbreviation marks, letter widths); the columns are HTR ground truth
+  samples of a few pages per manuscript; Voynich may itself contain words broken at line ends, which no
+  transliteration marks.
+
+### 8.2 Three transliterations agree (`translit.py`, `translit.md`)
+
+The main measures on ZL, Takahashi (IT) and the RF reference text, same functions, paragraph starts from ZL by line id
+(the IT and RF word files had lost them; found when RF first gave r = +0.10 with every page one paragraph):
+
+| measure | ZL | IT | RF |
+|---|---|---|---|
+| r(slack, next first word) | -0.011 | +0.008 | +0.009 |
+| first / last word - interior (chars) | +0.48 / -0.31 | +0.29 / -0.53 | +0.40 / -0.36 |
+| edge coupling within line / across line break | 0.0597 / 0.0010 | 0.0566 / 0.0001 | 0.0583 / 0.0015 |
+| within-context r of slot lengths (opener-middle / stem-ending) | -0.225 / -0.182 | -0.207 / -0.184 | -0.212 / -0.169 |
+| JSD A vs B | 0.101 | 0.102 | 0.102 |
+| share of endings switched by language / size of a switch | 0.05 / 3.78 | 0.05 / 3.81 | 0.05 / 3.76 |
+| per-language unit chain - tilt, bits/unit | -0.040 | -0.040 | -0.039 |
+
+Nothing reported in November depends on the choice among these three. The first-word and last-word offsets vary by
+0.2 glyphs between transcribers (word breaks at the line edges are where they differ). GC (v101 alphabet) was not run.
+
 ## Reproduce
 
 All commands are run from `targets/voynich` (Python 3 with numpy; the scripts are seeded, so reruns give the same
@@ -252,6 +316,8 @@ its docstring and writes a `*_results.json` beside the `.md` table it prints.
 | 7 (list, squeezed last word) | `python lines/listcipher.py` (needs `data/corpora/bible_lat.txt`) | `lines/listcipher_results.json`, `listcipher.md` |
 | 7 (m words) | `python lines/lineend.py` | `lines/lineend_results.json`, `lineend.md` |
 | 7 (labels) | `python lines/labels.py` | `lines/labels_results.json`, `labels.md` |
+| 8.1 | `python lines/fetch_mss.py` (downloads the CREMMA transcriptions, text only, into `data/external/cremma/`), then `python lines/manuscripts.py` | `lines/manuscripts_results.json`, `manuscripts.md` |
+| 8.2 | `python lines/translit.py` (needs `data/IT2a-n.words.tsv`, `data/RF1b-er.words.tsv`, written by `parse_ivtff.py` from the files `fetch_corpora.py` downloads) | `lines/translit_results.json`, `translit.md` |
 
 Loader shared by all of them: `lines/common.py` (`pages()`, `controls()`, `units()`).
 
@@ -269,6 +335,11 @@ Loader shared by all of them: `lines/common.py` (`pages()`, `controls()`, `units
   built to the space left, in a vocabulary of its own, with endings (-am, -om, -y) that A and B share; the A/B
   ending convention weakens by 40% there.
 
+- (11 Nov, third session; corrects the two bullets around this one) Real manuscripts copied line by line show no
+  overflow correlation and fit their last word to the space more strongly than Voynich: neither is evidence of
+  composition, and regular verse fills lines as evenly as Voynich. What separates Voynich from 35 real manuscripts is
+  the coupling between words stopping at the line break (0.062 to 0.001; real prose 0.039 to 0.030). Three
+  transliterations agree on every measure.
 - (11 Nov) Lines are filled to a margin and are not list items; no rate of cutting the overflow word gives both
   Voynich's missing overflow signal and its last-word length; the line-final m words are a line-end form used at a
   fixed rate, not padding; labels follow the word recipe without the line effects and without the length budget.
