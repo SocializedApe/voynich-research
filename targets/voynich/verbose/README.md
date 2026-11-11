@@ -80,7 +80,7 @@ two-glyph codes, no alternative codes, and its spaces are the plaintext's word b
 
 ## Gate 3 and exploratory Voynich run (`gate3.py`, `voy1.py`; protocols in the scripts)
 
-The local run of `gate3.py` was stopped after its first setting (K 36: similarity 0.092; log `gate3_run.log`) once the
+The local run of `gate3.py` was stopped after its first setting (K 36: similarity 0.092) once the
 GPU calibration below had run gate 3 at every setting (passed, 0.989).
 
 ### Exploratory Voynich run (`voy1.py`, gate-2 pipeline): no signal

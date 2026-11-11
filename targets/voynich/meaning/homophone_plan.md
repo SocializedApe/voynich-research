@@ -1,7 +1,7 @@
 # Whole-word code with homophones: two planned tests (written 29 Oct 2026; both run 29 Oct 2026: H2 power check failed, H1 not a fit)
 
-Status: H2 run (`homclass.py`, log `homclass_run.log`, results `homclass_results.json`); its power check failed, so H2 cannot
-decide at Voynich's length. H1 run (`habitcode.py`, `habitcode_run.log`, `habitcode_results.json`): not a fit.
+Status: H2 run (`homclass.py`, results `homclass_results.json`); its power check failed, so H2 cannot
+decide at Voynich's length. H1 run (`habitcode.py`, `habitcode_results.json`): not a fit.
 
 ## Why the hypothesis needs a new test
 

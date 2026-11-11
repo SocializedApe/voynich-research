@@ -439,8 +439,8 @@ sweeps (default 60). Generators need the fits of their own script and the ones n
 
 The battery and its match rule are `b3_bakeoff.py` (`battery`, `score`); the held-out items are those outside
 `hybrid_model.TUNED_B3` (`research/voynich_siblings/`); scribe ratios and drift are `hpy.scribe_ratios`, `hpy.drift`;
-the reference rows (Voynich, autocopist) are cached in `reinforce/reference_battery.json`. Run logs of this session's
-runs are in `reinforce/logs/`.
+the reference rows (Voynich, autocopist) are cached in `reinforce/reference_battery.json`. Run logs are not kept in
+the repository (`*.log` is git-ignored).
 
 ## Files
 
@@ -449,7 +449,7 @@ runs are in `reinforce/logs/`.
 (`slots_fit.json`, `slots_gen.md`), `slots2.py` (`slots2_ot_*`, `slots2_ome_*`), `slots3.py` (`slots3_*`), `slots4.py` (`slots4_*`), `slots5.py` (`slots5_*`).
 Second session: `lengths.py` (`lengths.md`, `lengths_results.json`), `product.py` (`product_heldout.md`,
 `product_heldout_<text>_<slot>[_len].json`), `slots6.py` (`slots6_fit_<slot>.json`, `slots6_gen_<variant>.json`,
-`slots6_gen.md`, `slots6_gen_results.json`), `slots7.py` (`slots7_gen_<variant>.json`, `slots7_gen.md`), `slots8.py` (`slots8_gen_<variant>.json`, `slots8_gen.md`, `slots8_gen_results.json`); run logs in `logs/`.
+`slots6_gen.md`, `slots6_gen_results.json`), `slots7.py` (`slots7_gen_<variant>.json`, `slots7_gen.md`), `slots8.py` (`slots8_gen_<variant>.json`, `slots8_gen.md`, `slots8_gen_results.json`).
 `volunteers.py` (the volunteers with their own lines and pages: loader, line tests, whole-word and slot fits on both
 corpora with the neutral split; `gibberish_fit.md`, `gibberish_lines.json`, `gibberish_writers.json`, `gibberish_reuse.json`,
 `gibberish_habit.json`, `gibberish_slots_gib.json`, `gibberish_slots_voy.json`).
