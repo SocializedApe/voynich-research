@@ -2,10 +2,11 @@
 
 ## People
 
-- **dbourdeau** (github.com/dbourdeau): co-author of the cyphersolver project this work grew out of. The September
+- **dbourdeau** (github.com/dbourdeau): author of the cyphersolver project, which was the starting point of this
+  work: this repository began from that material and builds on it. The September
   2026 Voynich baseline (`targets/voynich/a1`-`a6`, `b1`-`b4`, `c1`-`c3`, `NOTES.md`), the cipher and copying-scribe
   models in `research/voynich_siblings/`, the `lang/` language-model code and the period cipher transcriptions in
-  `targets/voynich/data/period/` were built in that shared project.
+  `targets/voynich/data/period/` come from or were started in that project.
 - The author of this repository: the October 2026 work (`targets/voynich/meaning/`, `verbose/`, `controls2/`, `tfm/`,
   `glyphs/`, the homophone tests and the write-up).
 - Written with an LLM coding agent (Claude, Anthropic); see the caveat in `targets/voynich/README.md`.

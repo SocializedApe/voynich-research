@@ -56,7 +56,7 @@ Greshko's Naibbe cipher. Detailed tables live in the linked READMEs.
 
 ## 2. Where the hypotheses stand (judgement*)
 
-**Overall judgement (29 Oct 2026, after #41-#45; cryptocypher-4a session).** The leading account is meaningless text
+**Overall judgement (29 Oct 2026, after #41-#45).** The leading account is meaningless text
 made page by page by several makers from one shared, rigid word template. For it: no calibrated cipher search finds
 anything (#41-#45 here; Zhang & Sheng, arXiv 2610.34499, across 16 languages and most cipher families); the scribes
 differ as much as independent gibberish writers and twice as much as real scribes copying a real text (#20, #22); a
