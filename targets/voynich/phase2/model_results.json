@@ -1,0 +1,980 @@
+{
+ "n_train": 908,
+ "n_features": 68,
+ "counts": "{('cipher', 'abjad'): 49, ('cipher', 'anagram'): 50, ('cipher', 'codebook'): 50, ('cipher', 'digraphic'): 50, ('cipher', 'homophonic'): 50, ('cipher', 'nulls'): 50, ('cipher', 'respace'): 50, ('cipher', 'verbose'): 50, ('generated', 'bag'): 50, ('generated', 'markov1'): 50, ('generated', 'markov2'): 50, ('generated', 'markov3'): 50, ('generated', 'selfcite'): 40, ('generated', 'table'): 40, ('natural', 'plain'): 229}",
+ "C1": {
+  "logistic": {
+   "auc": 1.0,
+   "acc": 0.998898678414097
+  },
+  "forest": {
+   "auc": 1.0,
+   "acc": 1.0
+  },
+  "boosting": {
+   "auc": 0.9993061874431302,
+   "acc": 0.998898678414097
+  }
+ },
+ "C2": {
+  "abjad": {
+   "logistic": 0.9795918367346939,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "meaningful",
+   "n": 49
+  },
+  "anagram": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "meaningful",
+   "n": 50
+  },
+  "bag": {
+   "logistic": 0.94,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "generated",
+   "n": 50
+  },
+  "codebook": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 0.56,
+   "truth": "meaningful",
+   "n": 50
+  },
+  "digraphic": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "meaningful",
+   "n": 50
+  },
+  "homophonic": {
+   "logistic": 0.94,
+   "forest": 1.0,
+   "boosting": 0.98,
+   "truth": "meaningful",
+   "n": 50
+  },
+  "markov1": {
+   "logistic": 0.98,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "generated",
+   "n": 50
+  },
+  "markov2": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "generated",
+   "n": 50
+  },
+  "markov3": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "generated",
+   "n": 50
+  },
+  "nulls": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "meaningful",
+   "n": 50
+  },
+  "respace": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "meaningful",
+   "n": 50
+  },
+  "selfcite": {
+   "logistic": 0.0,
+   "forest": 0.0,
+   "boosting": 0.0,
+   "truth": "generated",
+   "n": 40
+  },
+  "table": {
+   "logistic": 1.0,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "generated",
+   "n": 40
+  },
+  "verbose": {
+   "logistic": 0.9,
+   "forest": 1.0,
+   "boosting": 1.0,
+   "truth": "meaningful",
+   "n": 50
+  }
+ },
+ "C3": {
+  "logistic": 1.0,
+  "forest": 1.0,
+  "boosting": 1.0,
+  "n": 29
+ },
+ "C5": {
+  "threshold": 7.102249647178035,
+  "median_reference": 3.548027376826462
+ },
+ "held_out": {
+  "mimic|autocopist": {
+   "n": 6.0,
+   "p_logistic": 0.0004589432488022103,
+   "p_forest": 0.7799999999999999,
+   "p_boosting": 0.7234770708917783,
+   "p3_natural": 0.10875094435289677,
+   "p3_cipher": 0.5660160071705874,
+   "p3_generated": 0.32523304847651585,
+   "dist": 10.14186972391773,
+   "dist_pct": 0.987151248164464,
+   "in_dist": 0.0
+  },
+  "mimic|lang8": {
+   "n": 4.0,
+   "p_logistic": 0.025138928246461186,
+   "p_forest": 0.534,
+   "p_boosting": 0.9451228797211506,
+   "p3_natural": 0.0011478202712687615,
+   "p3_cipher": 0.996191695861099,
+   "p3_generated": 0.0026604838676322234,
+   "dist": 6.611054833295412,
+   "dist_pct": 0.9317180616740088,
+   "in_dist": 4.0
+  },
+  "mimic|naibbe": {
+   "n": 4.0,
+   "p_logistic": 0.02951057273032312,
+   "p_forest": 0.127,
+   "p_boosting": 0.06033143979978519,
+   "p3_natural": 8.154900488188486e-05,
+   "p3_cipher": 0.003173962538193099,
+   "p3_generated": 0.996744488456925,
+   "dist": 7.156985234175645,
+   "dist_pct": 0.950715859030837,
+   "in_dist": 2.0
+  },
+  "mimic|rugg": {
+   "n": 4.0,
+   "p_logistic": 0.2728791439085514,
+   "p_forest": 0.833,
+   "p_boosting": 0.9995982628800719,
+   "p3_natural": 0.0002834861751558025,
+   "p3_cipher": 0.9997133409223129,
+   "p3_generated": 3.1729025313463366e-06,
+   "dist": 25.883803283236944,
+   "dist_pct": 1.0,
+   "in_dist": 0.0
+  },
+  "mimic|volunteers": {
+   "n": 2.0,
+   "p_logistic": 0.8439707241923033,
+   "p_forest": 0.6990000000000001,
+   "p_boosting": 0.9979793744481761,
+   "p3_natural": 5.3713045947885835e-05,
+   "p3_cipher": 0.999945053064662,
+   "p3_generated": 1.2338893901277442e-06,
+   "dist": 6.665687540201757,
+   "dist_pct": 0.9361233480176212,
+   "in_dist": 2.0
+  },
+  "voynich|IT units": {
+   "n": 8.0,
+   "p_logistic": 0.3430516270372856,
+   "p_forest": 0.88875,
+   "p_boosting": 0.9998750115470991,
+   "p3_natural": 0.0005213424249546943,
+   "p3_cipher": 0.9994556059576037,
+   "p3_generated": 2.305161744158618e-05,
+   "dist": 7.6975139998743565,
+   "dist_pct": 0.9646200440528634,
+   "in_dist": 1.0
+  },
+  "voynich|ZL EVA characters": {
+   "n": 8.0,
+   "p_logistic": 0.28295020368825474,
+   "p_forest": 0.87025,
+   "p_boosting": 0.9999083444906445,
+   "p3_natural": 0.0002781783304334441,
+   "p3_cipher": 0.999703407834921,
+   "p3_generated": 1.8413834645534034e-05,
+   "dist": 7.510614212481258,
+   "dist_pct": 0.959113436123348,
+   "in_dist": 1.0
+  },
+  "voynich|ZL units": {
+   "n": 8.0,
+   "p_logistic": 0.29070907388498,
+   "p_forest": 0.8865000000000001,
+   "p_boosting": 0.9999426980951519,
+   "p3_natural": 0.0007057072559556582,
+   "p3_cipher": 0.9992724586485047,
+   "p3_generated": 2.1834095539705648e-05,
+   "dist": 7.647614561585828,
+   "dist_pct": 0.9636563876651982,
+   "in_dist": 1.0
+  }
+ },
+ "C4": {
+  "autocopist": false,
+  "rugg": false,
+  "volunteers": false,
+  "lang8": false,
+  "naibbe": false
+ },
+ "conditions": {
+  "C1 leave-source-out AUC >= 0.95": true,
+  "C2 leave-process-out mean recall >= 0.8, none under 0.5": false,
+  "C3 other genres recall >= 0.9": true,
+  "C4 all mimic families on the right side": false,
+  "C5 at least 6 of 8 Voynich chunks in distribution": false
+ },
+ "verdict": "no verdict (failed: C2 leave-process-out mean recall >= 0.8, none under 0.5; C4 all mimic families on the right side; C5 at least 6 of 8 Voynich chunks in distribution)",
+ "nearest": [
+  [
+   "natural / plain / Syriac-NT",
+   12
+  ],
+  [
+   "generated / table / table33",
+   8
+  ],
+  [
+   "generated / table / table34",
+   6
+  ],
+  [
+   "cipher / digraphic / Quichua-NT",
+   6
+  ],
+  [
+   "natural / plain / manuscript:bnf_fr_844-manuscritDuRoi",
+   5
+  ],
+  [
+   "natural / plain / manuscript:bnf_fr_22549-septSages",
+   5
+  ],
+  [
+   "generated / table / table0",
+   5
+  ],
+  [
+   "natural / plain / Hebrew",
+   5
+  ],
+  [
+   "generated / table / table23",
+   4
+  ],
+  [
+   "generated / table / table37",
+   4
+  ],
+  [
+   "generated / table / table1",
+   4
+  ],
+  [
+   "cipher / anagram / Syriac-NT",
+   3
+  ],
+  [
+   "generated / table / table20",
+   3
+  ],
+  [
+   "generated / table / table27",
+   2
+  ],
+  [
+   "generated / table / table12",
+   2
+  ]
+ ],
+ "features": [
+  {
+   "feature": "c_h1",
+   "voynich": 3.857168901993358,
+   "natural_median": 4.170060324977031,
+   "pct_in_natural": 0.08733624454148471,
+   "z_natural": -0.6390053462948679,
+   "z_cipher": -0.7235783999649176,
+   "z_generated": -0.605047209881992
+  },
+  {
+   "feature": "c_h2",
+   "voynich": 2.148323259188448,
+   "natural_median": 3.151145099506293,
+   "pct_in_natural": 0.0,
+   "z_natural": -3.7881439332268876,
+   "z_cipher": -1.84653358923785,
+   "z_generated": -1.7821508335098273
+  },
+  {
+   "feature": "c_h3",
+   "voynich": 1.867627392197729,
+   "natural_median": 2.338211923949907,
+   "pct_in_natural": 0.017467248908296942,
+   "z_natural": -2.2793013789596386,
+   "z_cipher": -1.1890659063455822,
+   "z_generated": -1.0190942846123143
+  },
+  {
+   "feature": "c_h2_over_h1",
+   "voynich": 0.5565955847639378,
+   "natural_median": 0.7522980041960713,
+   "pct_in_natural": 0.05240174672489083,
+   "z_natural": -2.1575396513504033,
+   "z_cipher": -1.0394577333573338,
+   "z_generated": -1.3790559500221617
+  },
+  {
+   "feature": "c_h3_over_h2",
+   "voynich": 0.8689850172434566,
+   "natural_median": 0.7464219507120047,
+   "pct_in_natural": 1.0,
+   "z_natural": 1.9674974749372303,
+   "z_cipher": 1.0779805617015434,
+   "z_generated": 0.7435641844555433
+  },
+  {
+   "feature": "c_alpha_eff",
+   "voynich": 14.49909686328197,
+   "natural_median": 18.00168846346493,
+   "pct_in_natural": 0.08733624454148471,
+   "z_natural": -0.31642708072879727,
+   "z_cipher": -0.4375821018552652,
+   "z_generated": -0.2973042202310789
+  },
+  {
+   "feature": "p_vowel_share",
+   "voynich": 0.4809236886492332,
+   "natural_median": 0.4827882139792123,
+   "pct_in_natural": 0.49344978165938863,
+   "z_natural": 0.007122111903104425,
+   "z_cipher": -0.30477666061734854,
+   "z_generated": 0.2519663416274423
+  },
+  {
+   "feature": "p_cv_alt_excess",
+   "voynich": 0.27894308071354235,
+   "natural_median": 0.2993155217858075,
+   "pct_in_natural": 0.40611353711790393,
+   "z_natural": -0.15248845960841367,
+   "z_cipher": 0.32913291600048444,
+   "z_generated": -0.5714542700147361
+  },
+  {
+   "feature": "p_h_init",
+   "voynich": 0.8710960369894631,
+   "natural_median": 0.9715253247463338,
+   "pct_in_natural": 0.08733624454148471,
+   "z_natural": -1.6463403791832616,
+   "z_cipher": -0.20552104917938205,
+   "z_generated": -0.5433412067937807
+  },
+  {
+   "feature": "p_h_final",
+   "voynich": 0.6334821320174608,
+   "natural_median": 0.8389963316200175,
+   "pct_in_natural": 0.10480349344978165,
+   "z_natural": -1.670503043850527,
+   "z_cipher": -1.968938341336048,
+   "z_generated": -1.2095460578498831
+  },
+  {
+   "feature": "p_jsd_init_med",
+   "voynich": 0.3517354720099348,
+   "natural_median": 0.1907572515885922,
+   "pct_in_natural": 0.9388646288209607,
+   "z_natural": 1.3901595608430606,
+   "z_cipher": 0.44816433950376006,
+   "z_generated": 0.5785655831117364
+  },
+  {
+   "feature": "p_jsd_final_med",
+   "voynich": 0.7438052960277983,
+   "natural_median": 0.1902883405349014,
+   "pct_in_natural": 1.0,
+   "z_natural": 5.2784161722236265,
+   "z_cipher": 2.3779911291132274,
+   "z_generated": 4.361228881373986
+  },
+  {
+   "feature": "p_jsd_init_final",
+   "voynich": 0.6361488224394694,
+   "natural_median": 0.3153584498688293,
+   "pct_in_natural": 0.9781659388646288,
+   "z_natural": 2.204193611171467,
+   "z_cipher": 0.8192592015704759,
+   "z_generated": 0.8408045282850211
+  },
+  {
+   "feature": "p_double",
+   "voynich": 0.047397356124316566,
+   "natural_median": 0.0071179618084531,
+   "pct_in_natural": 0.9650655021834061,
+   "z_natural": 1.901233975730202,
+   "z_cipher": 0.6614165059659207,
+   "z_generated": 2.1503712047358308
+  },
+  {
+   "feature": "w_len_mean",
+   "voynich": 4.4387187500000005,
+   "natural_median": 4.2275,
+   "pct_in_natural": 0.6244541484716157,
+   "z_natural": 0.1288175865702459,
+   "z_cipher": -0.060503790230159366,
+   "z_generated": -0.19024850327034595
+  },
+  {
+   "feature": "w_len_sd",
+   "voynich": 1.6126171142533026,
+   "natural_median": 2.272751636233049,
+   "pct_in_natural": 0.2052401746724891,
+   "z_natural": -0.7912545012763142,
+   "z_cipher": -0.5075822373844354,
+   "z_generated": -0.7950761800900472
+  },
+  {
+   "feature": "w_len_cv",
+   "voynich": 0.36430749215359953,
+   "natural_median": 0.5049409252063728,
+   "pct_in_natural": 0.06986899563318777,
+   "z_natural": -1.5824742155983063,
+   "z_cipher": -1.5100106150155623,
+   "z_generated": -0.9640898046860068
+  },
+  {
+   "feature": "w_len_skew",
+   "voynich": 0.15465326034865395,
+   "natural_median": 0.8712371079944933,
+   "pct_in_natural": 0.004366812227074236,
+   "z_natural": -2.026054287471094,
+   "z_cipher": -1.6091527833036092,
+   "z_generated": -1.039487332079334
+  },
+  {
+   "feature": "w_len1",
+   "voynich": 0.03259375,
+   "natural_median": 0.029,
+   "pct_in_natural": 0.5240174672489083,
+   "z_natural": -0.4226860994366968,
+   "z_cipher": -0.4648618083732602,
+   "z_generated": -0.36221127464011005
+  },
+  {
+   "feature": "w_type_len_mean",
+   "voynich": 5.156153754180044,
+   "natural_median": 5.946629213483146,
+   "pct_in_natural": 0.24890829694323144,
+   "z_natural": -0.38569630147677436,
+   "z_cipher": -0.2486496652738086,
+   "z_generated": -0.571538381418364
+  },
+  {
+   "feature": "w_type_len_var_over_mean",
+   "voynich": 0.4864747122811487,
+   "natural_median": 0.8685070209233494,
+   "pct_in_natural": 0.1615720524017467,
+   "z_natural": -1.1899345368008205,
+   "z_cipher": -0.7189030974236911,
+   "z_generated": -0.8156009712261797
+  },
+  {
+   "feature": "w_brevity",
+   "voynich": -0.30553269982108855,
+   "natural_median": -0.3422908300187045,
+   "pct_in_natural": 0.7117903930131004,
+   "z_natural": 0.519348059679571,
+   "z_cipher": 0.48815720898894066,
+   "z_generated": 0.36527461001276357
+  },
+  {
+   "feature": "l_ttr",
+   "voynich": 0.35790625000000004,
+   "natural_median": 0.2745,
+   "pct_in_natural": 0.7292576419213974,
+   "z_natural": 0.6887210759296694,
+   "z_cipher": -0.18731342608071655,
+   "z_generated": -0.2771020269663034
+  },
+  {
+   "feature": "l_hapax_types",
+   "voynich": 0.7001131956698645,
+   "natural_median": 0.6014967259120674,
+   "pct_in_natural": 0.9170305676855895,
+   "z_natural": 1.2270932398793337,
+   "z_cipher": 0.1881896357707339,
+   "z_generated": 0.21140837653412975
+  },
+  {
+   "feature": "l_zipf_slope",
+   "voynich": -0.7788139828605642,
+   "natural_median": -0.8684259743711642,
+   "pct_in_natural": 0.6855895196506551,
+   "z_natural": 0.6115853313048623,
+   "z_cipher": -0.06703686907660336,
+   "z_generated": -0.23433479416712502
+  },
+  {
+   "feature": "l_zipf_curv",
+   "voynich": 0.05384625088266133,
+   "natural_median": 0.0180714580286836,
+   "pct_in_natural": 0.8733624454148472,
+   "z_natural": 0.9203462862460594,
+   "z_cipher": 0.2991811337165945,
+   "z_generated": 0.24041892611986035
+  },
+  {
+   "feature": "l_h_word",
+   "voynich": 0.762797195988092,
+   "natural_median": 0.7065241171628066,
+   "pct_in_natural": 0.7161572052401747,
+   "z_natural": 0.6708882828994831,
+   "z_cipher": 0.06284727218938715,
+   "z_generated": -0.07290717903191776
+  },
+  {
+   "feature": "l_top1",
+   "voynich": 0.0321875,
+   "natural_median": 0.06325,
+   "pct_in_natural": 0.2314410480349345,
+   "z_natural": -1.0146371085326273,
+   "z_cipher": -0.5918876580535296,
+   "z_generated": -0.5105182831579708
+  },
+  {
+   "feature": "l_top10",
+   "voynich": 0.1679375,
+   "natural_median": 0.2225,
+   "pct_in_natural": 0.21397379912663755,
+   "z_natural": -0.7566471065601785,
+   "z_cipher": -0.3350836717493454,
+   "z_generated": -0.21974795849388884
+  },
+  {
+   "feature": "l_heaps",
+   "voynich": 0.764186615189107,
+   "natural_median": 0.768661355266734,
+   "pct_in_natural": 0.47161572052401746,
+   "z_natural": 0.07829121418579849,
+   "z_cipher": -0.12963329571707258,
+   "z_generated": 0.05944191265752673
+  },
+  {
+   "feature": "l_ld1_share",
+   "voynich": 0.8623087510835183,
+   "natural_median": 0.4752116082224909,
+   "pct_in_natural": 0.925764192139738,
+   "z_natural": 1.8793654439618686,
+   "z_cipher": 1.3916530115778512,
+   "z_generated": 1.2333230106369903
+  },
+  {
+   "feature": "l_ld1_mean",
+   "voynich": 6.630577107044506,
+   "natural_median": 1.188340807174888,
+   "pct_in_natural": 0.8777292576419214,
+   "z_natural": 0.29103275182068455,
+   "z_cipher": -0.05904714808105424,
+   "z_generated": 0.2779183882252865
+  },
+  {
+   "feature": "m_suffix_pref",
+   "voynich": 1.1848675247132994,
+   "natural_median": 0.4126157617144184,
+   "pct_in_natural": 0.9737991266375546,
+   "z_natural": 1.6623587901010002,
+   "z_cipher": 1.8835324688281114,
+   "z_generated": 2.49523479137261
+  },
+  {
+   "feature": "m_prefix_trie",
+   "voynich": 0.4216218558184896,
+   "natural_median": 0.5196279578717001,
+   "pct_in_natural": 0.004366812227074236,
+   "z_natural": -2.315048847067846,
+   "z_cipher": -1.5320270114347518,
+   "z_generated": -0.9780827165813781
+  },
+  {
+   "feature": "m_suffix_trie",
+   "voynich": 0.3303646285117882,
+   "natural_median": 0.5371985633658286,
+   "pct_in_natural": 0.0,
+   "z_natural": -4.270624795265912,
+   "z_cipher": -3.0149847671468484,
+   "z_generated": -1.9998328569821544
+  },
+  {
+   "feature": "m_trie_asym",
+   "voynich": 0.09125722730670133,
+   "natural_median": -0.0078125,
+   "pct_in_natural": 0.9475982532751092,
+   "z_natural": 1.7508479892640034,
+   "z_cipher": 2.393984876545679,
+   "z_generated": 2.383769569309293
+  },
+  {
+   "feature": "m_stem_family",
+   "voynich": 1.4071637610643082,
+   "natural_median": 1.103057757644394,
+   "pct_in_natural": 0.9956331877729258,
+   "z_natural": 2.503298423859386,
+   "z_cipher": 1.6140857491301308,
+   "z_generated": 0.2592550486389691
+  },
+  {
+   "feature": "m_tail_family",
+   "voynich": 1.8532216777970612,
+   "natural_median": 1.088721804511278,
+   "pct_in_natural": 1.0,
+   "z_natural": 5.992209703031204,
+   "z_cipher": 4.114353548357606,
+   "z_generated": 0.9663182181473385
+  },
+  {
+   "feature": "m_succ_var",
+   "voynich": 2.0294233634557077,
+   "natural_median": 1.4878883665053289,
+   "pct_in_natural": 0.8646288209606987,
+   "z_natural": 1.014394151163062,
+   "z_cipher": 0.6203494594833289,
+   "z_generated": 0.7191153756721443
+  },
+  {
+   "feature": "m_pred_var",
+   "voynich": 2.094766101652495,
+   "natural_median": 1.953822009292451,
+   "pct_in_natural": 0.6855895196506551,
+   "z_natural": 0.45524606320243854,
+   "z_cipher": 0.5749481116225533,
+   "z_generated": 0.524371615016563
+  },
+  {
+   "feature": "t_pieces_per_word",
+   "voynich": 1.7938125,
+   "natural_median": 2.30425,
+   "pct_in_natural": 0.13537117903930132,
+   "z_natural": -0.9497973428323738,
+   "z_cipher": -0.797785569314697,
+   "z_generated": -0.9253298198849597
+  },
+  {
+   "feature": "t_pieces_per_symbol",
+   "voynich": 0.4054609013306208,
+   "natural_median": 0.5533249686323714,
+   "pct_in_natural": 0.0,
+   "z_natural": -1.780579646920896,
+   "z_cipher": -1.2741367781911814,
+   "z_generated": -1.1232581485610673
+  },
+  {
+   "feature": "t_top20_cover",
+   "voynich": 0.4551106708584202,
+   "natural_median": 0.4538226299694189,
+   "pct_in_natural": 0.5065502183406113,
+   "z_natural": -0.10303009951922786,
+   "z_cipher": -0.006790995328954661,
+   "z_generated": -0.09412189442511668
+  },
+  {
+   "feature": "t_piece_entropy",
+   "voynich": 0.9206861770118383,
+   "natural_median": 0.9199476504236532,
+   "pct_in_natural": 0.5152838427947598,
+   "z_natural": 0.29845465170671803,
+   "z_cipher": 0.40112452216958044,
+   "z_generated": 0.10353201167003327
+  },
+  {
+   "feature": "t_merge_at_start",
+   "voynich": 0.5770170758145698,
+   "natural_median": 0.5031115249668927,
+   "pct_in_natural": 0.7991266375545851,
+   "z_natural": 0.34834399413429007,
+   "z_cipher": 0.2645964095429332,
+   "z_generated": 0.54949512293167
+  },
+  {
+   "feature": "t_merge_at_end",
+   "voynich": 0.7253265873483268,
+   "natural_median": 0.4738066094515808,
+   "pct_in_natural": 0.8951965065502183,
+   "z_natural": 1.5179392758776349,
+   "z_cipher": 1.2272775847528992,
+   "z_generated": 1.605073297494522
+  },
+  {
+   "feature": "t_merge_len",
+   "voynich": 3.3687500000000004,
+   "natural_median": 2.62,
+   "pct_in_natural": 1.0,
+   "z_natural": 2.9931754526536642,
+   "z_cipher": 1.0842467290082463,
+   "z_generated": 1.2053229209980505
+  },
+  {
+   "feature": "t_whole_words",
+   "voynich": 0.41075000000000006,
+   "natural_median": 0.312,
+   "pct_in_natural": 0.7379912663755459,
+   "z_natural": 0.6868648880751261,
+   "z_cipher": 0.9364812762075223,
+   "z_generated": 0.8554193600720968
+  },
+  {
+   "feature": "s_bigram_mi_x",
+   "voynich": 0.007397708332412638,
+   "natural_median": 0.0525478679875064,
+   "pct_in_natural": 0.013100436681222707,
+   "z_natural": -1.3681468602404045,
+   "z_cipher": -0.8501073320905341,
+   "z_generated": 5.352757975910014
+  },
+  {
+   "feature": "s_irrev_x",
+   "voynich": 8.539588077573755e-05,
+   "natural_median": 0.0664533841766552,
+   "pct_in_natural": 0.043668122270742356,
+   "z_natural": -1.0600180504559142,
+   "z_cipher": -0.8236211031575387,
+   "z_generated": 0.36932093796902576
+  },
+  {
+   "feature": "s_rep_adj_x",
+   "voynich": 0.0035008752188046624,
+   "natural_median": -0.008002000500125,
+   "pct_in_natural": 0.9563318777292577,
+   "z_natural": 0.7929423643389174,
+   "z_cipher": 0.6962042655379609,
+   "z_generated": 0.2319124228426783
+  },
+  {
+   "feature": "s_near_adj_x",
+   "voynich": 0.015201717095940611,
+   "natural_median": -0.0042510627656914,
+   "pct_in_natural": 0.982532751091703,
+   "z_natural": 2.2267747424416915,
+   "z_cipher": 1.9489685744135423,
+   "z_generated": 1.5731414294518096
+  },
+  {
+   "feature": "s_w10_x",
+   "voynich": 0.031822916666666624,
+   "natural_median": 0.0329166666666666,
+   "pct_in_natural": 0.4759825327510917,
+   "z_natural": -0.15774514268755915,
+   "z_cipher": 0.32526473022744984,
+   "z_generated": 0.3066862633126189
+  },
+  {
+   "feature": "s_agree_last_x",
+   "voynich": 0.006206464005188199,
+   "natural_median": 0.0309709510362746,
+   "pct_in_natural": 0.048034934497816595,
+   "z_natural": -1.0774536385042612,
+   "z_cipher": -0.7916544150116968,
+   "z_generated": 2.2271146551674055
+  },
+  {
+   "feature": "s_sandhi_x",
+   "voynich": 0.05848255355903549,
+   "natural_median": 0.0265408474763326,
+   "pct_in_natural": 0.8471615720524017,
+   "z_natural": 0.5859212601100087,
+   "z_cipher": 0.15136381138579133,
+   "z_generated": 40.50865983493908
+  },
+  {
+   "feature": "s_first_first_x",
+   "voynich": 0.017239824440495752,
+   "natural_median": 0.0309853386421118,
+   "pct_in_natural": 0.15283842794759825,
+   "z_natural": -0.7908891782073175,
+   "z_cipher": -0.5247837056694045,
+   "z_generated": 7.05131330623095
+  },
+  {
+   "feature": "s_len_ac1_x",
+   "voynich": 0.1003679658294672,
+   "natural_median": -0.0875667841185343,
+   "pct_in_natural": 1.0,
+   "z_natural": 1.9825073398382969,
+   "z_cipher": 1.9313444396120525,
+   "z_generated": 3.797313406652032
+  },
+  {
+   "feature": "s_class_rank_x",
+   "voynich": -0.003358159557734675,
+   "natural_median": -0.0449169468064259,
+   "pct_in_natural": 0.982532751091703,
+   "z_natural": 1.2589566009916062,
+   "z_cipher": 0.8840157828604372,
+   "z_generated": -0.4595025533431887
+  },
+  {
+   "feature": "d_half_jsd_x",
+   "voynich": 0.048802573260548154,
+   "natural_median": 0.1143957077829836,
+   "pct_in_natural": 0.08733624454148471,
+   "z_natural": -1.4670510706444058,
+   "z_cipher": -0.5830762565041341,
+   "z_generated": 0.06423687200924698
+  },
+  {
+   "feature": "d_cluster_x",
+   "voynich": 0.18885048255164127,
+   "natural_median": 0.2364857469762305,
+   "pct_in_natural": 0.34497816593886466,
+   "z_natural": -0.5972386493602233,
+   "z_cipher": -0.08672895445710499,
+   "z_generated": 0.04437725006659432
+  },
+  {
+   "feature": "d_new_late_x",
+   "voynich": 0.0285833333333333,
+   "natural_median": 0.0749999999999999,
+   "pct_in_natural": 0.12663755458515283,
+   "z_natural": -1.115480381918024,
+   "z_cipher": -0.6100879169456307,
+   "z_generated": -0.19121580279551112
+  },
+  {
+   "feature": "z_wordid_x",
+   "voynich": -0.29766666666666697,
+   "natural_median": -1.4960000000000022,
+   "pct_in_natural": 0.9912663755458515,
+   "z_natural": 2.232745633932641,
+   "z_cipher": 1.1520226493529873,
+   "z_generated": 0.05950590825887563
+  },
+  {
+   "feature": "s_rep_adj",
+   "voynich": 0.008720930232558087,
+   "natural_median": 0.0007501875468867,
+   "pct_in_natural": 0.9039301310043668,
+   "z_natural": 0.23633825646860102,
+   "z_cipher": 0.2011386915324081,
+   "z_generated": -0.23388365355508087
+  },
+  {
+   "feature": "s_len_hurst",
+   "voynich": 0.5978908564313566,
+   "natural_median": 0.5185799845598167,
+   "pct_in_natural": 0.9650655021834061,
+   "z_natural": 1.7893222867828393,
+   "z_cipher": 2.0630888666479956,
+   "z_generated": 1.3591464885537197
+  },
+  {
+   "feature": "s_burst_top",
+   "voynich": 0.10632222330042021,
+   "natural_median": 0.0988067693292618,
+   "pct_in_natural": 0.5502183406113537,
+   "z_natural": 0.03846133586652295,
+   "z_cipher": 0.5449572893468261,
+   "z_generated": 2.871941372283936
+  },
+  {
+   "feature": "s_burst_mid",
+   "voynich": 0.018932615683004875,
+   "natural_median": 0.071319073401667,
+   "pct_in_natural": 0.1091703056768559,
+   "z_natural": -1.2231170277103163,
+   "z_cipher": -0.2549754871328965,
+   "z_generated": 1.9181542434920833
+  },
+  {
+   "feature": "s_burst_diff",
+   "voynich": -0.08738960761741527,
+   "natural_median": -0.0318838008686072,
+   "pct_in_natural": 0.13100436681222707,
+   "z_natural": -1.1377987687872488,
+   "z_cipher": -1.035975455264012,
+   "z_generated": -0.6849460090946304
+  },
+  {
+   "feature": "z_bpc",
+   "voynich": 2.760750176945872,
+   "natural_median": 2.7870476794419563,
+   "pct_in_natural": 0.462882096069869,
+   "z_natural": -0.2135679177982255,
+   "z_cipher": -0.6568927501308565,
+   "z_generated": -0.9000825428673763
+  }
+ ],
+ "importance": [
+  [
+   "s_sandhi_x",
+   0.16254951855812566
+  ],
+  [
+   "s_first_first_x",
+   0.10784951407734956
+  ],
+  [
+   "s_agree_last_x",
+   0.09588442302681073
+  ],
+  [
+   "d_half_jsd_x",
+   0.07226322924788343
+  ],
+  [
+   "s_bigram_mi_x",
+   0.06733151971342957
+  ],
+  [
+   "s_burst_mid",
+   0.06293023626415618
+  ],
+  [
+   "s_rep_adj",
+   0.047906066097303586
+  ],
+  [
+   "d_cluster_x",
+   0.043103066247670574
+  ],
+  [
+   "s_class_rank_x",
+   0.04163377486502137
+  ],
+  [
+   "s_irrev_x",
+   0.034075209398108965
+  ],
+  [
+   "z_wordid_x",
+   0.030575951404477306
+  ],
+  [
+   "s_burst_top",
+   0.02592288684120867
+  ],
+  [
+   "d_new_late_x",
+   0.019672915011883903
+  ],
+  [
+   "s_w10_x",
+   0.01635180558457041
+  ],
+  [
+   "c_h3",
+   0.01413748329868643
+  ]
+ ]
+}

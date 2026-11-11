@@ -241,6 +241,19 @@ Tables: `lines/README.md` s8, `reinforce/README.md` s4.6, `verbose/README.md` ti
 `targets/voynich`): `python lines/fetch_mss.py`, `python lines/manuscripts.py`, `python lines/translit.py`, `python
 reinforce/robust.py run oddeven quires halves`, `python reinforce/robust.py report`, `python reinforce/recipe_free.py`.
 
+## 16. Phase 2 (11 Nov 2026): linguistic features and classifiers
+
+68 features for linguistic concepts that need no knowledge of the symbols (vowel/consonant alternation, positional
+rules, law of abbreviation, Zipf and vocabulary growth, morphology, learnt subword tokens, word order, function
+against content words, agreement, repetition, discourse, compression), computed on 4,000-word chunks of 67 natural
+sources in 50 languages, eight kinds of cipher of them and six generators; three classifiers; rule for a verdict
+fixed in advance. **No verdict**: the classifiers are near perfect on the kinds they were trained on and fail on a
+held-out copying generator, on all five Voynich-like texts of known nature and on the novelty check. They measure
+word-order structure, not meaning. As description, Voynich is language-like on 45 of 68 features and unlike all 67
+natural sources in its word-internal structure and in the rhythm of its word lengths; its nearest natural sources
+are abbreviated manuscripts and abjads (Syriac, Hebrew), and Italian is 34th of 67. Tables and reproduce commands:
+`phase2/README.md`.
+
 ## Where this leaves the hypotheses
 
 Best supported: meaningless text, made page by page by several people from one shared, learned word template, each
@@ -257,7 +270,7 @@ phrases.
 
 ## Files
 
-- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#68 plus the 29 Oct homophone tests), and the hypothesis table.
+- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#69 plus the 29 Oct homophone tests), and the hypothesis table.
 - `meaning/README.md`, `verbose/README.md`, `glyphs/README.md`, `controls2/README.md`, `lines/README.md`, `reinforce/README.md`: detailed tables per programme.
 - `data/`: ZL3b transliteration (René Zandbergen, voynich.nu), parsed to words.
 - Bulky regenerable data (language-model tables, transformer checkpoints) is archived in the private Kaggle dataset
