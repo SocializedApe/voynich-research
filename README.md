@@ -1,5 +1,8 @@
 # Voynich research
 
+This is like a week of trying to vibe something up it seems very likely that voynich is gibberish it does not match any language nor any 15 century cipher. 
+This is pretty vibed up but i think we did some decent tests e.g with comparing how topical Voynich is compared to Pliny's Natural History, so therefore maybe it might be useful as a some sort of reference maybe.
+
 Statistical tests of what the Voynich manuscript (Beinecke MS 408) could be: ciphers, codes, languages and generators,
 each against controls and calibrated solvers. Not a decipherment.
 
