@@ -3,3 +3,4 @@ __pycache__/
 lang/cache/
 lang/corpora/*.txt
 *.log
+lang/lexicons/

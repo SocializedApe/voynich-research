@@ -254,6 +254,19 @@ natural sources in its word-internal structure and in the rhythm of its word len
 are abbreviated manuscripts and abjads (Syriac, Hebrew), and Italian is 34th of 67. Tables and reproduce commands:
 `phase2/README.md`.
 
+## 17. 12 Nov 2026: phase 2 second round, the word-internal profile, the cipher rule re-read
+
+- With structured generators added to training the classifiers still give no verdict: nonsense chained from the
+  words of a real language is called a language every time. P(meaningful) for Voynich went from 1.00 to 0.17 when
+  only the training generators changed, so such a verdict reports the choice of negatives.
+- No process tried gives the eight word-internal and rhythm features that set Voynich apart from 67 natural sources
+  (best: the Naibbe cipher, 5 of 8). Abbreviation and vowel removal give none of them: that hint is closed.
+- The cipher sweeps re-read without the fragile per-character threshold: no Voynich cell passes; the negative holds
+  to about 5% copying noise at the unit counts covered.
+- `lang/lexicons/` (word-frequency tables no script uses, source not recorded) are no longer tracked.
+
+Tables and reproduce commands: `phase2/README.md` (second round), `verbose/README.md` (re-read by key stability).
+
 ## Where this leaves the hypotheses
 
 Best supported: meaningless text, made page by page by several people from one shared, learned word template, each
@@ -270,7 +283,7 @@ phrases.
 
 ## Files
 
-- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#69 plus the 29 Oct homophone tests), and the hypothesis table.
+- `HYPOTHESES_2026-10-28.md`: every test in order (#1-#72 plus the 29 Oct homophone tests), and the hypothesis table.
 - `meaning/README.md`, `verbose/README.md`, `glyphs/README.md`, `controls2/README.md`, `lines/README.md`, `reinforce/README.md`: detailed tables per programme.
 - `data/`: ZL3b transliteration (René Zandbergen, voynich.nu), parsed to words.
 - Bulky regenerable data (language-model tables, transformer checkpoints) is archived in the private Kaggle dataset

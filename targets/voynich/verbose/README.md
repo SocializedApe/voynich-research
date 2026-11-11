@@ -332,6 +332,25 @@ dir> <kaggle user> <user/dataset> 6`, `kaggle kernels push -p <out dir>`, `kaggl
 verbose/kaggle_pkg/analyze6.py <dir> verbose/kaggle_results/tier5`. Job list `sweep.jobs(6)`; raw results
 `kaggle_results/tier6/gpu_shard0.jsonl`, `gpu_shard1.jsonl`, `analysis.md` (about 1.5 h on 2 x T4).
 
+## Every tier re-read by key stability (`kaggle_pkg/restability.py`, `kaggle_results/restability.md`; 12 Nov 2026, post hoc)
+
+Tier 6 showed the per-character threshold fails at 2% miscopied glyphs. All saved results were re-read with the tier
+rules minus that threshold: normalised half-to-half key stability >= 0.5 and letter KL <= 0.15.
+
+- Stability alone is not enough. Four Voynich cells of tier 4 (German, positional units; pharma, bio, stars) pass 0.5
+  (0.53-0.67). Their keys are degenerate: the decryption is en / er / de repeated, letter KL 0.32-0.37. Both halves
+  collapse the same way and the shuffled stream does not, so the null is low and the normalised value high.
+- With the KL condition no Voynich cell passes in any tier (tier 3: 0 of 42, tier 4: 0 of 56, tier 5: 0 of 28), and
+  the planted ciphers pass at 2% and 5% glyph noise, 5% and 15% moved word breaks, and 5% + 5% (9 of 21 tier-6
+  cells). At 10% glyph noise KL is 0.21 and the cipher is not detected although 64% of the plaintext is recovered.
+- Detection needs the number of units K near the cipher's own: the noisy ciphers pass at K 50-60 and none passes at K
+  42. Tier 5 ran Voynich at K 42 and 50 only.
+- So the cipher negative, re-read: a verbose cipher of Latin, Italian or German of the kinds tried, copied with up to
+  about 5% glyph errors, at a unit count the sweep covered, is not found. Above that, or at other unit counts, nothing
+  is excluded. Tiers 1-2 have no shuffled halves and are listed with raw stability only.
+
+Reproduce: `python verbose/kaggle_pkg/restability.py` from `targets/voynich` (reads `kaggle_results/*/`).
+
 ## Where the verbose programme stands (29 Oct 2026)
 
 Validated pipeline (gates 2-5: plain, homophonic with unaligned spaces, abbreviated Latin, positional; all broken blind,

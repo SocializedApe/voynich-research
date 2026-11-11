@@ -27,6 +27,8 @@ Rule for a verdict on Voynich (ZL glyph units; the other two encodings are repor
   the descriptive part (nearest sources, features where Voynich leaves each kind) is reported as description only.
 
 Run from targets/voynich: python phase2/model.py -> phase2/model_results.json, phase2/phase2.md
+                          python phase2/model.py features.csv features2.csv -> model_resultsb.json, phase2b.md (second
+                          round: same protocol and rule, training rows of build2.py added; 12 Nov 2026)
 """
 import collections, json, os, sys, time, warnings
 import numpy as np, pandas as pd
@@ -47,7 +49,8 @@ PRIMARY = 'boosting'
 
 
 def main():
-    t0 = time.time(); df = pd.read_csv(os.path.join(HERE, 'features.csv')); F = [c for c in df.columns if c not in META]
+    files = sys.argv[1:] or ['features.csv']; tag = '' if len(files) == 1 else 'b'
+    t0 = time.time(); df = pd.concat([pd.read_csv(os.path.join(HERE, f)) for f in files], ignore_index=True); F = [c for c in df.columns if c not in META]
     tr = df[df.kind.isin(['natural', 'cipher', 'generated'])].reset_index(drop=True)
     X = tr[F].values; y = (tr.kind != 'generated').astype(int).values; g = tr.source.values
     res = collections.OrderedDict(n_train=len(tr), n_features=len(F), counts=tr.groupby(['kind', 'process']).size().to_dict().__repr__())
@@ -125,9 +128,9 @@ def main():
                          **{f'z_{k}': float((vm[j] - m[j]) / s[j]) for k, (m, s) in kinds.items()}))
     res['features'] = feat
     imp = full['forest'].feature_importances_; res['importance'] = sorted(((F[j], float(imp[j])) for j in range(len(F))), key=lambda x: -x[1])[:15]
-    json.dump(res, open(os.path.join(HERE, 'model_results.json'), 'w'), indent=1)
+    json.dump(res, open(os.path.join(HERE, f'model_results{tag}.json'), 'w'), indent=1)
     # ---- report
-    L = ['# Phase 2: linguistic features and classifiers (11 Nov 2026)', '',
+    L = ['# Phase 2: linguistic features and classifiers' + (' (11 Nov 2026)' if not tag else ', second round with structured generators (12 Nov 2026); training rows from ' + ' + '.join(files)), '',
          'Scripts `features.py`, `build.py`, `model.py` (protocol and the rule for a verdict in the docstring of `model.py`, written before the Voynich rows were looked at). '
          'Reproduce from `targets/voynich`: `python phase2/corpora2.py`, `python lines/fetch_mss.py`, `python phase2/build.py`, `python phase2/model.py`.', '',
          f"Training chunks {len(tr)} (natural {(tr.kind == 'natural').sum()}, cipher {(tr.kind == 'cipher').sum()}, generated {(tr.kind == 'generated').sum()}), {len(F)} features, 4,000 tokens a chunk.", '',
@@ -151,7 +154,7 @@ def main():
     inside = [r['feature'] for r in feat if 0.05 <= r['pct_in_natural'] <= 0.95]
     L += ['', f"Features where Voynich is inside the middle 90% of natural languages ({len(inside)} of {len(F)}): " + ', '.join(inside) + '.', '',
           'Most used features (random forest importance): ' + ', '.join(f'{n} {v:.3f}' for n, v in res['importance']) + '.', '', f'Runtime {time.time() - t0:.0f} s.']
-    open(os.path.join(HERE, 'phase2.md'), 'w', encoding='utf-8').write('\n'.join(L) + '\n'); print('\n'.join(L))
+    open(os.path.join(HERE, f'phase2{tag}.md'), 'w', encoding='utf-8').write('\n'.join(L) + '\n'); print('\n'.join(L))
 
 
 if __name__ == '__main__':

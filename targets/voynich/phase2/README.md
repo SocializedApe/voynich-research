@@ -91,6 +91,66 @@ Voynich is 8.0 from its nearest natural source.
 
 Full table in `phase2.md` and `model_results.json`.
 
+## Second round (12 Nov 2026): structured generators in training, and what gives the word-internal profile
+
+### Classifiers with structured generators (`build2.py`, `model.py features.csv features2.csv`, `phase2b.md`)
+
+Round 1 failed because its generators had no word-order structure. Five generators with sequential structure and no
+message were added to training (a word-bigram chain fitted to a language, a language shuffled inside blocks of 200
+words, a second copying generator, chained invented word parts, a table with drifting weights) and three more
+processes with a language underneath (abbreviation, a positional verbose cipher, a taxonomic constructed-language
+codebook): 1,278 training chunks. Same protocol, same rule.
+
+| check | round 1 | round 2 |
+|---|---|---|
+| C1 leave-source-out AUC (boosting) | 0.999 | 1.000 |
+| C2 leave-process-out, processes under 0.5 (boosting) | self-citation 0.00 | **word-bigram chain 0.00** (under all three models), block shuffle 0.18, drifting table 0.30 |
+| C4 mimics on the right side (boosting) | 0 of 5 | 3 of 5 (autocopist, lang8, volunteers right; Rugg 0.52 and the Naibbe cipher 0.00 wrong) |
+| C5 Voynich chunks in distribution | 1 of 8 | 3 of 8 |
+| P(meaningful) for Voynich, logistic / forest / boosting | 0.29 / 0.89 / 1.00 | 0.27 / 0.41 / 0.17 |
+| verdict | none | none |
+
+- **Still no verdict, for a reason that will not go away.** Nonsense made by chaining the words of a real language
+  is called a language every time it is held out, by every model: on 4,000 words these 68 statistics do not separate
+  locally grammatical nonsense from text. A language shuffled within 200-word blocks is called meaningful by the
+  boosting model four times in five.
+- **The answer for Voynich follows the training set.** Round 1 said P = 1.00 meaningful, round 2 says 0.17, with the
+  same features and the same Voynich chunks; the only change is which generators the models had seen. A classifier
+  verdict on Voynich reports the modeller's choice of negatives. This applies to any published claim of the form 'a
+  classifier trained on languages and gibberish puts Voynich with the languages'.
+
+### What gives the word-internal profile? (`oddities.py`, `oddities.md`)
+
+The eight features on which Voynich lies furthest outside natural language (ending families, finals a set apart, few
+paths through the word from either end, low h2, long learnt pieces, symmetric lengths, long word after long word),
+with Voynich's own range as the window, across every process of both rounds. Rule fixed before the run: 6 of 8 =
+reproduces the profile, 4-5 = partial.
+
+| text | features inside the Voynich window (of 8) |
+|---|---|
+| Voynich in the other two encodings | 7, 7 |
+| Naibbe cipher of Pliny | 5 (partial: misses the ending families, the prefix sharing, the length rhythm) |
+| lang8 (this repository's generator, built from Voynich's own tables) | 4 |
+| table with drifting weights | 4 |
+| taxonomic constructed language; autocopist; Rugg's table text | 3 each |
+| positional verbose cipher; chained word parts; table; the two copying generators | 2 each |
+| natural sources (67) | mean under 1, maximum 2 (Quichua, Vietnamese) |
+| **abbreviation; abjad (vowels removed)** | **0** |
+| verbose, homophonic, digraphic, anagram, nulls, respace | 0-1 |
+
+- **Nothing reproduces the profile.** No process reaches 6 of 8. The closest is the Naibbe cipher, which was designed
+  to imitate Voynich, at 5.
+- **The abjad and abbreviation hint of round 1 is closed.** Removing vowels or abbreviating in the scribal manner does
+  not move any of 50 languages onto a single one of the eight features. Voynich sat nearest to Syriac, Hebrew and
+  abbreviated manuscripts on the whole 68-feature vector because of low per-symbol information, not because of its
+  word structure.
+- Each feature has a process that gives it: a positional cipher gives finals a set apart (0.76 against Voynich
+  0.74); tables and chained parts give few paths through the word; a taxonomic language gives symmetric lengths and
+  shared starts; copying gives the length rhythm. None gives them together, and the processes that give the
+  word-internal ones (tables, taxonomic codes) overshoot the ending families (2.4-3.7 against 1.85).
+- Limit: the processes are simple versions built here; the window is Voynich's own range, so a process a little
+  outside on several features scores low.
+
 ## What this adds, and limits
 
 - Trained classifiers do not answer 'is there a language underneath' here: they do not carry over to an unseen
@@ -113,5 +173,8 @@ From `targets/voynich` (Python 3 with numpy, scipy, pandas, scikit-learn):
 | corpora (git-ignored) | `python phase2/corpora2.py` (Bible corpus, 50 languages, first 40,000 words each); `python lines/fetch_mss.py` (manuscripts); `python fetch_corpora.py` and the `lang/` corpora as in the other READMEs | `data/external/bible/`, `data/external/cremma/` |
 | features | `python phase2/build.py` (about 27 minutes) | `phase2/features.csv` (952 chunks x 68 features) |
 | models, checks, report | `python phase2/model.py` (about 1 minute) | `phase2/model_results.json`, `phase2/phase2.md` |
+| second round: features | `python phase2/build2.py` (about 8 minutes) | `phase2/features2.csv` (380 chunks) |
+| second round: models | `python phase2/model.py features.csv features2.csv` | `phase2/model_resultsb.json`, `phase2/phase2b.md` |
+| second round: word-internal profile | `python phase2/oddities.py` | `phase2/oddities_results.json`, `phase2/oddities.md` |
 | one text | `python phase2/features.py <text file>` | prints the 68 features of its first 4,000 words |
 | nearest languages | the ranking above is the distance between the mean standardised feature vector of the 8 ZL-unit chunks and that of each natural source, from `features.csv` | |
