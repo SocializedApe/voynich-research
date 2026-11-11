@@ -22,7 +22,7 @@
 | Enochian Calls (Dee 1584, Casaubon 1659) | `targets/voynich/meaning/data/enochian/` | sacred-texts.com/pag/pr_calls.txt; public-domain text |
 | Auchinleck manuscript item list | `targets/voynich/meaning/data/auchinleck_raw/` | item-to-scribe list from the National Library of Scotland's online Auchinleck edition (auchinleck.nls.uk); page texts are not included |
 | Herbal / pharmaceutical plant pairs | `targets/voynich/meaning/data/voynich_nu/` | voynich.nu |
-| Naibbe cipher tables (not included) | | Greshko, github.com/greshko/naibbe-cipher (`references/naibbe_tables.csv`) |
+| Naibbe cipher: ciphertext of Pliny (`targets/voynich/tfm/data/naibbe.txt`, included); cipher tables (not included) | `targets/voynich/tfm/data/` | Greshko, github.com/greshko/naibbe-cipher (`references/naibbe_tables.csv` and the enciphered Natural History output); MIT licence, copyright Michael A. Greshko |
 | Line-by-line transcriptions of medieval manuscripts (not included; fetched by `targets/voynich/lines/fetch_mss.py`, text only) | `targets/voynich/data/external/cremma/` | Cremma Medieval (Pinche et al., CremmaLab; Old French) and CREMMA Medii Aevi (Clérice et al.; Latin), HTR-United, github.com/HTR-United/cremma-medieval and /cremma-medieval-lat; CC BY 4.0; authors and citation in each repository's `htr-united.yml` and citation file |
 | Language corpora (not included) | | Project Gutenberg and other public-domain texts; see `lang/README.md` |
 
